@@ -12,38 +12,38 @@
 ;  Copyright (C) 2006 by Embedded and Real-Time Systems Laboratory
 ;              Graduate School of Information Science, Nagoya Univ., JAPAN    
 ;
-;  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation
-;  によって公表されている GNU General Public License の Version 2 に記
-;  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
-;  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
-;  利用と呼ぶ）することを無償で許諾する．
-;  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
-;      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
-;      スコード中に含まれていること．
-;  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
-;      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
-;      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
-;      の無保証規定を掲載すること．
-;  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
-;      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
-;      と．
-;    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
-;        作権表示，この利用条件および下記の無保証規定を掲載すること．
-;    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
-;        報告すること．
-;  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
-;      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+;  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation
+;  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+;  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+;  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+;  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+;  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+;      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+;      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+;  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+;      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+;      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+;      �̖��ۏ؋K����f�ڂ��邱�ƁD
+;  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+;      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+;      �ƁD
+;    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+;        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+;    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+;        �񍐂��邱�ƁD
+;  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+;      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
 ;
-;  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
-;  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
-;  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
-;  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+;  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+;  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+;  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+;  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
 ;
 ;  @(#) $Id: cpu_support.src,v 1.7 2005/12/07 01:44:56 honda Exp $
 ;
 
-;       プロセッサ依存モジュール アセンブリ言語部（H8/300H Tiny用）
-;　　　　　カーネル内部で使用する定義
+;       �v���Z�b�T�ˑ����W���[�� �A�Z���u�����ꕔ�iH8/300H Tiny�p�j
+;�@�@�@�@�@�J�[�l�������Ŏg�p�����`
 
         .CPU 300HN
         .SECTION P, CODE, ALIGN=2
@@ -51,8 +51,8 @@
         .INCLUDE "sys_config_asm.inc"
         .INCLUDE "cpu_config_asm.inc"
 
-;　　共通部とのインターフェース
-;　　　変数
+;�@�@���ʕ��Ƃ̃C���^�[�t�F�[�X
+;�@�@�@�ϐ�
         .IMPORT	_runtsk
         .IMPORT	_schedtsk
         .IMPORT	_tcxb_pc
@@ -71,12 +71,12 @@
 
 
 ;
-; IDの無効番号
+; ID�̖����ԍ�
 ;
 ID_INVAL: .DEFINE  	    "H'FF"
 
 ;
-; コールレベル
+; �R�[�����x��
 ;
 CL_TASK:  .DEFINE  	    "H'01"
 CL_ISR2:  .DEFINE  	    "H'02"
@@ -84,14 +84,14 @@ TRUE      .DEFINE		"H'01"
 FALSE     .DEFINE		"H'00"
 
 ;
-;  タスクディスパッチャ
-;    割込み禁止状態で呼び出すこと
-;    er0〜er1は呼び出し元で保存
+;  �^�X�N�f�B�X�p�b�`��
+;    �����݋֎~��ԂŌĂяo������
+;    er0�`er1�͌Ăяo�����ŕۑ�
 ;
 
         .GLOBAL _dispatch
 _dispatch:
-        push.l  er2                    ; er2〜6を保存
+        push.l  er2                    ; er2�`6��ۑ�
         push.l  er3
         push.l  er4
         push.l  er5
@@ -100,21 +100,21 @@ _dispatch:
 		extu.w	r0
 		extu.l  er0		
 		shll.l	er0
-		mov.w   r7, @(_tcxb_sp, er0)   ; タスクスタックポインタを保存 
-        mov.w   #dispatch_r, r1        ; 実行再開番地を保存
+		mov.w   r7, @(_tcxb_sp, er0)   ; �^�X�N�X�^�b�N�|�C���^��ۑ� 
+        mov.w   #dispatch_r, r1        ; ���s�ĊJ�Ԓn��ۑ�
 		mov.w   r1, @(_tcxb_pc, er0)	   
-        bra     dispatcher             ; ディスパッチャーへ
+        bra     dispatcher             ; �f�B�X�p�b�`���[��
 
 
-; タスクスイッチの結果ここから実行が再開される
+; �^�X�N�X�C�b�`�̌��ʂ���������s���ĊJ�����
 
 dispatch_r:
-        pop.l   er6                     ; er2〜6を復元
+        pop.l   er6                     ; er2�`6�𕜌�
         pop.l   er5
         pop.l   er4
         pop.l   er3
         pop.l   er2
-        rts     ;　dispatch()の呼び出し元へリターン
+        rts     ;�@dispatch()�̌Ăяo�����փ��^�[��
 
 
 
@@ -123,10 +123,10 @@ dispatch_r:
 _exit_and_dispatch:
 
 ;
-;  ディスパッチャ本体
+;  �f�B�X�p�b�`���{��
 ;
 dispatcher:
-        ; ここには割り込み禁止で来ること
+        ; �����ɂ͊��荞�݋֎~�ŗ��邱��
 
 		mov.w   #_PostTaskHook,r0
         beq     _start_dispatch		
@@ -134,168 +134,168 @@ dispatcher:
 
 _start_dispatch:
         mov.b   @_schedtsk, r0l
-		mov.b   r0l, @_runtsk       ; schedtsk を runtsk に
+		mov.b   r0l, @_runtsk       ; schedtsk �� runtsk ��
 		cmp.b   #ID_INVAL, r0l		
-        beq     dispatcher_1        ; schedtskが無ければ割り込み待ち
+        beq     dispatcher_1        ; schedtsk��������Ί��荞�ݑ҂�
 		extu.w	r0
 		extu.l  er0		
 		shll.l	er0
-        mov.w   @(_tcxb_sp, er0), r7 ; SPを復帰
-        mov.w   @(_tcxb_pc, er0), r2 ; PCを復帰
+        mov.w   @(_tcxb_sp, er0), r7 ; SP�𕜋A
+        mov.w   @(_tcxb_pc, er0), r2 ; PC�𕜋A
 		mov.w   #_PreTaskHook,r0
         beq     dispatch_task
         jsr     @_call_pretaskhook
 
 dispatch_task:
-        jmp     @er2                 ; 実行再開番地へジャンプ
+        jmp     @er2                 ; ���s�ĊJ�Ԓn�փW�����v
 
         ;
-        ;　実行すべきタスクがない場合の割込み待ち
+        ;�@���s���ׂ��^�X�N���Ȃ��ꍇ�̊����ݑ҂�
         ;
-        ;  ここで割込みモードに切り換えるのは，ここで発生する割込み処理
-        ;  にどのスタックを使うかという問題の解決と，割込みハンドラ内で
-        ;  のタスクディスパッチの防止という二つの意味がある．
+        ;  �����Ŋ����݃��[�h�ɐ؂芷����̂́C�����Ŕ������銄���ݏ���
+        ;  �ɂǂ̃X�^�b�N���g�����Ƃ������̉����ƁC�����݃n���h������
+        ;  �̃^�X�N�f�B�X�p�b�`�̖h�~�Ƃ�����̈Ӗ�������D
 dispatcher_1:
 
-        mov.w   #STACKTOP, r7   ; スタックを割り込みスタックに切替え
+        mov.w   #STACKTOP, r7   ; �X�^�b�N�����荞�݃X�^�b�N�ɐؑւ�
 
-		mov.b	#CL_ISR2,	r1h			; コールレベルを変更
+		mov.b	#CL_ISR2,	r1h			; �R�[�����x����ύX
 		mov.b	r1h, @_callevel 	
-		mov.b	#FALSE, r1h				; 割込みフラグを変更
+		mov.b	#FALSE, r1h				; �����݃t���O��ύX
         mov.b	r1h, @_i_flag	
-		mov.b	#1,	r1h			        ; 割込みレベル保持変数を1に	
+		mov.b	#1,	r1h			        ; �����݃��x���ێ��ϐ���1��	
         mov.b	r1h, @_ipl_level
 
-        ;　ldc命令直後は割込み禁止であり、割込み要求があっても
-        ;　次の命令が実行される。
-        ;　（割込みから戻ってきてsleepするケースはない）
-        ENAINT                          ; 割り込み許可
-        sleep                           ; 割込み待ち
-        DISINT                          ; 割り込み禁止
+        ;�@ldc���ߒ���͊����݋֎~�ł���A�����ݗv���������Ă�
+        ;�@���̖��߂����s�����B
+        ;�@�i�����݂���߂��Ă���sleep����P�[�X�͂Ȃ��j
+        ENAINT                          ; ���荞�݋���
+        sleep                           ; �����ݑ҂�
+        DISINT                          ; ���荞�݋֎~
 
-		mov.b   #CL_TASK, r1h			; コールレベルを変更	
+		mov.b   #CL_TASK, r1h			; �R�[�����x����ύX	
 		mov.b	r1h, @_callevel   
-		mov.b	#TRUE,	r1h				; 割込みフラグを変更
+		mov.b	#TRUE,	r1h				; �����݃t���O��ύX
         mov.b	r1h, @_i_flag	
-		mov.b	#0,	r1h			        ; 割込みレベル保持変数を0に
+		mov.b	#0,	r1h			        ; �����݃��x���ێ��ϐ���0��
         mov.b	r1h, @_ipl_level
 
         bra     _start_dispatch
 
 
 ;
-;  割込みハンドラ入口処理
-;　　割込み要因に依らず、共通な部分
-;　　（vector.srcのINTHDR_ENTRYからの続き）
+;  �����݃n���h����������
+;�@�@�����ݗv���Ɉ˂炸�A���ʂȕ���
+;�@�@�ivector.src��INTHDR_ENTRY����̑����j
 ;
-;　　　　以下の状態でここにやってくる
-;　　　　　・割込み禁止
-;　　　　　・er0〜er3退避済み
-;          ・r1l：発生した割込みのID
-;　　　　　・ r3：C言語ルーチンの先頭アドレス
+;�@�@�@�@�ȉ��̏�Ԃł����ɂ���Ă���
+;�@�@�@�@�@�E�����݋֎~
+;�@�@�@�@�@�Eer0�`er3�ޔ��ς�
+;          �Er1l�F�������������݂�ID
+;�@�@�@�@�@�E r3�FC���ꃋ�[�`���̐擪�A�h���X
 ;
-;	多重割込みかどうかはcallevelの値で判定する.
-;	callevel != 1 ならば多重割込みであると判定する.
+;	���d�����݂��ǂ�����callevel�̒l�Ŕ��肷��.
+;	callevel != 1 �Ȃ�Α��d�����݂ł���Ɣ��肷��.
 ; 
-;   _regparam2を指定している場合は
-;   er2〜er6は呼び出し先で保存される
+;   _regparam2���w�肵�Ă���ꍇ��
+;   er2�`er6�͌Ăяo����ŕۑ������
 
         .GLOBAL _common_interrupt_process
 _common_interrupt_process:
-		mov.b	@_runisr, r0h	; 実行中割込みIDを退避
-		mov.b	r1l, @_runisr	; 割込みIDを設定
-		mov.b   @_callevel, r0l	; コールレベルを退避
+		mov.b	@_runisr, r0h	; ���s��������ID��ޔ�
+		mov.b	r1l, @_runisr	; ������ID��ݒ�
+		mov.b   @_callevel, r0l	; �R�[�����x����ޔ�
 		cmp.b   #CL_TASK, r0l
         bne     int_from_int 
         ;
-        ;　初段の割込みの場合
+        ;�@���i�̊����݂̏ꍇ
         ;
-        mov.w   r7, r2          ; タスクスタックの値の保存
-        mov.w   #STACKTOP, r7   ; スタック切替
-		mov.b	#1,	r1l			; 割込みレベル保持変数を1に	
+        mov.w   r7, r2          ; �^�X�N�X�^�b�N�̒l�̕ۑ�
+        mov.w   #STACKTOP, r7   ; �X�^�b�N�ؑ�
+		mov.b	#1,	r1l			; �����݃��x���ێ��ϐ���1��	
         mov.b	r1l, @_ipl_level
 int_from_int 
-		push.w  r0				; runisr,callevelをスタックに保存
-		mov.b   #CL_ISR2,  r0l  ; 実行レベルをISR2に設定
+		push.w  r0				; runisr,callevel���X�^�b�N�ɕۑ�
+		mov.b   #CL_ISR2,  r0l  ; ���s���x����ISR2�ɐݒ�
 		mov.b   r0l, @_callevel ; 
-        jsr     @er3            ; C言語ルーチン呼び出し
-		pop.w	r0				; runisr,callevelを復帰
+        jsr     @er3            ; C���ꃋ�[�`���Ăяo��
+		pop.w	r0				; runisr,callevel�𕜋A
 		mov.b   r0l, @_callevel ; 
 		mov.b   r0h, @_runisr   ;
-		cmp.b   #CL_TASK, r0l   ; 多重割り込みかどうか
+		cmp.b   #CL_TASK, r0l   ; ���d���荞�݂��ǂ���
         bne     int_return
 		;
-		; タスクへの復帰
+		; �^�X�N�ւ̕��A
 		;
-		mov.b	#0,	r1l			; 割込みレベル保持変数を0に	
+		mov.b	#0,	r1l			; �����݃��x���ێ��ϐ���0��	
         mov.b	r1l, @_ipl_level
-        mov.w   r2, r7          ; スタック復帰
+        mov.w   r2, r7          ; �X�^�b�N���A
 		mov.b	@_schedtsk,r3l
 		mov.b	@_runtsk,r2l
 		cmp.b	r2l,r3l
-        bne		ret_int         ;　出口処理へジャンプ
+        bne		ret_int         ;�@�o�������փW�����v
 
-        ;　本来はここで戻り先が、割込み待ちのsleep命令かどうかのチェッ
-        ;　クが必要である。
-        ;　H8の場合、sleep命令の直前にある割込み許可のldc命令の実行直
-        ;　後は割込み禁止であり、割込み要求があったとしても割込みは受
-        ;　け付けないで、sleep命令が実行される。そのため、割込みから
-        ;　戻った直後にsleep命令が実行されるケースは考慮しなくて良い。
+        ;�@�{���͂����Ŗ߂�悪�A�����ݑ҂���sleep���߂��ǂ����̃`�F�b
+        ;�@�N���K�v�ł���B
+        ;�@H8�̏ꍇ�Asleep���߂̒��O�ɂ��銄���݋���ldc���߂̎��s��
+        ;�@��͊����݋֎~�ł���A�����ݗv�����������Ƃ��Ă������݂͎�
+        ;�@���t���Ȃ��ŁAsleep���߂����s�����B���̂��߁A�����݂���
+        ;�@�߂��������sleep���߂����s�����P�[�X�͍l�����Ȃ��ėǂ��B
 
         ;
-        ;　ディスパッチャを呼ばずに、割込み元に戻る場合
+        ;�@�f�B�X�p�b�`�����Ă΂��ɁA�����݌��ɖ߂�ꍇ
         ;
 
 int_return:
-        pop.l   er3                     ;　レジスタを復元
+        pop.l   er3                     ;�@���W�X�^�𕜌�
         pop.l   er2
         pop.l   er1
         pop.l   er0
-        rte                             ;　割込み元へリターン
+        rte                             ;�@�����݌��փ��^�[��
 
 
 ;
-;  割込みハンドラ出口処理(ディスパッチ要求あり)
+;  �����݃n���h���o������(�f�B�X�p�b�`�v������)
 ;
-; 割込み禁止状態,er0〜er3を保存した状態で呼び出すこと。
+; �����݋֎~���,er0�`er3��ۑ�������ԂŌĂяo�����ƁB
 ;
 
 ret_int:
-        push.l  er4                 ;　レジスタ退避
+        push.l  er4                 ;�@���W�X�^�ޔ�
         push.l  er5
         push.l  er6
-        mov.b	#TRUE, r2l			; 割込み擬似フラグを変更	
+        mov.b	#TRUE, r2l			; �����݋[���t���O��ύX	
 		mov.b	r2l, @_i_flag  
-		mov.b	#0,	r2l				; 割込みレベル保持変数を0に	
+		mov.b	#0,	r2l				; �����݃��x���ێ��ϐ���0��	
         mov.b	r2l, @_ipl_level   
         mov.b   @_runtsk, r2l
 		extu.w	r2
 		extu.l  er2
 		shll.l	er2
-		mov.w   r7, @(_tcxb_sp, er2) ; タスクスタックポインタを保存
-        mov.w   #ret_int_r, r1       ; 実行再開番地を保存
+		mov.w   r7, @(_tcxb_sp, er2) ; �^�X�N�X�^�b�N�|�C���^��ۑ�
+        mov.w   #ret_int_r, r1       ; ���s�ĊJ�Ԓn��ۑ�
 		mov.w   r1, @(_tcxb_pc, er2)
         bra     dispatcher
 
         ;
-        ;  割込みの出口でディスパッチャからここに戻ってくる
+        ;  �����݂̏o���Ńf�B�X�p�b�`�����炱���ɖ߂��Ă���
         ;
 ret_int_r:
-        mov.b	#FALSE, r0l				;  割込み擬似フラグを変更
+        mov.b	#FALSE, r0l				;  �����݋[���t���O��ύX
 		mov.b	r0l, @_i_flag   
-        pop.l   er6                     ;　レジスタ復元
+        pop.l   er6                     ;�@���W�X�^����
         pop.l   er5
         pop.l   er4
-        pop.l   er3                     ;　 +0:er3
-        pop.l   er2                     ;　 +4:er2
-        pop.l   er1                     ;　 +8:er1
-        pop.l   er0                     ;　+12:er0
-        rte                             ;　割込み元にリターン
+        pop.l   er3                     ;�@ +0:er3
+        pop.l   er2                     ;�@ +4:er2
+        pop.l   er1                     ;�@ +8:er1
+        pop.l   er0                     ;�@+12:er0
+        rte                             ;�@�����݌��Ƀ��^�[��
 
 ;
-;  タスク起動処理
+;  �^�X�N�N������
 ;
-;　　　　CPUロック状態で呼び出される。
+;�@�@�@�@CPU���b�N��ԂŌĂяo�����B
 ;
 ;
 
@@ -303,10 +303,10 @@ ret_int_r:
 _activate_r:
 		mov.b	#FALSE, r1l
 		mov.b	r1l, @_i_flag	
-        ENAINT                       ;  割込み許可
+        ENAINT                       ;  �����݋���
 
-        ;  ここで割込みが発生してタスクスイッチが起こったとしても、
-        ;  ここに戻くるときには、runtskの値は元に戻っている。
+        ;  �����Ŋ����݂��������ă^�X�N�X�C�b�`���N�������Ƃ��Ă��A
+        ;  �����ɖ߂���Ƃ��ɂ́Aruntsk�̒l�͌��ɖ߂��Ă���B
 
         mov.b   @_runtsk, r2l		
 		extu.w	r2
@@ -314,11 +314,11 @@ _activate_r:
 		mov.b   @(_tinib_exepri,er2), r3l
 		mov.b   r3l, @(_tcb_curpri,er2)		
 		shll.l	er2
-        mov.w   @(_tinib_task,er2), r1 ;  タスク起動番地を設定
+        mov.w   @(_tinib_task,er2), r1 ;  �^�X�N�N���Ԓn��ݒ�
         jmp     @er1
 
 ;
-; 未使用の割込みの処理
+; ���g�p�̊����݂̏���
 ;
         .GLOBAL _unused_interrupt
 _unused_interrupt:

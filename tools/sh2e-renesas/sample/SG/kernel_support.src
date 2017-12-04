@@ -3,13 +3,13 @@
 
 	.INCLUDE	"cpu_config.inc"
 		
-; ã‚¹ã‚¿ãƒ¼ãƒˆã‚¢ãƒƒãƒ—é–¢æ•°ã®å¤–éƒ¨å‚ç…§å®šç¾©
+; ƒXƒ^[ƒgƒAƒbƒvŠÖ”‚ÌŠO•”ŽQÆ’è‹`
 	.IMPORT		_PowerON_Reset_PC
 
-; æœªä½¿ç”¨å‰²è¾¼ã¿ã®å¤–éƒ¨å‚ç…§å®šç¾©
+; –¢Žg—pŠ„ž‚Ý‚ÌŠO•”ŽQÆ’è‹`
 	UNUSED_INT_EXTERNAL
 
-; å‰²è¾¼ã¿å…¥ã‚Šå£å‡¦ç†é–¢æ•°ã®å¤–éƒ¨å‚ç…§å®šç¾©
+; Š„ž‚Ý“ü‚èŒûˆ—ŠÖ”‚ÌŠO•”ŽQÆ’è‹`
 	ISR1_EXTERNAL ErrHwSerialInt
 	ISR1_EXTERNAL RxHwSerialInt
 	ISR1_EXTERNAL HwCnt1Int
@@ -19,19 +19,19 @@
 
 
 
-; å‰²è¾¼ã¿ãƒ™ã‚¯ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ« 
+; Š„ž‚ÝƒxƒNƒ^ƒe[ƒuƒ‹ 
 
 	.SECTION    DVECTTBL,DATA,ALIGN=4
 _RESET_Vectors:
-	.DATA.L     _PowerON_Reset_PC	;/* 0   ãƒ‘ãƒ¯ãƒ¼ã‚ªãƒ³ãƒªã‚»ãƒƒãƒˆ */
-	.DATA.L		STARTOF S+SIZEOF S	;/* 1   åˆæœŸã‚¹ã‚¿ãƒƒã‚¯ä½ç½®   */
-	.DATA.L     _PowerON_Reset_PC	;/* 2   ãƒžãƒ‹ãƒ¥ã‚¢ãƒ«ãƒªã‚»ãƒƒãƒˆ */
-	.DATA.L		STARTOF S+SIZEOF S	;/* 3   åˆæœŸã‚¹ã‚¿ãƒƒã‚¯ä½ç½®   */
+	.DATA.L     _PowerON_Reset_PC	;/* 0   ƒpƒ[ƒIƒ“ƒŠƒZƒbƒg */
+	.DATA.L		STARTOF S+SIZEOF S	;/* 1   ‰ŠúƒXƒ^ƒbƒNˆÊ’u   */
+	.DATA.L     _PowerON_Reset_PC	;/* 2   ƒ}ƒjƒ…ƒAƒ‹ƒŠƒZƒbƒg */
+	.DATA.L		STARTOF S+SIZEOF S	;/* 3   ‰ŠúƒXƒ^ƒbƒNˆÊ’u   */
 
     .SECTION    DINTTBL,DATA,ALIGN=4 
     .GLOBAL	_INT_Vectors
 _INT_Vectors:
-; ã‚ªãƒ•ã‚»ãƒƒãƒˆå€¤		 		 å‰²ã‚Šè¾¼ã¿åç§°
+; ƒIƒtƒZƒbƒg’l		 		 Š„‚èž‚Ý–¼Ì
     UNUSED_INT_SYMBOL;,	/* 4 Illegal code */
     UNUSED_INT_SYMBOL;,	/* 5 Reserved */
     UNUSED_INT_SYMBOL;,	/* 6 Illegal slot */
@@ -289,7 +289,7 @@ _INT_Vectors:
 	.IMPORT _runisr
 	.IMPORT _interrupt
 	
-; å‰²è¾¼ã¿å…¥ã‚Šå£å‡¦ç†é–¢æ•°
+; Š„ž‚Ý“ü‚èŒûˆ—ŠÖ”
 	ISR1_ENTRY ErrHwSerialInt
 	ISR1_ENTRY RxHwSerialInt
 	ISR1_ENTRY HwCnt1Int
@@ -298,7 +298,7 @@ _INT_Vectors:
 	ISR2_ENTRY HwCnt2Int,2
 
 
-; ãƒ•ãƒƒã‚¯ãƒ«ãƒ¼ãƒãƒ³ã®NULLã‚·ãƒ³ãƒœãƒ«
+; ƒtƒbƒNƒ‹[ƒ`ƒ“‚ÌNULLƒVƒ“ƒ{ƒ‹
 	
 	
 	

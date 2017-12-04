@@ -5,75 +5,75 @@
  * 
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
 /*
- *	サンプル向けターゲット依存シリアルIOモジュール（OAKS32用）
+ *	�T���v�������^�[�Q�b�g�ˑ��V���A��IO���W���[���iOAKS32�p�j
  */
 
 /*
- *  KD3083 使用時( USE_KD3083 定義時)は KD3083 が UART1 を使用するため，
- *  シリアルIOモジュールは動作させない．
- *  UART0 を使用する手はあるが，OILファイルに記載している割込みエントリー
- *  番号をコンパイルオプション( USE_KD3083 )で切替えるよい方法がないため，
- *  UART0 を使用する実装は行わない．
+ *  KD3083 �g�p��( USE_KD3083 ��`��)�� KD3083 �� UART1 ���g�p���邽�߁C
+ *  �V���A��IO���W���[���͓��삳���Ȃ��D
+ *  UART0 ���g�p�����͂��邪�COIL�t�@�C���ɋL�ڂ��Ă��銄���݃G���g���[
+ *  �ԍ����R���p�C���I�v�V����( USE_KD3083 )�Őؑւ���悢���@���Ȃ����߁C
+ *  UART0 ���g�p��������͍s��Ȃ��D
  */
 
 #include	"hw_serial.h"
 
 
 /*
- *  シリアルIOモジュール初期化処理
+ *  �V���A��IO���W���[������������
  *
- *  割込み禁止状態で呼出すこと．
+ *  �����݋֎~��ԂŌďo�����ƁD
  */
 void
 InitHwSerial( void )
 {
 #if !defined( USE_KD3083 )
 	/*
-	 *  送受信を禁止して各レジスタ設定
+	 *  ����M���֎~���Ċe���W�X�^�ݒ�
 	 */
-	TE_U1C1 = 0;	/* 送信禁止	*/
-	RE_U1C1 = 0;	/* 受信禁止	*/
+	TE_U1C1 = 0;	/* ���M�֎~	*/
+	RE_U1C1 = 0;	/* ��M�֎~	*/
 
 	/*
-	 *  IOポートをシリアルポートに変更
+	 *  IO�|�[�g���V���A���|�[�g�ɕύX
 	 */
-	PS0_7 = 1;	/* ポートP67を TxD1 に	*/
-	PD6_6 = 0;	/* ポートP66を 入力 に	*/
-	PS0_6 = 0;	/* ポートP66を RxD1 に	*/
+	PS0_7 = 1;	/* �|�[�gP67�� TxD1 ��	*/
+	PD6_6 = 0;	/* �|�[�gP66�� ���� ��	*/
+	PS0_6 = 0;	/* �|�[�gP66�� RxD1 ��	*/
 
 	/*
-	 *  内部クロック使用, 非同期通信, 8ビットデータ,
-	 *  パリティなし, スリープなし, クロックf1, CTS/RTS禁止
+	 *  �����N���b�N�g�p, �񓯊��ʐM, 8�r�b�g�f�[�^,
+	 *  �p���e�B�Ȃ�, �X���[�v�Ȃ�, �N���b�Nf1, CTS/RTS�֎~
 	 */
 	U1MR = (UINT8)( 0x05 );
 	CLK0_U1C0 = 0;
@@ -81,48 +81,48 @@ InitHwSerial( void )
 	CRD_U1C0 = 1;
 
 	/*
-	 *  ボーレート設定（設定値はヘッダ参照）
+	 *  �{�[���[�g�ݒ�i�ݒ�l�̓w�b�_�Q�Ɓj
 	 */
 	U1BRG = CFG_BRG_SERIAL;
 
 	/*
-	 *  受信割込みレベル設定（設定レベルはヘッダ参照）
-	 *  S1RIC の bit3 が割込み要求フラグであり，同時にクリアしている．
+	 *  ��M�����݃��x���ݒ�i�ݒ背�x���̓w�b�_�Q�Ɓj
+	 *  S1RIC �� bit3 �������ݗv���t���O�ł���C�����ɃN���A���Ă���D
 	 *
-	 *  送信割込みは使用しない．
+	 *  ���M�����݂͎g�p���Ȃ��D
 	 */
 	S1RIC = CFG_INTLVL_SERIAL_RX;
 
-	RE_U1C1 = 1;	/* 受信許可 */
-	TE_U1C1 = 1;	/* 送信許可 */
+	RE_U1C1 = 1;	/* ��M���� */
+	TE_U1C1 = 1;	/* ���M���� */
 #endif	/* USE_KD3083	*/
 }	/* InitHwSerial	*/
 
 
 /*
- *  シリアルIOモジュール停止処理
+ *  �V���A��IO���W���[����~����
  *
- *  割込み禁止状態で呼出すこと．
- *  上位で出力が完了していることを保障すること．
+ *  �����݋֎~��ԂŌďo�����ƁD
+ *  ��ʂŏo�͂��������Ă��邱�Ƃ�ۏႷ�邱�ƁD
  */
 void
 TermHwSerial( void )
 {
 #if !defined( USE_KD3083 )
-	S1RIC = (UINT8)( 0 );	/* 受信割込みマスク	*/
-	S1TIC = (UINT8)( 0 );	/* 送信割込みマスク	*/
+	S1RIC = (UINT8)( 0 );	/* ��M�����݃}�X�N	*/
+	S1TIC = (UINT8)( 0 );	/* ���M�����݃}�X�N	*/
 
-	TE_U1C1 = 0;		/* 送信禁止 */
-	RE_U1C1 = 0;		/* 受信禁止 */
+	TE_U1C1 = 0;		/* ���M�֎~ */
+	RE_U1C1 = 0;		/* ��M�֎~ */
 #endif	/* USE_KD3083	*/
 }	/* TermHwSerial	*/
 
 
 /*
- *  シリアルIOモジュール受信割込みサービスルーチン
+ *  �V���A��IO���W���[����M�����݃T�[�r�X���[�`��
  */
 #if defined( OMIT_ISR1_ENTRY )
-/* ISR1入り口未生成時は本関数を割込み関数指定する	*/
+/* ISR1��������������͖{�֐��������݊֐��w�肷��	*/
 #pragma INTERRUPT	RxHwSerialInt
 #endif	/* OMIT_ISR1_ENTRY	*/
 void	RxHwSerialInt( void );
@@ -130,23 +130,23 @@ void
 RxHwSerialInt( void )
 {
 #if !defined( USE_KD3083 )
-	UINT16	rx_data;	/* データ受信バッファ	*/
+	UINT16	rx_data;	/* �f�[�^��M�o�b�t�@	*/
 
 	/*
-	 *  オーバラン防止のためまず読込む
+	 *  �I�[�o�����h�~�̂��߂܂��Ǎ���
 	 */
 	rx_data = U1RB;
 
 	/*
-	 *  正常受信時はコールバック実行
-	 *  エラー時はエラー復帰処理（受信禁止することでエラーフラグOFF）
+	 *  �����M���̓R�[���o�b�N���s
+	 *  �G���[���̓G���[���A�����i��M�֎~���邱�ƂŃG���[�t���OOFF�j
 	 */
 	if( ( rx_data & 0xff00 ) == 0 ){
 		RxSerialInt( (UINT8)rx_data );
 	}
 	else{
-		RE_U1C1 = 0;	/* 受信禁止 */
-		RE_U1C1 = 1;	/* 受信許可 */
+		RE_U1C1 = 0;	/* ��M�֎~ */
+		RE_U1C1 = 1;	/* ��M���� */
 	}
 #endif	/* USE_KD3083	*/
 }	/* RxHwSerialInt	*/

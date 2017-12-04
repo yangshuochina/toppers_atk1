@@ -7,90 +7,90 @@
  *  Copyright (C) 2006,2007 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006,2007 by Hitachi Information & Control Solutions,Ltd., JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
 /*
- *	サンプル向けターゲット依存シリアル通信モジュール（SH2A SDK72513用）
+ *	�T���v�������^�[�Q�b�g�ˑ��V���A���ʐM���W���[���iSH2A SDK72513�p�j
  */
 
 /*
- *	SCIA に端末を接続し、シリアル受信割り込みで処理する
+ *	SCIA �ɒ[����ڑ����A�V���A����M���荞�݂ŏ�������
  */
 
 #include	"hw_serial.h"
 #include	"sh72513.h"
 
-#define PJCR1_MD6      0x1000    /* PJ6MD:1(RxD_A入力)             */
-#define PJCR1_MD5      0x0400    /* PJ5MD:1(TxD_A出力)             */
+#define PJCR1_MD6      0x1000    /* PJ6MD:1(RxD_A����)             */
+#define PJCR1_MD5      0x0400    /* PJ5MD:1(TxD_A�o��)             */
 
 
 
 /*
- *  シリアルIOモジュール初期化処理
+ *  �V���A��IO���W���[������������
  *
- *  割込み禁止状態で呼出すこと．
+ *  �����݋֎~��ԂŌďo�����ƁD
  */
 void
 InitHwSerial( void )
 {
 	/*
-	 *  送受信を禁止して各レジスタ設定
+	 *  ����M���֎~���Ċe���W�X�^�ݒ�
 	 */
-	SCSCR1A = (UINT8)0x00;			/* 送受信禁止, 内部クロック使用 */
+	SCSCR1A = (UINT8)0x00;			/* ����M�֎~, �����N���b�N�g�p */
 	SCSSR1A = 0;
 	/*
-	 *   調歩同期通信, 8ビットデータ, パリティなし, 1ストップビット,
+	 *   ���������ʐM, 8�r�b�g�f�[�^, �p���e�B�Ȃ�, 1�X�g�b�v�r�b�g,
 	 */
 	SCSMR1A = (UINT8)0x00;
 
 	/*
-	 *  ボーレート設定（設定値はヘッダ参照）
+	 *  �{�[���[�g�ݒ�i�ݒ�l�̓w�b�_�Q�Ɓj
 	 */
 	SCBRR1A = CFG_BRR_SERIAL;
 
 	/*
-	 *  受信割込みレベル設定（設定レベルはヘッダ参照）
-	 *  SSR の RDRF が割込み要求フラグだが、初期値0のため操作しない．
+	 *  ��M�����݃��x���ݒ�i�ݒ背�x���̓w�b�_�Q�Ɓj
+	 *  SSR �� RDRF �������ݗv���t���O�����A�����l0�̂��ߑ��삵�Ȃ��D
 	 *
-	 *  送信割込みは使用しない．
+	 *  ���M�����݂͎g�p���Ȃ��D
 	 */
 	IPR26 = (IPR26 & 0x0FFF) | (CFG_INTLVL_SERIAL_RX1 <<12);
 	SCSCR1A = SCSCR1_RIE;
 
 	/*
-	 *  IOポートをシリアルポートに変更
+	 *  IO�|�[�g���V���A���|�[�g�ɕύX
 	 */
 	PJCR1 = (PJCR1 & 0xC3FF) | PJCR1_MD6 | PJCR1_MD5;
 
 	/*
-	 *  送受信を許可
+	 *  ����M������
 	 */
 	SCSCR1A	|= SCSCR1_TE;
 	SCSCR1A	|= SCSCR1_RE;
@@ -99,22 +99,22 @@ InitHwSerial( void )
 
 
 /*
- *  シリアルIOモジュール停止処理
+ *  �V���A��IO���W���[����~����
  *
- *  割込み禁止状態で呼出すこと．
- *  上位で出力が完了していることを保障すること．
+ *  �����݋֎~��ԂŌďo�����ƁD
+ *  ��ʂŏo�͂��������Ă��邱�Ƃ�ۏႷ�邱�ƁD
  */
 void
 TermHwSerial( void )
 {
 	/*
-	 *  送受信および送受信割込み禁止
+	 *  ����M����ё���M�����݋֎~
 	 */
-	SCSCR1A = (UINT8)0x0;			/* 送受信禁止 */
-	SCSSR1A = (UINT8)0x0;			/* ステータス初期化 */
+	SCSCR1A = (UINT8)0x0;			/* ����M�֎~ */
+	SCSSR1A = (UINT8)0x0;			/* �X�e�[�^�X������ */
 
 	/*
-	 *  シリアル割込みレベル最低化
+	 *  �V���A�������݃��x���Œቻ
 	 */
 	IPR26 = (IPR26 & 0x0FFF);
 
@@ -122,53 +122,53 @@ TermHwSerial( void )
 
 
 /*
- *  シリアルIOモジュール受信エラー割込みサービスルーチン
+ *  �V���A��IO���W���[����M�G���[�����݃T�[�r�X���[�`��
  */
 #if defined( OMIT_ISR1_ENTRY )
-/* ISR1入り口未生成時は本関数を割込み関数指定する	*/
+/* ISR1��������������͖{�֐��������݊֐��w�肷��	*/
 #pragma interrupt	ErrHwSerialInt
 #endif	/* OMIT_ISR1_ENTRY */
 void ErrHwSerialInt( void );
 void ErrHwSerialInt( void )
 {
 	UINT8 dmy;
-	SCSSR1A &= (UINT8)‾0x38;	/* OROR,FER,PER = 0 */
-	dmy = SCSSR1A;				/* ダミーリード */
+	SCSSR1A &= (UINT8)~0x38;	/* OROR,FER,PER = 0 */
+	dmy = SCSSR1A;				/* �_�~�[���[�h */
 }
 
 
 /*
- *  シリアルIOモジュール受信割込みサービスルーチン
+ *  �V���A��IO���W���[����M�����݃T�[�r�X���[�`��
  */
 #if defined( OMIT_ISR1_ENTRY )
-/* ISR1入り口未生成時は本関数を割込み関数指定する	*/
+/* ISR1��������������͖{�֐��������݊֐��w�肷��	*/
 #pragma interrupt	RxHwSerialInt
 #endif	/* OMIT_ISR1_ENTRY	*/
 void RxHwSerialInt( void );
 void RxHwSerialInt( void )
 {
-	UINT8	rx_data;	/* データ受信バッファ	*/
+	UINT8	rx_data;	/* �f�[�^��M�o�b�t�@	*/
 
 	/*
-	 *  オーバラン防止のためまず読込む
+	 *  �I�[�o�����h�~�̂��߂܂��Ǎ���
 	 */
 	rx_data = SCRDR1A;
 
 	/*
-	 * 割込み要求をクリア
+	 * �����ݗv�����N���A
 	 */
-	SCSSR1A &= ‾SCSSR1_RDRF;
-	/* 下の処理で SCSSR1A を読み込んでいるのでダミーリード不要 */
+	SCSSR1A &= ~SCSSR1_RDRF;
+	/* ���̏����� SCSSR1A ��ǂݍ���ł���̂Ń_�~�[���[�h�s�v */
 	
 	/*
-	 *  正常受信時はコールバック実行
-	 *  エラー時はエラー復帰処理
+	 *  �����M���̓R�[���o�b�N���s
+	 *  �G���[���̓G���[���A����
 	 */
 	if( ( SCSSR1A  & (UINT8)0x38 ) == 0x0 ){
 		RxSerialInt( rx_data );
 	}
 	else{
-		SCSSR1A &= (UINT8)‾0x38;
+		SCSSR1A &= (UINT8)~0x38;
 	}
 }	/* RxHwSerialInt	*/
 

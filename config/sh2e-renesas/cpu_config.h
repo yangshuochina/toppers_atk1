@@ -11,44 +11,44 @@
  *  Copyright (C) 2006-2008 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006-2008 by Hitachi Information & Control Solutions,Ltd., JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
 /*
- *  プロセッサ依存モジュール（SH2用）
+ *  �v���Z�b�T�ˑ����W���[���iSH2�p�j
  */
 
 
 #ifndef	_CPU_CONFIG_H_
 #define	_CPU_CONFIG_H_
 
-#define MAX_IPM  0xf	/* スタブなしの場合は最高優先度でCPUロック */
+#define MAX_IPM  0xf	/* �X�^�u�Ȃ��̏ꍇ�͍ō��D��x��CPU���b�N */
 
 #ifndef _MACRO_ONLY
 #include "cpu_insn.h"
@@ -56,7 +56,7 @@
 
 
 #ifndef _MACRO_ONLY
-/* インライン関数プロトタイプ宣言	*/
+/* �C�����C���֐��v���g�^�C�v�錾	*/
 #pragma inline(set_ipl)
 static void set_ipl(UINT8 ipl);
 #pragma inline(current_ipl)
@@ -66,20 +66,20 @@ extern UINT32 int_ena_flag;
 extern UINT32 int_ena_level;
 
 /*
- *  本OSカーネルでは割込み制御をIフラグ及びIPLの双方を用いて行う
- *  ことを前提とする．本CPUはIPLのみしか持たないため、
- *  Iフラグをソフトウェアで補う仕様とする
+ *  �{OS�J�[�l���ł͊����ݐ����I�t���O�y��IPL�̑o����p���čs��
+ *  ���Ƃ�O��Ƃ���D�{CPU��IPL�݂̂��������Ȃ����߁A
+ *  I�t���O���\�t�g�E�F�A�ŕ₤�d�l�Ƃ���
  */
 
 /*
- *  割込み優先度レベル設定
+ *  �����ݗD��x���x���ݒ�
  */
 static void set_ipl(UINT8 ipl)
 {
 	/*
-	 *  CPUロック中かどうか判定し、ロック中でなければ
-	 *  SRレジスタに直接設定する．ロック中であれば
-	 *  int_ena_levelにIPLを保存する．
+	 *  CPU���b�N�����ǂ������肵�A���b�N���łȂ����
+	 *  SR���W�X�^�ɒ��ڐݒ肷��D���b�N���ł����
+	 *  int_ena_level��IPL��ۑ�����D
 	 */
 	if(int_ena_flag != 0){
 		set_sr(ipl << 4);
@@ -91,14 +91,14 @@ static void set_ipl(UINT8 ipl)
 
 
 /*
- *  割込み優先度レベル取得
+ *  �����ݗD��x���x���擾
  */
 static UINT8 current_ipl(void)
 {
 	/*
-	 *  CPUロック中かどうか判定し、ロック中でなければ
-	 *  SRレジスタから直接読み出す．ロック中であれば
-	 *  int_ena_levelからIPLを読み出す．
+	 *  CPU���b�N�����ǂ������肵�A���b�N���łȂ����
+	 *  SR���W�X�^���璼�ړǂݏo���D���b�N���ł����
+	 *  int_ena_level����IPL��ǂݏo���D
 	 */
 	if(int_ena_flag != 0)
 	{
@@ -112,23 +112,23 @@ static UINT8 current_ipl(void)
 
 
 /*
- *  プロセッサ依存の初期化(cpu_config.c)
+ *  �v���Z�b�T�ˑ��̏�����(cpu_config.c)
  */
 extern void	cpu_initialize(void);
 
 /*
- *  プロセッサ依存の終了時処理(cpu_config.c)
+ *  �v���Z�b�T�ˑ��̏I��������(cpu_config.c)
  */
 extern void	cpu_terminate(void);
 
-#define DEFINE_CTXB(tnum) ¥
-FP tcxb_pc[tnum]; ¥
+#define DEFINE_CTXB(tnum) \
+FP tcxb_pc[tnum]; \
 VP tcxb_sp[tnum]
 
 extern FP tcxb_pc[];
 extern VP tcxb_sp[];
 
-/* ディスパッチ周りのアセンブラ関数プロトタイプ宣言	*/
+/* �f�B�X�p�b�`����̃A�Z���u���֐��v���g�^�C�v�錾	*/
 extern void  dispatch(void);
 extern void  exit_and_dispatch(void);
 extern void  start_dispatch(void);
@@ -137,8 +137,8 @@ extern void  start_dispatch(void);
 
 #if defined(SH2) || defined(SH2E)
 /*
- *  SH2,SH2Eには、バレルシフト命令が無いため、変数によるシフト演算は低速である。
- *  よって、配列に結果を格納しておく。
+ *  SH2,SH2E�ɂ́A�o�����V�t�g���߂��������߁A�ϐ��ɂ��V�t�g���Z�͒ᑬ�ł���B
+ *  ����āA�z��Ɍ��ʂ��i�[���Ă����B
  */
 extern const UINT16 primap_bitmask[16];
 #define	PRIMAP_BIT(pri)		(primap_bitmask[pri])

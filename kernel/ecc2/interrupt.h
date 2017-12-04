@@ -9,81 +9,81 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
 /*
- *	割込み管理機能(ECC2)
+ *	�����݊Ǘ��@�\(ECC2)
  */
 
 #ifndef _INTERRUPT_H_
 #define _INTERRUPT_H_
 
 /*
- *  ISR（カテゴリ2）IDの特殊な値の定義
+ *  ISR�i�J�e�S��2�jID�̓���Ȓl�̒�`
  */
-#define ISRID_NULL		((IsrType) UINT8_INVALID)	/* 無効ID */
+#define ISRID_NULL		((IsrType) UINT8_INVALID)	/* ����ID */
 
 /*
- *  ISR（カテゴリ2）数を保持する変数の宣言（kernel_cfg.c）
+ *  ISR�i�J�e�S��2�j����ێ�����ϐ��̐錾�ikernel_cfg.c�j
  */
-extern const UINT8		tnum_isr2;			/* ISR（カテゴリ2）の数 */
+extern const UINT8		tnum_isr2;			/* ISR�i�J�e�S��2�j�̐� */
 
 /*
- *  ISR（カテゴリ2）初期化ブロック（kernel_cfg.c）
+ *  ISR�i�J�e�S��2�j�������u���b�N�ikernel_cfg.c�j
  */
-extern const Priority	isrinib_intpri[];	/* 割込み優先度 */
+extern const Priority	isrinib_intpri[];	/* �����ݗD��x */
 
 /*
- *  ISR（カテゴリ2）管理ブロック（kernel_cfg.c）
+ *  ISR�i�J�e�S��2�j�Ǘ��u���b�N�ikernel_cfg.c�j
  */
-extern ResourceType		isrcb_lastres[];	/* 最後に獲得したリソース */
+extern ResourceType		isrcb_lastres[];	/* �Ō�Ɋl���������\�[�X */
 
 /*
- *  ISR（カテゴリ2）の最高優先レベル（kernel_cfg.c）
+ *  ISR�i�J�e�S��2�j�̍ō��D�惌�x���ikernel_cfg.c�j
  */
 extern const IPL		ipl_maxisr2;
 
 /*
- *  実行中のISR（カテゴリ2）
+ *  ���s����ISR�i�J�e�S��2�j
  *
- *  ISR（カテゴリ2）を実行していない時は，ISRID_NULL にする．
+ *  ISR�i�J�e�S��2�j�����s���Ă��Ȃ����́CISRID_NULL �ɂ���D
  */
 extern IsrType		runisr;
 
 /*
- *  SuspendAllInterrupts のネスト回数
+ *  SuspendAllInterrupts �̃l�X�g��
  */
-extern UINT8		sus_all_cnt;	/* SuspendAllInterrupts のネスト回数 */
+extern UINT8		sus_all_cnt;	/* SuspendAllInterrupts �̃l�X�g�� */
 
 /*
- *  割込み管理機能の初期化
+ *  �����݊Ǘ��@�\�̏�����
  */
 extern void	interrupt_initialize(void);
 

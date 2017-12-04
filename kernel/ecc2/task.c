@@ -9,37 +9,37 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
 /*
- *	タスク管理モジュール(ECC2)
+ *	�^�X�N�Ǘ����W���[��(ECC2)
  */
 
 #include "osek_kernel.h"
@@ -49,7 +49,7 @@
 #include "cpu_context.h"
 
 /*
- *  スタティック関数のプロトタイプ宣言
+ *  �X�^�e�B�b�N�֐��̃v���g�^�C�v�錾
  */
 Inline void	ready_insert_first(Priority pri, TaskType tskid);
 Inline void	ready_insert_last(Priority pri, TaskType tskid);
@@ -57,22 +57,22 @@ Inline TaskType	ready_delete_first(Priority pri);
 Inline Priority	bitmap_search(UINT16 bitmap);
 
 /*
- *  レディキュー
+ *  ���f�B�L���[
  *
- *  レディキューには実行可能状態のタスクのみをつなぐこととし，実行状態
- *  のタスクはレディキューからは外す．厳密には，schedtsk をレディキュー
- *  から外す（割込み処理中には，runtsk がレディキューから外れているとは
- *  限らない）．
- *  レディキューは，優先度毎の単方向リンクキューで構成する．レディキュー
- *  の先頭のタスクIDを ready_queue_first に，末尾のタスクID を
- *  ready_queue_last に保持する．レディキューが空の時は，ready_queue_first 
- *  を TSKID_NULL とし，ready_queue_last は不定とする．
+ *  ���f�B�L���[�ɂ͎��s�\��Ԃ̃^�X�N�݂̂��Ȃ����ƂƂ��C���s���
+ *  �̃^�X�N�̓��f�B�L���[����͊O���D�����ɂ́Cschedtsk �����f�B�L���[
+ *  ����O���i�����ݏ������ɂ́Cruntsk �����f�B�L���[����O��Ă���Ƃ�
+ *  ����Ȃ��j�D
+ *  ���f�B�L���[�́C�D��x���̒P���������N�L���[�ō\������D���f�B�L���[
+ *  �̐擪�̃^�X�NID�� ready_queue_first �ɁC�����̃^�X�NID ��
+ *  ready_queue_last �ɕێ�����D���f�B�L���[����̎��́Cready_queue_first 
+ *  �� TSKID_NULL �Ƃ��Cready_queue_last �͕s��Ƃ���D
  */
 static TaskType ready_queue_first[TNUM_PRIORITY];
 static TaskType ready_queue_last[TNUM_PRIORITY];
 
 /*
- *  レディキューの先頭への挿入
+ *  ���f�B�L���[�̐擪�ւ̑}��
  */
 Inline void
 ready_insert_first(Priority pri, TaskType tskid)
@@ -89,7 +89,7 @@ ready_insert_first(Priority pri, TaskType tskid)
 }
 
 /*
- *  レディキューの末尾への挿入
+ *  ���f�B�L���[�̖����ւ̑}��
  */
 Inline void
 ready_insert_last(Priority pri, TaskType tskid)
@@ -106,7 +106,7 @@ ready_insert_last(Priority pri, TaskType tskid)
 }
 
 /*
- *  レディキューの先頭タスクの削除
+ *  ���f�B�L���[�̐擪�^�X�N�̍폜
  */
 Inline TaskType
 ready_delete_first(Priority pri)
@@ -120,24 +120,24 @@ ready_delete_first(Priority pri)
 }
 
 /*
- *  ビットマップサーチ関数
+ *  �r�b�g�}�b�v�T�[�`�֐�
  *
- *  bitmap 内の 1 のビットの内，最も上記（左）のものをサーチし，そのビ
- *  ット番号を返す．ビット番号は，最下位ビットを 0 とする．bitmap に 0
- *  を指定してはならない．この関数では，優先度が16段階以下であることを
- *  仮定し，bitmap の下位16ビットのみをサーチする．
- *  ビットサーチ命令を持つプロセッサでは，ビットサーチ命令を使うように
- *  書き直した方が効率が良いだろう．このような場合には，cpu_insn.h で
- *  ビットサーチ命令を使った bitmap_search を定義し，CPU_BITMAP_SEARCH 
- *  をマクロ定義すればよい．また，ビットサーチ命令のサーチ方向が逆など
- *  の理由で優先度とビットとの対応を変更したい場合には，PRIMAP_BIT を
- *  マクロ定義すればよい．
- *  また，標準ライブラリに ffs があるなら，次のように定義して標準ライ
- *  ブラリを使った方が効率が良い可能性もある．
+ *  bitmap ���� 1 �̃r�b�g�̓��C�ł���L�i���j�̂��̂��T�[�`���C���̃r
+ *  �b�g�ԍ���Ԃ��D�r�b�g�ԍ��́C�ŉ��ʃr�b�g�� 0 �Ƃ���Dbitmap �� 0
+ *  ���w�肵�Ă͂Ȃ�Ȃ��D���̊֐��ł́C�D��x��16�i�K�ȉ��ł��邱�Ƃ�
+ *  ���肵�Cbitmap �̉���16�r�b�g�݂̂��T�[�`����D
+ *  �r�b�g�T�[�`���߂����v���Z�b�T�ł́C�r�b�g�T�[�`���߂��g���悤��
+ *  ���������������������ǂ����낤�D���̂悤�ȏꍇ�ɂ́Ccpu_insn.h ��
+ *  �r�b�g�T�[�`���߂��g���� bitmap_search ���`���CCPU_BITMAP_SEARCH 
+ *  ���}�N����`����΂悢�D�܂��C�r�b�g�T�[�`���߂̃T�[�`�������t�Ȃ�
+ *  �̗��R�ŗD��x�ƃr�b�g�Ƃ̑Ή���ύX�������ꍇ�ɂ́CPRIMAP_BIT ��
+ *  �}�N����`����΂悢�D
+ *  �܂��C�W�����C�u������ ffs ������Ȃ�C���̂悤�ɒ�`���ĕW�����C
+ *  �u�������g���������������ǂ��\��������D
  *	#define PRIMAP_BIT(pri)	(0x8000u >> (pri))
  *	#define	bitmap_search(bitmap) (16 - ffs(bitmap))
- *  μITRON仕様とは優先度の意味が逆のため，サーチする方向が逆になって
- *  いる．bitmap_search を置き換える場合には，注意が必要である．
+ *  ��ITRON�d�l�Ƃ͗D��x�̈Ӗ����t�̂��߁C�T�[�`����������t�ɂȂ���
+ *  ����Dbitmap_search ��u��������ꍇ�ɂ́C���ӂ��K�v�ł���D
  */
 #ifndef PRIMAP_BIT
 #define	PRIMAP_BIT(pri)		(1u << (pri))
@@ -167,29 +167,29 @@ bitmap_search(UINT16 bitmap)
 #endif /* CPU_BITMAP_SEARCH */
 
 /*
- *  実行状態のタスク
+ *  ���s��Ԃ̃^�X�N
  */
 TaskType	runtsk;
 
 /*
- *  最高優先順位タスク
+ *  �ō��D�揇�ʃ^�X�N
  */
 TaskType	schedtsk;
 
 /*
- *  レディキュー中の最高優先度
+ *  ���f�B�L���[���̍ō��D��x
  */
 Priority	nextpri;
 
 /*
- *  レディキューに入っているタスクの優先度のビットマップ
+ *  ���f�B�L���[�ɓ����Ă���^�X�N�̗D��x�̃r�b�g�}�b�v
  *
- *  レディキューが空の時（実行可能状態のタスクが無い時）は 0 にする．
+ *  ���f�B�L���[����̎��i���s�\��Ԃ̃^�X�N���������j�� 0 �ɂ���D
  */
 static UINT16	ready_primap;
 
 /*
- *  タスク管理モジュールの初期化
+ *  �^�X�N�Ǘ����W���[���̏�����
  */
 void
 task_initialize(void)
@@ -218,10 +218,10 @@ task_initialize(void)
 }
 
 /*
- *  タスクの起動
+ *  �^�X�N�̋N��
  *
- *  TerminateTask や ChainTask の中で，自タスクに対して make_active を
- *  呼ぶ場合があるので注意する．
+ *  TerminateTask �� ChainTask �̒��ŁC���^�X�N�ɑ΂��� make_active ��
+ *  �Ăԏꍇ������̂Œ��ӂ���D
  */
 BOOL
 make_active(TaskType tskid)
@@ -237,7 +237,7 @@ make_active(TaskType tskid)
 }
 
 /*
- *  実行できる状態への移行
+ *  ���s�ł����Ԃւ̈ڍs
  */
 BOOL
 make_runnable(TaskType tskid)
@@ -250,8 +250,8 @@ make_runnable(TaskType tskid)
 		schedpri = tcb_curpri[schedtsk];
 		if (pri <= schedpri) {
 			/*
-			 *  schedtsk の方が優先度が高い場合，tskid をレ
-			 *  ディキューの最後に入れる．
+			 *  schedtsk �̕����D��x�������ꍇ�Ctskid ����
+			 *  �f�B�L���[�̍Ō�ɓ����D
 			 */
 			ready_insert_last(pri, tskid);
 			ready_primap |= PRIMAP_BIT(pri);
@@ -261,8 +261,8 @@ make_runnable(TaskType tskid)
 			return(FALSE);
 		}
 		/*
-		 *  tskid の方が優先度が高い場合，schedtsk をレディキュー
-		 *  の先頭に入れ，tskid を新しい schedtsk とする．
+		 *  tskid �̕����D��x�������ꍇ�Cschedtsk �����f�B�L���[
+		 *  �̐擪�ɓ���Ctskid ��V���� schedtsk �Ƃ���D
 		 */
 		ready_insert_first(schedpri, schedtsk);
 		ready_primap |= PRIMAP_BIT(schedpri);
@@ -273,7 +273,7 @@ make_runnable(TaskType tskid)
 }
 
 /*
- *  最高優先順位タスクのサーチ
+ *  �ō��D�揇�ʃ^�X�N�̃T�[�`
  */
 void
 search_schedtsk(void)
@@ -284,7 +284,7 @@ search_schedtsk(void)
 	else {
 		schedtsk = ready_delete_first(nextpri);
 		if (ready_queue_first[nextpri] == TSKID_NULL) {
-			ready_primap &= ‾PRIMAP_BIT(nextpri);
+			ready_primap &= ~PRIMAP_BIT(nextpri);
 			nextpri = (ready_primap == ((UINT16) 0)) ?
 						TPRI_MINTASK : bitmap_search(ready_primap);
 		}
@@ -292,7 +292,7 @@ search_schedtsk(void)
 }
 
 /*
- *  タスクのプリエンプト
+ *  �^�X�N�̃v���G���v�g
  */
 void
 preempt(void)

@@ -9,93 +9,93 @@
 ;              Graduate School of Information Science, Nagoya Univ., JAPAN
 ;  Copyright (C) 2005-2006 by Witz Corporation, JAPAN
 ; 
-;  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
-;  によって公表されている GNU General Public License の Version 2 に記
-;  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
-;  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
-;  利用と呼ぶ）することを無償で許諾する．
-;  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
-;      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
-;      スコード中に含まれていること．
-;  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
-;      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
-;      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
-;      の無保証規定を掲載すること．
-;  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
-;      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
-;      と．
-;    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
-;        作権表示，この利用条件および下記の無保証規定を掲載すること．
-;    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
-;        報告すること．
-;  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
-;      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+;  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+;  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+;  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+;  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+;  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+;  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+;      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+;      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+;  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+;      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+;      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+;      �̖��ۏ؋K����f�ڂ��邱�ƁD
+;  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+;      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+;      �ƁD
+;    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+;        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+;    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+;        �񍐂��邱�ƁD
+;  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+;      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
 ; 
-;  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
-;  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
-;  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
-;  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+;  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+;  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+;  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+;  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
 ; 
 ;
 
 ;
-;	ターゲットシステム依存モジュール アセンブリ言語部（OAKS16-mini用）
+;	�^�[�Q�b�g�V�X�e���ˑ����W���[�� �A�Z���u�����ꕔ�iOAKS16-mini�p�j
 ;
 
 ;
-;	SFR 定義
+;	SFR ��`
 ;
-PRCR  .EQU		000AH			; プロテクトレジスタ
-PRC0  .BTEQU	0,PRCR			; システムクロックレジスタビット
-PRC1  .BTEQU	1,PRCR			; プロセッサモードレジスタビット
+PRCR  .EQU		000AH			; �v���e�N�g���W�X�^
+PRC0  .BTEQU	0,PRCR			; �V�X�e���N���b�N���W�X�^�r�b�g
+PRC1  .BTEQU	1,PRCR			; �v���Z�b�T���[�h���W�X�^�r�b�g
 
-PM0   .EQU		0004H			; プロセッサモードレジスタ０
-PM1   .EQU		0005H			; プロセッサモードレジスタ１
+PM0   .EQU		0004H			; �v���Z�b�T���[�h���W�X�^�O
+PM1   .EQU		0005H			; �v���Z�b�T���[�h���W�X�^�P
 
-CM0   .EQU		0006H			; クロックモードレジスタ０
-CM1   .EQU		0007H			; クロックモードレジスタ１
+CM0   .EQU		0006H			; �N���b�N���[�h���W�X�^�O
+CM1   .EQU		0007H			; �N���b�N���[�h���W�X�^�P
 
 	.section	program, code, align
 
 ;
-;	低レベルのターゲットシステム依存の初期化
+;	�჌�x���̃^�[�Q�b�g�V�X�e���ˑ��̏�����
 ;
-;	スタートアップモジュールの中で，スタック初期化の後に呼び出される．
+;	�X�^�[�g�A�b�v���W���[���̒��ŁC�X�^�b�N�������̌�ɌĂяo�����D
 ;
 	.glb hardware_init_hook
 ;
-;	hardware_init_hookを無効にする場合は下記.equ 定義をコメントアウトし，
-;	関数の記述を削除すること．
+;	hardware_init_hook�𖳌��ɂ���ꍇ�͉��L.equ ��`���R�����g�A�E�g���C
+;	�֐��̋L�q���폜���邱�ƁD
 ;
 ;	hardware_init_hook .equ 0
 hardware_init_hook:
 	;
-	;  プロセッサモード設定
+	;  �v���Z�b�T���[�h�ݒ�
 	;
-	bset		PRC1			; プロセッサモードレジスタ書き込みイネーブル
-	mov.b:s		#00000000b, PM0	; シングルチップモード
-	mov.b:s		#00000000b, PM1	; 非拡張、ノーウェイト
-	bclr		PRC1			; プロセッサモードレジスタ書き込みディゼーブル
+	bset		PRC1			; �v���Z�b�T���[�h���W�X�^�������݃C�l�[�u��
+	mov.b:s		#00000000b, PM0	; �V���O���`�b�v���[�h
+	mov.b:s		#00000000b, PM1	; ��g���A�m�[�E�F�C�g
+	bclr		PRC1			; �v���Z�b�T���[�h���W�X�^�������݃f�B�[�[�u��
 
 	;
-	;  動作クロック設定
+	;  ����N���b�N�ݒ�
 	;
-	bset		PRC0			; クロックコントロールレジスタ書き込みイネーブル
-	mov.b:s		#00001000b, CM0	; 発信
-	mov.b:s		#00100000b, CM1		; 分周なし
-	bclr		PRC0			; レジスタ書き込みディゼーブル
+	bset		PRC0			; �N���b�N�R���g���[�����W�X�^�������݃C�l�[�u��
+	mov.b:s		#00001000b, CM0	; ���M
+	mov.b:s		#00100000b, CM1		; �����Ȃ�
+	bclr		PRC0			; ���W�X�^�������݃f�B�[�[�u��
 	rts
 
 ;
-;	低レベルのソフトウェア依存の初期化
+;	�჌�x���̃\�t�g�E�F�A�ˑ��̏�����
 ;
-;	スタートアップモジュールの中で，ユーザメイン関数呼び出しの前に
-;	呼び出される．
+;	�X�^�[�g�A�b�v���W���[���̒��ŁC���[�U���C���֐��Ăяo���̑O��
+;	�Ăяo�����D
 ;
 	.glb software_init_hook
 ;
-;	software_init_hookを有効にする場合は下記.equ 定義をコメント化し，
-;	関数シンボルのコメントアウトと関数内部の記述を行うこと．
+;	software_init_hook��L���ɂ���ꍇ�͉��L.equ ��`���R�����g�����C
+;	�֐��V���{���̃R�����g�A�E�g�Ɗ֐������̋L�q���s�����ƁD
 ;
 	software_init_hook .equ 0
 ;software_init_hook:

@@ -2,7 +2,7 @@
  *  kernel_cfg.c
  *  Fri Oct 31 14:54:27 2008
  *  SG Version 2.10
- *  sg.exe sample1_ecc2.oil -template=..¥..¥..¥config¥m32c-renesas¥oaks32¥m32c83.sgt -I..¥..¥..¥sg¥impl_oil -I..¥..¥..¥syslib -I..¥..¥..¥syslib¥m32c-renesas¥oaks32 -os=ECC2
+ *  sg.exe sample1_ecc2.oil -template=..\..\..\config\m32c-renesas\oaks32\m32c83.sgt -I..\..\..\sg\impl_oil -I..\..\..\syslib -I..\..\..\syslib\m32c-renesas\oaks32 -os=ECC2
  */
 #include "osek_kernel.h"
 #include "kernel_id.h"
@@ -176,32 +176,32 @@ void object_initialize( void )
  * 
  *  Copyright (C) 2006 by Witz Corporation, JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
@@ -211,7 +211,7 @@ void object_initialize( void )
 
 
 
-/* 割込み入り口処理外部参照 */
+/* �����ݓ���������O���Q�� */
 ISR1_EXTERNAL(RxHwSerialInt);
 ISR2_EXTERNAL(SysTimerInt);
 ISR1_EXTERNAL(HwCnt1Int);
@@ -219,7 +219,7 @@ ISR2_EXTERNAL(CounterInt);
 ISR2_EXTERNAL(HwCnt2Int);
 
 
-/* 割込み入り口処理	*/
+/* �����ݓ��������	*/
 ISR1_ENTRY(RxHwSerialInt);
 ISR2_ENTRY(SysTimerInt,(0));
 ISR1_ENTRY(HwCnt1Int);
@@ -227,92 +227,92 @@ ISR2_ENTRY(CounterInt,(1));
 ISR2_ENTRY(HwCnt2Int,(2));
 
 
-/* ベクタテーブル登録シンボル外部参照	*/
-UNUSED_INT_EXTERNAL();	/* 未定義の割込み */
-asm("	.glb	_start");	/* リセット */
+/* �x�N�^�e�[�u���o�^�V���{���O���Q��	*/
+UNUSED_INT_EXTERNAL();	/* ����`�̊����� */
+asm("	.glb	_start");	/* ���Z�b�g */
 
-/* 割込み可変ベクタテーブル	*/
+/* �����݉σx�N�^�e�[�u��	*/
 asm("	.section vvector");
 
-UNUSED_INT_SYMBOL(); /*  0, +0x00: BRK命令	*/
-UNUSED_INT_SYMBOL(); /*  1, +0x04: 予約領域	*/
-UNUSED_INT_SYMBOL(); /*  2, +0x08: 予約領域	*/
-UNUSED_INT_SYMBOL(); /*  3, +0x0C: 予約領域	*/
-UNUSED_INT_SYMBOL(); /*  4, +0x10: 予約領域	*/
-UNUSED_INT_SYMBOL(); /*  5, +0x14: 予約領域	*/
-UNUSED_INT_SYMBOL(); /*  6, +0x18: 予約領域	*/
-UNUSED_INT_SYMBOL(); /*  7, +0x1C: A/D変換1	*/
+UNUSED_INT_SYMBOL(); /*  0, +0x00: BRK����	*/
+UNUSED_INT_SYMBOL(); /*  1, +0x04: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /*  2, +0x08: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /*  3, +0x0C: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /*  4, +0x10: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /*  5, +0x14: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /*  6, +0x18: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /*  7, +0x1C: A/D�ϊ�1	*/
 UNUSED_INT_SYMBOL(); /*  8, +0x20: DMA0	*/
 UNUSED_INT_SYMBOL(); /*  9, +0x24: DMA1	*/
 UNUSED_INT_SYMBOL(); /* 10, +0x28: DMA2	*/
 UNUSED_INT_SYMBOL(); /* 11, +0x2C: DMA3	*/
-ISR2_SYMBOL(SysTimerInt); /* 12, +0x30: タイマA0	*/
-ISR2_SYMBOL(CounterInt); /* 13, +0x34: タイマA1	*/
-UNUSED_INT_SYMBOL(); /* 14, +0x38: タイマA2	*/
-UNUSED_INT_SYMBOL(); /* 15, +0x3C: タイマA3	*/
-UNUSED_INT_SYMBOL(); /* 16, +0x40: タイマA4	*/
-UNUSED_INT_SYMBOL(); /* 17, +0x44: UART0送信,NACK	*/
-UNUSED_INT_SYMBOL(); /* 18, +0x48: UART0受信,ACK	*/
-UNUSED_INT_SYMBOL(); /* 19, +0x4C: UART1送信,NACK	*/
-ISR1_SYMBOL(RxHwSerialInt); /* 20, +0x50: UART1受信,ACK	*/
-ISR1_SYMBOL(HwCnt1Int); /* 21, +0x54: タイマB0	*/
-ISR2_SYMBOL(HwCnt2Int); /* 22, +0x58: タイマB1	*/
-UNUSED_INT_SYMBOL(); /* 23, +0x5C: タイマB2	*/
-UNUSED_INT_SYMBOL(); /* 24, +0x60: タイマB3	*/
-UNUSED_INT_SYMBOL(); /* 25, +0x64: タイマB4	*/
-UNUSED_INT_SYMBOL(); /* 26, +0x68: 外部割込み5	*/
-UNUSED_INT_SYMBOL(); /* 27, +0x6C: 外部割込み4	*/
-UNUSED_INT_SYMBOL(); /* 28, +0x70: 外部割込み3	*/
-UNUSED_INT_SYMBOL(); /* 29, +0x74: 外部割込み2	*/
-UNUSED_INT_SYMBOL(); /* 30, +0x78: 外部割込み1	*/
-UNUSED_INT_SYMBOL(); /* 31, +0x7C: 外部割込み0	*/
-UNUSED_INT_SYMBOL(); /* 32, +0x80: タイマB5	*/
-UNUSED_INT_SYMBOL(); /* 33, +0x84: UART2送信,NACK	*/
-UNUSED_INT_SYMBOL(); /* 34, +0x88: UART2受信,ACK	*/
-UNUSED_INT_SYMBOL(); /* 35, +0x8C: UART3送信,NACK	*/
-UNUSED_INT_SYMBOL(); /* 36, +0x90: UART3受信,ACK	*/
-UNUSED_INT_SYMBOL(); /* 37, +0x94: UART4送信,NACK	*/
-UNUSED_INT_SYMBOL(); /* 38, +0x98: UART4受信,ACK	*/
-UNUSED_INT_SYMBOL(); /* 39, +0x9C: バス衝突検出/スタートコンディション検出/ストップコンディション検出(UART2)/障害エラー	*/
-UNUSED_INT_SYMBOL(); /* 40, +0xA0: バス衝突検出/スタートコンディション検出/ストップコンディション検出(UART3/UART0)/障害エラー	*/
-UNUSED_INT_SYMBOL(); /* 41, +0xA4: バス衝突検出/スタートコンディション検出/ストップコンディション検出(UART4/UART1)/障害エラー	*/
-UNUSED_INT_SYMBOL(); /* 42, +0xA8: A/D変換0	*/
-UNUSED_INT_SYMBOL(); /* 43, +0xAC: キー入力	*/
-UNUSED_INT_SYMBOL(); /* 44, +0xB0: インテリジェントI/O0	*/
-UNUSED_INT_SYMBOL(); /* 45, +0xB4: インテリジェントI/O1	*/
-UNUSED_INT_SYMBOL(); /* 46, +0xB8: インテリジェントI/O2	*/
-UNUSED_INT_SYMBOL(); /* 47, +0xBC: インテリジェントI/O3	*/
-UNUSED_INT_SYMBOL(); /* 48, +0xC0: インテリジェントI/O4	*/
-UNUSED_INT_SYMBOL(); /* 49, +0xC4: インテリジェントI/O5	*/
-UNUSED_INT_SYMBOL(); /* 50, +0xC8: インテリジェントI/O6	*/
-UNUSED_INT_SYMBOL(); /* 51, +0xCC: インテリジェントI/O7	*/
-UNUSED_INT_SYMBOL(); /* 52, +0xD0: インテリジェントI/O8	*/
-UNUSED_INT_SYMBOL(); /* 53, +0xD4: インテリジェントI/O9/CAN0	*/
-UNUSED_INT_SYMBOL(); /* 54, +0xD4: インテリジェントI/O10/CAN1	*/
-UNUSED_INT_SYMBOL(); /* 55, +0xDC: 予約領域	*/
-UNUSED_INT_SYMBOL(); /* 56, +0xE0: 予約領域	*/
-UNUSED_INT_SYMBOL(); /* 57, +0xE8: インテリジェントI/O11/CAN2	*/
-UNUSED_INT_SYMBOL(); /* 58, +0xE8: 予約領域	*/
-UNUSED_INT_SYMBOL(); /* 59, +0xEC: 予約領域	*/
-UNUSED_INT_SYMBOL(); /* 60, +0xF0: 予約領域	*/
-UNUSED_INT_SYMBOL(); /* 61, +0xF4: 予約領域	*/
-UNUSED_INT_SYMBOL(); /* 62, +0xF8: 予約領域	*/
-UNUSED_INT_SYMBOL(); /* 63, +0xFC: 予約領域	*/
+ISR2_SYMBOL(SysTimerInt); /* 12, +0x30: �^�C�}A0	*/
+ISR2_SYMBOL(CounterInt); /* 13, +0x34: �^�C�}A1	*/
+UNUSED_INT_SYMBOL(); /* 14, +0x38: �^�C�}A2	*/
+UNUSED_INT_SYMBOL(); /* 15, +0x3C: �^�C�}A3	*/
+UNUSED_INT_SYMBOL(); /* 16, +0x40: �^�C�}A4	*/
+UNUSED_INT_SYMBOL(); /* 17, +0x44: UART0���M,NACK	*/
+UNUSED_INT_SYMBOL(); /* 18, +0x48: UART0��M,ACK	*/
+UNUSED_INT_SYMBOL(); /* 19, +0x4C: UART1���M,NACK	*/
+ISR1_SYMBOL(RxHwSerialInt); /* 20, +0x50: UART1��M,ACK	*/
+ISR1_SYMBOL(HwCnt1Int); /* 21, +0x54: �^�C�}B0	*/
+ISR2_SYMBOL(HwCnt2Int); /* 22, +0x58: �^�C�}B1	*/
+UNUSED_INT_SYMBOL(); /* 23, +0x5C: �^�C�}B2	*/
+UNUSED_INT_SYMBOL(); /* 24, +0x60: �^�C�}B3	*/
+UNUSED_INT_SYMBOL(); /* 25, +0x64: �^�C�}B4	*/
+UNUSED_INT_SYMBOL(); /* 26, +0x68: �O��������5	*/
+UNUSED_INT_SYMBOL(); /* 27, +0x6C: �O��������4	*/
+UNUSED_INT_SYMBOL(); /* 28, +0x70: �O��������3	*/
+UNUSED_INT_SYMBOL(); /* 29, +0x74: �O��������2	*/
+UNUSED_INT_SYMBOL(); /* 30, +0x78: �O��������1	*/
+UNUSED_INT_SYMBOL(); /* 31, +0x7C: �O��������0	*/
+UNUSED_INT_SYMBOL(); /* 32, +0x80: �^�C�}B5	*/
+UNUSED_INT_SYMBOL(); /* 33, +0x84: UART2���M,NACK	*/
+UNUSED_INT_SYMBOL(); /* 34, +0x88: UART2��M,ACK	*/
+UNUSED_INT_SYMBOL(); /* 35, +0x8C: UART3���M,NACK	*/
+UNUSED_INT_SYMBOL(); /* 36, +0x90: UART3��M,ACK	*/
+UNUSED_INT_SYMBOL(); /* 37, +0x94: UART4���M,NACK	*/
+UNUSED_INT_SYMBOL(); /* 38, +0x98: UART4��M,ACK	*/
+UNUSED_INT_SYMBOL(); /* 39, +0x9C: �o�X�Փˌ��o/�X�^�[�g�R���f�B�V�������o/�X�g�b�v�R���f�B�V�������o(UART2)/��Q�G���[	*/
+UNUSED_INT_SYMBOL(); /* 40, +0xA0: �o�X�Փˌ��o/�X�^�[�g�R���f�B�V�������o/�X�g�b�v�R���f�B�V�������o(UART3/UART0)/��Q�G���[	*/
+UNUSED_INT_SYMBOL(); /* 41, +0xA4: �o�X�Փˌ��o/�X�^�[�g�R���f�B�V�������o/�X�g�b�v�R���f�B�V�������o(UART4/UART1)/��Q�G���[	*/
+UNUSED_INT_SYMBOL(); /* 42, +0xA8: A/D�ϊ�0	*/
+UNUSED_INT_SYMBOL(); /* 43, +0xAC: �L�[����	*/
+UNUSED_INT_SYMBOL(); /* 44, +0xB0: �C���e���W�F���gI/O0	*/
+UNUSED_INT_SYMBOL(); /* 45, +0xB4: �C���e���W�F���gI/O1	*/
+UNUSED_INT_SYMBOL(); /* 46, +0xB8: �C���e���W�F���gI/O2	*/
+UNUSED_INT_SYMBOL(); /* 47, +0xBC: �C���e���W�F���gI/O3	*/
+UNUSED_INT_SYMBOL(); /* 48, +0xC0: �C���e���W�F���gI/O4	*/
+UNUSED_INT_SYMBOL(); /* 49, +0xC4: �C���e���W�F���gI/O5	*/
+UNUSED_INT_SYMBOL(); /* 50, +0xC8: �C���e���W�F���gI/O6	*/
+UNUSED_INT_SYMBOL(); /* 51, +0xCC: �C���e���W�F���gI/O7	*/
+UNUSED_INT_SYMBOL(); /* 52, +0xD0: �C���e���W�F���gI/O8	*/
+UNUSED_INT_SYMBOL(); /* 53, +0xD4: �C���e���W�F���gI/O9/CAN0	*/
+UNUSED_INT_SYMBOL(); /* 54, +0xD4: �C���e���W�F���gI/O10/CAN1	*/
+UNUSED_INT_SYMBOL(); /* 55, +0xDC: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /* 56, +0xE0: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /* 57, +0xE8: �C���e���W�F���gI/O11/CAN2	*/
+UNUSED_INT_SYMBOL(); /* 58, +0xE8: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /* 59, +0xEC: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /* 60, +0xF0: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /* 61, +0xF4: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /* 62, +0xF8: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /* 63, +0xFC: �\��̈�	*/
 
-/* 割込み固定ベクタテーブル	*/
+/* �����݌Œ�x�N�^�e�[�u��	*/
 asm("	.section fvector");
 
-UNUSED_INT_SYMBOL(); /* 64, 0xFFFFDC: 未定義命令	*/
-UNUSED_INT_SYMBOL(); /* 65, 0xFFFFE0: オーバーフロー	*/
-UNUSED_INT_SYMBOL(); /* 66, 0xFFFFE4: BRK命令	*/
-UNUSED_INT_SYMBOL(); /* 67, 0xFFFFE8: アドレス一致	*/
-UNUSED_INT_SYMBOL(); /* 68, 0xFFFFEC: 予約領域	*/
-UNUSED_INT_SYMBOL(); /* 69, 0xFFFFF0: 監視タイマ/発振停止検出	*/
-UNUSED_INT_SYMBOL(); /* 70, 0xFFFFF4: 予約領域	*/
+UNUSED_INT_SYMBOL(); /* 64, 0xFFFFDC: ����`����	*/
+UNUSED_INT_SYMBOL(); /* 65, 0xFFFFE0: �I�[�o�[�t���[	*/
+UNUSED_INT_SYMBOL(); /* 66, 0xFFFFE4: BRK����	*/
+UNUSED_INT_SYMBOL(); /* 67, 0xFFFFE8: �A�h���X��v	*/
+UNUSED_INT_SYMBOL(); /* 68, 0xFFFFEC: �\��̈�	*/
+UNUSED_INT_SYMBOL(); /* 69, 0xFFFFF0: �Ď��^�C�}/���U��~���o	*/
+UNUSED_INT_SYMBOL(); /* 70, 0xFFFFF4: �\��̈�	*/
 UNUSED_INT_SYMBOL(); /* 71, 0xFFFFF8: NMI	*/
-asm("	.lword	_start"); /* 72, 0xFFFFFC: リセット	*/
+asm("	.lword	_start"); /* 72, 0xFFFFFC: ���Z�b�g	*/
 
-/* フックルーチン	*/
+/* �t�b�N���[�`��	*/
 
 
 

@@ -2,7 +2,7 @@
  *  kernel_id.h
  *  Fri Nov 14 08:54:54 2008
  *  SG Version 2.10
- *  sg.exe -template=..¥..¥..¥..¥config¥sh2A-renesas¥sh2A_72513.sgt -I ..¥..¥..¥..¥sg¥impl_oil -odep=kernel_support.src -os=ECC2 D:¥toppers_automotive_kernel¥tools¥sh2A-renesas¥sample¥SG¥sample1.oil
+ *  sg.exe -template=..\..\..\..\config\sh2A-renesas\sh2A_72513.sgt -I ..\..\..\..\sg\impl_oil -odep=kernel_support.src -os=ECC2 D:\toppers_automotive_kernel\tools\sh2A-renesas\sample\SG\sample1.oil
  */
 #ifndef KERNEL_ID_H
 #define KERNEL_ID_H

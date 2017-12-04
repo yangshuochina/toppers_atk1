@@ -11,37 +11,37 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
 /*
- *  プロセッサ依存モジュール（M32C用）
+ *  �v���Z�b�T�ˑ����W���[���iM32C�p�j
  */
 
 
@@ -54,19 +54,19 @@
 #endif /* _MACRO_ONLY */
 
 #ifndef _MACRO_ONLY
-/* インライン関数プロトタイプ宣言	*/
+/* �C�����C���֐��v���g�^�C�v�錾	*/
 Inline void set_ipl(UINT8 ipl);
 Inline UINT8 current_ipl(void);
 
 
 /*
- *  本OSカーネルでは割込み制御をIフラグ及びIPLの双方を用いて行う
- *  ことを前提とする．本CPUでは上記条件を満たしているため不足機能を
- *  ソフトウェアで補う必要はない．
+ *  �{OS�J�[�l���ł͊����ݐ����I�t���O�y��IPL�̑o����p���čs��
+ *  ���Ƃ�O��Ƃ���D�{CPU�ł͏�L�����𖞂����Ă��邽�ߕs���@�\��
+ *  �\�t�g�E�F�A�ŕ₤�K�v�͂Ȃ��D
  */
 
 /*
- *  割込み優先度レベル設定
+ *  �����ݗD��x���x���ݒ�
  */
 Inline void set_ipl(UINT8 ipl)
 {
@@ -82,7 +82,7 @@ Inline void set_ipl(UINT8 ipl)
 
 
 /*
- *  割込み優先度レベル取得
+ *  �����ݗD��x���x���擾
  */
 Inline UINT8 current_ipl(void)
 {
@@ -93,27 +93,27 @@ Inline UINT8 current_ipl(void)
 }
 
 
-/*参照プロトタイプ*/
+/*�Q�ƃv���g�^�C�v*/
 /*
- *  プロセッサ依存の初期化(cpu_config.c)
+ *  �v���Z�b�T�ˑ��̏�����(cpu_config.c)
  */
 extern void	cpu_initialize(void);
 
 /*
- *  プロセッサ依存の終了時処理(cpu_config.c)
+ *  �v���Z�b�T�ˑ��̏I��������(cpu_config.c)
  */
 extern void	cpu_terminate(void);
 
-#define DEFINE_CTXB(tnum) ¥
-FP tcxb_pc[tnum]; ¥
+#define DEFINE_CTXB(tnum) \
+FP tcxb_pc[tnum]; \
 VP tcxb_sp[tnum];
 
 extern FP tcxb_pc[];
 extern VP tcxb_sp[];
 
 /*
- *  ディスパッチ周りのアセンブラ関数プロトタイプ宣言
- *  (activate_rは共通部から直接参照しないためここには記載しない)
+ *  �f�B�X�p�b�`����̃A�Z���u���֐��v���g�^�C�v�錾
+ *  (activate_r�͋��ʕ����璼�ڎQ�Ƃ��Ȃ����߂����ɂ͋L�ڂ��Ȃ�)
  */
 extern void  dispatch(void);
 extern void  exit_and_dispatch(void);
@@ -121,18 +121,18 @@ extern void  start_dispatch(void);
 
 
 /*
- *  ISR1生成マクロ
+ *  ISR1�����}�N��
  *
- *  ISR1の全ての処理をユーザが記述する場合は，cpu_defs.h にある無効化マクロ
- *  「OMIT_ISR1_ENTRY」の定義を有効にすること．
+ *  ISR1�̑S�Ă̏��������[�U���L�q����ꍇ�́Ccpu_defs.h �ɂ��閳�����}�N��
+ *  �uOMIT_ISR1_ENTRY�v�̒�`��L���ɂ��邱�ƁD
  */
 
-/* ベクタテーブルからの外部参照宣言生成マクロ	*/
+/* �x�N�^�e�[�u������̊O���Q�Ɛ錾�����}�N��	*/
 /*
- *  割込み入り口実態とベクタテーブルを別ファイルに生成する場合に必要となる．
- *  現状M32Cの全てのシステムで，同一ファイル出力となっているため本マクロは
- *  使用されたいない可能性もある．
- *  別ファイル出力を行う場合を考慮し，記載は残しておく．
+ *  �����ݓ�������Ԃƃx�N�^�e�[�u����ʃt�@�C���ɐ�������ꍇ�ɕK�v�ƂȂ�D
+ *  ����M32C�̑S�ẴV�X�e���ŁC����t�@�C���o�͂ƂȂ��Ă��邽�ߖ{�}�N����
+ *  �g�p���ꂽ���Ȃ��\��������D
+ *  �ʃt�@�C���o�͂��s���ꍇ���l�����C�L�ڂ͎c���Ă����D
  */
 #if defined(OMIT_ISR1_ENTRY)
 #define	ISR1_EXTERNAL(isr)		asm("	.glb	_" #isr )
@@ -140,90 +140,90 @@ extern void  start_dispatch(void);
 #define	ISR1_EXTERNAL(isr)		asm("	.glb	_" #isr "_entry")
 #endif	/* OMIT_ISR1_ENTRY	*/
 
-/* ベクタテーブル登録シンボル生成マクロ	*/
+/* �x�N�^�e�[�u���o�^�V���{�������}�N��	*/
 #if defined(OMIT_ISR1_ENTRY)
 #define	ISR1_SYMBOL(isr)		asm("	.lword	_" #isr )
 #else	/* OMIT_ISR1_ENTRY	*/
 #define	ISR1_SYMBOL(isr)		asm("	.lword	_" #isr "_entry")
 #endif	/* OMIT_ISR1_ENTRY	*/
 
-/* 入口処理の生成マクロ	*/
+/* ���������̐����}�N��	*/
 #if defined(OMIT_ISR1_ENTRY)
 #define ISR1_ENTRY(isr)
 #else	/* OMIT_ISR1_ENTRY	*/
-#define ISR1_ENTRY(isr)¥
-asm("	.glb _" #isr "					");¥
-asm("	.section program, code, align	");¥
-asm("_" #isr "_entry:					");¥
-asm("	push.w	r0				; スクラッチレジスタをタスクスタックへ退避");¥
-asm("	jsr	_" #isr );¥
-asm("	pop.w	r0				; スクラッチレジスタをタスクスタックから復帰");¥
+#define ISR1_ENTRY(isr)\
+asm("	.glb _" #isr "					");\
+asm("	.section program, code, align	");\
+asm("_" #isr "_entry:					");\
+asm("	push.w	r0				; �X�N���b�`���W�X�^���^�X�N�X�^�b�N�֑ޔ�");\
+asm("	jsr	_" #isr );\
+asm("	pop.w	r0				; �X�N���b�`���W�X�^���^�X�N�X�^�b�N���畜�A");\
 asm("	reit	");
 #endif	/* OMIT_ISR1_ENTRY	*/
 
 
 /*
- *  ISR2生成マクロ
+ *  ISR2�����}�N��
  */
 
-/* ベクタテーブルからの外部参照宣言生成マクロ	*/
+/* �x�N�^�e�[�u������̊O���Q�Ɛ錾�����}�N��	*/
 /*
- *  割込み入り口実態とベクタテーブルを別ファイルに生成する場合に必要となる．
- *  現状M32Cの全てのシステムで，同一ファイル出力となっているため本マクロは
- *  使用されたいない可能性もある．
- *  別ファイル出力を行う場合を考慮し，記載は残しておく．
+ *  �����ݓ�������Ԃƃx�N�^�e�[�u����ʃt�@�C���ɐ�������ꍇ�ɕK�v�ƂȂ�D
+ *  ����M32C�̑S�ẴV�X�e���ŁC����t�@�C���o�͂ƂȂ��Ă��邽�ߖ{�}�N����
+ *  �g�p���ꂽ���Ȃ��\��������D
+ *  �ʃt�@�C���o�͂��s���ꍇ���l�����C�L�ڂ͎c���Ă����D
  */
 #define	ISR2_EXTERNAL(isr)		asm("	.glb	_" #isr "_entry")
 
-/* ベクタテーブル登録シンボル生成マクロ	*/
+/* �x�N�^�e�[�u���o�^�V���{�������}�N��	*/
 #define	ISR2_SYMBOL(isr)		asm("	.lword	_" #isr "_entry")
 
-/* 入口処理の生成マクロ	*/
-#define ISR2_ENTRY(isr, isrid)¥
-asm("	.glb _runisr					");¥
-asm("	.glb _ISRMain" #isr "			");¥
-asm("	.glb _interrupt					");¥
-asm("	.section program, code, align	");¥
-asm("_" #isr "_entry:					");¥
-asm("	pushm	r0,r1,r3,a0				; レジスタをタスクスタックへ退避");¥
-asm("	mov.l	#_ISRMain" #isr ", a0	; 割込みハンドラのアドレスをa0へ");¥
-asm("	mov.b	_runisr, r0l			; 前の実行中割込みIDを保持");¥
-asm("	mov.b	#" #isrid ", _runisr	; 今回の実行中割込みIDを設定");¥
-asm("	jmp	_interrupt					; 割込み処理ルーチン後半へ	");
+/* ���������̐����}�N��	*/
+#define ISR2_ENTRY(isr, isrid)\
+asm("	.glb _runisr					");\
+asm("	.glb _ISRMain" #isr "			");\
+asm("	.glb _interrupt					");\
+asm("	.section program, code, align	");\
+asm("_" #isr "_entry:					");\
+asm("	pushm	r0,r1,r3,a0				; ���W�X�^���^�X�N�X�^�b�N�֑ޔ�");\
+asm("	mov.l	#_ISRMain" #isr ", a0	; �����݃n���h���̃A�h���X��a0��");\
+asm("	mov.b	_runisr, r0l			; �O�̎��s��������ID��ێ�");\
+asm("	mov.b	#" #isrid ", _runisr	; ����̎��s��������ID��ݒ�");\
+asm("	jmp	_interrupt					; �����ݏ������[�`���㔼��	");
 
 
 /*
- *  未使用割込み生成マクロ
+ *  ���g�p�����ݐ����}�N��
  */
 
-/* ベクタテーブルからの外部参照宣言生成マクロ	*/
+/* �x�N�^�e�[�u������̊O���Q�Ɛ錾�����}�N��	*/
 #define	UNUSED_INT_EXTERNAL()	asm("	.glb	_unused_interrupt")
 
-/* ベクタテーブル登録シンボル生成マクロ	*/
+/* �x�N�^�e�[�u���o�^�V���{�������}�N��	*/
 #define	UNUSED_INT_SYMBOL()		asm("	.lword	_unused_interrupt")
 
 
 /*
- *  フックルーチンNULLシンボル生成マクロ
+ *  �t�b�N���[�`��NULL�V���{�������}�N��
  */
-#define	NULL_ERRORHOOK ¥
-asm(".glb	$ErrorHook");¥
+#define	NULL_ERRORHOOK \
+asm(".glb	$ErrorHook");\
 asm("$ErrorHook .equ 0");
 
-#define	NULL_STARTUPHOOK ¥
-asm(".glb	_StartupHook"); ¥
+#define	NULL_STARTUPHOOK \
+asm(".glb	_StartupHook"); \
 asm("_StartupHook .equ 0");
 
-#define	NULL_SHUTDOWNHOOK ¥
-asm(".glb	$ShutdownHook"); ¥
+#define	NULL_SHUTDOWNHOOK \
+asm(".glb	$ShutdownHook"); \
 asm("$ShutdownHook .equ 0");
 
-#define	NULL_PRETASKHOOK ¥
-asm(".glb	_PreTaskHook"); ¥
+#define	NULL_PRETASKHOOK \
+asm(".glb	_PreTaskHook"); \
 asm("_PreTaskHook .equ 0");
 
-#define	NULL_POSTTASKHOOK ¥
-asm(".glb	_PostTaskHook"); ¥
+#define	NULL_POSTTASKHOOK \
+asm(".glb	_PostTaskHook"); \
 asm("_PostTaskHook .equ 0");
 
 

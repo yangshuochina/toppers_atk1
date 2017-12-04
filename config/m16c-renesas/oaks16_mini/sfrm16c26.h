@@ -5,55 +5,55 @@
  * 
  *  Copyright (C) 2006 by Witz Corporation, JAPAN
  * 
- *  ä¸Šè¨˜è‘—ä½œæ¨©è€…ã¯ï¼Œä»¥ä¸‹ã® (1)ã€œ(4) ã®æ¡ä»¶ã‹ï¼ŒFree Software Foundation 
- *  ã«ã‚ˆã£ã¦å…¬è¡¨ã•ã‚Œã¦ã„ã‚‹ GNU General Public License ã® Version 2 ã«è¨˜
- *  è¿°ã•ã‚Œã¦ã„ã‚‹æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã«é™ã‚Šï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ï¼ˆæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢
- *  ã‚’æ”¹å¤‰ã—ãŸã‚‚ã®ã‚’å«ã‚€ï¼ä»¥ä¸‹åŒã˜ï¼‰ã‚’ä½¿ç”¨ãƒ»è¤‡è£½ãƒ»æ”¹å¤‰ãƒ»å†é…å¸ƒï¼ˆä»¥ä¸‹ï¼Œ
- *  åˆ©ç”¨ã¨å‘¼ã¶ï¼‰ã™ã‚‹ã“ã¨ã‚’ç„¡å„Ÿã§è¨±è«¾ã™ã‚‹ï¼
- *  (1) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®å½¢ã§åˆ©ç”¨ã™ã‚‹å ´åˆã«ã¯ï¼Œä¸Šè¨˜ã®è‘—ä½œ
- *      æ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šãŒï¼Œãã®ã¾ã¾ã®å½¢ã§ã‚½ãƒ¼
- *      ã‚¹ã‚³ãƒ¼ãƒ‰ä¸­ã«å«ã¾ã‚Œã¦ã„ã‚‹ã“ã¨ï¼
- *  (2) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œãƒ©ã‚¤ãƒ–ãƒ©ãƒªå½¢å¼ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
- *      ç”¨ã§ãã‚‹å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œå†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨
- *      è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜
- *      ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
- *  (3) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œæ©Ÿå™¨ã«çµ„ã¿è¾¼ã‚€ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
- *      ç”¨ã§ããªã„å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œæ¬¡ã®ã„ãšã‚Œã‹ã®æ¡ä»¶ã‚’æº€ãŸã™ã“
- *      ã¨ï¼
- *    (a) å†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—
- *        ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
- *    (b) å†é…å¸ƒã®å½¢æ…‹ã‚’ï¼Œåˆ¥ã«å®šã‚ã‚‹æ–¹æ³•ã«ã‚ˆã£ã¦ï¼ŒTOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«
- *        å ±å‘Šã™ã‚‹ã“ã¨ï¼
- *  (4) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ã‚‹ã„ã‹ãªã‚‹æ
- *      å®³ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å…è²¬ã™ã‚‹ã“ã¨ï¼
+ *  ã‹L’˜ìŒ Ò‚ÍCˆÈ‰º‚Ì (1)`(4) ‚ÌğŒ‚©CFree Software Foundation 
+ *  ‚É‚æ‚Á‚ÄŒö•\‚³‚ê‚Ä‚¢‚é GNU General Public License ‚Ì Version 2 ‚É‹L
+ *  q‚³‚ê‚Ä‚¢‚éğŒ‚ğ–‚½‚·ê‡‚ÉŒÀ‚èC–{ƒ\ƒtƒgƒEƒFƒAi–{ƒ\ƒtƒgƒEƒFƒA
+ *  ‚ğ‰ü•Ï‚µ‚½‚à‚Ì‚ğŠÜ‚ŞDˆÈ‰º“¯‚¶j‚ğg—pE•¡»E‰ü•ÏEÄ”z•ziˆÈ‰ºC
+ *  —˜—p‚ÆŒÄ‚Ôj‚·‚é‚±‚Æ‚ğ–³‚Å‹–‘ø‚·‚éD
+ *  (1) –{ƒ\ƒtƒgƒEƒFƒA‚ğƒ\[ƒXƒR[ƒh‚ÌŒ`‚Å—˜—p‚·‚éê‡‚É‚ÍCã‹L‚Ì’˜ì
+ *      Œ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ªC‚»‚Ì‚Ü‚Ü‚ÌŒ`‚Åƒ\[
+ *      ƒXƒR[ƒh’†‚ÉŠÜ‚Ü‚ê‚Ä‚¢‚é‚±‚ÆD
+ *  (2) –{ƒ\ƒtƒgƒEƒFƒA‚ğCƒ‰ƒCƒuƒ‰ƒŠŒ`®‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ég
+ *      —p‚Å‚«‚éŒ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCÄ”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—p
+ *      Òƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜ìŒ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L
+ *      ‚Ì–³•ÛØ‹K’è‚ğŒfÚ‚·‚é‚±‚ÆD
+ *  (3) –{ƒ\ƒtƒgƒEƒFƒA‚ğC‹@Ší‚É‘g‚İ‚Ş‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ég
+ *      —p‚Å‚«‚È‚¢Œ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCŸ‚Ì‚¢‚¸‚ê‚©‚ÌğŒ‚ğ–‚½‚·‚±
+ *      ‚ÆD
+ *    (a) Ä”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—pÒƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜
+ *        ìŒ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ğŒfÚ‚·‚é‚±‚ÆD
+ *    (b) Ä”z•z‚ÌŒ`‘Ô‚ğC•Ê‚É’è‚ß‚é•û–@‚É‚æ‚Á‚ÄCTOPPERSƒvƒƒWƒFƒNƒg‚É
+ *        •ñ‚·‚é‚±‚ÆD
+ *  (4) –{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚é‚¢‚©‚È‚é‘¹
+ *      ŠQ‚©‚ç‚àCã‹L’˜ìŒ Ò‚¨‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ğ–ÆÓ‚·‚é‚±‚ÆD
  * 
- *  æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ï¼Œç„¡ä¿è¨¼ã§æä¾›ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã§ã‚ã‚‹ï¼ä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠ
- *  ã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«é–¢ã—ã¦ï¼Œãã®é©ç”¨å¯èƒ½æ€§ã‚‚
- *  å«ã‚ã¦ï¼Œã„ã‹ãªã‚‹ä¿è¨¼ã‚‚è¡Œã‚ãªã„ï¼ã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´
- *  æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ãŸã„ã‹ãªã‚‹æå®³ã«é–¢ã—ã¦ã‚‚ï¼Œãã®è²¬ä»»ã‚’è² ã‚ãªã„ï¼
+ *  –{ƒ\ƒtƒgƒEƒFƒA‚ÍC–³•ÛØ‚Å’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚à‚Ì‚Å‚ ‚éDã‹L’˜ìŒ Ò‚¨
+ *  ‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ÍC–{ƒ\ƒtƒgƒEƒFƒA‚ÉŠÖ‚µ‚ÄC‚»‚Ì“K—p‰Â”\«‚à
+ *  ŠÜ‚ß‚ÄC‚¢‚©‚È‚é•ÛØ‚às‚í‚È‚¢D‚Ü‚½C–{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼
+ *  Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚½‚¢‚©‚È‚é‘¹ŠQ‚ÉŠÖ‚µ‚Ä‚àC‚»‚ÌÓ”C‚ğ•‰‚í‚È‚¢D
  * 
  */
 
 
 /*
- *  SFRãƒ˜ãƒƒãƒ€ãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆM16C/26ç”¨ï¼‰
+ *  SFRƒwƒbƒ_ƒtƒ@ƒCƒ‹iM16C/26—pj
  */
-#if !defined( _SFR_M16C_26_H_ )				/* äºŒé‡å®šç¾©é˜²æ­¢					*/
-#define		_SFR_M16C_26_H_					/* äºŒé‡å®šç¾©é˜²æ­¢					*/
+#if !defined( _SFR_M16C_26_H_ )				/* “ñd’è‹`–h~					*/
+#define		_SFR_M16C_26_H_					/* “ñd’è‹`–h~					*/
 
 
 /********************************************************/
-/* é›»åœ§æ¤œå‡ºå›è·¯											*/
+/* “dˆ³ŒŸo‰ñ˜H											*/
 /********************************************************/
 /*
  *  Power supply detection register 1
  */
-#pragma ADDRESS		vcr1_addr	0019H		/* é›»åœ§æ¤œå‡ºãƒ¬ã‚¸ã‚¹ã‚¿1			*/
+#pragma ADDRESS		vcr1_addr	0019H		/* “dˆ³ŒŸoƒŒƒWƒXƒ^1			*/
 typedef union {
 	struct {
-		UINT8	reserve1:3;	/* RW 0å›ºå®š										*/
-		UINT8	vc13:1;		/* RW é›»åœ§ä½ä¸‹ãƒ¢ãƒ‹ã‚¿ 0:VCCï¼œVdet4, 1:VCCâ‰§Vdet4	*/
-		UINT8	reserve2:4;	/* RW 0å›ºå®š										*/
+		UINT8	reserve1:3;	/* RW 0ŒÅ’è										*/
+		UINT8	vc13:1;		/* RW “dˆ³’á‰ºƒ‚ƒjƒ^ 0:VCCƒVdet4, 1:VCC†Vdet4	*/
+		UINT8	reserve2:4;	/* RW 0ŒÅ’è										*/
 	} bit;
 	UINT8	byte;
 } VCR1_TYPE;
@@ -65,12 +65,12 @@ VCR1_TYPE	vcr1_addr;
 /*
  *  Power supply detection register 2
  */
-#pragma ADDRESS		vcr2_addr	001aH		/* é›»åœ§æ¤œå‡ºãƒ¬ã‚¸ã‚¹ã‚¿2			*/
+#pragma ADDRESS		vcr2_addr	001aH		/* “dˆ³ŒŸoƒŒƒWƒXƒ^2			*/
 typedef union {
 	struct {
-		UINT8	reserve:6;	/* RW 0å›ºå®š										*/
-		UINT8	vc26:1;		/* RW ãƒªã‚»ãƒƒãƒˆé ˜åŸŸç›£è¦– 0:ç„¡åŠ¹, 1:æœ‰åŠ¹			*/
-		UINT8	vc27:1;		/* RW é›»åœ§ä½ä¸‹ç›£è¦– 0:ç„¡åŠ¹, 1:æœ‰åŠ¹				*/
+		UINT8	reserve:6;	/* RW 0ŒÅ’è										*/
+		UINT8	vc26:1;		/* RW ƒŠƒZƒbƒg—ÌˆæŠÄ‹ 0:–³Œø, 1:—LŒø			*/
+		UINT8	vc27:1;		/* RW “dˆ³’á‰ºŠÄ‹ 0:–³Œø, 1:—LŒø				*/
 	} bit;
 	UINT8	byte;
 } VCR2_TYPE;
@@ -83,16 +83,16 @@ VCR2_TYPE	vcr2_addr;
 /*
  *  Power supply 4V detection register
  */
-#pragma ADDRESS		d4int_addr	001fH		/* é›»åœ§ä½ä¸‹æ¤œå‡ºå‰²ã‚Šè¾¼ã¿ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		d4int_addr	001fH		/* “dˆ³’á‰ºŒŸoŠ„‚è‚İƒŒƒWƒXƒ^	*/
 typedef union {
 	struct {
-		UINT8	d40:1;		/* RW é›»åœ§ä½ä¸‹æ¤œå‡ºå‰²ã‚Šè¾¼ã¿è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	d41:1;		/* RW STOPè§£é™¤åˆ¶å¾¡ 0:ç„¡åŠ¹, 1:æœ‰åŠ¹				*/
-		UINT8	d42:1;		/* RW é›»åœ§å¤‰åŒ–æ¤œå‡º 0:æœªæ¤œå‡º, 1:Vdet4é€šéæ¤œå‡º	*/
-		UINT8	d43:1;		/* RW WDTã‚¢ãƒ³ãƒ€ãƒ•ãƒ­ãƒ¼æ¤œå‡º 0:æœªæ¤œå‡º, 1:æ¤œå‡º		*/
-		UINT8	df0:1;		/* RW ã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ã‚¯ãƒ­ãƒƒã‚¯é¸æŠ(df0ã¨df1ã§æŒ‡å®š)	*/
-		UINT8	df1:1;		/*    00:8åˆ†å‘¨, 01:16åˆ†å‘¨, 10:32åˆ†å‘¨, 11:64åˆ†å‘¨	*/
-		UINT8	no_assign:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	d40:1;		/* RW “dˆ³’á‰ºŒŸoŠ„‚è‚İ‹–‰Â 0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	d41:1;		/* RW STOP‰ğœ§Œä 0:–³Œø, 1:—LŒø				*/
+		UINT8	d42:1;		/* RW “dˆ³•Ï‰»ŒŸo 0:–¢ŒŸo, 1:Vdet4’Ê‰ßŒŸo	*/
+		UINT8	d43:1;		/* RW WDTƒAƒ“ƒ_ƒtƒ[ŒŸo 0:–¢ŒŸo, 1:ŒŸo		*/
+		UINT8	df0:1;		/* RW ƒTƒ“ƒvƒŠƒ“ƒOƒNƒƒbƒN‘I‘ğ(df0‚Ædf1‚Åw’è)	*/
+		UINT8	df1:1;		/*    00:8•ªü, 01:16•ªü, 10:32•ªü, 11:64•ªü	*/
+		UINT8	no_assign:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 } D4INT_TYPE;
 D4INT_TYPE	d4int_addr;
@@ -107,20 +107,20 @@ D4INT_TYPE	d4int_addr;
 
 
 /********************************************************/
-/* ãƒ—ãƒ­ã‚»ãƒƒã‚µãƒ¢ãƒ¼ãƒ‰										*/
+/* ƒvƒƒZƒbƒTƒ‚[ƒh										*/
 /********************************************************/
 /*
  *  Processor mode register 0
  */
-#pragma ADDRESS		pm0_addr	0004H		/* ãƒ—ãƒ­ã‚»ãƒƒã‚µãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿0	*/
+#pragma ADDRESS		pm0_addr	0004H		/* ƒvƒƒZƒbƒTƒ‚[ƒhƒŒƒWƒXƒ^0	*/
 typedef union {
 	struct {
-		UINT8	pm00:1;		/* RW ãƒ—ãƒ­ã‚»ãƒƒã‚µãƒ¢ãƒ¼ãƒ‰(pm00,pm01ã§æŒ‡å®š)			*/
-		UINT8	pm01:1;		/* RW 00B:ã‚·ãƒ³ã‚°ãƒ«ãƒãƒƒãƒ—, 01B:è¨­å®šç¦æ­¢			*/
-							/*    10B:è¨­å®šç¦æ­¢, 11B:è¨­å®šç¦æ­¢				*/
-		UINT8	reserve1:1;	/* RW 0å›ºå®š										*/
-		UINT8	pm03:1;		/* RW ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ãƒªã‚»ãƒƒãƒˆ 0:é€šå¸¸æ™‚,1:ãƒªã‚»ãƒƒãƒˆ	*/
-		UINT8	reserve2:4;	/* RW 0å›ºå®š										*/
+		UINT8	pm00:1;		/* RW ƒvƒƒZƒbƒTƒ‚[ƒh(pm00,pm01‚Åw’è)			*/
+		UINT8	pm01:1;		/* RW 00B:ƒVƒ“ƒOƒ‹ƒ`ƒbƒv, 01B:İ’è‹Ö~			*/
+							/*    10B:İ’è‹Ö~, 11B:İ’è‹Ö~				*/
+		UINT8	reserve1:1;	/* RW 0ŒÅ’è										*/
+		UINT8	pm03:1;		/* RW ƒ\ƒtƒgƒEƒFƒAƒŠƒZƒbƒg 0:’Êí,1:ƒŠƒZƒbƒg	*/
+		UINT8	reserve2:4;	/* RW 0ŒÅ’è										*/
 	} bit;
 	UINT8 byte;
 } PM0_TYPE;
@@ -134,17 +134,17 @@ PM0_TYPE	pm0_addr;
 /*
  *  Processor mode register 1
  */
-#pragma ADDRESS		pm1_addr	0005H		/* ãƒ—ãƒ­ã‚»ãƒƒã‚µãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿1	*/
+#pragma ADDRESS		pm1_addr	0005H		/* ƒvƒƒZƒbƒTƒ‚[ƒhƒŒƒWƒXƒ^1	*/
 typedef union {
 	struct {
-		UINT8	pm10:1;		/* RW ãƒ‡ãƒ¼ã‚¿é ˜åŸŸã‚¢ã‚¯ã‚»ã‚¹ 0:ç¦æ­¢, 1:è¨±å¯			*/
-		UINT8	reserve1:1;	/* RW 0å›ºå®š										*/
-		UINT8	pm12:1;		/* RW ç›£è¦–ã‚¿ã‚¤ãƒæ©Ÿèƒ½é¸æŠ						*/
-							/*       0:ç›£è¦–ã‚¿ã‚¤ãƒå‰²è¾¼ã¿, 1:ãƒªã‚»ãƒƒãƒˆ			*/
-		UINT8	reserve2:1;	/* RW 1å›ºå®š										*/
-		UINT8	reserve3:2;	/* RW 0å›ºå®š										*/
-		UINT8	reserve4:1;	/* W  0å›ºå®š										*/
-		UINT8	pm17:1;		/* RW ã‚¦ã‚§ã‚¤ãƒˆ 0:ãªã—, 1:ã‚ã‚Š					*/
+		UINT8	pm10:1;		/* RW ƒf[ƒ^—ÌˆæƒAƒNƒZƒX 0:‹Ö~, 1:‹–‰Â			*/
+		UINT8	reserve1:1;	/* RW 0ŒÅ’è										*/
+		UINT8	pm12:1;		/* RW ŠÄ‹ƒ^ƒCƒ}‹@”\‘I‘ğ						*/
+							/*       0:ŠÄ‹ƒ^ƒCƒ}Š„‚İ, 1:ƒŠƒZƒbƒg			*/
+		UINT8	reserve2:1;	/* RW 1ŒÅ’è										*/
+		UINT8	reserve3:2;	/* RW 0ŒÅ’è										*/
+		UINT8	reserve4:1;	/* W  0ŒÅ’è										*/
+		UINT8	pm17:1;		/* RW ƒEƒFƒCƒg 0:‚È‚µ, 1:‚ ‚è					*/
 	} bit;
 	UINT8 byte;
 } PM1_TYPE;
@@ -157,24 +157,24 @@ PM1_TYPE	pm1_addr;
 
 
 /********************************************************/
-/* ã‚¯ãƒ­ãƒƒã‚¯ç™ºç”Ÿå›è·¯										*/
+/* ƒNƒƒbƒN”­¶‰ñ˜H										*/
 /********************************************************/
 /*
  *  System clock control register 0
  */
-#pragma ADDRESS		cm0_addr	0006H		/* ã‚·ã‚¹ãƒ†ãƒ ã‚¯ãƒ­ãƒƒã‚¯åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿0*/
+#pragma ADDRESS		cm0_addr	0006H		/* ƒVƒXƒeƒ€ƒNƒƒbƒN§ŒäƒŒƒWƒXƒ^0*/
 typedef union {
 	struct {
-		UINT8	reserve:2;	/* RW 0å›ºå®š										*/
-		UINT8	cm02:1;		/* RW WAITæ™‚å‘¨è¾ºæ©Ÿèƒ½ã‚¯ãƒ­ãƒƒã‚¯åœæ­¢				*/
-							/*    0:ã‚¯ãƒ­ãƒƒã‚¯åœæ­¢ã—ãªã„, 1:ã‚¯ãƒ­ãƒƒã‚¯åœæ­¢ã™ã‚‹	*/
-		UINT8	cm03:1;		/* RW XCIN-XCOUTé§†å‹•èƒ½åŠ›é¸æŠ 0:Low, 1:High		*/
-		UINT8	cm04:1;		/* RW ãƒãƒ¼ãƒˆXCåˆ‡ã‚Šæ›¿ãˆ 0:å…¥å‡ºåŠ›ãƒãƒ¼ãƒˆP86ã€P87	*/
-							/*    1:XCIN-XCOUTç™ºæŒ¯æ©Ÿèƒ½						*/
-		UINT8	cm05:1;		/* RW ãƒ¡ã‚¤ãƒ³ã‚¯ãƒ­ãƒƒã‚¯åœæ­¢ 0:ç™ºæŒ¯, 1:åœæ­¢			*/
-		UINT8	cm06:1;		/* RW ãƒ¡ã‚¤ãƒ³ã‚¯ãƒ­ãƒƒã‚¯åˆ†å‘¨æ¯”é¸æŠ					*/
-							/*    0:CM16ã€CM17ãƒ“ãƒƒãƒˆæœ‰åŠ¹, 8åˆ†å‘¨ãƒ¢ãƒ¼ãƒ‰		*/
-		UINT8	cm07:1;		/* RW ã‚·ã‚¹ãƒ†ãƒ ã‚¯ãƒ­ãƒƒã‚¯é¸æŠ 0:ãƒ¡ã‚¤ãƒ³, 1:ã‚µãƒ–		*/
+		UINT8	reserve:2;	/* RW 0ŒÅ’è										*/
+		UINT8	cm02:1;		/* RW WAITü•Ó‹@”\ƒNƒƒbƒN’â~				*/
+							/*    0:ƒNƒƒbƒN’â~‚µ‚È‚¢, 1:ƒNƒƒbƒN’â~‚·‚é	*/
+		UINT8	cm03:1;		/* RW XCIN-XCOUT‹ì“®”\—Í‘I‘ğ 0:Low, 1:High		*/
+		UINT8	cm04:1;		/* RW ƒ|[ƒgXCØ‚è‘Ö‚¦ 0:“üo—Íƒ|[ƒgP86AP87	*/
+							/*    1:XCIN-XCOUT”­U‹@”\						*/
+		UINT8	cm05:1;		/* RW ƒƒCƒ“ƒNƒƒbƒN’â~ 0:”­U, 1:’â~			*/
+		UINT8	cm06:1;		/* RW ƒƒCƒ“ƒNƒƒbƒN•ªü”ä‘I‘ğ					*/
+							/*    0:CM16ACM17ƒrƒbƒg—LŒø, 8•ªüƒ‚[ƒh		*/
+		UINT8	cm07:1;		/* RW ƒVƒXƒeƒ€ƒNƒƒbƒN‘I‘ğ 0:ƒƒCƒ“, 1:ƒTƒu		*/
 	} bit;
 	UINT8	byte;
 } CM0_TYPE;
@@ -191,14 +191,14 @@ CM0_TYPE	cm0_addr;
 /*
  *  System clock control register 1
  */
-#pragma ADDRESS		cm1_addr	0007H		/* ã‚·ã‚¹ãƒ†ãƒ ã‚¯ãƒ­ãƒƒã‚¯åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿1*/
+#pragma ADDRESS		cm1_addr	0007H		/* ƒVƒXƒeƒ€ƒNƒƒbƒN§ŒäƒŒƒWƒXƒ^1*/
 typedef union {
 	struct {
-		UINT8	cm10:1;		/* RW å…¨ã‚¯ãƒ­ãƒƒã‚¯åœæ­¢åˆ¶å¾¡ 0:ç™ºæŒ¯, 1:åœæ­¢			*/
-		UINT8	reserve:4;	/* RW 0å›ºå®š										*/
-		UINT8	cm15:1;		/* RW XIN-XOUTé§†å‹•èƒ½åŠ›é¸æŠ 0:LOW, 1:HIGH		*/
-		UINT8	cm16:1;		/* RW ãƒ¡ã‚¤ãƒ³ã‚¯ãƒ­ãƒƒã‚¯åˆ†å‘¨æ¯”é¸æŠ(cm16,cm17ã§æŒ‡å®š)	*/
-		UINT8	cm17:1;		/*    00:åˆ†å‘¨ãªã—, 01:2åˆ†å‘¨, 10:4åˆ†å‘¨, 11:16åˆ†å‘¨*/
+		UINT8	cm10:1;		/* RW ‘SƒNƒƒbƒN’â~§Œä 0:”­U, 1:’â~			*/
+		UINT8	reserve:4;	/* RW 0ŒÅ’è										*/
+		UINT8	cm15:1;		/* RW XIN-XOUT‹ì“®”\—Í‘I‘ğ 0:LOW, 1:HIGH		*/
+		UINT8	cm16:1;		/* RW ƒƒCƒ“ƒNƒƒbƒN•ªü”ä‘I‘ğ(cm16,cm17‚Åw’è)	*/
+		UINT8	cm17:1;		/*    00:•ªü‚È‚µ, 01:2•ªü, 10:4•ªü, 11:16•ªü*/
 	} bit;
 	UINT8	byte;
 } CM1_TYPE;
@@ -213,17 +213,17 @@ CM1_TYPE	cm1_addr;
 /*
  *  System clock control register 2
  */
-#pragma ADDRESS		cm2_addr	000cH		/* ç™ºæŒ¯åœæ­¢æ¤œå‡ºãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		cm2_addr	000cH		/* ”­U’â~ŒŸoƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	cm20:1;		/* RW ç™ºæŒ¯åœæ­¢ã€å†ç™ºæŒ¯æ¤œå‡ºè¨±å¯ 0:ç„¡åŠ¹, 1:æœ‰åŠ¹	*/
-		UINT8	cm21:1;		/* RW ã‚·ã‚¹ãƒ†ãƒ ã‚¯ãƒ­ãƒƒã‚¯é¸æŠ 0:ãƒ¡ã‚¤ãƒ³, 1:ãƒªãƒ³ã‚°	*/
-		UINT8	cm22:1;		/* RW ç™ºæŒ¯åœæ­¢ã€å†ç™ºæŒ¯æ¤œå‡º 0:æœªæ¤œå‡º, 1:æ¤œå‡º		*/
-		UINT8	cm23:1;		/* RW XINãƒ¢ãƒ‹ã‚¿ãƒ•ãƒ©ã‚° 0:ç™ºæŒ¯, 1:åœæ­¢			*/
-		UINT8	reserve:2;	/* RW 0å›ºå®š										*/
-		UINT8	no_assign:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	cm27:1;		/* RW ç™ºæŒ¯åœæ­¢ã€å†ç™ºæŒ¯æ¤œå‡ºæ™‚ã®å‹•ä½œé¸æŠ			*/
-							/*    0:ãƒªã‚»ãƒƒãƒˆ, 1:å†ç™ºæŒ¯æ¤œå‡ºå‰²ã‚Šè¾¼ã¿			*/
+		UINT8	cm20:1;		/* RW ”­U’â~AÄ”­UŒŸo‹–‰Â 0:–³Œø, 1:—LŒø	*/
+		UINT8	cm21:1;		/* RW ƒVƒXƒeƒ€ƒNƒƒbƒN‘I‘ğ 0:ƒƒCƒ“, 1:ƒŠƒ“ƒO	*/
+		UINT8	cm22:1;		/* RW ”­U’â~AÄ”­UŒŸo 0:–¢ŒŸo, 1:ŒŸo		*/
+		UINT8	cm23:1;		/* RW XINƒ‚ƒjƒ^ƒtƒ‰ƒO 0:”­U, 1:’â~			*/
+		UINT8	reserve:2;	/* RW 0ŒÅ’è										*/
+		UINT8	no_assign:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	cm27:1;		/* RW ”­U’â~AÄ”­UŒŸo‚Ì“®ì‘I‘ğ			*/
+							/*    0:ƒŠƒZƒbƒg, 1:Ä”­UŒŸoŠ„‚è‚İ			*/
 	} bit;
 	UINT8	byte;
 } CM2_TYPE;
@@ -239,12 +239,12 @@ CM2_TYPE	cm2_addr;
 /*
  *  Peripheral Clock Select Register
  */
-#pragma ADDRESS		pclkr_addr	025eH		/* å‘¨è¾ºã‚¯ãƒ­ãƒƒã‚¯é¸æŠãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		pclkr_addr	025eH		/* ü•ÓƒNƒƒbƒN‘I‘ğƒŒƒWƒXƒ^		*/
 typedef union {
 	struct {
-		UINT8	pclk0:1;	/* RW ã‚¿ã‚¤ãƒAã€Bã‚¯ãƒ­ãƒƒã‚¯é¸æŠ 0:f2, 1:f1			*/
-		UINT8	pclk1:1;	/* RW SI/Oã‚¯ãƒ­ãƒƒã‚¯é¸æŠ 0:f2SIO, 1:f1SIO			*/
-		UINT8	reserve:6;	/* RW 0å›ºå®š										*/
+		UINT8	pclk0:1;	/* RW ƒ^ƒCƒ}AABƒNƒƒbƒN‘I‘ğ 0:f2, 1:f1			*/
+		UINT8	pclk1:1;	/* RW SI/OƒNƒƒbƒN‘I‘ğ 0:f2SIO, 1:f1SIO			*/
+		UINT8	reserve:6;	/* RW 0ŒÅ’è										*/
 	} bit;
 	UINT8	byte;
 } PCLKR_TYPE;
@@ -257,16 +257,16 @@ PCLKR_TYPE	pclkr_addr;
 /*
  *  Processor mode register 2
  */
-#pragma ADDRESS		pm2_addr	001eH		/* ãƒ—ãƒ­ã‚»ãƒƒã‚µãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿2	*/
+#pragma ADDRESS		pm2_addr	001eH		/* ƒvƒƒZƒbƒTƒ‚[ƒhƒŒƒWƒXƒ^2	*/
 typedef union {
 	struct {
-		UINT8	pm20:1;		/* RW SFRã‚¢ã‚¯ã‚»ã‚¹ã®ã‚¦ã‚¨ã‚¤ãƒˆæŒ‡å®š 0:2, 1:1		*/
-		UINT8	pm21:1;		/* RW ã‚·ã‚¹ãƒ†ãƒ ã‚¯ãƒ­ãƒƒã‚¯ä¿è­· 0:ä¿è­·,1:å¤‰æ›´ç¦æ­¢	*/
-		UINT8	pm22:1;		/* RW WDTã‚«ã‚¦ãƒ³ãƒˆã‚½ãƒ¼ã‚¹ä¿è­· 0:CPUã‚¯ãƒ­ãƒƒã‚¯		*/
-							/*       1:ãƒªãƒ³ã‚°ã‚¯ãƒ­ãƒƒã‚¯						*/
-		UINT8	reserve:1;	/* RW 0å›ºå®š										*/
-		UINT8	pm24:1;		/* RW P85/NMIæ©Ÿèƒ½åˆ‡ã‚Šæ›¿ãˆ 0:P85, 1:NMI			*/
-		UINT8	no_assign:3;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	pm20:1;		/* RW SFRƒAƒNƒZƒX‚ÌƒEƒGƒCƒgw’è 0:2, 1:1		*/
+		UINT8	pm21:1;		/* RW ƒVƒXƒeƒ€ƒNƒƒbƒN•ÛŒì 0:•ÛŒì,1:•ÏX‹Ö~	*/
+		UINT8	pm22:1;		/* RW WDTƒJƒEƒ“ƒgƒ\[ƒX•ÛŒì 0:CPUƒNƒƒbƒN		*/
+							/*       1:ƒŠƒ“ƒOƒNƒƒbƒN						*/
+		UINT8	reserve:1;	/* RW 0ŒÅ’è										*/
+		UINT8	pm24:1;		/* RW P85/NMI‹@”\Ø‚è‘Ö‚¦ 0:P85, 1:NMI			*/
+		UINT8	no_assign:3;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } PM2_TYPE;
@@ -280,20 +280,20 @@ PM2_TYPE	pm2_addr;
 
 
 /********************************************************/
-/* ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆ											*/
+/* ƒvƒƒeƒNƒg											*/
 /********************************************************/
 /*
  *  Protect register
  */
-#pragma ADDRESS		prcr_addr	000aH		/* ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		prcr_addr	000aH		/* ƒvƒƒeƒNƒgƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	prc0:1;		/* RW ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆ0 0:ç¦æ­¢, 1:è¨±å¯				*/
-		UINT8	prc1:1;		/* RW ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆ1 0:ç¦æ­¢, 1:è¨±å¯				*/
-		UINT8	prc2:1;		/* RW ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆ2 0:ç¦æ­¢, 1:è¨±å¯				*/
-		UINT8	prc3:1;		/* RW ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆ3 0:ç¦æ­¢, 1:è¨±å¯				*/
-		UINT8	reserve:2;	/* RW 0å›ºå®š										*/
-		UINT8	no_assign:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	prc0:1;		/* RW ƒvƒƒeƒNƒg0 0:‹Ö~, 1:‹–‰Â				*/
+		UINT8	prc1:1;		/* RW ƒvƒƒeƒNƒg1 0:‹Ö~, 1:‹–‰Â				*/
+		UINT8	prc2:1;		/* RW ƒvƒƒeƒNƒg2 0:‹Ö~, 1:‹–‰Â				*/
+		UINT8	prc3:1;		/* RW ƒvƒƒeƒNƒg3 0:‹Ö~, 1:‹–‰Â				*/
+		UINT8	reserve:2;	/* RW 0ŒÅ’è										*/
+		UINT8	no_assign:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } PRCR_TYPE;
@@ -307,19 +307,19 @@ PRCR_TYPE	prcr_addr;
 
 
 /********************************************************/
-/* å‰²ã‚Šè¾¼ã¿												*/
+/* Š„‚è‚İ												*/
 /********************************************************/
 /*
  *  interrupt control register1
  */
 typedef union {
 	struct {
-		UINT8	ilvl0:1;	/* RW å‰²ã‚Šè¾¼ã¿å„ªå…ˆãƒ¬ãƒ™ãƒ«(ilvl0,ilvl1,ilvl2æŒ‡å®š)	*/
-		UINT8	ilvl1:1;	/*    000:ãƒ¬ãƒ™ãƒ«0, 001:ãƒ¬ãƒ™ãƒ«1, 010:ãƒ¬ãƒ™ãƒ«2		*/
-		UINT8	ilvl2:1;	/*    011:ãƒ¬ãƒ™ãƒ«3, 100:ãƒ¬ãƒ™ãƒ«4, 101:ãƒ¬ãƒ™ãƒ«5		*/
-							/*    110:ãƒ¬ãƒ™ãƒ«6, 111:ãƒ¬ãƒ™ãƒ«7					*/
-		UINT8	ir:1;		/* RW å‰²ã‚Šè¾¼ã¿è¦æ±‚ 0:ãªã—, 1:ã‚ã‚Š				*/
-		UINT8	no_assign:4;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	ilvl0:1;	/* RW Š„‚è‚İ—DæƒŒƒxƒ‹(ilvl0,ilvl1,ilvl2w’è)	*/
+		UINT8	ilvl1:1;	/*    000:ƒŒƒxƒ‹0, 001:ƒŒƒxƒ‹1, 010:ƒŒƒxƒ‹2		*/
+		UINT8	ilvl2:1;	/*    011:ƒŒƒxƒ‹3, 100:ƒŒƒxƒ‹4, 101:ƒŒƒxƒ‹5		*/
+							/*    110:ƒŒƒxƒ‹6, 111:ƒŒƒxƒ‹7					*/
+		UINT8	ir:1;		/* RW Š„‚è‚İ—v‹ 0:‚È‚µ, 1:‚ ‚è				*/
+		UINT8	no_assign:4;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } ICR1_TYPE;
@@ -328,7 +328,7 @@ typedef union {
 /*
  *  Bus collision detection interrupt control register
  */
-#pragma ADDRESS		bcnic_addr	004aH		/* BCNIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		bcnic_addr	004aH		/* BCNIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	bcnic_addr;
 
 #define		BCNIC			bcnic_addr.byte
@@ -340,7 +340,7 @@ ICR1_TYPE	bcnic_addr;
 /*
  *  DMA0 interrupt control register
  */
-#pragma ADDRESS		dm0ic_addr	004bH		/* DM0IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		dm0ic_addr	004bH		/* DM0IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	dm0ic_addr;
 
 #define		DM0IC			dm0ic_addr.byte
@@ -352,7 +352,7 @@ ICR1_TYPE	dm0ic_addr;
 /*
  *  DMA1 interrupt control register
  */
-#pragma ADDRESS		dm1ic_addr	004cH		/* DM1IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		dm1ic_addr	004cH		/* DM1IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	dm1ic_addr;
 
 #define		DM1IC			dm1ic_addr.byte
@@ -364,7 +364,7 @@ ICR1_TYPE	dm1ic_addr;
 /*
  *  Key input interrupt control register
  */
-#pragma ADDRESS		kupic_addr	004dH		/* KUPIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		kupic_addr	004dH		/* KUPIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	kupic_addr;
 
 #define		KUPIC			kupic_addr.byte
@@ -376,7 +376,7 @@ ICR1_TYPE	kupic_addr;
 /*
  *  A-D conversion interrupt control register
  */
-#pragma ADDRESS		adic_addr	004eH		/* ADIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		adic_addr	004eH		/* ADIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	adic_addr;
 
 #define		ADIC			adic_addr.byte
@@ -388,7 +388,7 @@ ICR1_TYPE	adic_addr;
 /*
  *  UART0 transmit interrupt control register
  */
-#pragma ADDRESS		s0tic_addr	0051H		/* S0TIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		s0tic_addr	0051H		/* S0TIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	s0tic_addr;
 
 #define		S0TIC			s0tic_addr.byte
@@ -400,7 +400,7 @@ ICR1_TYPE	s0tic_addr;
 /*
  *  UART1 transmit interrupt control register
  */
-#pragma ADDRESS		s1tic_addr	0053H		/* S1TIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		s1tic_addr	0053H		/* S1TIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	s1tic_addr;
 
 #define		S1TIC			s1tic_addr.byte
@@ -412,7 +412,7 @@ ICR1_TYPE	s1tic_addr;
 /*
  *  UART2 transmit interrupt control register
  */
-#pragma ADDRESS		s2tic_addr	004fH		/* S2TIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		s2tic_addr	004fH		/* S2TIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	s2tic_addr;
 
 #define		S2TIC			s2tic_addr.byte
@@ -424,7 +424,7 @@ ICR1_TYPE	s2tic_addr;
 /*
  *  UART0 receive interrupt control register
  */
-#pragma ADDRESS		s0ric_addr	0052H		/* S0RIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		s0ric_addr	0052H		/* S0RIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	s0ric_addr;
 
 #define		S0RIC			s0ric_addr.byte
@@ -436,7 +436,7 @@ ICR1_TYPE	s0ric_addr;
 /*
  *  UART1 receive interrupt control register
  */
-#pragma ADDRESS		s1ric_addr	0054H		/* S1RIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		s1ric_addr	0054H		/* S1RIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	s1ric_addr;
 
 #define		S1RIC			s1ric_addr.byte
@@ -448,7 +448,7 @@ ICR1_TYPE	s1ric_addr;
 /*
  *  UART2 receive interrupt control register
  */
-#pragma ADDRESS		s2ric_addr	0050H		/* S2RIC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		s2ric_addr	0050H		/* S2RIC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	s2ric_addr;
 
 #define		S2RIC			s2ric_addr.byte
@@ -460,7 +460,7 @@ ICR1_TYPE	s2ric_addr;
 /*
  *  Timer A0 interrupt control register
  */
-#pragma ADDRESS		ta0ic_addr	0055H		/* TA0IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta0ic_addr	0055H		/* TA0IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	ta0ic_addr;
 
 #define		TA0IC			ta0ic_addr.byte
@@ -472,7 +472,7 @@ ICR1_TYPE	ta0ic_addr;
 /*
  *  Timer A1 interrupt control register
  */
-#pragma ADDRESS		ta1ic_addr	0056H		/* TA1IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta1ic_addr	0056H		/* TA1IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	ta1ic_addr;
 
 #define		TA1IC			ta1ic_addr.byte
@@ -484,7 +484,7 @@ ICR1_TYPE	ta1ic_addr;
 /*
  *  Timer A2 interrupt control register
  */
-#pragma ADDRESS		ta2ic_addr	0057H		/* TA2IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta2ic_addr	0057H		/* TA2IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	ta2ic_addr;
 
 #define		TA2IC			ta2ic_addr.byte
@@ -496,7 +496,7 @@ ICR1_TYPE	ta2ic_addr;
 /*
  *  Timer A3 interrupt control register
  */
-#pragma ADDRESS		ta3ic_addr	0058H		/* TA3IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta3ic_addr	0058H		/* TA3IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	ta3ic_addr;
 
 #define		TA3IC			ta3ic_addr.byte
@@ -508,7 +508,7 @@ ICR1_TYPE	ta3ic_addr;
 /*
  *  Timer A4 interrupt control register
  */
-#pragma ADDRESS		ta4ic_addr	0059H		/* TA4IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta4ic_addr	0059H		/* TA4IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	ta4ic_addr;
 
 #define		TA4IC			ta4ic_addr.byte
@@ -520,7 +520,7 @@ ICR1_TYPE	ta4ic_addr;
 /*
  *  Timer B0 interrupt control register
  */
-#pragma ADDRESS		tb0ic_addr	005aH		/* TB0IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		tb0ic_addr	005aH		/* TB0IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	tb0ic_addr;
 
 #define		TB0IC			tb0ic_addr.byte
@@ -532,7 +532,7 @@ ICR1_TYPE	tb0ic_addr;
 /*
  *  Timer B1 interrupt control register
  */
-#pragma ADDRESS		tb1ic_addr	005bH		/* TB1IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		tb1ic_addr	005bH		/* TB1IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	tb1ic_addr;
 
 #define		TB1IC			tb1ic_addr.byte
@@ -544,7 +544,7 @@ ICR1_TYPE	tb1ic_addr;
 /*
  *  Timer B2 interrupt control register
  */
-#pragma ADDRESS		tb2ic_addr	005cH		/* TB2IC å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		tb2ic_addr	005cH		/* TB2IC Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR1_TYPE	tb2ic_addr;
 
 #define		TB2IC			tb2ic_addr.byte
@@ -559,14 +559,14 @@ ICR1_TYPE	tb2ic_addr;
  */
 typedef union {
 	struct {
-		UINT8	ilvl0:1;	/* RW å‰²ã‚Šè¾¼ã¿å„ªå…ˆãƒ¬ãƒ™ãƒ«(ilvl0,ilvl1,ilvl2æŒ‡å®š)	*/
-		UINT8	ilvl1:1;	/*    000:ãƒ¬ãƒ™ãƒ«0, 001:ãƒ¬ãƒ™ãƒ«1, 010:ãƒ¬ãƒ™ãƒ«2		*/
-		UINT8	ilvl2:1;	/*    011:ãƒ¬ãƒ™ãƒ«3, 100:ãƒ¬ãƒ™ãƒ«4, 101:ãƒ¬ãƒ™ãƒ«5		*/
-							/*    110:ãƒ¬ãƒ™ãƒ«6, 111:ãƒ¬ãƒ™ãƒ«7					*/
-		UINT8	ir:1;		/* RW å‰²ã‚Šè¾¼ã¿è¦æ±‚ 0:ãªã—, 1:ã‚ã‚Š				*/
-		UINT8	pol:1;		/* RW æ¥µæ€§åˆ‡ã‚Šæ›¿ãˆ 0:ç«‹ä¸ŠãŒã‚Š, 1:ç«‹ä¸‹ã‚Š			*/
-		UINT8	reserve:1;	/* RW 0å›ºå®š										*/
-		UINT8	no_assign:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	ilvl0:1;	/* RW Š„‚è‚İ—DæƒŒƒxƒ‹(ilvl0,ilvl1,ilvl2w’è)	*/
+		UINT8	ilvl1:1;	/*    000:ƒŒƒxƒ‹0, 001:ƒŒƒxƒ‹1, 010:ƒŒƒxƒ‹2		*/
+		UINT8	ilvl2:1;	/*    011:ƒŒƒxƒ‹3, 100:ƒŒƒxƒ‹4, 101:ƒŒƒxƒ‹5		*/
+							/*    110:ƒŒƒxƒ‹6, 111:ƒŒƒxƒ‹7					*/
+		UINT8	ir:1;		/* RW Š„‚è‚İ—v‹ 0:‚È‚µ, 1:‚ ‚è				*/
+		UINT8	pol:1;		/* RW ‹É«Ø‚è‘Ö‚¦ 0:—§ã‚ª‚è, 1:—§‰º‚è			*/
+		UINT8	reserve:1;	/* RW 0ŒÅ’è										*/
+		UINT8	no_assign:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } ICR2_TYPE;
@@ -574,7 +574,7 @@ typedef union {
 /*
  *  INT0 interrupt control register
  */
-#pragma ADDRESS		int0ic_addr	005dH		/* INT0 å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		int0ic_addr	005dH		/* INT0 Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR2_TYPE	int0ic_addr;
 
 #define		INT0IC			int0ic_addr.byte
@@ -587,7 +587,7 @@ ICR2_TYPE	int0ic_addr;
 /*
  *  INT1 interrupt control register
  */
-#pragma ADDRESS		int1ic_addr	005eH		/* INT1 å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		int1ic_addr	005eH		/* INT1 Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR2_TYPE	int1ic_addr;
 
 #define		INT1IC			int1ic_addr.byte
@@ -600,7 +600,7 @@ ICR2_TYPE	int1ic_addr;
 /*
  *  INT3 interrupt control register
  */
-#pragma ADDRESS		int3ic_addr	0044H		/* INT3 å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		int3ic_addr	0044H		/* INT3 Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR2_TYPE	int3ic_addr;
 
 #define		INT3IC			int3ic_addr.byte
@@ -613,7 +613,7 @@ ICR2_TYPE	int3ic_addr;
 /*
  *  INT4 interrupt control register
  */
-#pragma ADDRESS		int4ic_addr	0049H		/* INT4 å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		int4ic_addr	0049H		/* INT4 Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR2_TYPE	int4ic_addr;
 
 #define		INT4IC			int4ic_addr.byte
@@ -626,7 +626,7 @@ ICR2_TYPE	int4ic_addr;
 /*
  *  INT5 interrupt control register
  */
-#pragma ADDRESS		int5ic_addr	0048H		/* INT5 å‰²è¾¼ã¿åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		int5ic_addr	0048H		/* INT5 Š„‚İ§ŒäƒŒƒWƒXƒ^		*/
 ICR2_TYPE	int5ic_addr;
 
 #define		INT5IC			int5ic_addr.byte
@@ -639,22 +639,22 @@ ICR2_TYPE	int5ic_addr;
 /*
  *  interrupt cause select register
  */
-#pragma ADDRESS		ifsr_addr	035fH		/* å‰²ã‚Šè¾¼ã¿è¦å› é¸æŠãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ifsr_addr	035fH		/* Š„‚è‚İ—vˆö‘I‘ğƒŒƒWƒXƒ^		*/
 typedef union {
 	struct {
-		UINT8	ifsr0:1;	/* RW INT0å‰²ã‚Šè¾¼ã¿æ¥µæ€§åˆ‡ã‚Šæ›¿ãˆ					*/
-							/*      0:ç‰‡ã‚¨ãƒƒã‚¸ 1:ä¸¡ã‚¨ãƒƒã‚¸					*/
-		UINT8	ifsr1:1;	/* RW INT1å‰²ã‚Šè¾¼ã¿æ¥µæ€§åˆ‡ã‚Šæ›¿ãˆ					*/
-							/*      0:ç‰‡ã‚¨ãƒƒã‚¸ 1:ä¸¡ã‚¨ãƒƒã‚¸					*/
-		UINT8	no_assign:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	ifsr3:1;	/* RW INT3å‰²ã‚Šè¾¼ã¿æ¥µæ€§åˆ‡ã‚Šæ›¿ãˆ					*/
-							/*      0:ç‰‡ã‚¨ãƒƒã‚¸ 1:ä¸¡ã‚¨ãƒƒã‚¸					*/
-		UINT8	ifsr4:1;	/* RW INT4å‰²ã‚Šè¾¼ã¿æ¥µæ€§åˆ‡ã‚Šæ›¿ãˆ					*/
-							/*      0:ç‰‡ã‚¨ãƒƒã‚¸ 1:ä¸¡ã‚¨ãƒƒã‚¸					*/
-		UINT8	ifsr5:1;	/* RW INT5å‰²ã‚Šè¾¼ã¿æ¥µæ€§åˆ‡ã‚Šæ›¿ãˆ					*/
-							/*      0:ç‰‡ã‚¨ãƒƒã‚¸ 1:ä¸¡ã‚¨ãƒƒã‚¸					*/
-		UINT8	ifsr6:1;	/* RW å‰²ã‚Šè¾¼ã¿è¦å› åˆ‡ã‚Šæ›¿ãˆ 0:äºˆç´„, 1:INT4		*/
-		UINT8	ifsr7:1;	/* RW å‰²ã‚Šè¾¼ã¿è¦å› åˆ‡ã‚Šæ›¿ãˆ 0:äºˆç´„, 1:INT5		*/
+		UINT8	ifsr0:1;	/* RW INT0Š„‚è‚İ‹É«Ø‚è‘Ö‚¦					*/
+							/*      0:•ĞƒGƒbƒW 1:—¼ƒGƒbƒW					*/
+		UINT8	ifsr1:1;	/* RW INT1Š„‚è‚İ‹É«Ø‚è‘Ö‚¦					*/
+							/*      0:•ĞƒGƒbƒW 1:—¼ƒGƒbƒW					*/
+		UINT8	no_assign:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	ifsr3:1;	/* RW INT3Š„‚è‚İ‹É«Ø‚è‘Ö‚¦					*/
+							/*      0:•ĞƒGƒbƒW 1:—¼ƒGƒbƒW					*/
+		UINT8	ifsr4:1;	/* RW INT4Š„‚è‚İ‹É«Ø‚è‘Ö‚¦					*/
+							/*      0:•ĞƒGƒbƒW 1:—¼ƒGƒbƒW					*/
+		UINT8	ifsr5:1;	/* RW INT5Š„‚è‚İ‹É«Ø‚è‘Ö‚¦					*/
+							/*      0:•ĞƒGƒbƒW 1:—¼ƒGƒbƒW					*/
+		UINT8	ifsr6:1;	/* RW Š„‚è‚İ—vˆöØ‚è‘Ö‚¦ 0:—\–ñ, 1:INT4		*/
+		UINT8	ifsr7:1;	/* RW Š„‚è‚İ—vˆöØ‚è‘Ö‚¦ 0:—\–ñ, 1:INT5		*/
 	} bit;
 	UINT8	byte;
 } IFSR_TYPE;
@@ -672,12 +672,12 @@ IFSR_TYPE	ifsr_addr;
 /*
  *  Addrese match interrupt enable register
  */
-#pragma ADDRESS		aier_addr	0009H	/* ã‚¢ãƒ‰ãƒ¬ã‚¹ä¸€è‡´å‰²ã‚Šè¾¼ã¿è¨±å¯ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		aier_addr	0009H	/* ƒAƒhƒŒƒXˆê’vŠ„‚è‚İ‹–‰ÂƒŒƒWƒXƒ^	*/
 typedef union {
 	struct {
-		UINT8	aier0:1;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹ä¸€è‡´å‰²ã‚Šè¾¼ã¿0è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	aier1:1;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹ä¸€è‡´å‰²ã‚Šè¾¼ã¿1è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	no_assign:6;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	aier0:1;	/* RW ƒAƒhƒŒƒXˆê’vŠ„‚è‚İ0‹–‰Â 0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	aier1:1;	/* RW ƒAƒhƒŒƒXˆê’vŠ„‚è‚İ1‹–‰Â 0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	no_assign:6;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } AIER_TYPE;
@@ -692,24 +692,24 @@ AIER_TYPE	aier_addr;
  */
 typedef union {
 	struct {
-		UINT8	rmad_low;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½8bit						*/
-		UINT8	rmad_mid;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸­ä½8bit						*/
-		UINT8	rmad_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½8bit						*/
-		UINT8	reserved;	/* ã‚¢ã‚¯ã‚»ã‚¹ç¦æ­¢ ä»–SFRé ˜åŸŸ						*/
+		UINT8	rmad_low;	/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ8bit						*/
+		UINT8	rmad_mid;	/* RW ƒAƒhƒŒƒXİ’è ’†ˆÊ8bit						*/
+		UINT8	rmad_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ8bit						*/
+		UINT8	reserved;	/* ƒAƒNƒZƒX‹Ö~ ‘¼SFR—Ìˆæ						*/
 	} byte;
 	struct{
-		UINT16	rmad_low;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½16bit					*/
-		UINT16	rmad_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½16bit					*/
-							/*        æœ€ä¸Šä½8bitã¯ãƒã‚¹ã‚¯ãŒå¿…è¦				*/
+		UINT16	rmad_low;	/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ16bit					*/
+		UINT16	rmad_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ16bit					*/
+							/*        ÅãˆÊ8bit‚Íƒ}ƒXƒN‚ª•K—v				*/
 	} word;
-	UINT32	dword;			/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š 32bit						*/
-							/*        æœ€ä¸Šä½8bitã¯ãƒã‚¹ã‚¯ãŒå¿…è¦				*/
+	UINT32	dword;			/* RW ƒAƒhƒŒƒXİ’è 32bit						*/
+							/*        ÅãˆÊ8bit‚Íƒ}ƒXƒN‚ª•K—v				*/
 } RMAD_TYPE;
 
 /*
  *  Address match interrupt register 0
  */
-#pragma ADDRESS		rmad0_addr	0010H	/* ã‚¢ãƒ‰ãƒ¬ã‚¹ä¸€è‡´å‰²ã‚Šè¾¼ã¿ãƒ¬ã‚¸ã‚¹ã‚¿0	*/
+#pragma ADDRESS		rmad0_addr	0010H	/* ƒAƒhƒŒƒXˆê’vŠ„‚è‚İƒŒƒWƒXƒ^0	*/
 RMAD_TYPE	rmad0_addr;
 
 /*#define	RMAD0			rmad0_addr.dword*/
@@ -718,13 +718,13 @@ RMAD_TYPE	rmad0_addr;
 #define		RMAD0BL			rmad0_addr.byte.rmad_low
 #define		RMAD0BM			rmad0_addr.byte.rmad_mid
 #define		RMAD0BH			rmad0_addr.byte.rmad_high
-/* 32bitã‚¢ã‚¯ã‚»ã‚¹ãŠã‚ˆã³ä¸Šä½16bitã‚¢ã‚¯ã‚»ã‚¹ã«ã¤ã„ã¦ã¯ï¼Œä»–SFRé ˜åŸŸã‚’ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦	*/
-/* ã—ã¾ã†ãŸã‚ï¼Œã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã¨ã™ã‚‹ï¼										*/
+/* 32bitƒAƒNƒZƒX‚¨‚æ‚ÑãˆÊ16bitƒAƒNƒZƒX‚É‚Â‚¢‚Ä‚ÍC‘¼SFR—Ìˆæ‚ğƒAƒNƒZƒX‚µ‚Ä	*/
+/* ‚µ‚Ü‚¤‚½‚ßCƒRƒƒ“ƒgƒAƒEƒg‚Æ‚·‚éD										*/
 
 /*
  *  Address match interrupt register 1
  */
-#pragma ADDRESS		rmad1_addr	0014H	/* ã‚¢ãƒ‰ãƒ¬ã‚¹ä¸€è‡´å‰²ã‚Šè¾¼ã¿ãƒ¬ã‚¸ã‚¹ã‚¿1	*/
+#pragma ADDRESS		rmad1_addr	0014H	/* ƒAƒhƒŒƒXˆê’vŠ„‚è‚İƒŒƒWƒXƒ^1	*/
 RMAD_TYPE	rmad1_addr;
 
 /*#define	RMAD1			rmad1_addr.dword*/
@@ -733,24 +733,24 @@ RMAD_TYPE	rmad1_addr;
 #define		RMAD1BL			rmad1_addr.byte.rmad_low
 #define		RMAD1BM			rmad1_addr.byte.rmad_mid
 #define		RMAD1BH			rmad1_addr.byte.rmad_high
-/* 32bitã‚¢ã‚¯ã‚»ã‚¹ãŠã‚ˆã³ä¸Šä½16bitã‚¢ã‚¯ã‚»ã‚¹ã«ã¤ã„ã¦ã¯ï¼Œä»–SFRé ˜åŸŸã‚’ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦	*/
-/* ã—ã¾ã†ãŸã‚ï¼Œã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã¨ã™ã‚‹ï¼										*/
+/* 32bitƒAƒNƒZƒX‚¨‚æ‚ÑãˆÊ16bitƒAƒNƒZƒX‚É‚Â‚¢‚Ä‚ÍC‘¼SFR—Ìˆæ‚ğƒAƒNƒZƒX‚µ‚Ä	*/
+/* ‚µ‚Ü‚¤‚½‚ßCƒRƒƒ“ƒgƒAƒEƒg‚Æ‚·‚éD										*/
 
 
 /********************************************************/
-/* ç›£è¦–ã‚¿ã‚¤ãƒ											*/
+/* ŠÄ‹ƒ^ƒCƒ}											*/
 /********************************************************/
 /*
  *  Watchdog timer control register
  */
-#pragma ADDRESS		wdc_addr	000fH		/* ç›£è¦–ã‚¿ã‚¤ãƒåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		wdc_addr	000fH		/* ŠÄ‹ƒ^ƒCƒ}§ŒäƒŒƒWƒXƒ^		*/
 typedef union {
 	struct {
-		UINT8	wdc_high:5;	/* R  ç›£è¦–ã‚¿ã‚¤ãƒã®ä¸Šä½ãƒ“ãƒƒãƒˆ					*/
-		UINT8	wdc5:1;		/* RW ã‚³ãƒ¼ãƒ«ãƒ‰ã‚¹ã‚¿ãƒ¼ãƒˆ/ã‚¦ã‚©ãƒ¼ãƒ ã‚¹ã‚¿ãƒ¼ãƒˆåˆ¤å®š		*/
-							/*    0:ã‚³ãƒ¼ãƒ«ãƒ‰ã‚¹ã‚¿ãƒ¼ãƒˆ, 1:ã‚¦ã‚©ãƒ¼ãƒ ã‚¹ã‚¿ãƒ¼ãƒˆ	*/
-		UINT8	reserve:1;	/* RW 0å›ºå®š										*/
-		UINT8	wdc7:1;		/* RW ãƒ—ãƒªã‚¹ã‚±ãƒ¼ãƒ©é¸æŠ 0:16åˆ†å‘¨, 1:128åˆ†å‘¨		*/
+		UINT8	wdc_high:5;	/* R  ŠÄ‹ƒ^ƒCƒ}‚ÌãˆÊƒrƒbƒg					*/
+		UINT8	wdc5:1;		/* RW ƒR[ƒ‹ƒhƒXƒ^[ƒg/ƒEƒH[ƒ€ƒXƒ^[ƒg”»’è		*/
+							/*    0:ƒR[ƒ‹ƒhƒXƒ^[ƒg, 1:ƒEƒH[ƒ€ƒXƒ^[ƒg	*/
+		UINT8	reserve:1;	/* RW 0ŒÅ’è										*/
+		UINT8	wdc7:1;		/* RW ƒvƒŠƒXƒP[ƒ‰‘I‘ğ 0:16•ªü, 1:128•ªü		*/
 	} bit;
 	UINT8	byte;
 } WDC_TYPE;
@@ -763,7 +763,7 @@ WDC_TYPE	wdc_addr;
 /*
  *  Watchdog timer start register
  */
-#pragma ADDRESS		wdts_addr	000eH		/* ç›£è¦–ã‚¿ã‚¤ãƒã‚¹ã‚¿ãƒ¼ãƒˆãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		wdts_addr	000eH		/* ŠÄ‹ƒ^ƒCƒ}ƒXƒ^[ƒgƒŒƒWƒXƒ^	*/
 UINT8		wdts_addr;
 
 #define		WDTS			wdts_addr
@@ -777,13 +777,13 @@ UINT8		wdts_addr;
  */
 typedef union {
 	struct {
-		UINT8	dsel0:1;	/* RW DMAè¦æ±‚è¦å› é¸æŠ (dsel0 - dsel3ã§æŒ‡å®š)		*/
-		UINT8	dsel1:1;	/*    è©³ã—ãã¯ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ãƒãƒ‹ãƒ¥ã‚¢ãƒ«å‚ç…§		*/
+		UINT8	dsel0:1;	/* RW DMA—v‹—vˆö‘I‘ğ (dsel0 - dsel3‚Åw’è)		*/
+		UINT8	dsel1:1;	/*    Ú‚µ‚­‚Íƒn[ƒhƒEƒFƒAƒ}ƒjƒ…ƒAƒ‹QÆ		*/
 		UINT8	dsel2:1;
 		UINT8	dsel3:1;
-		UINT8	no_assign:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	dms:1;		/* RW DMAè¦å› æ‹¡å¼µé¸æŠ 0:åŸºæœ¬, 1:æ‹¡å¼µ			*/
-		UINT8	dsr:1;		/* RW ã‚½ãƒ•ãƒˆã‚¦ã‚¨ã‚¢DMAè¦æ±‚						*/
+		UINT8	no_assign:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	dms:1;		/* RW DMA—vˆöŠg’£‘I‘ğ 0:Šî–{, 1:Šg’£			*/
+		UINT8	dsr:1;		/* RW ƒ\ƒtƒgƒEƒGƒADMA—v‹						*/
 	} bit;
 	UINT8	byte;
 } DMSL_TYPE;
@@ -791,7 +791,7 @@ typedef union {
 /*
  *  DMA0 cause select register
  */
-#pragma ADDRESS		dm0sl_addr	03b8H		/* DMA0è¦å› é¸æŠãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		dm0sl_addr	03b8H		/* DMA0—vˆö‘I‘ğƒŒƒWƒXƒ^			*/
 DMSL_TYPE	dm0sl_addr;
 
 #define		DM0SL			dm0sl_addr.byte
@@ -805,7 +805,7 @@ DMSL_TYPE	dm0sl_addr;
 /*
  *  DMA1 cause select register
  */
-#pragma ADDRESS		dm1sl_addr	03baH		/* DMA1è¦å› é¸æŠãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		dm1sl_addr	03baH		/* DMA1—vˆö‘I‘ğƒŒƒWƒXƒ^			*/
 DMSL_TYPE	dm1sl_addr;
 
 #define		DM1SL			dm1sl_addr.byte
@@ -821,14 +821,14 @@ DMSL_TYPE	dm1sl_addr;
  */
 typedef union {
 	struct {
-		UINT8	dmbit:1;	/* RW è»¢é€å˜ä½ãƒ“ãƒƒãƒˆæ•°é¸æŠ 0:16bit, 1:8bit		*/
-		UINT8	dmasl:1;	/* RW ãƒªãƒ”ãƒ¼ãƒˆè»¢é€ãƒ¢ãƒ¼ãƒ‰é¸æŠ					*/
-							/*        0:å˜è»¢é€, 1:ãƒªãƒ”ãƒ¼ãƒˆè»¢é€				*/
-		UINT8	dmas:1;		/* RW DMAè¦æ±‚ 0:ãªã—, 1:ã‚ã‚Š					*/
-		UINT8	dmae:1;		/* RW DMAè¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯					*/
-		UINT8	dsd:1;		/* RW è»¢é€å…ƒã‚¢ãƒ‰ãƒ¬ã‚¹æ–¹å‘é¸æŠ 0:å›ºå®š, 1:é †æ–¹å‘	*/
-		UINT8	dad:1;		/* RW è»¢é€å…ˆã‚¢ãƒ‰ãƒ¬ã‚¹æ–¹å‘é¸æŠ 0:å›ºå®š, 1:é †æ–¹å‘	*/
-		UINT8	no_assign:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	dmbit:1;	/* RW “]‘—’PˆÊƒrƒbƒg”‘I‘ğ 0:16bit, 1:8bit		*/
+		UINT8	dmasl:1;	/* RW ƒŠƒs[ƒg“]‘—ƒ‚[ƒh‘I‘ğ					*/
+							/*        0:’P“]‘—, 1:ƒŠƒs[ƒg“]‘—				*/
+		UINT8	dmas:1;		/* RW DMA—v‹ 0:‚È‚µ, 1:‚ ‚è					*/
+		UINT8	dmae:1;		/* RW DMA‹–‰Â 0:‹Ö~, 1:‹–‰Â					*/
+		UINT8	dsd:1;		/* RW “]‘—Œ³ƒAƒhƒŒƒX•ûŒü‘I‘ğ 0:ŒÅ’è, 1:‡•ûŒü	*/
+		UINT8	dad:1;		/* RW “]‘—æƒAƒhƒŒƒX•ûŒü‘I‘ğ 0:ŒÅ’è, 1:‡•ûŒü	*/
+		UINT8	no_assign:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } DMCON_TYPE;
@@ -836,7 +836,7 @@ typedef union {
 /*
  *  DMA0 control register
  */
-#pragma ADDRESS		dm0con_addr	002cH		/* DMA0åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		dm0con_addr	002cH		/* DMA0§ŒäƒŒƒWƒXƒ^				*/
 DMCON_TYPE	dm0con_addr;
 
 #define		DM0CON			dm0con_addr.byte
@@ -850,7 +850,7 @@ DMCON_TYPE	dm0con_addr;
 /*
  *  DMA1 destination pointer
  */
-#pragma ADDRESS		dm1con_addr	003cH		/* DMA1åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		dm1con_addr	003cH		/* DMA1§ŒäƒŒƒWƒXƒ^				*/
 DMCON_TYPE	dm1con_addr;
 
 #define		DM1CON			dm1con_addr.byte
@@ -866,24 +866,24 @@ DMCON_TYPE	dm1con_addr;
  */
 typedef union {
 	struct {
-		UINT8	sar_low;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½8bit						*/
-		UINT8	sar_mid;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸­ä½8bit						*/
-		UINT8	sar_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½8bit						*/
-		UINT8	reserved;	/* ã‚¢ã‚¯ã‚»ã‚¹ç¦æ­¢ ä»–SFRé ˜åŸŸ						*/
+		UINT8	sar_low;	/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ8bit						*/
+		UINT8	sar_mid;	/* RW ƒAƒhƒŒƒXİ’è ’†ˆÊ8bit						*/
+		UINT8	sar_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ8bit						*/
+		UINT8	reserved;	/* ƒAƒNƒZƒX‹Ö~ ‘¼SFR—Ìˆæ						*/
 	} byte;
 	struct {
-		UINT16	sar_low;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½16bit					*/
-		UINT16	sar_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½16bit					*/
-							/*        æœ€ä¸Šä½8bitã¯ãƒã‚¹ã‚¯ãŒå¿…è¦				*/
+		UINT16	sar_low;	/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ16bit					*/
+		UINT16	sar_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ16bit					*/
+							/*        ÅãˆÊ8bit‚Íƒ}ƒXƒN‚ª•K—v				*/
 	} word;
-	UINT32	dword;			/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š 32bit						*/
-							/*        æœ€ä¸Šä½8bitã¯ãƒã‚¹ã‚¯ãŒå¿…è¦				*/
+	UINT32	dword;			/* RW ƒAƒhƒŒƒXİ’è 32bit						*/
+							/*        ÅãˆÊ8bit‚Íƒ}ƒXƒN‚ª•K—v				*/
 } SAR_TYPE;
 
 /*
  *  DMA0 source pointer
  */
-#pragma ADDRESS		sar0_addr	0020H		/* DMA0ã‚½ãƒ¼ã‚¹ãƒã‚¤ãƒ³ã‚¿			*/
+#pragma ADDRESS		sar0_addr	0020H		/* DMA0ƒ\[ƒXƒ|ƒCƒ“ƒ^			*/
 SAR_TYPE	sar0_addr;
 
 /*#define	SAR0			sar0_addr.dword*/
@@ -892,13 +892,13 @@ SAR_TYPE	sar0_addr;
 #define		SAR0BL			sar0_addr.byte.sar_low
 #define		SAR0BM			sar0_addr.byte.sar_mid
 #define		SAR0BH			sar0_addr.byte.sar_high
-/* 32bitã‚¢ã‚¯ã‚»ã‚¹ãŠã‚ˆã³ä¸Šä½16bitã‚¢ã‚¯ã‚»ã‚¹ã«ã¤ã„ã¦ã¯ï¼Œä»–SFRé ˜åŸŸã‚’ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦	*/
-/* ã—ã¾ã†ãŸã‚ï¼Œã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã¨ã™ã‚‹ï¼										*/
+/* 32bitƒAƒNƒZƒX‚¨‚æ‚ÑãˆÊ16bitƒAƒNƒZƒX‚É‚Â‚¢‚Ä‚ÍC‘¼SFR—Ìˆæ‚ğƒAƒNƒZƒX‚µ‚Ä	*/
+/* ‚µ‚Ü‚¤‚½‚ßCƒRƒƒ“ƒgƒAƒEƒg‚Æ‚·‚éD										*/
 
 /*
  *  DMA1 source pointer
  */
-#pragma ADDRESS		sar1_addr	0030H		/* DMA1ã‚½ãƒ¼ã‚¹ãƒã‚¤ãƒ³ã‚¿			*/
+#pragma ADDRESS		sar1_addr	0030H		/* DMA1ƒ\[ƒXƒ|ƒCƒ“ƒ^			*/
 SAR_TYPE	sar1_addr;
 
 /*#define	SAR1			sar1_addr.dword*/
@@ -907,32 +907,32 @@ SAR_TYPE	sar1_addr;
 #define		SAR1BL			sar1_addr.byte.sar_low
 #define		SAR1BM			sar1_addr.byte.sar_mid
 #define		SAR1BH			sar1_addr.byte.sar_high
-/* 32bitã‚¢ã‚¯ã‚»ã‚¹ãŠã‚ˆã³ä¸Šä½16bitã‚¢ã‚¯ã‚»ã‚¹ã«ã¤ã„ã¦ã¯ï¼Œä»–SFRé ˜åŸŸã‚’ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦	*/
-/* ã—ã¾ã†ãŸã‚ï¼Œã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã¨ã™ã‚‹ï¼										*/
+/* 32bitƒAƒNƒZƒX‚¨‚æ‚ÑãˆÊ16bitƒAƒNƒZƒX‚É‚Â‚¢‚Ä‚ÍC‘¼SFR—Ìˆæ‚ğƒAƒNƒZƒX‚µ‚Ä	*/
+/* ‚µ‚Ü‚¤‚½‚ßCƒRƒƒ“ƒgƒAƒEƒg‚Æ‚·‚éD										*/
 
 /*
  *  DMA destination pointer
  */
 typedef union {
 	struct {
-		UINT8	dar_low;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½8bit						*/
-		UINT8	dar_mid;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸­ä½8bit						*/
-		UINT8	dar_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½8bit						*/
-		UINT8	reserved;	/* ã‚¢ã‚¯ã‚»ã‚¹ç¦æ­¢ ä»–SFRé ˜åŸŸ						*/
+		UINT8	dar_low;	/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ8bit						*/
+		UINT8	dar_mid;	/* RW ƒAƒhƒŒƒXİ’è ’†ˆÊ8bit						*/
+		UINT8	dar_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ8bit						*/
+		UINT8	reserved;	/* ƒAƒNƒZƒX‹Ö~ ‘¼SFR—Ìˆæ						*/
 	} byte;
 	struct {
-		UINT16	dar_low;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½16bit					*/
-		UINT16	dar_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½16bit					*/
-							/*        æœ€ä¸Šä½8bitã¯ãƒã‚¹ã‚¯ãŒå¿…è¦				*/
+		UINT16	dar_low;	/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ16bit					*/
+		UINT16	dar_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ16bit					*/
+							/*        ÅãˆÊ8bit‚Íƒ}ƒXƒN‚ª•K—v				*/
 	} word;
-	UINT32	dword;			/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š 32bit						*/
-							/*        æœ€ä¸Šä½8bitã¯ãƒã‚¹ã‚¯ãŒå¿…è¦				*/
+	UINT32	dword;			/* RW ƒAƒhƒŒƒXİ’è 32bit						*/
+							/*        ÅãˆÊ8bit‚Íƒ}ƒXƒN‚ª•K—v				*/
 } DAR_TYPE;
 
 /*
  *  DMA0 destination pointer
  */
-#pragma ADDRESS		dar0_addr	0024H	/* DMA0ãƒ‡ã‚£ã‚¹ãƒ†ã‚£ãƒãƒ¼ã‚·ãƒ§ãƒ³ãƒã‚¤ãƒ³ã‚¿	*/
+#pragma ADDRESS		dar0_addr	0024H	/* DMA0ƒfƒBƒXƒeƒBƒl[ƒVƒ‡ƒ“ƒ|ƒCƒ“ƒ^	*/
 DAR_TYPE	dar0_addr;
 
 /*#define	DAR0			dar0_addr.dword*/
@@ -941,13 +941,13 @@ DAR_TYPE	dar0_addr;
 #define		DAR0BL			dar0_addr.byte.dar_low
 #define		DAR0BM			dar0_addr.byte.dar_mid
 #define		DAR0BH			dar0_addr.byte.dar_high
-/* 32bitã‚¢ã‚¯ã‚»ã‚¹ãŠã‚ˆã³ä¸Šä½16bitã‚¢ã‚¯ã‚»ã‚¹ã«ã¤ã„ã¦ã¯ï¼Œä»–SFRé ˜åŸŸã‚’ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦	*/
-/* ã—ã¾ã†ãŸã‚ï¼Œã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã¨ã™ã‚‹ï¼										*/
+/* 32bitƒAƒNƒZƒX‚¨‚æ‚ÑãˆÊ16bitƒAƒNƒZƒX‚É‚Â‚¢‚Ä‚ÍC‘¼SFR—Ìˆæ‚ğƒAƒNƒZƒX‚µ‚Ä	*/
+/* ‚µ‚Ü‚¤‚½‚ßCƒRƒƒ“ƒgƒAƒEƒg‚Æ‚·‚éD										*/
 
 /*
  *  DMA1 destination pointer
  */
-#pragma ADDRESS		dar1_addr	0034H	/* DMA1ãƒ‡ã‚£ã‚¹ãƒ†ã‚£ãƒãƒ¼ã‚·ãƒ§ãƒ³ãƒã‚¤ãƒ³ã‚¿	*/
+#pragma ADDRESS		dar1_addr	0034H	/* DMA1ƒfƒBƒXƒeƒBƒl[ƒVƒ‡ƒ“ƒ|ƒCƒ“ƒ^	*/
 DAR_TYPE	dar1_addr;
 
 /*#define	DAR1			dar1_addr.dword*/
@@ -956,24 +956,24 @@ DAR_TYPE	dar1_addr;
 #define		DAR1BL			dar1_addr.byte.dar_low
 #define		DAR1BM			dar1_addr.byte.dar_mid
 #define		DAR1BH			dar1_addr.byte.dar_high
-/* 32bitã‚¢ã‚¯ã‚»ã‚¹ãŠã‚ˆã³ä¸Šä½16bitã‚¢ã‚¯ã‚»ã‚¹ã«ã¤ã„ã¦ã¯ï¼Œä»–SFRé ˜åŸŸã‚’ã‚¢ã‚¯ã‚»ã‚¹ã—ã¦	*/
-/* ã—ã¾ã†ãŸã‚ï¼Œã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆã¨ã™ã‚‹ï¼										*/
+/* 32bitƒAƒNƒZƒX‚¨‚æ‚ÑãˆÊ16bitƒAƒNƒZƒX‚É‚Â‚¢‚Ä‚ÍC‘¼SFR—Ìˆæ‚ğƒAƒNƒZƒX‚µ‚Ä	*/
+/* ‚µ‚Ü‚¤‚½‚ßCƒRƒƒ“ƒgƒAƒEƒg‚Æ‚·‚éD										*/
 
 /*
  *  DMA transfer counter
  */
 typedef union {
 	struct {
-		UINT8	tcr_low;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½8bit						*/
-		UINT8	tcr_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½8bit						*/
+		UINT8	tcr_low;	/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ8bit						*/
+		UINT8	tcr_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ8bit						*/
 	} byte;
-	UINT16	word;			/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š 16bit						*/
+	UINT16	word;			/* RW ƒAƒhƒŒƒXİ’è 16bit						*/
 } TCR_TYPE;
 
 /*
  *  DMA0 transfer counter
  */
-#pragma ADDRESS		tcr0_addr	0028H		/* DMA0è»¢é€ã‚«ã‚¦ãƒ³ã‚¿				*/
+#pragma ADDRESS		tcr0_addr	0028H		/* DMA0“]‘—ƒJƒEƒ“ƒ^				*/
 TCR_TYPE	tcr0_addr;
 
 #define		TCR0			tcr0_addr.word
@@ -983,7 +983,7 @@ TCR_TYPE	tcr0_addr;
 /*
  *  DMA1 transfer counter
  */
-#pragma ADDRESS		tcr1_addr	0038H		/* DMA1è»¢é€ã‚«ã‚¦ãƒ³ã‚¿				*/
+#pragma ADDRESS		tcr1_addr	0038H		/* DMA1“]‘—ƒJƒEƒ“ƒ^				*/
 TCR_TYPE	tcr1_addr;
 
 #define		TCR1			tcr1_addr.word
@@ -992,22 +992,22 @@ TCR_TYPE	tcr1_addr;
 
 
 /********************************************************/
-/* ã‚¿ã‚¤ãƒ												*/
+/* ƒ^ƒCƒ}												*/
 /********************************************************/
 /*
  *  Timer mode register
  */
 typedef union {
 	struct {
-		UINT8	tmod0:1;	/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰é¸æŠ(TMOD0/1ã§æŒ‡å®š) 00:ã‚¿ã‚¤ãƒ	*/
-		UINT8	tmod1:1;	/*    01:ã‚¤ãƒ™ãƒ³ãƒˆã‚«ã‚¦ãƒ³ã‚¿, 10:ãƒ¯ãƒ³ã‚·ãƒ§ãƒƒãƒˆã‚¿ã‚¤ãƒ*/
-							/*    11:ãƒ‘ãƒ«ã‚¹å¹…å¤‰èª¿(PWM)						*/
-		UINT8	mr0:1;		/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
-		UINT8	mr1:1;		/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
-		UINT8	mr2:1;		/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
-		UINT8	mr3:1;		/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
-		UINT8	tck0:1;		/* RW ã‚«ã‚¦ãƒ³ãƒˆã‚½ãƒ¼ã‚¹é¸æŠ(TCK0/1ã§æŒ‡å®š)			*/
-		UINT8	tck1:1;		/*    å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
+		UINT8	tmod0:1;	/* RW “®ìƒ‚[ƒh‘I‘ğ(TMOD0/1‚Åw’è) 00:ƒ^ƒCƒ}	*/
+		UINT8	tmod1:1;	/*    01:ƒCƒxƒ“ƒgƒJƒEƒ“ƒ^, 10:ƒƒ“ƒVƒ‡ƒbƒgƒ^ƒCƒ}*/
+							/*    11:ƒpƒ‹ƒX••Ï’²(PWM)						*/
+		UINT8	mr0:1;		/* RW “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
+		UINT8	mr1:1;		/* RW “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
+		UINT8	mr2:1;		/* RW “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
+		UINT8	mr3:1;		/* RW “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
+		UINT8	tck0:1;		/* RW ƒJƒEƒ“ƒgƒ\[ƒX‘I‘ğ(TCK0/1‚Åw’è)			*/
+		UINT8	tck1:1;		/*    “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
 	} bit;
 	UINT8	byte;
 } TAMR_TYPE;
@@ -1015,7 +1015,7 @@ typedef union {
 /*
  *  Timer A0 mode register
  */
-#pragma ADDRESS		ta0mr_addr	0396H		/* ã‚¿ã‚¤ãƒA0ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta0mr_addr	0396H		/* ƒ^ƒCƒ}A0ƒ‚[ƒhƒŒƒWƒXƒ^		*/
 TAMR_TYPE	ta0mr_addr;
 
 #define		TA0MR			ta0mr_addr.byte
@@ -1031,7 +1031,7 @@ TAMR_TYPE	ta0mr_addr;
 /*
  *  Timer A1 mode register
  */
-#pragma ADDRESS		ta1mr_addr	0397H		/* ã‚¿ã‚¤ãƒA1ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta1mr_addr	0397H		/* ƒ^ƒCƒ}A1ƒ‚[ƒhƒŒƒWƒXƒ^		*/
 TAMR_TYPE	ta1mr_addr;
 
 #define		TA1MR			ta1mr_addr.byte
@@ -1047,7 +1047,7 @@ TAMR_TYPE	ta1mr_addr;
 /*
  *  Timer A2 mode register
  */
-#pragma ADDRESS		ta2mr_addr	0398H		/* ã‚¿ã‚¤ãƒA2ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta2mr_addr	0398H		/* ƒ^ƒCƒ}A2ƒ‚[ƒhƒŒƒWƒXƒ^		*/
 TAMR_TYPE	ta2mr_addr;
 
 #define		TA2MR			ta2mr_addr.byte
@@ -1063,7 +1063,7 @@ TAMR_TYPE	ta2mr_addr;
 /*
  *  Timer A3 mode register
  */
-#pragma ADDRESS		ta3mr_addr	0399H		/* ã‚¿ã‚¤ãƒA3ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta3mr_addr	0399H		/* ƒ^ƒCƒ}A3ƒ‚[ƒhƒŒƒWƒXƒ^		*/
 TAMR_TYPE	ta3mr_addr;
 
 #define		TA3MR			ta3mr_addr.byte
@@ -1079,7 +1079,7 @@ TAMR_TYPE	ta3mr_addr;
 /*
  *  Timer A4 mode register
  */
-#pragma ADDRESS		ta4mr_addr	039aH		/* ã‚¿ã‚¤ãƒA4ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		ta4mr_addr	039aH		/* ƒ^ƒCƒ}A4ƒ‚[ƒhƒŒƒWƒXƒ^		*/
 TAMR_TYPE	ta4mr_addr;
 
 #define		TA4MR			ta4mr_addr.byte
@@ -1097,16 +1097,16 @@ TAMR_TYPE	ta4mr_addr;
  */
 typedef union {
 	struct {
-		UINT8	ta_low;		/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½8bit						*/
-		UINT8	ta_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½8bit						*/
+		UINT8	ta_low;		/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ8bit						*/
+		UINT8	ta_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ8bit						*/
 	} byte;
-	UINT16	word;			/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š 16bit						*/
+	UINT16	word;			/* RW ƒAƒhƒŒƒXİ’è 16bit						*/
 } TA_TYPE;
 
 /*
  *  Timer A0 register
  */
-#pragma ADDRESS		ta0_addr	0386H		/* ã‚¿ã‚¤ãƒA0ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		ta0_addr	0386H		/* ƒ^ƒCƒ}A0ƒŒƒWƒXƒ^				*/
 TA_TYPE		ta0_addr;
 
 #define		TA0				ta0_addr.word
@@ -1116,7 +1116,7 @@ TA_TYPE		ta0_addr;
 /*
  *  Timer A1 register
  */
-#pragma ADDRESS		ta1_addr	0388H		/* ã‚¿ã‚¤ãƒA1ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		ta1_addr	0388H		/* ƒ^ƒCƒ}A1ƒŒƒWƒXƒ^				*/
 TA_TYPE		ta1_addr;
 
 #define		TA1				ta1_addr.word
@@ -1126,7 +1126,7 @@ TA_TYPE		ta1_addr;
 /*
  *  Timer A2 register
  */
-#pragma ADDRESS		ta2_addr	038aH		/* ã‚¿ã‚¤ãƒA2ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		ta2_addr	038aH		/* ƒ^ƒCƒ}A2ƒŒƒWƒXƒ^				*/
 TA_TYPE		ta2_addr;
 
 #define		TA2				ta2_addr.word
@@ -1136,7 +1136,7 @@ TA_TYPE		ta2_addr;
 /*
  *  Timer A3 register
  */
-#pragma ADDRESS		ta3_addr	038cH		/* ã‚¿ã‚¤ãƒA3ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		ta3_addr	038cH		/* ƒ^ƒCƒ}A3ƒŒƒWƒXƒ^				*/
 TA_TYPE		ta3_addr;
 
 #define		TA3				ta3_addr.word
@@ -1146,7 +1146,7 @@ TA_TYPE		ta3_addr;
 /*
  *  Timer A4 register
  */
-#pragma ADDRESS		ta4_addr	038eH		/* ã‚¿ã‚¤ãƒA4ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		ta4_addr	038eH		/* ƒ^ƒCƒ}A4ƒŒƒWƒXƒ^				*/
 TA_TYPE		ta4_addr;
 
 #define		TA4				ta4_addr.word
@@ -1156,7 +1156,7 @@ TA_TYPE		ta4_addr;
 /*
  *  Timer A1-1 register
  */
-#pragma ADDRESS		ta11_addr	0342H		/* ã‚¿ã‚¤ãƒA1-1ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		ta11_addr	0342H		/* ƒ^ƒCƒ}A1-1ƒŒƒWƒXƒ^				*/
 TA_TYPE		ta11_addr;
 
 #define		TA11			ta11_addr.word
@@ -1166,7 +1166,7 @@ TA_TYPE		ta11_addr;
 /*
  *  Timer A2-1 register
  */
-#pragma ADDRESS		ta21_addr	0344H		/* ã‚¿ã‚¤ãƒA2-1ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		ta21_addr	0344H		/* ƒ^ƒCƒ}A2-1ƒŒƒWƒXƒ^				*/
 TA_TYPE		ta21_addr;
 
 #define		TA21			ta21_addr.word
@@ -1176,7 +1176,7 @@ TA_TYPE		ta21_addr;
 /*
  *  Timer A4-1 register
  */
-#pragma ADDRESS		ta41_addr	0346H		/* ã‚¿ã‚¤ãƒA4-1ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		ta41_addr	0346H		/* ƒ^ƒCƒ}A4-1ƒŒƒWƒXƒ^				*/
 TA_TYPE		ta41_addr;
 
 #define		TA41			ta41_addr.word
@@ -1186,20 +1186,20 @@ TA_TYPE		ta41_addr;
 /*
  *  Up-down flag
  */
-#pragma ADDRESS		udf_addr	0384H		/* ã‚¢ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ãƒ•ãƒ©ã‚°			*/
+#pragma ADDRESS		udf_addr	0384H		/* ƒAƒbƒvƒ_ƒEƒ“ƒtƒ‰ƒO			*/
 typedef union {
 	struct {
-		UINT8	ta0ud:1;	/* RW ã‚¿ã‚¤ãƒA0ã‚¢ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ 0:ãƒ€ã‚¦ãƒ³, 1:ã‚¢ãƒƒãƒ—	*/
-		UINT8	ta1ud:1;	/* RW ã‚¿ã‚¤ãƒA1ã‚¢ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ 0:ãƒ€ã‚¦ãƒ³, 1:ã‚¢ãƒƒãƒ—	*/
-		UINT8	ta2ud:1;	/* RW ã‚¿ã‚¤ãƒA2ã‚¢ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ 0:ãƒ€ã‚¦ãƒ³, 1:ã‚¢ãƒƒãƒ—	*/
-		UINT8	ta3ud:1;	/* RW ã‚¿ã‚¤ãƒA3ã‚¢ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ 0:ãƒ€ã‚¦ãƒ³, 1:ã‚¢ãƒƒãƒ—	*/
-		UINT8	ta4ud:1;	/* RW ã‚¿ã‚¤ãƒA4ã‚¢ãƒƒãƒ—ãƒ€ã‚¦ãƒ³ 0:ãƒ€ã‚¦ãƒ³, 1:ã‚¢ãƒƒãƒ—	*/
-		UINT8	ta2p:1;		/* RW ã‚¿ã‚¤ãƒA2äºŒç›¸ãƒ‘ãƒ«ã‚¹ä¿¡å·å‡¦ç†æ©Ÿèƒ½é¸æŠ		*/
-							/*                             0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	ta3p:1;		/* RW ã‚¿ã‚¤ãƒA3äºŒç›¸ãƒ‘ãƒ«ã‚¹ä¿¡å·å‡¦ç†æ©Ÿèƒ½é¸æŠ		*/
-							/*                             0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	ta4p:1;		/* RW ã‚¿ã‚¤ãƒA4äºŒç›¸ãƒ‘ãƒ«ã‚¹ä¿¡å·å‡¦ç†æ©Ÿèƒ½é¸æŠ		*/
-							/*                             0:ç¦æ­¢, 1:è¨±å¯	*/
+		UINT8	ta0ud:1;	/* RW ƒ^ƒCƒ}A0ƒAƒbƒvƒ_ƒEƒ“ 0:ƒ_ƒEƒ“, 1:ƒAƒbƒv	*/
+		UINT8	ta1ud:1;	/* RW ƒ^ƒCƒ}A1ƒAƒbƒvƒ_ƒEƒ“ 0:ƒ_ƒEƒ“, 1:ƒAƒbƒv	*/
+		UINT8	ta2ud:1;	/* RW ƒ^ƒCƒ}A2ƒAƒbƒvƒ_ƒEƒ“ 0:ƒ_ƒEƒ“, 1:ƒAƒbƒv	*/
+		UINT8	ta3ud:1;	/* RW ƒ^ƒCƒ}A3ƒAƒbƒvƒ_ƒEƒ“ 0:ƒ_ƒEƒ“, 1:ƒAƒbƒv	*/
+		UINT8	ta4ud:1;	/* RW ƒ^ƒCƒ}A4ƒAƒbƒvƒ_ƒEƒ“ 0:ƒ_ƒEƒ“, 1:ƒAƒbƒv	*/
+		UINT8	ta2p:1;		/* RW ƒ^ƒCƒ}A2“ñ‘Šƒpƒ‹ƒXM†ˆ—‹@”\‘I‘ğ		*/
+							/*                             0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	ta3p:1;		/* RW ƒ^ƒCƒ}A3“ñ‘Šƒpƒ‹ƒXM†ˆ—‹@”\‘I‘ğ		*/
+							/*                             0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	ta4p:1;		/* RW ƒ^ƒCƒ}A4“ñ‘Šƒpƒ‹ƒXM†ˆ—‹@”\‘I‘ğ		*/
+							/*                             0:‹Ö~, 1:‹–‰Â	*/
 	} bit;
 	UINT8	byte;
 } UDF_TYPE;
@@ -1218,19 +1218,19 @@ UDF_TYPE	udf_addr;
 /*
  *  One-shot start flag
  */
-#pragma ADDRESS		onsf_addr	0382H		/* ãƒ¯ãƒ³ã‚·ãƒ§ãƒƒãƒˆé–‹å§‹ãƒ•ãƒ©ã‚°		*/
+#pragma ADDRESS		onsf_addr	0382H		/* ƒƒ“ƒVƒ‡ƒbƒgŠJnƒtƒ‰ƒO		*/
 typedef union {
 	struct {
-		UINT8	ta0os:1;	/* RW ã‚¿ã‚¤ãƒA0ãƒ¯ãƒ³ã‚·ãƒ§ãƒƒãƒˆé–‹å§‹					*/
-		UINT8	ta1os:1;	/* RW ã‚¿ã‚¤ãƒA1ãƒ¯ãƒ³ã‚·ãƒ§ãƒƒãƒˆé–‹å§‹					*/
-		UINT8	ta2os:1;	/* RW ã‚¿ã‚¤ãƒA2ãƒ¯ãƒ³ã‚·ãƒ§ãƒƒãƒˆé–‹å§‹					*/
-		UINT8	ta3os:1;	/* RW ã‚¿ã‚¤ãƒA3ãƒ¯ãƒ³ã‚·ãƒ§ãƒƒãƒˆé–‹å§‹					*/
-		UINT8	ta4os:1;	/* RW ã‚¿ã‚¤ãƒA4ãƒ¯ãƒ³ã‚·ãƒ§ãƒƒãƒˆé–‹å§‹					*/
-		UINT8	reserve:1;	/* RW 0å›ºå®š										*/
-		UINT8	ta0tgl:1;	/* RW ã‚¿ã‚¤ãƒA0ã‚¤ãƒ™ãƒ³ãƒˆï¼ãƒˆãƒªã‚¬é¸æŠãƒ“ãƒƒãƒˆ		*/
-		UINT8	ta0tgh:1;	/*    (TA0TGL/TA0TGHã§æŒ‡å®š) 00:TA0INç«¯å­ã®å…¥åŠ›	*/
-							/*    01:TB2ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼, 10:TA4ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼*/
-							/*    11:TA1ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼						*/
+		UINT8	ta0os:1;	/* RW ƒ^ƒCƒ}A0ƒƒ“ƒVƒ‡ƒbƒgŠJn					*/
+		UINT8	ta1os:1;	/* RW ƒ^ƒCƒ}A1ƒƒ“ƒVƒ‡ƒbƒgŠJn					*/
+		UINT8	ta2os:1;	/* RW ƒ^ƒCƒ}A2ƒƒ“ƒVƒ‡ƒbƒgŠJn					*/
+		UINT8	ta3os:1;	/* RW ƒ^ƒCƒ}A3ƒƒ“ƒVƒ‡ƒbƒgŠJn					*/
+		UINT8	ta4os:1;	/* RW ƒ^ƒCƒ}A4ƒƒ“ƒVƒ‡ƒbƒgŠJn					*/
+		UINT8	reserve:1;	/* RW 0ŒÅ’è										*/
+		UINT8	ta0tgl:1;	/* RW ƒ^ƒCƒ}A0ƒCƒxƒ“ƒg^ƒgƒŠƒK‘I‘ğƒrƒbƒg		*/
+		UINT8	ta0tgh:1;	/*    (TA0TGL/TA0TGH‚Åw’è) 00:TA0IN’[q‚Ì“ü—Í	*/
+							/*    01:TB2‚ÌƒI[ƒoƒtƒ[, 10:TA4‚ÌƒI[ƒoƒtƒ[*/
+							/*    11:TA1‚ÌƒI[ƒoƒtƒ[						*/
 	} bit;
 	UINT8	byte;
 } ONSF_TYPE;
@@ -1248,25 +1248,25 @@ ONSF_TYPE	onsf_addr;
 /*
  *  Trigger select register
  */
-#pragma ADDRESS		trgsr_addr	0383H		/* ãƒˆãƒªã‚¬é¸æŠãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		trgsr_addr	0383H		/* ƒgƒŠƒK‘I‘ğƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	ta1tgl:1;	/* RW ã‚¿ã‚¤ãƒA1ã‚¤ãƒ™ãƒ³ãƒˆï¼ãƒˆãƒªã‚¬é¸æŠãƒ“ãƒƒãƒˆ		*/
-		UINT8	ta1tgh:1;	/*    (TA1TGL/TA1TGHã§æŒ‡å®š) 00:TA1INç«¯å­ã®å…¥åŠ›	*/
-							/*    01:TB2ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼, 10:TA0ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼*/
-							/*    11:TA2ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼						*/
-		UINT8	ta2tgl:1;	/* RW ã‚¿ã‚¤ãƒA2ã‚¤ãƒ™ãƒ³ãƒˆï¼ãƒˆãƒªã‚¬é¸æŠãƒ“ãƒƒãƒˆ		*/
-		UINT8	ta2tgh:1;	/*    (TA2TGL/TA2TGHã§æŒ‡å®š) 00:TA2INç«¯å­ã®å…¥åŠ›	*/
-							/*    01:TB2ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼, 10:TA1ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼*/
-							/*    11:TA3ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼						*/
-		UINT8	ta3tgl:1;	/* RW ã‚¿ã‚¤ãƒA3ã‚¤ãƒ™ãƒ³ãƒˆï¼ãƒˆãƒªã‚¬é¸æŠãƒ“ãƒƒãƒˆ		*/
-		UINT8	ta3tgh:1;	/*    (TA3TGL/TA3TGHã§æŒ‡å®š) 00:TA3INç«¯å­ã®å…¥åŠ›	*/
-							/*    01:TB2ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼, 10:TA2ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼*/
-							/*    11:TA4ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼						*/
-		UINT8	ta4tgl:1;	/* RW ã‚¿ã‚¤ãƒA4ã‚¤ãƒ™ãƒ³ãƒˆï¼ãƒˆãƒªã‚¬é¸æŠãƒ“ãƒƒãƒˆ		*/
-		UINT8	ta4tgh:1;	/*    (TA4TGL/TA4TGHã§æŒ‡å®š) 00:TA4INç«¯å­ã®å…¥åŠ›	*/
-							/*    01:TB2ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼, 10:TA3ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼*/
-							/*    11:TA0ã®ã‚ªãƒ¼ãƒãƒ•ãƒ­ãƒ¼						*/
+		UINT8	ta1tgl:1;	/* RW ƒ^ƒCƒ}A1ƒCƒxƒ“ƒg^ƒgƒŠƒK‘I‘ğƒrƒbƒg		*/
+		UINT8	ta1tgh:1;	/*    (TA1TGL/TA1TGH‚Åw’è) 00:TA1IN’[q‚Ì“ü—Í	*/
+							/*    01:TB2‚ÌƒI[ƒoƒtƒ[, 10:TA0‚ÌƒI[ƒoƒtƒ[*/
+							/*    11:TA2‚ÌƒI[ƒoƒtƒ[						*/
+		UINT8	ta2tgl:1;	/* RW ƒ^ƒCƒ}A2ƒCƒxƒ“ƒg^ƒgƒŠƒK‘I‘ğƒrƒbƒg		*/
+		UINT8	ta2tgh:1;	/*    (TA2TGL/TA2TGH‚Åw’è) 00:TA2IN’[q‚Ì“ü—Í	*/
+							/*    01:TB2‚ÌƒI[ƒoƒtƒ[, 10:TA1‚ÌƒI[ƒoƒtƒ[*/
+							/*    11:TA3‚ÌƒI[ƒoƒtƒ[						*/
+		UINT8	ta3tgl:1;	/* RW ƒ^ƒCƒ}A3ƒCƒxƒ“ƒg^ƒgƒŠƒK‘I‘ğƒrƒbƒg		*/
+		UINT8	ta3tgh:1;	/*    (TA3TGL/TA3TGH‚Åw’è) 00:TA3IN’[q‚Ì“ü—Í	*/
+							/*    01:TB2‚ÌƒI[ƒoƒtƒ[, 10:TA2‚ÌƒI[ƒoƒtƒ[*/
+							/*    11:TA4‚ÌƒI[ƒoƒtƒ[						*/
+		UINT8	ta4tgl:1;	/* RW ƒ^ƒCƒ}A4ƒCƒxƒ“ƒg^ƒgƒŠƒK‘I‘ğƒrƒbƒg		*/
+		UINT8	ta4tgh:1;	/*    (TA4TGL/TA4TGH‚Åw’è) 00:TA4IN’[q‚Ì“ü—Í	*/
+							/*    01:TB2‚ÌƒI[ƒoƒtƒ[, 10:TA3‚ÌƒI[ƒoƒtƒ[*/
+							/*    11:TA0‚ÌƒI[ƒoƒtƒ[						*/
 	} bit;
 	UINT8 byte;
 } TRGSR_TYPE;
@@ -1287,15 +1287,15 @@ TRGSR_TYPE	trgsr_addr;
  */
 typedef union {
 	struct {
-		UINT8	tmod0:1;	/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰é¸æŠ(TMOD0/1ã§æŒ‡å®š) 00:ã‚¿ã‚¤ãƒ	*/
-		UINT8	tmod1:1;	/*    01:ã‚¤ãƒ™ãƒ³ãƒˆã‚«ã‚¦ãƒ³ã‚¿, 10:ãƒ‘ãƒ«ã‚¹å¹…(å‘¨æœŸ)æ¸¬å®š*/
-							/*    11:è¨­å®šä¸å¯								*/
-		UINT8	mr0:1;		/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
-		UINT8	mr1:1;		/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
-		UINT8	mr2:1;		/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
-		UINT8	mr3:1;		/* RW å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
-		UINT8	tck0:1;		/* RW ã‚«ã‚¦ãƒ³ãƒˆã‚½ãƒ¼ã‚¹é¸æŠ(TCK0/1ã§æŒ‡å®š)			*/
-		UINT8	tck1:1;		/*    å‹•ä½œãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã£ã¦æ©Ÿèƒ½ãŒç•°ãªã‚‹			*/
+		UINT8	tmod0:1;	/* RW “®ìƒ‚[ƒh‘I‘ğ(TMOD0/1‚Åw’è) 00:ƒ^ƒCƒ}	*/
+		UINT8	tmod1:1;	/*    01:ƒCƒxƒ“ƒgƒJƒEƒ“ƒ^, 10:ƒpƒ‹ƒX•(üŠú)‘ª’è*/
+							/*    11:İ’è•s‰Â								*/
+		UINT8	mr0:1;		/* RW “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
+		UINT8	mr1:1;		/* RW “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
+		UINT8	mr2:1;		/* RW “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
+		UINT8	mr3:1;		/* RW “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
+		UINT8	tck0:1;		/* RW ƒJƒEƒ“ƒgƒ\[ƒX‘I‘ğ(TCK0/1‚Åw’è)			*/
+		UINT8	tck1:1;		/*    “®ìƒ‚[ƒh‚É‚æ‚Á‚Ä‹@”\‚ªˆÙ‚È‚é			*/
 	} bit;
 	UINT8	byte;
 } TBMR_TYPE;
@@ -1303,7 +1303,7 @@ typedef union {
 /*
  *  Timer B0 mode register
  */
-#pragma ADDRESS		tb0mr_addr	039bH		/* ã‚¿ã‚¤ãƒB0ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		tb0mr_addr	039bH		/* ƒ^ƒCƒ}B0ƒ‚[ƒhƒŒƒWƒXƒ^		*/
 TBMR_TYPE	tb0mr_addr;
 
 #define		TB0MR			tb0mr_addr.byte
@@ -1319,7 +1319,7 @@ TBMR_TYPE	tb0mr_addr;
 /*
  *  Timer B1 mode register
  */
-#pragma ADDRESS		tb1mr_addr	039cH		/* ã‚¿ã‚¤ãƒB1ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		tb1mr_addr	039cH		/* ƒ^ƒCƒ}B1ƒ‚[ƒhƒŒƒWƒXƒ^		*/
 TBMR_TYPE	tb1mr_addr;
 
 #define		TB1MR			tb1mr_addr.byte
@@ -1335,7 +1335,7 @@ TBMR_TYPE	tb1mr_addr;
 /*
  *  Timer B2 mode register
  */
-#pragma ADDRESS		tb2mr_addr	039dH		/* ã‚¿ã‚¤ãƒB2ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		tb2mr_addr	039dH		/* ƒ^ƒCƒ}B2ƒ‚[ƒhƒŒƒWƒXƒ^		*/
 TBMR_TYPE	tb2mr_addr;
 
 #define		TB2MR			tb2mr_addr.byte
@@ -1353,16 +1353,16 @@ TBMR_TYPE	tb2mr_addr;
  */
 typedef union {
 	struct {
-		UINT8	tb_low;		/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½8bit						*/
-		UINT8	tb_high;	/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½8bit						*/
+		UINT8	tb_low;		/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ8bit						*/
+		UINT8	tb_high;	/* RW ƒAƒhƒŒƒXİ’è ãˆÊ8bit						*/
 	} byte;
-	UINT16	word;			/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š 16bit						*/
+	UINT16	word;			/* RW ƒAƒhƒŒƒXİ’è 16bit						*/
 } TB_TYPE;
 
 /*
  *  Timer B0 register
  */
-#pragma ADDRESS		tb0_addr	0390H		/* ã‚¿ã‚¤ãƒB0ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		tb0_addr	0390H		/* ƒ^ƒCƒ}B0ƒŒƒWƒXƒ^				*/
 TB_TYPE		tb0_addr;
 
 #define		TB0				tb0_addr.word
@@ -1372,7 +1372,7 @@ TB_TYPE		tb0_addr;
 /*
  *  Timer B1 register
  */
-#pragma ADDRESS		tb1_addr	0392H		/* ã‚¿ã‚¤ãƒB1ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		tb1_addr	0392H		/* ƒ^ƒCƒ}B1ƒŒƒWƒXƒ^				*/
 TB_TYPE		tb1_addr;
 
 #define		TB1				tb1_addr.word
@@ -1382,7 +1382,7 @@ TB_TYPE		tb1_addr;
 /*
  *  Timer B2 register
  */
-#pragma ADDRESS		tb2_addr	0394H		/* ã‚¿ã‚¤ãƒB2ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		tb2_addr	0394H		/* ƒ^ƒCƒ}B2ƒŒƒWƒXƒ^				*/
 TB_TYPE		tb2_addr;
 
 #define		TB2				tb2_addr.word
@@ -1392,17 +1392,17 @@ TB_TYPE		tb2_addr;
 /*
  *  Count start flag
  */
-#pragma ADDRESS		tabsr_addr	0380H		/* ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ãƒ•ãƒ©ã‚°			*/
+#pragma ADDRESS		tabsr_addr	0380H		/* ƒJƒEƒ“ƒgŠJnƒtƒ‰ƒO			*/
 typedef union {
 	struct {
-		UINT8	ta0s:1;		/* RW ã‚¿ã‚¤ãƒA0ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ 0:åœæ­¢, 1:é–‹å§‹		*/
-		UINT8	ta1s:1;		/* RW ã‚¿ã‚¤ãƒA1ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ 0:åœæ­¢, 1:é–‹å§‹		*/
-		UINT8	ta2s:1;		/* RW ã‚¿ã‚¤ãƒA2ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ 0:åœæ­¢, 1:é–‹å§‹		*/
-		UINT8	ta3s:1;		/* RW ã‚¿ã‚¤ãƒA3ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ 0:åœæ­¢, 1:é–‹å§‹		*/
-		UINT8	ta4s:1;		/* RW ã‚¿ã‚¤ãƒA4ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ 0:åœæ­¢, 1:é–‹å§‹		*/
-		UINT8	tb0s:1;		/* RW ã‚¿ã‚¤ãƒB0ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ 0:åœæ­¢, 1:é–‹å§‹		*/
-		UINT8	tb1s:1;		/* RW ã‚¿ã‚¤ãƒB1ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ 0:åœæ­¢, 1:é–‹å§‹		*/
-		UINT8	tb2s:1;		/* RW ã‚¿ã‚¤ãƒB2ã‚«ã‚¦ãƒ³ãƒˆé–‹å§‹ 0:åœæ­¢, 1:é–‹å§‹		*/
+		UINT8	ta0s:1;		/* RW ƒ^ƒCƒ}A0ƒJƒEƒ“ƒgŠJn 0:’â~, 1:ŠJn		*/
+		UINT8	ta1s:1;		/* RW ƒ^ƒCƒ}A1ƒJƒEƒ“ƒgŠJn 0:’â~, 1:ŠJn		*/
+		UINT8	ta2s:1;		/* RW ƒ^ƒCƒ}A2ƒJƒEƒ“ƒgŠJn 0:’â~, 1:ŠJn		*/
+		UINT8	ta3s:1;		/* RW ƒ^ƒCƒ}A3ƒJƒEƒ“ƒgŠJn 0:’â~, 1:ŠJn		*/
+		UINT8	ta4s:1;		/* RW ƒ^ƒCƒ}A4ƒJƒEƒ“ƒgŠJn 0:’â~, 1:ŠJn		*/
+		UINT8	tb0s:1;		/* RW ƒ^ƒCƒ}B0ƒJƒEƒ“ƒgŠJn 0:’â~, 1:ŠJn		*/
+		UINT8	tb1s:1;		/* RW ƒ^ƒCƒ}B1ƒJƒEƒ“ƒgŠJn 0:’â~, 1:ŠJn		*/
+		UINT8	tb2s:1;		/* RW ƒ^ƒCƒ}B2ƒJƒEƒ“ƒgŠJn 0:’â~, 1:ŠJn		*/
 	} bit;
 	UINT8	byte;
 } TABSR_TYPE;
@@ -1421,10 +1421,10 @@ TABSR_TYPE	tabsr_addr;
 /*
  *  Clock prescaler reset flag
  */
-#pragma ADDRESS		cpsrf_addr	0381H	/* æ™‚è¨ˆç”¨ãƒ—ãƒªã‚¹ã‚±ãƒ¼ãƒ©ãƒªã‚»ãƒƒãƒˆãƒ•ãƒ©ã‚°	*/
+#pragma ADDRESS		cpsrf_addr	0381H	/* Œv—pƒvƒŠƒXƒP[ƒ‰ƒŠƒZƒbƒgƒtƒ‰ƒO	*/
 typedef union {
 	struct {
-		UINT8	no_assign:7;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	no_assign:7;/* -  •s’è ‘‚Şê‡‚Í0						*/
 		UINT8	cpsr:1;
 	} bit;
 	UINT8	byte;
@@ -1436,19 +1436,19 @@ typedef union {
 /*
  *  Three-phase PWM control register 0
  */
-#pragma ADDRESS		invc0_addr	0348H		/* ä¸‰ç›¸PWMåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿0			*/
+#pragma ADDRESS		invc0_addr	0348H		/* O‘ŠPWM§ŒäƒŒƒWƒXƒ^0			*/
 typedef union {
 	struct {
-		UINT8	inv00:1;	/* RW å‰²ã‚Šè¾¼ã¿æœ‰åŠ¹å‡ºåŠ›æ¥µæ€§é¸æŠ					*/
-		UINT8	inv01:1;	/* RW å‰²ã‚Šè¾¼ã¿æœ‰åŠ¹å‡ºåŠ›æŒ‡å®š						*/
-		UINT8	inv02:1;	/* RW ãƒ¢ãƒ¼ãƒ‰é¸æŠ								*/
-		UINT8	inv03:1;	/* RW å‡ºåŠ›åˆ¶å¾¡ 0:å‡ºåŠ›ç¦æ­¢, 1:å‡ºåŠ›è¨±å¯			*/
-		UINT8	inv04:1;	/* RW æ­£é€†ç›¸åŒæ™‚ã‚¢ã‚¯ãƒ†ã‚£ãƒ–å‡ºåŠ›ç¦æ­¢æ©Ÿèƒ½è¨±å¯		*/
-							/*             0:å‡ºåŠ›è¨±å¯, 1:å‡ºåŠ›ç¦æ­¢			*/
-		UINT8	inv05:1;	/* RW æ­£é€†ç›¸åŒæ™‚ã‚¢ã‚¯ãƒ†ã‚£ãƒ–å‡ºåŠ›æ¤œå‡º				*/
-							/*             0:æœªæ¤œå‡º,1:æ¤œå‡º					*/
-		UINT8	inv06:1;	/* RW å¤‰èª¿ãƒ¢ãƒ¼ãƒ‰é¸æŠ 0:ä¸‰è§’æ³¢å¤‰èª¿, 1:é‹¸æ³¢å¤‰èª¿	*/
-		UINT8	inv07:1;	/* RW ã‚½ãƒ•ãƒˆã‚¦ã‚¨ã‚¢ãƒˆãƒªã‚¬é¸æŠ					*/
+		UINT8	inv00:1;	/* RW Š„‚è‚İ—LŒøo—Í‹É«‘I‘ğ					*/
+		UINT8	inv01:1;	/* RW Š„‚è‚İ—LŒøo—Íw’è						*/
+		UINT8	inv02:1;	/* RW ƒ‚[ƒh‘I‘ğ								*/
+		UINT8	inv03:1;	/* RW o—Í§Œä 0:o—Í‹Ö~, 1:o—Í‹–‰Â			*/
+		UINT8	inv04:1;	/* RW ³‹t‘Š“¯ƒAƒNƒeƒBƒuo—Í‹Ö~‹@”\‹–‰Â		*/
+							/*             0:o—Í‹–‰Â, 1:o—Í‹Ö~			*/
+		UINT8	inv05:1;	/* RW ³‹t‘Š“¯ƒAƒNƒeƒBƒuo—ÍŒŸo				*/
+							/*             0:–¢ŒŸo,1:ŒŸo					*/
+		UINT8	inv06:1;	/* RW •Ï’²ƒ‚[ƒh‘I‘ğ 0:OŠp”g•Ï’², 1:‹˜”g•Ï’²	*/
+		UINT8	inv07:1;	/* RW ƒ\ƒtƒgƒEƒGƒAƒgƒŠƒK‘I‘ğ					*/
 	} bit;
 	UINT8	byte;
 } INVC0_TYPE;
@@ -1467,17 +1467,17 @@ INVC0_TYPE	invc0_addr;
 /*
  *  Three-phase PWM control register 1
  */
-#pragma ADDRESS		invc1_addr	0349H		/* ä¸‰ç›¸PWMåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿1			*/
+#pragma ADDRESS		invc1_addr	0349H		/* O‘ŠPWM§ŒäƒŒƒWƒXƒ^1			*/
 typedef union {
 	struct {
-		UINT8	inv10:1;	/* RW ã‚¿ã‚¤ãƒA1ã€A2ã€A4ã‚¹ã‚¿ãƒ¼ãƒˆãƒˆãƒªã‚¬é¸æŠ		*/
-		UINT8	inv11:1;	/* RW ã‚¿ã‚¤ãƒA1-1ã€A2-1ã€A4-1åˆ¶å¾¡				*/
-		UINT8	inv12:1;	/* RW çŸ­çµ¡é˜²æ­¢ã‚¿ã‚¤ãƒã‚«ã‚¦ãƒ³ãƒˆã‚½ãƒ¼ã‚¹é¸æŠ			*/
-		UINT8	inv13:1;	/* RW æ¬é€æ³¢çŠ¶æ…‹æ¤œå‡º							*/
-		UINT8	inv14:1;	/* RW å‡ºåŠ›æ¥µæ€§åˆ¶å¾¡ 0:Lã‚¢ã‚¯ãƒ†ã‚£ãƒ–, 1:Hã‚¢ã‚¯ãƒ†ã‚£ãƒ–	*/
-		UINT8	inv15:1;	/* RW çŸ­çµ¡é˜²æ­¢æ™‚é–“ç„¡åŠ¹ 0:æœ‰åŠ¹, 1:ç„¡åŠ¹			*/
-		UINT8	inv16:1;	/* RW çŸ­çµ¡é˜²æ­¢æ™‚é–“ã‚¿ã‚¤ãƒãƒˆãƒªã‚¬é¸æŠ				*/
-		UINT8	reserve:1;	/* RW 0å›ºå®š										*/
+		UINT8	inv10:1;	/* RW ƒ^ƒCƒ}A1AA2AA4ƒXƒ^[ƒgƒgƒŠƒK‘I‘ğ		*/
+		UINT8	inv11:1;	/* RW ƒ^ƒCƒ}A1-1AA2-1AA4-1§Œä				*/
+		UINT8	inv12:1;	/* RW ’Z—–h~ƒ^ƒCƒ}ƒJƒEƒ“ƒgƒ\[ƒX‘I‘ğ			*/
+		UINT8	inv13:1;	/* RW ”À‘—”gó‘ÔŒŸo							*/
+		UINT8	inv14:1;	/* RW o—Í‹É«§Œä 0:LƒAƒNƒeƒBƒu, 1:HƒAƒNƒeƒBƒu	*/
+		UINT8	inv15:1;	/* RW ’Z—–h~ŠÔ–³Œø 0:—LŒø, 1:–³Œø			*/
+		UINT8	inv16:1;	/* RW ’Z—–h~ŠÔƒ^ƒCƒ}ƒgƒŠƒK‘I‘ğ				*/
+		UINT8	reserve:1;	/* RW 0ŒÅ’è										*/
 	} bit;
 	UINT8	byte;
 } INVC1_TYPE;
@@ -1495,16 +1495,16 @@ INVC1_TYPE	invc1_addr;
 /*
  *  Three-phase output buffer register 0
  */
-#pragma ADDRESS		idb0_addr	034aH		/* ä¸‰ç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡ãƒ¬ã‚¸ã‚¹ã‚¿0	*/
+#pragma ADDRESS		idb0_addr	034aH		/* O‘Šo—Íƒoƒbƒtƒ@ƒŒƒWƒXƒ^0	*/
 typedef union {
 	struct {
-		UINT8	du0:1;		/* RW Uç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dub0:1;		/* RW Uâ€¾ç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dv0:1;		/* RW Vç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dvb0:1;		/* RW Vâ€¾ç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dw0:1;		/* RW Wç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dwb0:1;		/* RW Wâ€¾ç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	no_assign:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	du0:1;		/* RW U‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dub0:1;		/* RW U~‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dv0:1;		/* RW V‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dvb0:1;		/* RW V~‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dw0:1;		/* RW W‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dwb0:1;		/* RW W~‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	no_assign:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } IDB0_TYPE;
@@ -1521,16 +1521,16 @@ IDB0_TYPE	idb0_addr;
 /*
  *  Three-phase output buffer register 1
  */
-#pragma ADDRESS		idb1_addr	034bH		/* ä¸‰ç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡ãƒ¬ã‚¸ã‚¹ã‚¿1	*/
+#pragma ADDRESS		idb1_addr	034bH		/* O‘Šo—Íƒoƒbƒtƒ@ƒŒƒWƒXƒ^1	*/
 typedef union {
 	struct {
-		UINT8	du1:1;		/* RW Uç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dub1:1;		/* RW Uâ€¾ç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dv1:1;		/* RW Vç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dvb1:1;		/* RW Vâ€¾ç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dw1:1;		/* RW Wç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	dwb1:1;		/* RW Wâ€¾ç›¸å‡ºåŠ›ãƒãƒƒãƒ•ã‚¡							*/
-		UINT8	no_assign:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	du1:1;		/* RW U‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dub1:1;		/* RW U~‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dv1:1;		/* RW V‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dvb1:1;		/* RW V~‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dw1:1;		/* RW W‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	dwb1:1;		/* RW W~‘Šo—Íƒoƒbƒtƒ@							*/
+		UINT8	no_assign:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } IDB1_TYPE;
@@ -1547,7 +1547,7 @@ IDB1_TYPE	idb1_addr;
 /*
  *  Dead time timer
  */
-#pragma ADDRESS		dtt_addr	034cH		/* çŸ­çµ¡é˜²æ­¢ã‚¿ã‚¤ãƒ				*/
+#pragma ADDRESS		dtt_addr	034cH		/* ’Z—–h~ƒ^ƒCƒ}				*/
 UINT8		dtt_addr;
 
 #define		DTT				dtt_addr
@@ -1555,7 +1555,7 @@ UINT8		dtt_addr;
 /*
  *  Timer B2 interrupt occurrences frequency set counter
  */
-#pragma ADDRESS		ictb2_addr	034dH/* ã‚¿ã‚¤ãƒB2å‰²ã‚Šè¾¼ã¿ç™ºç”Ÿé »åº¦è¨­å®šã‚«ã‚¦ãƒ³ã‚¿*/
+#pragma ADDRESS		ictb2_addr	034dH/* ƒ^ƒCƒ}B2Š„‚è‚İ”­¶•p“xİ’èƒJƒEƒ“ƒ^*/
 UINT8		ictb2_addr;
 
 #define		ICTB2			ictb2_addr
@@ -1563,12 +1563,12 @@ UINT8		ictb2_addr;
 /*
  *  Timer B2 special mode register
  */
-#pragma ADDRESS		tb2sc_addr	039eH		/* ã‚¿ã‚¤ãƒB2ç‰¹æ®Šãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		tb2sc_addr	039eH		/* ƒ^ƒCƒ}B2“Áêƒ‚[ƒhƒŒƒWƒXƒ^	*/
 typedef union {
 	struct {
-		UINT8	pwcon:1;	/* RW ã‚¿ã‚¤ãƒB2ãƒªãƒ­ãƒ¼ãƒ‰ã‚¿ã‚¤ãƒŸãƒ³ã‚°åˆ‡ã‚Šæ›¿ãˆ		*/
-		UINT8	ivpcr1:1;	/* RW ä¸‰ç›¸å‡ºåŠ›ãƒãƒ¼ãƒˆSDåˆ¶å¾¡						*/
-		UINT8	no_assign:6;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	pwcon:1;	/* RW ƒ^ƒCƒ}B2ƒŠƒ[ƒhƒ^ƒCƒ~ƒ“ƒOØ‚è‘Ö‚¦		*/
+		UINT8	ivpcr1:1;	/* RW O‘Šo—Íƒ|[ƒgSD§Œä						*/
+		UINT8	no_assign:6;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } TB2SC_TYPE;
@@ -1580,27 +1580,27 @@ TB2SC_TYPE	tb2sc_addr;
 
 
 /********************************************************/
-/* ã‚·ãƒªã‚¢ãƒ«I/O											*/
+/* ƒVƒŠƒAƒ‹I/O											*/
 /********************************************************/
 /*
  *  UART transmit buffer register
  */
 typedef union {
 	struct {
-		UINT8	b0:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b1:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b2:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b3:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b4:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b5:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b6:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b7:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b8:1;		/* W  é€ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	no_assign:7;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	b0:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	b1:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	b2:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	b3:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	b4:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	b5:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	b6:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	b7:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	b8:1;		/* W  ‘—Mƒf[ƒ^								*/
+		UINT8	no_assign:7;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	struct {
-		UINT8	low;		/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½8bit						*/
-		UINT8	high;		/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½8bit						*/
+		UINT8	low;		/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ8bit						*/
+		UINT8	high;		/* RW ƒAƒhƒŒƒXİ’è ãˆÊ8bit						*/
 	} byte;
 	UINT16	word;
 } UTB_TYPE;
@@ -1608,7 +1608,7 @@ typedef union {
 /*
  *  UART0 transmit buffer register
  */
-#pragma ADDRESS		u0tb_addr	03a2H		/* UART0é€ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u0tb_addr	03a2H		/* UART0‘—Mƒoƒbƒtƒ@ƒŒƒWƒXƒ^	*/
 UTB_TYPE	u0tb_addr;
 
 #define		U0TB			u0tb_addr.word
@@ -1618,7 +1618,7 @@ UTB_TYPE	u0tb_addr;
 /*
  *  UART1 transmit buffer register
  */
-#pragma ADDRESS		u1tb_addr	03aaH		/* UART1é€ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u1tb_addr	03aaH		/* UART1‘—Mƒoƒbƒtƒ@ƒŒƒWƒXƒ^	*/
 UTB_TYPE	u1tb_addr;
 
 #define		U1TB			u1tb_addr.word
@@ -1628,7 +1628,7 @@ UTB_TYPE	u1tb_addr;
 /*
  *  UART2 transmit buffer register
  */
-#pragma ADDRESS		u2tb_addr	037aH		/* UART1é€ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u2tb_addr	037aH		/* UART1‘—Mƒoƒbƒtƒ@ƒŒƒWƒXƒ^	*/
 UTB_TYPE	u2tb_addr;
 
 #define		U2TB			u2tb_addr.word
@@ -1640,26 +1640,26 @@ UTB_TYPE	u2tb_addr;
  */
 typedef union {
 	struct {
-		UINT8	b0:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b1:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b2:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b3:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b4:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b5:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b6:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b7:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	b8:1;		/* R  å—ä¿¡ãƒ‡ãƒ¼ã‚¿								*/
-		UINT8	no_assign:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	abt:1;		/* RW ã‚¢ãƒ¼ãƒ“ãƒˆãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ãƒ­ã‚¹ãƒˆæ¤œå‡º				*/
-							/*        0:æœªæ¤œå‡º, 1:æ¤œå‡º						*/
-		UINT8	oer:1;		/* R  ã‚ªãƒ¼ãƒãƒ©ãƒ³ã‚¨ãƒ©ãƒ¼ 0:ãªã—, 1:ç™ºç”Ÿ			*/
-		UINT8	fer:1;		/* R  ãƒ•ãƒ¬ãƒ¼ãƒŸãƒ³ã‚°ã‚¨ãƒ©ãƒ¼ 0:ãªã—, 1:ç™ºç”Ÿ			*/
-		UINT8	per:1;		/* R  ãƒ‘ãƒªãƒ†ã‚£ã‚¨ãƒ©ãƒ¼ 0:ãªã—, 1:ç™ºç”Ÿ				*/
-		UINT8	sum:1;		/* R  ã‚¨ãƒ©ãƒ¼ã‚µãƒ  0:ãªã—, 1:ç™ºç”Ÿ					*/
+		UINT8	b0:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	b1:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	b2:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	b3:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	b4:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	b5:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	b6:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	b7:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	b8:1;		/* R  óMƒf[ƒ^								*/
+		UINT8	no_assign:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	abt:1;		/* RW ƒA[ƒrƒgƒŒ[ƒVƒ‡ƒ“ƒƒXƒgŒŸo				*/
+							/*        0:–¢ŒŸo, 1:ŒŸo						*/
+		UINT8	oer:1;		/* R  ƒI[ƒoƒ‰ƒ“ƒGƒ‰[ 0:‚È‚µ, 1:”­¶			*/
+		UINT8	fer:1;		/* R  ƒtƒŒ[ƒ~ƒ“ƒOƒGƒ‰[ 0:‚È‚µ, 1:”­¶			*/
+		UINT8	per:1;		/* R  ƒpƒŠƒeƒBƒGƒ‰[ 0:‚È‚µ, 1:”­¶				*/
+		UINT8	sum:1;		/* R  ƒGƒ‰[ƒTƒ€ 0:‚È‚µ, 1:”­¶					*/
 	} bit;
 	struct {
-		UINT8    low;		/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸‹ä½8bit						*/
-		UINT8    high;		/* RW ã‚¢ãƒ‰ãƒ¬ã‚¹è¨­å®š ä¸Šä½8bit						*/
+		UINT8    low;		/* RW ƒAƒhƒŒƒXİ’è ‰ºˆÊ8bit						*/
+		UINT8    high;		/* RW ƒAƒhƒŒƒXİ’è ãˆÊ8bit						*/
 	} byte;
 	UINT16  word;
 } URB_TYPE;
@@ -1667,7 +1667,7 @@ typedef union {
 /*
  *  UART0 receive buffer register
  */
-#pragma ADDRESS		u0rb_addr	03a6H		/* UART0å—ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u0rb_addr	03a6H		/* UART0óMƒoƒbƒtƒ@ƒŒƒWƒXƒ^	*/
 URB_TYPE	u0rb_addr;
 
 #define		U0RB			u0rb_addr.word
@@ -1682,7 +1682,7 @@ URB_TYPE	u0rb_addr;
 /*
  *  UART1 receive buffer register
  */
-#pragma ADDRESS		u1rb_addr	03aeH		/* UART1å—ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u1rb_addr	03aeH		/* UART1óMƒoƒbƒtƒ@ƒŒƒWƒXƒ^	*/
 URB_TYPE	u1rb_addr;
 
 #define		U1RB			u1rb_addr.word
@@ -1697,7 +1697,7 @@ URB_TYPE	u1rb_addr;
 /*
  *  UART2 receive buffer register
  */
-#pragma ADDRESS		u2rb_addr	037eH		/* UART2å—ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u2rb_addr	037eH		/* UART2óMƒoƒbƒtƒ@ƒŒƒWƒXƒ^	*/
 URB_TYPE	u2rb_addr;
 
 #define		U2RB			u2rb_addr.word
@@ -1712,7 +1712,7 @@ URB_TYPE	u2rb_addr;
 /*
  *  UART0 bit rate generator
  */
-#pragma ADDRESS		u0brg_addr	03a1H		/* UART0è»¢é€é€Ÿåº¦ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		u0brg_addr	03a1H		/* UART0“]‘—‘¬“xƒŒƒWƒXƒ^		*/
 UINT8		u0brg_addr;
 
 #define		U0BRG			u0brg_addr
@@ -1720,7 +1720,7 @@ UINT8		u0brg_addr;
 /*
  *  UART1 bit rate generator
  */
-#pragma ADDRESS		u1brg_addr	03a9H		/* UART1è»¢é€é€Ÿåº¦ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		u1brg_addr	03a9H		/* UART1“]‘—‘¬“xƒŒƒWƒXƒ^		*/
 UINT8		u1brg_addr;
 
 #define		U1BRG			u1brg_addr
@@ -1728,7 +1728,7 @@ UINT8		u1brg_addr;
 /*
  *  UART2 bit rate generator
  */
-#pragma ADDRESS		u2brg_addr	0379H		/* UART2è»¢é€é€Ÿåº¦ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		u2brg_addr	0379H		/* UART2“]‘—‘¬“xƒŒƒWƒXƒ^		*/
 UINT8		u2brg_addr;
 
 #define		U2BRG			u2brg_addr
@@ -1738,14 +1738,14 @@ UINT8		u2brg_addr;
  */
 typedef union {
 	struct {
-		UINT8	smd0:1;		/* RW ã‚·ãƒªã‚¢ãƒ«I/Oãƒ¢ãƒ¼ãƒ‰é¸æŠ(smd0/1/2ã§æŒ‡å®š)		*/
-		UINT8	smd1:1;		/*    ã‚·ãƒªã‚¢ãƒ«I/Oãƒ¢ãƒ¼ãƒ‰é¸æŠ						*/
-		UINT8	smd2:1;		/*    ã‚·ãƒªã‚¢ãƒ«I/Oãƒ¢ãƒ¼ãƒ‰é¸æŠ						*/
-		UINT8	ckdir:1;	/* RW å†…/å¤–éƒ¨ã‚¯ãƒ­ãƒƒã‚¯é¸æŠ 0:å†…éƒ¨, 1:å¤–éƒ¨		*/
-		UINT8	stps:1;		/* RW ã‚¹ãƒˆãƒƒãƒ—ãƒ“ãƒƒãƒˆé•·é¸æŠ0:1ã‚¹ãƒˆãƒƒãƒ—,2:ã‚¹ãƒˆãƒƒãƒ—*/
-		UINT8	pry:1;		/* RW ãƒ‘ãƒªãƒ†ã‚£å¥‡/å¶é¸æŠ 0:å¥‡æ•°, 1:å¶æ•°			*/
-		UINT8	prye:1;		/* RW ãƒ‘ãƒªãƒ†ã‚£è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯				*/
-		UINT8	iopol:1;	/* RW TxDã€RxDå…¥å‡ºåŠ›æ¥µæ€§åˆ‡ã‚Šæ›¿ãˆ 0:ãªã—, 1:ã‚ã‚Š	*/
+		UINT8	smd0:1;		/* RW ƒVƒŠƒAƒ‹I/Oƒ‚[ƒh‘I‘ğ(smd0/1/2‚Åw’è)		*/
+		UINT8	smd1:1;		/*    ƒVƒŠƒAƒ‹I/Oƒ‚[ƒh‘I‘ğ						*/
+		UINT8	smd2:1;		/*    ƒVƒŠƒAƒ‹I/Oƒ‚[ƒh‘I‘ğ						*/
+		UINT8	ckdir:1;	/* RW “à/ŠO•”ƒNƒƒbƒN‘I‘ğ 0:“à•”, 1:ŠO•”		*/
+		UINT8	stps:1;		/* RW ƒXƒgƒbƒvƒrƒbƒg’·‘I‘ğ0:1ƒXƒgƒbƒv,2:ƒXƒgƒbƒv*/
+		UINT8	pry:1;		/* RW ƒpƒŠƒeƒBŠï/‹ô‘I‘ğ 0:Šï”, 1:‹ô”			*/
+		UINT8	prye:1;		/* RW ƒpƒŠƒeƒB‹–‰Â 0:‹Ö~, 1:‹–‰Â				*/
+		UINT8	iopol:1;	/* RW TxDARxD“üo—Í‹É«Ø‚è‘Ö‚¦ 0:‚È‚µ, 1:‚ ‚è	*/
 	} bit;
 	UINT8	byte;
 } UMR_TYPE;
@@ -1753,7 +1753,7 @@ typedef union {
 /*
  *  UART0 transmit/receive mode register
  */
-#pragma ADDRESS		u0mr_addr	03a0H		/* UART0é€å—ä¿¡ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u0mr_addr	03a0H		/* UART0‘—óMƒ‚[ƒhƒŒƒWƒXƒ^	*/
 UMR_TYPE	u0mr_addr;
 
 #define		U0MR			u0mr_addr.byte
@@ -1768,7 +1768,7 @@ UMR_TYPE	u0mr_addr;
 /*
  *  UART1 transmit/receive mode register
  */
-#pragma ADDRESS		u1mr_addr	03a8H		/* UART1é€å—ä¿¡ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u1mr_addr	03a8H		/* UART1‘—óMƒ‚[ƒhƒŒƒWƒXƒ^	*/
 UMR_TYPE	u1mr_addr;
 
 #define		U1MR			u1mr_addr.byte
@@ -1783,7 +1783,7 @@ UMR_TYPE	u1mr_addr;
 /*
  *  UART2 transmit/receive mode register
  */
-#pragma ADDRESS		u2mr_addr	0378H		/* UART2é€å—ä¿¡ãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿	*/
+#pragma ADDRESS		u2mr_addr	0378H		/* UART2‘—óMƒ‚[ƒhƒŒƒWƒXƒ^	*/
 UMR_TYPE	u2mr_addr;
 
 #define		U2MR			u2mr_addr.byte
@@ -1801,14 +1801,14 @@ UMR_TYPE	u2mr_addr;
  */
 typedef union {
 	struct {
-		UINT8	clk0:1;		/* RW BRGã‚«ã‚¦ãƒ³ãƒˆã‚½ãƒ¼ã‚¹é¸æŠ(clk0/1ã§æŒ‡å®š)		*/
-		UINT8	clk1:1;		/*    BRGã‚«ã‚¦ãƒ³ãƒˆã‚½ãƒ¼ã‚¹é¸æŠ						*/
-		UINT8	crs:1;		/* RW CTS/RTSæ©Ÿèƒ½é¸æŠ							*/
-		UINT8	txept:1;	/* R  é€ä¿¡ãƒ¬ã‚¸ã‚¹ã‚¿ç©º 0:é€ä¿¡ä¸­, 1:é€ä¿¡å®Œäº†		*/
-		UINT8	crd:1;		/* RW CTS/RTSç¦æ­¢ 0:è¨±å¯, 1:ç¦æ­¢				*/
-		UINT8	nch:1;		/* RW ãƒ‡ãƒ¼ã‚¿å‡ºåŠ›é¸æŠ							*/
-		UINT8	ckpol:1;	/* RW CLKæ¥µæ€§é¸æŠ								*/
-		UINT8	uform:1;	/* RW è»¢é€ãƒ•ã‚©ãƒ¼ãƒãƒƒãƒˆé¸æŠ 0:LSB, 1:MSB			*/
+		UINT8	clk0:1;		/* RW BRGƒJƒEƒ“ƒgƒ\[ƒX‘I‘ğ(clk0/1‚Åw’è)		*/
+		UINT8	clk1:1;		/*    BRGƒJƒEƒ“ƒgƒ\[ƒX‘I‘ğ						*/
+		UINT8	crs:1;		/* RW CTS/RTS‹@”\‘I‘ğ							*/
+		UINT8	txept:1;	/* R  ‘—MƒŒƒWƒXƒ^‹ó 0:‘—M’†, 1:‘—MŠ®—¹		*/
+		UINT8	crd:1;		/* RW CTS/RTS‹Ö~ 0:‹–‰Â, 1:‹Ö~				*/
+		UINT8	nch:1;		/* RW ƒf[ƒ^o—Í‘I‘ğ							*/
+		UINT8	ckpol:1;	/* RW CLK‹É«‘I‘ğ								*/
+		UINT8	uform:1;	/* RW “]‘—ƒtƒH[ƒ}ƒbƒg‘I‘ğ 0:LSB, 1:MSB			*/
 	} bit;
 	UINT8	byte;
 } UC0_TYPE;
@@ -1816,7 +1816,7 @@ typedef union {
 /*
  *  UART0 transmit/receive control register 0
  */
-#pragma ADDRESS		u0c0_addr	03a4H		/* UART0 é€å—ä¿¡åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿0	*/
+#pragma ADDRESS		u0c0_addr	03a4H		/* UART0 ‘—óM§ŒäƒŒƒWƒXƒ^0	*/
 UC0_TYPE	u0c0_addr;
 
 #define		U0C0			u0c0_addr.byte
@@ -1832,7 +1832,7 @@ UC0_TYPE	u0c0_addr;
 /*
  *  UART1 transmit/receive control register 0
  */
-#pragma ADDRESS		u1c0_addr	03acH		/* UART1 é€å—ä¿¡åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿0	*/
+#pragma ADDRESS		u1c0_addr	03acH		/* UART1 ‘—óM§ŒäƒŒƒWƒXƒ^0	*/
 UC0_TYPE	u1c0_addr;
 
 #define		U1C0			u1c0_addr.byte
@@ -1848,7 +1848,7 @@ UC0_TYPE	u1c0_addr;
 /*
  *  UART2 transmit/receive control register 0
  */
-#pragma ADDRESS		u2c0_addr	037cH		/* UART2 é€å—ä¿¡åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿0	*/
+#pragma ADDRESS		u2c0_addr	037cH		/* UART2 ‘—óM§ŒäƒŒƒWƒXƒ^0	*/
 UC0_TYPE	u2c0_addr;
 
 #define		U2C0			u2c0_addr.byte
@@ -1866,11 +1866,11 @@ UC0_TYPE	u2c0_addr;
  */
 typedef union {
 	struct {
-		UINT8	te:1;		/* RW é€ä¿¡è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯					*/
-		UINT8	ti:1;		/* R  é€ä¿¡ãƒãƒƒãƒ•ã‚¡ç©º 0:ã‚ã‚Š, 1:ãªã—				*/
-		UINT8	re:1;		/* RW å—ä¿¡è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯					*/
-		UINT8	ri:1;		/* R  å—ä¿¡å®Œäº† 0:ãªã—, 1:ã‚ã‚Š					*/
-		UINT8	no_assign:4;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	te:1;		/* RW ‘—M‹–‰Â 0:‹Ö~, 1:‹–‰Â					*/
+		UINT8	ti:1;		/* R  ‘—Mƒoƒbƒtƒ@‹ó 0:‚ ‚è, 1:‚È‚µ				*/
+		UINT8	re:1;		/* RW óM‹–‰Â 0:‹Ö~, 1:‹–‰Â					*/
+		UINT8	ri:1;		/* R  óMŠ®—¹ 0:‚È‚µ, 1:‚ ‚è					*/
+		UINT8	no_assign:4;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } UC1_TYPE;
@@ -1878,7 +1878,7 @@ typedef union {
 /*
  *  UART0 transmit/receive control register 1
  */
-#pragma ADDRESS		u0c1_addr	03a5H		/* UART0é€å—ä¿¡åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿1		*/
+#pragma ADDRESS		u0c1_addr	03a5H		/* UART0‘—óM§ŒäƒŒƒWƒXƒ^1		*/
 UC1_TYPE	u0c1_addr;
 
 #define		U0C1		u0c1_addr.byte
@@ -1890,7 +1890,7 @@ UC1_TYPE	u0c1_addr;
 /*
  *  UART1 transmit/receive control register 1
  */
-#pragma ADDRESS		u1c1_addr	03adH		/* UART1é€å—ä¿¡åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿1		*/
+#pragma ADDRESS		u1c1_addr	03adH		/* UART1‘—óM§ŒäƒŒƒWƒXƒ^1		*/
 UC1_TYPE	u1c1_addr;
 
 #define		U1C1		u1c1_addr.byte
@@ -1902,17 +1902,17 @@ UC1_TYPE	u1c1_addr;
 /*
  *  UART2 transmit/receive control register 1
  */
-#pragma ADDRESS		u2c1_addr	037dH		/* UART2é€å—ä¿¡åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿1		*/
+#pragma ADDRESS		u2c1_addr	037dH		/* UART2‘—óM§ŒäƒŒƒWƒXƒ^1		*/
 typedef union {
 	struct {
-		UINT8	te:1;		/* RW é€ä¿¡è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯					*/
-		UINT8	ti:1;		/* R  é€ä¿¡ãƒãƒƒãƒ•ã‚¡ç©º 0:ã‚ã‚Š, 1:ãªã—				*/
-		UINT8	re:1;		/* RW å—ä¿¡è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯					*/
-		UINT8	ri:1;		/* R  å—ä¿¡å®Œäº† 0:ãªã—, 1:ã‚ã‚Š					*/
-		UINT8	u2irs:1;	/* RW UART2é€ä¿¡å‰²ã‚Šè¾¼ã¿è¦å› é¸æŠ					*/
-		UINT8	u2rrm:1;	/* RW UART2é€£ç¶šå—ä¿¡ãƒ¢ãƒ¼ãƒ‰è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	u2lch:1;	/* RW ãƒ‡ãƒ¼ã‚¿è«–ç†é¸æŠ 0:åè»¢ãªã—, 1;åè»¢ã‚ã‚Š		*/
-		UINT8	u2ere:1;	/* RW ã‚¨ãƒ©ãƒ¼ä¿¡å·å‡ºåŠ›è¨±å¯ 0:ã—ãªã„, 1:ã™ã‚‹		*/
+		UINT8	te:1;		/* RW ‘—M‹–‰Â 0:‹Ö~, 1:‹–‰Â					*/
+		UINT8	ti:1;		/* R  ‘—Mƒoƒbƒtƒ@‹ó 0:‚ ‚è, 1:‚È‚µ				*/
+		UINT8	re:1;		/* RW óM‹–‰Â 0:‹Ö~, 1:‹–‰Â					*/
+		UINT8	ri:1;		/* R  óMŠ®—¹ 0:‚È‚µ, 1:‚ ‚è					*/
+		UINT8	u2irs:1;	/* RW UART2‘—MŠ„‚è‚İ—vˆö‘I‘ğ					*/
+		UINT8	u2rrm:1;	/* RW UART2˜A‘±óMƒ‚[ƒh‹–‰Â 0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	u2lch:1;	/* RW ƒf[ƒ^˜_—‘I‘ğ 0:”½“]‚È‚µ, 1;”½“]‚ ‚è		*/
+		UINT8	u2ere:1;	/* RW ƒGƒ‰[M†o—Í‹–‰Â 0:‚µ‚È‚¢, 1:‚·‚é		*/
 	} bit;
 	UINT8	byte;
 } U2C1_TYPE;
@@ -1931,17 +1931,17 @@ U2C1_TYPE	u2c1_addr;
 /*
  *  UART transmit/receive control register 2
  */
-#pragma ADDRESS		ucon_addr	03b0H		/* UARTé€å—ä¿¡åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿2		*/
+#pragma ADDRESS		ucon_addr	03b0H		/* UART‘—óM§ŒäƒŒƒWƒXƒ^2		*/
 typedef union {
 	struct {
-		UINT8	u0irs:1;	/* RW UART0é€ä¿¡å‰²ã‚Šè¾¼ã¿è¦å› é¸æŠ 0:ç©º, 1:å®Œäº†	*/
-		UINT8	u1irs:1;	/* RW UART1é€ä¿¡å‰²ã‚Šè¾¼ã¿è¦å› é¸æŠ 0:ç©º, 1:å®Œäº†	*/
-		UINT8	u0rrm:1;	/* RW UART0é€£ç¶šå—ä¿¡ãƒ¢ãƒ¼ãƒ‰è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	u1rrm:1;	/* RW UART1é€£ç¶šå—ä¿¡ãƒ¢ãƒ¼ãƒ‰è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	clkmd0:1;	/* RW UART1CLKã€CLKSé¸æŠãƒ“ãƒƒãƒˆ0					*/
-		UINT8	clkmd1:1;	/* RW UART1CLKã€CLKSé¸æŠãƒ“ãƒƒãƒˆ1					*/
-		UINT8	rcsp:1;		/* RW UART0CTS/RTSåˆ†é›¢							*/
-		UINT8	no_assign:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	u0irs:1;	/* RW UART0‘—MŠ„‚è‚İ—vˆö‘I‘ğ 0:‹ó, 1:Š®—¹	*/
+		UINT8	u1irs:1;	/* RW UART1‘—MŠ„‚è‚İ—vˆö‘I‘ğ 0:‹ó, 1:Š®—¹	*/
+		UINT8	u0rrm:1;	/* RW UART0˜A‘±óMƒ‚[ƒh‹–‰Â 0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	u1rrm:1;	/* RW UART1˜A‘±óMƒ‚[ƒh‹–‰Â 0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	clkmd0:1;	/* RW UART1CLKACLKS‘I‘ğƒrƒbƒg0					*/
+		UINT8	clkmd1:1;	/* RW UART1CLKACLKS‘I‘ğƒrƒbƒg1					*/
+		UINT8	rcsp:1;		/* RW UART0CTS/RTS•ª—£							*/
+		UINT8	no_assign:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } UCON_TYPE;
@@ -1959,17 +1959,17 @@ UCON_TYPE	ucon_addr;
 /*
  *  UART2 special mode register
  */
-#pragma ADDRESS		u2smr_addr	0377H		/* UART2ç‰¹æ®Šãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		u2smr_addr	0377H		/* UART2“Áêƒ‚[ƒhƒŒƒWƒXƒ^		*/
 typedef union {
 	struct {
-		UINT8	iicm:1;		/* RW I2C Busãƒ¢ãƒ¼ãƒ‰é¸æŠ							*/
-		UINT8	abc:1;		/* RW ã‚¢ãƒ¼ãƒ“ãƒˆãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ãƒ­ã‚¹ãƒˆæ¤œå‡ºãƒ•ãƒ©ã‚°åˆ¶å¾¡	*/
-		UINT8	bbs:1;		/* RW ãƒã‚¹ãƒ“ã‚¸ãƒ¼								*/
-		UINT8	reserve:1;	/* RW 0å›ºå®š										*/
-		UINT8	abscs:1;	/* RW ãƒã‚¹è¡çªæ¤œå‡ºã‚µãƒ³ãƒ—ãƒªãƒ³ã‚°ã‚¯ãƒ­ãƒƒã‚¯é¸æŠ		*/
-		UINT8	acse:1;		/* RW é€ä¿¡è¨±å¯ãƒ“ãƒƒãƒˆè‡ªå‹•ã‚¯ãƒªã‚¢æ©Ÿèƒ½é¸æŠ			*/
-		UINT8	sss:1;		/* RW é€ä¿¡é–‹å§‹æ¡ä»¶é¸æŠ							*/
-		UINT8	no_assign:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	iicm:1;		/* RW I2C Busƒ‚[ƒh‘I‘ğ							*/
+		UINT8	abc:1;		/* RW ƒA[ƒrƒgƒŒ[ƒVƒ‡ƒ“ƒƒXƒgŒŸoƒtƒ‰ƒO§Œä	*/
+		UINT8	bbs:1;		/* RW ƒoƒXƒrƒW[								*/
+		UINT8	reserve:1;	/* RW 0ŒÅ’è										*/
+		UINT8	abscs:1;	/* RW ƒoƒXÕ“ËŒŸoƒTƒ“ƒvƒŠƒ“ƒOƒNƒƒbƒN‘I‘ğ		*/
+		UINT8	acse:1;		/* RW ‘—M‹–‰Âƒrƒbƒg©“®ƒNƒŠƒA‹@”\‘I‘ğ			*/
+		UINT8	sss:1;		/* RW ‘—MŠJnğŒ‘I‘ğ							*/
+		UINT8	no_assign:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } U2SMR_TYPE;
@@ -1987,18 +1987,18 @@ U2SMR_TYPE	u2smr_addr;
 /*
  *  UART2 special mode register2
  */
-#pragma ADDRESS		u2smr2_addr	0376H		/* UART2ç‰¹æ®Šãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿2		*/
+#pragma ADDRESS		u2smr2_addr	0376H		/* UART2“Áêƒ‚[ƒhƒŒƒWƒXƒ^2		*/
 typedef union {
 	struct {
-		UINT8	iicm2:1;	/* RW I2C Busãƒ¢ãƒ¼ãƒ‰é¸æŠãƒ“ãƒƒãƒˆ2					*/
-		UINT8	csc:1;		/* RW ã‚¯ãƒ­ãƒƒã‚¯åŒæœŸåŒ– 0:ç¦æ­¢, 1:è¨±å¯				*/
-		UINT8	swc:1;		/* RW SCLã‚¦ã‚¨ã‚¤ãƒˆå‡ºåŠ› 0:ç¦æ­¢, 1:è¨±å¯			*/
-		UINT8	als:1;		/* RW SDAå‡ºåŠ›åœæ­¢ 0:ç¦æ­¢, 1:è¨±å¯				*/
-		UINT8	stac:1;		/* RW UARTiåˆæœŸåŒ– 0:ç¦æ­¢, 1:è¨±å¯				*/
-		UINT8	swc2:1;		/* RW SCLã‚¦ã‚¨ã‚¤ãƒˆå‡ºåŠ›ãƒ“ãƒƒãƒˆ2					*/
-							/*        0:è»¢é€ã‚¯ãƒ­ãƒƒã‚¯, 1:Lå‡ºåŠ›				*/
-		UINT8	sdhi:1;		/* RW SDAå‡ºåŠ›ç¦æ­¢ 0:è¨±å¯, 1:ç¦æ­¢				*/
-		UINT8	no_assign:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	iicm2:1;	/* RW I2C Busƒ‚[ƒh‘I‘ğƒrƒbƒg2					*/
+		UINT8	csc:1;		/* RW ƒNƒƒbƒN“¯Šú‰» 0:‹Ö~, 1:‹–‰Â				*/
+		UINT8	swc:1;		/* RW SCLƒEƒGƒCƒgo—Í 0:‹Ö~, 1:‹–‰Â			*/
+		UINT8	als:1;		/* RW SDAo—Í’â~ 0:‹Ö~, 1:‹–‰Â				*/
+		UINT8	stac:1;		/* RW UARTi‰Šú‰» 0:‹Ö~, 1:‹–‰Â				*/
+		UINT8	swc2:1;		/* RW SCLƒEƒGƒCƒgo—Íƒrƒbƒg2					*/
+							/*        0:“]‘—ƒNƒƒbƒN, 1:Lo—Í				*/
+		UINT8	sdhi:1;		/* RW SDAo—Í‹Ö~ 0:‹–‰Â, 1:‹Ö~				*/
+		UINT8	no_assign:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } U2SMR2_TYPE;
@@ -2016,16 +2016,16 @@ U2SMR2_TYPE	u2smr2_addr;
 /*
  *  UART2 special mode register3
  */
-#pragma ADDRESS		u2smr3_addr	0375H		/* UART2ç‰¹æ®Šãƒ¢âˆ’ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿3		*/
+#pragma ADDRESS		u2smr3_addr	0375H		/* UART2“Áêƒ‚|ƒhƒŒƒWƒXƒ^3		*/
 typedef union {
 	struct {
-		UINT8	no_assign1:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	ckph:1;		/* RW ã‚¯ãƒ­ãƒƒã‚¯ä½ç›¸è¨­å®š 0:é…ã‚Œãªã—, 1:é…ã‚Œã‚ã‚Š	*/
-		UINT8	no_assign2:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	nodc:1;		/* RW ã‚¯ãƒ­ãƒƒã‚¯å‡ºåŠ›é¸æŠ							*/
-		UINT8	no_assign3:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	dl0:1;		/* RW SDAãƒ‡ã‚£ã‚¸ã‚¿ãƒ«é…å»¶å€¤è¨­å®šãƒ“ãƒƒãƒˆ				*/
-		UINT8	dl1:1;		/*    (DL0/1/2ã§æŒ‡å®š)							*/
+		UINT8	no_assign1:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	ckph:1;		/* RW ƒNƒƒbƒNˆÊ‘Šİ’è 0:’x‚ê‚È‚µ, 1:’x‚ê‚ ‚è	*/
+		UINT8	no_assign2:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	nodc:1;		/* RW ƒNƒƒbƒNo—Í‘I‘ğ							*/
+		UINT8	no_assign3:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	dl0:1;		/* RW SDAƒfƒBƒWƒ^ƒ‹’x‰„’lİ’èƒrƒbƒg				*/
+		UINT8	dl1:1;		/*    (DL0/1/2‚Åw’è)							*/
 		UINT8	dl2:1;
 	} bit;
 	UINT8	byte;
@@ -2042,17 +2042,17 @@ U2SMR3_TYPE	u2smr3_addr;
 /*
  *  UART2 special mode register4
  */
-#pragma ADDRESS		u2smr4_addr	0374H		/* UART2ç‰¹æ®Šãƒ¢ãƒ¼ãƒ‰ãƒ¬ã‚¸ã‚¹ã‚¿4		*/
+#pragma ADDRESS		u2smr4_addr	0374H		/* UART2“Áêƒ‚[ƒhƒŒƒWƒXƒ^4		*/
 typedef union {
 	struct {
-		UINT8	stareq:1;	/* RW ã‚¹ã‚¿ãƒ¼ãƒˆã‚³ãƒ³ãƒ‡ã‚£ã‚·ãƒ§ãƒ³ç”Ÿæˆãƒ“ãƒƒãƒˆ			*/
-		UINT8	rstareq:1;	/* RW ãƒªã‚¹ã‚¿ãƒ¼ãƒˆã‚³ãƒ³ãƒ‡ã‚£ã‚·ãƒ§ãƒ³ç”Ÿæˆãƒ“ãƒƒãƒˆ		*/
-		UINT8	stpreq:1;	/* RW ã‚¹ãƒˆãƒƒãƒ—ã‚³ãƒ³ãƒ‡ã‚£ã‚·ãƒ§ãƒ³ç”Ÿæˆãƒ“ãƒƒãƒˆ			*/
-		UINT8	stspsel:1;	/* RW SCLã€SDAå‡ºåŠ›é¸æŠ							*/
-		UINT8	ackd:1;		/* RW ACKãƒ‡ãƒ¼ã‚¿ 0:ACK, 1:NACK					*/
-		UINT8	ackc:1;		/* RW ACKãƒ‡ãƒ¼ã‚¿å‡ºåŠ›è¨±å¯							*/
-		UINT8	schli:1;	/* RW SCLå‡ºåŠ›åœæ­¢è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯			*/
-		UINT8	swc9:1;		/* RW SCLã‚¦ã‚¨ã‚¤ãƒˆãƒ“ãƒƒãƒˆ3 0:ç¦æ­¢, 1:è¨±å¯			*/
+		UINT8	stareq:1;	/* RW ƒXƒ^[ƒgƒRƒ“ƒfƒBƒVƒ‡ƒ“¶¬ƒrƒbƒg			*/
+		UINT8	rstareq:1;	/* RW ƒŠƒXƒ^[ƒgƒRƒ“ƒfƒBƒVƒ‡ƒ“¶¬ƒrƒbƒg		*/
+		UINT8	stpreq:1;	/* RW ƒXƒgƒbƒvƒRƒ“ƒfƒBƒVƒ‡ƒ“¶¬ƒrƒbƒg			*/
+		UINT8	stspsel:1;	/* RW SCLASDAo—Í‘I‘ğ							*/
+		UINT8	ackd:1;		/* RW ACKƒf[ƒ^ 0:ACK, 1:NACK					*/
+		UINT8	ackc:1;		/* RW ACKƒf[ƒ^o—Í‹–‰Â							*/
+		UINT8	schli:1;	/* RW SCLo—Í’â~‹–‰Â 0:‹Ö~, 1:‹–‰Â			*/
+		UINT8	swc9:1;		/* RW SCLƒEƒGƒCƒgƒrƒbƒg3 0:‹Ö~, 1:‹–‰Â			*/
 	} bit;
 	UINT8	byte;
 } U2SMR4_TYPE;
@@ -2070,22 +2070,22 @@ U2SMR4_TYPE	u2smr4_addr;
 
 
 /********************************************************/
-/* A/Då¤‰æ›												*/
+/* A/D•ÏŠ·												*/
 /********************************************************/
 /*
  *  A-D control register 0
  */
-#pragma ADDRESS		adcon0_addr	03d6H		/* A-Dåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿0				*/
+#pragma ADDRESS		adcon0_addr	03d6H		/* A-D§ŒäƒŒƒWƒXƒ^0				*/
 typedef union {
 	struct {
-		UINT8	ch0:1;		/* RW ã‚¢ãƒŠãƒ­ã‚°å…¥åŠ›ç«¯å­é¸æŠ (CH0/1/2ã§æŒ‡å®š)		*/
-		UINT8	ch1:1;		/*    ã‚¢ãƒŠãƒ­ã‚°å…¥åŠ›ç«¯å­é¸æŠ						*/
-		UINT8	ch2:1;		/*    ã‚¢ãƒŠãƒ­ã‚°å…¥åŠ›ç«¯å­é¸æŠ						*/
-		UINT8	md0:1;		/* RW A-Då‹•ä½œãƒ¢ãƒ¼ãƒ‰é¸æŠ (MD0/1ã§æŒ‡å®š) 00:å˜ç™º	*/
-		UINT8	md1:1;		/*    01:ç¹°è¿”ã—, 10:å˜æƒå¼•, 11:ç¹°è¿”ã—æƒå¼•0/1	*/
-		UINT8	trg:1;		/* RW ãƒˆãƒªã‚¬é¸æŠ 0:ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢, 1:ADTRG		*/
-		UINT8	adst:1;		/* RW A-Då¤‰æ›é–‹å§‹ãƒ•ãƒ©ã‚° 0:åœæ­¢, 1:é–‹å§‹			*/
-		UINT8	cks0:1;		/* RW å‘¨æ³¢æ•°é¸æŠãƒ“ãƒƒãƒˆ0							*/
+		UINT8	ch0:1;		/* RW ƒAƒiƒƒO“ü—Í’[q‘I‘ğ (CH0/1/2‚Åw’è)		*/
+		UINT8	ch1:1;		/*    ƒAƒiƒƒO“ü—Í’[q‘I‘ğ						*/
+		UINT8	ch2:1;		/*    ƒAƒiƒƒO“ü—Í’[q‘I‘ğ						*/
+		UINT8	md0:1;		/* RW A-D“®ìƒ‚[ƒh‘I‘ğ (MD0/1‚Åw’è) 00:’P”­	*/
+		UINT8	md1:1;		/*    01:ŒJ•Ô‚µ, 10:’P‘|ˆø, 11:ŒJ•Ô‚µ‘|ˆø0/1	*/
+		UINT8	trg:1;		/* RW ƒgƒŠƒK‘I‘ğ 0:ƒ\ƒtƒgƒEƒFƒA, 1:ADTRG		*/
+		UINT8	adst:1;		/* RW A-D•ÏŠ·ŠJnƒtƒ‰ƒO 0:’â~, 1:ŠJn			*/
+		UINT8	cks0:1;		/* RW ü”g”‘I‘ğƒrƒbƒg0							*/
 	} bit;
 	UINT8	byte;
 } ADCON0_TYPE;
@@ -2104,16 +2104,16 @@ ADCON0_TYPE	adcon0_addr;
 /*
  *  A-D control register 1
  */
-#pragma ADDRESS		adcon1_addr	03d7H		/* A-Dåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿1				*/
+#pragma ADDRESS		adcon1_addr	03d7H		/* A-D§ŒäƒŒƒWƒXƒ^1				*/
 typedef union {
 	struct {
-		UINT8	scan0:1;	/* RW A-Dæƒå¼•ç«¯å­é¸æŠ							*/
-		UINT8	scan1:1;	/*    A-Dæƒå¼•ç«¯å­é¸æŠ							*/
-		UINT8	md2:1;		/* RW A-Då‹•ä½œãƒ¢ãƒ¼ãƒ‰é¸æŠ							*/
-		UINT8	bits:1;		/* RW 8/10ãƒ“ãƒƒãƒˆãƒ¢ãƒ¼ãƒ‰é¸æŠ 0:8ãƒ“ãƒƒãƒˆ, 1:10ãƒ“ãƒƒãƒˆ*/
-		UINT8	cks1:1;		/* RW å‘¨æ³¢æ•°é¸æŠãƒ“ãƒƒãƒˆ1							*/
-		UINT8	vcut:1;		/* RW Vrefæ¥ç¶šãƒ“ãƒƒãƒˆ 0:æœªæ¥ç¶š, 1:æ¥ç¶š			*/
-		UINT8	reserve:2;	/* RW 0å›ºå®š										*/
+		UINT8	scan0:1;	/* RW A-D‘|ˆø’[q‘I‘ğ							*/
+		UINT8	scan1:1;	/*    A-D‘|ˆø’[q‘I‘ğ							*/
+		UINT8	md2:1;		/* RW A-D“®ìƒ‚[ƒh‘I‘ğ							*/
+		UINT8	bits:1;		/* RW 8/10ƒrƒbƒgƒ‚[ƒh‘I‘ğ 0:8ƒrƒbƒg, 1:10ƒrƒbƒg*/
+		UINT8	cks1:1;		/* RW ü”g”‘I‘ğƒrƒbƒg1							*/
+		UINT8	vcut:1;		/* RW VrefÚ‘±ƒrƒbƒg 0:–¢Ú‘±, 1:Ú‘±			*/
+		UINT8	reserve:2;	/* RW 0ŒÅ’è										*/
 	} bit;
 	UINT8	byte;
 } ADCON1_TYPE;
@@ -2130,13 +2130,13 @@ ADCON1_TYPE	adcon1_addr;
 /*
  *  A-D control register 2
  */
-#pragma ADDRESS		adcon2_addr	03d4H		/* A-Dåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿2				*/
+#pragma ADDRESS		adcon2_addr	03d4H		/* A-D§ŒäƒŒƒWƒXƒ^2				*/
 typedef union {
 	struct {
-		UINT8	smp:1;		/* RW A-Då¤‰æ›æ–¹å¼é¸æŠ 0:ãªã—, 1:ã‚ã‚Š			*/
-		UINT8	reserve:3;	/* RW 0å›ºå®š										*/
-		UINT8	cks2:1;		/* RW å‘¨æ³¢æ•°é¸æŠãƒ“ãƒƒãƒˆ2							*/
-		UINT8	no_assign:3;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	smp:1;		/* RW A-D•ÏŠ·•û®‘I‘ğ 0:‚È‚µ, 1:‚ ‚è			*/
+		UINT8	reserve:3;	/* RW 0ŒÅ’è										*/
+		UINT8	cks2:1;		/* RW ü”g”‘I‘ğƒrƒbƒg2							*/
+		UINT8	no_assign:3;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } ADCON2_TYPE;
@@ -2151,21 +2151,21 @@ ADCON2_TYPE	adcon2_addr;
  */
 typedef union {
 	struct {
-		UINT8	b0:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ0						*/
-		UINT8	b1:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ1						*/
-		UINT8	b2:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ2						*/
-		UINT8	b3:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ3						*/
-		UINT8	b4:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ4						*/
-		UINT8	b5:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ5						*/
-		UINT8	b6:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ6						*/
-		UINT8	b7:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ7						*/
-		UINT8	b8:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ8(8bitãƒ¢ãƒ¼ãƒ‰ã§ã¯ä¸å®šå€¤)*/
-		UINT8	b9:1;		/* RO A/Då¤‰æ›çµæœã®ãƒ“ãƒƒãƒˆ9(8bitãƒ¢ãƒ¼ãƒ‰ã§ã¯ä¸å®šå€¤)*/
-		UINT8	reserved:6;	/* RO ä¸å®š										*/
+		UINT8	b0:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg0						*/
+		UINT8	b1:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg1						*/
+		UINT8	b2:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg2						*/
+		UINT8	b3:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg3						*/
+		UINT8	b4:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg4						*/
+		UINT8	b5:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg5						*/
+		UINT8	b6:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg6						*/
+		UINT8	b7:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg7						*/
+		UINT8	b8:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg8(8bitƒ‚[ƒh‚Å‚Í•s’è’l)*/
+		UINT8	b9:1;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ìƒrƒbƒg9(8bitƒ‚[ƒh‚Å‚Í•s’è’l)*/
+		UINT8	reserved:6;	/* RO •s’è										*/
 	} bit;
 	struct {
-		UINT8	low;		/* RO A/Då¤‰æ›çµæœã®ä¸‹ä½8ãƒ“ãƒƒãƒˆ					*/
-		UINT8	high;		/* RO A/Då¤‰æ›çµæœã®ä¸Šä½2ãƒ“ãƒƒãƒˆãŠã‚ˆã³ä¸å®šå€¤		*/
+		UINT8	low;		/* RO A/D•ÏŠ·Œ‹‰Ê‚Ì‰ºˆÊ8ƒrƒbƒg					*/
+		UINT8	high;		/* RO A/D•ÏŠ·Œ‹‰Ê‚ÌãˆÊ2ƒrƒbƒg‚¨‚æ‚Ñ•s’è’l		*/
 	} byte;
 	UINT16	word;
 } AD_TYPE;
@@ -2173,7 +2173,7 @@ typedef union {
 /*
  *  A-D register 0
  */
-#pragma ADDRESS		ad0_addr	03c0H		/* A-Dãƒ¬ã‚¸ã‚¹ã‚¿0					*/
+#pragma ADDRESS		ad0_addr	03c0H		/* A-DƒŒƒWƒXƒ^0					*/
 AD_TYPE		ad0_addr;
 
 #define		AD0				ad0_addr.word
@@ -2183,7 +2183,7 @@ AD_TYPE		ad0_addr;
 /*
  *  A-D register 1
  */
-#pragma ADDRESS		ad1_addr	03c2H		/* A-Dãƒ¬ã‚¸ã‚¹ã‚¿1					*/
+#pragma ADDRESS		ad1_addr	03c2H		/* A-DƒŒƒWƒXƒ^1					*/
 AD_TYPE		ad1_addr;
 
 #define		AD1				ad1_addr.word
@@ -2193,7 +2193,7 @@ AD_TYPE		ad1_addr;
 /*
  *  A-D register 2
  */
-#pragma ADDRESS		ad2_addr	03c4H		/* A-Dãƒ¬ã‚¸ã‚¹ã‚¿2					*/
+#pragma ADDRESS		ad2_addr	03c4H		/* A-DƒŒƒWƒXƒ^2					*/
 AD_TYPE		ad2_addr;
 
 #define		AD2				ad2_addr.word
@@ -2203,7 +2203,7 @@ AD_TYPE		ad2_addr;
 /*
  *  A-D register 3
  */
-#pragma ADDRESS		ad3_addr	03c6H		/* A-Dãƒ¬ã‚¸ã‚¹ã‚¿3					*/
+#pragma ADDRESS		ad3_addr	03c6H		/* A-DƒŒƒWƒXƒ^3					*/
 AD_TYPE		ad3_addr;
 
 #define		AD3				ad3_addr.word
@@ -2213,7 +2213,7 @@ AD_TYPE		ad3_addr;
 /*
  *  A-D register 4
  */
-#pragma ADDRESS		ad4_addr	03c8H		/* A-Dãƒ¬ã‚¸ã‚¹ã‚¿4					*/
+#pragma ADDRESS		ad4_addr	03c8H		/* A-DƒŒƒWƒXƒ^4					*/
 AD_TYPE		ad4_addr;
 
 #define		AD4				ad4_addr.word
@@ -2223,7 +2223,7 @@ AD_TYPE		ad4_addr;
 /*
  *  A-D register 5
  */
-#pragma ADDRESS		ad5_addr	03caH		/* A-Dãƒ¬ã‚¸ã‚¹ã‚¿5					*/
+#pragma ADDRESS		ad5_addr	03caH		/* A-DƒŒƒWƒXƒ^5					*/
 AD_TYPE		ad5_addr;
 
 #define		AD5				ad5_addr.word
@@ -2233,7 +2233,7 @@ AD_TYPE		ad5_addr;
 /*
  *  A-D register 6
  */
-#pragma ADDRESS		ad6_addr	03ccH		/* A-Dãƒ¬ã‚¸ã‚¹ã‚¿6					*/
+#pragma ADDRESS		ad6_addr	03ccH		/* A-DƒŒƒWƒXƒ^6					*/
 AD_TYPE		ad6_addr;
 
 #define		AD6				ad6_addr.word
@@ -2243,7 +2243,7 @@ AD_TYPE		ad6_addr;
 /*
  *  A-D register 7
  */
-#pragma ADDRESS		ad7_addr	03ceH		/* A-Dãƒ¬ã‚¸ã‚¹ã‚¿7					*/
+#pragma ADDRESS		ad7_addr	03ceH		/* A-DƒŒƒWƒXƒ^7					*/
 AD_TYPE		ad7_addr;
 
 #define		AD7				ad7_addr.word
@@ -2252,18 +2252,18 @@ AD_TYPE		ad7_addr;
 
 
 /********************************************************/
-/* ãƒ—ãƒ­ã‚°ãƒ©ãƒãƒ–ãƒ«å…¥å‡ºåŠ›ãƒãƒ¼ãƒˆ							*/
+/* ƒvƒƒOƒ‰ƒ}ƒuƒ‹“üo—Íƒ|[ƒg							*/
 /********************************************************/
 /*
  *  Port P1 direction register
  */
-#pragma ADDRESS		pd1_addr	03e3H		/* ãƒãƒ¼ãƒˆP1æ–¹å‘ãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		pd1_addr	03e3H		/* ƒ|[ƒgP1•ûŒüƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	no_assign:5;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	pd1_5:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd1_6:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd1_7:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	no_assign:5;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	pd1_5:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd1_6:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd1_7:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } PD1_TYPE;
@@ -2277,17 +2277,17 @@ PD1_TYPE	pd1_addr;
 /*
  *  Port P6 direction register
  */
-#pragma ADDRESS		pd6_addr	03eeH		/* ãƒãƒ¼ãƒˆP6æ–¹å‘ãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		pd6_addr	03eeH		/* ƒ|[ƒgP6•ûŒüƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	pd6_0:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd6_1:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd6_2:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd6_3:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd6_4:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd6_5:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd6_6:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd6_7:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	pd6_0:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd6_1:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd6_2:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd6_3:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd6_4:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd6_5:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd6_6:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd6_7:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } PD6_TYPE;
@@ -2306,17 +2306,17 @@ PD6_TYPE	pd6_addr;
 /*
  *  Port P7 direction register
  */
-#pragma ADDRESS		pd7_addr	03efH		/* ãƒãƒ¼ãƒˆP7æ–¹å‘ãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		pd7_addr	03efH		/* ƒ|[ƒgP7•ûŒüƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	pd7_0:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd7_1:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd7_2:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd7_3:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd7_4:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd7_5:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd7_6:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd7_7:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	pd7_0:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd7_1:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd7_2:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd7_3:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd7_4:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd7_5:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd7_6:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd7_7:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } PD7_TYPE;
@@ -2335,17 +2335,17 @@ PD7_TYPE	pd7_addr;
 /*
  *  Port P8 direction register
  */
-#pragma ADDRESS		pd8_addr	03f2H		/* ãƒãƒ¼ãƒˆP8æ–¹å‘ãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		pd8_addr	03f2H		/* ƒ|[ƒgP8•ûŒüƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	pd8_0:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd8_1:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd8_2:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd8_3:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	no_assign:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	pd8_5:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd8_6:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd8_7:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	pd8_0:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd8_1:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd8_2:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd8_3:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	no_assign:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	pd8_5:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd8_6:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd8_7:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } PD8_TYPE;
@@ -2363,14 +2363,14 @@ PD8_TYPE	pd8_addr;
 /*
  *  Port P9 direction register
  */
-#pragma ADDRESS		pd9_addr	03f3H		/* ãƒãƒ¼ãƒˆP9æ–¹å‘ãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		pd9_addr	03f3H		/* ƒ|[ƒgP9•ûŒüƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	pd9_0:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd9_1:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd9_2:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd9_3:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	no_assign:4;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	pd9_0:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd9_1:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd9_2:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd9_3:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	no_assign:4;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } PD9_TYPE;
@@ -2385,17 +2385,17 @@ PD9_TYPE	pd9_addr;
 /*
  *  Port P10 direction register
  */
-#pragma ADDRESS		pd10_addr	03f6H		/* ãƒãƒ¼ãƒˆP10æ–¹å‘ãƒ¬ã‚¸ã‚¹ã‚¿		*/
+#pragma ADDRESS		pd10_addr	03f6H		/* ƒ|[ƒgP10•ûŒüƒŒƒWƒXƒ^		*/
 typedef union {
 	struct {
-		UINT8	pd10_0:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd10_1:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd10_2:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd10_3:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd10_4:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd10_5:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd10_6:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	pd10_7:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	pd10_0:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd10_1:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd10_2:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd10_3:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd10_4:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd10_5:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd10_6:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	pd10_7:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } PD10_TYPE;
@@ -2414,13 +2414,13 @@ PD10_TYPE	pd10_addr;
 /*
  *  Port P1
  */
-#pragma ADDRESS		p1_addr		03e1H		/* ãƒãƒ¼ãƒˆP1ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		p1_addr		03e1H		/* ƒ|[ƒgP1ƒŒƒWƒXƒ^				*/
 typedef union {
 	struct {
-		UINT8	no_assign:5;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	p1_5:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p1_6:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p1_7:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	no_assign:5;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	p1_5:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p1_6:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p1_7:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } P1_TYPE;
@@ -2434,17 +2434,17 @@ P1_TYPE		p1_addr;
 /*
  *  Port P6
  */
-#pragma ADDRESS		p6_addr		03ecH		/* ãƒãƒ¼ãƒˆP6ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		p6_addr		03ecH		/* ƒ|[ƒgP6ƒŒƒWƒXƒ^				*/
 typedef union {
 	struct {
-		UINT8	p6_0:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p6_1:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p6_2:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p6_3:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p6_4:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p6_5:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p6_6:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p6_7:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	p6_0:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p6_1:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p6_2:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p6_3:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p6_4:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p6_5:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p6_6:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p6_7:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } P6_TYPE;
@@ -2463,17 +2463,17 @@ P6_TYPE		p6_addr;
 /*
  *  Port P7
  */
-#pragma ADDRESS		p7_addr		03edH		/* ãƒãƒ¼ãƒˆP7ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		p7_addr		03edH		/* ƒ|[ƒgP7ƒŒƒWƒXƒ^				*/
 typedef union {
 	struct {
-		UINT8	p7_0:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p7_1:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p7_2:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p7_3:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p7_4:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p7_5:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p7_6:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p7_7:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	p7_0:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p7_1:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p7_2:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p7_3:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p7_4:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p7_5:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p7_6:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p7_7:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } P7_TYPE;
@@ -2492,17 +2492,17 @@ P7_TYPE		p7_addr;
 /*
  *  Port P8
  */
-#pragma ADDRESS		p8_addr		03f0H		/* ãƒãƒ¼ãƒˆP8ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		p8_addr		03f0H		/* ƒ|[ƒgP8ƒŒƒWƒXƒ^				*/
 typedef union {
 	struct {
-		UINT8	p8_0:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p8_1:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p8_2:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p8_3:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	no_assign:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	p8_5:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p8_6:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p8_7:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	p8_0:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p8_1:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p8_2:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p8_3:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	no_assign:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	p8_5:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p8_6:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p8_7:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } P8_TYPE;
@@ -2520,14 +2520,14 @@ P8_TYPE		p8_addr;
 /*
  *  Port P9
  */
-#pragma ADDRESS		p9_addr		03f1H		/* ãƒãƒ¼ãƒˆP9ãƒ¬ã‚¸ã‚¹ã‚¿				*/
+#pragma ADDRESS		p9_addr		03f1H		/* ƒ|[ƒgP9ƒŒƒWƒXƒ^				*/
 typedef union {
 	struct {
-		UINT8	p9_0:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p9_1:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p9_2:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p9_3:1;		/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	no_assign:4;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	p9_0:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p9_1:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p9_2:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p9_3:1;		/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	no_assign:4;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } P9_TYPE;
@@ -2542,17 +2542,17 @@ P9_TYPE		p9_addr;
 /*
  *  Port P10
  */
-#pragma ADDRESS		p10_addr	03f4H		/* ãƒãƒ¼ãƒˆP10ãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		p10_addr	03f4H		/* ƒ|[ƒgP10ƒŒƒWƒXƒ^			*/
 typedef union {
 	struct {
-		UINT8	p10_0:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p10_1:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p10_2:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p10_3:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p10_4:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p10_5:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p10_6:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
-		UINT8	p10_7:1;	/* RW ç«¯å­æ©Ÿèƒ½(æ–¹å‘)é¸æŠ 0B:å…¥åŠ›/1B:å‡ºåŠ›		*/
+		UINT8	p10_0:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p10_1:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p10_2:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p10_3:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p10_4:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p10_5:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p10_6:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
+		UINT8	p10_7:1;	/* RW ’[q‹@”\(•ûŒü)‘I‘ğ 0B:“ü—Í/1B:o—Í		*/
 	} bit;
 	UINT8	byte;
 } P10_TYPE;
@@ -2571,12 +2571,12 @@ P10_TYPE	p10_addr;
 /*
  *  Pull-up control register 0
  */
-#pragma ADDRESS		pur0_addr	03fcH		/* ãƒ—ãƒ«ã‚¢ãƒƒãƒ—åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿0		*/
+#pragma ADDRESS		pur0_addr	03fcH		/* ƒvƒ‹ƒAƒbƒv§ŒäƒŒƒWƒXƒ^0		*/
 typedef union {
 	struct {
-		UINT8	no_assign1:3;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	pu03:1;		/* RW P15ã€œP17ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	no_assign2:4;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	no_assign1:3;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	pu03:1;		/* RW P15`P17‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	no_assign2:4;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } PUR0_TYPE;
@@ -2588,14 +2588,14 @@ PUR0_TYPE	pur0_addr;
 /*
  *  Pull-up control register 1
  */
-#pragma ADDRESS		pur1_addr	03fdH		/* ãƒ—ãƒ«ã‚¢ãƒƒãƒ—åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿1		*/
+#pragma ADDRESS		pur1_addr	03fdH		/* ƒvƒ‹ƒAƒbƒv§ŒäƒŒƒWƒXƒ^1		*/
 typedef union {
 	struct {
-		UINT8	no_assign:4;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	pu14:1;		/* RW P60ã€œP63ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	pu15:1;		/* RW P64ã€œP67ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	pu16:1;		/* RW P72ã€œP73ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	pu17:1;		/* RW P74ã€œP77ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
+		UINT8	no_assign:4;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	pu14:1;		/* RW P60`P63‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	pu15:1;		/* RW P64`P67‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	pu16:1;		/* RW P72`P73‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	pu17:1;		/* RW P74`P77‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
 	} bit;
 	UINT8	byte;
 } PUR1_TYPE;
@@ -2610,16 +2610,16 @@ PUR1_TYPE	pur1_addr;
 /*
  *  Pull-up control register 2
  */
-#pragma ADDRESS		pur2_addr	03feH		/* ãƒ—ãƒ«ã‚¢ãƒƒãƒ—åˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿2		*/
+#pragma ADDRESS		pur2_addr	03feH		/* ƒvƒ‹ƒAƒbƒv§ŒäƒŒƒWƒXƒ^2		*/
 typedef union {
 	struct {
-		UINT8	pu20:1;		/* RW P80ã€œP83ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	pu21:1;		/* RW P85ã€œP87ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	pu22:1;		/* RW P90ã€œP93ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	no_assign1:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	pu24:1;		/* RW P100ã€œP103ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	pu25:1;		/* RW P104ã€œP107ã®ãƒ—ãƒ«ã‚¢ãƒƒãƒ— 0:ãªã—, 1:ã‚ã‚Š		*/
-		UINT8	no_assign2:2;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	pu20:1;		/* RW P80`P83‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	pu21:1;		/* RW P85`P87‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	pu22:1;		/* RW P90`P93‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	no_assign1:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	pu24:1;		/* RW P100`P103‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	pu25:1;		/* RW P104`P107‚Ìƒvƒ‹ƒAƒbƒv 0:‚È‚µ, 1:‚ ‚è		*/
+		UINT8	no_assign2:2;/* -  •s’è ‘‚Şê‡‚Í0						*/
 		
 	} bit;
 	UINT8	byte;
@@ -2636,11 +2636,11 @@ PUR2_TYPE	pur2_addr;
 /*
  *  Port control register
  */
-#pragma ADDRESS		pcr_addr	03ffH		/* ãƒãƒ¼ãƒˆåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿			*/
+#pragma ADDRESS		pcr_addr	03ffH		/* ƒ|[ƒg§ŒäƒŒƒWƒXƒ^			*/
 typedef union {
 	struct{
-		UINT8	pcr0:1;		/* RW ãƒãƒ¼ãƒˆP1åˆ¶å¾¡ãƒ“ãƒƒãƒˆ						*/
-		UINT8	no_assign:7;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
+		UINT8	pcr0:1;		/* RW ƒ|[ƒgP1§Œäƒrƒbƒg						*/
+		UINT8	no_assign:7;/* -  •s’è ‘‚Şê‡‚Í0						*/
 	} bit;
 	UINT8	byte;
 } PCR_TYPE;
@@ -2650,21 +2650,21 @@ PCR_TYPE	pcr_addr;
 #define		PCR0			pcr_addr.bit.pcr0
 
 /********************************************************/
-/* ãƒ•ãƒ©ãƒƒã‚·ãƒ¥ãƒ¡ãƒ¢ãƒªç‰ˆ									*/
+/* ƒtƒ‰ƒbƒVƒ…ƒƒ‚ƒŠ”Å									*/
 /********************************************************/
 /*
  *  Flash Control Register 0
  */
-#pragma ADDRESS		fmr0_addr	01b7H		/* ãƒ•ãƒ©ãƒƒã‚·ãƒ¥ãƒ¡ãƒ¢ãƒªåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿0*/
+#pragma ADDRESS		fmr0_addr	01b7H		/* ƒtƒ‰ƒbƒVƒ…ƒƒ‚ƒŠ§ŒäƒŒƒWƒXƒ^0*/
 typedef union {
 	struct {
-		UINT8	fmr00:1;	/* R  RY/BYã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ•ãƒ©ã‚° 0:busy, 1:ready		*/
-		UINT8	fmr01:1;	/* RW CPUæ›¸ãæ›ãˆãƒ¢ãƒ¼ãƒ‰é¸æŠãƒ“ãƒƒãƒˆ 0:ç„¡åŠ¹, 1:æœ‰åŠ¹*/
-		UINT8	fmr02:1;	/* RW ãƒ–ãƒ­ãƒƒã‚¯0,1æ›¸æ›ãˆè¨±å¯ãƒ“ãƒƒãƒˆ 0:ç¦æ­¢, 1:è¨±å¯*/
-		UINT8	fmstp:1;	/* RW ãƒ•ãƒ©ãƒƒã‚·ãƒ¥ãƒ¡ãƒ¢ãƒªåœæ­¢ãƒ“ãƒƒãƒˆ 0:å‹•ä½œ, 1:åœæ­¢	*/
-		UINT8	reserve:2;	/* RW 0å›ºå®š										*/
-		UINT8	fmr06:1;	/* R  ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ 0:æ­£å¸¸, 1:ã‚¨ãƒ©ãƒ¼		*/
-		UINT8	fmr07:1;	/* R  ã‚¤ãƒ¬ãƒ¼ã‚ºã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ 0:æ­£å¸¸, 1:ã‚¨ãƒ©ãƒ¼		*/
+		UINT8	fmr00:1;	/* R  RY/BYƒXƒe[ƒ^ƒXƒtƒ‰ƒO 0:busy, 1:ready		*/
+		UINT8	fmr01:1;	/* RW CPU‘‚«Š·‚¦ƒ‚[ƒh‘I‘ğƒrƒbƒg 0:–³Œø, 1:—LŒø*/
+		UINT8	fmr02:1;	/* RW ƒuƒƒbƒN0,1‘Š·‚¦‹–‰Âƒrƒbƒg 0:‹Ö~, 1:‹–‰Â*/
+		UINT8	fmstp:1;	/* RW ƒtƒ‰ƒbƒVƒ…ƒƒ‚ƒŠ’â~ƒrƒbƒg 0:“®ì, 1:’â~	*/
+		UINT8	reserve:2;	/* RW 0ŒÅ’è										*/
+		UINT8	fmr06:1;	/* R  ƒvƒƒOƒ‰ƒ€ƒXƒe[ƒ^ƒX 0:³í, 1:ƒGƒ‰[		*/
+		UINT8	fmr07:1;	/* R  ƒCƒŒ[ƒYƒXƒe[ƒ^ƒX 0:³í, 1:ƒGƒ‰[		*/
 	} bit;
 	UINT8	byte;
 } FMR0_TYPE;
@@ -2681,15 +2681,15 @@ FMR0_TYPE	fmr0_addr;
 /*
  *  Flash Control Register 1
  */
-#pragma ADDRESS		fmr1_addr	01b5H		/* ãƒ•ãƒ©ãƒƒã‚·ãƒ¥ãƒ¡ãƒ¢ãƒªåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿1*/
+#pragma ADDRESS		fmr1_addr	01b5H		/* ƒtƒ‰ƒbƒVƒ…ƒƒ‚ƒŠ§ŒäƒŒƒWƒXƒ^1*/
 typedef union {
 	struct {
-		UINT8	reserve1:1;	/* R  ä¸å®š										*/
-		UINT8	fmr11:1;	/* RW EW1ãƒ¢ãƒ¼ãƒ‰é¸æŠ 0:EW0ãƒ¢ãƒ¼ãƒ‰, 1:EW1ãƒ¢ãƒ¼ãƒ‰	*/
-		UINT8	reserve2:2;	/* R  ä¸å®š										*/
-		UINT8	reserve3:2;	/* RW 0å›ºå®š										*/
-		UINT8	no_assign:1;/* -  ä¸å®š æ›¸è¾¼ã‚€å ´åˆã¯0						*/
-		UINT8	fmr17:1;	/* RW ãƒ–ãƒ­ãƒƒã‚¯A,Bã‚¢ã‚¯ã‚»ã‚¹ã‚¦ã‚¨ã‚¤ãƒˆ				*/
+		UINT8	reserve1:1;	/* R  •s’è										*/
+		UINT8	fmr11:1;	/* RW EW1ƒ‚[ƒh‘I‘ğ 0:EW0ƒ‚[ƒh, 1:EW1ƒ‚[ƒh	*/
+		UINT8	reserve2:2;	/* R  •s’è										*/
+		UINT8	reserve3:2;	/* RW 0ŒÅ’è										*/
+		UINT8	no_assign:1;/* -  •s’è ‘‚Şê‡‚Í0						*/
+		UINT8	fmr17:1;	/* RW ƒuƒƒbƒNA,BƒAƒNƒZƒXƒEƒGƒCƒg				*/
 	} bit;
 	UINT8	byte;
 } FMR1_TYPE;
@@ -2702,15 +2702,15 @@ FMR1_TYPE	fmr1_addr;
 /*
  *  Flash Control Register 4
  */
-#pragma ADDRESS		fmr4_addr	01b3H		/* ãƒ•ãƒ©ãƒƒã‚·ãƒ¥ãƒ¡ãƒ¢ãƒªåˆ¶å¾¡ãƒ¬ã‚¸ã‚¹ã‚¿4*/
+#pragma ADDRESS		fmr4_addr	01b3H		/* ƒtƒ‰ƒbƒVƒ…ƒƒ‚ƒŠ§ŒäƒŒƒWƒXƒ^4*/
 typedef union {
 	struct {
-		UINT8	fmr40:1;	/* RW ã‚¤ãƒ¬ãƒ¼ã‚ºã‚µã‚¹ãƒšãƒ³ãƒ‰æ©Ÿèƒ½è¨±å¯ 0:ç¦æ­¢, 1:è¨±å¯	*/
-		UINT8	fmr41:1;	/* RW ã‚¤ãƒ¬ãƒ¼ã‚ºã‚µã‚¹ãƒšãƒ³ãƒ‰ãƒªã‚¯ã‚¨ã‚¹ãƒˆ				*/
-							/*    0:ã‚¤ãƒ¬ãƒ¼ã‚ºãƒªã‚¹ã‚¿ãƒ¼ãƒˆ1:ã‚µã‚¹ãƒšãƒ³ãƒ‰ãƒªã‚¯ã‚¨ã‚¹ãƒˆ*/
-		UINT8	reserve1:4;	/* RW 0å›ºå®š										*/
-		UINT8	fmr46:1;	/* R  ã‚¤ãƒ¬ãƒ¼ã‚ºã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ 0:å‹•ä½œä¸­, 1:åœæ­¢		*/
-		UINT8	reserve2:1;	/* RW 0å›ºå®š										*/
+		UINT8	fmr40:1;	/* RW ƒCƒŒ[ƒYƒTƒXƒyƒ“ƒh‹@”\‹–‰Â 0:‹Ö~, 1:‹–‰Â	*/
+		UINT8	fmr41:1;	/* RW ƒCƒŒ[ƒYƒTƒXƒyƒ“ƒhƒŠƒNƒGƒXƒg				*/
+							/*    0:ƒCƒŒ[ƒYƒŠƒXƒ^[ƒg1:ƒTƒXƒyƒ“ƒhƒŠƒNƒGƒXƒg*/
+		UINT8	reserve1:4;	/* RW 0ŒÅ’è										*/
+		UINT8	fmr46:1;	/* R  ƒCƒŒ[ƒYƒXƒe[ƒ^ƒX 0:“®ì’†, 1:’â~		*/
+		UINT8	reserve2:1;	/* RW 0ŒÅ’è										*/
 	} bit;
 	UINT8	byte;
 } FMR4_TYPE;

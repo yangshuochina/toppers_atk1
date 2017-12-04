@@ -11,41 +11,41 @@
 ;              Graduate School of Information Science, Nagoya Univ., JAPAN
 ;  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
 ; 
-;  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
-;  によって公表されている GNU General Public License の Version 2 に記
-;  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
-;  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
-;  利用と呼ぶ）することを無償で許諾する．
-;  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
-;      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
-;      スコード中に含まれていること．
-;  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
-;      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
-;      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
-;      の無保証規定を掲載すること．
-;  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
-;      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
-;      と．
-;    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
-;        作権表示，この利用条件および下記の無保証規定を掲載すること．
-;    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
-;        報告すること．
-;  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
-;      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+;  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+;  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+;  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+;  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+;  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+;  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+;      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+;      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+;  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+;      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+;      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+;      �̖��ۏ؋K����f�ڂ��邱�ƁD
+;  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+;      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+;      �ƁD
+;    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+;        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+;    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+;        �񍐂��邱�ƁD
+;  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+;      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
 ; 
-;  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
-;  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
-;  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
-;  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+;  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+;  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+;  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+;  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
 ; 
 ;
 
 ;
-;  プロセッサ依存モジュール アセンブリ言語部（M32C用）
+;  �v���Z�b�T�ˑ����W���[�� �A�Z���u�����ꕔ�iM32C�p�j
 ;
 
 
-;  外部参照宣言
+;  �O���Q�Ɛ錾
 	.glb	_runtsk
 	.glb	_schedtsk
 	.glb	_tcxb_pc
@@ -61,15 +61,15 @@
 	.glb	_PostTaskHook
 	.glb	STACK_TOP
 
-;  外部公開宣言
+;  �O�����J�錾
 	.glb	_dispatch
 	.glb	_start_dispatch
 	.glb	_exit_and_dispatch
 	.glb	_activate_r
 	.glb	_interrupt
 
-;  定数定義
-;  _MACRO_ONLYを定義してヘッダファイルのインクルード可能？
+;  �萔��`
+;  _MACRO_ONLY���`���ăw�b�_�t�@�C���̃C���N���[�h�\�H
 CL_TASK		.equ	001h
 CL_ISR2		.equ	002h
 ID_INVAL	.equ	0FFh
@@ -77,167 +77,167 @@ ID_INVAL	.equ	0FFh
 	.section	program, code, align
 
 ;
-;  タスクディスパッチャ
+;  �^�X�N�f�B�X�p�b�`��
 ;
-;	呼び出し条件:
-;		割込み：IPL=0, FLGレジスタIビット=0 (CPUロック状態)
-;		コンテキスト：callevel=1(タスクコンテキスト)
-;		スタック： タスクスタック
+;	�Ăяo������:
+;		�����݁FIPL=0, FLG���W�X�^I�r�b�g=0 (CPU���b�N���)
+;		�R���e�L�X�g�Fcallevel=1(�^�X�N�R���e�L�X�g)
+;		�X�^�b�N�F �^�X�N�X�^�b�N
 ;
 _dispatch:
-	pushm	r1,r2,r3,a0,a1,sb,fb		; スタックへレジスタ保存
+	pushm	r1,r2,r3,a0,a1,sb,fb		; �X�^�b�N�փ��W�X�^�ۑ�
 	stc		isp, r2r0
 	indexld.b	_runtsk
-	mov.l	r2r0, _tcxb_sp	; スタックポインタをTCBに保存
+	mov.l	r2r0, _tcxb_sp	; �X�^�b�N�|�C���^��TCB�ɕۑ�
 	indexld.b	_runtsk
-	mov.l	#dispatch_r, _tcxb_pc	; 実行再開番地をTCBに保存
+	mov.l	#dispatch_r, _tcxb_pc	; ���s�ĊJ�Ԓn��TCB�ɕۑ�
 	jmp.b	dispatcher
 
 ;
-;	呼び出し条件:
-;		割込み：IPL=0, FLGレジスタIビット=0 (CPUロック状態)
-;		コンテキスト：callevel=1(タスクコンテキスト)
-;		スタック： タスクスタック
+;	�Ăяo������:
+;		�����݁FIPL=0, FLG���W�X�^I�r�b�g=0 (CPU���b�N���)
+;		�R���e�L�X�g�Fcallevel=1(�^�X�N�R���e�L�X�g)
+;		�X�^�b�N�F �^�X�N�X�^�b�N
 ;
 dispatch_r:
-	popm	r1,r2,r3,a0,a1,sb,fb		; タスクスタックからレジスタ復帰
-	rts				; dispatch 呼び出し元へ戻る.
+	popm	r1,r2,r3,a0,a1,sb,fb		; �^�X�N�X�^�b�N���烌�W�X�^���A
+	rts				; dispatch �Ăяo�����֖߂�.
 
 
 ;
-;  タスク起動時処理
+;  �^�X�N�N��������
 ;
-;	ここでは, CPUロック解除状態にし, タスクを起動する.
+;	�����ł�, CPU���b�N������Ԃɂ�, �^�X�N���N������.
 ;
-;	呼出条件: FLGレジスタIビット=0 (CPUロック状態), タスクスタック
-;			callevel = 1(タスクコンテキスト), タスクスタック
+;	�ďo����: FLG���W�X�^I�r�b�g=0 (CPU���b�N���), �^�X�N�X�^�b�N
+;			callevel = 1(�^�X�N�R���e�L�X�g), �^�X�N�X�^�b�N
 ;
 _activate_r:
-	mov.b	_runtsk, a0		; 実行開始タスクID
+	mov.b	_runtsk, a0		; ���s�J�n�^�X�NID
 	mov.b	_tinib_exepri:24[a0], _tcb_curpri:16[a0]
-	ldc	#0040h, flg	; 割込み許可, ISP, IPL=0
+	ldc	#0040h, flg	; �����݋���, ISP, IPL=0
 	shl.l	#2, a0
 	jmpi.a	_tinib_task:24[a0]
 
 ;
-;	dispatcher呼び出し条件:
-;		・すべてのタスクのコンテキストは保存されている.
-;		・FLGレジスタIビット=0 (CPUロック状態),
-;		・コンテキストはカーネル起動時を除きタスクコンテキスト(callevel=1)
-;				callevelの初期値は1？
-;		起動時は非タスクコンテキスト(callevel=?)で, その場合にも対応.
-;	dispatcher 呼出時のスタック:
-;		__kernel_dispatch からきた場合: タスクスタック
-;		exit_and_dispatch からきた場合: 
-;			exit_task からきた場合はタスクスタック
-;			カーネル起動時は割込みスタック
-;		ret_int からきた場合: タスクスタック
-;		dispatcher_1 での割込み待ちからきた場合: 割込みスタック
+;	dispatcher�Ăяo������:
+;		�E���ׂẴ^�X�N�̃R���e�L�X�g�͕ۑ�����Ă���.
+;		�EFLG���W�X�^I�r�b�g=0 (CPU���b�N���),
+;		�E�R���e�L�X�g�̓J�[�l���N�����������^�X�N�R���e�L�X�g(callevel=1)
+;				callevel�̏����l��1�H
+;		�N�����͔�^�X�N�R���e�L�X�g(callevel=?)��, ���̏ꍇ�ɂ��Ή�.
+;	dispatcher �ďo���̃X�^�b�N:
+;		__kernel_dispatch ���炫���ꍇ: �^�X�N�X�^�b�N
+;		exit_and_dispatch ���炫���ꍇ: 
+;			exit_task ���炫���ꍇ�̓^�X�N�X�^�b�N
+;			�J�[�l���N�����͊����݃X�^�b�N
+;		ret_int ���炫���ꍇ: �^�X�N�X�^�b�N
+;		dispatcher_1 �ł̊����ݑ҂����炫���ꍇ: �����݃X�^�b�N
 ;
 _exit_and_dispatch:
 dispatcher:
 	sub.w	r2, r2
 	mova	_PostTaskHook, r2r0
-	mov.l	r2r0, r2r0			; ポストタスクフック有効？
+	mov.l	r2r0, r2r0			; �|�X�g�^�X�N�t�b�N�L���H
 	jeq		_start_dispatch
 	jsr		_call_posttaskhook
 
 _start_dispatch:
 	mov.b	_schedtsk, r0l	; 
-	mov.b 	r0l, _runtsk		; schedtsk を runtsk に
+	mov.b 	r0l, _runtsk		; schedtsk �� runtsk ��
 	cmp.b	#ID_INVAL, r0l
-	jz	pre_idle		; schedtsk が無効ならばアイドルループへ
+	jz	pre_idle		; schedtsk �������Ȃ�΃A�C�h�����[�v��
 	indexls.b	r0l
 	mov.l	_tcxb_sp, r3r1
-	ldc		r3r1, isp		; タスクスタックポインタを復帰
+	ldc		r3r1, isp		; �^�X�N�X�^�b�N�|�C���^�𕜋A
 	indexls.b	r0l
 	mov.l	_tcxb_pc, a0
 	sub.w	r2, r2
 	mova	_PreTaskHook, r2r0
-	mov.l	r2r0, r2r0			; プレタスクフック有効？
+	mov.l	r2r0, r2r0			; �v���^�X�N�t�b�N�L���H
 	jeq		dispatch_task
-	pushm	a0		; 実行再開番地退避
+	pushm	a0		; ���s�ĊJ�Ԓn�ޔ�
 	jsr		_call_pretaskhook
-	popm	a0		; 実行再開番地復帰
+	popm	a0		; ���s�ĊJ�Ԓn���A
 
 dispatch_task:
-	jmpi.a	a0 		; 実行再開番地へジャンプ
+	jmpi.a	a0 		; ���s�ĊJ�Ԓn�փW�����v
 
 ;
-;	ここからは schedtsk がない場合
+;	��������� schedtsk ���Ȃ��ꍇ
 ;
 pre_idle:
-	ldc	#STACK_TOP, isp		; 割込み用のスタックへ切替え
-	mov.b	#CL_ISR2, _callevel	; 非タスクコンテキスト
+	ldc	#STACK_TOP, isp		; �����ݗp�̃X�^�b�N�֐ؑւ�
+	mov.b	#CL_ISR2, _callevel	; ��^�X�N�R���e�L�X�g
 
 idle_loop:
-	fset	i		; 割込み待ち
-;	周辺デバイスへのスリープ処理・スリープ復帰時の処理が未検討であること
-;	アイドル状態での振る舞いが未検討であることからwait命令をコメント化する
-;	wait 			; wait命令を使用するとで
-	nop			; 消費電力を抑えることができる.
-	nop			; M32C CPUは4命令先読みを行う.
-	nop			; wait時は先読みした命令を忘れてしまうので,
-	nop			; 4命令分nopを入れておく.
+	fset	i		; �����ݑ҂�
+;	���Ӄf�o�C�X�ւ̃X���[�v�����E�X���[�v���A���̏������������ł��邱��
+;	�A�C�h����Ԃł̐U�镑�����������ł��邱�Ƃ���wait���߂��R�����g������
+;	wait 			; wait���߂��g�p����Ƃ�
+	nop			; ����d�͂�}���邱�Ƃ��ł���.
+	nop			; M32C CPU��4���ߐ�ǂ݂��s��.
+	nop			; wait���͐�ǂ݂������߂�Y��Ă��܂��̂�,
+	nop			; 4���ߕ�nop�����Ă���.
 
 ;
-;	ここで非タスクコンテキスト,割込みスタックに切り換えたのは,
-;	ここで発生する割込み処理にどのスタックを使うかという問題の解決と,
-;	割込みハンドラ内でのディスパッチ防止という2つの意味がある．
+;	�����Ŕ�^�X�N�R���e�L�X�g,�����݃X�^�b�N�ɐ؂芷�����̂�,
+;	�����Ŕ������銄���ݏ����ɂǂ̃X�^�b�N���g�����Ƃ������̉�����,
+;	�����݃n���h�����ł̃f�B�X�p�b�`�h�~�Ƃ���2�̈Ӗ�������D
 ;
-	fclr	i			; 割込み禁止
+	fclr	i			; �����݋֎~
 	cmp.b	#ID_INVAL, _schedtsk
-	jz	idle_loop		; schedtsk が無効ならばアイドルループへ
-	mov.b	#CL_TASK, _callevel	; タスクコンテキストに戻す
-	jmp.b	_start_dispatch		; dispatcher へ戻る
+	jz	idle_loop		; schedtsk �������Ȃ�΃A�C�h�����[�v��
+	mov.b	#CL_TASK, _callevel	; �^�X�N�R���e�L�X�g�ɖ߂�
+	jmp.b	_start_dispatch		; dispatcher �֖߂�
 
 
 ;
-;  割込みハンドラ出口処理(ディスパッチ要求あり)
+;  �����݃n���h���o������(�f�B�X�p�b�`�v������)
 ;
-;	呼出し条件:
-;	・FLGレジスタのIビット=0, IPL=0, タスクコンテキスト(callevel=1)
-;	・使用スタックはタスクスタック
-;	・タスクコンテキストはr0,r1,r2,r3,a0がスタックに積まれた状態
+;	�ďo������:
+;	�EFLG���W�X�^��I�r�b�g=0, IPL=0, �^�X�N�R���e�L�X�g(callevel=1)
+;	�E�g�p�X�^�b�N�̓^�X�N�X�^�b�N
+;	�E�^�X�N�R���e�L�X�g��r0,r1,r2,r3,a0���X�^�b�N�ɐς܂ꂽ���
 ;
 ret_int:
-	ldipl	#0			; タスクのIPL値をセット(IPL=0)　ディスパッチ時は必ずタスクレベル(IPL=0)であるため。
-	pushm	r2,a1,sb,fb		; スタックへ_interrupt:で保持していないレジスタ保存
+	ldipl	#0			; �^�X�N��IPL�l���Z�b�g(IPL=0)�@�f�B�X�p�b�`���͕K���^�X�N���x��(IPL=0)�ł��邽�߁B
+	pushm	r2,a1,sb,fb		; �X�^�b�N��_interrupt:�ŕێ����Ă��Ȃ����W�X�^�ۑ�
 	stc		isp, r3r1
 	mov.b:s	_runtsk, r0l
 	indexld.b	r0l
-	mov.l	r3r1, _tcxb_sp	; スタックポインタをTCBに保存
+	mov.l	r3r1, _tcxb_sp	; �X�^�b�N�|�C���^��TCB�ɕۑ�
 	indexld.b	r0l
-	mov.l	#ret_int_r, _tcxb_pc	; 実行再開番地をTCBに保存
+	mov.l	#ret_int_r, _tcxb_pc	; ���s�ĊJ�Ԓn��TCB�ɕۑ�
 	jmp.b	dispatcher
 
 ;
-;	呼び出し条件: IPL=0, FLGレジスタIビット=0 (CPUロック状態),
-;			callevel=1(タスクコンテキスト), タスクスタック
-;	スタックにはa1,sb,fb,r0,r1,r2,r3,a0の順で積まれている
+;	�Ăяo������: IPL=0, FLG���W�X�^I�r�b�g=0 (CPU���b�N���),
+;			callevel=1(�^�X�N�R���e�L�X�g), �^�X�N�X�^�b�N
+;	�X�^�b�N�ɂ�a1,sb,fb,r0,r1,r2,r3,a0�̏��Őς܂�Ă���
 ;
 ret_int_r:
-;	popm	r2,a1,sb,fb,r0,r1,r3,a0	; スタックからレジスタを復帰
-;	分けないとできないのはなぜ？
-;	→ブロック命令のため並べ替えが発生するから
-	popm	r2,a1,sb,fb	; スタックからレジスタを復帰
-	popm	r0,r1,r3,a0	; スタックからレジスタを復帰
-	reit				; タスクへ戻る
+;	popm	r2,a1,sb,fb,r0,r1,r3,a0	; �X�^�b�N���烌�W�X�^�𕜋A
+;	�����Ȃ��Ƃł��Ȃ��̂͂Ȃ��H
+;	���u���b�N���߂̂��ߕ��בւ����������邩��
+	popm	r2,a1,sb,fb	; �X�^�b�N���烌�W�X�^�𕜋A
+	popm	r0,r1,r3,a0	; �X�^�b�N���烌�W�X�^�𕜋A
+	reit				; �^�X�N�֖߂�
 
 
 ;
-;  割込み出入口処理(アセンブリ言語記述部分)
+;  �����ݏo��������(�A�Z���u������L�q����)
 ;
-;	呼出し条件:
-;	・FLGレジスタのIビット=0, IPLは受付けた割込みのIPL.
-;	・スタックは多重割り込みなら割込みスタック, そうでなければ
-;	  タスクスタック
-;	・a0 には割込みハンドラのアドレスが格納されている.
-;	・r0l には前回の実行中割込みIDが格納されている．
+;	�ďo������:
+;	�EFLG���W�X�^��I�r�b�g=0, IPL�͎�t���������݂�IPL.
+;	�E�X�^�b�N�͑��d���荞�݂Ȃ犄���݃X�^�b�N, �����łȂ����
+;	  �^�X�N�X�^�b�N
+;	�Ea0 �ɂ͊����݃n���h���̃A�h���X���i�[����Ă���.
+;	�Er0l �ɂ͑O��̎��s��������ID���i�[����Ă���D
 ;
-;	レジスタがスタック上にどのように保存されているかを以下に示す.
-;	この図では上が低位, 下が高位のアドレスで, スタックは下から
-;	上方向に向かって積み上げられるものとする.
+;	���W�X�^���X�^�b�N��ɂǂ̂悤�ɕۑ�����Ă��邩���ȉ��Ɏ���.
+;	���̐}�ł͏オ���, �������ʂ̃A�h���X��, �X�^�b�N�͉�����
+;	������Ɍ������Đςݏグ������̂Ƃ���.
 ;
 ;	-------------------------
 ;	|       R2(2byte)        |
@@ -252,8 +252,8 @@ ret_int_r:
 ;	|                        |
 ;	-------------------------
 ;
-;	これより上はディスパッチ要求時にret_intにてスタックに積まれるレジスタ.
-;	これより下は割り込み発生時にスタックに積まれるレジスタ.
+;	�������̓f�B�X�p�b�`�v������ret_int�ɂăX�^�b�N�ɐς܂�郌�W�X�^.
+;	�����艺�͊��荞�ݔ������ɃX�^�b�N�ɐς܂�郌�W�X�^.
 ;
 ;	--------------------------
 ;	|       R0(2byte)        |
@@ -271,58 +271,58 @@ ret_int_r:
 ;	|       FLG(2byte)       |
 ;	-------------------------
 ;
-;	ハンドラからリターンした後は, 多重割込みでなく, 
-;	ディスパッチ要求がある時(schedtsk != runtsk)に，
-;	ret_int へ分岐する．
+;	�n���h�����烊�^�[���������, ���d�����݂łȂ�, 
+;	�f�B�X�p�b�`�v�������鎞(schedtsk != runtsk)�ɁC
+;	ret_int �֕��򂷂�D
 ;
-;	ret_intへ分岐する場合IPLの値を強制的に0にする.
-;	ディスパッチ後にIPLを0にする手段がないためここで行う.
-;	本処理について以下前提条件により問題なしと判断する.
-;	・通常タスク動作中はIPL=0であり、割込み/ディスパッチ後もIPL=0である.
-;	・リソース取得においてIPL!=0の時に割込みが発生した場合,
-;	  実行可能状態の各タスクのプロセッシングレベルはタスクレベルである.
-;	  割込み発生時に実行していたタスクのプロセッシングレベルは
-;	  割込みレベル(IPL!=0)のためディスパッチは起こらない.
-;	・これらよりディスパッチが起こる時はIPL=0として問題ない.
+;	ret_int�֕��򂷂�ꍇIPL�̒l�������I��0�ɂ���.
+;	�f�B�X�p�b�`���IPL��0�ɂ����i���Ȃ����߂����ōs��.
+;	�{�����ɂ��Ĉȉ��O������ɂ����Ȃ��Ɣ��f����.
+;	�E�ʏ�^�X�N���쒆��IPL=0�ł���A������/�f�B�X�p�b�`���IPL=0�ł���.
+;	�E���\�[�X�擾�ɂ�����IPL!=0�̎��Ɋ����݂����������ꍇ,
+;	  ���s�\��Ԃ̊e�^�X�N�̃v���Z�b�V���O���x���̓^�X�N���x���ł���.
+;	  �����ݔ������Ɏ��s���Ă����^�X�N�̃v���Z�b�V���O���x����
+;	  �����݃��x��(IPL!=0)�̂��߃f�B�X�p�b�`�͋N����Ȃ�.
+;	�E�������f�B�X�p�b�`���N���鎞��IPL=0�Ƃ��Ė��Ȃ�.
 ;
-;	多重割込みかどうかはcallevelの値で判定する.
-;	callevel != 1 ならば多重割込みであると判定する.
+;	���d�����݂��ǂ�����callevel�̒l�Ŕ��肷��.
+;	callevel != 1 �Ȃ�Α��d�����݂ł���Ɣ��肷��.
 ;
 ;
 _interrupt:
-	cmp.b	#CL_TASK, _callevel	; 多重割り込みかどうか
-	jnz	int_from_int		; 0でなければ多重割込み
+	cmp.b	#CL_TASK, _callevel	; ���d���荞�݂��ǂ���
+	jnz	int_from_int		; 0�łȂ���Α��d������
 
-	; 初段の割込み(タスクから)
-	stc	isp, r3r1			; スタックポインタを取り出し
-	ldc	#STACK_TOP, isp		; 割込み用のスタックへ切替える
+	; ���i�̊�����(�^�X�N����)
+	stc	isp, r3r1			; �X�^�b�N�|�C���^�����o��
+	ldc	#STACK_TOP, isp		; �����ݗp�̃X�^�b�N�֐ؑւ���
 
-int_from_int:				; 多重割込み
-	mov.b	_callevel, r0h	; 実行レベルを取得
-	push.w	r0				; 実行レベルとrunisrをスタックに保持
-							; push.bでもSPは-2されるため1Byteの無駄が生じる
-							; このためrunisrとcallevelをまとめてpushする
-	mov.b	#CL_ISR2, _callevel	; 実行レベルをISR2に設定
-	fset	i			; 割込み禁止解除
-	jsri.a	a0			; Cルーチン呼び出し
-	fclr	i			; 割込み禁止
-	pop.w	r0			; 本割込み前の実行レベルと割込みIDを復帰
-	mov.b	r0h, _callevel	; 実行レベルを反映
-	mov.b:s	r0l, _runisr	; 割込みIDを反映
-	cmp.b	#CL_TASK, _callevel	; 多重割り込みかどうか
-	jnz	int_return		; 多重割り込みならリターン
+int_from_int:				; ���d������
+	mov.b	_callevel, r0h	; ���s���x�����擾
+	push.w	r0				; ���s���x����runisr���X�^�b�N�ɕێ�
+							; push.b�ł�SP��-2����邽��1Byte�̖��ʂ�������
+							; ���̂���runisr��callevel���܂Ƃ߂�push����
+	mov.b	#CL_ISR2, _callevel	; ���s���x����ISR2�ɐݒ�
+	fset	i			; �����݋֎~����
+	jsri.a	a0			; C���[�`���Ăяo��
+	fclr	i			; �����݋֎~
+	pop.w	r0			; �{�����ݑO�̎��s���x���Ɗ�����ID�𕜋A
+	mov.b	r0h, _callevel	; ���s���x���𔽉f
+	mov.b:s	r0l, _runisr	; ������ID�𔽉f
+	cmp.b	#CL_TASK, _callevel	; ���d���荞�݂��ǂ���
+	jnz	int_return		; ���d���荞�݂Ȃ烊�^�[��
 
-	; 初段の割込み(タスクから)
-	ldc	r3r1, isp		; タスクのスタックに戻す
-	cmp.b	_schedtsk, _runtsk	;ディスパッチ要求あり？
-	jnz		ret_int		; あれば ret_int へジャンプ
+	; ���i�̊�����(�^�X�N����)
+	ldc	r3r1, isp		; �^�X�N�̃X�^�b�N�ɖ߂�
+	cmp.b	_schedtsk, _runtsk	;�f�B�X�p�b�`�v������H
+	jnz		ret_int		; ����� ret_int �փW�����v
 
 int_return:
-	popm	r0,r1,r3,a0	; レジスタ復帰
-	reit				; 割込み前の処理に戻る
+	popm	r0,r1,r3,a0	; ���W�X�^���A
+	reit				; �����ݑO�̏����ɖ߂�
 
 ;
-;  未使用割込みの処理
+;  ���g�p�����݂̏���
 ;
 	.glb _unused_interrupt
 _unused_interrupt:

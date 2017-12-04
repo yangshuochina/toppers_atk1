@@ -1,4 +1,4 @@
-	/* 繧ｷ繧ｹ繝�繝繧ｿ繧､繝槫牡霎ｼ縺ｿ	*/
+	/* システムタイマ割込み	*/
 	ISR SysTimerInt {
 		CATEGORY = 2;
 		ENTRY = 12;

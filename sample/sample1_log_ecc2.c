@@ -9,32 +9,32 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  ä¸Šè¨˜è‘—ä½œæ¨©è€…ã¯ï¼Œä»¥ä¸‹ã® (1)ã€œ(4) ã®æ¡ä»¶ã‹ï¼ŒFree Software Foundation 
- *  ã«ã‚ˆã£ã¦å…¬è¡¨ã•ã‚Œã¦ã„ã‚‹ GNU General Public License ã® Version 2 ã«è¨˜
- *  è¿°ã•ã‚Œã¦ã„ã‚‹æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã«é™ã‚Šï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ï¼ˆæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢
- *  ã‚’æ”¹å¤‰ã—ãŸã‚‚ã®ã‚’å«ã‚€ï¼ä»¥ä¸‹åŒã˜ï¼‰ã‚’ä½¿ç”¨ãƒ»è¤‡è£½ãƒ»æ”¹å¤‰ãƒ»å†é…å¸ƒï¼ˆä»¥ä¸‹ï¼Œ
- *  åˆ©ç”¨ã¨å‘¼ã¶ï¼‰ã™ã‚‹ã“ã¨ã‚’ç„¡å„Ÿã§è¨±è«¾ã™ã‚‹ï¼
- *  (1) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®å½¢ã§åˆ©ç”¨ã™ã‚‹å ´åˆã«ã¯ï¼Œä¸Šè¨˜ã®è‘—ä½œ
- *      æ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šãŒï¼Œãã®ã¾ã¾ã®å½¢ã§ã‚½ãƒ¼
- *      ã‚¹ã‚³ãƒ¼ãƒ‰ä¸­ã«å«ã¾ã‚Œã¦ã„ã‚‹ã“ã¨ï¼
- *  (2) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œãƒ©ã‚¤ãƒ–ãƒ©ãƒªå½¢å¼ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
- *      ç”¨ã§ãã‚‹å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œå†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨
- *      è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜
- *      ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
- *  (3) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œæ©Ÿå™¨ã«çµ„ã¿è¾¼ã‚€ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
- *      ç”¨ã§ããªã„å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œæ¬¡ã®ã„ãšã‚Œã‹ã®æ¡ä»¶ã‚’æº€ãŸã™ã“
- *      ã¨ï¼
- *    (a) å†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—
- *        ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
- *    (b) å†é…å¸ƒã®å½¢æ…‹ã‚’ï¼Œåˆ¥ã«å®šã‚ã‚‹æ–¹æ³•ã«ã‚ˆã£ã¦ï¼ŒTOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«
- *        å ±å‘Šã™ã‚‹ã“ã¨ï¼
- *  (4) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ã‚‹ã„ã‹ãªã‚‹æ
- *      å®³ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å…è²¬ã™ã‚‹ã“ã¨ï¼
+ *  ã‹L’˜ìŒ Ò‚ÍCˆÈ‰º‚Ì (1)`(4) ‚ÌğŒ‚©CFree Software Foundation 
+ *  ‚É‚æ‚Á‚ÄŒö•\‚³‚ê‚Ä‚¢‚é GNU General Public License ‚Ì Version 2 ‚É‹L
+ *  q‚³‚ê‚Ä‚¢‚éğŒ‚ğ–‚½‚·ê‡‚ÉŒÀ‚èC–{ƒ\ƒtƒgƒEƒFƒAi–{ƒ\ƒtƒgƒEƒFƒA
+ *  ‚ğ‰ü•Ï‚µ‚½‚à‚Ì‚ğŠÜ‚ŞDˆÈ‰º“¯‚¶j‚ğg—pE•¡»E‰ü•ÏEÄ”z•ziˆÈ‰ºC
+ *  —˜—p‚ÆŒÄ‚Ôj‚·‚é‚±‚Æ‚ğ–³‚Å‹–‘ø‚·‚éD
+ *  (1) –{ƒ\ƒtƒgƒEƒFƒA‚ğƒ\[ƒXƒR[ƒh‚ÌŒ`‚Å—˜—p‚·‚éê‡‚É‚ÍCã‹L‚Ì’˜ì
+ *      Œ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ªC‚»‚Ì‚Ü‚Ü‚ÌŒ`‚Åƒ\[
+ *      ƒXƒR[ƒh’†‚ÉŠÜ‚Ü‚ê‚Ä‚¢‚é‚±‚ÆD
+ *  (2) –{ƒ\ƒtƒgƒEƒFƒA‚ğCƒ‰ƒCƒuƒ‰ƒŠŒ`®‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ég
+ *      —p‚Å‚«‚éŒ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCÄ”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—p
+ *      Òƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜ìŒ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L
+ *      ‚Ì–³•ÛØ‹K’è‚ğŒfÚ‚·‚é‚±‚ÆD
+ *  (3) –{ƒ\ƒtƒgƒEƒFƒA‚ğC‹@Ší‚É‘g‚İ‚Ş‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ég
+ *      —p‚Å‚«‚È‚¢Œ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCŸ‚Ì‚¢‚¸‚ê‚©‚ÌğŒ‚ğ–‚½‚·‚±
+ *      ‚ÆD
+ *    (a) Ä”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—pÒƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜
+ *        ìŒ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ğŒfÚ‚·‚é‚±‚ÆD
+ *    (b) Ä”z•z‚ÌŒ`‘Ô‚ğC•Ê‚É’è‚ß‚é•û–@‚É‚æ‚Á‚ÄCTOPPERSƒvƒƒWƒFƒNƒg‚É
+ *        •ñ‚·‚é‚±‚ÆD
+ *  (4) –{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚é‚¢‚©‚È‚é‘¹
+ *      ŠQ‚©‚ç‚àCã‹L’˜ìŒ Ò‚¨‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ğ–ÆÓ‚·‚é‚±‚ÆD
  * 
- *  æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ï¼Œç„¡ä¿è¨¼ã§æä¾›ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã§ã‚ã‚‹ï¼ä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠ
- *  ã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«é–¢ã—ã¦ï¼Œãã®é©ç”¨å¯èƒ½æ€§ã‚‚
- *  å«ã‚ã¦ï¼Œã„ã‹ãªã‚‹ä¿è¨¼ã‚‚è¡Œã‚ãªã„ï¼ã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´
- *  æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ãŸã„ã‹ãªã‚‹æå®³ã«é–¢ã—ã¦ã‚‚ï¼Œãã®è²¬ä»»ã‚’è² ã‚ãªã„ï¼
+ *  –{ƒ\ƒtƒgƒEƒFƒA‚ÍC–³•ÛØ‚Å’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚à‚Ì‚Å‚ ‚éDã‹L’˜ìŒ Ò‚¨
+ *  ‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ÍC–{ƒ\ƒtƒgƒEƒFƒA‚ÉŠÖ‚µ‚ÄC‚»‚Ì“K—p‰Â”\«‚à
+ *  ŠÜ‚ß‚ÄC‚¢‚©‚È‚é•ÛØ‚às‚í‚È‚¢D‚Ü‚½C–{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼
+ *  Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚½‚¢‚©‚È‚é‘¹ŠQ‚ÉŠÖ‚µ‚Ä‚àC‚»‚ÌÓ”C‚ğ•‰‚í‚È‚¢D
  * 
  */
 #include "kernel.h"
@@ -45,12 +45,12 @@
 #include "sample1_com_ecc2.h"
 
 /*
- *  å†…éƒ¨å®šæ•°ãƒ‡ãƒ¼ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«
+ *  “à•”’è”ƒf[ƒ^ƒe[ƒuƒ‹
  */
-/* ç„¡åŠ¹ã‚¤ãƒ™ãƒ³ãƒˆãƒã‚¹ã‚¯å€¤	*/
+/* –³ŒøƒCƒxƒ“ƒgƒ}ƒXƒN’l	*/
 static const EventMaskType	invalid_mask = (EventMaskType)( 0 );
 
-/* ã‚¤ãƒ™ãƒ³ãƒˆãƒã‚¹ã‚¯ãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒCƒxƒ“ƒgƒ}ƒXƒNƒe[ƒuƒ‹	*/
 static const EventMaskType * const	event_mask_tbl[] = {
 	&invalid_mask,
 	&T2Evt,
@@ -59,7 +59,7 @@ static const EventMaskType * const	event_mask_tbl[] = {
 	&invalid_mask
 };
 
-/* ã‚¿ã‚¹ã‚¯IDãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒ^ƒXƒNIDƒe[ƒuƒ‹	*/
 static const TaskType * const	task_id_tbl[] = {
 	&Task1,
 	&Task2,
@@ -68,26 +68,26 @@ static const TaskType * const	task_id_tbl[] = {
 	&Task5
 };
 
-/* ã‚¢ãƒ©ãƒ¼ãƒ IDãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒAƒ‰[ƒ€IDƒe[ƒuƒ‹	*/
 static const AlarmType * const	alarm_id_tbl[] = {
 	&ActTskArm,
 	&SetEvtArm,
 	&CallBackArm
 };
 
-/* ãƒ†ã‚£ãƒƒã‚¯å€¤ãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒeƒBƒbƒN’lƒe[ƒuƒ‹	*/
 static const TickType	tick_tbl[] = {
 	(TickType)500,
 	(TickType)900
 };
 
-/* ã‚µã‚¤ã‚¯ãƒ«å€¤ãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒTƒCƒNƒ‹’lƒe[ƒuƒ‹	*/
 static const TickType	cycle_tbl[] = {
 	(TickType)0,
 	(TickType)500
 };
 
-/* ã‚¤ãƒ™ãƒ³ãƒˆãƒã‚¹ã‚¯åæ–‡å­—åˆ—ãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒCƒxƒ“ƒgƒ}ƒXƒN–¼•¶š—ñƒe[ƒuƒ‹	*/
 static const UINT8	*event_name_tbl[] = {
 	"Invalid",
 	"T2Evt",
@@ -96,7 +96,7 @@ static const UINT8	*event_name_tbl[] = {
 	"Invalid"
 };
 
-/* ã‚¿ã‚¹ã‚¯åæ–‡å­—åˆ—ãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒ^ƒXƒN–¼•¶š—ñƒe[ƒuƒ‹	*/
 const UINT8	*task_name_tbl[] = {
 	"Task1",
 	"Task2",
@@ -105,7 +105,7 @@ const UINT8	*task_name_tbl[] = {
 	"Task5"
 };
 
-/* ã‚¿ã‚¹ã‚¯çŠ¶æ…‹æ–‡å­—åˆ—ãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒ^ƒXƒNó‘Ô•¶š—ñƒe[ƒuƒ‹	*/
 static const UINT8	*task_state_tbl[] = {
 	"SUSPENDED",
 	"RUNNING",
@@ -113,7 +113,7 @@ static const UINT8	*task_state_tbl[] = {
 	"WAITING",
 };
 
-/* ã‚¢ãƒ©ãƒ¼ãƒ åæ–‡å­—åˆ—ãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒAƒ‰[ƒ€–¼•¶š—ñƒe[ƒuƒ‹	*/
 static const UINT8	*alarm_name_tbl[] = {
 	"ActTskArm",
 	"SetEvtArm",
@@ -121,7 +121,7 @@ static const UINT8	*alarm_name_tbl[] = {
 };
 
 
-/* ã‚¨ãƒ©ãƒ¼æ–‡å­—åˆ—ãƒ†ãƒ¼ãƒ–ãƒ«	*/
+/* ƒGƒ‰[•¶š—ñƒe[ƒuƒ‹	*/
 const UINT8	*ercd_tbl[] = {
 	"E_OK",
 	"E_OS_ACCESS",
@@ -136,207 +136,207 @@ const UINT8	*ercd_tbl[] = {
 
 
 /*
- *  ActivateTask å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  ActivateTask ÀsEƒƒOo—Íˆ—
  */
 void
 PutActTsk( UINT8 task_no )
 {
 	PutSysLog( (const UINT8 *)"Call ActivateTask(" );
 	PutSysLog( task_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)")Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)")\r\n" );
 
 	error_log( ActivateTask( *(task_id_tbl[task_no]) ) );
 
 }	/* PutActTsk	*/
 
 /*
- *  ActivateTask å®Ÿè¡Œ(NonPriTask)ãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  ActivateTask Às(NonPriTask)EƒƒOo—Íˆ—
  */
 void
 PutActNonPriTsk( void )
 {
 	PutSysLog( (const UINT8 *)
-				"Call ActivateTask(NonPriTask)Â¥rÂ¥n" );
+				"Call ActivateTask(NonPriTask)\r\n" );
 
 	error_log( ActivateTask( NonPriTask ) );
 }	/* PutActNonPriTsk	*/
 
 /*
- *  TerminateTask å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  TerminateTask ÀsEƒƒOo—Íˆ—
  */
 void
 PutTermTsk( UINT8 task_no )
 {
-	StatusType	ercd;		/* ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰			*/
+	StatusType	ercd;		/* ƒGƒ‰[ƒR[ƒh			*/
 
 	PutSysLog( task_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)" TERMINATEÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)" TERMINATE\r\n" );
 
 	ercd = TerminateTask();
 	ShutdownOS( ercd );
 }
 
 /*
- *  ChainTask å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  ChainTask ÀsEƒƒOo—Íˆ—
  */
 void
 PutChainTsk( UINT8 from_task_no, UINT8 to_task_no )
 {
-	StatusType	ercd;			/* ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰			*/
+	StatusType	ercd;			/* ƒGƒ‰[ƒR[ƒh			*/
 
 	PutSysLog( (const UINT8 *)"Call ChainTask(" );
 	PutSysLog( task_name_tbl[to_task_no] );
-	PutSysLog( (const UINT8 *)")Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)")\r\n" );
 	PutSysLog( task_name_tbl[from_task_no] );
-	PutSysLog( (const UINT8 *)" TERMINATEÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)" TERMINATE\r\n" );
 
 	ercd = ChainTask( *(task_id_tbl[to_task_no]) );
 	if( ercd == E_OS_LIMIT ){
-		PutSysLog( (const UINT8 *)"Call TerminateTask()Â¥rÂ¥n" );
+		PutSysLog( (const UINT8 *)"Call TerminateTask()\r\n" );
 		PutSysLog( (const UINT8 *)
-					"Because of ChainTask E_OS_LIMIT returnÂ¥rÂ¥n" );
+					"Because of ChainTask E_OS_LIMIT return\r\n" );
 		ercd = TerminateTask();
 	}
 	ShutdownOS( ercd );
 }	/* PutChainTsk	*/
 
 /*
- *  Schedule å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  Schedule ÀsEƒƒOo—Íˆ—
  */
 void
 PutSchedule( void )
 {
 	PutSysLog( (const UINT8 *)
-				"Call ActivateTask(HighPriorityTask)Â¥rÂ¥n" );
+				"Call ActivateTask(HighPriorityTask)\r\n" );
 
 	error_log( ActivateTask( HighPriorityTask ) );
-	PutSysLog( (const UINT8 *)"Call Schedule()Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Call Schedule()\r\n" );
 
 	error_log( Schedule() );
-	PutSysLog( (const UINT8 *)"Retrun Schedule()Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Retrun Schedule()\r\n" );
 }	/* PutSchedule	*/
 
 /*
- *  GetTaskID å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  GetTaskID ÀsEƒƒOo—Íˆ—
  */
 void
 PutTaskID( void )
 {
-	TaskType	task_id;		/* ã‚¿ã‚¹ã‚¯IDå–å¾—ãƒãƒƒãƒ•ã‚¡		*/
-	UINT8		str_buf[16];	/* ãƒ­ã‚°æ–‡å­—åˆ—ç”Ÿæˆãƒãƒƒãƒ•ã‚¡	*/
+	TaskType	task_id;		/* ƒ^ƒXƒNIDæ“¾ƒoƒbƒtƒ@		*/
+	UINT8		str_buf[16];	/* ƒƒO•¶š—ñ¶¬ƒoƒbƒtƒ@	*/
 
 	error_log( GetTaskID( &task_id ) );
 
 	PutSysLog( (const UINT8 *)"TaskID:" );
 	ConvByte2DecStr( str_buf, task_id );
 	PutSysLog(  (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"\r\n" );
 }	/* PutTaskID	*/
 
 /*
- *  GetTaskState å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  GetTaskState ÀsEƒƒOo—Íˆ—
  */
 void
 PutTaskState( UINT8 task_no )
 {
-	TaskStateType	state;		/* ã‚¿ã‚¹ã‚¯IDå–å¾—ãƒãƒƒãƒ•ã‚¡		*/
+	TaskStateType	state;		/* ƒ^ƒXƒNIDæ“¾ƒoƒbƒtƒ@		*/
 
 	error_log( GetTaskState( *(task_id_tbl[task_no]), &state ) );
 
 	PutSysLog( task_name_tbl[task_no] );
 	PutSysLog( (const UINT8 *)" State:" );
 	PutSysLog(  task_state_tbl[state]  );
-	PutSysLog( (const UINT8 *)"Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"\r\n" );
 }	/* PutTaskState	*/
 
 /*
- *  DisableAllInterrupts/EnableAllInterrupts å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  DisableAllInterrupts/EnableAllInterrupts ÀsEƒƒOo—Íˆ—
  */
 void
 PutDisAllInt( void )
 {
-	PutSysLog( (const UINT8 *)"Call DisableAllInterruptsÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Call DisableAllInterrupts\r\n" );
 
 	DisableAllInterrupts();
 
 	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call EnableAllInterruptsÂ¥rÂ¥n" );
+	PutIntSysLog( (const UINT8 *)"Call EnableAllInterrupts\r\n" );
 
 	EnableAllInterrupts();
 }	/* PutDisAllInt	*/
 
 /*
- *  SuspendAllInterrupts/ResumeAllInterrupts å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  SuspendAllInterrupts/ResumeAllInterrupts ÀsEƒƒOo—Íˆ—
  */
 void
 PutSusAllInt( void )
 {
-	PutSysLog( (const UINT8 *)"Call SuspendAllInterruptsÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Call SuspendAllInterrupts\r\n" );
 
 	SuspendAllInterrupts();
 
 	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call SuspendAllInterruptsÂ¥rÂ¥n" );
+	PutIntSysLog( (const UINT8 *)"Call SuspendAllInterrupts\r\n" );
 
 	SuspendAllInterrupts();
 
 	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterruptsÂ¥rÂ¥n" );
+	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterrupts\r\n" );
 
 	ResumeAllInterrupts();
 
 	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterruptsÂ¥rÂ¥n" );
+	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterrupts\r\n" );
 
 	ResumeAllInterrupts();
 }	/* PutSusAllInt	*/
 
 /*
- *  SuspendOSInterrupts/ResumeOSInterrupts å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  SuspendOSInterrupts/ResumeOSInterrupts ÀsEƒƒOo—Íˆ—
  */
 void
 PutSusOSInt( void )
 {
-	PutSysLog( (const UINT8 *)"Call SuspendOSInterruptsÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Call SuspendOSInterrupts\r\n" );
 
 	SuspendOSInterrupts();
 
 	PutHwCnt3();
-	PutSysLog( (const UINT8 *)"Call SuspendOSInterruptsÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Call SuspendOSInterrupts\r\n" );
 
 	SuspendOSInterrupts();
 
 	PutHwCnt3();
-	PutSysLog( (const UINT8 *)"Call SuspendAllInterruptsÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Call SuspendAllInterrupts\r\n" );
 
 	SuspendAllInterrupts();
 
 	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterruptsÂ¥rÂ¥n" );
+	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterrupts\r\n" );
 
 	ResumeAllInterrupts();
 
 	PutHwCnt3();
-	PutSysLog( (const UINT8 *)"Call ResumeOSInterruptsÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Call ResumeOSInterrupts\r\n" );
 
 	ResumeOSInterrupts();
 
 	PutHwCnt3();
-	PutSysLog( (const UINT8 *)"Call ResumeOSInterruptsÂ¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"Call ResumeOSInterrupts\r\n" );
 
 	ResumeOSInterrupts();
 }	/* PutSusOSInt	*/
 
 /*
- *  å‰²è¾¼ã¿å‹•ä½œãƒ†ã‚¹ãƒˆç”¨HWã‚«ã‚¦ãƒ³ã‚¿å€¤ã®ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  Š„‚İ“®ìƒeƒXƒg—pHWƒJƒEƒ“ƒ^’l‚ÌƒƒOo—Íˆ—
  */
 void
 PutHwCnt3( void )
 {
-	UINT8	isr1_cnt;		/* ISR1 ã‚«ã‚¦ãƒ³ãƒˆå€¤å–å¾—ãƒãƒƒãƒ•ã‚¡	*/
-	UINT8	isr2_cnt;		/* ISR2 ã‚«ã‚¦ãƒ³ãƒˆå€¤å–å¾—ãƒãƒƒãƒ•ã‚¡	*/
-	UINT8	cnt;			/* å‡ºåŠ›å›æ•°ã‚«ã‚¦ãƒ³ã‚¿				*/
-	UINT8	str_buf[16];	/* ãƒ­ã‚°æ–‡å­—åˆ—ç”Ÿæˆãƒãƒƒãƒ•ã‚¡		*/
+	UINT8	isr1_cnt;		/* ISR1 ƒJƒEƒ“ƒg’læ“¾ƒoƒbƒtƒ@	*/
+	UINT8	isr2_cnt;		/* ISR2 ƒJƒEƒ“ƒg’læ“¾ƒoƒbƒtƒ@	*/
+	UINT8	cnt;			/* o—Í‰ñ”ƒJƒEƒ“ƒ^				*/
+	UINT8	str_buf[16];	/* ƒƒO•¶š—ñ¶¬ƒoƒbƒtƒ@		*/
 
 	for( cnt = 0; cnt < 3; cnt++ ){
 		GetHwCnt( &isr1_cnt, &isr2_cnt );
@@ -346,68 +346,68 @@ PutHwCnt3( void )
 		PutIntSysLog( (const UINT8 *)", ISR2 Cnt:" );
 		ConvByte2DecStr( str_buf, isr2_cnt );
 		PutIntSysLog( (const UINT8 *)str_buf );
-		PutIntSysLog( (const UINT8 *)"Â¥rÂ¥n" );
+		PutIntSysLog( (const UINT8 *)"\r\n" );
 	}
 }	/* PutHwCnt3	*/
 
 /*
- *  GetResource/ReleaseResource å®Ÿè¡Œ(ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ©)ãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  GetResource/ReleaseResource Às(ƒXƒPƒWƒ…[ƒ‰)EƒƒOo—Íˆ—
  */
 void
 PutGetSchedRes( void )
 {
 	PutSysLog( (const UINT8 *)
-				"Call GetResource(RES_SCHEDULER)Â¥rÂ¥n" );
+				"Call GetResource(RES_SCHEDULER)\r\n" );
 	error_log( GetResource( RES_SCHEDULER ) );
 	error_log( ActivateTask( HighPriorityTask ) );
 	PutSysLog( (const UINT8 *)
-				"Call ReleaseResource(RES_SCHEDULER)Â¥rÂ¥n" );
+				"Call ReleaseResource(RES_SCHEDULER)\r\n" );
 	error_log( ReleaseResource( RES_SCHEDULER ) );
 }	/* PutGetSchedRes	*/
 
 /*
- *  GetResource/ReleaseResource å®Ÿè¡Œ(å‰²è¾¼ã¿ãƒ¬ãƒ™ãƒ«)ãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  GetResource/ReleaseResource Às(Š„‚İƒŒƒxƒ‹)EƒƒOo—Íˆ—
  */
 void
 PutGetIntRes( void )
 {
 	PutSysLog( (const UINT8 *)
-				"Call GetResource(IntLevelRes)Â¥rÂ¥n" );
+				"Call GetResource(IntLevelRes)\r\n" );
 	error_log( GetResource( IntLevelRes ) );
 
 	PutHwCnt3();
 	PutSysLog( (const UINT8 *)
-				"Call ReleaseResource(IntLevelRes)Â¥rÂ¥n" );
+				"Call ReleaseResource(IntLevelRes)\r\n" );
 
 	error_log( ReleaseResource( IntLevelRes ) );
 }	/* PutGetIntRes	*/
 
 /*
- *  GetResource å®Ÿè¡Œ(ã‚¿ã‚¹ã‚¯ãƒ¬ãƒ™ãƒ«)ãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  GetResource Às(ƒ^ƒXƒNƒŒƒxƒ‹)EƒƒOo—Íˆ—
  */
 void
 PutGetTskRes( void )
 {
 	PutSysLog( (const UINT8 *)
-				"Call GetResource(TskLevelRes)Â¥rÂ¥n" );
+				"Call GetResource(TskLevelRes)\r\n" );
 
 	error_log( GetResource( TskLevelRes ) );
 }	/* PutGetTskRes	*/
 
 /*
- *  ReleaseResource å®Ÿè¡Œ(ã‚¿ã‚¹ã‚¯ãƒ¬ãƒ™ãƒ«)ãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  ReleaseResource Às(ƒ^ƒXƒNƒŒƒxƒ‹)EƒƒOo—Íˆ—
  */
 void
 PutRelTskRes( void )
 {
 	PutSysLog( (const UINT8 *)
-				"Call ReleaseResource(TskLevelRes)Â¥rÂ¥n" );
+				"Call ReleaseResource(TskLevelRes)\r\n" );
 
 	error_log( ReleaseResource( TskLevelRes ) );
 }
 
 /*
- *  SetEvent å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  SetEvent ÀsEƒƒOo—Íˆ—
  */
 void
 PutSetEvt( UINT8 task_no )
@@ -416,32 +416,32 @@ PutSetEvt( UINT8 task_no )
 	PutSysLog( task_name_tbl[task_no] );
 	PutSysLog( (const UINT8 *)", " );
 	PutSysLog( event_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)")Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)")\r\n" );
 
 	error_log( SetEvent( *(task_id_tbl[task_no]), *(event_mask_tbl[task_no]) ) );
 }	/* PutSetEvt	*/
 
 /*
- *  ClearEvent å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  ClearEvent ÀsEƒƒOo—Íˆ—
  */
 void
 PutClrEvt( UINT8 task_no )
 {
 	PutSysLog( (const UINT8 *)"Call ClearEvent(" );
 	PutSysLog( event_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)")Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)")\r\n" );
 
 	error_log( ClearEvent( *( event_mask_tbl[task_no] ) ) );
 }	/* PutClrEvt	*/
 
 /*
- *  GetEvent å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  GetEvent ÀsEƒƒOo—Íˆ—
  */
  void
 PutGetEvt( UINT8 task_no )
 {
-	EventMaskType	mask;			/* ã‚¤ãƒ™ãƒ³ãƒˆãƒã‚¹ã‚¯å–å¾—ãƒãƒƒãƒ•ã‚¡	*/
-	UINT8			str_buf[16];	/* ãƒ­ã‚°æ–‡å­—åˆ—ç”Ÿæˆãƒãƒƒãƒ•ã‚¡		*/
+	EventMaskType	mask;			/* ƒCƒxƒ“ƒgƒ}ƒXƒNæ“¾ƒoƒbƒtƒ@	*/
+	UINT8			str_buf[16];	/* ƒƒO•¶š—ñ¶¬ƒoƒbƒtƒ@		*/
 
 	error_log( GetEvent( *(task_id_tbl[task_no]), &mask ) );
 
@@ -449,70 +449,70 @@ PutGetEvt( UINT8 task_no )
 	PutSysLog( (const UINT8 *)" Event Mask:0x" );
 	ConvLong2HexStr( str_buf, mask );
 	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"\r\n" );
 }	/* PutGetEvt	*/
 
 /*
- *  WaitEvent å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  WaitEvent ÀsEƒƒOo—Íˆ—
  */
 void
 PutWaitEvt( UINT8 task_no )
 {
 	PutSysLog( (const UINT8 *)"Call WaitEvent(" );
 	PutSysLog( event_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)")Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)")\r\n" );
 
 	error_log( WaitEvent( *( event_mask_tbl[task_no] ) ) );
 }	/* PutWaitEvt	*/
 
 /*
- *  GetAlarmBase å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  GetAlarmBase ÀsEƒƒOo—Íˆ—
  */
 void
 PutArmBase( void )
 {
-	AlarmBaseType	info;			/* ã‚¢ãƒ©ãƒ¼ãƒ ãƒ™ãƒ¼ã‚¹æƒ…å ±å–å¾—ãƒãƒƒãƒ•ã‚¡	*/
-	UINT8			str_buf[16];	/* ãƒ­ã‚°æ–‡å­—åˆ—ç”Ÿæˆãƒãƒƒãƒ•ã‚¡			*/
+	AlarmBaseType	info;			/* ƒAƒ‰[ƒ€ƒx[ƒXî•ñæ“¾ƒoƒbƒtƒ@	*/
+	UINT8			str_buf[16];	/* ƒƒO•¶š—ñ¶¬ƒoƒbƒtƒ@			*/
 
 	error_log( GetAlarmBase( MainCycArm, &info) );
 
 	PutSysLog( (const UINT8 *)
-				"MainCycArm Base:Â¥rÂ¥nÂ¥tMAXALLOWEDVALUE=" );
+				"MainCycArm Base:\r\n\tMAXALLOWEDVALUE=" );
 	ConvLong2DecStr( str_buf, info.maxallowedvalue );
 	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"Â¥rÂ¥nÂ¥tTICKSPERBASE=" );
+	PutSysLog( (const UINT8 *)"\r\n\tTICKSPERBASE=" );
 	ConvLong2DecStr( str_buf, info.ticksperbase );
 	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"Â¥rÂ¥nÂ¥tMINCYCLE=" );
+	PutSysLog( (const UINT8 *)"\r\n\tMINCYCLE=" );
 	ConvLong2DecStr( str_buf, info.mincycle );
 	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"\r\n" );
 }	/* PutArmBase	*/
 
 /*
- *  PutArmTick å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  PutArmTick ÀsEƒƒOo—Íˆ—
  */
 void
 PutArmTick( void )
 {
-	TickType	tick;			/* æ®‹ã‚Šãƒ†ã‚£ãƒƒã‚¯å–å¾—ãƒãƒƒãƒ•ã‚¡	*/
-	UINT8		str_buf[16];	/* ãƒ­ã‚°æ–‡å­—åˆ—ç”Ÿæˆãƒãƒƒãƒ•ã‚¡	*/
+	TickType	tick;			/* c‚èƒeƒBƒbƒNæ“¾ƒoƒbƒtƒ@	*/
+	UINT8		str_buf[16];	/* ƒƒO•¶š—ñ¶¬ƒoƒbƒtƒ@	*/
 
 	error_log( GetAlarm( MainCycArm, &tick ) );
 
 	PutSysLog( (const UINT8 *)"MainCycArm Tick:" );
 	ConvLong2DecStr( str_buf, tick );
 	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"Â¥rÂ¥n" );
+	PutSysLog( (const UINT8 *)"\r\n" );
 }	/* PutArmTick	*/
 
 /*
- *  SetRelAlarm å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  SetRelAlarm ÀsEƒƒOo—Íˆ—
  */
 void
 PutSetRel( UINT8 alarm_no, UINT8 tick_no, UINT8 cycle_no )
 {
-	UINT8		str_buf[16];	/* ãƒ­ã‚°æ–‡å­—åˆ—ç”Ÿæˆãƒãƒƒãƒ•ã‚¡	*/
+	UINT8		str_buf[16];	/* ƒƒO•¶š—ñ¶¬ƒoƒbƒtƒ@	*/
 
 	PutSysLog( (const UINT8 *)"Call SetRelAlarm(" );
 	PutSysLog( alarm_name_tbl[alarm_no] );
@@ -522,19 +522,19 @@ PutSetRel( UINT8 alarm_no, UINT8 tick_no, UINT8 cycle_no )
 	PutSysLog( (const UINT8 *)", ");
 	ConvLong2DecStr(str_buf, cycle_tbl[cycle_no]);
 	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)")Â¥rÂ¥n");
+	PutSysLog( (const UINT8 *)")\r\n");
 
 	error_log( SetRelAlarm( *(alarm_id_tbl[alarm_no]),
 							tick_tbl[tick_no], cycle_tbl[cycle_no] ) );
 }	/* PutSetRel	*/
 
 /*
- *  SetAbsAlarm å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  SetAbsAlarm ÀsEƒƒOo—Íˆ—
  */
 void
 PutSetAbs( UINT8 alarm_no, UINT8 tick_no, UINT8 cycle_no )
 {
-	UINT8		str_buf[16];	/* ãƒ­ã‚°æ–‡å­—åˆ—ç”Ÿæˆãƒãƒƒãƒ•ã‚¡	*/
+	UINT8		str_buf[16];	/* ƒƒO•¶š—ñ¶¬ƒoƒbƒtƒ@	*/
 
 	PutSysLog( (const UINT8 *)"Call SetAbsAlarm(" );
 	PutSysLog( alarm_name_tbl[alarm_no] );
@@ -544,26 +544,26 @@ PutSetAbs( UINT8 alarm_no, UINT8 tick_no, UINT8 cycle_no )
 	PutSysLog( (const UINT8 *)", ");
 	ConvLong2DecStr(str_buf, cycle_tbl[cycle_no]);
 	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)")Â¥rÂ¥n");
+	PutSysLog( (const UINT8 *)")\r\n");
 
 	error_log( SetAbsAlarm( *(alarm_id_tbl[alarm_no]),
 							tick_tbl[tick_no], cycle_tbl[cycle_no] ) );
 }	/* PutSetAbs	*/
 
 /*
- *  CancelAlarm å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  CancelAlarm ÀsEƒƒOo—Íˆ—
  */
 void
 PutCanArm( void )
 {
 	PutSysLog( (const UINT8 *)
-				"Call CancelAlarm(CallBackArm)Â¥rÂ¥n" );
+				"Call CancelAlarm(CallBackArm)\r\n" );
 
 	error_log( CancelAlarm( CallBackArm ) );
 }	/* PutCanArm	*/
 
 /*
- *  GetActiveApplicationMode å®Ÿè¡Œãƒ»ãƒ­ã‚°å‡ºåŠ›å‡¦ç†
+ *  GetActiveApplicationMode ÀsEƒƒOo—Íˆ—
  */
 void
 PutAppMode( void )
@@ -571,16 +571,16 @@ PutAppMode( void )
 	PutSysLog( (const UINT8 *)"ActiveApplicationMode:" );
 	switch( GetActiveApplicationMode() ){
 	case AppMode1:
-		PutSysLog( (const UINT8 *)"AppMode1Â¥rÂ¥n" );
+		PutSysLog( (const UINT8 *)"AppMode1\r\n" );
 		break;
 	case AppMode2:
-		PutSysLog( (const UINT8 *)"AppMode2Â¥rÂ¥n" );
+		PutSysLog( (const UINT8 *)"AppMode2\r\n" );
 		break;
 	case AppMode3:
-		PutSysLog( (const UINT8 *)"AppMode3Â¥rÂ¥n" );
+		PutSysLog( (const UINT8 *)"AppMode3\r\n" );
 		break;
 	default:
-		PutSysLog( (const UINT8 *)"NonÂ¥rÂ¥n" );
+		PutSysLog( (const UINT8 *)"Non\r\n" );
 		break;
 	}
 }	/* PutAppMode	*/

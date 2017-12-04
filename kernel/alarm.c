@@ -9,37 +9,37 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
 /*
- *	アラーム機能
+ *	�A���[���@�\
  */
 
 #include "osek_kernel.h"
@@ -48,7 +48,7 @@
 #include "interrupt.h"
 
 /*
- *  スタティック関数のプロトタイプ宣言
+ *  �X�^�e�B�b�N�֐��̃v���g�^�C�v�錾
  */
 Inline TickType	add_tick(TickType almval, TickType incr, TickType maxval2);
 Inline TickType	diff_tick(TickType val1, TickType val2, TickType maxval2);
@@ -56,37 +56,37 @@ static void	enqueue_alarm(AlarmType almid, CounterType cntid);
 static void	dequeue_alarm(AlarmType almid, CounterType cntid);
 
 /*
- *  ティック値の加算
+ *  �e�B�b�N�l�̉��Z
  *
- *  almval に incr を加算したティック値を返す．加算したティック値が，
- *  maxval2 を超える場合には，(maxval2 + 1) を引いた値を返す．
+ *  almval �� incr �����Z�����e�B�b�N�l��Ԃ��D���Z�����e�B�b�N�l���C
+ *  maxval2 �𒴂���ꍇ�ɂ́C(maxval2 + 1) ���������l��Ԃ��D
  */
 Inline TickType
 add_tick(TickType almval, TickType incr, TickType maxval2)
 {
 	/*
-	 *  素直な条件式は almval + incr <= maxval2 であるが，この条件式で
-	 *  は，almval + incr が TickType で表せる範囲を超える場合に正しく
-	 *  判定できなくなるため，次の条件式としている．
+	 *  �f���ȏ������� almval + incr <= maxval2 �ł��邪�C���̏�������
+	 *  �́Calmval + incr �� TickType �ŕ\����͈͂𒴂���ꍇ�ɐ�����
+	 *  ����ł��Ȃ��Ȃ邽�߁C���̏������Ƃ��Ă���D
 	 */
 	if (incr <= (maxval2 - almval)) {
 		return(almval + incr);
 	}
 	else {
 		/*
-		 *  下の計算式で，almval + incr と maxval2 + 1 が TickType で表
-		 *  せる範囲を超える場合があるが，オーバフローしても求まる値は
-		 *  正しいため差し支えない．
+		 *  ���̌v�Z���ŁCalmval + incr �� maxval2 + 1 �� TickType �ŕ\
+		 *  ����͈͂𒴂���ꍇ�����邪�C�I�[�o�t���[���Ă����܂�l��
+		 *  ���������ߍ����x���Ȃ��D
 		 */
 		return(almval + incr - (maxval2 + 1));
 	}
 }
 
 /*
- *  ティック値の差
+ *  �e�B�b�N�l�̍�
  *
- *  val1 と val2 の差（val1 から val2 を引いた値）を返す．差が負の値に
- *  なる場合には，(maxval2 + 1) を加えた値を返す．
+ *  val1 �� val2 �̍��ival1 ���� val2 ���������l�j��Ԃ��D�������̒l��
+ *  �Ȃ�ꍇ�ɂ́C(maxval2 + 1) ���������l��Ԃ��D
  */
 Inline TickType
 diff_tick(TickType val1, TickType val2, TickType maxval2)
@@ -96,20 +96,20 @@ diff_tick(TickType val1, TickType val2, TickType maxval2)
 	}
 	else {
 		/*
-		 *  下の計算式で，val1 - val2 と maxval2 + 1 が TickType で表せ
-		 *  る範囲を超える場合があるが，オーバフローしても求まる値は正
-		 *  しいため差し支えない．
+		 *  ���̌v�Z���ŁCval1 - val2 �� maxval2 + 1 �� TickType �ŕ\��
+		 *  ��͈͂𒴂���ꍇ�����邪�C�I�[�o�t���[���Ă����܂�l�͐�
+		 *  �������ߍ����x���Ȃ��D
 		 */
 		return(val1 - val2 + (maxval2 + 1));
 	}
 }
 
 /*
- *  アラームキューへの挿入
+ *  �A���[���L���[�ւ̑}��
  *
- *  almid で指定されるアラームを，cntid で指定されるカウンタのアラーム
- *  キューに挿入する．また，アラームキューに同じ時刻のアラームがある場
- *  合には，その末尾に挿入する（先頭でも差し支えないと思われる）．
+ *  almid �Ŏw�肳���A���[�����Ccntid �Ŏw�肳���J�E���^�̃A���[��
+ *  �L���[�ɑ}������D�܂��C�A���[���L���[�ɓ��������̃A���[���������
+ *  ���ɂ́C���̖����ɑ}������i�擪�ł������x���Ȃ��Ǝv����j�D
  */
 static void
 enqueue_alarm(AlarmType almid, CounterType cntid)
@@ -121,16 +121,16 @@ enqueue_alarm(AlarmType almid, CounterType cntid)
 	curval = cntcb_curval[cntid];
 
 	/*
-	 *  挿入場所のサーチ
+	 *  �}���ꏊ�̃T�[�`
 	 */
 	next = cntcb_almque[cntid];
 	prev = ALMID_NULL;
 	if (curval < enqval) {
 		/*
-		 *  enqval が curval よりも大きい時．言い換えると，現在
-		 *  ティックからアラームの指定ティックまでの間に，カウ
-		 *  ンタのオーバフロー（最大値を超えて，0 に戻ること）
-		 *  が起こらない場合．
+		 *  enqval �� curval �����傫�����D����������ƁC����
+		 *  �e�B�b�N����A���[���̎w��e�B�b�N�܂ł̊ԂɁC�J�E
+		 *  ���^�̃I�[�o�t���[�i�ő�l�𒴂��āC0 �ɖ߂邱�Ɓj
+		 *  ���N����Ȃ��ꍇ�D
 		 */
 		while ((next != ALMID_NULL) && ((curval <= almcb_almval[next])
 					&& (almcb_almval[next] <= enqval))) {
@@ -140,9 +140,9 @@ enqueue_alarm(AlarmType almid, CounterType cntid)
 	}
 	else {
 		/*
-		 *  それ以外の時．言い換えると，現在ティックからアラー
-		 *  ムの指定ティックまでの間に，カウンタのオーバフロー
-		 *  が起こる場合．
+		 *  ����ȊO�̎��D����������ƁC���݃e�B�b�N����A���[
+		 *  ���̎w��e�B�b�N�܂ł̊ԂɁC�J�E���^�̃I�[�o�t���[
+		 *  ���N����ꍇ�D
 		 */
 		while ((next != ALMID_NULL) && ((curval <= almcb_almval[next])
 					|| (almcb_almval[next] <= enqval))) {
@@ -152,7 +152,7 @@ enqueue_alarm(AlarmType almid, CounterType cntid)
 	}
 
 	/*
-	 *  キューのつなぎ換え処理
+	 *  �L���[�̂Ȃ���������
 	 */
 	almcb_next[almid] = next;
 	almcb_prev[almid] = prev;
@@ -168,10 +168,10 @@ enqueue_alarm(AlarmType almid, CounterType cntid)
 }
 
 /*
- *  アラームキューからの削除
+ *  �A���[���L���[����̍폜
  *
- *  almid で指定されるアラームを，cntid で指定されるカウンタのアラー
- *  ムキューから削除する．
+ *  almid �Ŏw�肳���A���[�����Ccntid �Ŏw�肳���J�E���^�̃A���[
+ *  ���L���[����폜����D
  */
 static void
 dequeue_alarm(AlarmType almid, CounterType cntid)
@@ -193,7 +193,7 @@ dequeue_alarm(AlarmType almid, CounterType cntid)
 }
 
 /*
- *  アラーム機能の初期化
+ *  �A���[���@�\�̏�����
  */
 void
 alarm_initialize(void)
@@ -216,7 +216,7 @@ alarm_initialize(void)
 }
 
 /*
- *  アラームベースの参照
+ *  �A���[���x�[�X�̎Q��
  */
 StatusType
 GetAlarmBase(AlarmType almid, AlarmBaseRefType p_info)
@@ -246,7 +246,7 @@ GetAlarmBase(AlarmType almid, AlarmBaseRefType p_info)
 }
 
 /*
- *  アラームの状態参照
+ *  �A���[���̏�ԎQ��
  */
 StatusType
 GetAlarm(AlarmType almid, TickRefType p_tick)
@@ -288,7 +288,7 @@ GetAlarm(AlarmType almid, TickRefType p_tick)
 }
 
 /*
- *  アラームの設定（相対値）
+ *  �A���[���̐ݒ�i���Βl�j
  */
 StatusType
 SetRelAlarm(AlarmType almid, TickType incr, TickType cycle)
@@ -332,7 +332,7 @@ SetRelAlarm(AlarmType almid, TickType incr, TickType cycle)
 }
 
 /*
- *  アラームの設定（絶対値）
+ *  �A���[���̐ݒ�i��Βl�j
  */
 StatusType
 SetAbsAlarm(AlarmType almid, TickType start, TickType cycle)
@@ -392,7 +392,7 @@ SetAbsAlarm(AlarmType almid, TickType start, TickType cycle)
 }
 
 /*
- *  アラームのキャンセル
+ *  �A���[���̃L�����Z��
  *
  */
 StatusType
@@ -412,11 +412,11 @@ CancelAlarm(AlarmType almid)
 	dequeue_alarm(almid, alminib_cntid[almid]);
 
 	/*
-	 *  アラームコールバックの中から，自アラームを SetRelAlarm/
-	 *  SetAbsAlarm した後に CancelAlarm した状況（OSEK仕様では許
-	 *  されていないが，TOPPERS Automotive Kernelでは許している）で，自
-	 *  アラームがアラームキューに再挿入されるのを防ぐために，
-	 *  almcb_cycle[almid] を 0 にしておく．
+	 *  �A���[���R�[���o�b�N�̒�����C���A���[���� SetRelAlarm/
+	 *  SetAbsAlarm ������� CancelAlarm �����󋵁iOSEK�d�l�ł͋�
+	 *  ����Ă��Ȃ����CTOPPERS Automotive Kernel�ł͋����Ă���j�ŁC��
+	 *  �A���[�����A���[���L���[�ɍđ}�������̂�h�����߂ɁC
+	 *  almcb_cycle[almid] �� 0 �ɂ��Ă����D
 	 */
 	almcb_cycle[almid] = 0u;
   exit:
@@ -433,7 +433,7 @@ CancelAlarm(AlarmType almid)
 }
 
 /*
- *  カウンタを進める
+ *  �J�E���^��i�߂�
  */
 StatusType
 SignalCounter(CounterType cntid)
@@ -450,24 +450,24 @@ SignalCounter(CounterType cntid)
 	lock_cpu();
 
 	/*
-	 *  更新後のカウンタ値を求める
+	 *  �X�V��̃J�E���^�l�����߂�
 	 */
 	newval = add_tick(cntcb_curval[cntid], cntinib_tickbase[cntid],
 												cntinib_maxval2[cntid]);
 
 	/*
-	 *  カウンタの現在値の更新
+	 *  �J�E���^�̌��ݒl�̍X�V
 	 */
 	cntcb_curval[cntid] = newval;
 
 	/*
-	 *  アラームの expire 処理
+	 *  �A���[���� expire ����
 	 */
 	while (((almid = cntcb_almque[cntid]) != ALMID_NULL)
 			&& ((diff_tick(newval, almcb_almval[almid], cntinib_maxval2[cntid]))
 												<= cntinib_maxval[cntid])) {
 		/*
-		 *  アラームキューの先頭のアラームを，キューから外す．
+		 *  �A���[���L���[�̐擪�̃A���[�����C�L���[����O���D
 		 */
 		next = almcb_next[almid];
 		cntcb_almque[cntid] = next;
@@ -477,9 +477,9 @@ SignalCounter(CounterType cntid)
 		almcb_next[almid] = almid;
 
 		/*
-		 *  アラームコールバックの呼び出し
+		 *  �A���[���R�[���o�b�N�̌Ăяo��
 		 *
-		 *  アラームコールバック中はISRカテゴリ2割込みを禁止する.
+		 *  �A���[���R�[���o�b�N����ISR�J�e�S��2�����݂��֎~����.
 		 */
 		saved_ipl = current_ipl();
 		if (saved_ipl < ipl_maxisr2) {
@@ -495,13 +495,13 @@ SignalCounter(CounterType cntid)
 		}
 
 		/*
-		 *  アラームキューへの再挿入（周期アラームの場合）
+		 *  �A���[���L���[�ւ̍đ}���i�����A���[���̏ꍇ�j
 		 *
-		 *  アラームコールバックの中で自アラームを SetRelAlarm/
-		 *  SetAbsAlarm した状況（OSEK仕様では許されていないが，
-		 *  TOPPERS Automotive Kernelでは許している）で，アラームキュー
-		 *  への再挿入を防ぐために，almcb_next[almid] == almid
-		 *  の場合のみ再挿入する．
+		 *  �A���[���R�[���o�b�N�̒��Ŏ��A���[���� SetRelAlarm/
+		 *  SetAbsAlarm �����󋵁iOSEK�d�l�ł͋�����Ă��Ȃ����C
+		 *  TOPPERS Automotive Kernel�ł͋����Ă���j�ŁC�A���[���L���[
+		 *  �ւ̍đ}����h�����߂ɁCalmcb_next[almid] == almid
+		 *  �̏ꍇ�̂ݍđ}������D
 		 */
 		if ((almcb_next[almid] == almid) && (almcb_cycle[almid] > 0u)) {
 			almcb_almval[almid] = add_tick(almcb_almval[almid], 

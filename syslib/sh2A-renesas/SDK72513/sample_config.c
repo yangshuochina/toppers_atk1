@@ -7,37 +7,37 @@
  *  Copyright (C) 2006,2007 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006,2007 by Hitachi Information & Control Solutions,Ltd., JAPAN
  * 
- *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
- *  によって公表されている GNU General Public License の Version 2 に記
- *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
- *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
- *  利用と呼ぶ）することを無償で許諾する．
- *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
- *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
- *      スコード中に含まれていること．
- *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
- *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
- *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
- *      の無保証規定を掲載すること．
- *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
- *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
- *      と．
- *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
- *        作権表示，この利用条件および下記の無保証規定を掲載すること．
- *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
- *        報告すること．
- *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
- *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
+ *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
+ *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
+ *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
+ *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
+ *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
+ *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
+ *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
+ *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
+ *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
+ *      �̖��ۏ؋K����f�ڂ��邱�ƁD
+ *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
+ *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
+ *      �ƁD
+ *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
+ *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
+ *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
+ *        �񍐂��邱�ƁD
+ *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
+ *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
  * 
- *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
- *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
- *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
- *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
+ *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
+ *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
+ *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
  * 
  */
 
 /*
- *	サンプル向けターゲット依存モジュール（SH2A HEW SDK72513用）
+ *	�T���v�������^�[�Q�b�g�ˑ����W���[���iSH2A HEW SDK72513�p�j
  */
 
 
@@ -47,37 +47,37 @@
 #define CMSTR_STR1 (0x0002)
 #define CMCR_CMIE (0x40)
 #define	IPR05_IPL_CMT1_SHFT (8)
-#define	IPR05_IPL_CMT1_MASK (‾(0xF << IPR05_IPL_CMT1_SHFT))
+#define	IPR05_IPL_CMT1_MASK (~(0xF << IPR05_IPL_CMT1_SHFT))
 
 /*
- *  OIL定義シンボルの外部参照
+ *  OIL��`�V���{���̊O���Q��
  */
 DeclareCounter( SampleCnt );
 
 
 /*
- *	内部関数プロトタイプ宣言
+ *	�����֐��v���g�^�C�v�錾
  */
 ISR( CounterInt );
 ISR( HwCnt2Int );
 
 
 /*
- *  アプリケーションモード用
+ *  �A�v���P�[�V�������[�h�p
  */
 /*
- *  アプリケーションモード決定用の情報取得処理
+ *  �A�v���P�[�V�������[�h����p�̏��擾����
  *
- *  システムごとに任意の入力手法により実装すること．
- *  0,1,2が判別できること．3は2と同じ扱いになる．
+ *  �V�X�e�����ƂɔC�ӂ̓��͎�@�ɂ��������邱�ƁD
+ *  0,1,2�����ʂł��邱�ƁD3��2�Ɠ��������ɂȂ�D
  */
 UINT8
 GetAppModeInfo( void )
 {
 	/*
-	 *  本来はここでアプリケーションモードの判定を行うべきだが、
-	 *  ボード上にモードを取得できるH/Wが実装されていないため、
-	 *  常に0を返す．
+	 *  �{���͂����ŃA�v���P�[�V�������[�h�̔�����s���ׂ������A
+	 *  �{�[�h��Ƀ��[�h���擾�ł���H/W����������Ă��Ȃ����߁A
+	 *  ���0��Ԃ��D
 	 */
 	
 	return 0;
@@ -86,77 +86,77 @@ GetAppModeInfo( void )
 
 
 /*
- *  サンプルカウンタソース用
+ *  �T���v���J�E���^�\�[�X�p
  *
- *  CMT1で実装する．
+ *  CMT1�Ŏ�������D
  */
 
 /*
- *  SignalCounter実行用割込み初期化処理
+ *  SignalCounter���s�p�����ݏ���������
  *
- *  タイマの起動は別関数で行う．
+ *  �^�C�}�̋N���͕ʊ֐��ōs���D
  */
 void
 InitCounterInt( void )
 {
 	/*
-	 *  コンペアマッチタイマを停止して各レジスタ設定
+	 *  �R���y�A�}�b�`�^�C�}���~���Ċe���W�X�^�ݒ�
 	 */
-	CMSTR &= ‾CMSTR_STR1;	/* カウント停止 */
+	CMSTR &= ~CMSTR_STR1;	/* �J�E���g��~ */
 
 	/*
-	 *  分周比 周辺クロック 1/8(0.4us), 割り込み禁止
+	 *  ������ ���ӃN���b�N 1/8(0.4us), ���荞�݋֎~
 	 */
 	CMCR_1 = 0;
 
 	/*
-	 *  割り込みフラグクリア
+	 *  ���荞�݃t���O�N���A
 	 */
 	CMSR_1 = 0;
 
 	/*
-	 *  コンペマッチカウンタ目標値設定
-	 *  タイマ起動直後にコンペアマッチさせるため
+	 *  �R���y�}�b�`�J�E���^�ڕW�l�ݒ�
+	 *  �^�C�}�N������ɃR���y�A�}�b�`�����邽��
 	 */
 	CMCOR_1 = (UINT16)0x0001;
 
 	/*
-	 *  タイマコンペア割込みレベル設定（設定レベルはヘッダ参照）
+	 *  �^�C�}�R���y�A�����݃��x���ݒ�i�ݒ背�x���̓w�b�_�Q�Ɓj
 	 */
 	IPR05 = (IPR05 & IPR05_IPL_CMT1_MASK) 
 					| ( CFG_INTLVL_COUNTER << IPR05_IPL_CMT1_SHFT);
 
 	/*
-	 *  カウンタクリアと割込み許可
+	 *  �J�E���^�N���A�Ɗ����݋���
 	 */
-	CMCNT_1 = (UINT16)0x0000;		/* カウントクリア */
-	CMSR_1  = 0;	/* CMF クリア */
-	CMCR_1	|= CMCR_CMIE;	/* 割込み enable */
+	CMCNT_1 = (UINT16)0x0000;		/* �J�E���g�N���A */
+	CMSR_1  = 0;	/* CMF �N���A */
+	CMCR_1	|= CMCR_CMIE;	/* ������ enable */
 
 }	/* InitCounterInt	*/
 
 /*
- *  SignalCounter実行用割込み停止処理
+ *  SignalCounter���s�p�����ݒ�~����
  */
 void
 TermCounterInt( void )
 {
-	CMSTR &= ‾CMSTR_STR1;	/* カウント停止 */
-	CMSR_1 = 0;	/* 機能初期化 */
+	CMSTR &= ~CMSTR_STR1;	/* �J�E���g��~ */
+	CMSR_1 = 0;	/* �@�\������ */
 }	/* TermCounterInt	*/
 
 /*
- *  SignalCounter実行用割込み起動処理
+ *  SignalCounter���s�p�����݋N������
  */
 void
 ActCounterInt( void )
 {
-	CMCNT_1 = (UINT16)0x0000;		/* カウントクリア */
-	CMSTR   |= CMSTR_STR1;				/* カウント開始 */
+	CMCNT_1 = (UINT16)0x0000;		/* �J�E���g�N���A */
+	CMSTR   |= CMSTR_STR1;				/* �J�E���g�J�n */
 }	/* ActCounterInt	*/
 
 /*
- *  SignalCounter実行用割込みサービスルーチン
+ *  SignalCounter���s�p�����݃T�[�r�X���[�`��
  */
 ISR( CounterInt )
 {
@@ -164,23 +164,23 @@ ISR( CounterInt )
 	UINT8 dmy;
 
 	/*
-	 *  1回のみ SignalCounter 実行したいため，タイマを停止する．
+	 *  1��̂� SignalCounter ���s���������߁C�^�C�}���~����D
 	 */
-	CMCR_1 &= ‾CMCR_CMIE;	/* 割込み disable */
-	CMSTR  &= ‾CMSTR_STR1;	/* カウント停止 */
+	CMCR_1 &= ~CMCR_CMIE;	/* ������ disable */
+	CMSTR  &= ~CMSTR_STR1;	/* �J�E���g��~ */
 
 	/*
-	 *  割込み要求クリア
+	 *  �����ݗv���N���A
 	 */
-	CMSR_1 = 0;	/* CMF クリア */
-	dmy = CMSR_1;	/* ダミーリード */
+	CMSR_1 = 0;	/* CMF �N���A */
+	dmy = CMSR_1;	/* �_�~�[���[�h */
 
 	/*
-	 *  カウンタ加算通知処理実行
+	 *  �J�E���^���Z�ʒm�������s
 	 */
 	ercd = SignalCounter( SampleCnt );
 
-	/* エラーリターンの場合はシャットダウン	*/
+	/* �G���[���^�[���̏ꍇ�̓V���b�g�_�E��	*/
 	if( ercd != E_OK ){
 		ShutdownOS( ercd );
 	}
@@ -188,61 +188,61 @@ ISR( CounterInt )
 
 
 /*
- *  ISR1・ISR2稼動確認用
+ *  ISR1�EISR2�ғ��m�F�p
  *
- *  7058 では ATU channel 8A, 8E で実装する．
+ *  7058 �ł� ATU channel 8A, 8E �Ŏ�������D
  */
 /*
- *  ハードウェアカウンタバッファ
+ *  �n�[�h�E�F�A�J�E���^�o�b�t�@
  */
 static UINT8	hw_cnt1;
 static UINT8	hw_cnt2;
 
 /*
- *  ISR1・ISR2カウンタ初期化処理
+ *  ISR1�EISR2�J�E���^����������
  */
 void
 InitHwCntInt( void )
 {
 	/*
-	 *  ハードウェアカウンタ初期化
+	 *  �n�[�h�E�F�A�J�E���^������
 	 */
 	hw_cnt1 = (UINT8)0;
 	hw_cnt2 = (UINT8)0;
 
 	/*
-	 *  タイマＤを停止して各レジスタ設定
+	 *  �^�C�}�c���~���Ċe���W�X�^�ݒ�
 	 */
-	ATUENR  &= ‾ATUENR_TDE;
-	TSTRD	&= ‾(TSTRD_STRD0 | TSTRD_STRD1);
-	DSTRD0  &= ‾DSTRD0_DSTD00;		/* ダウンカウント停止 */
-	DSTRD1  &= ‾DSTRD1_DSTD10;
+	ATUENR  &= ~ATUENR_TDE;
+	TSTRD	&= ~(TSTRD_STRD0 | TSTRD_STRD1);
+	DSTRD0  &= ~DSTRD0_DSTD00;		/* �_�E���J�E���g��~ */
+	DSTRD1  &= ~DSTRD1_DSTD10;
 	
-	TCRD0	= TCRD0_DCSELD0;		/* ダウンカウンタクロック選択 */
-	TCRD1	= TCRD1_DCSELD1;		/* ダウンカウンタクロック選択 */
+	TCRD0	= TCRD0_DCSELD0;		/* �_�E���J�E���^�N���b�N�I�� */
+	TCRD1	= TCRD1_DCSELD1;		/* �_�E���J�E���^�N���b�N�I�� */
 	/*
-	 *  ダウンカウンタ設定
-	 *  カウンタの下位８ビットは０とする
+	 *  �_�E���J�E���^�ݒ�
+	 *  �J�E���^�̉��ʂW�r�b�g�͂O�Ƃ���
 	 */
 	DCNTD00 = CFG_HW_CNT1 << 8;
 	DCNTD10 = CFG_HW_CNT2 << 8;
 
 	/*
-	 *  タイマコンペア割込みレベル設定（設定レベルはヘッダ参照）
+	 *  �^�C�}�R���y�A�����݃��x���ݒ�i�ݒ背�x���̓w�b�_�Q�Ɓj
 	 */
 	IPR10 = (IPR10 & 0xFF0F) | (CFG_INTLVL_HW_CNT1 << 4);
 	IPR11 = (IPR11 & 0xF0FF) | (CFG_INTLVL_HW_CNT2 << 8);
-	TSRD0 &= ‾TSRD0_UDFD00;
-	TSRD1 &= ‾TSRD1_UDFD10;
+	TSRD0 &= ~TSRD0_UDFD00;
+	TSRD1 &= ~TSRD1_UDFD10;
 
 	/*
-	 * 割込み許可
+	 * �����݋���
 	 */
 	TIERD0 |= TIERD0_UDED00;
 	TIERD1 |= TIERD1_UDED10;
 
 	/*
-	 *  タイマカウント開始
+	 *  �^�C�}�J�E���g�J�n
 	 */
 	ATUENR  |= ATUENR_TDE;
 	TSTRD	|= TSTRD_STRD0 | TSTRD_STRD1;
@@ -252,22 +252,22 @@ InitHwCntInt( void )
 }	/* InitHwCntInt	*/
 
 /*
- *  ISR1・ISR2カウンタ停止処理
+ *  ISR1�EISR2�J�E���^��~����
  */
 void
 TermHwCntInt( void )
 {
-	TIERD0 &= ‾TIERD0_UDED00;	/* 割り込み禁止 */
-	TIERD1 &= ‾TIERD1_UDED10;
-	DSTRD0 &= ‾DSTRD0_DSTD00;		/* ダウンカウント停止 */
-	DSTRD1 &= ‾DSTRD1_DSTD10;
-	TSTRD	&= ‾(TSTRD_STRD0 | TSTRD_STRD1);
+	TIERD0 &= ~TIERD0_UDED00;	/* ���荞�݋֎~ */
+	TIERD1 &= ~TIERD1_UDED10;
+	DSTRD0 &= ~DSTRD0_DSTD00;		/* �_�E���J�E���g��~ */
+	DSTRD1 &= ~DSTRD1_DSTD10;
+	TSTRD	&= ~(TSTRD_STRD0 | TSTRD_STRD1);
 }	/* TermHwCntInt	*/
 
 /*
- *  ISR1・ISR2カウンタ取得処理
+ *  ISR1�EISR2�J�E���^�擾����
  *
- *  hw_cnt1とhw_cnt2の同時取得は保障しなくてよい（割込み禁止は不要）．
+ *  hw_cnt1��hw_cnt2�̓����擾�͕ۏႵ�Ȃ��Ă悢�i�����݋֎~�͕s�v�j�D
  */
 void
 GetHwCnt( UINT8 *isr1_cnt, UINT8 *isr2_cnt )
@@ -277,10 +277,10 @@ GetHwCnt( UINT8 *isr1_cnt, UINT8 *isr2_cnt )
 }	/* GetHwCnt	*/
 
 /*
- *  ISR1カウンタ加算用割込みサービスルーチン
+ *  ISR1�J�E���^���Z�p�����݃T�[�r�X���[�`��
  */
 #if defined( OMIT_ISR1_ENTRY )
-/* ISR1入り口未生成時は本関数を割込み関数指定する	*/
+/* ISR1��������������͖{�֐��������݊֐��w�肷��	*/
 #pragma interrupt	HwCnt1Int
 #endif	/* OMIT_ISR1_ENTRY	*/
 void	HwCnt1Int( void );
@@ -288,11 +288,11 @@ void
 HwCnt1Int( void )
 {
 	UINT16	dmy;
-	/* 割込み要求クリア */
-	TSRD0 &= ‾TSRD0_UDFD00;
-	dmy = TSRD0;	/* ダミーリード */
+	/* �����ݗv���N���A */
+	TSRD0 &= ~TSRD0_UDFD00;
+	dmy = TSRD0;	/* �_�~�[���[�h */
 
-	/* タイマカウント開始 */
+	/* �^�C�}�J�E���g�J�n */
 	DCNTD00 = CFG_HW_CNT1 << 8;
 	DSTRD0  |= DSTRD0_DSTD00;
 	
@@ -300,16 +300,16 @@ HwCnt1Int( void )
 }	/* HwCnt1Int	*/
 
 /*
- *  ISR2カウンタ加算用割込みサービスルーチン
+ *  ISR2�J�E���^���Z�p�����݃T�[�r�X���[�`��
  */
 ISR( HwCnt2Int )
 {
 	UINT16	dmy;
-	/* 割込み要求クリア */
-	TSRD1 &= ‾TSRD1_UDFD10;
-	dmy = TSRD1;	/* ダミーリード */
+	/* �����ݗv���N���A */
+	TSRD1 &= ~TSRD1_UDFD10;
+	dmy = TSRD1;	/* �_�~�[���[�h */
 
-	/* タイマカウント開始 */
+	/* �^�C�}�J�E���g�J�n */
 	DCNTD10 = CFG_HW_CNT2 << 8;
 	DSTRD1  |= DSTRD1_DSTD10;
 
