@@ -1,0 +1,24 @@
+[PROJECT]
+ProjectName=toppers_automotive_kernel_oaks32_ecc2
+WorkingDirectory=C:\work\s_meika\osek\automotive_kernel\trunk\tools\m32c-renesas\oaks32_ecc2
+OutputDirectory=.\output
+ProjectFile=C:\work\s_meika\osek\automotive_kernel\trunk\tools\m32c-renesas\oaks32_ecc2\toppers_automotive_kernel_oaks32_ecc2.tmk
+ProjectInfoFile=C:\work\s_meika\osek\automotive_kernel\trunk\tools\m32c-renesas\oaks32_ecc2\toppers_automotive_kernel_oaks32_ecc2.tmi
+TargetName=M32C/80 Series
+Type=1
+GoalFile=C:\work\s_meika\osek\automotive_kernel\trunk\tools\m32c-renesas\oaks32_ecc2\output\toppers_automotive_kernel_oaks32_ecc2.x30
+[NC]
+Name=NC308WA
+Version=V.5.10 Release 1
+[MEMBER]
+Count=0
+[DOCUMENTFILE]
+Count=0
+[ITEM]
+ActiveFactory=default
+FactoryName1=default
+ActiveTagName1=all
+Count=1
+[TOOL]
+ToolCount=1
+ToolName1=lmc308

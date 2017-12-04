@@ -1,0 +1,9 @@
+#include <hw_sys_timer.oil>
+
+	/* システムタイマカウンタ	*/
+	COUNTER SysTimerCnt { 
+		MINCYCLE = 1;
+		MAXALLOWEDVALUE = 999; 
+		TICKSPERBASE = 1; 
+	};
+

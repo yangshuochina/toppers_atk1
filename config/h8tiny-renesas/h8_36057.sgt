@@ -1,0 +1,114 @@
+/*
+ *  TOPPERS Automotive Kernel
+ *      Toyohashi Open Platform for Embedded Real-Time Systems
+ *      Automotive Kernel
+ * 
+ *  Copyright (C) 2006 by Embedded and Real-Time Systems Laboratory
+ *              Graduate School of Information Science, Nagoya Univ., JAPAN  
+ * 
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ * 
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ * 
+ */
+
+@@ISR_MIN_PRIORITY=0@@
+@@ISR_MAX_PRIORITY=2@@
+@@ISR_MIN_ENTRY=2@@
+@@ISR_MAX_ENTRY=36@@
+@@ISR_ENTRY_INTERVAL=1@@
+
+
+@@START_OUTPUT_DEPENDENT@@
+;
+;  H8/36057用ベクタテーブル
+;
+    .CPU 300HN
+
+    .SECTION P, CODE, ALIGN=2
+
+    .INCLUDE "sys_config_asm.inc"
+    .INCLUDE "cpu_config_asm.inc"
+	.INCLUDE "kernel_support.inc"
+
+
+	; ISRエントリシンボル定義
+	@@FOR_EACH ENTRY_FOR_ISR@@
+
+	; フックルーチンNULLシンボル定義
+	@@NULL_ERRORHOOK_SYMBOL@@
+	@@NULL_STARTUPHOOK_SYMBOL@@
+	@@NULL_SHUTDOWNHOOK_SYMBOL@@
+	@@NULL_PRETASKHOOK_SYMBOL@@
+	@@NULL_POSTTASKHOOK_SYMBOL@@
+
+
+;
+;  以下割込みベクタテーブル定義
+;
+    .SECTION V, CODE, ALIGN=2
+	.GLOBAL  _vector
+_vector:
+	.data.w		_start		;   0, +0x000000: パワーオンリセット
+	@@INT_ENTRY1@@			;   1, +0x000002: システム予約
+	@@INT_ENTRY2@@			;   2, +0x000004: システム予約
+	@@INT_ENTRY3@@			;   3, +0x000006: システム予約
+	@@INT_ENTRY4@@			;   4, +0x000008: システム予約
+	@@INT_ENTRY5@@			;   5, +0x00000A: システム予約
+	.data.w     H'e8		;   6, +0x00000C: システム予約(E8用ID)
+	@@INT_ENTRY7@@			;   7, +0x00000E: NMI
+	@@INT_ENTRY8@@			;   8, +0x000010: トラップ命令 #0
+	@@INT_ENTRY9@@			;   9, +0x000012: トラップ命令 #1
+	@@INT_ENTRY10@@			;  10, +0x000014: トラップ命令 #2
+	@@INT_ENTRY11@@			;  11, +0x000016: トラップ命令 #3
+	@@INT_ENTRY12@@			;  12, +0x000018: ブレーク条件成立
+	@@INT_ENTRY13@@			;  13, +0x00001A: スリープ命令の実行による直接遷移
+	@@INT_ENTRY14@@			;  14, +0x00001C: IRQ0/低電圧検出割り込み
+	@@INT_ENTRY15@@			;  15, +0x00001E: IRQ1
+	@@INT_ENTRY16@@			;  16, +0x000020: IRQ2
+	@@INT_ENTRY17@@			;  17, +0x000022: IRQ3
+	@@INT_ENTRY18@@			;  18, +0x000024: WKP 
+	@@INT_ENTRY19@@			;  19, +0x000026: リザーブ
+	@@INT_ENTRY20@@			;  20, +0x000028: システム予約
+	@@INT_ENTRY21@@			;  21, +0x00002A: リザーブ
+	@@INT_ENTRY22@@			;  22, +0x00002C: タイマV
+	@@INT_ENTRY23@@			;  23, +0x00002E: SCI3
+	@@INT_ENTRY24@@			;  24, +0x000030: リザーブ
+	@@INT_ENTRY25@@			;  25, +0x000032: A/D変換器
+	@@INT_ENTRY26@@			;  26, +0x000034: タイマZ(A0～D0)
+	@@INT_ENTRY27@@			;  27, +0x000036: タイマZ(A1～D1)
+	@@INT_ENTRY28@@			;  28, +0x000038: リザーブ
+	@@INT_ENTRY29@@			;  29, +0x00003A: タイマB1
+	@@INT_ENTRY30@@			;  30, +0x00003C: リザーブ
+	@@INT_ENTRY31@@			;  31, +0x00003E: リザーブ
+	@@INT_ENTRY32@@			;  32, +0x000040: SCI3_2
+	@@INT_ENTRY33@@			;  33, +0x000042: リザーブ
+	@@INT_ENTRY34@@			;  34, +0x000044: TinyCAN
+	@@INT_ENTRY35@@			;  35, +0x000046: SSU
+	@@INT_ENTRY36@@			;  36, +0x000048: サブタイマ
+
+	.end
+@@END_OUTPUT_DEPENDENT@@

@@ -1,0 +1,8 @@
+	/* システムタイマ割込み	*/
+	ISR SysTimerInt {
+		CATEGORY = 2;
+		ENTRY = 12;
+		PRIORITY = 4;
+	};
+
+

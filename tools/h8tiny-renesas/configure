@@ -1,0 +1,122 @@
+#! /usr/bin/perl
+
+use File::Copy;
+require "getopt.pl";
+
+#
+# オプション
+# A : アプリケーション名
+# P : プロジェクト名
+
+#定数
+use constant template_dir => 'template';
+use constant sample_dif   => '..\\..\\sample';
+
+do Getopt("AP");
+
+$prj_name = $opt_P ? $opt_P : "sample1_ecc2";
+$app_name = $opt_A ? $opt_A : "sample1_ecc2";
+
+#
+#  ディレクトリの作成
+#
+
+if(!-d $prj_name){
+	mkdir($prj_name,0755);
+	print STDERR "configure: make directory ".$prj_name."\n";
+}
+
+if(!-d $prj_name . "_cfg"){
+	mkdir($prj_name . "_cfg",0755);
+	print STDERR "configure: make directory ".$prj_name."_cfg"."\n";
+}
+
+#if(!-d $prj_name . "_cfg\\work"){
+#	mkdir($prj_name . "_cfg\\work",0755);
+#	print STDERR "configure: make directory ".$prj_name."_cfg\\work"."\n";
+#}
+
+
+#
+#  ファイルを変換する
+#
+sub convert {
+	local($infile, $outfile) = @_;
+	local($line, $varname, $varval);
+
+	print STDERR "configure: Generating $outfile from $infile.\n";
+	if (-f $outfile) {
+		print STDERR "configure: $outfile exists.",
+				"  Save as $outfile.bak.\n";
+		rename($outfile, $outfile.".bak");
+	}
+	unless (open(INFILE, $infile)) {
+		print STDERR "configure: can't open $infile\n";
+		exit(1);
+	}
+	unless (open(OUTFILE, "> ".$outfile)) {
+		print STDERR "configure: can't open $outfile\n";
+		exit(1);
+	}
+
+	while ($line = <INFILE>) {
+		chop $line;
+		while ($line =~ /^(.*)\@\(([A-Za-z_]+)\)(.*)$/) {
+			$line = $1.$vartable{$2}.$3;
+		}
+		print OUTFILE $line,"\n";
+	}
+
+	close(INFILE);
+	close(OUTFILE);
+}
+
+sub copyfile {
+	local($infile, $outfile) = @_;
+
+	copy($infile, $outfile);
+	print STDERR "configure: copy file from ". $infile." to ".$outfile."\n";	
+}
+
+#
+#  変数テーブルの作成
+#
+%vartable = ();
+$vartable{"PROJ"} = $prj_name;
+$vartable{"APP"} = $app_name;
+
+
+
+#
+#  ファイルのコピー
+#
+copyfile(template_dir."\\sample_cfg.nav",  $prj_name."_cfg\\".$prj_name."_cfg.nav");
+copyfile(template_dir."\\sample_cfg.tps",  $prj_name."_cfg\\".$prj_name."_cfg.tps");
+copyfile(template_dir."\\sample_cfg_defaultsession.hsf",  $prj_name."_cfg\\"."defaultsession.hsf");
+
+copyfile(template_dir."\\sample.nav",  $prj_name."\\".$prj_name.".nav");
+copyfile(template_dir."\\sample.tps",  $prj_name."\\".$prj_name.".tps");
+copyfile(template_dir."\\sample_defaultsession.hsf",  $prj_name."\\"."defaultsession.hsf");
+
+copyfile(template_dir."\\sample1_ecc2.oil",  $prj_name."\\".$app_name.".oil");
+copyfile(sample_dif."\\sample1_ecc2.c",  $prj_name."\\".$app_name.".c");
+if($app_name eq "sample1_ecc2")
+{
+	copyfile(sample_dif."\\sample1_log_ecc2.c",  $prj_name."\\sample1_log_ecc2.c");
+}
+
+
+copyfile(template_dir."\\kernel_cfg_wrap.c",  $prj_name."\\kernel_cfg_wrap.c");
+
+#
+# ファイルの読込みとリプレース
+#
+convert(template_dir . "\\sample_cfg.hwp", $prj_name."_cfg\\".$prj_name."_cfg.hwp");
+convert(template_dir . "\\sample_cfg.pgs", $prj_name."_cfg\\".$prj_name."_cfg.pgs");
+
+convert(template_dir . "\\sample.hwp", $prj_name."\\".$prj_name.".hwp");
+convert(template_dir . "\\sample.pgs", $prj_name."\\".$prj_name.".pgs");
+
+convert(template_dir."\\e8.hsf",  $prj_name."\\e8.hsf");
+
+

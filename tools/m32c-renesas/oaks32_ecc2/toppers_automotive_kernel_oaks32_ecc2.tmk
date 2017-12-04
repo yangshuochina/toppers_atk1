@@ -1,0 +1,416 @@
+####################################################################
+# Makefile for TM V.3.20A
+# COPYRIGHT(C) 1998(1998-2003)
+# RENESAS TECHNOLOGY CORPORATION ALL RIGHTS RESERVED
+# AND
+# RENESAS SOLUTIONS CORPORATION ALL RIGHTS RESERVED
+#
+#	Notice	:	Don't edit.
+#	Date	:	2008 10(October) 31(Friday) PM.02.49
+#	Project	:	toppers_automotive_kernel_oaks32_ecc2
+####################################################################
+
+DELETE	=	@-del
+LNLIST	=	$(PROJECT).cmd
+ROM_START_ADR	=	0f80000
+RAM_START_ADR	=	0400
+STACK_SIZE	=	0100
+STACK_TOP_ADR	=	07f00
+LMC	=	LMC308
+FVECTOR_ADR	=	0ffffdc
+CC	=	NC308
+AR	=	LB308
+UTLFLAGS	=	
+UTL	=	utl308
+AS	=	AS308
+LIBFILE	=	$(PROJECT).lib
+VVECTOR_ADR	=	0fffedc
+OUTDIR	=	.\output
+MKDIR	=	@-mkdir
+ABSFILE	=	$(PROJECT).x30
+ODINCMD	=	$(OUTDIR)
+ARFLAGS	=	-C
+OSEKDIR	=	..\..\..
+TARGET	=	$(ABSFILE)
+LN	=	LN308
+ECHO	=	@-echo
+MKFILE	=	$(PROJECT).tmk
+PROJECT	=	toppers_automotive_kernel_oaks32_ecc2
+TYPE	=	@-type
+LFLAGS	=	-MSL -L nc308lib.lib -G -M82 -O $(OUTDIR)\$(TARGET)
+CFLAGS	=	-c -I. -I..\..\..\include -I..\..\..\kernel -I..\..\..\kernel\ecc2 -I..\..\..\config\m32c-renesas -I..\..\..\config\m32c-renesas\oaks32 -I..\..\..\syslib -I..\..\..\syslib\m32c-renesas\oaks32 -dir $(OUTDIR) -Wall -dS -M82
+LMCFLAGS	=	-ID -L
+AFLAGS	=	-LM -I. -I..\..\..\include -I..\..\..\kernel -I..\..\..\kernel\ecc2 -I..\..\..\config\m32c-renesas -I..\..\..\config\m32c-renesas\oaks32 -M82 -O$(OUTDIR)
+.SUFFIXES: .a30 .r30 .c .x30
+.PHONY: all
+all: \
+		$(OUTDIR)\$(TARGET) 
+.PHONY: clean
+clean: 
+	$(DELETE) $(OUTDIR)\$(TARGET)
+	$(DELETE) $(ODINCMD)\$(LNLIST)
+	$(DELETE) $(OUTDIR)\start.r30
+	$(DELETE) $(OUTDIR)\cpu_support.r30
+	$(DELETE) $(OUTDIR)\sys_support.r30
+	$(DELETE) $(OUTDIR)\kernel_cfg.r30
+	$(DELETE) $(OUTDIR)\cpu_config.r30
+	$(DELETE) $(OUTDIR)\sys_config.r30
+	$(DELETE) $(OUTDIR)\alarm.r30
+	$(DELETE) $(OUTDIR)\osctl.r30
+	$(DELETE) kernel_cfg.c
+	$(DELETE) kernel_id.h
+	$(DELETE) $(OUTDIR)\resource.r30
+	$(DELETE) $(OUTDIR)\task.r30
+	$(DELETE) $(OUTDIR)\task_manage.r30
+	$(DELETE) $(OUTDIR)\event.r30
+	$(DELETE) $(OUTDIR)\interrupt.r30
+	$(DELETE) $(OUTDIR)\serial.r30
+	$(DELETE) $(OUTDIR)\sys_timer.r30
+	$(DELETE) $(OUTDIR)\hw_serial.r30
+	$(DELETE) $(OUTDIR)\hw_sys_timer.r30
+	$(DELETE) $(OUTDIR)\sample1_ecc2.r30
+	$(DELETE) $(OUTDIR)\sample_config.r30
+	$(DELETE) $(OUTDIR)\sample1_log_ecc2.r30
+.\kernel_cfg.c: \
+		..\..\..\config\m32c-renesas\oaks32\m32c83.sgt \
+		.\sample1_ecc2.oil \
+		..\..\..\syslib\serial.oil \
+		..\..\..\syslib\sys_timer.oil \
+		..\..\..\syslib\m32c-renesas\oaks32\hw_serial.oil \
+		..\..\..\syslib\m32c-renesas\oaks32\hw_sys_timer.oil 
+	..\..\..\sg\sg.exe sample1_ecc2.oil -template=..\..\..\config\m32c-renesas\oaks32\m32c83.sgt -I..\..\..\sg\impl_oil -I..\..\..\syslib -I..\..\..\syslib\m32c-renesas\oaks32 -os=ECC2
+$(OUTDIR)\alarm.r30: \
+		..\..\..\kernel\alarm.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\kernel\check.h \
+		..\..\..\kernel\alarm.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h \
+		..\..\..\kernel\ecc2\interrupt.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\kernel\alarm.c
+$(OUTDIR)\cpu_config.r30: \
+		..\..\..\config\m32c-renesas\cpu_config.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\config\m32c-renesas\cpu_config.c
+$(OUTDIR)\cpu_support.r30: \
+		..\..\..\config\m32c-renesas\cpu_support.a30 
+	$(AS) $(MRAFLAGS) $(AFLAGS) ..\..\..\config\m32c-renesas\cpu_support.a30
+$(OUTDIR)\event.r30: \
+		..\..\..\kernel\ecc2\event.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\kernel\check.h \
+		..\..\..\kernel\ecc2\task.h \
+		..\..\..\kernel\ecc2\resource.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\kernel\ecc2\event.c
+$(OUTDIR)\hw_serial.r30: \
+		..\..\..\syslib\m32c-renesas\oaks32\hw_serial.c \
+		..\..\..\syslib\m32c-renesas\oaks32\hw_serial.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\config\m32c-renesas\oaks32\sfrm32c83.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\syslib\m32c-renesas\oaks32\hw_serial.c
+$(OUTDIR)\hw_sys_timer.r30: \
+		..\..\..\syslib\m32c-renesas\oaks32\hw_sys_timer.c \
+		..\..\..\syslib\m32c-renesas\oaks32\hw_sys_timer.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\config\m32c-renesas\oaks32\sfrm32c83.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\syslib\m32c-renesas\oaks32\hw_sys_timer.c
+$(OUTDIR)\interrupt.r30: \
+		..\..\..\kernel\ecc2\interrupt.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\kernel\ecc2\interrupt.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\kernel\ecc2\interrupt.c
+$(OUTDIR)\kernel_cfg.r30: \
+		.\kernel_cfg.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		.\kernel_id.h \
+		..\..\..\kernel\alarm.h \
+		..\..\..\kernel\ecc2\interrupt.h \
+		..\..\..\kernel\ecc2\resource.h \
+		..\..\..\kernel\ecc2\task.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) kernel_cfg.c
+$(OUTDIR)\osctl.r30: \
+		..\..\..\kernel\osctl.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\kernel\check.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h \
+		..\..\..\kernel\ecc2\interrupt.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\kernel\osctl.c
+$(OUTDIR)\resource.r30: \
+		..\..\..\kernel\ecc2\resource.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\kernel\check.h \
+		..\..\..\kernel\ecc2\task.h \
+		..\..\..\kernel\ecc2\resource.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h \
+		..\..\..\kernel\ecc2\interrupt.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\kernel\ecc2\resource.c
+$(OUTDIR)\sample1_ecc2.r30: \
+		..\..\..\sample\sample1_ecc2.c \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\syslib\sys_timer.h \
+		..\..\..\syslib\serial.h \
+		.\kernel_id.h \
+		.\sample_config.h \
+		..\..\..\sample\sample1_com_ecc2.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\sample\sample1_ecc2.c
+$(OUTDIR)\sample1_log_ecc2.r30: \
+		..\..\..\sample\sample1_log_ecc2.c \
+		..\..\..\include\kernel.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\syslib\sys_timer.h \
+		..\..\..\syslib\serial.h \
+		.\sample_config.h \
+		.\kernel_id.h \
+		..\..\..\sample\sample1_com_ecc2.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\sample\sample1_log_ecc2.c
+$(OUTDIR)\sample_config.r30: \
+		.\sample_config.c \
+		.\sample_config.h \
+		..\..\..\include\kernel.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\oaks32\sfrm32c83.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) sample_config.c
+$(OUTDIR)\serial.r30: \
+		..\..\..\syslib\serial.c \
+		..\..\..\syslib\m32c-renesas\oaks32\hw_serial.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\config\m32c-renesas\oaks32\sfrm32c83.h \
+		..\..\..\syslib\serial.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\syslib\serial.c
+$(OUTDIR)\start.r30: \
+		..\..\..\config\m32c-renesas\start.a30 \
+		..\..\..\config\m32c-renesas\oaks32\sectm32c.inc 
+	$(AS) $(MRAFLAGS) $(AFLAGS) ..\..\..\config\m32c-renesas\start.a30
+$(OUTDIR)\sys_config.r30: \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sfrm32c83.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\config\m32c-renesas\oaks32\sys_config.c
+$(OUTDIR)\sys_support.r30: \
+		..\..\..\config\m32c-renesas\oaks32\sys_support.a30 
+	$(AS) $(MRAFLAGS) $(AFLAGS) ..\..\..\config\m32c-renesas\oaks32\sys_support.a30
+$(OUTDIR)\sys_timer.r30: \
+		..\..\..\syslib\sys_timer.c \
+		..\..\..\syslib\m32c-renesas\oaks32\hw_sys_timer.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\config\m32c-renesas\oaks32\sfrm32c83.h \
+		..\..\..\syslib\sys_timer.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\syslib\sys_timer.c
+$(OUTDIR)\task.r30: \
+		..\..\..\kernel\ecc2\task.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\kernel\check.h \
+		..\..\..\kernel\ecc2\task.h \
+		..\..\..\kernel\ecc2\resource.h \
+		..\..\..\config\m32c-renesas\cpu_context.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\kernel\ecc2\task.c
+$(OUTDIR)\task_manage.r30: \
+		..\..\..\kernel\ecc2\task_manage.c \
+		..\..\..\kernel\osek_kernel.h \
+		..\..\..\include\kernel.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_defs.h \
+		..\..\..\config\m32c-renesas\cpu_defs.h \
+		..\..\..\include\osek.h \
+		..\..\..\include\t_stddef.h \
+		..\..\..\config\m32c-renesas\tool_defs.h \
+		..\..\..\include\t_config.h \
+		..\..\..\config\m32c-renesas\oaks32\sys_config.h \
+		..\..\..\config\m32c-renesas\cpu_config.h \
+		..\..\..\config\m32c-renesas\cpu_insn.h \
+		..\..\..\config\m32c-renesas\tool_config.h \
+		..\..\..\kernel\check.h \
+		..\..\..\kernel\ecc2\task.h \
+		..\..\..\kernel\ecc2\resource.h \
+		..\..\..\kernel\ecc2\osek_kernel_cc.h 
+	$(CC) $(MRCFLAGS) $(CFLAGS) ..\..\..\kernel\ecc2\task_manage.c
+$(ODINCMD)\$(LNLIST): \
+		.\$(MKFILE) 
+	$(ECHO)\$(MRLFLAGS) $(LFLAGS) >	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\start.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\cpu_support.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\sys_support.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\kernel_cfg.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\cpu_config.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\sys_config.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\alarm.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\osctl.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\resource.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\task.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\task_manage.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\event.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\interrupt.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\serial.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\sys_timer.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\hw_serial.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\hw_sys_timer.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\sample1_ecc2.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\sample_config.r30 >>	$(ODINCMD)\$(LNLIST)
+	$(ECHO)\$(OUTDIR)\sample1_log_ecc2.r30 >>	$(ODINCMD)\$(LNLIST)
+$(OUTDIR)\$(TARGET): \
+		$(ODINCMD)\$(LNLIST) \
+		$(OUTDIR)\start.r30 \
+		$(OUTDIR)\cpu_support.r30 \
+		$(OUTDIR)\sys_support.r30 \
+		$(OUTDIR)\kernel_cfg.r30 \
+		$(OUTDIR)\cpu_config.r30 \
+		$(OUTDIR)\sys_config.r30 \
+		$(OUTDIR)\alarm.r30 \
+		$(OUTDIR)\osctl.r30 \
+		$(OUTDIR)\resource.r30 \
+		$(OUTDIR)\task.r30 \
+		$(OUTDIR)\task_manage.r30 \
+		$(OUTDIR)\event.r30 \
+		$(OUTDIR)\interrupt.r30 \
+		$(OUTDIR)\serial.r30 \
+		$(OUTDIR)\sys_timer.r30 \
+		$(OUTDIR)\hw_serial.r30 \
+		$(OUTDIR)\hw_sys_timer.r30 \
+		$(OUTDIR)\sample1_ecc2.r30 \
+		$(OUTDIR)\sample_config.r30 \
+		$(OUTDIR)\sample1_log_ecc2.r30 
+	$(LN) @$(ODINCMD)\$(LNLIST)
+	$(LMC) $(LMCFLAGS) $(OUTDIR)\$(ABSFILE)
+####################################################################
+# End of makefile for TM V.3.20A
+# COPYRIGHT(C) 1998(1998-2003)
+# RENESAS TECHNOLOGY CORPORATION ALL RIGHTS RESERVED
+# AND
+# RENESAS SOLUTIONS CORPORATION ALL RIGHTS RESERVED
+####################################################################

@@ -1,0 +1,339 @@
+;
+;  TOPPERS Automotive Kernel
+;      Toyohashi Open Platform for Embedded Real-Time Systems
+;      Automotive Kernel
+; 
+;  Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+;                              Toyohashi Univ. of Technology, JAPAN
+;  Copyright (C) 2003 by Naoki Saito
+;             Nagoya Municipal Industrial Research Institute, JAPAN
+;  Copyright (C) 2004 by Embedded and Real-Time Systems Laboratory
+;              Graduate School of Information Science, Nagoya Univ., JAPAN
+;  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
+; 
+;  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+;  によって公表されている GNU General Public License の Version 2 に記
+;  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+;  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+;  利用と呼ぶ）することを無償で許諾する．
+;  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+;      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+;      スコード中に含まれていること．
+;  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+;      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+;      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+;      の無保証規定を掲載すること．
+;  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+;      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+;      と．
+;    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+;        作権表示，この利用条件および下記の無保証規定を掲載すること．
+;    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+;        報告すること．
+;  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+;      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+; 
+;  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+;  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+;  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+;  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+; 
+;
+
+
+;
+;  プロセッサ依存モジュール アセンブリ言語部（M16C用）
+;
+;  コンパイルルール
+;  <アセンブラ関数->C関数>
+;    関数呼び出し前後で保持したいレジスタの退避は呼び出し側が行う.
+;
+
+;  外部参照宣言
+	.glb	_runtsk
+	.glb	_schedtsk
+	.glb	_tcxb_pc
+	.glb	_tcxb_sp
+	.glb	_tinib_task
+	.glb	_callevel
+	.glb	_runisr
+	.glb	_tinib_exepri
+	.glb	_tcb_curpri
+	.glb	_call_pretaskhook
+	.glb	_call_posttaskhook
+	.glb	_PreTaskHook
+	.glb	_PostTaskHook
+	.glb	STACK_TOP
+
+;  外部公開宣言
+	.glb	_dispatch
+	.glb	_start_dispatch
+	.glb	_exit_and_dispatch
+	.glb	_activate_r
+	.glb	_interrupt
+
+;  定数定義
+;  _MACRO_ONLYを定義してヘッダファイルのインクルード可能？
+CL_TASK		.equ	001h
+CL_ISR2		.equ	002h
+ID_INVAL	.equ	0FFh
+	.section	program, code, align
+
+
+;
+;  タスクディスパッチャ
+;
+;  呼び出し条件: IPL=0, FLGレジスタIビット=0 (CPUロック状態),
+;			callevel=1(タスクコンテキスト), タスクスタック
+;
+_dispatch:
+	pushm	sb,fb						; スクラッチレジスタ以外を退避
+	mov.b:s	_runtsk, a0					; タスクインデクス
+	shl.w	#01h, a0					; w配列に変換
+	stc		isp, _tcxb_sp[a0]			; スタックポインタをTCBに保存
+	shl.w	#01h, a0					; l配列に変換
+	mov.b	#(dispatch_r>>010h), _tcxb_pc+2[a0]	; 実行再開番地(上位16bit)をTCBに保存
+	mov.w	#(dispatch_r & 0ffffh), _tcxb_pc[a0]; 実行再開番地(下位16bit)をTCBに保存
+	jmp.b	dispatcher
+
+
+;
+;  呼び出し条件: IPL=0, FLGレジスタIビット=0 (CPUロック状態),
+;			callevel=1(タスクコンテキスト), タスクスタック
+;
+dispatch_r:
+	popm	sb,fb						; スクラッチレジスタ以外を復帰
+	rts									; dispatch 呼び出し元へ戻る.
+
+
+;
+;  タスク起動時処理
+;
+;  ここでは, CPUロック解除状態にし, タスクを起動する.
+;
+;  呼出条件: FLGレジスタIビット=0 (CPUロック状態), タスクスタック
+;			callevel = 1(タスクコンテキスト), タスクスタック
+;
+_activate_r:
+	mov.b:s	_runtsk, a0			; 実行開始タスクID
+	lde.b	_tinib_exepri:20[a0], a1
+	ste.b	a1, _tcb_curpri:20[a0]	; 実行開始時の優先度を設定
+	ldc	#0040h, flg				; 割込み許可, ISP, IPL=0
+	shl.w	#02h, a0			; l配列に変換
+	jmpi.a	_tinib_task:20[a0]	; タスク起動
+
+
+;
+;  dispatcher呼び出し条件:
+;		・すべてのタスクのコンテキストは保存されている.
+;		・FLGレジスタIビット=0 (CPUロック状態),
+;		・コンテキストはタスクコンテキスト(callevel=1)
+;		・使用スタックはタスクスタック.ただしOS起動時やアイドル状態から
+;		  復帰したとき(_start_dispatch)に飛んできたときのみ割込みスタック.
+;
+_exit_and_dispatch:
+dispatcher:
+	mov.b:s	#(_PostTaskHook>>010h), r0l	; ポストタスクフック有効?(上位)
+	jnz		posttaskhook_call
+	mov.w:s	#(_PostTaskHook&0ffffh), a1	; ポストタスクフック有効?(下位)
+	jz		_start_dispatch
+
+posttaskhook_call:
+	jsr		_call_posttaskhook
+
+_start_dispatch:
+	mov.b:s	_schedtsk, a0
+	mov.b	a0, _runtsk					; schedtsk を runtsk に
+	cmp.b	#ID_INVAL, a0
+	jz		dispatcher_1				; schedtsk がなければ割込み待ち
+	shl.w	#01h, a0					; w配列に変換
+	ldc		_tcxb_sp[a0], isp			; タスクスタックポインタを復帰
+	mov.b:s	#(_PreTaskHook>>010h), r0l	; プレタスクフック有効?(上位)
+	jnz		pretaskhook_call
+	mov.w:s	#(_PreTaskHook&0ffffh), a1	; プレタスクフック有効?(下位)
+	jz		dispatch_task
+
+pretaskhook_call:
+	push.w:s	a0						; タスクID(スクラッチレジスタ)の退避
+	jsr		_call_pretaskhook
+	pop.w:s	a0							; タスクID(スクラッチレジスタ)の復帰
+
+dispatch_task:
+	shl.w	#01h, a0					; l配列に変換
+	mov.b	_tcxb_pc+2[a0], a1
+	mov.w	_tcxb_pc[a0], a0 
+	jmpi.a	a1a0 						; 実行再開番地へジャンプ
+
+;
+;  ここからは schedtsk がない場合
+;
+dispatcher_1:
+	ldc		#STACK_TOP, isp				; 割込みスタックへ切替え
+	mov.b:s	#CL_ISR2, _callevel			; 割込みコンテキスト
+	fset	i							; 割込み許可
+
+;  周辺デバイスへのスリープ処理・スリープ復帰時の処理が未検討であること
+;  アイドル状態での振る舞いが未検討であることからwait命令をコメント化する
+;	wait 								; wait命令を使用するとで
+	nop									; 消費電力を抑えることができる.
+	nop									; M16C CPUは4命令先読みを行う.
+	nop									; wait時は先読みした命令を忘れてしまうので,
+	nop									; 4命令分nopを入れておく.
+
+;
+;  ここで割込みコンテキスト,割込みスタックに切り換えたのは,
+;  ここで発生する割込み処理にどのスタックを使うかという問題の解決と,
+;  割込みハンドラ内でのディスパッチ防止という2つの意味がある．
+;
+	fclr	i							; 割込み禁止
+	mov.b:s	#CL_TASK, _callevel			; タスクコンテキストに戻す
+	jmp.b	_start_dispatch				; dispatcher へ戻る
+
+
+;
+;  割込みハンドラ出口処理(ディスパッチ要求あり)
+;
+;  呼出し条件:
+;	・FLGレジスタのIビット=0, IPL=割込みのレベル, タスクコンテキスト(callevel=1)
+;	・使用スタックはタスクスタック
+;	・タスクコンテキストはr0,r1,r2,r3,a0,a1がスタックに積まれた状態
+;
+ret_int:
+	pushm	sb,fb						; スクラッチレジスタ以外を退避
+	ldipl	#0					; タスクのIPL値をセット(IPL=0)
+								; ディスパッチ時は必ずタスクレベル(IPL=0)であるため。
+	mov.b:s	_runtsk, a0			; タスクインデクス
+	shl.w	#01h, a0			; w配列に変換
+	stc		isp, _tcxb_sp[a0]	; スタックポインタをTCBに保存
+	shl.w	#01h, a0			; l配列に変換
+	mov.b	#(ret_int_r>>010h), _tcxb_pc+2[a0]	; 実行再開番地(上位16bit)をTCBに保存
+	mov.w	#(ret_int_r & 0ffffh), _tcxb_pc[a0]	; 実行再開番地(下位16bit)をTCBに保存
+	jmp.b	dispatcher
+
+
+;
+;  呼び出し条件: IPL=0, FLGレジスタIビット=0 (CPUロック状態),
+;			callevel=1(タスクコンテキスト), タスクスタック
+;	スタックにはr0,r1,r2,r3,a0,a1,sb,fbの順で積まれている
+;
+ret_int_r:
+;	popm	sb,fb,r0,r1,r2,r3,a0,a1	; スタックからレジスタを復帰
+;	分けないとできないのはなぜ？
+;	→ブロック命令のため並べ替えが発生するから
+	popm	sb,fb				; スクラッチレジスタ以外を復帰
+	popm	r0,r1,r2,r3,a0,a1	; スクラッチレジスタを復帰
+	reit						; タスクへ戻る
+
+
+;
+;  割込み出入口処理(アセンブリ言語記述部分)
+;
+;	呼出し条件:
+;	・FLGレジスタのIビット=0, IPLは受付けた割込みのIPL.
+;	・スタックは多重割り込みなら割込みスタック, そうでなければ
+;	  タスクスタック
+;	・a0a1 には割込みハンドラのアドレスが格納されている.
+;	・r0l には前回の実行中割込みIDが格納されている．
+;
+;	レジスタがスタック上にどのように保存されているかを以下に示す.
+;	この図では上が低位, 下が高位のアドレスで, スタックは下から
+;	上方向に向かって積み上げられるものとする.
+;	レジスタは割り込み発生時にスタックに積まれる.
+;
+;	--------------------------------------
+;	|             SB(2byte)              |
+;	|                                    |
+;	--------------------------------------
+;	|             FB(2byte)              |
+;	|                                    |
+;	--------------------------------------
+;
+;	これより上はディスパッチ要求時にret_intにてスタックに積まれる
+;	スクラッチレジスタ以外のレジスタ.
+;	これより下は割り込み発生時にスタックに積まれるスクラッチレジスタ.
+;
+;	--------------------------------------
+;	|             R0(2byte)              |
+;	|                                    |
+;	--------------------------------------
+;	|             R1(2byte)              |
+;	|                                    |
+;	--------------------------------------
+;	|             R2(2byte)              |
+;	|                                    |
+;	--------------------------------------
+;	|             R3(2byte)              |
+;	|                                    |
+;	--------------------------------------
+;	|             A0(2byte)              |
+;	|                                    |
+;	--------------------------------------
+;	|             A1(2byte)              |
+;	|                                    |
+;	--------------------------------------
+;	|           PCの下位2バイト          |
+;	|                                    |
+;	--------------------------------------
+;	|          FLGの下位1バイト          |
+;	--------------------------------------
+;	|  FLGの上位4ビット/PCの上位4ビット  |
+;	--------------------------------------
+;
+;	ハンドラからリターンした後は, 多重割込みでなく, 
+;	ディスパッチ要求がある時(schedtsk != runtsk)に，
+;	ret_int へ分岐する．
+;
+;	ret_intへ分岐する場合IPLの値を強制的に0にする.
+;	ディスパッチ後にIPLを0にする手段がないためここで行う.
+;	本処理について以下前提条件により問題なしと判断する.
+;	・通常タスク動作中はIPL=0であり、割込み/ディスパッチ後もIPL=0である.
+;	・リソース取得においてIPL!=0の時に割込みが発生した場合,
+;	  実行可能状態の各タスクのプロセッシングレベルはタスクレベルである.
+;	  割込み発生時に実行していたタスクのプロセッシングレベルは
+;	  割込みレベル(IPL!=0)のためディスパッチは起こらない.
+;	・これらよりディスパッチが起こる時はIPL=0として問題ない.
+;
+;	多重割込みかどうかはcallevelの値で判定する.
+;	callevel != 1 ならば多重割込みであると判定する.
+;
+;
+_interrupt:
+	cmp.b:s	#CL_TASK, _callevel	; 多重割り込みかどうか
+	jnz		int_from_int		; 既にタスクレベルでなければ多重割込み
+
+	; 初段の割込み(タスクから)
+	stc		isp, r1				; スタックポインタを取り出し
+	ldc		#STACK_TOP, isp		; 割込み用のスタックへ切替える
+	push.w	r1					; ISP保存
+
+int_from_int:					; 多重割込み
+	mov.b:s	_callevel, r0h		; 実行レベルを保持
+	push.w	r0					; runisrと実行レベルをスタックに退避
+	mov.b:s	#CL_ISR2, _callevel	; 実行レベルをISR2に設定
+	fset	i					; 割込み禁止解除
+	jsri.a	a1a0				; Cルーチン呼び出し
+	fclr	i					; 割込み禁止
+	pop.w	r0					; runisrと実行レベルをスタックから復帰
+	mov.b:s	r0h, _callevel		; 実行レベルを設定
+	mov.b:s	r0l, _runisr		; 実行中の割込みIDを設定
+	cmp.b:s	#CL_TASK, _callevel	; 多重割り込みかどうか
+	jnz		int_return			; 多重割り込みならリターン
+
+	; 初段の割込み(タスクから)
+	pop.w	r1					; ISPが保存されている
+	ldc		r1, isp				; タスクのスタックに戻す
+	cmp.b	_schedtsk, _runtsk	;ディスパッチ要求あり？
+	jnz		ret_int				; あれば ret_int へジャンプ
+
+int_return:
+	popm	r0,r1,r2,r3,a0,a1	; スクラッチレジスタ復帰
+	reit						; 割込み前の処理に戻る
+
+;
+;  未使用割込みの処理
+;
+	.glb	_unused_interrupt
+_unused_interrupt:
+	reit
+
+	.end

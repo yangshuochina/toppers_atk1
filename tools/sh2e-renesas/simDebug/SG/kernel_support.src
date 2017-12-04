@@ -1,0 +1,311 @@
+
+	.CPU	SH2E
+
+	.INCLUDE	"cpu_config.inc"
+		
+; スタートアップ関数の外部参照定義
+	.IMPORT		_PowerON_Reset_PC
+
+; 未使用割込みの外部参照定義
+	UNUSED_INT_EXTERNAL
+
+; 割込み入り口処理関数の外部参照定義
+	ISR1_EXTERNAL ErrHwSerialInt
+	ISR1_EXTERNAL RxHwSerialInt
+	ISR1_EXTERNAL HwCnt1Int
+	ISR2_EXTERNAL SysTimerInt
+	ISR2_EXTERNAL CounterInt
+	ISR2_EXTERNAL HwCnt2Int
+
+
+
+; 割込みベクタテーブル 
+
+	.SECTION    DVECTTBL,DATA,ALIGN=4
+_RESET_Vectors:
+	.DATA.L     _PowerON_Reset_PC	;/* 0   パワーオンリセット */
+	.DATA.L		STARTOF S+SIZEOF S	;/* 1   初期スタック位置   */
+	.DATA.L     _PowerON_Reset_PC	;/* 2   マニュアルリセット */
+	.DATA.L		STARTOF S+SIZEOF S	;/* 3   初期スタック位置   */
+
+    .SECTION    DINTTBL,DATA,ALIGN=4 
+    .GLOBAL	_INT_Vectors
+_INT_Vectors:
+; オフセット値		 		 割り込み名称
+    UNUSED_INT_SYMBOL;,	/* 4 Illegal code */
+    UNUSED_INT_SYMBOL;,	/* 5 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 6 Illegal slot */
+    UNUSED_INT_SYMBOL;,	/* 7 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 8 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 9 CPU Address error */
+    UNUSED_INT_SYMBOL;,	/* 10 DMAC Address error */
+    UNUSED_INT_SYMBOL;,	/* 11 NMI */
+    UNUSED_INT_SYMBOL;,	/* 12 User breakpoint trap */
+    UNUSED_INT_SYMBOL;,	/* 13 FPU */
+    UNUSED_INT_SYMBOL;,	/* 14 H-UDI */
+    UNUSED_INT_SYMBOL;,	/* 15 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 16 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 17 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 18 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 19 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 20 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 21 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 22 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 23 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 24 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 25 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 26 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 27 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 28 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 29 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 30 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 31 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 32 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 33 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 34 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 35 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 36 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 37 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 38 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 39 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 40 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 41 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 42 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 43 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 44 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 45 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 46 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 47 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 48 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 49 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 50 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 51 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 52 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 53 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 54 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 55 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 56 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 57 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 58 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 59 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 60 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 61 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 62 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 63 TRAPA (User Vecter) */
+    UNUSED_INT_SYMBOL;,	/* 64 Interrupt IRQ0 */
+    UNUSED_INT_SYMBOL;,	/* 65 Interrupt IRQ1 */
+    UNUSED_INT_SYMBOL;,	/* 66 Interrupt IRQ2 */
+    UNUSED_INT_SYMBOL;,	/* 67 Interrupt IRQ3 */
+    UNUSED_INT_SYMBOL;,	/* 68 Interrupt IRQ4 */
+    UNUSED_INT_SYMBOL;,	/* 69 Interrupt IRQ5 */
+    UNUSED_INT_SYMBOL;,	/* 70 Interrupt IRQ6 */
+    UNUSED_INT_SYMBOL;,	/* 71 Interrupt IRQ7 */
+    UNUSED_INT_SYMBOL;,	/* 72 DMAC0 DEI0 */
+    UNUSED_INT_SYMBOL;,	/* 73 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 74 DMAC1 DEI1 */
+    UNUSED_INT_SYMBOL;,	/* 75 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 76 DMAC2 DEI2 */
+    UNUSED_INT_SYMBOL;,	/* 77 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 78 DMAC3 DEI3 */
+    UNUSED_INT_SYMBOL;,	/* 79 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 80 ATU01 ITV1/ITV2A/ITV2B */
+    UNUSED_INT_SYMBOL;,	/* 81 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 82 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 83 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 84 ATU02 ICI0A */
+    UNUSED_INT_SYMBOL;,	/* 85 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 86 ATU02 ICI0B */
+    UNUSED_INT_SYMBOL;,	/* 87 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 88 ATU03 ICI0C */
+    UNUSED_INT_SYMBOL;,	/* 89 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 90 ATU03 ICI0D */
+    UNUSED_INT_SYMBOL;,	/* 91 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 92 ATU04 OVI0 */
+    UNUSED_INT_SYMBOL;,	/* 93 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 94 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 95 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 96 ATU11 IMI1A/CMI1 */
+    UNUSED_INT_SYMBOL;,	/* 97 ATU11 IMI1B */
+    UNUSED_INT_SYMBOL;,	/* 98 ATU11 IMI1C */
+    UNUSED_INT_SYMBOL;,	/* 99 ATU11 IMI1D */
+    UNUSED_INT_SYMBOL;,	/* 100 ATU12 IMI1E */
+    UNUSED_INT_SYMBOL;,	/* 101 ATU12 IMI1F */
+    UNUSED_INT_SYMBOL;,	/* 102 ATU12 IMI1G */
+    UNUSED_INT_SYMBOL;,	/* 103 ATU12 IMI1H */
+    UNUSED_INT_SYMBOL;,	/* 104 ATU13 OVI1A/OVI1B */
+    UNUSED_INT_SYMBOL;,	/* 105 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 106 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 107 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 108 ATU21 IMI2A/CMI2A */
+    UNUSED_INT_SYMBOL;,	/* 109 ATU21 IMI2B/CMI2B */
+    UNUSED_INT_SYMBOL;,	/* 110 ATU21 IMI2C/CMI2C */
+    UNUSED_INT_SYMBOL;,	/* 111 ATU21 IMI2D/CMI2D */
+    UNUSED_INT_SYMBOL;,	/* 112 ATU22 IMI2E/CMI2E */
+    UNUSED_INT_SYMBOL;,	/* 113 ATU22 IMI2F/CMI2F */
+    UNUSED_INT_SYMBOL;,	/* 114 ATU22 IMI2G/CMI2G */
+    UNUSED_INT_SYMBOL;,	/* 115 ATU22 IMI2H/CMI2H */
+    UNUSED_INT_SYMBOL;,	/* 116 ATU23 OVI2A/OVI2B */
+    UNUSED_INT_SYMBOL;,	/* 117 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 118 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 119 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 120 ATU31 IMI3A */
+    UNUSED_INT_SYMBOL;,	/* 121 ATU31 IMI3B */
+    UNUSED_INT_SYMBOL;,	/* 122 ATU31 IMI3C */
+    UNUSED_INT_SYMBOL;,	/* 123 ATU31 IMI3D */
+    UNUSED_INT_SYMBOL;,	/* 124 ATU32 OVI3 */
+    UNUSED_INT_SYMBOL;,	/* 125 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 126 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 127 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 128 ATU41 IMI4A */
+    UNUSED_INT_SYMBOL;,	/* 129 ATU41 IMI4B */
+    UNUSED_INT_SYMBOL;,	/* 130 ATU41 IMI4C */
+    UNUSED_INT_SYMBOL;,	/* 131 ATU41 IMI4D */
+    UNUSED_INT_SYMBOL;,	/* 132 ATU42 OVI4 */
+    UNUSED_INT_SYMBOL;,	/* 133 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 134 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 135 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 136 ATU51 IMI5A */
+    UNUSED_INT_SYMBOL;,	/* 137 ATU51 IMI5B */
+    UNUSED_INT_SYMBOL;,	/* 138 ATU51 IMI5C */
+    UNUSED_INT_SYMBOL;,	/* 139 ATU51 IMI5D */
+    UNUSED_INT_SYMBOL;,	/* 140 ATU52 OVI5 */
+    UNUSED_INT_SYMBOL;,	/* 141 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 142 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 143 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 144 ATU6 CMI6A */
+    UNUSED_INT_SYMBOL;,	/* 145 ATU6 CMI6B */
+    UNUSED_INT_SYMBOL;,	/* 146 ATU6 CMI6C */
+    UNUSED_INT_SYMBOL;,	/* 147 ATU6 CMI6D */
+    UNUSED_INT_SYMBOL;,	/* 148 ATU7 CMI7A */
+    UNUSED_INT_SYMBOL;,	/* 149 ATU7 CMI7B */
+    UNUSED_INT_SYMBOL;,	/* 150 ATU7 CMI7C */
+    UNUSED_INT_SYMBOL;,	/* 151 ATU7 CMI7D */
+    ISR1_SYMBOL HwCnt1Int;,	/* 152 ATU81 OSI8A */
+    UNUSED_INT_SYMBOL;,	/* 153 ATU81 OSI8B */
+    UNUSED_INT_SYMBOL;,	/* 154 ATU81 OSI8C */
+    UNUSED_INT_SYMBOL;,	/* 155 ATU81 OSI8D */
+    ISR2_SYMBOL HwCnt2Int;,	/* 156 ATU82 OSI8E */
+    UNUSED_INT_SYMBOL;,	/* 157 ATU82 OSI8F */
+    UNUSED_INT_SYMBOL;,	/* 158 ATU82 OSI8G */
+    UNUSED_INT_SYMBOL;,	/* 159 ATU82 OSI8H */
+    UNUSED_INT_SYMBOL;,	/* 160 ATU83 OSI8I */
+    UNUSED_INT_SYMBOL;,	/* 161 ATU83 OSI8J */
+    UNUSED_INT_SYMBOL;,	/* 162 ATU83 OSI8K */
+    UNUSED_INT_SYMBOL;,	/* 163 ATU83 OSI8L */
+    UNUSED_INT_SYMBOL;,	/* 164 ATU84 OSI8M */
+    UNUSED_INT_SYMBOL;,	/* 165 ATU84 OSI8N */
+    UNUSED_INT_SYMBOL;,	/* 166 ATU84 OSI8O */
+    UNUSED_INT_SYMBOL;,	/* 167 ATU84 OSI8P */
+    UNUSED_INT_SYMBOL;,	/* 168 ATU91 CMI9A */
+    UNUSED_INT_SYMBOL;,	/* 169 ATU91 CMI9B */
+    UNUSED_INT_SYMBOL;,	/* 170 ATU91 CMI9C */
+    UNUSED_INT_SYMBOL;,	/* 171 ATU91 CMI9D */
+    UNUSED_INT_SYMBOL;,	/* 172 ATU92 CMI9E */
+    UNUSED_INT_SYMBOL;,	/* 173 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 174 ATU92 CMI9F */
+    UNUSED_INT_SYMBOL;,	/* 175 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 176 ATU101 CMI10A */
+    UNUSED_INT_SYMBOL;,	/* 177 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 178 ATU101 CMI10B */
+    UNUSED_INT_SYMBOL;,	/* 179 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 180 ATU102 ICI10A/CMI10G */
+    UNUSED_INT_SYMBOL;,	/* 181 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 182 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 183 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 184 ATU11 IMI11A */
+    UNUSED_INT_SYMBOL;,	/* 185 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 186 ATU11 IMI11B */
+    UNUSED_INT_SYMBOL;,	/* 187 ATU11 OVI11 */
+    ISR2_SYMBOL SysTimerInt;,	/* 188 CMT0 CMTI0 */
+    UNUSED_INT_SYMBOL;,	/* 189 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 190 A/D0 ADI0 */
+    UNUSED_INT_SYMBOL;,	/* 191 Reserved */
+    ISR2_SYMBOL CounterInt;,	/* 192 CMT1 CMTI1 */
+    UNUSED_INT_SYMBOL;,	/* 193 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 194 A/D1 ADI1 */
+    UNUSED_INT_SYMBOL;,	/* 195 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 196 A/D2 ADI2 */
+    UNUSED_INT_SYMBOL;,	/* 197 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 198 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 199 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 200 SCI0 ERI0 */
+    UNUSED_INT_SYMBOL;,	/* 201 SCI0 RXI0 */
+    UNUSED_INT_SYMBOL;,	/* 202 SCI0 TXI0 */
+    UNUSED_INT_SYMBOL;,	/* 203 SCI0 TEI0 */
+    ISR1_SYMBOL ErrHwSerialInt;,	/* 204 SCI1 ERI1 */
+    ISR1_SYMBOL RxHwSerialInt;,	/* 205 SCI1 RXI1 */
+    UNUSED_INT_SYMBOL;,	/* 206 SCI1 TXI1 */
+    UNUSED_INT_SYMBOL;,	/* 207 SCI1 TEI1 */
+    UNUSED_INT_SYMBOL;,	/* 208 SCI2 ERI2 */
+    UNUSED_INT_SYMBOL;,	/* 209 SCI2 RXI2 */
+    UNUSED_INT_SYMBOL;,	/* 210 SCI2 TXI2 */
+    UNUSED_INT_SYMBOL;,	/* 211 SCI2 TEI2 */
+    UNUSED_INT_SYMBOL;,	/* 212 SCI3 ERI3 */
+    UNUSED_INT_SYMBOL;,	/* 213 SCI3 RXI3 */
+    UNUSED_INT_SYMBOL;,	/* 214 SCI3 TXI3 */
+    UNUSED_INT_SYMBOL;,	/* 215 SCI3 TEI3 */
+    UNUSED_INT_SYMBOL;,	/* 216 SCI4 ERI4 */
+    UNUSED_INT_SYMBOL;,	/* 217 SCI4 RXI4 */
+    UNUSED_INT_SYMBOL;,	/* 218 SCI4 TXI4 */
+    UNUSED_INT_SYMBOL;,	/* 219 SCI4 TEI4 */
+    UNUSED_INT_SYMBOL;,	/* 220 HCAN0 ERS0 */
+    UNUSED_INT_SYMBOL;,	/* 221 HCAN0 OVR0 */
+    UNUSED_INT_SYMBOL;,	/* 222 HCAN0 RM0 */
+    UNUSED_INT_SYMBOL;,	/* 223 HCAN0 SLE0 */
+    UNUSED_INT_SYMBOL;,	/* 224 WDT ITI */
+    UNUSED_INT_SYMBOL;,	/* 225 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 226 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 227 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 228 HCAN1 ERS1 */
+    UNUSED_INT_SYMBOL;,	/* 229 HCAN1 OVR1 */
+    UNUSED_INT_SYMBOL;,	/* 230 HCAN1 RM1 */
+    UNUSED_INT_SYMBOL;,	/* 231 HCAN1 SLE1 */
+    UNUSED_INT_SYMBOL;,	/* 232 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 233 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 234 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 235 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 236 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 237 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 238 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 239 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 240 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 241 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 242 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 243 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 244 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 245 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 246 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 247 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 248 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 249 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 250 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 251 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 252 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 253 Reserved */
+    UNUSED_INT_SYMBOL;,	/* 254 Reserved */
+    UNUSED_INT_SYMBOL;	/* 255 Reserved */
+
+	.SECTION    PIntPRG,CODE,ALIGN=4 
+	.IMPORT _runisr
+	.IMPORT _interrupt
+	
+; 割込み入り口処理関数
+	ISR1_ENTRY ErrHwSerialInt
+	ISR1_ENTRY RxHwSerialInt
+	ISR1_ENTRY HwCnt1Int
+	ISR2_ENTRY SysTimerInt,0
+	ISR2_ENTRY CounterInt,1
+	ISR2_ENTRY HwCnt2Int,2
+
+
+; フックルーチンのNULLシンボル
+	
+	
+	
+	NULL_PRETASKHOOK
+	NULL_POSTTASKHOOK
+
+	.SECTION    S,STACK,ALIGN=4
+	.END
+
+

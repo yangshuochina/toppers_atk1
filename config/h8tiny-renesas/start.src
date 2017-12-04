@@ -1,0 +1,163 @@
+;
+;  TOPPERS Automotive Kernel
+;      Toyohashi Open Platform for Embedded Real-Time Systems
+;      Automotive Kernel
+;
+;  Copyright (C) 2001-2004 by Industrial Technology Institute,
+;                              Miyagi Prefectural Government, JAPAN
+;  Copyright (C) 2006 by Embedded and Real-Time Systems Laboratory
+;              Graduate School of Information Science, Nagoya Univ., JAPAN    
+;
+;  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
+;  によって公表されている GNU General Public License の Version 2 に記
+;  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+;  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+;  利用と呼ぶ）することを無償で許諾する．
+;  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+;      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+;      スコード中に含まれていること．
+;  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+;      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+;      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+;      の無保証規定を掲載すること．
+;  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+;      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+;      と．
+;    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+;        作権表示，この利用条件および下記の無保証規定を掲載すること．
+;    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+;        報告すること．
+;  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+;      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+;
+;  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+;  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+;  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+;  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+;
+;  @(#) $Id: start.src,v 1.6 2005/11/13 14:05:01 honda Exp $
+;
+
+;
+;   H8/300H Tiny 用スタートアップモジュール
+
+        .CPU 300HN
+
+		.INCLUDE	"cpu_config_asm.inc"		; 
+		.INCLUDE	"sys_config_asm.inc"		; 
+
+        ; STARTOF演算子、SIZEOF演算子を有効にするためのセクション宣言
+        .SECTION D,DATA,ALIGN=2
+        .SECTION R,DATA,ALIGN=2
+        .SECTION B,DATA,ALIGN=2
+        .SECTION B1,DATA,ALIGN=2
+
+        .SECTION P,CODE,ALIGN=2
+
+        .IMPORT hardware_init_hook
+        .IMPORT software_init_hook
+        .IMPORT _main
+
+        .GLOBAL _start
+_start:
+        ;
+        ; 非タスクコンテキストのスタックポインタをSTACKTOPに初期化する
+        ; 　H8ではリセット時にスタックポインタが初期化されないため、
+        ; 　スタートアップルーチンの先頭で初期化する必要がある
+        ; 　（STACKTOPは、sys_config_asm.incで定義）
+        ;
+        mov.l   #STACKTOP, sp
+
+        ;
+        ;  CCRを初期化する。（割込み禁止）
+        ;
+		DISINT
+
+		;
+		;  hardware_init_hook の呼出し（0 でない場合）
+		;
+		;  ターゲットハードウェアに依存して必要な初期化処理がある場合
+		;  は，hardware_init_hook という関数を用意する．
+		;
+		mov.l	#hardware_init_hook, er0
+		beq		hardware_init_hook_r
+		jsr		@hardware_init_hook
+hardware_init_hook_r:
+
+        ;
+        ; Bセクションをクリア
+        ;
+        mov.l   @_bss_start_k, er0
+        mov.l   @_bss_end_k, er1
+        sub.l   er2, er2
+bss_init:
+        cmp.l   er0, er1
+		bls     bss_init_finish
+        mov.w   r2, @er0
+        add.l   #2, er0
+		bra     bss_init
+bss_init_finish:      
+
+        ;
+        ; B1セクションをクリア
+        ;
+        mov.l   @_bss1_start_k, er0
+        mov.l   @_bss1_end_k, er1
+        sub.l   er2, er2
+bss1_init:
+        cmp.l   er0, er1
+		bls     bss1_init_finish
+        mov.w   r2, @er0
+        add.l   #2, er0
+		bra     bss1_init
+bss1_init_finish:      
+
+        ;
+        ;  Dセクションを初期化する（ROM化対応）．
+        ;
+        ;  __idata_start から __idata_end までを，__data_start 以降に
+        ;  コピーする．
+        mov.l   @__idata_start_k, er0
+        mov.l   @__idata_end_k, er1
+        mov.l   @__data_start_k, er2
+data_init:
+        cmp.l   er0, er1
+        bls     data_init_finish
+        mov.w   @er0+, r4      ; *er2++ = *er0 ++;
+        mov.w   r4, @er2
+        add.l   #2, er2
+		bra     data_init
+data_init_finish:      
+
+		;
+		;  software_init_hook を呼出し（0 でない場合）
+		;
+		;  ソフトウェア環境（特にライブラリ）に依存して必要な初期化処
+		;  理がある場合は，software_init_hook という関数を用意すればよい．
+		;
+		mov.l	#software_init_hook, er0	; mov命令にてシンボルが0の場合、Z=1となる
+		beq		software_init_hook_r
+		jsr		@software_init_hook
+software_init_hook_r:
+		
+		;
+		; ユーザメイン実行
+		;
+        jsr     @_main
+
+exit:
+        jmp		@exit
+
+
+        .ALIGN 4
+_bss_start_k:     .DATA.L   STARTOF B
+_bss_end_k:       .DATA.L   STARTOF B   +   SIZEOF B
+
+_bss1_start_k:    .DATA.L   STARTOF B1
+_bss1_end_k:      .DATA.L   STARTOF B1  +   SIZEOF B
+
+__idata_start_k:  .DATA.L   STARTOF D
+__idata_end_k:    .DATA.L   STARTOF D   +   SIZEOF D
+__data_start_k:   .DATA.L   STARTOF R
+
+        .END

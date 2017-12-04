@@ -1,0 +1,141 @@
+/*
+ *  TOPPERS Automotive Kernel
+ *      Toyohashi Open Platform for Embedded Real-Time Systems/
+ *      Automotive Kernel
+ * 
+ *  Copyright (C) 2006 by Witz Corporation, JAPAN
+ * 
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ * 
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ * 
+ */
+
+@@ISR_MIN_PRIORITY=1@@
+@@ISR_MAX_PRIORITY=7@@
+@@ISR_MIN_ENTRY=0@@
+@@ISR_MAX_ENTRY=71@@
+@@ISR_ENTRY_INTERVAL=1@@
+
+/* 割込み入り口処理外部参照 */
+@@FOR_EACH EXTERNAL_SYMBOL_FOR_ISR@@
+
+/* 割込み入り口処理	*/
+@@FOR_EACH ENTRY_FOR_ISR@@
+
+/* ベクタテーブル登録シンボル外部参照	*/
+UNUSED_INT_EXTERNAL();	/* 未定義の割込み */
+asm("	.glb	_start");	/* リセット */
+
+/* 割込み可変ベクタテーブル	*/
+asm("	.section vvector");
+
+@@INT_ENTRY0@@; /*  0, +0x00: BRK命令	*/
+@@INT_ENTRY1@@; /*  1, +0x04: 予約領域	*/
+@@INT_ENTRY2@@; /*  2, +0x08: 予約領域	*/
+@@INT_ENTRY3@@; /*  3, +0x0C: 予約領域	*/
+@@INT_ENTRY4@@; /*  4, +0x10: 予約領域	*/
+@@INT_ENTRY5@@; /*  5, +0x14: 予約領域	*/
+@@INT_ENTRY6@@; /*  6, +0x18: 予約領域	*/
+@@INT_ENTRY7@@; /*  7, +0x1C: A/D変換1	*/
+@@INT_ENTRY8@@; /*  8, +0x20: DMA0	*/
+@@INT_ENTRY9@@; /*  9, +0x24: DMA1	*/
+@@INT_ENTRY10@@; /* 10, +0x28: DMA2	*/
+@@INT_ENTRY11@@; /* 11, +0x2C: DMA3	*/
+@@INT_ENTRY12@@; /* 12, +0x30: タイマA0	*/
+@@INT_ENTRY13@@; /* 13, +0x34: タイマA1	*/
+@@INT_ENTRY14@@; /* 14, +0x38: タイマA2	*/
+@@INT_ENTRY15@@; /* 15, +0x3C: タイマA3	*/
+@@INT_ENTRY16@@; /* 16, +0x40: タイマA4	*/
+@@INT_ENTRY17@@; /* 17, +0x44: UART0送信,NACK	*/
+@@INT_ENTRY18@@; /* 18, +0x48: UART0受信,ACK	*/
+@@INT_ENTRY19@@; /* 19, +0x4C: UART1送信,NACK	*/
+@@INT_ENTRY20@@; /* 20, +0x50: UART1受信,ACK	*/
+@@INT_ENTRY21@@; /* 21, +0x54: タイマB0	*/
+@@INT_ENTRY22@@; /* 22, +0x58: タイマB1	*/
+@@INT_ENTRY23@@; /* 23, +0x5C: タイマB2	*/
+@@INT_ENTRY24@@; /* 24, +0x60: タイマB3	*/
+@@INT_ENTRY25@@; /* 25, +0x64: タイマB4	*/
+@@INT_ENTRY26@@; /* 26, +0x68: 外部割込み5	*/
+@@INT_ENTRY27@@; /* 27, +0x6C: 外部割込み4	*/
+@@INT_ENTRY28@@; /* 28, +0x70: 外部割込み3	*/
+@@INT_ENTRY29@@; /* 29, +0x74: 外部割込み2	*/
+@@INT_ENTRY30@@; /* 30, +0x78: 外部割込み1	*/
+@@INT_ENTRY31@@; /* 31, +0x7C: 外部割込み0	*/
+@@INT_ENTRY32@@; /* 32, +0x80: タイマB5	*/
+@@INT_ENTRY33@@; /* 33, +0x84: UART2送信,NACK	*/
+@@INT_ENTRY34@@; /* 34, +0x88: UART2受信,ACK	*/
+@@INT_ENTRY35@@; /* 35, +0x8C: UART3送信,NACK	*/
+@@INT_ENTRY36@@; /* 36, +0x90: UART3受信,ACK	*/
+@@INT_ENTRY37@@; /* 37, +0x94: UART4送信,NACK	*/
+@@INT_ENTRY38@@; /* 38, +0x98: UART4受信,ACK	*/
+@@INT_ENTRY39@@; /* 39, +0x9C: バス衝突検出/スタートコンディション検出/ストップコンディション検出(UART2)/障害エラー	*/
+@@INT_ENTRY40@@; /* 40, +0xA0: バス衝突検出/スタートコンディション検出/ストップコンディション検出(UART3/UART0)/障害エラー	*/
+@@INT_ENTRY41@@; /* 41, +0xA4: バス衝突検出/スタートコンディション検出/ストップコンディション検出(UART4/UART1)/障害エラー	*/
+@@INT_ENTRY42@@; /* 42, +0xA8: A/D変換0	*/
+@@INT_ENTRY43@@; /* 43, +0xAC: キー入力	*/
+@@INT_ENTRY44@@; /* 44, +0xB0: インテリジェントI/O0	*/
+@@INT_ENTRY45@@; /* 45, +0xB4: インテリジェントI/O1	*/
+@@INT_ENTRY46@@; /* 46, +0xB8: インテリジェントI/O2	*/
+@@INT_ENTRY47@@; /* 47, +0xBC: インテリジェントI/O3	*/
+@@INT_ENTRY48@@; /* 48, +0xC0: インテリジェントI/O4	*/
+@@INT_ENTRY49@@; /* 49, +0xC4: インテリジェントI/O5	*/
+@@INT_ENTRY50@@; /* 50, +0xC8: インテリジェントI/O6	*/
+@@INT_ENTRY51@@; /* 51, +0xCC: インテリジェントI/O7	*/
+@@INT_ENTRY52@@; /* 52, +0xD0: インテリジェントI/O8	*/
+@@INT_ENTRY53@@; /* 53, +0xD4: インテリジェントI/O9/CAN0	*/
+@@INT_ENTRY54@@; /* 54, +0xD4: インテリジェントI/O10/CAN1	*/
+@@INT_ENTRY55@@; /* 55, +0xDC: 予約領域	*/
+@@INT_ENTRY56@@; /* 56, +0xE0: 予約領域	*/
+@@INT_ENTRY57@@; /* 57, +0xE8: インテリジェントI/O11/CAN2	*/
+@@INT_ENTRY58@@; /* 58, +0xE8: 予約領域	*/
+@@INT_ENTRY59@@; /* 59, +0xEC: 予約領域	*/
+@@INT_ENTRY60@@; /* 60, +0xF0: 予約領域	*/
+@@INT_ENTRY61@@; /* 61, +0xF4: 予約領域	*/
+@@INT_ENTRY62@@; /* 62, +0xF8: 予約領域	*/
+@@INT_ENTRY63@@; /* 63, +0xFC: 予約領域	*/
+
+/* 割込み固定ベクタテーブル	*/
+asm("	.section fvector");
+
+@@INT_ENTRY64@@; /* 64, 0xFFFFDC: 未定義命令	*/
+@@INT_ENTRY65@@; /* 65, 0xFFFFE0: オーバーフロー	*/
+@@INT_ENTRY66@@; /* 66, 0xFFFFE4: BRK命令	*/
+@@INT_ENTRY67@@; /* 67, 0xFFFFE8: アドレス一致	*/
+@@INT_ENTRY68@@; /* 68, 0xFFFFEC: 予約領域	*/
+@@INT_ENTRY69@@; /* 69, 0xFFFFF0: 監視タイマ/発振停止検出	*/
+@@INT_ENTRY70@@; /* 70, 0xFFFFF4: 予約領域	*/
+@@INT_ENTRY71@@; /* 71, 0xFFFFF8: NMI	*/
+asm("	.lword	_start"); /* 72, 0xFFFFFC: リセット	*/
+
+/* フックルーチン	*/
+@@NULL_ERRORHOOK_SYMBOL@@
+@@NULL_STARTUPHOOK_SYMBOL@@
+@@NULL_SHUTDOWNHOOK_SYMBOL@@
+@@NULL_PRETASKHOOK_SYMBOL@@
+@@NULL_POSTTASKHOOK_SYMBOL@@
+
+

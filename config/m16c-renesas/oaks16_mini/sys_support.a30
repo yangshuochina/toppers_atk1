@@ -1,0 +1,104 @@
+;
+;  TOPPERS Automotive Kernel
+;      Toyohashi Open Platform for Embedded Real-Time Systems
+;      Automotive Kernel
+; 
+;  Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+;                              Toyohashi Univ. of Technology, JAPAN
+;  Copyright (C) 2004 by Embedded and Real-Time Systems Laboratory
+;              Graduate School of Information Science, Nagoya Univ., JAPAN
+;  Copyright (C) 2005-2006 by Witz Corporation, JAPAN
+; 
+;  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+;  によって公表されている GNU General Public License の Version 2 に記
+;  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+;  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+;  利用と呼ぶ）することを無償で許諾する．
+;  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+;      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+;      スコード中に含まれていること．
+;  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+;      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+;      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+;      の無保証規定を掲載すること．
+;  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+;      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+;      と．
+;    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+;        作権表示，この利用条件および下記の無保証規定を掲載すること．
+;    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+;        報告すること．
+;  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+;      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+; 
+;  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+;  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+;  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+;  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+; 
+;
+
+;
+;	ターゲットシステム依存モジュール アセンブリ言語部（OAKS16-mini用）
+;
+
+;
+;	SFR 定義
+;
+PRCR  .EQU		000AH			; プロテクトレジスタ
+PRC0  .BTEQU	0,PRCR			; システムクロックレジスタビット
+PRC1  .BTEQU	1,PRCR			; プロセッサモードレジスタビット
+
+PM0   .EQU		0004H			; プロセッサモードレジスタ０
+PM1   .EQU		0005H			; プロセッサモードレジスタ１
+
+CM0   .EQU		0006H			; クロックモードレジスタ０
+CM1   .EQU		0007H			; クロックモードレジスタ１
+
+	.section	program, code, align
+
+;
+;	低レベルのターゲットシステム依存の初期化
+;
+;	スタートアップモジュールの中で，スタック初期化の後に呼び出される．
+;
+	.glb hardware_init_hook
+;
+;	hardware_init_hookを無効にする場合は下記.equ 定義をコメントアウトし，
+;	関数の記述を削除すること．
+;
+;	hardware_init_hook .equ 0
+hardware_init_hook:
+	;
+	;  プロセッサモード設定
+	;
+	bset		PRC1			; プロセッサモードレジスタ書き込みイネーブル
+	mov.b:s		#00000000b, PM0	; シングルチップモード
+	mov.b:s		#00000000b, PM1	; 非拡張、ノーウェイト
+	bclr		PRC1			; プロセッサモードレジスタ書き込みディゼーブル
+
+	;
+	;  動作クロック設定
+	;
+	bset		PRC0			; クロックコントロールレジスタ書き込みイネーブル
+	mov.b:s		#00001000b, CM0	; 発信
+	mov.b:s		#00100000b, CM1		; 分周なし
+	bclr		PRC0			; レジスタ書き込みディゼーブル
+	rts
+
+;
+;	低レベルのソフトウェア依存の初期化
+;
+;	スタートアップモジュールの中で，ユーザメイン関数呼び出しの前に
+;	呼び出される．
+;
+	.glb software_init_hook
+;
+;	software_init_hookを有効にする場合は下記.equ 定義をコメント化し，
+;	関数シンボルのコメントアウトと関数内部の記述を行うこと．
+;
+	software_init_hook .equ 0
+;software_init_hook:
+;	rts
+
+	.end

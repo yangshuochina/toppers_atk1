@@ -1,0 +1,29 @@
+[PROJECT]
+ProjectName=toppers_automotive_oaks16mini_ecc2
+WorkingDirectory=C:\WorkSpace\OSEK OS\trunk\tools\m16c-renesas\oaks16_mini_ecc2
+OutputDirectory=.\output
+ProjectFile=C:\WorkSpace\OSEK OS\trunk\tools\m16c-renesas\oaks16_mini_ecc2\toppers_automotive_oaks16mini_ecc2.tmk
+ProjectInfoFile=C:\WorkSpace\OSEK OS\trunk\tools\m16c-renesas\oaks16_mini_ecc2\toppers_automotive_oaks16mini_ecc2.tmi
+TargetName=M16C Family
+Type=1
+GoalFile=C:\WorkSpace\OSEK OS\trunk\tools\m16c-renesas\oaks16_mini_ecc2\output\toppers_automotive_oaks16mini_ecc2.x30
+[NC]
+Name=NC30WA
+Version=V.5.10 Release 1
+[MEMBER]
+Count=0
+[DOCUMENTFILE]
+Count=0
+[ITEM]
+ActiveFactory=default
+FactoryName1=default
+ActiveTagName1=all
+Count=1
+[TOOL]
+ToolCount=1
+ToolName1=lmc30
+[PD]
+Name=
+Version=
+Path=
+Type=

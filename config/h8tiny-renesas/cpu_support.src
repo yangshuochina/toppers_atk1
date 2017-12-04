@@ -1,0 +1,328 @@
+;
+;  TOPPERS Automotive Kernel
+;      Toyohashi Open Platform for Embedded Real-Time Systems
+;      Automotive Kernel
+;
+;  Copyright (C) 2000-2004 by Embedded and Real-Time Systems Laboratory
+;                              Toyohashi Univ. of Technology, JAPAN
+;  Copyright (C) 2001-2004 by Industrial Technology Institute,
+;                              Miyagi Prefectural Government, JAPAN
+;  Copyright (C) 2001-2004 by Dep. of Computer Science and Engineering
+;                   Tomakomai National College of Technology, JAPAN
+;  Copyright (C) 2006 by Embedded and Real-Time Systems Laboratory
+;              Graduate School of Information Science, Nagoya Univ., JAPAN    
+;
+;  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
+;  によって公表されている GNU General Public License の Version 2 に記
+;  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+;  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+;  利用と呼ぶ）することを無償で許諾する．
+;  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+;      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+;      スコード中に含まれていること．
+;  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+;      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+;      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+;      の無保証規定を掲載すること．
+;  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+;      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+;      と．
+;    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+;        作権表示，この利用条件および下記の無保証規定を掲載すること．
+;    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+;        報告すること．
+;  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+;      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+;
+;  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+;  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+;  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+;  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+;
+;  @(#) $Id: cpu_support.src,v 1.7 2005/12/07 01:44:56 honda Exp $
+;
+
+;       プロセッサ依存モジュール アセンブリ言語部（H8/300H Tiny用）
+;　　　　　カーネル内部で使用する定義
+
+        .CPU 300HN
+        .SECTION P, CODE, ALIGN=2
+
+        .INCLUDE "sys_config_asm.inc"
+        .INCLUDE "cpu_config_asm.inc"
+
+;　　共通部とのインターフェース
+;　　　変数
+        .IMPORT	_runtsk
+        .IMPORT	_schedtsk
+        .IMPORT	_tcxb_pc
+        .IMPORT	_tcxb_sp
+        .IMPORT	_tinib_task
+        .IMPORT	_callevel
+        .IMPORT	_runisr
+        .IMPORT	_tinib_exepri
+        .IMPORT	_tcb_curpri
+        .IMPORT	_call_pretaskhook
+        .IMPORT	_call_posttaskhook
+        .IMPORT	_PreTaskHook
+        .IMPORT	_PostTaskHook
+        .IMPORT	_i_flag
+        .IMPORT	_ipl_level
+
+
+;
+; IDの無効番号
+;
+ID_INVAL: .DEFINE  	    "H'FF"
+
+;
+; コールレベル
+;
+CL_TASK:  .DEFINE  	    "H'01"
+CL_ISR2:  .DEFINE  	    "H'02"
+TRUE      .DEFINE		"H'01"
+FALSE     .DEFINE		"H'00"
+
+;
+;  タスクディスパッチャ
+;    割込み禁止状態で呼び出すこと
+;    er0～er1は呼び出し元で保存
+;
+
+        .GLOBAL _dispatch
+_dispatch:
+        push.l  er2                    ; er2～6を保存
+        push.l  er3
+        push.l  er4
+        push.l  er5
+        push.l  er6
+        mov.b   @_runtsk, r0l          ; r0 <- runtsk		
+		extu.w	r0
+		extu.l  er0		
+		shll.l	er0
+		mov.w   r7, @(_tcxb_sp, er0)   ; タスクスタックポインタを保存 
+        mov.w   #dispatch_r, r1        ; 実行再開番地を保存
+		mov.w   r1, @(_tcxb_pc, er0)	   
+        bra     dispatcher             ; ディスパッチャーへ
+
+
+; タスクスイッチの結果ここから実行が再開される
+
+dispatch_r:
+        pop.l   er6                     ; er2～6を復元
+        pop.l   er5
+        pop.l   er4
+        pop.l   er3
+        pop.l   er2
+        rts     ;　dispatch()の呼び出し元へリターン
+
+
+
+        .GLOBAL _exit_and_dispatch
+		.GLOBAL	_start_dispatch
+_exit_and_dispatch:
+
+;
+;  ディスパッチャ本体
+;
+dispatcher:
+        ; ここには割り込み禁止で来ること
+
+		mov.w   #_PostTaskHook,r0
+        beq     _start_dispatch		
+        jsr     @_call_posttaskhook
+
+_start_dispatch:
+        mov.b   @_schedtsk, r0l
+		mov.b   r0l, @_runtsk       ; schedtsk を runtsk に
+		cmp.b   #ID_INVAL, r0l		
+        beq     dispatcher_1        ; schedtskが無ければ割り込み待ち
+		extu.w	r0
+		extu.l  er0		
+		shll.l	er0
+        mov.w   @(_tcxb_sp, er0), r7 ; SPを復帰
+        mov.w   @(_tcxb_pc, er0), r2 ; PCを復帰
+		mov.w   #_PreTaskHook,r0
+        beq     dispatch_task
+        jsr     @_call_pretaskhook
+
+dispatch_task:
+        jmp     @er2                 ; 実行再開番地へジャンプ
+
+        ;
+        ;　実行すべきタスクがない場合の割込み待ち
+        ;
+        ;  ここで割込みモードに切り換えるのは，ここで発生する割込み処理
+        ;  にどのスタックを使うかという問題の解決と，割込みハンドラ内で
+        ;  のタスクディスパッチの防止という二つの意味がある．
+dispatcher_1:
+
+        mov.w   #STACKTOP, r7   ; スタックを割り込みスタックに切替え
+
+		mov.b	#CL_ISR2,	r1h			; コールレベルを変更
+		mov.b	r1h, @_callevel 	
+		mov.b	#FALSE, r1h				; 割込みフラグを変更
+        mov.b	r1h, @_i_flag	
+		mov.b	#1,	r1h			        ; 割込みレベル保持変数を1に	
+        mov.b	r1h, @_ipl_level
+
+        ;　ldc命令直後は割込み禁止であり、割込み要求があっても
+        ;　次の命令が実行される。
+        ;　（割込みから戻ってきてsleepするケースはない）
+        ENAINT                          ; 割り込み許可
+        sleep                           ; 割込み待ち
+        DISINT                          ; 割り込み禁止
+
+		mov.b   #CL_TASK, r1h			; コールレベルを変更	
+		mov.b	r1h, @_callevel   
+		mov.b	#TRUE,	r1h				; 割込みフラグを変更
+        mov.b	r1h, @_i_flag	
+		mov.b	#0,	r1h			        ; 割込みレベル保持変数を0に
+        mov.b	r1h, @_ipl_level
+
+        bra     _start_dispatch
+
+
+;
+;  割込みハンドラ入口処理
+;　　割込み要因に依らず、共通な部分
+;　　（vector.srcのINTHDR_ENTRYからの続き）
+;
+;　　　　以下の状態でここにやってくる
+;　　　　　・割込み禁止
+;　　　　　・er0～er3退避済み
+;          ・r1l：発生した割込みのID
+;　　　　　・ r3：C言語ルーチンの先頭アドレス
+;
+;	多重割込みかどうかはcallevelの値で判定する.
+;	callevel != 1 ならば多重割込みであると判定する.
+; 
+;   _regparam2を指定している場合は
+;   er2～er6は呼び出し先で保存される
+
+        .GLOBAL _common_interrupt_process
+_common_interrupt_process:
+		mov.b	@_runisr, r0h	; 実行中割込みIDを退避
+		mov.b	r1l, @_runisr	; 割込みIDを設定
+		mov.b   @_callevel, r0l	; コールレベルを退避
+		cmp.b   #CL_TASK, r0l
+        bne     int_from_int 
+        ;
+        ;　初段の割込みの場合
+        ;
+        mov.w   r7, r2          ; タスクスタックの値の保存
+        mov.w   #STACKTOP, r7   ; スタック切替
+		mov.b	#1,	r1l			; 割込みレベル保持変数を1に	
+        mov.b	r1l, @_ipl_level
+int_from_int 
+		push.w  r0				; runisr,callevelをスタックに保存
+		mov.b   #CL_ISR2,  r0l  ; 実行レベルをISR2に設定
+		mov.b   r0l, @_callevel ; 
+        jsr     @er3            ; C言語ルーチン呼び出し
+		pop.w	r0				; runisr,callevelを復帰
+		mov.b   r0l, @_callevel ; 
+		mov.b   r0h, @_runisr   ;
+		cmp.b   #CL_TASK, r0l   ; 多重割り込みかどうか
+        bne     int_return
+		;
+		; タスクへの復帰
+		;
+		mov.b	#0,	r1l			; 割込みレベル保持変数を0に	
+        mov.b	r1l, @_ipl_level
+        mov.w   r2, r7          ; スタック復帰
+		mov.b	@_schedtsk,r3l
+		mov.b	@_runtsk,r2l
+		cmp.b	r2l,r3l
+        bne		ret_int         ;　出口処理へジャンプ
+
+        ;　本来はここで戻り先が、割込み待ちのsleep命令かどうかのチェッ
+        ;　クが必要である。
+        ;　H8の場合、sleep命令の直前にある割込み許可のldc命令の実行直
+        ;　後は割込み禁止であり、割込み要求があったとしても割込みは受
+        ;　け付けないで、sleep命令が実行される。そのため、割込みから
+        ;　戻った直後にsleep命令が実行されるケースは考慮しなくて良い。
+
+        ;
+        ;　ディスパッチャを呼ばずに、割込み元に戻る場合
+        ;
+
+int_return:
+        pop.l   er3                     ;　レジスタを復元
+        pop.l   er2
+        pop.l   er1
+        pop.l   er0
+        rte                             ;　割込み元へリターン
+
+
+;
+;  割込みハンドラ出口処理(ディスパッチ要求あり)
+;
+; 割込み禁止状態,er0～er3を保存した状態で呼び出すこと。
+;
+
+ret_int:
+        push.l  er4                 ;　レジスタ退避
+        push.l  er5
+        push.l  er6
+        mov.b	#TRUE, r2l			; 割込み擬似フラグを変更	
+		mov.b	r2l, @_i_flag  
+		mov.b	#0,	r2l				; 割込みレベル保持変数を0に	
+        mov.b	r2l, @_ipl_level   
+        mov.b   @_runtsk, r2l
+		extu.w	r2
+		extu.l  er2
+		shll.l	er2
+		mov.w   r7, @(_tcxb_sp, er2) ; タスクスタックポインタを保存
+        mov.w   #ret_int_r, r1       ; 実行再開番地を保存
+		mov.w   r1, @(_tcxb_pc, er2)
+        bra     dispatcher
+
+        ;
+        ;  割込みの出口でディスパッチャからここに戻ってくる
+        ;
+ret_int_r:
+        mov.b	#FALSE, r0l				;  割込み擬似フラグを変更
+		mov.b	r0l, @_i_flag   
+        pop.l   er6                     ;　レジスタ復元
+        pop.l   er5
+        pop.l   er4
+        pop.l   er3                     ;　 +0:er3
+        pop.l   er2                     ;　 +4:er2
+        pop.l   er1                     ;　 +8:er1
+        pop.l   er0                     ;　+12:er0
+        rte                             ;　割込み元にリターン
+
+;
+;  タスク起動処理
+;
+;　　　　CPUロック状態で呼び出される。
+;
+;
+
+        .GLOBAL _activate_r
+_activate_r:
+		mov.b	#FALSE, r1l
+		mov.b	r1l, @_i_flag	
+        ENAINT                       ;  割込み許可
+
+        ;  ここで割込みが発生してタスクスイッチが起こったとしても、
+        ;  ここに戻くるときには、runtskの値は元に戻っている。
+
+        mov.b   @_runtsk, r2l		
+		extu.w	r2
+		extu.l  er2
+		mov.b   @(_tinib_exepri,er2), r3l
+		mov.b   r3l, @(_tcb_curpri,er2)		
+		shll.l	er2
+        mov.w   @(_tinib_task,er2), r1 ;  タスク起動番地を設定
+        jmp     @er1
+
+;
+; 未使用の割込みの処理
+;
+        .GLOBAL _unused_interrupt
+_unused_interrupt:
+		rte
+
+
+        .END

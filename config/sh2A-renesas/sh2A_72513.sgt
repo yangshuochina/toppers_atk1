@@ -1,0 +1,587 @@
+/*
+ *  TOPPERS Automotive Kernel
+ *      Toyohashi Open Platform for Embedded Real-Time Systems
+ *      Automotive Kernel
+ * 
+ *  Copyright (C) 2006 by Witz Corporation, JAPAN
+ *  Copyright (C) 2006-2008 by Hitachi,Ltd., Automotive Systems, JAPAN
+ *  Copyright (C) 2006-2008 by Hitachi Information & Control Solutions,Ltd., JAPAN
+ * 
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ * 
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ * 
+ */
+
+/* SH2A( SH72513用)　テンプレートファイル*/
+
+
+/* SG利用情報の通知 */
+@@ISR_MIN_PRIORITY=1@@
+@@ISR_MAX_PRIORITY=15@@
+@@ISR_MIN_ENTRY=0@@
+@@ISR_MAX_ENTRY=512@@
+@@ISR_ENTRY_INTERVAL=1@@
+
+
+/*
+ * SH2_HEW ではインラインアセンブラが使えないため、
+ * 割込み入り口処理関数とフックルーチンの NULL シンボルは
+ * アセンブラファイルに出力する
+ */
+@@START_OUTPUT_DEPENDENT@@
+
+	.CPU	SH2AFPU
+
+	.INCLUDE	"cpu_config.inc"
+	
+; スタートアップ関数の外部参照定義
+	.IMPORT		_PowerON_Reset_PC
+
+; 未使用割込みの外部参照定義
+	UNUSED_INT_EXTERNAL
+
+; 割込み入り口処理関数の外部参照定義
+	@@FOR_EACH EXTERNAL_SYMBOL_FOR_ISR@@
+
+
+; 割込みベクタテーブル 
+
+	.SECTION    CVECTTBL,DATA,ALIGN=4
+_RESET_Vectors:
+	.DATA.L     _PowerON_Reset_PC	;	リセットベクタ
+	.DATA.L		STARTOF S+SIZEOF S	;	スタック初期値
+    .DATA.L     H'00000000,H'00000000
+
+    .SECTION    CINTTBL,DATA,ALIGN=4 
+_INT_Vectors:
+; オフセット値		 		 割り込み名称
+	@@INT_ENTRY4@@;,
+	@@INT_ENTRY5@@;,
+	@@INT_ENTRY6@@;,
+	@@INT_ENTRY7@@;,
+	@@INT_ENTRY8@@;,
+	@@INT_ENTRY9@@;,
+	@@INT_ENTRY10@@;,
+	@@INT_ENTRY11@@;,
+	@@INT_ENTRY12@@;,
+	@@INT_ENTRY13@@;,
+	@@INT_ENTRY14@@;,
+	@@INT_ENTRY15@@;,  /* バンクオーバフロー	*/
+	@@INT_ENTRY16@@;,  /* バンクアンダフロー	*/
+	@@INT_ENTRY17@@;,
+	@@INT_ENTRY18@@;,
+	@@INT_ENTRY19@@;,
+	@@INT_ENTRY20@@;,
+	@@INT_ENTRY21@@;,
+	@@INT_ENTRY22@@;,
+	@@INT_ENTRY23@@;,
+	@@INT_ENTRY24@@;,
+	@@INT_ENTRY25@@;,
+	@@INT_ENTRY26@@;,
+	@@INT_ENTRY27@@;,
+	@@INT_ENTRY28@@;,
+	@@INT_ENTRY29@@;,
+	@@INT_ENTRY30@@;,  
+	@@INT_ENTRY31@@;,  
+	@@INT_ENTRY32@@;,  
+	@@INT_ENTRY33@@;,  
+	@@INT_ENTRY34@@;,  
+	@@INT_ENTRY35@@;,  
+	@@INT_ENTRY36@@;,  
+	@@INT_ENTRY37@@;,  
+	@@INT_ENTRY38@@;,  
+	@@INT_ENTRY39@@;,  
+	@@INT_ENTRY40@@;,  
+	@@INT_ENTRY41@@;,  
+	@@INT_ENTRY42@@;,  
+	@@INT_ENTRY43@@;,  
+	@@INT_ENTRY44@@;,  
+	@@INT_ENTRY45@@;,  
+	@@INT_ENTRY46@@;,  
+	@@INT_ENTRY47@@;,  
+	@@INT_ENTRY48@@;,  
+	@@INT_ENTRY49@@;,  
+	@@INT_ENTRY50@@;,  
+	@@INT_ENTRY51@@;,  
+	@@INT_ENTRY52@@;,  
+	@@INT_ENTRY53@@;,  
+	@@INT_ENTRY54@@;,  
+	@@INT_ENTRY55@@;,  
+	@@INT_ENTRY56@@;,  
+	@@INT_ENTRY57@@;,  
+	@@INT_ENTRY58@@;,  
+	@@INT_ENTRY59@@;,  
+	@@INT_ENTRY60@@;,  
+	@@INT_ENTRY61@@;,  
+	@@INT_ENTRY62@@;,  
+	@@INT_ENTRY63@@;,  
+	@@INT_ENTRY64@@;,  
+	@@INT_ENTRY65@@;,  
+	@@INT_ENTRY66@@;,  
+	@@INT_ENTRY67@@;,  
+	@@INT_ENTRY68@@;,  
+	@@INT_ENTRY69@@;,  
+	@@INT_ENTRY70@@;,  
+	@@INT_ENTRY71@@;,  
+	@@INT_ENTRY72@@;,  
+	@@INT_ENTRY73@@;,  
+	@@INT_ENTRY74@@;,  
+	@@INT_ENTRY75@@;,  
+	@@INT_ENTRY76@@;,  
+	@@INT_ENTRY77@@;,  
+	@@INT_ENTRY78@@;,  
+	@@INT_ENTRY79@@;,  
+	@@INT_ENTRY80@@;,  
+	@@INT_ENTRY81@@;,  
+	@@INT_ENTRY82@@;,  
+	@@INT_ENTRY83@@;,  
+	@@INT_ENTRY84@@;,  
+	@@INT_ENTRY85@@;,  
+	@@INT_ENTRY86@@;,  
+	@@INT_ENTRY87@@;,  
+	@@INT_ENTRY88@@;,  
+	@@INT_ENTRY89@@;,  
+	@@INT_ENTRY90@@;,  
+	@@INT_ENTRY91@@;,  
+	@@INT_ENTRY92@@;,  
+	@@INT_ENTRY93@@;,  
+	@@INT_ENTRY94@@;,  
+	@@INT_ENTRY95@@;,  
+	@@INT_ENTRY96@@;,  
+	@@INT_ENTRY97@@;,  
+	@@INT_ENTRY98@@;,  
+	@@INT_ENTRY99@@;,  
+	@@INT_ENTRY100@@;,  
+	@@INT_ENTRY101@@;,  
+	@@INT_ENTRY102@@;,  
+	@@INT_ENTRY103@@;,  
+	@@INT_ENTRY104@@;,  
+	@@INT_ENTRY105@@;,  
+	@@INT_ENTRY106@@;,  
+	@@INT_ENTRY107@@;,  
+	@@INT_ENTRY108@@;,  
+	@@INT_ENTRY109@@;,  
+	@@INT_ENTRY110@@;,  
+	@@INT_ENTRY111@@;,  
+	@@INT_ENTRY112@@;,  
+	@@INT_ENTRY113@@;,  
+	@@INT_ENTRY114@@;,  
+	@@INT_ENTRY115@@;,  
+	@@INT_ENTRY116@@;,  
+	@@INT_ENTRY117@@;,  
+	@@INT_ENTRY118@@;,  
+	@@INT_ENTRY119@@;,  
+	@@INT_ENTRY120@@;,  
+	@@INT_ENTRY121@@;,  
+	@@INT_ENTRY122@@;,  
+	@@INT_ENTRY123@@;,  
+	@@INT_ENTRY124@@;,  
+	@@INT_ENTRY125@@;,  
+	@@INT_ENTRY126@@;,  
+	@@INT_ENTRY127@@;,  
+	@@INT_ENTRY128@@;,  
+	@@INT_ENTRY129@@;,  
+	@@INT_ENTRY130@@;,  
+	@@INT_ENTRY131@@;,  
+	@@INT_ENTRY132@@;,  
+	@@INT_ENTRY133@@;,  
+	@@INT_ENTRY134@@;,  
+	@@INT_ENTRY135@@;,  
+	@@INT_ENTRY136@@;,  
+	@@INT_ENTRY137@@;,  
+	@@INT_ENTRY138@@;,  
+	@@INT_ENTRY139@@;,  
+	@@INT_ENTRY140@@;,  /* CMT/CMI0 */
+	@@INT_ENTRY141@@;,
+	@@INT_ENTRY142@@;,
+	@@INT_ENTRY143@@;,
+	@@INT_ENTRY144@@;,  /* CMT/CMI1 */
+	@@INT_ENTRY145@@;,  
+	@@INT_ENTRY146@@;,  
+	@@INT_ENTRY147@@;,  
+	@@INT_ENTRY148@@;,  
+	@@INT_ENTRY149@@;,  
+	@@INT_ENTRY150@@;,  
+	@@INT_ENTRY151@@;,  
+	@@INT_ENTRY152@@;,  
+	@@INT_ENTRY153@@;,  
+	@@INT_ENTRY154@@;,  
+	@@INT_ENTRY155@@;,  
+	@@INT_ENTRY156@@;,  
+	@@INT_ENTRY157@@;,  
+	@@INT_ENTRY158@@;,  
+	@@INT_ENTRY159@@;,  
+	@@INT_ENTRY160@@;,  
+	@@INT_ENTRY161@@;,  
+	@@INT_ENTRY162@@;,  
+	@@INT_ENTRY163@@;,  
+	@@INT_ENTRY164@@;,  
+	@@INT_ENTRY165@@;,  
+	@@INT_ENTRY166@@;,  
+	@@INT_ENTRY167@@;,  
+	@@INT_ENTRY168@@;,  
+	@@INT_ENTRY169@@;,  
+	@@INT_ENTRY170@@;,  
+	@@INT_ENTRY171@@;,  
+	@@INT_ENTRY172@@;,  
+	@@INT_ENTRY173@@;,  
+	@@INT_ENTRY174@@;,  
+	@@INT_ENTRY175@@;,  
+	@@INT_ENTRY176@@;,  
+	@@INT_ENTRY177@@;,  
+	@@INT_ENTRY178@@;,  
+	@@INT_ENTRY179@@;,  
+	@@INT_ENTRY180@@;,  
+	@@INT_ENTRY181@@;,  
+	@@INT_ENTRY182@@;,  
+	@@INT_ENTRY183@@;,  
+	@@INT_ENTRY184@@;,  
+	@@INT_ENTRY185@@;,  
+	@@INT_ENTRY186@@;,  
+	@@INT_ENTRY187@@;,  
+	@@INT_ENTRY188@@;,  
+	@@INT_ENTRY189@@;,  
+	@@INT_ENTRY190@@;,  
+	@@INT_ENTRY191@@;,  
+	@@INT_ENTRY192@@;,  
+	@@INT_ENTRY193@@;,  
+	@@INT_ENTRY194@@;,  
+	@@INT_ENTRY195@@;,  
+	@@INT_ENTRY196@@;,  
+	@@INT_ENTRY197@@;,  
+	@@INT_ENTRY198@@;,  
+	@@INT_ENTRY199@@;,  
+	@@INT_ENTRY200@@;,  
+	@@INT_ENTRY201@@;,  
+	@@INT_ENTRY202@@;,  
+	@@INT_ENTRY203@@;,  
+	@@INT_ENTRY204@@;,  
+	@@INT_ENTRY205@@;,  
+	@@INT_ENTRY206@@;,  
+	@@INT_ENTRY207@@;,  
+	@@INT_ENTRY208@@;,  
+	@@INT_ENTRY209@@;,  
+	@@INT_ENTRY210@@;,  
+	@@INT_ENTRY211@@;,  
+	@@INT_ENTRY212@@;,  
+	@@INT_ENTRY213@@;,  
+	@@INT_ENTRY214@@;,  
+	@@INT_ENTRY215@@;,  
+	@@INT_ENTRY216@@;,  /* ATU-D0/CMID00 */
+	@@INT_ENTRY217@@;,  /* ATU-D0/CMID01 */
+	@@INT_ENTRY218@@;,  /* ATU-D0/CMID02 */
+	@@INT_ENTRY219@@;,  /* ATU-D0/CMID03 */
+	@@INT_ENTRY220@@;,  /* ATU-D0/OVI1D0 */
+	@@INT_ENTRY221@@;,  /* ATU-D0/OVI2D0 */
+	@@INT_ENTRY222@@;,
+	@@INT_ENTRY223@@;,
+	@@INT_ENTRY224@@;,  /* ATU-D0/UDID00 */
+	@@INT_ENTRY225@@;,  /* ATU-D0/UDID01 */
+	@@INT_ENTRY226@@;,  /* ATU-D0/UDID02 */
+	@@INT_ENTRY227@@;,  /* ATU-D0/UDID03 */
+	@@INT_ENTRY228@@;,  /* ATU-D1/CMID10 */
+	@@INT_ENTRY229@@;,  /* ATU-D1/CMID11 */
+	@@INT_ENTRY230@@;,  /* ATU-D1/CMID12 */
+	@@INT_ENTRY231@@;,  /* ATU-D1/CMID13 */
+	@@INT_ENTRY232@@;,  /* ATU-D1/OVI1D1 */
+	@@INT_ENTRY233@@;,  /* ATU-D1/OVI2D1 */
+	@@INT_ENTRY234@@;,
+	@@INT_ENTRY235@@;,
+	@@INT_ENTRY236@@;,  /* ATU-D1/UDID10 */
+	@@INT_ENTRY237@@;,  /* ATU-D1/UDID11 */
+	@@INT_ENTRY238@@;,  /* ATU-D1/UDID12 */
+	@@INT_ENTRY239@@;,  /* ATU-D1/UDID13 */
+	@@INT_ENTRY240@@;,  
+	@@INT_ENTRY241@@;,  
+	@@INT_ENTRY242@@;,  
+	@@INT_ENTRY243@@;,  
+	@@INT_ENTRY244@@;,  
+	@@INT_ENTRY245@@;,  
+	@@INT_ENTRY246@@;,  
+	@@INT_ENTRY247@@;,  
+	@@INT_ENTRY248@@;,  
+	@@INT_ENTRY249@@;,  
+	@@INT_ENTRY250@@;,  
+	@@INT_ENTRY251@@;,  
+	@@INT_ENTRY252@@;,  
+	@@INT_ENTRY253@@;,  
+	@@INT_ENTRY254@@;,  
+	@@INT_ENTRY255@@;,  
+	@@INT_ENTRY256@@;,  
+	@@INT_ENTRY257@@;,  
+	@@INT_ENTRY258@@;,  
+	@@INT_ENTRY259@@;,  
+	@@INT_ENTRY260@@;,  
+	@@INT_ENTRY261@@;,  
+	@@INT_ENTRY262@@;,  
+	@@INT_ENTRY263@@;,  
+	@@INT_ENTRY264@@;,  
+	@@INT_ENTRY265@@;,  
+	@@INT_ENTRY266@@;,  
+	@@INT_ENTRY267@@;,  
+	@@INT_ENTRY268@@;,  
+	@@INT_ENTRY269@@;,  
+	@@INT_ENTRY270@@;,  
+	@@INT_ENTRY271@@;,  
+	@@INT_ENTRY272@@;,  
+	@@INT_ENTRY273@@;,  
+	@@INT_ENTRY274@@;,  
+	@@INT_ENTRY275@@;,  
+	@@INT_ENTRY276@@;,  
+	@@INT_ENTRY277@@;,  
+	@@INT_ENTRY278@@;,  
+	@@INT_ENTRY279@@;,  
+	@@INT_ENTRY280@@;,  
+	@@INT_ENTRY281@@;,  
+	@@INT_ENTRY282@@;,  
+	@@INT_ENTRY283@@;,  
+	@@INT_ENTRY284@@;,  
+	@@INT_ENTRY285@@;,  
+	@@INT_ENTRY286@@;,  
+	@@INT_ENTRY287@@;,  
+	@@INT_ENTRY288@@;,  
+	@@INT_ENTRY289@@;,  
+	@@INT_ENTRY290@@;,  
+	@@INT_ENTRY291@@;,  
+	@@INT_ENTRY292@@;,  
+	@@INT_ENTRY293@@;,  
+	@@INT_ENTRY294@@;,  
+	@@INT_ENTRY295@@;,  
+	@@INT_ENTRY296@@;,  
+	@@INT_ENTRY297@@;,  
+	@@INT_ENTRY298@@;,  
+	@@INT_ENTRY299@@;,  
+	@@INT_ENTRY300@@;,  
+	@@INT_ENTRY301@@;,  
+	@@INT_ENTRY302@@;,  
+	@@INT_ENTRY303@@;,  
+	@@INT_ENTRY304@@;,  
+	@@INT_ENTRY305@@;,  
+	@@INT_ENTRY306@@;,  
+	@@INT_ENTRY307@@;,  
+	@@INT_ENTRY308@@;,  
+	@@INT_ENTRY309@@;,  
+	@@INT_ENTRY310@@;,  
+	@@INT_ENTRY311@@;,  
+	@@INT_ENTRY312@@;,  
+	@@INT_ENTRY313@@;,  
+	@@INT_ENTRY314@@;,  
+	@@INT_ENTRY315@@;,  
+	@@INT_ENTRY316@@;,  
+	@@INT_ENTRY317@@;,  
+	@@INT_ENTRY318@@;,  
+	@@INT_ENTRY319@@;,  
+	@@INT_ENTRY320@@;,  
+	@@INT_ENTRY321@@;,  
+	@@INT_ENTRY322@@;,  
+	@@INT_ENTRY323@@;,  
+	@@INT_ENTRY324@@;,  
+	@@INT_ENTRY325@@;,  
+	@@INT_ENTRY326@@;,  
+	@@INT_ENTRY327@@;,  
+	@@INT_ENTRY328@@;,  
+	@@INT_ENTRY329@@;,  
+	@@INT_ENTRY330@@;,  
+	@@INT_ENTRY331@@;,  
+	@@INT_ENTRY332@@;,  
+	@@INT_ENTRY333@@;,  
+	@@INT_ENTRY334@@;,  
+	@@INT_ENTRY335@@;,  
+	@@INT_ENTRY336@@;,  
+	@@INT_ENTRY337@@;,  
+	@@INT_ENTRY338@@;,  
+	@@INT_ENTRY339@@;,  
+	@@INT_ENTRY340@@;,  
+	@@INT_ENTRY341@@;,  
+	@@INT_ENTRY342@@;,  
+	@@INT_ENTRY343@@;,  
+	@@INT_ENTRY344@@;,  
+	@@INT_ENTRY345@@;,  
+	@@INT_ENTRY346@@;,  
+	@@INT_ENTRY347@@;,  
+	@@INT_ENTRY348@@;,  
+	@@INT_ENTRY349@@;,  
+	@@INT_ENTRY350@@;,  
+	@@INT_ENTRY351@@;,  
+	@@INT_ENTRY352@@;,  
+	@@INT_ENTRY353@@;,  
+	@@INT_ENTRY354@@;,  
+	@@INT_ENTRY355@@;,  
+	@@INT_ENTRY356@@;,  
+	@@INT_ENTRY357@@;,  
+	@@INT_ENTRY358@@;,  
+	@@INT_ENTRY359@@;,  
+	@@INT_ENTRY360@@;,  
+	@@INT_ENTRY361@@;,  
+	@@INT_ENTRY362@@;,  
+	@@INT_ENTRY363@@;,  
+	@@INT_ENTRY364@@;,  
+	@@INT_ENTRY365@@;,  
+	@@INT_ENTRY366@@;,  
+	@@INT_ENTRY367@@;,  
+	@@INT_ENTRY368@@;,  
+	@@INT_ENTRY369@@;,  
+	@@INT_ENTRY370@@;,  
+	@@INT_ENTRY371@@;,  
+	@@INT_ENTRY372@@;,  
+	@@INT_ENTRY373@@;,  
+	@@INT_ENTRY374@@;,  
+	@@INT_ENTRY375@@;,  
+	@@INT_ENTRY376@@;,  
+	@@INT_ENTRY377@@;,  
+	@@INT_ENTRY378@@;,  
+	@@INT_ENTRY379@@;,  
+	@@INT_ENTRY380@@;,  
+	@@INT_ENTRY381@@;,  
+	@@INT_ENTRY382@@;,  
+	@@INT_ENTRY383@@;,  
+	@@INT_ENTRY384@@;,  
+	@@INT_ENTRY385@@;,  
+	@@INT_ENTRY386@@;,  
+	@@INT_ENTRY387@@;,  
+	@@INT_ENTRY388@@;,  
+	@@INT_ENTRY389@@;,  
+	@@INT_ENTRY390@@;,  
+	@@INT_ENTRY391@@;,  
+	@@INT_ENTRY392@@;,  
+	@@INT_ENTRY393@@;,  
+	@@INT_ENTRY394@@;,  
+	@@INT_ENTRY395@@;,  
+	@@INT_ENTRY396@@;,  
+	@@INT_ENTRY397@@;,  
+	@@INT_ENTRY398@@;,  
+	@@INT_ENTRY399@@;,  
+	@@INT_ENTRY400@@;,  
+	@@INT_ENTRY401@@;,  
+	@@INT_ENTRY402@@;,  
+	@@INT_ENTRY403@@;,  
+	@@INT_ENTRY404@@;,  
+	@@INT_ENTRY405@@;,  
+	@@INT_ENTRY406@@;,  
+	@@INT_ENTRY407@@;,  
+	@@INT_ENTRY408@@;,  
+	@@INT_ENTRY409@@;,  
+	@@INT_ENTRY410@@;,  
+	@@INT_ENTRY411@@;,  
+	@@INT_ENTRY412@@;,  
+	@@INT_ENTRY413@@;,  
+	@@INT_ENTRY414@@;,  
+	@@INT_ENTRY415@@;,  
+	@@INT_ENTRY416@@;,  
+	@@INT_ENTRY417@@;,  
+	@@INT_ENTRY418@@;,  
+	@@INT_ENTRY419@@;,  
+	@@INT_ENTRY420@@;,  
+	@@INT_ENTRY421@@;,  
+	@@INT_ENTRY422@@;,  
+	@@INT_ENTRY423@@;,  
+	@@INT_ENTRY424@@;,  /* SCIA/ERIA	*/
+	@@INT_ENTRY425@@;,  /* SCIA/RXIA	*/
+	@@INT_ENTRY426@@;,  /* SCIA/TXIA	*/
+	@@INT_ENTRY427@@;,  /* SCIA/TEIA	*/
+	@@INT_ENTRY428@@;,  
+	@@INT_ENTRY429@@;,  
+	@@INT_ENTRY430@@;,  
+	@@INT_ENTRY431@@;,  
+	@@INT_ENTRY432@@;,  
+	@@INT_ENTRY433@@;,  
+	@@INT_ENTRY434@@;,  
+	@@INT_ENTRY435@@;,  
+	@@INT_ENTRY436@@;,  
+	@@INT_ENTRY437@@;,  
+	@@INT_ENTRY438@@;,  
+	@@INT_ENTRY439@@;,  
+	@@INT_ENTRY440@@;,  
+	@@INT_ENTRY441@@;,  
+	@@INT_ENTRY442@@;,  
+	@@INT_ENTRY443@@;,  
+	@@INT_ENTRY444@@;,  
+	@@INT_ENTRY445@@;,  
+	@@INT_ENTRY446@@;,  
+	@@INT_ENTRY447@@;,  
+	@@INT_ENTRY448@@;,  
+	@@INT_ENTRY449@@;,  
+	@@INT_ENTRY450@@;,  
+	@@INT_ENTRY451@@;,  
+	@@INT_ENTRY452@@;,  
+	@@INT_ENTRY453@@;,  
+	@@INT_ENTRY454@@;,  
+	@@INT_ENTRY455@@;,  
+	@@INT_ENTRY456@@;,  
+	@@INT_ENTRY457@@;,  
+	@@INT_ENTRY458@@;,  
+	@@INT_ENTRY459@@;,  
+	@@INT_ENTRY460@@;,  
+	@@INT_ENTRY461@@;,  
+	@@INT_ENTRY462@@;,  
+	@@INT_ENTRY463@@;,  
+	@@INT_ENTRY464@@;,  
+	@@INT_ENTRY465@@;,  
+	@@INT_ENTRY466@@;,  
+	@@INT_ENTRY467@@;,  
+	@@INT_ENTRY468@@;,  
+	@@INT_ENTRY469@@;,  
+	@@INT_ENTRY470@@;,  
+	@@INT_ENTRY471@@;,  
+	@@INT_ENTRY472@@;,  
+	@@INT_ENTRY473@@;,  
+	@@INT_ENTRY474@@;,  
+	@@INT_ENTRY475@@;,  
+	@@INT_ENTRY476@@;,  
+	@@INT_ENTRY477@@;,  
+	@@INT_ENTRY478@@;,  
+	@@INT_ENTRY479@@;,  
+	@@INT_ENTRY480@@;,  
+	@@INT_ENTRY481@@;,  
+	@@INT_ENTRY482@@;,  
+	@@INT_ENTRY483@@;,  
+	@@INT_ENTRY484@@;,  
+	@@INT_ENTRY485@@;,  
+	@@INT_ENTRY486@@;,  
+	@@INT_ENTRY487@@;,  
+	@@INT_ENTRY488@@   
+
+
+
+	.IMPORT _runisr
+	.IMPORT _interrupt
+	
+; 割込み入り口処理関数
+	@@FOR_EACH ENTRY_FOR_ISR@@
+
+; フックルーチンのNULLシンボル
+	@@NULL_ERRORHOOK_SYMBOL@@
+	@@NULL_STARTUPHOOK_SYMBOL@@
+	@@NULL_SHUTDOWNHOOK_SYMBOL@@
+	@@NULL_PRETASKHOOK_SYMBOL@@
+	@@NULL_POSTTASKHOOK_SYMBOL@@
+
+	.SECTION    S,STACK,ALIGN=4
+	.END
+
+@@END_OUTPUT_DEPENDENT@@
+

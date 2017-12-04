@@ -1,0 +1,6 @@
+Project name : libkernel
+
+Hitachi SuperH RISC engine Standard Toolchain was upgraded 7.1.3.0 -> 9.0.3.0.
+
+[Standard Library]/[Mode]/[Mode :] option is changed.
+

@@ -1,0 +1,357 @@
+/*
+ *  TOPPERS Automotive Kernel
+ *      Toyohashi Open Platform for Embedded Real-Time Systems
+ *      Automotive Kernel
+ * 
+ *  Copyright (C) 2006 by Witz Corporation, JAPAN
+ *  Copyright (C) 2006-2008 by Hitachi,Ltd., Automotive Systems, JAPAN
+ *  Copyright (C) 2006-2008 by Hitachi Information & Control Solutions,Ltd., JAPAN
+ * 
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
+ * 
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
+ * 
+ */
+
+/* SH2_HEW 対応修正済み　テンプレートファイル*/
+/* ベクタテーブルは SH7058f 相当 */
+
+
+/* SG利用情報の通知 */
+@@ISR_MIN_PRIORITY=1@@
+@@ISR_MAX_PRIORITY=15@@
+@@ISR_MIN_ENTRY=0@@
+@@ISR_MAX_ENTRY=255@@
+@@ISR_ENTRY_INTERVAL=1@@
+
+
+/*
+ * SH2_HEW ではインラインアセンブラが使えないため、
+ * 割込み入り口処理関数とフックルーチンの NULL シンボルは
+ * アセンブラファイルに出力する
+ */
+
+@@START_OUTPUT_DEPENDENT@@
+
+	.CPU	SH2E
+
+	.INCLUDE	"cpu_config.inc"
+		
+; スタートアップ関数の外部参照定義
+	.IMPORT		_PowerON_Reset_PC
+
+; 未使用割込みの外部参照定義
+	UNUSED_INT_EXTERNAL
+
+; 割込み入り口処理関数の外部参照定義
+	@@FOR_EACH EXTERNAL_SYMBOL_FOR_ISR@@
+
+
+; 割込みベクタテーブル 
+
+	.SECTION    DVECTTBL,DATA,ALIGN=4
+_RESET_Vectors:
+	.DATA.L     _PowerON_Reset_PC	;/* 0   パワーオンリセット */
+	.DATA.L		STARTOF S+SIZEOF S	;/* 1   初期スタック位置   */
+	.DATA.L     _PowerON_Reset_PC	;/* 2   マニュアルリセット */
+	.DATA.L		STARTOF S+SIZEOF S	;/* 3   初期スタック位置   */
+
+    .SECTION    DINTTBL,DATA,ALIGN=4 
+    .GLOBAL	_INT_Vectors
+_INT_Vectors:
+; オフセット値		 		 割り込み名称
+    @@INT_ENTRY4@@;,	/* 4 Illegal code */
+    @@INT_ENTRY5@@;,	/* 5 Reserved */
+    @@INT_ENTRY6@@;,	/* 6 Illegal slot */
+    @@INT_ENTRY7@@;,	/* 7 Reserved */
+    @@INT_ENTRY8@@;,	/* 8 Reserved */
+    @@INT_ENTRY9@@;,	/* 9 CPU Address error */
+    @@INT_ENTRY10@@;,	/* 10 DMAC Address error */
+    @@INT_ENTRY11@@;,	/* 11 NMI */
+    @@INT_ENTRY12@@;,	/* 12 User breakpoint trap */
+    @@INT_ENTRY13@@;,	/* 13 FPU */
+    @@INT_ENTRY14@@;,	/* 14 H-UDI */
+    @@INT_ENTRY15@@;,	/* 15 Reserved */
+    @@INT_ENTRY16@@;,	/* 16 Reserved */
+    @@INT_ENTRY17@@;,	/* 17 Reserved */
+    @@INT_ENTRY18@@;,	/* 18 Reserved */
+    @@INT_ENTRY19@@;,	/* 19 Reserved */
+    @@INT_ENTRY20@@;,	/* 20 Reserved */
+    @@INT_ENTRY21@@;,	/* 21 Reserved */
+    @@INT_ENTRY22@@;,	/* 22 Reserved */
+    @@INT_ENTRY23@@;,	/* 23 Reserved */
+    @@INT_ENTRY24@@;,	/* 24 Reserved */
+    @@INT_ENTRY25@@;,	/* 25 Reserved */
+    @@INT_ENTRY26@@;,	/* 26 Reserved */
+    @@INT_ENTRY27@@;,	/* 27 Reserved */
+    @@INT_ENTRY28@@;,	/* 28 Reserved */
+    @@INT_ENTRY29@@;,	/* 29 Reserved */
+    @@INT_ENTRY30@@;,	/* 30 Reserved */
+    @@INT_ENTRY31@@;,	/* 31 Reserved */
+    @@INT_ENTRY32@@;,	/* 32 TRAPA (User Vecter) */
+    @@INT_ENTRY33@@;,	/* 33 TRAPA (User Vecter) */
+    @@INT_ENTRY34@@;,	/* 34 TRAPA (User Vecter) */
+    @@INT_ENTRY35@@;,	/* 35 TRAPA (User Vecter) */
+    @@INT_ENTRY36@@;,	/* 36 TRAPA (User Vecter) */
+    @@INT_ENTRY37@@;,	/* 37 TRAPA (User Vecter) */
+    @@INT_ENTRY38@@;,	/* 38 TRAPA (User Vecter) */
+    @@INT_ENTRY39@@;,	/* 39 TRAPA (User Vecter) */
+    @@INT_ENTRY40@@;,	/* 40 TRAPA (User Vecter) */
+    @@INT_ENTRY41@@;,	/* 41 TRAPA (User Vecter) */
+    @@INT_ENTRY42@@;,	/* 42 TRAPA (User Vecter) */
+    @@INT_ENTRY43@@;,	/* 43 TRAPA (User Vecter) */
+    @@INT_ENTRY44@@;,	/* 44 TRAPA (User Vecter) */
+    @@INT_ENTRY45@@;,	/* 45 TRAPA (User Vecter) */
+    @@INT_ENTRY46@@;,	/* 46 TRAPA (User Vecter) */
+    @@INT_ENTRY47@@;,	/* 47 TRAPA (User Vecter) */
+    @@INT_ENTRY48@@;,	/* 48 TRAPA (User Vecter) */
+    @@INT_ENTRY49@@;,	/* 49 TRAPA (User Vecter) */
+    @@INT_ENTRY50@@;,	/* 50 TRAPA (User Vecter) */
+    @@INT_ENTRY51@@;,	/* 51 TRAPA (User Vecter) */
+    @@INT_ENTRY52@@;,	/* 52 TRAPA (User Vecter) */
+    @@INT_ENTRY53@@;,	/* 53 TRAPA (User Vecter) */
+    @@INT_ENTRY54@@;,	/* 54 TRAPA (User Vecter) */
+    @@INT_ENTRY55@@;,	/* 55 TRAPA (User Vecter) */
+    @@INT_ENTRY56@@;,	/* 56 TRAPA (User Vecter) */
+    @@INT_ENTRY57@@;,	/* 57 TRAPA (User Vecter) */
+    @@INT_ENTRY58@@;,	/* 58 TRAPA (User Vecter) */
+    @@INT_ENTRY59@@;,	/* 59 TRAPA (User Vecter) */
+    @@INT_ENTRY60@@;,	/* 60 TRAPA (User Vecter) */
+    @@INT_ENTRY61@@;,	/* 61 TRAPA (User Vecter) */
+    @@INT_ENTRY62@@;,	/* 62 TRAPA (User Vecter) */
+    @@INT_ENTRY63@@;,	/* 63 TRAPA (User Vecter) */
+    @@INT_ENTRY64@@;,	/* 64 Interrupt IRQ0 */
+    @@INT_ENTRY65@@;,	/* 65 Interrupt IRQ1 */
+    @@INT_ENTRY66@@;,	/* 66 Interrupt IRQ2 */
+    @@INT_ENTRY67@@;,	/* 67 Interrupt IRQ3 */
+    @@INT_ENTRY68@@;,	/* 68 Interrupt IRQ4 */
+    @@INT_ENTRY69@@;,	/* 69 Interrupt IRQ5 */
+    @@INT_ENTRY70@@;,	/* 70 Interrupt IRQ6 */
+    @@INT_ENTRY71@@;,	/* 71 Interrupt IRQ7 */
+    @@INT_ENTRY72@@;,	/* 72 DMAC0 DEI0 */
+    @@INT_ENTRY73@@;,	/* 73 Reserved */
+    @@INT_ENTRY74@@;,	/* 74 DMAC1 DEI1 */
+    @@INT_ENTRY75@@;,	/* 75 Reserved */
+    @@INT_ENTRY76@@;,	/* 76 DMAC2 DEI2 */
+    @@INT_ENTRY77@@;,	/* 77 Reserved */
+    @@INT_ENTRY78@@;,	/* 78 DMAC3 DEI3 */
+    @@INT_ENTRY79@@;,	/* 79 Reserved */
+    @@INT_ENTRY80@@;,	/* 80 ATU01 ITV1/ITV2A/ITV2B */
+    @@INT_ENTRY81@@;,	/* 81 Reserved */
+    @@INT_ENTRY82@@;,	/* 82 Reserved */
+    @@INT_ENTRY83@@;,	/* 83 Reserved */
+    @@INT_ENTRY84@@;,	/* 84 ATU02 ICI0A */
+    @@INT_ENTRY85@@;,	/* 85 Reserved */
+    @@INT_ENTRY86@@;,	/* 86 ATU02 ICI0B */
+    @@INT_ENTRY87@@;,	/* 87 Reserved */
+    @@INT_ENTRY88@@;,	/* 88 ATU03 ICI0C */
+    @@INT_ENTRY89@@;,	/* 89 Reserved */
+    @@INT_ENTRY90@@;,	/* 90 ATU03 ICI0D */
+    @@INT_ENTRY91@@;,	/* 91 Reserved */
+    @@INT_ENTRY92@@;,	/* 92 ATU04 OVI0 */
+    @@INT_ENTRY93@@;,	/* 93 Reserved */
+    @@INT_ENTRY94@@;,	/* 94 Reserved */
+    @@INT_ENTRY95@@;,	/* 95 Reserved */
+    @@INT_ENTRY96@@;,	/* 96 ATU11 IMI1A/CMI1 */
+    @@INT_ENTRY97@@;,	/* 97 ATU11 IMI1B */
+    @@INT_ENTRY98@@;,	/* 98 ATU11 IMI1C */
+    @@INT_ENTRY99@@;,	/* 99 ATU11 IMI1D */
+    @@INT_ENTRY100@@;,	/* 100 ATU12 IMI1E */
+    @@INT_ENTRY101@@;,	/* 101 ATU12 IMI1F */
+    @@INT_ENTRY102@@;,	/* 102 ATU12 IMI1G */
+    @@INT_ENTRY103@@;,	/* 103 ATU12 IMI1H */
+    @@INT_ENTRY104@@;,	/* 104 ATU13 OVI1A/OVI1B */
+    @@INT_ENTRY105@@;,	/* 105 Reserved */
+    @@INT_ENTRY106@@;,	/* 106 Reserved */
+    @@INT_ENTRY107@@;,	/* 107 Reserved */
+    @@INT_ENTRY108@@;,	/* 108 ATU21 IMI2A/CMI2A */
+    @@INT_ENTRY109@@;,	/* 109 ATU21 IMI2B/CMI2B */
+    @@INT_ENTRY110@@;,	/* 110 ATU21 IMI2C/CMI2C */
+    @@INT_ENTRY111@@;,	/* 111 ATU21 IMI2D/CMI2D */
+    @@INT_ENTRY112@@;,	/* 112 ATU22 IMI2E/CMI2E */
+    @@INT_ENTRY113@@;,	/* 113 ATU22 IMI2F/CMI2F */
+    @@INT_ENTRY114@@;,	/* 114 ATU22 IMI2G/CMI2G */
+    @@INT_ENTRY115@@;,	/* 115 ATU22 IMI2H/CMI2H */
+    @@INT_ENTRY116@@;,	/* 116 ATU23 OVI2A/OVI2B */
+    @@INT_ENTRY117@@;,	/* 117 Reserved */
+    @@INT_ENTRY118@@;,	/* 118 Reserved */
+    @@INT_ENTRY119@@;,	/* 119 Reserved */
+    @@INT_ENTRY120@@;,	/* 120 ATU31 IMI3A */
+    @@INT_ENTRY121@@;,	/* 121 ATU31 IMI3B */
+    @@INT_ENTRY122@@;,	/* 122 ATU31 IMI3C */
+    @@INT_ENTRY123@@;,	/* 123 ATU31 IMI3D */
+    @@INT_ENTRY124@@;,	/* 124 ATU32 OVI3 */
+    @@INT_ENTRY125@@;,	/* 125 Reserved */
+    @@INT_ENTRY126@@;,	/* 126 Reserved */
+    @@INT_ENTRY127@@;,	/* 127 Reserved */
+    @@INT_ENTRY128@@;,	/* 128 ATU41 IMI4A */
+    @@INT_ENTRY129@@;,	/* 129 ATU41 IMI4B */
+    @@INT_ENTRY130@@;,	/* 130 ATU41 IMI4C */
+    @@INT_ENTRY131@@;,	/* 131 ATU41 IMI4D */
+    @@INT_ENTRY132@@;,	/* 132 ATU42 OVI4 */
+    @@INT_ENTRY133@@;,	/* 133 Reserved */
+    @@INT_ENTRY134@@;,	/* 134 Reserved */
+    @@INT_ENTRY135@@;,	/* 135 Reserved */
+    @@INT_ENTRY136@@;,	/* 136 ATU51 IMI5A */
+    @@INT_ENTRY137@@;,	/* 137 ATU51 IMI5B */
+    @@INT_ENTRY138@@;,	/* 138 ATU51 IMI5C */
+    @@INT_ENTRY139@@;,	/* 139 ATU51 IMI5D */
+    @@INT_ENTRY140@@;,	/* 140 ATU52 OVI5 */
+    @@INT_ENTRY141@@;,	/* 141 Reserved */
+    @@INT_ENTRY142@@;,	/* 142 Reserved */
+    @@INT_ENTRY143@@;,	/* 143 Reserved */
+    @@INT_ENTRY144@@;,	/* 144 ATU6 CMI6A */
+    @@INT_ENTRY145@@;,	/* 145 ATU6 CMI6B */
+    @@INT_ENTRY146@@;,	/* 146 ATU6 CMI6C */
+    @@INT_ENTRY147@@;,	/* 147 ATU6 CMI6D */
+    @@INT_ENTRY148@@;,	/* 148 ATU7 CMI7A */
+    @@INT_ENTRY149@@;,	/* 149 ATU7 CMI7B */
+    @@INT_ENTRY150@@;,	/* 150 ATU7 CMI7C */
+    @@INT_ENTRY151@@;,	/* 151 ATU7 CMI7D */
+    @@INT_ENTRY152@@;,	/* 152 ATU81 OSI8A */
+    @@INT_ENTRY153@@;,	/* 153 ATU81 OSI8B */
+    @@INT_ENTRY154@@;,	/* 154 ATU81 OSI8C */
+    @@INT_ENTRY155@@;,	/* 155 ATU81 OSI8D */
+    @@INT_ENTRY156@@;,	/* 156 ATU82 OSI8E */
+    @@INT_ENTRY157@@;,	/* 157 ATU82 OSI8F */
+    @@INT_ENTRY158@@;,	/* 158 ATU82 OSI8G */
+    @@INT_ENTRY159@@;,	/* 159 ATU82 OSI8H */
+    @@INT_ENTRY160@@;,	/* 160 ATU83 OSI8I */
+    @@INT_ENTRY161@@;,	/* 161 ATU83 OSI8J */
+    @@INT_ENTRY162@@;,	/* 162 ATU83 OSI8K */
+    @@INT_ENTRY163@@;,	/* 163 ATU83 OSI8L */
+    @@INT_ENTRY164@@;,	/* 164 ATU84 OSI8M */
+    @@INT_ENTRY165@@;,	/* 165 ATU84 OSI8N */
+    @@INT_ENTRY166@@;,	/* 166 ATU84 OSI8O */
+    @@INT_ENTRY167@@;,	/* 167 ATU84 OSI8P */
+    @@INT_ENTRY168@@;,	/* 168 ATU91 CMI9A */
+    @@INT_ENTRY169@@;,	/* 169 ATU91 CMI9B */
+    @@INT_ENTRY170@@;,	/* 170 ATU91 CMI9C */
+    @@INT_ENTRY171@@;,	/* 171 ATU91 CMI9D */
+    @@INT_ENTRY172@@;,	/* 172 ATU92 CMI9E */
+    @@INT_ENTRY173@@;,	/* 173 Reserved */
+    @@INT_ENTRY174@@;,	/* 174 ATU92 CMI9F */
+    @@INT_ENTRY175@@;,	/* 175 Reserved */
+    @@INT_ENTRY176@@;,	/* 176 ATU101 CMI10A */
+    @@INT_ENTRY177@@;,	/* 177 Reserved */
+    @@INT_ENTRY178@@;,	/* 178 ATU101 CMI10B */
+    @@INT_ENTRY179@@;,	/* 179 Reserved */
+    @@INT_ENTRY180@@;,	/* 180 ATU102 ICI10A/CMI10G */
+    @@INT_ENTRY181@@;,	/* 181 Reserved */
+    @@INT_ENTRY182@@;,	/* 182 Reserved */
+    @@INT_ENTRY183@@;,	/* 183 Reserved */
+    @@INT_ENTRY184@@;,	/* 184 ATU11 IMI11A */
+    @@INT_ENTRY185@@;,	/* 185 Reserved */
+    @@INT_ENTRY186@@;,	/* 186 ATU11 IMI11B */
+    @@INT_ENTRY187@@;,	/* 187 ATU11 OVI11 */
+    @@INT_ENTRY188@@;,	/* 188 CMT0 CMTI0 */
+    @@INT_ENTRY189@@;,	/* 189 Reserved */
+    @@INT_ENTRY190@@;,	/* 190 A/D0 ADI0 */
+    @@INT_ENTRY191@@;,	/* 191 Reserved */
+    @@INT_ENTRY192@@;,	/* 192 CMT1 CMTI1 */
+    @@INT_ENTRY193@@;,	/* 193 Reserved */
+    @@INT_ENTRY194@@;,	/* 194 A/D1 ADI1 */
+    @@INT_ENTRY195@@;,	/* 195 Reserved */
+    @@INT_ENTRY196@@;,	/* 196 A/D2 ADI2 */
+    @@INT_ENTRY197@@;,	/* 197 Reserved */
+    @@INT_ENTRY198@@;,	/* 198 Reserved */
+    @@INT_ENTRY199@@;,	/* 199 Reserved */
+    @@INT_ENTRY200@@;,	/* 200 SCI0 ERI0 */
+    @@INT_ENTRY201@@;,	/* 201 SCI0 RXI0 */
+    @@INT_ENTRY202@@;,	/* 202 SCI0 TXI0 */
+    @@INT_ENTRY203@@;,	/* 203 SCI0 TEI0 */
+    @@INT_ENTRY204@@;,	/* 204 SCI1 ERI1 */
+    @@INT_ENTRY205@@;,	/* 205 SCI1 RXI1 */
+    @@INT_ENTRY206@@;,	/* 206 SCI1 TXI1 */
+    @@INT_ENTRY207@@;,	/* 207 SCI1 TEI1 */
+    @@INT_ENTRY208@@;,	/* 208 SCI2 ERI2 */
+    @@INT_ENTRY209@@;,	/* 209 SCI2 RXI2 */
+    @@INT_ENTRY210@@;,	/* 210 SCI2 TXI2 */
+    @@INT_ENTRY211@@;,	/* 211 SCI2 TEI2 */
+    @@INT_ENTRY212@@;,	/* 212 SCI3 ERI3 */
+    @@INT_ENTRY213@@;,	/* 213 SCI3 RXI3 */
+    @@INT_ENTRY214@@;,	/* 214 SCI3 TXI3 */
+    @@INT_ENTRY215@@;,	/* 215 SCI3 TEI3 */
+    @@INT_ENTRY216@@;,	/* 216 SCI4 ERI4 */
+    @@INT_ENTRY217@@;,	/* 217 SCI4 RXI4 */
+    @@INT_ENTRY218@@;,	/* 218 SCI4 TXI4 */
+    @@INT_ENTRY219@@;,	/* 219 SCI4 TEI4 */
+    @@INT_ENTRY220@@;,	/* 220 HCAN0 ERS0 */
+    @@INT_ENTRY221@@;,	/* 221 HCAN0 OVR0 */
+    @@INT_ENTRY222@@;,	/* 222 HCAN0 RM0 */
+    @@INT_ENTRY223@@;,	/* 223 HCAN0 SLE0 */
+    @@INT_ENTRY224@@;,	/* 224 WDT ITI */
+    @@INT_ENTRY225@@;,	/* 225 Reserved */
+    @@INT_ENTRY226@@;,	/* 226 Reserved */
+    @@INT_ENTRY227@@;,	/* 227 Reserved */
+    @@INT_ENTRY228@@;,	/* 228 HCAN1 ERS1 */
+    @@INT_ENTRY229@@;,	/* 229 HCAN1 OVR1 */
+    @@INT_ENTRY230@@;,	/* 230 HCAN1 RM1 */
+    @@INT_ENTRY231@@;,	/* 231 HCAN1 SLE1 */
+    @@INT_ENTRY232@@;,	/* 232 Reserved */
+    @@INT_ENTRY233@@;,	/* 233 Reserved */
+    @@INT_ENTRY234@@;,	/* 234 Reserved */
+    @@INT_ENTRY235@@;,	/* 235 Reserved */
+    @@INT_ENTRY236@@;,	/* 236 Reserved */
+    @@INT_ENTRY237@@;,	/* 237 Reserved */
+    @@INT_ENTRY238@@;,	/* 238 Reserved */
+    @@INT_ENTRY239@@;,	/* 239 Reserved */
+    @@INT_ENTRY240@@;,	/* 240 Reserved */
+    @@INT_ENTRY241@@;,	/* 241 Reserved */
+    @@INT_ENTRY242@@;,	/* 242 Reserved */
+    @@INT_ENTRY243@@;,	/* 243 Reserved */
+    @@INT_ENTRY244@@;,	/* 244 Reserved */
+    @@INT_ENTRY245@@;,	/* 245 Reserved */
+    @@INT_ENTRY246@@;,	/* 246 Reserved */
+    @@INT_ENTRY247@@;,	/* 247 Reserved */
+    @@INT_ENTRY248@@;,	/* 248 Reserved */
+    @@INT_ENTRY249@@;,	/* 249 Reserved */
+    @@INT_ENTRY250@@;,	/* 250 Reserved */
+    @@INT_ENTRY251@@;,	/* 251 Reserved */
+    @@INT_ENTRY252@@;,	/* 252 Reserved */
+    @@INT_ENTRY253@@;,	/* 253 Reserved */
+    @@INT_ENTRY254@@;,	/* 254 Reserved */
+    @@INT_ENTRY255@@;	/* 255 Reserved */
+
+	.SECTION    PIntPRG,CODE,ALIGN=4 
+	.IMPORT _runisr
+	.IMPORT _interrupt
+	
+; 割込み入り口処理関数
+	@@FOR_EACH ENTRY_FOR_ISR@@
+
+; フックルーチンのNULLシンボル
+	@@NULL_ERRORHOOK_SYMBOL@@
+	@@NULL_STARTUPHOOK_SYMBOL@@
+	@@NULL_SHUTDOWNHOOK_SYMBOL@@
+	@@NULL_PRETASKHOOK_SYMBOL@@
+	@@NULL_POSTTASKHOOK_SYMBOL@@
+
+	.SECTION    S,STACK,ALIGN=4
+	.END
+
+@@END_OUTPUT_DEPENDENT@@
+

@@ -1,0 +1,35 @@
+; Project Generator Setup Infomation
+
+[PGS Version]
+Version=1.0
+
+[Toolchain]
+Toolchain=Hitachi SuperH Standard
+Toolchain Name=Hitachi SuperH RISC engine Standard Toolchain
+Toolchain Version=7.1.3.0
+
+[CPU]
+CPU Family=SuperH RISC engine
+CPU Series=SH-2E
+CPU Type=SH7058F
+Operating Mode=Not Support
+Address Space=Not Support
+Multiple=Not Support
+Divide=Not Support
+
+[Project]
+Project Name=libkernel
+Project Type=Application
+
+[Stack Settings]
+Stack Pointer Address=H'FFFFBFF0
+Stack Size=H'400
+Stack Section Name=S
+Stack Section Address=
+Source File Name=stacksct.h
+Description=#pragma stacksize 0x400         /* Do not modify this line. */
+Default Stack Pointer Address=H'FFFFBFF0
+Default Stack Size=H'400
+
+[Initial Settings]
+Simulator I/O=disable

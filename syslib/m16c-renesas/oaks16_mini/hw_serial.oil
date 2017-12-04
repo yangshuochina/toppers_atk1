@@ -1,0 +1,6 @@
+	/* ƒVƒŠƒAƒ‹IOŽóMŠ„ž‚Ý(UART1)	*/
+	ISR RxHwSerialInt {
+		CATEGORY = 1;
+		ENTRY = 20;
+		PRIORITY = 6;
+	};

@@ -1,0 +1,296 @@
+/*
+ *  サンプルプログラム(1)のOILファイル．
+ */
+
+/*
+ *  定義部のインクルード
+ */
+#include "implementation.oil"
+
+/*
+ *  実装部
+ */
+CPU current {
+
+	/*
+	 *  OS定義
+	 */
+	OS os {
+		STATUS = STANDARD;
+		STARTUPHOOK = TRUE;
+		ERRORHOOK = TRUE;
+		SHUTDOWNHOOK = TRUE;
+		PRETASKHOOK = FALSE;
+		POSTTASKHOOK = FALSE;
+		USEGETSERVICEID = TRUE;
+		USEPARAMETERACCESS = TRUE;
+		USERESSCHEDULER = TRUE;
+	};
+
+	/*
+	 *  アプリケーションモード定義
+	 */
+	APPMODE AppMode1 {};	/* 並列実行タスク自動起動なし	*/
+	APPMODE AppMode2 {};	/* タスク1自動起動モード		*/
+	APPMODE AppMode3 {};	/* タスク3自動起動モード		*/
+
+	/*
+	 *  タスク定義
+	 */
+	/* メインタスク	*/
+	TASK MainTask {
+		AUTOSTART = TRUE {
+			APPMODE = AppMode1;
+			APPMODE = AppMode2;
+			APPMODE = AppMode3;
+		};
+		PRIORITY = 14;
+		STACKSIZE = 0x0400;
+		ACTIVATION = 1;
+		SCHEDULE = NON;
+		EVENT = MainEvt;
+	};
+
+	/* 最高優先度タスク	*/
+	TASK HighPriorityTask {
+		AUTOSTART = FALSE;
+		PRIORITY = 15;
+		STACKSIZE = 0x00C0;
+		ACTIVATION = 1;
+		SCHEDULE = FULL;
+	};
+
+	/* ノンプリエンプティブタスク	*/
+	TASK NonPriTask {
+		AUTOSTART = FALSE;
+		PRIORITY = 1;
+		STACKSIZE = 0x0100;
+		ACTIVATION = 8;
+		SCHEDULE = NON;
+	};
+
+	/* 並列実行タスク1	*/
+	TASK Task1 {
+		AUTOSTART = TRUE {
+			APPMODE = AppMode2;
+		};
+		PRIORITY = 4;
+		STACKSIZE = 0x0100;
+		ACTIVATION = 8;
+		SCHEDULE = FULL;
+		RESOURCE = TskLevelRes;
+		RESOURCE = IntLevelRes;
+	};
+
+	/* 並列実行タスク2	*/
+	TASK Task2 {
+		AUTOSTART = FALSE;
+		PRIORITY = 7;
+		STACKSIZE = 0x0100;
+		ACTIVATION = 1;
+		SCHEDULE = FULL;
+		RESOURCE = TskLevelRes;
+		RESOURCE = IntLevelRes;
+		EVENT = T2Evt;
+	};
+
+	/* 並列実行タスク3	*/
+	TASK Task3 {
+		AUTOSTART = TRUE {
+			APPMODE = AppMode3;
+		};
+		PRIORITY = 12;
+		STACKSIZE = 0x0100;
+		ACTIVATION = 1;
+		SCHEDULE = FULL;
+		RESOURCE = IntLevelRes;
+		EVENT = T3Evt;
+	};
+
+	/* 並列実行タスク4	*/
+	TASK Task4 {
+		AUTOSTART = FALSE;
+		PRIORITY = 6;
+		STACKSIZE = 0x0100;
+		ACTIVATION = 5;
+		SCHEDULE = FULL;
+		RESOURCE = GroupRes;
+		RESOURCE = TskLevelRes;
+		RESOURCE = IntLevelRes;
+	};
+
+	/* 並列実行タスク5	*/
+	TASK Task5 {
+		AUTOSTART = FALSE;
+		PRIORITY = 9;
+		STACKSIZE = 0x0100;
+		ACTIVATION = 5;
+		SCHEDULE = FULL;
+		RESOURCE = GroupRes;
+		RESOURCE = TskLevelRes;
+		RESOURCE = IntLevelRes;
+	};
+
+	/*
+	 *  割込みサービスルーチン定義
+	 */
+	/* シリアルIOエラー割込み(SCI1)	*/
+	ISR ErrHwSerialInt {
+		CATEGORY = 1;
+		ENTRY = 204;	/* SCI1 ERI1 */
+		PRIORITY = 6;
+	};
+
+	/* シリアルIO受信割込み(SCI1)	*/
+	ISR RxHwSerialInt {
+		CATEGORY = 1;
+		ENTRY = 205;	/* SCI1 RXI1 */
+		PRIORITY = 6;
+	};
+
+	/* HWカウンタ割込み1	*/
+	ISR HwCnt1Int {
+		CATEGORY = 1;
+		ENTRY = 152;	/* ATU81 OSI8A */
+		PRIORITY = 5;
+	};
+
+	/* システムタイマ割込み	*/
+	ISR SysTimerInt {
+		CATEGORY = 2;
+		ENTRY = 188;	/* CMT0 */
+		PRIORITY = 4;
+	};
+
+	/* サンプルカウンタソース割込み	*/
+	ISR CounterInt {
+		CATEGORY = 2;
+		ENTRY = 192;	/* CMT1 */
+		PRIORITY = 3;
+	};
+
+	/* HWカウンタ割込み2	*/
+	ISR HwCnt2Int {
+		CATEGORY = 2;
+		ENTRY = 156;	/* ATU82 OSI8E */
+		PRIORITY = 2;
+		RESOURCE = IntLevelRes;
+	};
+
+	/*
+	 *  リソース定義
+	 */
+	/* タスク・タスク間リソース	*/
+	RESOURCE TskLevelRes {
+		RESOURCEPROPERTY = STANDARD;
+	};
+
+	/* タスク・割込み間リソース	*/
+	RESOURCE IntLevelRes {
+		RESOURCEPROPERTY = STANDARD;
+	};
+
+	/* グループタスク用内部リソース	*/
+	RESOURCE GroupRes {
+		RESOURCEPROPERTY = INTERNAL;
+	};
+
+	/*
+	 *  イベント定義
+	 */
+	/* メインタスク周期イベント	*/
+	EVENT MainEvt {
+		MASK = AUTO;
+	};
+
+	/* 並列実行タスク2用イベント	*/
+	EVENT T2Evt {
+		MASK = AUTO;
+	};
+
+	/* 並列実行タスク3用イベント	*/
+	EVENT T3Evt {
+		MASK = AUTO;
+	};
+
+	/*
+	 *  カウンタ定義
+	 */
+	/* システムタイマカウンタ	*/
+	COUNTER SysTimerCnt { 
+		MINCYCLE = 1;
+		MAXALLOWEDVALUE = 999; 
+		TICKSPERBASE = 1; 
+	};
+
+	/* サンプルカウンタ	*/
+	COUNTER SampleCnt { 
+		MINCYCLE = 10;
+		MAXALLOWEDVALUE = 99; 
+		TICKSPERBASE = 10; 
+	};
+
+	/*
+	 *  アラーム定義
+	 */
+	/* メインタスク周期アラーム	*/
+	ALARM MainCycArm { 
+		COUNTER = SysTimerCnt;
+		ACTION  = SETEVENT {
+			TASK = MainTask;
+			EVENT = MainEvt;
+		};
+		AUTOSTART = TRUE {
+			APPMODE = AppMode1;
+			APPMODE = AppMode2;
+			APPMODE = AppMode3;
+			ALARMTIME = 10; 	/* simDebug用に 10ms にする */
+			CYCLETIME = 10; 	/* simDebug用に 10ms にする */
+		};
+	};
+
+	/* タスク起動用アラーム	*/
+	ALARM ActTskArm { 
+		COUNTER = SysTimerCnt;
+		ACTION  = ACTIVATETASK {
+			TASK = Task1;
+		};
+		AUTOSTART = FALSE;
+	};
+
+	/* イベント設定用アラーム	*/
+	ALARM SetEvtArm { 
+		COUNTER = SysTimerCnt;
+		ACTION  = SETEVENT {
+			TASK = Task3;
+			EVENT = T3Evt;
+		};
+		AUTOSTART = FALSE;
+	};
+
+	/* コールバック実行用アラーム	*/
+	ALARM CallBackArm { 
+		COUNTER = SysTimerCnt;
+		ACTION  = ALARMCALLBACK {
+			ALARMCALLBACKNAME = "SysTimerAlmCb";
+		};
+		AUTOSTART = FALSE;
+	};
+
+	/* サンプルカウンタ動作確認用アラーム	*/
+	ALARM SampleArm { 
+		COUNTER = SampleCnt;
+		ACTION  = ALARMCALLBACK {
+			ALARMCALLBACKNAME = "SampleAlmCb";
+		};
+		AUTOSTART = TRUE {
+			APPMODE = AppMode1;
+			APPMODE = AppMode2;
+			APPMODE = AppMode3;
+			ALARMTIME = 10; 
+			CYCLETIME = 10;
+		};
+	};
+
+};
+
