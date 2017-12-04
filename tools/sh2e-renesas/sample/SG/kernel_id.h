@@ -1,8 +1,8 @@
 /*
  *  kernel_id.h
- *  Fri Nov 14 09:01:21 2008
+ *  Mon Dec 04 17:14:15 2017
  *  SG Version 2.10
- *  sg.exe -cfg=kernel_cfg.c -template=../../../../config\sh2e-renesas\sh2e_7058f.sgt -I ../../../../sg\impl_oil -odep=kernel_support.src -os=ECC2 D:\toppers_automotive_kernel\tools\sh2e-renesas\sample\SG\sample1.oil
+ *  sg.exe -cfg=kernel_cfg.c -template=../../../../config\sh2e-renesas\sh2e_7058f.sgt -I ../../../../sg\impl_oil -odep=kernel_support.src -os=ECC2 D:\GitHub\toppers_atk1\tools\sh2e-renesas\sample\SG\sample1.oil
  */
 #ifndef KERNEL_ID_H
 #define KERNEL_ID_H
