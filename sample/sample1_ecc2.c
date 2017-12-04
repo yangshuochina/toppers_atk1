@@ -9,309 +9,309 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  ã‹L’˜ìŒ ŽÒ‚ÍCˆÈ‰º‚Ì (1)`(4) ‚ÌðŒ‚©CFree Software Foundation 
- *  ‚É‚æ‚Á‚ÄŒö•\‚³‚ê‚Ä‚¢‚é GNU General Public License ‚Ì Version 2 ‚É‹L
- *  q‚³‚ê‚Ä‚¢‚éðŒ‚ð–ž‚½‚·ê‡‚ÉŒÀ‚èC–{ƒ\ƒtƒgƒEƒFƒAi–{ƒ\ƒtƒgƒEƒFƒA
- *  ‚ð‰ü•Ï‚µ‚½‚à‚Ì‚ðŠÜ‚ÞDˆÈ‰º“¯‚¶j‚ðŽg—pE•¡»E‰ü•ÏEÄ”z•ziˆÈ‰ºC
- *  —˜—p‚ÆŒÄ‚Ôj‚·‚é‚±‚Æ‚ð–³ž‚Å‹–‘ø‚·‚éD
- *  (1) –{ƒ\ƒtƒgƒEƒFƒA‚ðƒ\[ƒXƒR[ƒh‚ÌŒ`‚Å—˜—p‚·‚éê‡‚É‚ÍCã‹L‚Ì’˜ì
- *      Œ •\Ž¦C‚±‚Ì—˜—pðŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ªC‚»‚Ì‚Ü‚Ü‚ÌŒ`‚Åƒ\[
- *      ƒXƒR[ƒh’†‚ÉŠÜ‚Ü‚ê‚Ä‚¢‚é‚±‚ÆD
- *  (2) –{ƒ\ƒtƒgƒEƒFƒA‚ðCƒ‰ƒCƒuƒ‰ƒŠŒ`Ž®‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚ÉŽg
- *      —p‚Å‚«‚éŒ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCÄ”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—p
- *      ŽÒƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜ìŒ •\Ž¦C‚±‚Ì—˜—pðŒ‚¨‚æ‚Ñ‰º‹L
- *      ‚Ì–³•ÛØ‹K’è‚ðŒfÚ‚·‚é‚±‚ÆD
- *  (3) –{ƒ\ƒtƒgƒEƒFƒA‚ðC‹@Ší‚É‘g‚Ýž‚Þ‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚ÉŽg
- *      —p‚Å‚«‚È‚¢Œ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCŽŸ‚Ì‚¢‚¸‚ê‚©‚ÌðŒ‚ð–ž‚½‚·‚±
- *      ‚ÆD
- *    (a) Ä”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—pŽÒƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜
- *        ìŒ •\Ž¦C‚±‚Ì—˜—pðŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ðŒfÚ‚·‚é‚±‚ÆD
- *    (b) Ä”z•z‚ÌŒ`‘Ô‚ðC•Ê‚É’è‚ß‚é•û–@‚É‚æ‚Á‚ÄCTOPPERSƒvƒƒWƒFƒNƒg‚É
- *        •ñ‚·‚é‚±‚ÆD
- *  (4) –{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚é‚¢‚©‚È‚é‘¹
- *      ŠQ‚©‚ç‚àCã‹L’˜ìŒ ŽÒ‚¨‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ð–ÆÓ‚·‚é‚±‚ÆD
+ *  ä¸Šè¨˜è‘—ä½œæ¨©è€…ã¯ï¼Œä»¥ä¸‹ã® (1)ï½ž(4) ã®æ¡ä»¶ã‹ï¼ŒFree Software Foundation 
+ *  ã«ã‚ˆã£ã¦å…¬è¡¨ã•ã‚Œã¦ã„ã‚‹ GNU General Public License ã® Version 2 ã«è¨˜
+ *  è¿°ã•ã‚Œã¦ã„ã‚‹æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã«é™ã‚Šï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ï¼ˆæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢
+ *  ã‚’æ”¹å¤‰ã—ãŸã‚‚ã®ã‚’å«ã‚€ï¼Žä»¥ä¸‹åŒã˜ï¼‰ã‚’ä½¿ç”¨ãƒ»è¤‡è£½ãƒ»æ”¹å¤‰ãƒ»å†é…å¸ƒï¼ˆä»¥ä¸‹ï¼Œ
+ *  åˆ©ç”¨ã¨å‘¼ã¶ï¼‰ã™ã‚‹ã“ã¨ã‚’ç„¡å„Ÿã§è¨±è«¾ã™ã‚‹ï¼Ž
+ *  (1) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®å½¢ã§åˆ©ç”¨ã™ã‚‹å ´åˆã«ã¯ï¼Œä¸Šè¨˜ã®è‘—ä½œ
+ *      æ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šãŒï¼Œãã®ã¾ã¾ã®å½¢ã§ã‚½ãƒ¼
+ *      ã‚¹ã‚³ãƒ¼ãƒ‰ä¸­ã«å«ã¾ã‚Œã¦ã„ã‚‹ã“ã¨ï¼Ž
+ *  (2) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œãƒ©ã‚¤ãƒ–ãƒ©ãƒªå½¢å¼ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ãã‚‹å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œå†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨
+ *      è€…ãƒžãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜
+ *      ã®ç„¡ä¿è¨¼è¦å®šã‚’æŽ²è¼‰ã™ã‚‹ã“ã¨ï¼Ž
+ *  (3) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œæ©Ÿå™¨ã«çµ„ã¿è¾¼ã‚€ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ããªã„å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œæ¬¡ã®ã„ãšã‚Œã‹ã®æ¡ä»¶ã‚’æº€ãŸã™ã“
+ *      ã¨ï¼Ž
+ *    (a) å†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨è€…ãƒžãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—
+ *        ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šã‚’æŽ²è¼‰ã™ã‚‹ã“ã¨ï¼Ž
+ *    (b) å†é…å¸ƒã®å½¢æ…‹ã‚’ï¼Œåˆ¥ã«å®šã‚ã‚‹æ–¹æ³•ã«ã‚ˆã£ã¦ï¼ŒTOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«
+ *        å ±å‘Šã™ã‚‹ã“ã¨ï¼Ž
+ *  (4) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æŽ¥çš„ã¾ãŸã¯é–“æŽ¥çš„ã«ç”Ÿã˜ã‚‹ã„ã‹ãªã‚‹æ
+ *      å®³ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å…è²¬ã™ã‚‹ã“ã¨ï¼Ž
  * 
- *  –{ƒ\ƒtƒgƒEƒFƒA‚ÍC–³•ÛØ‚Å’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚à‚Ì‚Å‚ ‚éDã‹L’˜ìŒ ŽÒ‚¨
- *  ‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ÍC–{ƒ\ƒtƒgƒEƒFƒA‚ÉŠÖ‚µ‚ÄC‚»‚Ì“K—p‰Â”\«‚à
- *  ŠÜ‚ß‚ÄC‚¢‚©‚È‚é•ÛØ‚às‚í‚È‚¢D‚Ü‚½C–{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼
- *  Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚½‚¢‚©‚È‚é‘¹ŠQ‚ÉŠÖ‚µ‚Ä‚àC‚»‚ÌÓ”C‚ð•‰‚í‚È‚¢D
+ *  æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ï¼Œç„¡ä¿è¨¼ã§æä¾›ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã§ã‚ã‚‹ï¼Žä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠ
+ *  ã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«é–¢ã—ã¦ï¼Œãã®é©ç”¨å¯èƒ½æ€§ã‚‚
+ *  å«ã‚ã¦ï¼Œã„ã‹ãªã‚‹ä¿è¨¼ã‚‚è¡Œã‚ãªã„ï¼Žã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´
+ *  æŽ¥çš„ã¾ãŸã¯é–“æŽ¥çš„ã«ç”Ÿã˜ãŸã„ã‹ãªã‚‹æå®³ã«é–¢ã—ã¦ã‚‚ï¼Œãã®è²¬ä»»ã‚’è² ã‚ãªã„ï¼Ž
  * 
  */
 
 /* 
- *  ƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€(1) ECC2‚Ì–{‘Ì
+ *  ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ (1) ECC2ã®æœ¬ä½“
  *
- *  TOPPERS Automotive Kernel‚ÌŠî–{“I‚È“®ì‚ðŠm”F‚·‚é‚½‚ß‚ÌƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€D
+ *  TOPPERS Automotive Kernelã®åŸºæœ¬çš„ãªå‹•ä½œã‚’ç¢ºèªã™ã‚‹ãŸã‚ã®ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ ï¼Ž
  *
- *  ƒvƒƒOƒ‰ƒ€‚ÌŠT—vFPC‚Æƒ{[ƒhŠÔ‚ÅƒVƒŠƒAƒ‹’ÊM‚ðs‚¢Cƒ†[ƒU“ü—Í
- *  ƒRƒ}ƒ“ƒh‚É‰ž‚¶‚½“®ì‚ÆƒƒOo—Í‚ðs‚È‚¤D
+ *  ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®æ¦‚è¦ï¼šPCã¨ãƒœãƒ¼ãƒ‰é–“ã§ã‚·ãƒªã‚¢ãƒ«é€šä¿¡ã‚’è¡Œã„ï¼Œãƒ¦ãƒ¼ã‚¶å…¥åŠ›
+ *  ã‚³ãƒžãƒ³ãƒ‰ã«å¿œã˜ãŸå‹•ä½œã¨ãƒ­ã‚°å‡ºåŠ›ã‚’è¡Œãªã†ï¼Ž
  *
- *  ƒƒRƒ}ƒ“ƒhˆê——„
- *  Eƒ^ƒXƒNŽw’è
- *    '1' : ˆÈ~‚ÌƒRƒ}ƒ“ƒh‚ð Task1 ‚É‘Î‚µ‚Äs‚¤D
- *    '2' : ˆÈ~‚ÌƒRƒ}ƒ“ƒh‚ð Task2 ‚É‘Î‚µ‚Äs‚¤D
- *    '3' : ˆÈ~‚ÌƒRƒ}ƒ“ƒh‚ð Task3 ‚É‘Î‚µ‚Äs‚¤D
- *    '4' : ˆÈ~‚ÌƒRƒ}ƒ“ƒh‚ð Task4 ‚É‘Î‚µ‚Äs‚¤D
- *    '5' : ˆÈ~‚ÌƒRƒ}ƒ“ƒh‚ð Task5 ‚É‘Î‚µ‚Äs‚¤D
- *  Eƒ^ƒXƒNŠÇ—‹@”\
- *    'a' : ActivateTask ‚É‚Äƒ^ƒXƒN‚ð‹N“®‚·‚éD
- *    'A' : TerminateTask ‚É‚Äƒ^ƒXƒN‚ðI—¹‚·‚éD
- *    '!'(Shift+1) : ChainTask ‚É‚Äƒ^ƒXƒN‚ðI—¹‚µCTask1 ‚ð‹N“®‚·‚éD
- *    '"'(Shift+2) : ChainTask ‚É‚Äƒ^ƒXƒN‚ðI—¹‚µCTask2 ‚ð‹N“®‚·‚éD
- *    '#'(Shift+3) : ChainTask ‚É‚Äƒ^ƒXƒN‚ðI—¹‚µCTask3 ‚ð‹N“®‚·‚éD
- *    '$'(Shift+4) : ChainTask ‚É‚Äƒ^ƒXƒN‚ðI—¹‚µCTask4 ‚ð‹N“®‚·‚éD
- *    '%'(Shift+5) : ChainTask ‚É‚Äƒ^ƒXƒN‚ðI—¹‚µCTask5 ‚ð‹N“®‚·‚éD
- *    's' : ƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒu‘®«‚Å‚ ‚éƒ^ƒXƒN MainTask ‚É‚ÄÅ‚
- *          —Dæ“xƒ^ƒXƒN HighPriorityTask ‚ð‹N“®‚µCSchedule ‚É‚Ä
- *          ÄƒXƒPƒWƒ…[ƒŠƒ“ƒO‚ðs‚¤D
- *    'S' : ƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒuƒ^ƒXƒN NonPriTask ‚ð‹N“®‚·‚éD
- *          ƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒuƒ^ƒXƒN NonPriTask ‚É‚ÄÅ‚—Dæ“x
- *          ƒ^ƒXƒN HighPriorityTask ‚ð‹N“®‚µCƒ^ƒXƒNI—¹‚·‚éD
- *    'z' : GetTaskID ‚É‚ÄŽ©ƒ^ƒXƒN‚ÌID‚ðŽæ“¾‚·‚éD
- *    'Z' : GetTaskState ‚É‚Äƒ^ƒXƒNó‘Ô‚ðŽæ“¾‚·‚éD
- *  EŠ„ž‚ÝŠÇ—‹@”\
- *    'd' : DisableAllInterrupts ‚ðŽÀsŒãCƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð
- *          3‰ñ•\Ž¦‚µC EnableAllInterrupts ‚ðŽÀs‚·‚éD
- *    'D' : SuspendAllInterrupts ‚ðŽÀsŒãCƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð
- *          3‰ñ•\Ž¦‚µC‚³‚ç‚É SuspendAllInterrupts ‚ðŽÀsŒãAƒn[ƒh
- *          ƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð3‰ñ•\Ž¦‚µCResumeAllInterrupts ‚ðŽÀsŒãA
- *          ƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð3‰ñ•\Ž¦‚µCResumeAllInterrupts ‚ð
- *          ŽÀs‚·‚éD
- *    'f' : SuspendOSInterrupts ‚ðŽÀsŒãCƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð
- *          3‰ñ•\Ž¦‚µC‚³‚ç‚É SuspendOSInterrupts ‚ðŽÀsŒãAƒn[ƒh
- *          ƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð3‰ñ•\Ž¦‚µC‚³‚ç‚É SuspendAllInterrupts
- *          ‚ðŽÀsŒãCƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð3‰ñ•\Ž¦‚µC
- *          ResumeAllInterrupts ‚ðŽÀsŒãAƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^‚ð3‰ñ
- *          •\Ž¦‚µCResumeOSInterrupts ‚ðŽÀsŒãƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^
- *          ’l‚ð3‰ñ•\Ž¦‚µCResumeOSInterrupts ‚ðŽÀs‚·‚éD
- *    'T' : ƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð3‰ñ•\Ž¦‚·‚éD
- *  EƒŠƒ\[ƒXŠÇ—‹@”\
- *    'k' : GetResource ‚É‚ÄƒŠƒ\[ƒX TskLevelRes ‚ðŽæ“¾‚·‚éD‚È‚¨C
- *          Task3 ‚ÍA‚±‚ÌƒŠƒ\[ƒX‚æ‚è—Dæ“x‚ª‚‚¢‚½‚ßƒGƒ‰[‚Æ‚È‚éD
- *    'K' : ReleaseResource ‚É‚ÄƒŠƒ\[ƒX TskLevelRes ‚ð‰ð•ú‚·‚éD
- *    'l' : GetResource ‚É‚ÄƒXƒPƒWƒ…[ƒ‰ƒŠƒ\[ƒX‚ðŽæ“¾ŒãCÅ‚—Dæ“x
- *          ƒ^ƒXƒN HighPriorityTask ‚ð‹N“®‚µCReleaseResource ‚É‚Ä
- *          ƒXƒPƒWƒ…[ƒ‰ƒŠƒ\[ƒX‚ð‰ð•ú‚·‚éD
- *    'i' : GetResource ‚É‚ÄƒŠƒ\[ƒX IntLevelRes ‚ðŽæ“¾ŒãCƒn[ƒh
- *          ƒEƒFƒAƒJƒEƒ“ƒ^’l‚ð3‰ñ•\Ž¦‚µCReleaseResource ‚É‚Ä
- *          ƒŠƒ\[ƒX IntLevelRes ‚ð‰ð•ú‚·‚éD
- *  EƒCƒxƒ“ƒg§Œä‹@”\
- *    'e' : SetEvent ‚É‚ÄƒCƒxƒ“ƒg‚ðÝ’è‚·‚éDTask2 ‚Æ Task3 ˆÈŠO‚Í
- *          Š„‚è“–‚Ä‚ª‚È‚¢‚½‚ßƒGƒ‰[‚Æ‚È‚éD
- *    'w' : ClearEvent ‚É‚ÄŽ©ƒ^ƒXƒN‚ÌƒCƒxƒ“ƒg‚ðƒNƒŠƒA‚·‚éDTask2 ‚Æ
- *          Task3 ˆÈŠO‚ÍŠ„‚è“–‚Ä‚ª‚È‚¢‚½‚ßƒGƒ‰[‚Æ‚È‚éD
- *    'E' : GetEvent ‚É‚ÄƒCƒxƒ“ƒgó‘Ô‚ðŽæ“¾‚·‚éDTask2 ‚Æ Task3
- *          ˆÈŠO‚ÍŠ„‚è“–‚Ä‚ª‚È‚¢‚½‚ßƒGƒ‰[‚Æ‚È‚éD
- *    'W' : WaitEvent ‚É‚ÄŽ©ƒ^ƒXƒN‚ÌƒCƒxƒ“ƒg‚ð‘Ò‚ÂDTask3 ‚Æ Task4
- *          ˆÈŠO‚ÍƒGƒ‰[‚Æ‚È‚éD
- *  EƒAƒ‰[ƒ€‹@”\
- *    'b' : GetAlarmBase ‚É‚ÄƒAƒ‰[ƒ€ MainCycArm ‚ÌƒAƒ‰[ƒ€ƒx[ƒX
- *          î•ñ‚ðŽæ“¾‚·‚éD
- *    'B' : GetAlarm ‚É‚ÄƒAƒ‰[ƒ€ MainCycArm ‚ÌŽc‚èƒJƒEƒ“ƒg’l‚ð2‰ñ
- *          ˜A‘±‚ÅŽæ“¾‚·‚éD
- *    'v' : SetRelAlarm ‚É‚ÄƒAƒ‰[ƒ€ ActTskArm ‚ð‹N“®‚µC500ms Œã‚É
- *          ƒ^ƒXƒN Task1 ‚ð‹N“®‚·‚éD
- *    'V' : SetRelAlarm ‚É‚ÄƒAƒ‰[ƒ€ SetEvtArm ‚ð‹N“®‚µC500ms Œã‚É
- *          ƒCƒxƒ“ƒg T3Evt ‚ðÝ’è‚·‚éD
- *    'n' : SetRelAlarm ‚É‚ÄƒAƒ‰[ƒ€ CallBackArm ‚ðCƒpƒ‰ƒ[ƒ^
- *          900ms Œã‚É–ž—¹E’P”­ƒAƒ‰[ƒ€Žw’è‚ÅÝ’è‚·‚éD
- *    'N' : SetRelAlarm ‚É‚ÄƒAƒ‰[ƒ€ CallBackArm ‚ðCƒpƒ‰ƒ[ƒ^
- *          900ms Œã‚É–ž—¹E 500ms ŽüŠúƒAƒ‰[ƒ€Žw’è‚ÅÝ’è‚·‚éD
- *    'm' : SetAbsAlarm ‚É‚ÄƒAƒ‰[ƒ€ CallBackArm ‚ðCƒpƒ‰ƒ[ƒ^
- *          ƒJƒEƒ“ƒ^’l900‚É–ž—¹E’P”­ƒAƒ‰[ƒ€Žw’è‚ÅÝ’è‚·‚éD
- *    'M' : SetAbsAlarm ‚É‚ÄƒAƒ‰[ƒ€ CallBackArm ‚ðCƒpƒ‰ƒ[ƒ^
- *          ƒJƒEƒ“ƒ^’l900‚É–ž—¹E 500ms ŽüŠúƒAƒ‰[ƒ€‚ÅÝ’è‚·‚éD
- *    'h' : CancelAlarm ‚É‚ÄƒAƒ‰[ƒ€ CallBackArm ‚ðƒLƒƒƒ“ƒZƒ‹‚·‚éD
- *  EƒJƒEƒ“ƒ^‘€ì‹@”\iOSEKŽd—lŠOj
- *    'c' : ƒJƒEƒ“ƒ^’Ê’m—pŠ„ž‚Ý‚ð‹N“®‚µCŠ„ž‚Ý“à‚É‚Ä SignalCounter
- *          ‚ðŽÀs‚µCƒJƒEƒ“ƒ^ SampleCnt ‚ÉƒVƒOƒiƒ‹’Ê’m‚·‚éD
- *          1 ƒVƒOƒiƒ‹‚ÅƒAƒ‰[ƒ€ SampleArm ‚ª–ž—¹‚µCƒR[ƒ‹ƒoƒbƒN‚ð
- *          ŽÀs‚·‚éD
- *  EOSŽÀs§Œä‹@”\
- *    'p' : GetActiveApplicationMode ‚É‚ÄƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒh‚ð
- *          Žæ“¾‚·‚éD
- *    'q' : ShutdownOS ‚ðƒR[ƒh E_OK ‚ÅŽÀs‚µCƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€‚ð
- *          I—¹‚·‚éD
- *    'Q' : ShutdownOS ‚ðƒR[ƒh E_OS_STATE ‚ÅŽÀs‚µCƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€
- *          ‚ðI—¹‚·‚éD
+ *  ï¼œã‚³ãƒžãƒ³ãƒ‰ä¸€è¦§ï¼ž
+ *  ãƒ»ã‚¿ã‚¹ã‚¯æŒ‡å®š
+ *    '1' : ä»¥é™ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’ Task1 ã«å¯¾ã—ã¦è¡Œã†ï¼Ž
+ *    '2' : ä»¥é™ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’ Task2 ã«å¯¾ã—ã¦è¡Œã†ï¼Ž
+ *    '3' : ä»¥é™ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’ Task3 ã«å¯¾ã—ã¦è¡Œã†ï¼Ž
+ *    '4' : ä»¥é™ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’ Task4 ã«å¯¾ã—ã¦è¡Œã†ï¼Ž
+ *    '5' : ä»¥é™ã®ã‚³ãƒžãƒ³ãƒ‰ã‚’ Task5 ã«å¯¾ã—ã¦è¡Œã†ï¼Ž
+ *  ãƒ»ã‚¿ã‚¹ã‚¯ç®¡ç†æ©Ÿèƒ½
+ *    'a' : ActivateTask ã«ã¦ã‚¿ã‚¹ã‚¯ã‚’èµ·å‹•ã™ã‚‹ï¼Ž
+ *    'A' : TerminateTask ã«ã¦ã‚¿ã‚¹ã‚¯ã‚’çµ‚äº†ã™ã‚‹ï¼Ž
+ *    '!'(Shift+1) : ChainTask ã«ã¦ã‚¿ã‚¹ã‚¯ã‚’çµ‚äº†ã—ï¼ŒTask1 ã‚’èµ·å‹•ã™ã‚‹ï¼Ž
+ *    '"'(Shift+2) : ChainTask ã«ã¦ã‚¿ã‚¹ã‚¯ã‚’çµ‚äº†ã—ï¼ŒTask2 ã‚’èµ·å‹•ã™ã‚‹ï¼Ž
+ *    '#'(Shift+3) : ChainTask ã«ã¦ã‚¿ã‚¹ã‚¯ã‚’çµ‚äº†ã—ï¼ŒTask3 ã‚’èµ·å‹•ã™ã‚‹ï¼Ž
+ *    '$'(Shift+4) : ChainTask ã«ã¦ã‚¿ã‚¹ã‚¯ã‚’çµ‚äº†ã—ï¼ŒTask4 ã‚’èµ·å‹•ã™ã‚‹ï¼Ž
+ *    '%'(Shift+5) : ChainTask ã«ã¦ã‚¿ã‚¹ã‚¯ã‚’çµ‚äº†ã—ï¼ŒTask5 ã‚’èµ·å‹•ã™ã‚‹ï¼Ž
+ *    's' : ãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–å±žæ€§ã§ã‚ã‚‹ã‚¿ã‚¹ã‚¯ MainTask ã«ã¦æœ€é«˜
+ *          å„ªå…ˆåº¦ã‚¿ã‚¹ã‚¯ HighPriorityTask ã‚’èµ·å‹•ã—ï¼ŒSchedule ã«ã¦
+ *          å†ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒªãƒ³ã‚°ã‚’è¡Œã†ï¼Ž
+ *    'S' : ãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–ã‚¿ã‚¹ã‚¯ NonPriTask ã‚’èµ·å‹•ã™ã‚‹ï¼Ž
+ *          ãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–ã‚¿ã‚¹ã‚¯ NonPriTask ã«ã¦æœ€é«˜å„ªå…ˆåº¦
+ *          ã‚¿ã‚¹ã‚¯ HighPriorityTask ã‚’èµ·å‹•ã—ï¼Œã‚¿ã‚¹ã‚¯çµ‚äº†ã™ã‚‹ï¼Ž
+ *    'z' : GetTaskID ã«ã¦è‡ªã‚¿ã‚¹ã‚¯ã®IDã‚’å–å¾—ã™ã‚‹ï¼Ž
+ *    'Z' : GetTaskState ã«ã¦ã‚¿ã‚¹ã‚¯çŠ¶æ…‹ã‚’å–å¾—ã™ã‚‹ï¼Ž
+ *  ãƒ»å‰²è¾¼ã¿ç®¡ç†æ©Ÿèƒ½
+ *    'd' : DisableAllInterrupts ã‚’å®Ÿè¡Œå¾Œï¼Œãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’
+ *          3å›žè¡¨ç¤ºã—ï¼Œ EnableAllInterrupts ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *    'D' : SuspendAllInterrupts ã‚’å®Ÿè¡Œå¾Œï¼Œãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’
+ *          3å›žè¡¨ç¤ºã—ï¼Œã•ã‚‰ã« SuspendAllInterrupts ã‚’å®Ÿè¡Œå¾Œã€ãƒãƒ¼ãƒ‰
+ *          ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’3å›žè¡¨ç¤ºã—ï¼ŒResumeAllInterrupts ã‚’å®Ÿè¡Œå¾Œã€
+ *          ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’3å›žè¡¨ç¤ºã—ï¼ŒResumeAllInterrupts ã‚’
+ *          å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *    'f' : SuspendOSInterrupts ã‚’å®Ÿè¡Œå¾Œï¼Œãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’
+ *          3å›žè¡¨ç¤ºã—ï¼Œã•ã‚‰ã« SuspendOSInterrupts ã‚’å®Ÿè¡Œå¾Œã€ãƒãƒ¼ãƒ‰
+ *          ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’3å›žè¡¨ç¤ºã—ï¼Œã•ã‚‰ã« SuspendAllInterrupts
+ *          ã‚’å®Ÿè¡Œå¾Œï¼Œãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’3å›žè¡¨ç¤ºã—ï¼Œ
+ *          ResumeAllInterrupts ã‚’å®Ÿè¡Œå¾Œã€ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿ã‚’3å›ž
+ *          è¡¨ç¤ºã—ï¼ŒResumeOSInterrupts ã‚’å®Ÿè¡Œå¾Œãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿
+ *          å€¤ã‚’3å›žè¡¨ç¤ºã—ï¼ŒResumeOSInterrupts ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *    'T' : ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’3å›žè¡¨ç¤ºã™ã‚‹ï¼Ž
+ *  ãƒ»ãƒªã‚½ãƒ¼ã‚¹ç®¡ç†æ©Ÿèƒ½
+ *    'k' : GetResource ã«ã¦ãƒªã‚½ãƒ¼ã‚¹ TskLevelRes ã‚’å–å¾—ã™ã‚‹ï¼ŽãªãŠï¼Œ
+ *          Task3 ã¯ã€ã“ã®ãƒªã‚½ãƒ¼ã‚¹ã‚ˆã‚Šå„ªå…ˆåº¦ãŒé«˜ã„ãŸã‚ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹ï¼Ž
+ *    'K' : ReleaseResource ã«ã¦ãƒªã‚½ãƒ¼ã‚¹ TskLevelRes ã‚’è§£æ”¾ã™ã‚‹ï¼Ž
+ *    'l' : GetResource ã«ã¦ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ©ãƒªã‚½ãƒ¼ã‚¹ã‚’å–å¾—å¾Œï¼Œæœ€é«˜å„ªå…ˆåº¦
+ *          ã‚¿ã‚¹ã‚¯ HighPriorityTask ã‚’èµ·å‹•ã—ï¼ŒReleaseResource ã«ã¦
+ *          ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ©ãƒªã‚½ãƒ¼ã‚¹ã‚’è§£æ”¾ã™ã‚‹ï¼Ž
+ *    'i' : GetResource ã«ã¦ãƒªã‚½ãƒ¼ã‚¹ IntLevelRes ã‚’å–å¾—å¾Œï¼Œãƒãƒ¼ãƒ‰
+ *          ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿å€¤ã‚’3å›žè¡¨ç¤ºã—ï¼ŒReleaseResource ã«ã¦
+ *          ãƒªã‚½ãƒ¼ã‚¹ IntLevelRes ã‚’è§£æ”¾ã™ã‚‹ï¼Ž
+ *  ãƒ»ã‚¤ãƒ™ãƒ³ãƒˆåˆ¶å¾¡æ©Ÿèƒ½
+ *    'e' : SetEvent ã«ã¦ã‚¤ãƒ™ãƒ³ãƒˆã‚’è¨­å®šã™ã‚‹ï¼ŽTask2 ã¨ Task3 ä»¥å¤–ã¯
+ *          å‰²ã‚Šå½“ã¦ãŒãªã„ãŸã‚ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹ï¼Ž
+ *    'w' : ClearEvent ã«ã¦è‡ªã‚¿ã‚¹ã‚¯ã®ã‚¤ãƒ™ãƒ³ãƒˆã‚’ã‚¯ãƒªã‚¢ã™ã‚‹ï¼ŽTask2 ã¨
+ *          Task3 ä»¥å¤–ã¯å‰²ã‚Šå½“ã¦ãŒãªã„ãŸã‚ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹ï¼Ž
+ *    'E' : GetEvent ã«ã¦ã‚¤ãƒ™ãƒ³ãƒˆçŠ¶æ…‹ã‚’å–å¾—ã™ã‚‹ï¼ŽTask2 ã¨ Task3
+ *          ä»¥å¤–ã¯å‰²ã‚Šå½“ã¦ãŒãªã„ãŸã‚ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹ï¼Ž
+ *    'W' : WaitEvent ã«ã¦è‡ªã‚¿ã‚¹ã‚¯ã®ã‚¤ãƒ™ãƒ³ãƒˆã‚’å¾…ã¤ï¼ŽTask3 ã¨ Task4
+ *          ä»¥å¤–ã¯ã‚¨ãƒ©ãƒ¼ã¨ãªã‚‹ï¼Ž
+ *  ãƒ»ã‚¢ãƒ©ãƒ¼ãƒ æ©Ÿèƒ½
+ *    'b' : GetAlarmBase ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  MainCycArm ã®ã‚¢ãƒ©ãƒ¼ãƒ ãƒ™ãƒ¼ã‚¹
+ *          æƒ…å ±ã‚’å–å¾—ã™ã‚‹ï¼Ž
+ *    'B' : GetAlarm ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  MainCycArm ã®æ®‹ã‚Šã‚«ã‚¦ãƒ³ãƒˆå€¤ã‚’2å›ž
+ *          é€£ç¶šã§å–å¾—ã™ã‚‹ï¼Ž
+ *    'v' : SetRelAlarm ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  ActTskArm ã‚’èµ·å‹•ã—ï¼Œ500ms å¾Œã«
+ *          ã‚¿ã‚¹ã‚¯ Task1 ã‚’èµ·å‹•ã™ã‚‹ï¼Ž
+ *    'V' : SetRelAlarm ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  SetEvtArm ã‚’èµ·å‹•ã—ï¼Œ500ms å¾Œã«
+ *          ã‚¤ãƒ™ãƒ³ãƒˆ T3Evt ã‚’è¨­å®šã™ã‚‹ï¼Ž
+ *    'n' : SetRelAlarm ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  CallBackArm ã‚’ï¼Œãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿
+ *          900ms å¾Œã«æº€äº†ãƒ»å˜ç™ºã‚¢ãƒ©ãƒ¼ãƒ æŒ‡å®šã§è¨­å®šã™ã‚‹ï¼Ž
+ *    'N' : SetRelAlarm ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  CallBackArm ã‚’ï¼Œãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿
+ *          900ms å¾Œã«æº€äº†ãƒ» 500ms å‘¨æœŸã‚¢ãƒ©ãƒ¼ãƒ æŒ‡å®šã§è¨­å®šã™ã‚‹ï¼Ž
+ *    'm' : SetAbsAlarm ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  CallBackArm ã‚’ï¼Œãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿
+ *          ã‚«ã‚¦ãƒ³ã‚¿å€¤900ã«æº€äº†ãƒ»å˜ç™ºã‚¢ãƒ©ãƒ¼ãƒ æŒ‡å®šã§è¨­å®šã™ã‚‹ï¼Ž
+ *    'M' : SetAbsAlarm ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  CallBackArm ã‚’ï¼Œãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿
+ *          ã‚«ã‚¦ãƒ³ã‚¿å€¤900ã«æº€äº†ãƒ» 500ms å‘¨æœŸã‚¢ãƒ©ãƒ¼ãƒ ã§è¨­å®šã™ã‚‹ï¼Ž
+ *    'h' : CancelAlarm ã«ã¦ã‚¢ãƒ©ãƒ¼ãƒ  CallBackArm ã‚’ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã™ã‚‹ï¼Ž
+ *  ãƒ»ã‚«ã‚¦ãƒ³ã‚¿æ“ä½œæ©Ÿèƒ½ï¼ˆOSEKä»•æ§˜å¤–ï¼‰
+ *    'c' : ã‚«ã‚¦ãƒ³ã‚¿é€šçŸ¥ç”¨å‰²è¾¼ã¿ã‚’èµ·å‹•ã—ï¼Œå‰²è¾¼ã¿å†…ã«ã¦ SignalCounter
+ *          ã‚’å®Ÿè¡Œã—ï¼Œã‚«ã‚¦ãƒ³ã‚¿ SampleCnt ã«ã‚·ã‚°ãƒŠãƒ«é€šçŸ¥ã™ã‚‹ï¼Ž
+ *          1 ã‚·ã‚°ãƒŠãƒ«ã§ã‚¢ãƒ©ãƒ¼ãƒ  SampleArm ãŒæº€äº†ã—ï¼Œã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯ã‚’
+ *          å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *  ãƒ»OSå®Ÿè¡Œåˆ¶å¾¡æ©Ÿèƒ½
+ *    'p' : GetActiveApplicationMode ã«ã¦ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰ã‚’
+ *          å–å¾—ã™ã‚‹ï¼Ž
+ *    'q' : ShutdownOS ã‚’ã‚³ãƒ¼ãƒ‰ E_OK ã§å®Ÿè¡Œã—ï¼Œã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’
+ *          çµ‚äº†ã™ã‚‹ï¼Ž
+ *    'Q' : ShutdownOS ã‚’ã‚³ãƒ¼ãƒ‰ E_OS_STATE ã§å®Ÿè¡Œã—ï¼Œã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
+ *          ã‚’çµ‚äº†ã™ã‚‹ï¼Ž
  *  
- *  ƒƒIƒuƒWƒFƒNƒgˆê——„
- *  EOS
- *    ƒXƒ^[ƒgƒAƒbƒvƒtƒbƒNFŽg—p
- *    ƒVƒƒƒbƒgƒ_ƒEƒ“ƒtƒbƒNFŽg—p
- *    ƒGƒ‰[ƒtƒbƒNFŽg—p
- *    ƒvƒŒƒ^ƒXƒNƒtƒbƒNF–¢Žg—p
- *    ƒ|ƒXƒgƒ^ƒXƒNƒtƒbƒNF–¢Žg—p
- *    ƒXƒPƒWƒ…[ƒ‰ƒŠƒ\[ƒXFŽg—p
- *  Eƒ^ƒXƒN
- *  ƒƒCƒ“ƒ^ƒXƒN
- *    ƒ^ƒXƒNIDFMainTask
- *    —Dæ“xF14
- *    ‘½d‹N“®”F1
- *    ƒXƒPƒWƒ…[ƒ‹Fƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒu
- *    Ž©“®‹N“®FAppMode1, AppMode2, AppMode3
- *    ŠT—vFƒ†[ƒUƒCƒ“ƒ^ƒtƒF[ƒXiƒVƒŠƒAƒ‹IO‚æ‚èƒRƒ}ƒ“ƒh‚ðŽóM‚µC
- *          ‚»‚ê‚É‘Î‰ž‚µ‚½“®ì‚ðs‚È‚¤Dj
- *          ŽüŠúƒAƒ‰[ƒ€ MainCycArm ‚É‚æ‚èC100ms‚²‚Æ‚É‘Ò‚¿‰ðœ‚µ
- *          ƒRƒ}ƒ“ƒh‚ÌŽóM—L–³‚ðƒ|[ƒŠƒ“ƒO‚·‚éD
- *          ƒCƒxƒ“ƒgiIDFMainEvtj‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *  Å‚—Dæ“xƒ^ƒXƒN
- *    ƒ^ƒXƒNIDFHighPriorityTask
- *    —Dæ“xF15
- *    ‘½d‹N“®”F1
- *    ƒXƒPƒWƒ…[ƒ‹Fƒtƒ‹ƒvƒŠƒGƒ“ƒvƒeƒBƒu
- *    Ž©“®‹N“®F‚È‚µ
- *    ŠT—vF‹N“®ƒƒO‚ðo—Í‚µ‚ÄI—¹‚·‚éDƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒuƒ^ƒXƒN
- *          ‚©‚ç‹N“®‚³‚êCƒvƒŠƒGƒ“ƒvƒg‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©‚ÌŠm”F—pD
- *  ƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒuƒ^ƒXƒN
- *    ƒ^ƒXƒNIDFNonPriTask
- *    —Dæ“xF1
- *    ‘½d‹N“®”F8
- *    ƒXƒPƒWƒ…[ƒ‹Fƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒu
- *    Ž©“®‹N“®F‚È‚µ
- *    ŠT—vF‹N“®ƒƒO‚ðo—Í‚µCÅ‚—Dæ“xƒ^ƒXƒN HighPriorityTask ‚ð
- *          ‹N“®ŒãCI—¹ƒƒO‚ðo—Í‚µ‚Äƒ^ƒXƒN‚ðI—¹‚·‚éD
- *  ƒ^ƒXƒN1
- *    ƒ^ƒXƒNIDFTask1
- *    —Dæ“xF4
- *    ƒXƒPƒWƒ…[ƒ‹Fƒtƒ‹ƒvƒŠƒGƒ“ƒvƒeƒBƒu
- *    Ž©“®‹N“®FAppMode2
- *    ‘½d‹N“®”F8
- *    ŠT—vF•À—ñˆ—ƒ^ƒXƒNiƒƒCƒ“ƒ^ƒXƒN‚©‚ç‚ÌŽw—ß‚É‚æ‚è“®ìjD
- *          ‹N“®‚³‚ê‚·‚é‚Æ–³ŒÀƒ‹[ƒv‚É“ü‚èCƒRƒ}ƒ“ƒhˆ—‚ðŽÀs‚·‚éD
- *          ƒŠƒ\[ƒX TskLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *          ƒŠƒ\[ƒX IntLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *  ƒ^ƒXƒN2
- *    ƒ^ƒXƒNIDFTask2
- *    —Dæ“xF7
- *    ‘½d‹N“®”F1
- *    ƒXƒPƒWƒ…[ƒ‹Fƒtƒ‹ƒvƒŠƒGƒ“ƒvƒeƒBƒu
- *    Ž©“®‹N“®F‚È‚µ
- *    ŠT—vF•À—ñˆ—ƒ^ƒXƒNiƒƒCƒ“ƒ^ƒXƒN‚©‚ç‚ÌŽw—ß‚É‚æ‚è“®ìjD
- *          ‹N“®‚³‚ê‚·‚é‚Æ–³ŒÀƒ‹[ƒv‚É“ü‚èCƒRƒ}ƒ“ƒhˆ—‚ðŽÀs‚·‚éD
- *          ƒŠƒ\[ƒX TskLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *          ƒŠƒ\[ƒX IntLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *          ƒCƒxƒ“ƒg T2Evt ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *  ƒ^ƒXƒN3
- *    ƒ^ƒXƒNIDFTask3
- *    —Dæ“xF12
- *    ‘½d‹N“®”F1
- *    ƒXƒPƒWƒ…[ƒ‹Fƒtƒ‹ƒvƒŠƒGƒ“ƒvƒeƒBƒu
- *    Ž©“®‹N“®FAppMode3
- *    ŠT—vF•À—ñˆ—ƒ^ƒXƒNiƒƒCƒ“ƒ^ƒXƒN‚©‚ç‚ÌŽw—ß‚É‚æ‚è“®ìjD
- *          ‹N“®‚³‚ê‚·‚é‚Æ–³ŒÀƒ‹[ƒv‚É“ü‚èCƒRƒ}ƒ“ƒhˆ—‚ðŽÀs‚·‚éD
- *          ƒCƒxƒ“ƒg‘Ò‚¿‚·‚é‚±‚Æ‚ª‰Â”\‚Å‚ ‚éD
- *          ƒŠƒ\[ƒX IntLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *          ƒCƒxƒ“ƒg T3Evt ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *  ƒ^ƒXƒN4
- *    ƒ^ƒXƒNIDFTask4
- *    —Dæ“xF6
- *    ‘½d‹N“®”F5
- *    ƒXƒPƒWƒ…[ƒ‹Fƒtƒ‹ƒvƒŠƒGƒ“ƒvƒeƒBƒu
- *    Ž©“®‹N“®F‚È‚µ
- *    ŠT—vF•À—ñˆ—ƒ^ƒXƒNiƒƒCƒ“ƒ^ƒXƒN‚©‚ç‚ÌŽw—ß‚É‚æ‚è“®ìjD
- *          ‹N“®‚³‚ê‚·‚é‚Æ–³ŒÀƒ‹[ƒv‚É“ü‚èCƒRƒ}ƒ“ƒhˆ—‚ðŽÀs‚·‚éD
- *          ƒŠƒ\[ƒX TskLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *          ƒŠƒ\[ƒX IntLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *          “à•”ƒŠƒ\[ƒX GroupRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *  ƒ^ƒXƒN5
- *    ƒ^ƒXƒNIDFTask5
- *    —Dæ“xF9
- *    ‘½d‹N“®”F5
- *    ƒXƒPƒWƒ…[ƒ‹Fƒtƒ‹ƒvƒŠƒGƒ“ƒvƒeƒBƒu
- *    Ž©“®‹N“®F‚È‚µ
- *    ŠT—vF•À—ñˆ—ƒ^ƒXƒNiƒƒCƒ“ƒ^ƒXƒN‚©‚ç‚ÌŽw—ß‚É‚æ‚è“®ìjD
- *          ‹N“®‚³‚ê‚·‚é‚Æ–³ŒÀƒ‹[ƒv‚É“ü‚èCƒRƒ}ƒ“ƒhˆ—‚ðŽÀs‚·‚éD
- *          ƒŠƒ\[ƒX TskLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *          ƒŠƒ\[ƒX IntLevelRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *          “à•”ƒŠƒ\[ƒX GroupRes ‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *  EŠ„ž‚ÝƒT[ƒrƒXƒ‹[ƒ`ƒ“
- *  ƒVƒŠƒAƒ‹IOŽóMŠ„ž‚Ý
- *    ISRIDFRxHwSerialInt
- *    —Dæ“xF6
- *    ƒJƒeƒSƒŠF1
- *    ŠT—vFƒRƒ}ƒ“ƒh‚ðŽóM‚·‚éD
- *  ƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^1Š„ž‚Ý
- *    ISRIDFHwCnt1Int
- *    —Dæ“xF5
- *    ƒJƒeƒSƒŠF1
- *    ŠT—vFŠ„ž‚Ý‹ÖŽ~Šm”F—pƒJƒEƒ“ƒ^1‚ð‰ÁŽZ‚·‚éD
- *  ƒVƒXƒeƒ€ƒ^ƒCƒ}Š„ž‚Ý
- *    ISRIDFSysTimerInt
- *    —Dæ“xF4
- *    ƒJƒeƒSƒŠF2
- *    ŠT—vFSignalCounter(SysTimerCnt) ‚ðŽÀs‚·‚éD
- *  ƒJƒEƒ“ƒ^ƒ\[ƒXŠ„ž‚Ý
- *    ISRIDFCounterInt
- *    —Dæ“xF3
- *    ƒJƒeƒSƒŠF2
- *    ŠT—vFSignalCounter(SampleCnt) ‚ðŽÀs‚·‚éD
- *  ƒn[ƒhƒEƒFƒAƒJƒEƒ“ƒ^2Š„ž‚Ý
- *    ISRIDFHwCnt1Int
- *    —Dæ“xF2
- *    ƒJƒeƒSƒŠF2
- *    ŠT—vFŠ„ž‚Ý‹ÖŽ~Šm”F—pƒJƒEƒ“ƒ^2‚ð‰ÁŽZ‚·‚éD
- *          ƒŠƒ\[ƒXiIDFIntLevelResj‚ðŠÖ˜A•t‚¯‚Ä‚¢‚éD
- *  EƒŠƒ\[ƒX
- *  ƒ^ƒXƒNƒŒƒxƒ‹ƒŠƒ\[ƒX
- *    ƒŠƒ\[ƒXIDFTskLevelRes
- *    ƒvƒƒpƒeƒBF•W€
- *  Š„ž‚ÝƒŒƒxƒ‹ƒŠƒ\[ƒX
- *    ƒŠƒ\[ƒXIDFIntLevelRes
- *    ƒvƒƒpƒeƒBF•W€
- *  ƒ^ƒXƒNƒOƒ‹[ƒvƒŠƒ\[ƒX
- *    ƒŠƒ\[ƒXIDFGroupRes
- *    ƒvƒƒpƒeƒBF“à•”
- *  EƒCƒxƒ“ƒg
- *  ƒƒCƒ“ƒ^ƒXƒNƒCƒxƒ“ƒg
- *    ƒCƒxƒ“ƒgIDFMainEvt
- *  ƒ^ƒXƒN2ƒCƒxƒ“ƒg
- *    ƒCƒxƒ“ƒgIDFT2Evt
- *  ƒ^ƒXƒN3ƒCƒxƒ“ƒg
- *    ƒCƒxƒ“ƒgIDFT3Evt
- *  EƒJƒEƒ“ƒ^
- *  ƒVƒXƒeƒ€ƒ^ƒCƒ}ƒJƒEƒ“ƒ^
- *    ƒJƒEƒ“ƒ^IDFSysTimerCnt
- *    ƒJƒEƒ“ƒg’lF0`999
- *    ‰ÁŽZ’lF1
- *  ƒTƒ“ƒvƒ‹ƒJƒEƒ“ƒ^
- *    ƒJƒEƒ“ƒ^IDFSampleCnt
- *    ƒJƒEƒ“ƒg’lF0`99
- *    ‰ÁŽZ’lF10
- *  EƒAƒ‰[ƒ€
- *  ƒƒCƒ“ŽüŠúƒAƒ‰[ƒ€
- *    ƒAƒ‰[ƒ€IDFMainCycArm
- *    ƒx[ƒXƒJƒEƒ“ƒ^IDFSysTimerCnt
- *    ƒAƒNƒVƒ‡ƒ“FƒCƒxƒ“ƒgÝ’è MainEvt
- *    Ž©“®‹N“®FAppMode1, AppMode2, AppMode3
- *    Ý’èFƒJƒEƒ“ƒ^100CŽüŠú100
- *  ƒ^ƒXƒN‹N“®ƒAƒ‰[ƒ€
- *    ƒAƒ‰[ƒ€IDFActTskArm
- *    ƒx[ƒXƒJƒEƒ“ƒ^IDFSysTimerCnt
- *    ƒAƒNƒVƒ‡ƒ“Fƒ^ƒXƒN‹N“® Task1
- *    Ž©“®‹N“®F‚È‚µ
- *  ƒCƒxƒ“ƒgÝ’èƒAƒ‰[ƒ€
- *    ƒAƒ‰[ƒ€IDFSetEvtArm
- *    ƒx[ƒXƒJƒEƒ“ƒ^IDFSysTimerCnt
- *    ƒAƒNƒVƒ‡ƒ“FƒCƒxƒ“ƒgÝ’è T3Evt
- *    Ž©“®‹N“®F‚È‚µ
- *  ƒR[ƒ‹ƒoƒbƒNŽÀsƒAƒ‰[ƒ€
- *    ƒAƒ‰[ƒ€IDFCallBackArm
- *    ƒx[ƒXƒJƒEƒ“ƒ^IDFSysTimerCnt
- *    ƒAƒNƒVƒ‡ƒ“FƒR[ƒ‹ƒoƒbƒNŠÖ”ŽÀs
- *    Ž©“®‹N“®F‚È‚µ
- *  SignalCounterŠm”F—pƒAƒ‰[ƒ€
- *    ƒAƒ‰[ƒ€IDFSampleArm
- *    ƒx[ƒXƒJƒEƒ“ƒ^IDFSampleCnt
- *    ƒAƒNƒVƒ‡ƒ“FƒR[ƒ‹ƒoƒbƒNŠÖ”ŽÀs
- *    Ž©“®‹N“®F‚È‚µ
- *  EƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒh
- *  Ž©“®‹N“®‚È‚µƒ‚[ƒh
- *    ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒhIDFAppMode1
- *  Task1Ž©“®‹N“®ƒ‚[ƒh
- *    ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒhIDFAppMode2
- *  Task3Ž©“®‹N“®ƒ‚[ƒh
- *    ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒhIDFAppMode3
+ *  ï¼œã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆä¸€è¦§ï¼ž
+ *  ãƒ»OS
+ *    ã‚¹ã‚¿ãƒ¼ãƒˆã‚¢ãƒƒãƒ—ãƒ•ãƒƒã‚¯ï¼šä½¿ç”¨
+ *    ã‚·ãƒ£ãƒƒãƒˆãƒ€ã‚¦ãƒ³ãƒ•ãƒƒã‚¯ï¼šä½¿ç”¨
+ *    ã‚¨ãƒ©ãƒ¼ãƒ•ãƒƒã‚¯ï¼šä½¿ç”¨
+ *    ãƒ—ãƒ¬ã‚¿ã‚¹ã‚¯ãƒ•ãƒƒã‚¯ï¼šæœªä½¿ç”¨
+ *    ãƒã‚¹ãƒˆã‚¿ã‚¹ã‚¯ãƒ•ãƒƒã‚¯ï¼šæœªä½¿ç”¨
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ©ãƒªã‚½ãƒ¼ã‚¹ï¼šä½¿ç”¨
+ *  ãƒ»ã‚¿ã‚¹ã‚¯
+ *  ãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯
+ *    ã‚¿ã‚¹ã‚¯IDï¼šMainTask
+ *    å„ªå…ˆåº¦ï¼š14
+ *    å¤šé‡èµ·å‹•æ•°ï¼š1
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼šãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–
+ *    è‡ªå‹•èµ·å‹•ï¼šAppMode1, AppMode2, AppMode3
+ *    æ¦‚è¦ï¼šãƒ¦ãƒ¼ã‚¶ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹ï¼ˆã‚·ãƒªã‚¢ãƒ«IOã‚ˆã‚Šã‚³ãƒžãƒ³ãƒ‰ã‚’å—ä¿¡ã—ï¼Œ
+ *          ãã‚Œã«å¯¾å¿œã—ãŸå‹•ä½œã‚’è¡Œãªã†ï¼Žï¼‰
+ *          å‘¨æœŸã‚¢ãƒ©ãƒ¼ãƒ  MainCycArm ã«ã‚ˆã‚Šï¼Œ100msã”ã¨ã«å¾…ã¡è§£é™¤ã—
+ *          ã‚³ãƒžãƒ³ãƒ‰ã®å—ä¿¡æœ‰ç„¡ã‚’ãƒãƒ¼ãƒªãƒ³ã‚°ã™ã‚‹ï¼Ž
+ *          ã‚¤ãƒ™ãƒ³ãƒˆï¼ˆIDï¼šMainEvtï¼‰ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *  æœ€é«˜å„ªå…ˆåº¦ã‚¿ã‚¹ã‚¯
+ *    ã‚¿ã‚¹ã‚¯IDï¼šHighPriorityTask
+ *    å„ªå…ˆåº¦ï¼š15
+ *    å¤šé‡èµ·å‹•æ•°ï¼š1
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼šãƒ•ãƒ«ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *    æ¦‚è¦ï¼šèµ·å‹•ãƒ­ã‚°ã‚’å‡ºåŠ›ã—ã¦çµ‚äº†ã™ã‚‹ï¼ŽãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–ã‚¿ã‚¹ã‚¯
+ *          ã‹ã‚‰èµ·å‹•ã•ã‚Œï¼Œãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒˆã—ã¦ã„ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªç”¨ï¼Ž
+ *  ãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–ã‚¿ã‚¹ã‚¯
+ *    ã‚¿ã‚¹ã‚¯IDï¼šNonPriTask
+ *    å„ªå…ˆåº¦ï¼š1
+ *    å¤šé‡èµ·å‹•æ•°ï¼š8
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼šãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *    æ¦‚è¦ï¼šèµ·å‹•ãƒ­ã‚°ã‚’å‡ºåŠ›ã—ï¼Œæœ€é«˜å„ªå…ˆåº¦ã‚¿ã‚¹ã‚¯ HighPriorityTask ã‚’
+ *          èµ·å‹•å¾Œï¼Œçµ‚äº†ãƒ­ã‚°ã‚’å‡ºåŠ›ã—ã¦ã‚¿ã‚¹ã‚¯ã‚’çµ‚äº†ã™ã‚‹ï¼Ž
+ *  ã‚¿ã‚¹ã‚¯1
+ *    ã‚¿ã‚¹ã‚¯IDï¼šTask1
+ *    å„ªå…ˆåº¦ï¼š4
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼šãƒ•ãƒ«ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–
+ *    è‡ªå‹•èµ·å‹•ï¼šAppMode2
+ *    å¤šé‡èµ·å‹•æ•°ï¼š8
+ *    æ¦‚è¦ï¼šä¸¦åˆ—å‡¦ç†ã‚¿ã‚¹ã‚¯ï¼ˆãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯ã‹ã‚‰ã®æŒ‡ä»¤ã«ã‚ˆã‚Šå‹•ä½œï¼‰ï¼Ž
+ *          èµ·å‹•ã•ã‚Œã™ã‚‹ã¨ç„¡é™ãƒ«ãƒ¼ãƒ—ã«å…¥ã‚Šï¼Œã‚³ãƒžãƒ³ãƒ‰å‡¦ç†ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ TskLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ IntLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *  ã‚¿ã‚¹ã‚¯2
+ *    ã‚¿ã‚¹ã‚¯IDï¼šTask2
+ *    å„ªå…ˆåº¦ï¼š7
+ *    å¤šé‡èµ·å‹•æ•°ï¼š1
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼šãƒ•ãƒ«ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *    æ¦‚è¦ï¼šä¸¦åˆ—å‡¦ç†ã‚¿ã‚¹ã‚¯ï¼ˆãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯ã‹ã‚‰ã®æŒ‡ä»¤ã«ã‚ˆã‚Šå‹•ä½œï¼‰ï¼Ž
+ *          èµ·å‹•ã•ã‚Œã™ã‚‹ã¨ç„¡é™ãƒ«ãƒ¼ãƒ—ã«å…¥ã‚Šï¼Œã‚³ãƒžãƒ³ãƒ‰å‡¦ç†ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ TskLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ IntLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *          ã‚¤ãƒ™ãƒ³ãƒˆ T2Evt ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *  ã‚¿ã‚¹ã‚¯3
+ *    ã‚¿ã‚¹ã‚¯IDï¼šTask3
+ *    å„ªå…ˆåº¦ï¼š12
+ *    å¤šé‡èµ·å‹•æ•°ï¼š1
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼šãƒ•ãƒ«ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–
+ *    è‡ªå‹•èµ·å‹•ï¼šAppMode3
+ *    æ¦‚è¦ï¼šä¸¦åˆ—å‡¦ç†ã‚¿ã‚¹ã‚¯ï¼ˆãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯ã‹ã‚‰ã®æŒ‡ä»¤ã«ã‚ˆã‚Šå‹•ä½œï¼‰ï¼Ž
+ *          èµ·å‹•ã•ã‚Œã™ã‚‹ã¨ç„¡é™ãƒ«ãƒ¼ãƒ—ã«å…¥ã‚Šï¼Œã‚³ãƒžãƒ³ãƒ‰å‡¦ç†ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *          ã‚¤ãƒ™ãƒ³ãƒˆå¾…ã¡ã™ã‚‹ã“ã¨ãŒå¯èƒ½ã§ã‚ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ IntLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *          ã‚¤ãƒ™ãƒ³ãƒˆ T3Evt ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *  ã‚¿ã‚¹ã‚¯4
+ *    ã‚¿ã‚¹ã‚¯IDï¼šTask4
+ *    å„ªå…ˆåº¦ï¼š6
+ *    å¤šé‡èµ·å‹•æ•°ï¼š5
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼šãƒ•ãƒ«ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *    æ¦‚è¦ï¼šä¸¦åˆ—å‡¦ç†ã‚¿ã‚¹ã‚¯ï¼ˆãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯ã‹ã‚‰ã®æŒ‡ä»¤ã«ã‚ˆã‚Šå‹•ä½œï¼‰ï¼Ž
+ *          èµ·å‹•ã•ã‚Œã™ã‚‹ã¨ç„¡é™ãƒ«ãƒ¼ãƒ—ã«å…¥ã‚Šï¼Œã‚³ãƒžãƒ³ãƒ‰å‡¦ç†ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ TskLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ IntLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *          å†…éƒ¨ãƒªã‚½ãƒ¼ã‚¹ GroupRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *  ã‚¿ã‚¹ã‚¯5
+ *    ã‚¿ã‚¹ã‚¯IDï¼šTask5
+ *    å„ªå…ˆåº¦ï¼š9
+ *    å¤šé‡èµ·å‹•æ•°ï¼š5
+ *    ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ«ï¼šãƒ•ãƒ«ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *    æ¦‚è¦ï¼šä¸¦åˆ—å‡¦ç†ã‚¿ã‚¹ã‚¯ï¼ˆãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯ã‹ã‚‰ã®æŒ‡ä»¤ã«ã‚ˆã‚Šå‹•ä½œï¼‰ï¼Ž
+ *          èµ·å‹•ã•ã‚Œã™ã‚‹ã¨ç„¡é™ãƒ«ãƒ¼ãƒ—ã«å…¥ã‚Šï¼Œã‚³ãƒžãƒ³ãƒ‰å‡¦ç†ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ TskLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ IntLevelRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *          å†…éƒ¨ãƒªã‚½ãƒ¼ã‚¹ GroupRes ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *  ãƒ»å‰²è¾¼ã¿ã‚µãƒ¼ãƒ“ã‚¹ãƒ«ãƒ¼ãƒãƒ³
+ *  ã‚·ãƒªã‚¢ãƒ«IOå—ä¿¡å‰²è¾¼ã¿
+ *    ISRIDï¼šRxHwSerialInt
+ *    å„ªå…ˆåº¦ï¼š6
+ *    ã‚«ãƒ†ã‚´ãƒªï¼š1
+ *    æ¦‚è¦ï¼šã‚³ãƒžãƒ³ãƒ‰ã‚’å—ä¿¡ã™ã‚‹ï¼Ž
+ *  ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿1å‰²è¾¼ã¿
+ *    ISRIDï¼šHwCnt1Int
+ *    å„ªå…ˆåº¦ï¼š5
+ *    ã‚«ãƒ†ã‚´ãƒªï¼š1
+ *    æ¦‚è¦ï¼šå‰²è¾¼ã¿ç¦æ­¢ç¢ºèªç”¨ã‚«ã‚¦ãƒ³ã‚¿1ã‚’åŠ ç®—ã™ã‚‹ï¼Ž
+ *  ã‚·ã‚¹ãƒ†ãƒ ã‚¿ã‚¤ãƒžå‰²è¾¼ã¿
+ *    ISRIDï¼šSysTimerInt
+ *    å„ªå…ˆåº¦ï¼š4
+ *    ã‚«ãƒ†ã‚´ãƒªï¼š2
+ *    æ¦‚è¦ï¼šSignalCounter(SysTimerCnt) ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *  ã‚«ã‚¦ãƒ³ã‚¿ã‚½ãƒ¼ã‚¹å‰²è¾¼ã¿
+ *    ISRIDï¼šCounterInt
+ *    å„ªå…ˆåº¦ï¼š3
+ *    ã‚«ãƒ†ã‚´ãƒªï¼š2
+ *    æ¦‚è¦ï¼šSignalCounter(SampleCnt) ã‚’å®Ÿè¡Œã™ã‚‹ï¼Ž
+ *  ãƒãƒ¼ãƒ‰ã‚¦ã‚§ã‚¢ã‚«ã‚¦ãƒ³ã‚¿2å‰²è¾¼ã¿
+ *    ISRIDï¼šHwCnt1Int
+ *    å„ªå…ˆåº¦ï¼š2
+ *    ã‚«ãƒ†ã‚´ãƒªï¼š2
+ *    æ¦‚è¦ï¼šå‰²è¾¼ã¿ç¦æ­¢ç¢ºèªç”¨ã‚«ã‚¦ãƒ³ã‚¿2ã‚’åŠ ç®—ã™ã‚‹ï¼Ž
+ *          ãƒªã‚½ãƒ¼ã‚¹ï¼ˆIDï¼šIntLevelResï¼‰ã‚’é–¢é€£ä»˜ã‘ã¦ã„ã‚‹ï¼Ž
+ *  ãƒ»ãƒªã‚½ãƒ¼ã‚¹
+ *  ã‚¿ã‚¹ã‚¯ãƒ¬ãƒ™ãƒ«ãƒªã‚½ãƒ¼ã‚¹
+ *    ãƒªã‚½ãƒ¼ã‚¹IDï¼šTskLevelRes
+ *    ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ï¼šæ¨™æº–
+ *  å‰²è¾¼ã¿ãƒ¬ãƒ™ãƒ«ãƒªã‚½ãƒ¼ã‚¹
+ *    ãƒªã‚½ãƒ¼ã‚¹IDï¼šIntLevelRes
+ *    ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ï¼šæ¨™æº–
+ *  ã‚¿ã‚¹ã‚¯ã‚°ãƒ«ãƒ¼ãƒ—ãƒªã‚½ãƒ¼ã‚¹
+ *    ãƒªã‚½ãƒ¼ã‚¹IDï¼šGroupRes
+ *    ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£ï¼šå†…éƒ¨
+ *  ãƒ»ã‚¤ãƒ™ãƒ³ãƒˆ
+ *  ãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯ã‚¤ãƒ™ãƒ³ãƒˆ
+ *    ã‚¤ãƒ™ãƒ³ãƒˆIDï¼šMainEvt
+ *  ã‚¿ã‚¹ã‚¯2ã‚¤ãƒ™ãƒ³ãƒˆ
+ *    ã‚¤ãƒ™ãƒ³ãƒˆIDï¼šT2Evt
+ *  ã‚¿ã‚¹ã‚¯3ã‚¤ãƒ™ãƒ³ãƒˆ
+ *    ã‚¤ãƒ™ãƒ³ãƒˆIDï¼šT3Evt
+ *  ãƒ»ã‚«ã‚¦ãƒ³ã‚¿
+ *  ã‚·ã‚¹ãƒ†ãƒ ã‚¿ã‚¤ãƒžã‚«ã‚¦ãƒ³ã‚¿
+ *    ã‚«ã‚¦ãƒ³ã‚¿IDï¼šSysTimerCnt
+ *    ã‚«ã‚¦ãƒ³ãƒˆå€¤ï¼š0ï½ž999
+ *    åŠ ç®—å€¤ï¼š1
+ *  ã‚µãƒ³ãƒ—ãƒ«ã‚«ã‚¦ãƒ³ã‚¿
+ *    ã‚«ã‚¦ãƒ³ã‚¿IDï¼šSampleCnt
+ *    ã‚«ã‚¦ãƒ³ãƒˆå€¤ï¼š0ï½ž99
+ *    åŠ ç®—å€¤ï¼š10
+ *  ãƒ»ã‚¢ãƒ©ãƒ¼ãƒ 
+ *  ãƒ¡ã‚¤ãƒ³å‘¨æœŸã‚¢ãƒ©ãƒ¼ãƒ 
+ *    ã‚¢ãƒ©ãƒ¼ãƒ IDï¼šMainCycArm
+ *    ãƒ™ãƒ¼ã‚¹ã‚«ã‚¦ãƒ³ã‚¿IDï¼šSysTimerCnt
+ *    ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ï¼šã‚¤ãƒ™ãƒ³ãƒˆè¨­å®š MainEvt
+ *    è‡ªå‹•èµ·å‹•ï¼šAppMode1, AppMode2, AppMode3
+ *    è¨­å®šï¼šã‚«ã‚¦ãƒ³ã‚¿100ï¼Œå‘¨æœŸ100
+ *  ã‚¿ã‚¹ã‚¯èµ·å‹•ã‚¢ãƒ©ãƒ¼ãƒ 
+ *    ã‚¢ãƒ©ãƒ¼ãƒ IDï¼šActTskArm
+ *    ãƒ™ãƒ¼ã‚¹ã‚«ã‚¦ãƒ³ã‚¿IDï¼šSysTimerCnt
+ *    ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ï¼šã‚¿ã‚¹ã‚¯èµ·å‹• Task1
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *  ã‚¤ãƒ™ãƒ³ãƒˆè¨­å®šã‚¢ãƒ©ãƒ¼ãƒ 
+ *    ã‚¢ãƒ©ãƒ¼ãƒ IDï¼šSetEvtArm
+ *    ãƒ™ãƒ¼ã‚¹ã‚«ã‚¦ãƒ³ã‚¿IDï¼šSysTimerCnt
+ *    ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ï¼šã‚¤ãƒ™ãƒ³ãƒˆè¨­å®š T3Evt
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *  ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯å®Ÿè¡Œã‚¢ãƒ©ãƒ¼ãƒ 
+ *    ã‚¢ãƒ©ãƒ¼ãƒ IDï¼šCallBackArm
+ *    ãƒ™ãƒ¼ã‚¹ã‚«ã‚¦ãƒ³ã‚¿IDï¼šSysTimerCnt
+ *    ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ï¼šã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯é–¢æ•°å®Ÿè¡Œ
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *  SignalCounterç¢ºèªç”¨ã‚¢ãƒ©ãƒ¼ãƒ 
+ *    ã‚¢ãƒ©ãƒ¼ãƒ IDï¼šSampleArm
+ *    ãƒ™ãƒ¼ã‚¹ã‚«ã‚¦ãƒ³ã‚¿IDï¼šSampleCnt
+ *    ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ï¼šã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯é–¢æ•°å®Ÿè¡Œ
+ *    è‡ªå‹•èµ·å‹•ï¼šãªã—
+ *  ãƒ»ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰
+ *  è‡ªå‹•èµ·å‹•ãªã—ãƒ¢ãƒ¼ãƒ‰
+ *    ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰IDï¼šAppMode1
+ *  Task1è‡ªå‹•èµ·å‹•ãƒ¢ãƒ¼ãƒ‰
+ *    ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰IDï¼šAppMode2
+ *  Task3è‡ªå‹•èµ·å‹•ãƒ¢ãƒ¼ãƒ‰
+ *    ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰IDï¼šAppMode3
  *
  */
 
@@ -323,7 +323,7 @@
 #include "sample1_com_ecc2.h"
 
 /*
- *	“à•”ŠÖ”ƒvƒƒgƒ^ƒCƒvéŒ¾
+ *	å†…éƒ¨é–¢æ•°ãƒ—ãƒ­ãƒˆã‚¿ã‚¤ãƒ—å®£è¨€
  */
 int main( void );
 TASK( MainTask );
@@ -340,29 +340,29 @@ static void		TaskProk( UINT8 task_no );
 static volatile UINT8 cur_task_no = 0;
 
 /*
- *•À—ñŽÀsƒ^ƒXƒN”
+ *ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯æ•°
  */
 #define PARALLEL_TASK_NUM	5
 
 /*
- *  “à•”ƒf[ƒ^ƒoƒbƒtƒ@
+ *  å†…éƒ¨ãƒ‡ãƒ¼ã‚¿ãƒãƒƒãƒ•ã‚¡
  */
-static volatile UINT8	command_tbl[8];	/* ƒRƒ}ƒ“ƒhˆø“n‚µƒe[ƒuƒ‹	*/
+static volatile UINT8	command_tbl[8];	/* ã‚³ãƒžãƒ³ãƒ‰å¼•æ¸¡ã—ãƒ†ãƒ¼ãƒ–ãƒ«	*/
 
 extern const UINT8	*task_name_tbl[];
 
 
 /*
- *  ƒ†[ƒUƒƒCƒ“ŠÖ”
+ *  ãƒ¦ãƒ¼ã‚¶ãƒ¡ã‚¤ãƒ³é–¢æ•°
  *
- *  ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒh‚Ì”»’f‚ÆCƒJ[ƒlƒ‹‹N“®D
+ *  ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰ã®åˆ¤æ–­ã¨ï¼Œã‚«ãƒ¼ãƒãƒ«èµ·å‹•ï¼Ž
  */
 int main( void )
 {
 	AppModeType	crt_app_mode;
 
 	/*
-	 *  ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒh‚Ì”»’f
+	 *  ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰ã®åˆ¤æ–­
 	 */
 	switch( GetAppModeInfo() ){
 	case 0:
@@ -377,7 +377,7 @@ int main( void )
 	}
 
 	/*
-	 *  ƒJ[ƒlƒ‹‹N“®
+	 *  ã‚«ãƒ¼ãƒãƒ«èµ·å‹•
 	 */
 	StartOS( crt_app_mode );
 
@@ -386,9 +386,9 @@ int main( void )
 
 
 /*
- *  ƒƒCƒ“ƒ^ƒXƒN
+ *  ãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯
  *
- *  ƒ†[ƒUƒRƒ}ƒ“ƒh‚ÌŽóM‚ÆCƒRƒ}ƒ“ƒh‚²‚Æ‚Ìˆ—ŽÀsD
+ *  ãƒ¦ãƒ¼ã‚¶ã‚³ãƒžãƒ³ãƒ‰ã®å—ä¿¡ã¨ï¼Œã‚³ãƒžãƒ³ãƒ‰ã”ã¨ã®å‡¦ç†å®Ÿè¡Œï¼Ž
  */
 TASK( MainTask )
 {
@@ -399,7 +399,7 @@ TASK( MainTask )
 	UINT8		init_lpcnt;
 
 	/*
-	 *  ƒ^ƒXƒN”Ô†EƒRƒ}ƒ“ƒhƒoƒbƒtƒ@‰Šú‰»
+	 *  ã‚¿ã‚¹ã‚¯ç•ªå·ãƒ»ã‚³ãƒžãƒ³ãƒ‰ãƒãƒƒãƒ•ã‚¡åˆæœŸåŒ–
 	 */
 	task_no = (UINT8)( 0 );
 
@@ -408,19 +408,19 @@ TASK( MainTask )
 	}
 
 	/*
-	 *  ƒRƒ}ƒ“ƒhŽÀsƒ‹[ƒv
+	 *  ã‚³ãƒžãƒ³ãƒ‰å®Ÿè¡Œãƒ«ãƒ¼ãƒ—
 	 */
 	while( 1 ){
-		WaitEvent( MainEvt );	/* 100ms‚Ìì‹ÆŽžŠÔ‘Ò‚¿	*/
+		WaitEvent( MainEvt );	/* 100msã®ä½œæ¥­æ™‚é–“å¾…ã¡	*/
 		ClearEvent( MainEvt );
 
 		/*
-		 *  “ü—ÍƒRƒ}ƒ“ƒhŽæ“¾
+		 *  å…¥åŠ›ã‚³ãƒžãƒ³ãƒ‰å–å¾—
 		 */
-		RecvPolSerialChar( &command );	/* ŽóMƒoƒbƒtƒ@ƒ|[ƒŠƒ“ƒO	*/
+		RecvPolSerialChar( &command );	/* å—ä¿¡ãƒãƒƒãƒ•ã‚¡ãƒãƒ¼ãƒªãƒ³ã‚°	*/
 
 		/*
-		 *  “ü—ÍƒRƒ}ƒ“ƒhƒ`ƒFƒbƒN
+		 *  å…¥åŠ›ã‚³ãƒžãƒ³ãƒ‰ãƒã‚§ãƒƒã‚¯
 		 */
 		if(command != 0 && 
 			(( command <= (UINT8)( 0x1f ) ) || ( command >= (UINT8)( 0x80 ) ) )){
@@ -431,7 +431,7 @@ TASK( MainTask )
 			PutSysLog( (const UINT8 *)echo );
 
 			/*
-			 *  ƒRƒ}ƒ“ƒh”»•Ê
+			 *  ã‚³ãƒžãƒ³ãƒ‰åˆ¤åˆ¥
 			 */
 			switch( command ){
 			case '1':
@@ -440,7 +440,7 @@ TASK( MainTask )
 			case '4':
 			case '5':
 				/*
-				 *  ˆ—‘ÎÛƒ^ƒXƒN‚Ì•ÏX
+				 *  å‡¦ç†å¯¾è±¡ã‚¿ã‚¹ã‚¯ã®å¤‰æ›´
 				 */
 				task_no = (UINT8)( command - '1' );
 				break;
@@ -458,7 +458,7 @@ TASK( MainTask )
 			case 'w':
 			case 'W':
 				/*
-				 *  ƒ^ƒXƒN‚Ö‚ÌƒRƒ}ƒ“ƒh’Ê’m
+				 *  ã‚¿ã‚¹ã‚¯ã¸ã®ã‚³ãƒžãƒ³ãƒ‰é€šçŸ¥
 				 */
 				command_tbl[task_no] = command;
 				break;
@@ -466,7 +466,7 @@ TASK( MainTask )
 				command_tbl[cur_task_no] = 0xFF;
 				break;
 				/*
-				 *  ˆÈ~‚ÍƒƒCƒ“ƒ^ƒXƒN‚ÅƒRƒ}ƒ“ƒhˆ—
+				 *  ä»¥é™ã¯ãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯ã§ã‚³ãƒžãƒ³ãƒ‰å‡¦ç†
 				 */
 			case 'a':
 				PutActTsk( task_no );
@@ -554,7 +554,7 @@ TASK( MainTask )
 	}
 
 	/*
-	 *  ‚±‚±‚É‚Í‚±‚È‚¢D
+	 *  ã“ã“ã«ã¯ã“ãªã„ï¼Ž
 	 */
 	PutSysLog( (const UINT8 *)"MainTask TERMINATE\r\n" );
 	error_log( TerminateTask() );
@@ -562,9 +562,9 @@ TASK( MainTask )
 
 
 /*
- *  Å‚—Dæ“xƒ^ƒXƒN
+ *  æœ€é«˜å„ªå…ˆåº¦ã‚¿ã‚¹ã‚¯
  *
- *  Šeƒ^ƒXƒN‚ÌƒvƒŠƒGƒ“ƒvƒgŠm”F—pD
+ *  å„ã‚¿ã‚¹ã‚¯ã®ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒˆç¢ºèªç”¨ï¼Ž
  */
 TASK( HighPriorityTask )
 {
@@ -575,9 +575,9 @@ TASK( HighPriorityTask )
 
 
 /*
- *  ƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒuƒ^ƒXƒN
+ *  ãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–ã‚¿ã‚¹ã‚¯
  *
- *  ŽÀs’†‚ÍƒvƒŠƒGƒ“ƒvƒg‚µ‚È‚¢‚±‚Æ‚ÌŠm”F—pD
+ *  å®Ÿè¡Œä¸­ã¯ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒˆã—ãªã„ã“ã¨ã®ç¢ºèªç”¨ï¼Ž
  */
 TASK( NonPriTask )
 {
@@ -592,7 +592,7 @@ TASK( NonPriTask )
 
 
 /*
- *  •À—ñŽÀsƒ^ƒXƒN1
+ *  ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯1
  */
 TASK( Task1 )
 {
@@ -601,7 +601,7 @@ TASK( Task1 )
 
 
 /*
- *  •À—ñŽÀsƒ^ƒXƒN2
+ *  ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯2
  */
 TASK( Task2 )
 {
@@ -610,7 +610,7 @@ TASK( Task2 )
 
 
 /*
- *  •À—ñŽÀsƒ^ƒXƒN3
+ *  ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯3
  */
 TASK( Task3 )
 {
@@ -619,7 +619,7 @@ TASK( Task3 )
 
 
 /*
- *  •À—ñŽÀsƒ^ƒXƒN4
+ *  ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯4
  */
 TASK( Task4 )
 {
@@ -628,7 +628,7 @@ TASK( Task4 )
 
 
 /*
- *  •À—ñŽÀsƒ^ƒXƒN5
+ *  ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯5
  */
 TASK( Task5 )
 {
@@ -637,29 +637,29 @@ TASK( Task5 )
 
 
 /*
- *  •À—ñŽÀsƒ^ƒXƒN“à•”ˆ—
+ *  ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯å†…éƒ¨å‡¦ç†
  *
- *  ƒƒCƒ“ƒ^ƒXƒN‚©‚ç’Ê’m‚³‚ê‚½ƒRƒ}ƒ“ƒh‚²‚Æ‚Ìˆ—ŽÀsD
+ *  ãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯ã‹ã‚‰é€šçŸ¥ã•ã‚ŒãŸã‚³ãƒžãƒ³ãƒ‰ã”ã¨ã®å‡¦ç†å®Ÿè¡Œï¼Ž
  */
 static void
 TaskProk( UINT8 task_no )
 {
-	UINT8		command;	/* ƒRƒ}ƒ“ƒh‘Þ”ðƒoƒbƒtƒ@	*/
+	UINT8		command;	/* ã‚³ãƒžãƒ³ãƒ‰é€€é¿ãƒãƒƒãƒ•ã‚¡	*/
 	UINT8		count = 0;
 
 	/*
-	 *  ƒ^ƒXƒN‹N“®ƒƒOo—Í
+	 *  ã‚¿ã‚¹ã‚¯èµ·å‹•ãƒ­ã‚°å‡ºåŠ›
 	 */
 	PutSysLog( task_name_tbl[task_no] );
 	PutSysLog( (const UINT8 *)" ACTIVATE\r\n" );
 
 	/*
-	 *  ƒRƒ}ƒ“ƒhŽÀsƒ‹[ƒv
+	 *  ã‚³ãƒžãƒ³ãƒ‰å®Ÿè¡Œãƒ«ãƒ¼ãƒ—
 	 */
 	while( 1 ){
 
 		/*
-		 *  ƒRƒ}ƒ“ƒhŽæ“¾
+		 *  ã‚³ãƒžãƒ³ãƒ‰å–å¾—
 		 */
 		while( command_tbl[task_no] == 0 ) {
 			cur_task_no = task_no;
@@ -668,7 +668,7 @@ TaskProk( UINT8 task_no )
 		command_tbl[task_no] = 0;
 
 		/*
-		 *  ƒRƒ}ƒ“ƒh”»’è
+		 *  ã‚³ãƒžãƒ³ãƒ‰åˆ¤å®š
 		 */
 		switch( command ){
 		case 'A':
@@ -717,21 +717,21 @@ TaskProk( UINT8 task_no )
 
 
 /*
- *  ƒGƒ‰[ƒtƒbƒNƒ‹[ƒ`ƒ“
+ *  ã‚¨ãƒ©ãƒ¼ãƒ•ãƒƒã‚¯ãƒ«ãƒ¼ãƒãƒ³
  */
 #ifdef USE_ERRORHOOK
 void ErrorHook( StatusType ercd )
 {
-	UINT8	str_buf[16];	/* ƒƒO•¶Žš—ñ¶¬ƒoƒbƒtƒ@	*/
+	UINT8	str_buf[16];	/* ãƒ­ã‚°æ–‡å­—åˆ—ç”Ÿæˆãƒãƒƒãƒ•ã‚¡	*/
 
 	/*
-	 *  ƒGƒ‰[ƒR[ƒhƒƒOo—Í
+	 *  ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰ãƒ­ã‚°å‡ºåŠ›
 	 */
 	PutSysLog( (const UINT8 *)"Error:" );
 	PutSysLog( ercd_tbl[ercd] );
 
 	/*
-	 *  ƒGƒ‰[—vˆö‚²‚Æ‚Ìƒpƒ‰ƒ[ƒ^ƒƒOo—Í
+	 *  ã‚¨ãƒ©ãƒ¼è¦å› ã”ã¨ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ãƒ­ã‚°å‡ºåŠ›
 	 */
 	switch( OSErrorGetServiceId() ){
 	case OSServiceId_ActivateTask:
@@ -884,9 +884,9 @@ void ErrorHook( StatusType ercd )
 #endif /* USE_ERRORHOOK */
 
 /*
- *  ƒvƒŒƒ^ƒXƒNƒtƒbƒNƒ‹[ƒ`ƒ“
+ *  ãƒ—ãƒ¬ã‚¿ã‚¹ã‚¯ãƒ•ãƒƒã‚¯ãƒ«ãƒ¼ãƒãƒ³
  *
- *  –{ƒTƒ“ƒvƒ‹‚Å‚Í–¢Žg—pD
+ *  æœ¬ã‚µãƒ³ãƒ—ãƒ«ã§ã¯æœªä½¿ç”¨ï¼Ž
  */
 #ifdef USE_PRETASKHOOK
 void PreTaskHook( void )
@@ -895,9 +895,9 @@ void PreTaskHook( void )
 #endif /* USE_PRETASKHOOK */
 
 /*
- *  ƒ|ƒXƒgƒ^ƒXƒNƒtƒbƒNƒ‹[ƒ`ƒ“
+ *  ãƒã‚¹ãƒˆã‚¿ã‚¹ã‚¯ãƒ•ãƒƒã‚¯ãƒ«ãƒ¼ãƒãƒ³
  *
- *  –{ƒTƒ“ƒvƒ‹‚Å‚Í–¢Žg—pD
+ *  æœ¬ã‚µãƒ³ãƒ—ãƒ«ã§ã¯æœªä½¿ç”¨ï¼Ž
  */
 #ifdef USE_POSTTASKHOOK
 void PostTaskHook( void )
@@ -906,13 +906,13 @@ void PostTaskHook( void )
 #endif /* USE_POSTTASKHOOK */
 
 /*
- *  ƒXƒ^[ƒgƒAƒbƒvƒtƒbƒNƒ‹[ƒ`ƒ“
+ *  ã‚¹ã‚¿ãƒ¼ãƒˆã‚¢ãƒƒãƒ—ãƒ•ãƒƒã‚¯ãƒ«ãƒ¼ãƒãƒ³
  */
 #ifdef USE_STARTUPHOOK
 void StartupHook( void )
 {
-	InitSerial();		/* ƒVƒŠƒAƒ‹IOƒ‚ƒWƒ…[ƒ‹‰Šú‰»		*/
-	/* ‹N“®ƒƒOo—Í	*/
+	InitSerial();		/* ã‚·ãƒªã‚¢ãƒ«IOãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«åˆæœŸåŒ–		*/
+	/* èµ·å‹•ãƒ­ã‚°å‡ºåŠ›	*/
 	PutIntSysLog( (const UINT8 *)
 					"\r\nTOPPERS Automotive Kernel Release 1.0" );
 #if defined( TARGET_NAME )
@@ -921,48 +921,48 @@ void StartupHook( void )
 #endif	/* TARGET_NAME	*/
 	PutIntSysLog( (const UINT8 *)
 					"\r\nECC2 Sample System StartUp\r\n\r\n" );
-	InitSysTimer();		/* ƒVƒXƒeƒ€ƒ^ƒCƒ}‹N“®				*/
-	InitCounterInt();	/* SignalCounterŽÀs—pŠ„ž‚Ý‰Šú‰»	*/
-	InitHwCntInt();		/* Š„ž‚ÝŒŸØ—pƒJƒEƒ“ƒ^‹N“®			*/
+	InitSysTimer();		/* ã‚·ã‚¹ãƒ†ãƒ ã‚¿ã‚¤ãƒžèµ·å‹•				*/
+	InitCounterInt();	/* SignalCounterå®Ÿè¡Œç”¨å‰²è¾¼ã¿åˆæœŸåŒ–	*/
+	InitHwCntInt();		/* å‰²è¾¼ã¿æ¤œè¨¼ç”¨ã‚«ã‚¦ãƒ³ã‚¿èµ·å‹•			*/
 }	/* StartupHook	*/
 #endif /* USE_STARTUPHOOK */
 
 /*
- *  ƒVƒƒƒbƒgƒ_ƒEƒ“ƒtƒbƒNƒ‹[ƒ`ƒ“
+ *  ã‚·ãƒ£ãƒƒãƒˆãƒ€ã‚¦ãƒ³ãƒ•ãƒƒã‚¯ãƒ«ãƒ¼ãƒãƒ³
  */
 #ifdef USE_SHUTDOWNHOOK
 void ShutdownHook( StatusType ercd )
 {
-	TermHwCntInt();		/* Š„ž‚ÝŒŸØ—pƒJƒEƒ“ƒ^’âŽ~			*/
-	TermCounterInt();	/* SignalCounterŽÀs—pŠ„ž‚Ý’âŽ~	*/
-	TermSysTimer();		/* ƒVƒXƒeƒ€ƒ^ƒCƒ}’âŽ~				*/
-	/* I—¹ƒƒOo—Í	*/
+	TermHwCntInt();		/* å‰²è¾¼ã¿æ¤œè¨¼ç”¨ã‚«ã‚¦ãƒ³ã‚¿åœæ­¢			*/
+	TermCounterInt();	/* SignalCounterå®Ÿè¡Œç”¨å‰²è¾¼ã¿åœæ­¢	*/
+	TermSysTimer();		/* ã‚·ã‚¹ãƒ†ãƒ ã‚¿ã‚¤ãƒžåœæ­¢				*/
+	/* çµ‚äº†ãƒ­ã‚°å‡ºåŠ›	*/
 	PutIntSysLog( (const UINT8 *)
 					"\r\nECC2 Sample System ShutDown\r\nShutDownCode:" );
 	PutIntSysLog( ercd_tbl[ercd] );
 	PutIntSysLog( (const UINT8 *)"\r\n\r\n" );
-	TermSerial();		/* ƒVƒŠƒAƒ‹IOƒ‚ƒWƒ…[ƒ‹’âŽ~			*/
+	TermSerial();		/* ã‚·ãƒªã‚¢ãƒ«IOãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«åœæ­¢			*/
 }	/* ShutdownHook	*/
 #endif /* USE_SHUTDOWNHOOK */
 
 /*
- *  ƒVƒXƒeƒ€ƒ^ƒCƒ}‚É‚æ‚éƒAƒ‰[ƒ€ƒR[ƒ‹ƒoƒbƒN
+ *  ã‚·ã‚¹ãƒ†ãƒ ã‚¿ã‚¤ãƒžã«ã‚ˆã‚‹ã‚¢ãƒ©ãƒ¼ãƒ ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯
  */
 ALARMCALLBACK( SysTimerAlmCb )
 {
 	/*
-	 *  ƒR[ƒ‹ƒoƒbƒNŽÀsƒƒOo—Í
+	 *  ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯å®Ÿè¡Œãƒ­ã‚°å‡ºåŠ›
 	 */
 	PutSysLog( (const UINT8 *)"CallBackArm Expire\r\n" );
 }	/* ALARMCALLBACK(SysTimerAlmCb)	*/
 
 /*
- *  SignalCounterŠm”F—pƒAƒ‰[ƒ€ƒR[ƒ‹ƒoƒbƒN
+ *  SignalCounterç¢ºèªç”¨ã‚¢ãƒ©ãƒ¼ãƒ ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯
  */
 ALARMCALLBACK( SampleAlmCb )
 {
 	/*
-	 *  ƒR[ƒ‹ƒoƒbƒNŽÀsƒƒOo—Í
+	 *  ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯å®Ÿè¡Œãƒ­ã‚°å‡ºåŠ›
 	 */
 	PutSysLog( (const UINT8 *)"SampleArm Expire\r\n" );
 }	/* ALARMCALLBACK( SampleAlmCb )	*/

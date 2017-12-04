@@ -9,91 +9,91 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2007 by Witz Corporation, JAPAN
  * 
- *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
- *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
- *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
- *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
- *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
- *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
- *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
- *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
- *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
- *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
- *      �̖��ۏ؋K����f�ڂ��邱�ƁD
- *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
- *      �ƁD
- *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
- *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
- *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
- *        �񍐂��邱�ƁD
- *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
- *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
  * 
- *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
- *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
- *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
- *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
  * 
  */
 
 /*
- *	�����݊Ǘ��@�\(ECC2)
+ *	割込み管理機能(ECC2)
  */
 
 #include "osek_kernel.h"
 #include "interrupt.h"
 
 /*
- *  ���s����ISR�i�J�e�S��2�j
+ *  実行中のISR（カテゴリ2）
  */
 IsrType		runisr;
 
 /*
- *  �����݊Ǘ��@�\�����Ŏg�p����ϐ��̒�`
+ *  割込み管理機能内部で使用する変数の定義
  */
 
 /*
- *  SuspendAllInterrupts �̃l�X�g��
+ *  SuspendAllInterrupts のネスト回数
  *
- *  ���̕ϐ��́Cdisable_int() ������Ԃł̂ݕύX���Ă悢�D
+ *  この変数は，disable_int() した状態でのみ変更してよい．
  */
 UINT8		sus_all_cnt;
 
 /*
- *  SuspendOSInterrupts �̃l�X�g��
+ *  SuspendOSInterrupts のネスト回数
  *
- *  ���̕ϐ��́Cset_ipl(ipl_maxisr2) ������Ԃł̂ݕύX���Ă悢�D
- *  set_ipl(ipl_maxisr2) ���Ă��C�J�e�S��1 �� ISR �͓����Ă��邪�C����
- *  �l�ɖ߂��Ă��烊�^�[������Ζ��͂Ȃ��D
+ *  この変数は，set_ipl(ipl_maxisr2) した状態でのみ変更してよい．
+ *  set_ipl(ipl_maxisr2) しても，カテゴリ1 の ISR は入ってくるが，元の
+ *  値に戻してからリターンすれば問題はない．
  */
 static UINT8	sus_os_cnt;
 
 /*
- *  SuspendOSInterrupts ����O�̊����ݗD�惌�x��
+ *  SuspendOSInterrupts する前の割込み優先レベル
  *
- *  ���̕ϐ��́Cset_ipl(ipl_maxisr2) ������Ԃł̂ݕύX���Ă悢�D�܂��C
- *  ���̕ϐ����g�p���Ă���Ԃ́Csus_os_cnt ���[���ɂ��Ă����D
- *  set_ipl(ipl_maxisr2) ���Ă��J�e�S��1 �� ISR �͓����Ă��邪�C
- *  sus_os_cnt ���[���ɂ��Ă������ƂŁC�J�e�S��1 �� ISR �ł��̕ϐ���
- *  �ύX����邱�Ƃ͂Ȃ��D
+ *  この変数は，set_ipl(ipl_maxisr2) した状態でのみ変更してよい．また，
+ *  この変数を使用している間は，sus_os_cnt を非ゼロにしておく．
+ *  set_ipl(ipl_maxisr2) してもカテゴリ1 の ISR は入ってくるが，
+ *  sus_os_cnt を非ゼロにしておくことで，カテゴリ1 の ISR でこの変数が
+ *  変更されることはない．
  */
 static IPL	saved_ipl;
 
 /*
- *  SuspendAllInterrupts/SuspendOSInterrupts ����O�̎��s�R���e�L�X�g
+ *  SuspendAllInterrupts/SuspendOSInterrupts する前の実行コンテキスト
  *
- *  ���̕ϐ��́Cdisable_int �܂��� set_ipl(ipl_maxisr2) ������Ԃł̂�
- *  �ύX���Ă悢�D�܂��C���̕ϐ����g�p���Ă���Ԃ́Csus_all_cnt �� 
- *  sus_os_cnt ���[���ɂ��Ă����Dset_ipl(ipl_maxisr2) ���Ă��J�e�S��1
- *  �� ISR �͓����Ă��邪�Csus_os_cnt ���[���ɂ��Ă������ƂŁC�J�e�S
- *  ��1 �� ISR �ł��̕ϐ����ύX����邱�Ƃ͂Ȃ��D
+ *  この変数は，disable_int または set_ipl(ipl_maxisr2) した状態でのみ
+ *  変更してよい．また，この変数を使用している間は，sus_all_cnt か 
+ *  sus_os_cnt を非ゼロにしておく．set_ipl(ipl_maxisr2) してもカテゴリ1
+ *  の ISR は入ってくるが，sus_os_cnt を非ゼロにしておくことで，カテゴ
+ *  リ1 の ISR でこの変数が変更されることはない．
  */
 static UINT8	saved_callevel;
 
 /*
- *  �����݊Ǘ��@�\�̏�����
+ *  割込み管理機能の初期化
  */
 void
 interrupt_initialize(void)
@@ -111,7 +111,7 @@ interrupt_initialize(void)
 }
 
 /*
- *  ���ׂĂ̊����݂̋֎~�i�����ȈՔŁj
+ *  すべての割込みの禁止（高速簡易版）
  */
 void
 DisableAllInterrupts(void)
@@ -122,7 +122,7 @@ DisableAllInterrupts(void)
 }
 
 /*
- *  ���ׂĂ̊����݂̋��i�����ȈՔŁj
+ *  すべての割込みの許可（高速簡易版）
  */
 void
 EnableAllInterrupts(void)
@@ -133,7 +133,7 @@ EnableAllInterrupts(void)
 }
 
 /*
- *  ���ׂĂ̊����݂̋֎~
+ *  すべての割込みの禁止
  */
 void
 SuspendAllInterrupts(void)
@@ -141,8 +141,8 @@ SuspendAllInterrupts(void)
 	LOG_SUSALL_ENTER();
 	if (sus_all_cnt == UINT8_INVALID) {
 		/*
-		 *  SuspendAllInterrupts ���J��Ԃ��Ă񂾏ꍇ�̑΍�
-		 *  �i���������ɔ�����j
+		 *  SuspendAllInterrupts を繰り返し呼んだ場合の対策
+		 *  （何もせずに抜ける）
 		 */
 	}
 	else if (sus_all_cnt == 0) {
@@ -160,7 +160,7 @@ SuspendAllInterrupts(void)
 }
 
 /*
- *  ���ׂĂ̊����݂̋���
+ *  すべての割込みの許可
  */
 void
 ResumeAllInterrupts(void)
@@ -168,8 +168,8 @@ ResumeAllInterrupts(void)
 	LOG_RSMALL_ENTER();
 	if (sus_all_cnt == 0) {
 		/*
-		 *  SuspendAllInterrupts ���Ă΂��ɁCResumeAllInterrupts
-		 *  ���Ă񂾏ꍇ�̑΍�i���������ɔ�����j
+		 *  SuspendAllInterrupts を呼ばずに，ResumeAllInterrupts
+		 *  を呼んだ場合の対策（何もせずに抜ける）
 		 */
 	}
 	else if (sus_all_cnt == 1) {
@@ -186,7 +186,7 @@ ResumeAllInterrupts(void)
 }
 
 /*
- *  �J�e�S��2�̊����݂̋֎~
+ *  カテゴリ2の割込みの禁止
  */
 void
 SuspendOSInterrupts(void)
@@ -196,15 +196,15 @@ SuspendOSInterrupts(void)
 	LOG_SUSOSI_ENTER();
 	if (sus_os_cnt == UINT8_INVALID) {
 		/*
-		 *  SuspendOSInterrupts ���J��Ԃ��Ă񂾏ꍇ�̑΍�
-		 *  �i���������ɔ�����j
+		 *  SuspendOSInterrupts を繰り返し呼んだ場合の対策
+		 *  （何もせずに抜ける）
 		 */
 	}
 	else if (sus_os_cnt == 0) {
 		ipl = current_ipl();
 
 		/*
-		 *  ���ł� ISR2 ���֎~����Ă��鎞�͉������Ȃ��D
+		 *  すでに ISR2 が禁止されている時は何もしない．
 		 */
 		if (ipl < ipl_maxisr2) {
 			set_ipl(ipl_maxisr2);
@@ -223,7 +223,7 @@ SuspendOSInterrupts(void)
 }
 
 /*
- *  �J�e�S��2�̊����݂̋���
+ *  カテゴリ2の割込みの許可
  */
 void
 ResumeOSInterrupts(void)
@@ -231,8 +231,8 @@ ResumeOSInterrupts(void)
 	LOG_RSMOSI_ENTER();
 	if (sus_os_cnt == 0) {
 		/*
-		 *  SuspendOSInterrupts ���Ă΂��ɁCResumeOSInterrupts
-		 *  ���Ă񂾏ꍇ�̑΍�i���������ɔ�����j
+		 *  SuspendOSInterrupts を呼ばずに，ResumeOSInterrupts
+		 *  を呼んだ場合の対策（何もせずに抜ける）
 		 */
 	}
 	else if (sus_os_cnt == 1) {
@@ -242,7 +242,7 @@ ResumeOSInterrupts(void)
 		sus_os_cnt--;
 
 		/*
-		 *  ���Ƃ��� ISR2 ���֎~����Ă������͉������Ȃ��D
+		 *  もともと ISR2 が禁止されていた時は何もしない．
 		 */
 		if (saved_ipl < ipl_maxisr2) {
 			set_ipl(saved_ipl);

@@ -9,156 +9,156 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
- *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
- *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
- *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
- *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
- *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
- *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
- *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
- *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
- *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
- *      �̖��ۏ؋K����f�ڂ��邱�ƁD
- *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
- *      �ƁD
- *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
- *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
- *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
- *        �񍐂��邱�ƁD
- *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
- *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
  * 
- *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
- *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
- *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
- *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
  * 
  */
 
 /*
- *	�^�X�N�Ǘ����W���[��(ECC2)
+ *	タスク管理モジュール(ECC2)
  */
 
 #ifndef _TASK_H_
 #define _TASK_H_
 
 /*
- *  �^�X�NID�̓���Ȓl�̒�`
+ *  タスクIDの特殊な値の定義
  */
-#define TSKID_NULL		((TaskType) UINT8_INVALID)	/* ����ID */
+#define TSKID_NULL		((TaskType) UINT8_INVALID)	/* 無効ID */
 
 /*
- *  �^�X�N��ԁitcb_stat�j�l�̒�`
+ *  タスク状態（tcb_stat）値の定義
  */
-#define TS_RUNNABLE		READY				/* ���s��ԁC���s�\��� */
-#define TS_DORMANT		SUSPENDED			/* �x�~��� */
-#define TS_WAITING		WAITING				/* �҂���� */
+#define TS_RUNNABLE		READY				/* 実行状態，実行可能状態 */
+#define TS_DORMANT		SUSPENDED			/* 休止状態 */
+#define TS_WAITING		WAITING				/* 待ち状態 */
 
 /*
- *  �^�X�N����ێ�����ϐ��̐錾�ikernel_cfg.c�j
+ *  タスク数を保持する変数の宣言（kernel_cfg.c）
  */
-extern const UINT8	tnum_task;		/* �^�X�N�̐� */
-extern const UINT8	tnum_exttask;		/* �g���^�X�N�̐� */
+extern const UINT8	tnum_task;		/* タスクの数 */
+extern const UINT8	tnum_exttask;		/* 拡張タスクの数 */
 
 /*
- *  �^�X�N�������u���b�N�ikernel_cfg.c�j
+ *  タスク初期化ブロック（kernel_cfg.c）
  */
-extern const Priority	tinib_inipri[];		/* �����D��x */
-extern const Priority	tinib_exepri[];		/* ���s�J�n���̗D��x */
-extern const UINT8		tinib_maxact[];		/* ���d�N���v���̍ő吔 */
-extern const AppModeType tinib_autoact[];	/* �N�����郂�[�h */
-extern const FP			tinib_task[];		/* �^�X�N�̋N���Ԓn */
-extern const VP			tinib_stk[];		/* �X�^�b�N�̈�̐擪�Ԓn */
-extern const UINT16		tinib_stksz[];		/* �X�^�b�N�̈�̃T�C�Y */
+extern const Priority	tinib_inipri[];		/* 初期優先度 */
+extern const Priority	tinib_exepri[];		/* 実行開始時の優先度 */
+extern const UINT8		tinib_maxact[];		/* 多重起動要求の最大数 */
+extern const AppModeType tinib_autoact[];	/* 起動するモード */
+extern const FP			tinib_task[];		/* タスクの起動番地 */
+extern const VP			tinib_stk[];		/* スタック領域の先頭番地 */
+extern const UINT16		tinib_stksz[];		/* スタック領域のサイズ */
 
 /*
- *  �^�X�N�Ǘ��u���b�N�ikernel_cfg.c�j
+ *  タスク管理ブロック（kernel_cfg.c）
  *
- *  ���̑��ɁC�^�X�N�R���e�L�X�g��ۑ����邽�߂̔z�񂪁C�^�[�Q�b�g�ˑ�
- *  �ɒ�`�����D
+ *  この他に，タスクコンテキストを保存するための配列が，ターゲット依存
+ *  に定義される．
  */
-extern TaskType			tcb_next[];			/* �^�X�N�L���[ */
-extern UINT8			tcb_tstat[];		/* �^�X�N��� */
-extern Priority			tcb_curpri[];		/* ���݂̗D��x */
-extern UINT8			tcb_actcnt[];		/* ���d�N���v���� */
-extern EventMaskType	tcb_curevt[];		/* �C�x���g�̌��ݒl */
-extern EventMaskType	tcb_waievt[];		/* �҂��Ă���C�x���g */
-extern ResourceType		tcb_lastres[];		/* �Ō�Ɋl���������\�[�X */
+extern TaskType			tcb_next[];			/* タスクキュー */
+extern UINT8			tcb_tstat[];		/* タスク状態 */
+extern Priority			tcb_curpri[];		/* 現在の優先度 */
+extern UINT8			tcb_actcnt[];		/* 多重起動要求数 */
+extern EventMaskType	tcb_curevt[];		/* イベントの現在値 */
+extern EventMaskType	tcb_waievt[];		/* 待っているイベント */
+extern ResourceType		tcb_lastres[];		/* 最後に獲得したリソース */
 
 /*
- *  ���s��Ԃ̃^�X�N
+ *  実行状態のタスク
  *
- *  ���s��Ԃ̃^�X�N���Ȃ��ꍇ�ɂ́CTSKID_NULL �ɂ���D
+ *  実行状態のタスクがない場合には，TSKID_NULL にする．
  */
 extern TaskType			runtsk;
 
 /*
- *  �ō��D�揇�ʃ^�X�N
+ *  最高優先順位タスク
  *
- *  �^�X�N���s���́Cruntsk �ƈ�v����D���s�ł����ԁi���s��Ԃ܂���
- *  ���s�\��ԁj�̃^�X�N���Ȃ��ꍇ�ɂ́CTSKID_NULL �ɂ���D
+ *  タスク実行中は，runtsk と一致する．実行できる状態（実行状態または
+ *  実行可能状態）のタスクがない場合には，TSKID_NULL にする．
  */
 extern TaskType			schedtsk;
 
 /*
- *  ���f�B�L���[���̍ō��D��x
+ *  レディキュー中の最高優先度
  *
- *  ���f�B�L���[�ɂ͎��s�\��Ԃ̃^�X�N�݂̂��܂ނ̂ŁC���s�\��Ԃ�
- *  �^�X�N�̒��o�̍ō��D��x��ێ�����D���f�B�L���[����̎��i���s�\
- *  ��Ԃ̃^�X�N���������j�� TPRI_MINTASK�i��0�j�ɂ���D
+ *  レディキューには実行可能状態のタスクのみを含むので，実行可能状態の
+ *  タスクの中出の最高優先度を保持する．レディキューが空の時（実行可能
+ *  状態のタスクが無い時）は TPRI_MINTASK（＝0）にする．
  */
 extern Priority			nextpri;
 
 /*
- *  �^�X�N�Ǘ����W���[���̏�����
+ *  タスク管理モジュールの初期化
  */
 extern void	task_initialize(void);
 
 /*
- *  �^�X�N�̋N��
+ *  タスクの起動
  *
- *  �Ώۃ^�X�N�itskid �Ŏw�肵���^�X�N�j���N������i�x�~��Ԃ�����s��
- *  �����ԂɑJ�ڂ�����D�^�X�N�̋N�����ɕK�v�ȏ��������s���D
+ *  対象タスク（tskid で指定したタスク）を起動する（休止状態から実行で
+ *  きる状態に遷移させる．タスクの起動時に必要な初期化を行う．
  */
 extern BOOL	make_active(TaskType tskid);
 
 /*
- *  ���s�ł����Ԃւ̈ڍs
+ *  実行できる状態への移行
  *
- *  �Ώۃ^�X�N�itskid �Ŏw�肵���^�X�N�j�����s�ł����ԂɑJ�ڂ�����D
- *  �Ώۃ^�X�N�̗D��x���C�ō��D��x�^�X�N�ischedtsk�j�̗D��x������
- *  ���ꍇ�ɂ́C�Ώۃ^�X�N��V�����ō��D��x�^�X�N�Ƃ��C����܂ł̍ō�
- *  �D��x�^�X�N�����f�B�L���[�̐擪�ɓ����D�����łȂ��ꍇ�ɂ́C�Ώ�
- *  �^�X�N�����f�B�L���[�̖����ɓ����D�Ώۃ^�X�N���ō��D��x�^�X�N��
- *  �����ꍇ�ɁCTRUE ��Ԃ��D
+ *  対象タスク（tskid で指定したタスク）を実行できる状態に遷移させる．
+ *  対象タスクの優先度が，最高優先度タスク（schedtsk）の優先度よりも高
+ *  い場合には，対象タスクを新しい最高優先度タスクとし，それまでの最高
+ *  優先度タスクをレディキューの先頭に入れる．そうでない場合には，対象
+ *  タスクをレディキューの末尾に入れる．対象タスクを最高優先度タスクと
+ *  した場合に，TRUE を返す．
  */
 extern BOOL	make_runnable(TaskType tskid);
 
 /*
- *  �ō��D�揇�ʃ^�X�N�̃T�[�`
+ *  最高優先順位タスクのサーチ
  *
- *  ���f�B�L���[���ōł��D�揇�ʂ̍����^�X�N���T�[�`���C��������f�B
- *  �L���[����O���āC�ō��D�揇�ʃ^�X�N�ischedtsk�j�Ƃ���D���ۂɂ́C
- *  ���f�B�L���[���̍ō��D��x�� nextpri �ɐݒ肳��Ă��邽�߂ɃT�[�`
- *  �͕K�v�Ȃ��C�D��x nextpri �̃��f�B�L���[�̐擪�̃^�X�N���ō��D��
- *  ���ʃ^�X�N�Ƃ���D���f�B�L���[�̃T�[�`�́C���̃^�X�N�����f�B�L���[
- *  ����O������� nextpri ���X�V���邽�߂ɕK�v�ƂȂ�D���̃T�[�`�ɁC
- *  ready_primap ��p����D
- *  ���̊֐��́C����܂Ŏ��s��Ԃł������^�X�N���҂���Ԃ��x�~��ԂɈ�
- *  �s�������ɁC���Ɏ��s���ׂ��^�X�N��I�Ԃ��߂ɌĂяo���D����Ă��̊�
- *  ���ł́C����܂ł̍ō��D��x�^�X�N�͖�������D
+ *  レディキュー中で最も優先順位の高いタスクをサーチし，それをレディ
+ *  キューから外して，最高優先順位タスク（schedtsk）とする．実際には，
+ *  レディキュー中の最高優先度が nextpri に設定されているためにサーチ
+ *  は必要なく，優先度 nextpri のレディキューの先頭のタスクを最高優先
+ *  順位タスクとする．レディキューのサーチは，そのタスクをレディキュー
+ *  から外した後に nextpri を更新するために必要となる．このサーチに，
+ *  ready_primap を用いる．
+ *  この関数は，それまで実行状態であったタスクが待ち状態か休止状態に移
+ *  行した時に，次に実行すべきタスクを選ぶために呼び出す．よってこの関
+ *  数では，それまでの最高優先度タスクは無視する．
  */
 extern void	search_schedtsk(void);
 
 /*
- *  �^�X�N�̃v���G���v�g
+ *  タスクのプリエンプト
  *
- *  ���^�X�N�����s�\��ԂɈڍs�����C�ō��D��x�^�X�N�����s��Ԃɂ���D
- *  ���̊֐�����߂�����ɁCdispatch ���Ăяo���đ��̃^�X�N�֐؂�ւ���
- *  ���Ƃ�z�肵�Ă���D
+ *  自タスクを実行可能状態に移行させ，最高優先度タスクを実行状態にする．
+ *  この関数から戻った後に，dispatch を呼び出して他のタスクへ切り替える
+ *  ことを想定している．
  */
 extern void	preempt(void);
 

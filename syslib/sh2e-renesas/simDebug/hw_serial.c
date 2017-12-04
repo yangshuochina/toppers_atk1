@@ -7,51 +7,51 @@
  *  Copyright (C) 2006 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006 by Hitachi Information & Control Solutions,Ltd., JAPAN
  * 
- *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
- *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
- *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
- *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
- *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
- *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
- *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
- *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
- *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
- *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
- *      �̖��ۏ؋K����f�ڂ��邱�ƁD
- *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
- *      �ƁD
- *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
- *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
- *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
- *        �񍐂��邱�ƁD
- *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
- *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
  * 
- *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
- *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
- *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
- *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
  * 
  */
 
 /*
- *	�T���v�������^�[�Q�b�g�ˑ��V�X�e���^�C�}���W���[���iSH2 HEW simDebug�p�j
+ *	サンプル向けターゲット依存システムタイマモジュール（SH2 HEW simDebug用）
  */
 
 /*
- *	�{���̓V���A����M���荞�݂ŏ������邪�AsimDebug �ł́A
- *	���荞�ݏ������ɃL�[���͂��|�[�����O����B
+ *	本来はシリアル受信割り込みで処理するが、simDebug では、
+ *	割り込み処理時にキー入力をポーリングする。
  */
 
 #include	"hw_serial.h"
 
 
 /*
- *  �V���A��IO���W���[������������
+ *  シリアルIOモジュール初期化処理
  *
- *  �����݋֎~��ԂŌďo�����ƁD
+ *  割込み禁止状態で呼出すこと．
  */
 void
 InitHwSerial( void )
@@ -61,10 +61,10 @@ InitHwSerial( void )
 
 
 /*
- *  �V���A��IO���W���[����~����
+ *  シリアルIOモジュール停止処理
  *
- *  �����݋֎~��ԂŌďo�����ƁD
- *  ��ʂŏo�͂��������Ă��邱�Ƃ�ۏႷ�邱�ƁD
+ *  割込み禁止状態で呼出すこと．
+ *  上位で出力が完了していることを保障すること．
  */
 void
 TermHwSerial( void )
@@ -73,10 +73,10 @@ TermHwSerial( void )
 
 
 /*
- *  �V���A��IO���W���[����M�G���[�����݃T�[�r�X���[�`��
+ *  シリアルIOモジュール受信エラー割込みサービスルーチン
  */
 #if defined( OMIT_ISR1_ENTRY )
-/* ISR1��������������͖{�֐��������݊֐��w�肷��	*/
+/* ISR1入り口未生成時は本関数を割込み関数指定する	*/
 #pragma interrupt	ErrHwSerialInt
 #endif	/* OMIT_ISR1_ENTRY */
 void ErrHwSerialInt( void );
@@ -86,21 +86,21 @@ void ErrHwSerialInt( void )
 
 
 /*
- *  �V���A��IO���W���[����M�����݃T�[�r�X���[�`��
+ *  シリアルIOモジュール受信割込みサービスルーチン
  */
 #if defined( OMIT_ISR1_ENTRY )
-/* ISR1��������������͖{�֐��������݊֐��w�肷��	*/
+/* ISR1入り口未生成時は本関数を割込み関数指定する	*/
 #pragma interrupt	RxHwSerialInt
 #endif	/* OMIT_ISR1_ENTRY	*/
 void RxHwSerialInt( void );
 void RxHwSerialInt( void )
 {
-	UINT8	rx_data;	/* �f�[�^��M�o�b�t�@	*/
+	UINT8	rx_data;	/* データ受信バッファ	*/
 
 	rx_data = charget();
 
 	/*
-	 *  �����M���̓R�[���o�b�N���s
+	 *  正常受信時はコールバック実行
 	 */
 	if( rx_data != 0 ){
 		RxSerialInt( rx_data );

@@ -7,37 +7,37 @@
  *  Copyright (C) 2006 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006 by Hitachi Information & Control Solutions,Ltd., JAPAN
  * 
- *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
- *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
- *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
- *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
- *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
- *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
- *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
- *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
- *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
- *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
- *      �̖��ۏ؋K����f�ڂ��邱�ƁD
- *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
- *      �ƁD
- *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
- *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
- *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
- *        �񍐂��邱�ƁD
- *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
- *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
  * 
- *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
- *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
- *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
- *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
  * 
  */
 
 /*
- *	�T���v�������^�[�Q�b�g�ˑ��V�X�e���^�C�}���W���[���iSH2 HEW simDebug�p�j
+ *	サンプル向けターゲット依存システムタイマモジュール（SH2 HEW simDebug用）
  */
 
 
@@ -45,34 +45,34 @@
 
 
 /*
- *  OIL��`�V���{���̊O���Q��
+ *  OIL定義シンボルの外部参照
  */
 DeclareCounter( SampleCnt );
 
 
 /*
- *	�����֐��v���g�^�C�v�錾
+ *	内部関数プロトタイプ宣言
  */
 ISR( CounterInt );
 ISR( HwCnt2Int );
 
 
 /*
- *  �A�v���P�[�V�������[�h�p
+ *  アプリケーションモード用
  */
 /*
- *  �A�v���P�[�V�������[�h����p�̏��擾����
+ *  アプリケーションモード決定用の情報取得処理
  *
- *  �V�X�e�����ƂɔC�ӂ̓��͎�@�ɂ��������邱�ƁD
- *  0,1,2�����ʂł��邱�ƁD3��2�Ɠ��������ɂȂ�D
+ *  システムごとに任意の入力手法により実装すること．
+ *  0,1,2が判別できること．3は2と同じ扱いになる．
  */
 UINT8
 GetAppModeInfo( void )
 {
 	/*
-	 *  �{���͂����ŃA�v���P�[�V�������[�h�̔�����s���ׂ������A
-	 *  �{�[�h��Ƀ��[�h���擾�ł���H/W����������Ă��Ȃ����߁A
-	 *  ���0��Ԃ��D
+	 *  本来はここでアプリケーションモードの判定を行うべきだが、
+	 *  ボード上にモードを取得できるH/Wが実装されていないため、
+	 *  常に0を返す．
 	 */
 	
 	return 0;
@@ -81,13 +81,13 @@ GetAppModeInfo( void )
 
 
 /*
- *  �T���v���J�E���^�\�[�X�p
+ *  サンプルカウンタソース用
  */
 
 /*
- *  SignalCounter���s�p�����ݏ���������
+ *  SignalCounter実行用割込み初期化処理
  *
- *  �^�C�}�̋N���͕ʊ֐��ōs���D
+ *  タイマの起動は別関数で行う．
  */
 void
 InitCounterInt( void )
@@ -95,7 +95,7 @@ InitCounterInt( void )
 }	/* InitCounterInt	*/
 
 /*
- *  SignalCounter���s�p�����ݒ�~����
+ *  SignalCounter実行用割込み停止処理
  */
 void
 TermCounterInt( void )
@@ -103,7 +103,7 @@ TermCounterInt( void )
 }	/* TermCounterInt	*/
 
 /*
- *  SignalCounter���s�p�����݋N������
+ *  SignalCounter実行用割込み起動処理
  */
 void
 ActCounterInt( void )
@@ -111,18 +111,18 @@ ActCounterInt( void )
 }	/* ActCounterInt	*/
 
 /*
- *  SignalCounter���s�p�����݃T�[�r�X���[�`��
+ *  SignalCounter実行用割込みサービスルーチン
  */
 ISR( CounterInt )
 {
 	StatusType ercd;
 
 	/*
-	 *  �J�E���^���Z�ʒm�������s
+	 *  カウンタ加算通知処理実行
 	 */
 	ercd = SignalCounter( SampleCnt );
 
-	/* �G���[���^�[���̏ꍇ�̓V���b�g�_�E��	*/
+	/* エラーリターンの場合はシャットダウン	*/
 	if( ercd != E_OK ){
 		ShutdownOS( ercd );
 	}
@@ -130,22 +130,22 @@ ISR( CounterInt )
 
 
 /*
- *  ISR1�EISR2�ғ��m�F�p
+ *  ISR1・ISR2稼動確認用
  */
 /*
- *  �n�[�h�E�F�A�J�E���^�o�b�t�@
+ *  ハードウェアカウンタバッファ
  */
 static UINT8	hw_cnt1;
 static UINT8	hw_cnt2;
 
 /*
- *  ISR1�EISR2�J�E���^����������
+ *  ISR1・ISR2カウンタ初期化処理
  */
 void
 InitHwCntInt( void )
 {
 	/*
-	 *  �n�[�h�E�F�A�J�E���^������
+	 *  ハードウェアカウンタ初期化
 	 */
 	hw_cnt1 = (UINT8)0;
 	hw_cnt2 = (UINT8)0;
@@ -153,7 +153,7 @@ InitHwCntInt( void )
 }	/* InitHwCntInt	*/
 
 /*
- *  ISR1�EISR2�J�E���^��~����
+ *  ISR1・ISR2カウンタ停止処理
  */
 void
 TermHwCntInt( void )
@@ -161,9 +161,9 @@ TermHwCntInt( void )
 }	/* TermHwCntInt	*/
 
 /*
- *  ISR1�EISR2�J�E���^�擾����
+ *  ISR1・ISR2カウンタ取得処理
  *
- *  hw_cnt1��hw_cnt2�̓����擾�͕ۏႵ�Ȃ��Ă悢�i�����݋֎~�͕s�v�j�D
+ *  hw_cnt1とhw_cnt2の同時取得は保障しなくてよい（割込み禁止は不要）．
  */
 void
 GetHwCnt( UINT8 *isr1_cnt, UINT8 *isr2_cnt )
@@ -173,10 +173,10 @@ GetHwCnt( UINT8 *isr1_cnt, UINT8 *isr2_cnt )
 }	/* GetHwCnt	*/
 
 /*
- *  ISR1�J�E���^���Z�p�����݃T�[�r�X���[�`��
+ *  ISR1カウンタ加算用割込みサービスルーチン
  */
 #if defined( OMIT_ISR1_ENTRY )
-/* ISR1��������������͖{�֐��������݊֐��w�肷��	*/
+/* ISR1入り口未生成時は本関数を割込み関数指定する	*/
 #pragma interrupt	HwCnt1Int
 #endif	/* OMIT_ISR1_ENTRY	*/
 void	HwCnt1Int( void );
@@ -187,7 +187,7 @@ HwCnt1Int( void )
 }	/* HwCnt1Int	*/
 
 /*
- *  ISR2�J�E���^���Z�p�����݃T�[�r�X���[�`��
+ *  ISR2カウンタ加算用割込みサービスルーチン
  */
 ISR( HwCnt2Int )
 {

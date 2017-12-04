@@ -11,39 +11,39 @@
 ;*  Copyright (C) 2006 by Hitachi,Ltd., Automotive Systems, JAPAN
 ;*  Copyright (C) 2006 by Hitachi Information & Control Solutions,Ltd., JAPAN
 ;* 
-;*  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
-;*  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
-;*  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
-;*  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
-;*  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
-;*  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
-;*      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
-;*      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
-;*  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
-;*      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
-;*      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
-;*      �̖��ۏ؋K����f�ڂ��邱�ƁD
-;*  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
-;*      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
-;*      �ƁD
-;*    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
-;*        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
-;*    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
-;*        �񍐂��邱�ƁD
-;*  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
-;*      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+;*  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+;*  によって公表されている GNU General Public License の Version 2 に記
+;*  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+;*  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+;*  利用と呼ぶ）することを無償で許諾する．
+;*  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+;*      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+;*      スコード中に含まれていること．
+;*  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+;*      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+;*      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+;*      の無保証規定を掲載すること．
+;*  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+;*      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+;*      と．
+;*    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+;*        作権表示，この利用条件および下記の無保証規定を掲載すること．
+;*    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+;*        報告すること．
+;*  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+;*      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
 ;* 
-;*  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
-;*  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
-;*  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
-;*  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+;*  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+;*  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+;*  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+;*  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
 ;* 
 ;*
  
  	.INCLUDE "cpu_config.inc"
 	.INCLUDE "sys_defs.inc"
 
-;	�O���Q�Ɛ錾
+;	外部参照宣言
 	.IMPORT	_runtsk
 	.IMPORT	_schedtsk
 	.IMPORT	_tcxb_pc
@@ -61,52 +61,52 @@
 	.IMPORT	_int_ena_level
  .AIF \&ENABLE_COMMON_STACK EQ 1
 	.IMPORT _common_stack_top
- .AIF \&ENABLE_BCC_DEFINES EQ 1	;BCC �ł́ASG ���o�͂��Ȃ��V���{�����`����
+ .AIF \&ENABLE_BCC_DEFINES EQ 1	;BCC では、SG が出力しないシンボルを定義する
 	.EXPORT _tnum_exttask
  .AELSE
 	.IMPORT _tnum_exttask
  .AENDI
  .AENDI
-;	�O�����J�錾
+;	外部公開宣言
 	.EXPORT	_dispatch
 	.EXPORT	_start_dispatch
 	.EXPORT	_exit_and_dispatch
 	.EXPORT	_activate_r
 	.EXPORT	_interrupt
- .AIF \&ENABLE_BCC_DEFINES EQ 1	;BCC �ł́ASG ���o�͂��Ȃ��V���{�����`����
+ .AIF \&ENABLE_BCC_DEFINES EQ 1	;BCC では、SG が出力しないシンボルを定義する
 	.EXPORT _tcb_curevt
 	.EXPORT _tcb_waievt
  .AENDI
 	.SECTION    P,CODE,ALIGN=4 
 
-;	TOPPERS Automotive �J�[�l���ł́A�����݊Ǘ��͈ȉ��̂Q���g�p����B
-;		IFLG: �����݋��t���O
-;		IPL: �����݃}�X�N���x���B
-;	SH2 �}�C�R���́AIPL �ɑ������郌�W�X�^�̂ݎ����Ă��邽�߁A
-;	�\�t�g�ŁAIFLG ��₤�B
-;		IFLG �� int_ena_flag
-;			�����݋����́Aint_ena_flag = 1
-;			���֒��́Aint_ena_flag = 0
-;		IPL  �� SR ���W�X�^�����݃}�X�N�r�b�g
-;			�������A���֒��́Aint_ena_level �� IPL ��ޔ�����B
+;	TOPPERS Automotive カーネルでは、割込み管理は以下の２つを使用する。
+;		IFLG: 割込み許可フラグ
+;		IPL: 割込みマスクレベル。
+;	SH2 マイコンは、IPL に相当するレジスタのみ持っているため、
+;	ソフトで、IFLG を補う。
+;		IFLG → int_ena_flag
+;			割込み許可中は、int_ena_flag = 1
+;			割禁中は、int_ena_flag = 0
+;		IPL  → SR レジスタ割込みマスクビット
+;			ただし、割禁中は、int_ena_level に IPL を退避する。
 ;
-;	�^�X�N�f�B�X�p�b�`���́Alock_cpu() �ɂ�郍�b�N���(IFLG=0, IPL=0�j�ł���A
-;	�f�B�X�p�b�`����̕��A��ɁAunlock_cpu()�Ń��b�N�������邱�Ƃɗ��ӂ��ĈڐA����B
+;	タスクディスパッチ中は、lock_cpu() によるロック状態(IFLG=0, IPL=0）であり、
+;	ディスパッチからの復帰後に、unlock_cpu()でロック解除することに留意して移植する。
 ;	
 
 
 ;
-;	�^�X�N�f�B�X�p�b�`��
+;	タスクディスパッチャ
 ;
-;	�Ăяo������:
-;		�����݁FIPL=0, IFLG=0 (CPU���b�N���)
-;			��  SR=0xf0, int_ena_flag = 0, int_ena_level = 0
-;		�R���e�L�X�g�Fcallevel=1(�^�X�N�R���e�L�X�g)
-;		�X�^�b�N�F �^�X�N�X�^�b�N
+;	呼び出し条件:
+;		割込み：IPL=0, IFLG=0 (CPUロック状態)
+;			→  SR=0xf0, int_ena_flag = 0, int_ena_level = 0
+;		コンテキスト：callevel=1(タスクコンテキスト)
+;		スタック： タスクスタック
 ;
 
 _dispatch:
-;	�X�^�b�N�փ��W�X�^�ۑ�
+;	スタックへレジスタ保存
 	mov.l	 r8 , @-r15
 	mov.l	 r9 , @-r15
 	mov.l	r10 , @-r15
@@ -115,9 +115,9 @@ _dispatch:
 	mov.l	r13 , @-r15
 	mov.l	r14 , @-r15
 	sts.l	pr , @-r15
-	sts.l	macl , @-r15		; HEW �̃f�t�H���g�ł� MACH,MACL,GBR�� callee �ۑ�
-	sts.l	mach , @-r15		; �^�X�N�� Waiting �ɂȂ�����ɓ����^�X�N�� MACH,MACL��
-	stc.l	gbr , @-r15			; �j�󂷂�\�������邽�߁A�ۑ�����B(���P)
+	sts.l	macl , @-r15		; HEW のデフォルトでは MACH,MACL,GBRは callee 保存
+	sts.l	mach , @-r15		; タスクが Waiting になった後に動くタスクが MACH,MACLを
+	stc.l	gbr , @-r15			; 破壊する可能性があるため、保存する。(※１)
  .AIF \&ENABLE_COMMON_STACK EQ 1
 	mov.l	runtsk_adr , r0
  	mov.l	tnum_exttask_adr, r8
@@ -126,33 +126,33 @@ _dispatch:
 	extu.b	r0 , r0
 	extu.b	r8 , r8
 	cmp/gt	r0, r8				; test if runtsk < tnum_exttask 
-	bt/s	L001				; �g���^�X�N�Ȃ�W�����v
-	shll2	r0					; �x������X���b�g�@��Ɏ��s����
+	bt/s	L001				; 拡張タスクならジャンプ
+	shll2	r0					; 遅延分岐スロット　常に実行する
 	mov.l	common_stack_top_adr , r10
-	mov.l	dispatch_r_adr , r3	; ���s�ĊJ�Ԓn��TCB�ɕۑ�
+	mov.l	dispatch_r_adr , r3	; 実行再開番地をTCBに保存
 	mov.l	tcxb_pc_adr , r2	
-	mov.l	r15 , @(r10)		; �X�^�b�N�|�C���^�����ʃX�^�b�N�ɕۑ�
-	bra		dispatcher			; dispatcher��
-	mov.l	r3 , @(r0 , r2)		; �x���X���b�g
+	mov.l	r15 , @(r10)		; スタックポインタを共通スタックに保存
+	bra		dispatcher			; dispatcherへ
+	mov.l	r3 , @(r0 , r2)		; 遅延スロット
 	
-L001:							; �g���^�X�N
+L001:							; 拡張タスク
 	mov.l	tcxb_sp_adr , r2
 	mov.l	dispatch_r_adr , r3
-	mov.l	r15 , @(r0 , r2)	; �X�^�b�N�|�C���^��TCB�ɕۑ�
-	mov.l	tcxb_pc_adr , r2	; ���s�ĊJ�Ԓn��TCB�ɕۑ�
-	bra		dispatcher			; dispatcher��
-	mov.l	r3 , @(r0 , r2)		; �x���X���b�g
+	mov.l	r15 , @(r0 , r2)	; スタックポインタをTCBに保存
+	mov.l	tcxb_pc_adr , r2	; 実行再開番地をTCBに保存
+	bra		dispatcher			; dispatcherへ
+	mov.l	r3 , @(r0 , r2)		; 遅延スロット
  .AELSE	; ENABLE_COMMON_STACK
 	mov.l	runtsk_adr , r1
 	mov.b	@r1 , r0
 	extu.b	r0 , r0
 	shll2	r0
 	mov.l	tcxb_sp_adr , r2
-	mov.l	r15 , @(r0 , r2)	; �X�^�b�N�|�C���^��TCB�ɕۑ�
+	mov.l	r15 , @(r0 , r2)	; スタックポインタをTCBに保存
 	mov.l	dispatch_r_adr , r3
-	mov.l	tcxb_pc_adr , r2	; ���s�ĊJ�Ԓn��TCB�ɕۑ�
-	mov.l	r3 , @(r0 , r2)		; �x���X���b�g
-	bra		dispatcher			; dispatcher��
+	mov.l	tcxb_pc_adr , r2	; 実行再開番地をTCBに保存
+	mov.l	r3 , @(r0 , r2)		; 遅延スロット
+	bra		dispatcher			; dispatcherへ
 	nop
  .AENDI ; ENABLE_COMMON_STACK
 	
@@ -160,21 +160,21 @@ L001:							; �g���^�X�N
 dispatch_r_adr:
 	.DATA.L	dispatch_r
 
-; (���P) WaitEvent()���Ń^�X�N���҂��ɓ���D��x�̒Ⴂ�^�X�N�� MACH,MACL �𑀍삷��B
-;�@���̊Ԃ� ISR2 �̏����ŁASetEvent() �����s�����ꍇ�A�^�X�N�f�B�X�p�b�`���� MACH,MACL��
-;�@�v���G���v�V�������ꂽ�^�X�N�̒l�ƂȂ�B
+; (※１) WaitEvent()等でタスクが待ちに入り優先度の低いタスクが MACH,MACL を操作する。
+;　この間に ISR2 の処理で、SetEvent() 等を行った場合、タスクディスパッチ時の MACH,MACLは
+;　プリエンプションされたタスクの値となる。
 
 ;
-;	�Ăяo������:
-;	 	�����݁FIPL=0, IFLG=0 (CPU���b�N���)
-;			��  SR=0xf0, int_ena_flag = 0, int_ena_level = 0
-;		�R���e�L�X�g�Fcallevel=1(�^�X�N�R���e�L�X�g)
-;		�X�^�b�N�F �^�X�N�X�^�b�N
+;	呼び出し条件:
+;	 	割込み：IPL=0, IFLG=0 (CPUロック状態)
+;			→  SR=0xf0, int_ena_flag = 0, int_ena_level = 0
+;		コンテキスト：callevel=1(タスクコンテキスト)
+;		スタック： タスクスタック
 ;
 
 	.align	2
 dispatch_r:
-;	�^�X�N�X�^�b�N���烌�W�X�^���A
+;	タスクスタックからレジスタ復帰
 	ldc.l	@r15+ , gbr
 	lds.l	@r15+ , mach
 	lds.l	@r15+ , macl
@@ -185,70 +185,70 @@ dispatch_r:
 	mov.l	@r15+ , r11
 	mov.l	@r15+ , r10
 	mov.l	@r15+ ,  r9
-	mov.l	@r15+ ,  r8		; �x���X���b�g
-	rts						; dispatch �Ăяo�����֖߂�.
+	mov.l	@r15+ ,  r8		; 遅延スロット
+	rts						; dispatch 呼び出し元へ戻る.
 	nop
 
 
 ;
-;	�^�X�N�N��������
-;	�����ł�, CPU���b�N������Ԃɂ�, �^�X�N���N������.
-;		�iSR=0�Aint_ena_flag = 1 �Ƃ���j
+;	タスク起動時処理
+;	ここでは, CPUロック解除状態にし, タスクを起動する.
+;		（SR=0、int_ena_flag = 1 とする）
 ;
-;	�ďo����:
-;		�����݁FIFLG=0 (CPU���b�N���), �^�X�N�X�^�b�N
-;			��  SR=0xf0, int_ena_flag = 0, int_ena_level = 0
-;			  �idispatcher �������ŁAint_ena_level =0 �ɐݒ肵�Ă������Ɓj
-;		�R���e�L�X�g�Fcallevel=1(�^�X�N�R���e�L�X�g)
-;		�X�^�b�N�F �^�X�N�X�^�b�N
+;	呼出条件:
+;		割込み：IFLG=0 (CPUロック状態), タスクスタック
+;			→  SR=0xf0, int_ena_flag = 0, int_ena_level = 0
+;			  （dispatcher 処理内で、int_ena_level =0 に設定しておくこと）
+;		コンテキスト：callevel=1(タスクコンテキスト)
+;		スタック： タスクスタック
 
 	.align	2
 _activate_r:
  .AIF \&ENABLE_COMMON_STACK EQ 1
-	mov.l	runtsk_adr	,r0			; ���s�J�n�^�X�NID 
+	mov.l	runtsk_adr	,r0			; 実行開始タスクID 
  	mov.l	tnum_exttask_adr, r5
 	mov.b	@r0 , r0
 	mov.b	@r5 , r5
 	extu.b	r0 , r0
-	mov.l	tinib_exepri_adr , r6	; �����D��x�̓ǂݍ��� 
-	mov.l	tcb_curpri_adr , r7		; ���ݗD��x�ɐݒ� 
+	mov.l	tinib_exepri_adr , r6	; 初期優先度の読み込み 
+	mov.l	tcb_curpri_adr , r7		; 現在優先度に設定 
 	mov.b	@(r0 , r6) , r6
 	extu.b	r5 , r5
 	mov.b	r6 , @(r0 , r7)
 	cmp/gt	r0, r5				; test if runtsk < tnum_exttask
-	bt/s	L101				; �g���^�X�N�Ȃ�W�����v
-	shll2	r0					; �x������X���b�g�@��Ɏ��s����
-	mov.l	tcxb_sp_adr , r2	; TCB �� SP �̈�
-	mov.l	r15 , @(r0 , r2)	; �X�^�b�N�|�C���^(�����l)��TCB�ɕۑ�
+	bt/s	L101				; 拡張タスクならジャンプ
+	shll2	r0					; 遅延分岐スロット　常に実行する
+	mov.l	tcxb_sp_adr , r2	; TCB 内 SP 領域
+	mov.l	r15 , @(r0 , r2)	; スタックポインタ(初期値)をTCBに保存
 	
-L101:							; ���ʕ�
- 	mov.l	int_ena_flag_adr, r4	; CPU���b�N����
-	mov.l	tinib_task_adr , r1		; �^�X�N�G���g���|�C���g
+L101:							; 共通部
+ 	mov.l	int_ena_flag_adr, r4	; CPUロック解除
+	mov.l	tinib_task_adr , r1		; タスクエントリポイント
 	mov		#1 , r3
  	mov.l	r3, @r4
 	mov.l	@(r0 , r1) , r2
 	mov		#0 , r3
 	jmp		@r2
-	ldc		r3 , sr					; �x���X���b�g�A���荞�݋��� 
+	ldc		r3 , sr					; 遅延スロット、割り込み許可 
  .AELSE	; ENABLE_COMMON_STACK
-	mov.l	runtsk_adr	,r2			; ���s�J�n�^�X�NID 
+	mov.l	runtsk_adr	,r2			; 実行開始タスクID 
 	mov.b	@r2 , r0
 	extu.b	r0 , r0
-	mov.l	tinib_exepri_adr , r2	; �����D��x�̓ǂݍ��� 
+	mov.l	tinib_exepri_adr , r2	; 初期優先度の読み込み 
 	mov.b	@(r0 , r2) , r1
 	extu.b	r1 , r1
-	mov.l	tcb_curpri_adr , r3		; ���ݗD��x�ɐݒ� 
+	mov.l	tcb_curpri_adr , r3		; 現在優先度に設定 
 	mov.b	r1 , @(r0 , r3)
 	
 	mov		#1 , r3
- 	mov.l	int_ena_flag_adr, r1	; CPU���b�N����
+ 	mov.l	int_ena_flag_adr, r1	; CPUロック解除
  	mov.l	r3, @r1
 	mov		#0 , r3
 	shll2	r0
 	mov.l	tinib_task_adr , r1
 	mov.l	@(r0 , r1) , r2
 	jmp		@r2
-	ldc		r3 , sr					; �x���X���b�g�A���荞�݋��� 
+	ldc		r3 , sr					; 遅延スロット、割り込み許可 
  .AENDI ; ENABLE_COMMON_STACK
 
 	.align	4
@@ -260,25 +260,25 @@ tinib_task_adr:
 	.DATA.L	_tinib_task
 
 ;
-;	dispatcher�Ăяo������:
-;		�E���ׂẴ^�X�N�̃R���e�L�X�g�͕ۑ�����Ă���.
-;		�EIFLG=0 (CPU���b�N���),
-;		  �� SR=0xf0, int_ena_flag = 0, int_ena_level = 0
-;             �^�X�N���s���� IPL=0 �ł��邽�߁Aint_ena_level = 0 �ɂ��Ă����A
-;             ���^�[����� unlock_cpu() �����s�����Ƃ��ASR=0 �ɂȂ�悤�ɂ���B
-;			 �������A�����ݏ������ dispatcher �ɓ����Ă���ꍇ�ɂ́AISR2����lock_cpu��
-;			 �㏑������Ă��邱�Ƃ����邽�߁A�����ݏ����o���ŁAintmask = 0 �ɂ��邱�ƁB
+;	dispatcher呼び出し条件:
+;		・すべてのタスクのコンテキストは保存されている.
+;		・IFLG=0 (CPUロック状態),
+;		  → SR=0xf0, int_ena_flag = 0, int_ena_level = 0
+;             タスク実行中は IPL=0 であるため、int_ena_level = 0 にしておき、
+;             リターン後に unlock_cpu() を実行したとき、SR=0 になるようにする。
+;			 ただし、割込み処理後に dispatcher に入ってくる場合には、ISR2中のlock_cpuで
+;			 上書きされていることがあるため、割込み処理出口で、intmask = 0 にすること。
 ;
-;		�E�R���e�L�X�g�̓J�[�l���N�����������^�X�N�R���e�L�X�g(callevel=1)
-;			callevel�̏����l��1�H
-;			�N�����͔�^�X�N�R���e�L�X�g(callevel != 1)��, ���̏ꍇ�ɂ��Ή�.
-;	dispatcher �ďo���̃X�^�b�N:
-;		__kernel_dispatch ���炫���ꍇ: �^�X�N�X�^�b�N
-;		exit_and_dispatch ���炫���ꍇ: 
-;			exit_task ���炫���ꍇ�̓^�X�N�X�^�b�N
-;			�J�[�l���N�����͊����݃X�^�b�N
-;		ret_int ���炫���ꍇ: �^�X�N�X�^�b�N
-;		dispatcher_1 �ł̊����ݑ҂����炫���ꍇ: �����݃X�^�b�N
+;		・コンテキストはカーネル起動時を除きタスクコンテキスト(callevel=1)
+;			callevelの初期値は1？
+;			起動時は非タスクコンテキスト(callevel != 1)で, その場合にも対応.
+;	dispatcher 呼出時のスタック:
+;		__kernel_dispatch からきた場合: タスクスタック
+;		exit_and_dispatch からきた場合: 
+;			exit_task からきた場合はタスクスタック
+;			カーネル起動時は割込みスタック
+;		ret_int からきた場合: タスクスタック
+;		dispatcher_1 での割込み待ちからきた場合: 割込みスタック
 ;
 
 	.align	2
@@ -291,16 +291,16 @@ _exit_and_dispatch:
 	extu.b	r0 , r0
 	extu.b	r1 , r1
 	cmp/gt	r0, r1				; test if runtsk < tnum_exttask
-	bt		dispatcher			; �g���^�X�N�̂Ƃ��́A�������Ȃ�
+	bt		dispatcher			; 拡張タスクのときは、何もしない
 	shll2	r0
 	mov.l	tcxb_sp_adr , r2
 	mov.l	common_stack_top_adr , r1	
-	mov.l	@(r0 , r2), r15		; �X�^�b�N�|�C���^�������l�ɕ���
-	mov.l	r15, @(r1)			; �X�^�b�N�g�b�v�ɕۑ�
+	mov.l	@(r0 , r2), r15		; スタックポインタを初期値に復元
+	mov.l	r15, @(r1)			; スタックトップに保存
  .AENDI	; ENABLE_COMMON_STACK
 
 dispatcher:
-; �|�X�g�^�X�N�t�b�N�̌Ăяo��
+; ポストタスクフックの呼び出し
 	mov.l	PostTaskHook_adr , r0
 	tst		r0 , r0
 	bt		_start_dispatch
@@ -309,7 +309,7 @@ dispatcher:
 	nop
 _start_dispatch:
  .AIF \&ENABLE_COMMON_STACK EQ 1
-	mov.l	schedtsk_adr, r0	; schedtsk �� runtsk ��
+	mov.l	schedtsk_adr, r0	; schedtsk を runtsk に
 	mov.l	runtsk_adr , r1
 	mov.b	@r0 , r2
  	mov.l	tnum_exttask_adr, r8
@@ -317,60 +317,60 @@ _start_dispatch:
 	mov.b	@r8 , r8
 	mov.l	INVALID_TASK_adr , r4
 	mov.b	r2 , @r1
-	cmp/eq	r4 , r2				; schedtsk �������Ȃ�΃A�C�h�����[�v�� 
+	cmp/eq	r4 , r2				; schedtsk が無効ならばアイドルループへ 
 	bt		pre_idle
 
 	extu.b	r8 , r8
 	cmp/gt	r2, r8				; test if runtsk < tnum_exttask
-	bt/s	L201				; �g���^�X�N�Ȃ�W�����v
-	shll2	r2					; �x���X���b�g
+	bt/s	L201				; 拡張タスクならジャンプ
+	shll2	r2					; 遅延スロット
 	mov.l	common_stack_top_adr , r9	
 	bra	L202
-	mov.l	@(r9) , r15			; �x���X���b�g/�^�X�N�X�^�b�N�|�C���^��ݒ�
+	mov.l	@(r9) , r15			; 遅延スロット/タスクスタックポインタを設定
 
-L201:							; �g���^�X�N
+L201:							; 拡張タスク
 	mov.l	tcxb_sp_adr , r0	
-	mov.l	@(r0 , r2) , r15	; �^�X�N�X�^�b�N�|�C���^�𕜋A 
+	mov.l	@(r0 , r2) , r15	; タスクスタックポインタを復帰 
 
 L202:
 	mov.l	tcxb_pc_adr , r0
 	mov.l	PreTaskHook_adr , r1
-	mov.l	@(r0 , r2) , r8		; r8 �� PreTaskHook ���ŕۑ������
+	mov.l	@(r0 , r2) , r8		; r8 は PreTaskHook 内で保存される
 	tst		r1 , r1
 	bf		L203
-	jmp		@(r8)				; �^�X�N�߂�Ԓn�փW�����v
+	jmp		@(r8)				; タスク戻り番地へジャンプ
 	nop
 L203:
 	mov.l	call_pretaskhook_adr , r1
 	jsr		@r1
 	nop
-	jmp		@r8				; �߂�Ԓn�� 
+	jmp		@r8				; 戻り番地へ 
 	nop
  .AELSE	; ENABLE_COMMON_STACK
-	mov.l	schedtsk_adr, r0	; schedtsk �� runtsk ��
+	mov.l	schedtsk_adr, r0	; schedtsk を runtsk に
 	mov.b	@r0 , r2
 	extu.b	r2 , r2
 	mov.l	runtsk_adr , r1
 	mov.b	r2 , @r1
 	
 	mov.l	INVALID_TASK_adr , r0
-	cmp/eq	r0 , r2				; schedtsk �������Ȃ�΃A�C�h�����[�v�� 
+	cmp/eq	r0 , r2				; schedtsk が無効ならばアイドルループへ 
 	bt		pre_idle
 	shll2	r2
 	mov.l	tcxb_sp_adr , r0	
-	mov.l	@(r0 , r2) , r15	; �^�X�N�X�^�b�N�|�C���^�𕜋A 
+	mov.l	@(r0 , r2) , r15	; タスクスタックポインタを復帰 
 	mov.l	tcxb_pc_adr , r0
 	mov.l	@(r0 , r2) , r3
 	mov.l	PreTaskHook_adr , r1
 	tst		r1 , r1
 	bt		PreTaskHook_r
 	mov.l	call_pretaskhook_adr , r1
-	mov.l	r3 , @-r15			; PreTaskHook�p�ɖ߂�PC���X�^�b�N�ޔ� 
+	mov.l	r3 , @-r15			; PreTaskHook用に戻りPCをスタック退避 
 	jsr		@r1
 	nop
-	mov.l	@r15+ , r3		; �߂�PC��߂� 
+	mov.l	@r15+ , r3		; 戻りPCを戻す 
 PreTaskHook_r:
-	jmp		@r3				; �߂�Ԓn�� 
+	jmp		@r3				; 戻り番地へ 
 	nop
  .AENDI	; ENABLE_COMMON_STACK
 
@@ -385,61 +385,61 @@ call_posttaskhook_adr:
 	.DATA.L	_call_posttaskhook
 
 ;
-;	��������� schedtsk ���Ȃ��ꍇ
+;	ここからは schedtsk がない場合
 ;
 	.align	2
 pre_idle:
 ;
-;	�����Ŕ�^�X�N�R���e�L�X�g,�����݃X�^�b�N�ɐ؂芷�����̂�,
-;	�����Ŕ������銄���ݏ����ɂǂ̃X�^�b�N���g�����Ƃ������̉�����,
-;	�����݃n���h�����ł̃f�B�X�p�b�`�h�~�Ƃ���2�̈Ӗ�������D
+;	ここで非タスクコンテキスト,割込みスタックに切り換えたのは,
+;	ここで発生する割込み処理にどのスタックを使うかという問題の解決と,
+;	割込みハンドラ内でのディスパッチ防止という2つの意味がある．
 ;
-	mov.l	STACK_TOP_adr, r15		; �����ݗp�̃X�^�b�N�֐ؑւ� 
+	mov.l	STACK_TOP_adr, r15		; 割込み用のスタックへ切替え 
 	mov.l	callevel_adr , r0
 	mov		#TCL_ISR2 , r1
-	mov.b	r1 , @r0			; ��^�X�N�R���e�L�X�g 
-; �A�C�h�����[�v�̏���
+	mov.b	r1 , @r0			; 非タスクコンテキスト 
+; アイドルループの準備
 	mov		#1 , r2
-	mov.l	int_ena_flag_adr , r8	; CPU���b�N��������
+	mov.l	int_ena_flag_adr , r8	; CPUロック解除する
 	mov.l	r2 , @r8			
 	mov		#0 , r2
 	mov.l	MAX_IPM_adr , r3
 	mov.l	schedtsk_adr , r5
 	mov.l	INVALID_TASK_adr , r4
 idle_loop:
-	ldc		r2 , sr				; ���荞�ݑ҂� 
+	ldc		r2 , sr				; 割り込み待ち 
 	nop
-	ldc		r3 , sr				; ���荞�݋֎~ 
-	mov.b	@r5 , r1			; schedtsk��ǂݏo�� 
+	ldc		r3 , sr				; 割り込み禁止 
+	mov.b	@r5 , r1			; schedtskを読み出し 
 	extu.b	r1 , r1
-	cmp/eq	r4 , r1				; �X�P�W���[�����ׂ��^�X�N�����邩�H 
-	bt		idle_loop			; �ĂуA�C�h�����[�v 
+	cmp/eq	r4 , r1				; スケジュールすべきタスクがあるか？ 
+	bt		idle_loop			; 再びアイドルループ 
 	
-	mov.l	r2 , @r8			; CPU���b�N����
- 	mov.l	int_ena_level_adr, r4		; �����ݏ������� int_ena_level ���ω������\��������̂łO�ɂ��� 
- 	mov.l	r2, @r4				;  (���̂Ƃ� r2=0)
+	mov.l	r2 , @r8			; CPUロックする
+ 	mov.l	int_ena_level_adr, r4		; 割込み処理中に int_ena_level が変化した可能性があるので０にする 
+ 	mov.l	r2, @r4				;  (このとき r2=0)
 	mov		#TCL_TASK , r3
-	mov.b	r3 , @r0			; callevel�� TASK���x���ɖ߂� 
-	bra		_start_dispatch		; �f�B�X�p�b�`���� 
+	mov.b	r3 , @r0			; callevelを TASKレベルに戻す 
+	bra		_start_dispatch		; ディスパッチャへ 
 	nop
 	
 	
 ;
-;  �����݃n���h���o������(�f�B�X�p�b�`�v������)
-;  �^�X�N���s���Ɋ��荞�݂�����������̃f�B�X�p�b�`�ł��邩��A
-;  �܂��A�c��̃��W�X�^��ۑ�����B
-;  �^�X�N�f�B�X�p�b�`�̍ۂ́ACPU���b�N��Ԃɂ��邱�ƁB(int_ena_flag=0, int_ena_level=0)
-;  �Ȃ��AISR2 �� lock_cpu() �� int_ena_level ���O�ȊO�ɂȂ��Ă��邽�߁Aint_ena_level=0 �ɂ���B
+;  割込みハンドラ出口処理(ディスパッチ要求あり)
+;  タスク実行中に割り込みが発生した後のディスパッチであるから、
+;  まず、残りのレジスタを保存する。
+;  タスクディスパッチの際は、CPUロック状態にすること。(int_ena_flag=0, int_ena_level=0)
+;  なお、ISR2 の lock_cpu() で int_ena_level が０以外になっているため、int_ena_level=0 にする。
 ;
-;	�ďo������:
-;	�EIFLG=0, IPL=0, �^�X�N�R���e�L�X�g(callevel=1)
-;	  ��SR=0xf0, int_ena_flag = 1, int_ena_level = �s��, �^�X�N�R���e�L�X�g(callevel=1)
-;	�E�g�p�X�^�b�N�̓^�X�N�X�^�b�N
-;	�E�^�X�N�R���e�L�X�g��r0-r7,mach,machl,gbr,pr���X�^�b�N�ɐς܂ꂽ���
+;	呼出し条件:
+;	・IFLG=0, IPL=0, タスクコンテキスト(callevel=1)
+;	  →SR=0xf0, int_ena_flag = 1, int_ena_level = 不明, タスクコンテキスト(callevel=1)
+;	・使用スタックはタスクスタック
+;	・タスクコンテキストはr0-r7,mach,machl,gbr,prがスタックに積まれた状態
 ;
 	.align	2
 ret_int:
-	; �c��̃��W�X�^��ۑ� 
+	; 残りのレジスタを保存 
 	mov.l	r8 , @-r15
 	mov.l	r9 , @-r15
 	mov.l	r10 , @-r15
@@ -448,41 +448,41 @@ ret_int:
 	mov.l	r13 , @-r15
 	mov.l	r14 , @-r15
  .AIF \&ENABLE_COMMON_STACK EQ 1
-	mov.l	#0, r8					; dispatch ���Ȃ̂ŁACPU���b�N��Ԃɂ���
+	mov.l	#0, r8					; dispatch 中なので、CPUロック状態にする
  	mov.l	int_ena_flag_adr, r9
- 	mov.l	int_ena_level_adr, r10		; dispatch ���́Aint_ena_level=0
+ 	mov.l	int_ena_level_adr, r10		; dispatch 中は、int_ena_level=0
  	mov.l	tnum_exttask_adr, r11		;
  	mov.l	r8, @r9
  	mov.b	@r11, r11
  	mov.l	r8, @r10
  	extu.b	r11, r11
-	cmp/gt	r0, r11				; test if runtsk < tnum_exttask (runtsk��r0�ɓ����Ă���j
-	bt/s	L301				; �g���^�X�N�Ȃ�W�����v
-	shll2	r0					; �x������X���b�g�@��Ɏ��s����
+	cmp/gt	r0, r11				; test if runtsk < tnum_exttask (runtskはr0に入っている）
+	bt/s	L301				; 拡張タスクならジャンプ
+	shll2	r0					; 遅延分岐スロット　常に実行する
 	mov.l	common_stack_top_adr , r10
 	bra		L302
-	mov.l	r15 , @(r10)		; �x���X���b�g / �X�^�b�N�|�C���^��ۑ� 
-L301:							; �g���^�X�N
+	mov.l	r15 , @(r10)		; 遅延スロット / スタックポインタを保存 
+L301:							; 拡張タスク
 	mov.l	tcxb_sp_adr , r1
-	mov.l	r15 , @(r0 , r1)		; �X�^�b�N�|�C���^��ۑ� 
+	mov.l	r15 , @(r0 , r1)		; スタックポインタを保存 
 L302:
 	mov.l	tcxb_pc_adr , r1
-	mov.l	ret_int_r_adr , r2		; �߂�Ԓn��ret_int_r�ɐݒ� 
-	bra		dispatcher				; �f�B�X�p�b�`���� 
-	mov.l	r2 , @(r0 , r1)			; �x���X���b�g / �߂�Ԓn��ۑ� 
+	mov.l	ret_int_r_adr , r2		; 戻り番地をret_int_rに設定 
+	bra		dispatcher				; ディスパッチャへ 
+	mov.l	r2 , @(r0 , r1)			; 遅延スロット / 戻り番地を保存 
  .AELSE ; ENABLE_COMMON_STACK
-	mov.l	#0, r8					; dispatch ���Ȃ̂ŁACPU���b�N��Ԃɂ���
+	mov.l	#0, r8					; dispatch 中なので、CPUロック状態にする
  	mov.l	int_ena_flag_adr, r9
  	mov.l	r8, @r9
- 	mov.l	int_ena_level_adr, r9			; dispatch ���́Aint_ena_level=0
+ 	mov.l	int_ena_level_adr, r9			; dispatch 中は、int_ena_level=0
  	mov.l	r8, @r9
-	shll2	r0						; runtsk��r0�ɓ����Ă��� 
+	shll2	r0						; runtskはr0に入っている 
 	mov.l	tcxb_sp_adr , r1
-	mov.l	r15 , @(r0 , r1)		; �X�^�b�N�|�C���^��ۑ� 
+	mov.l	r15 , @(r0 , r1)		; スタックポインタを保存 
 	mov.l	tcxb_pc_adr , r1
-	mov.l	ret_int_r_adr , r2		; �߂�Ԓn��ret_int_r�ɐݒ� 
-	mov.l	r2 , @(r0 , r1)			; �X�^�b�N�|�C���^��ۑ� 
-	bra		dispatcher				; �f�B�X�p�b�`���� 
+	mov.l	ret_int_r_adr , r2		; 戻り番地をret_int_rに設定 
+	mov.l	r2 , @(r0 , r1)			; スタックポインタを保存 
+	bra		dispatcher				; ディスパッチャへ 
 	nop
  .AENDI ; ENABLE_COMMON_STACK
 
@@ -491,26 +491,26 @@ ret_int_r_adr:
 	.DATA.L	ret_int_r
 
 ;
-;  ���荞�݂Ńv���G���v�V�������ꂽ�^�X�N�ւ̊����ݏo������
+;  割り込みでプリエンプションされたタスクへの割込み出口処理
 ;
-;	�Ăяo������:
-;		�����݁FIFLG=0 (CPU���b�N���), �^�X�N�X�^�b�N
-;			��  SR=0xf0, int_ena_flag = 0, int_ena_level = 0
-;			  �idispatcher �������ŁAint_ena_level =0 �ɐݒ肵�Ă������Ɓj
-;		�R���e�L�X�g�Fcallevel=1(�^�X�N�R���e�L�X�g)
-;		�X�^�b�N�F �^�X�N�X�^�b�N
-;	�X�^�b�N�ɂ�r14-r8,gbr,mach,machl,pr,r7-r0�̏��Őς܂�Ă���
+;	呼び出し条件:
+;		割込み：IFLG=0 (CPUロック状態), タスクスタック
+;			→  SR=0xf0, int_ena_flag = 0, int_ena_level = 0
+;			  （dispatcher 処理内で、int_ena_level =0 に設定しておくこと）
+;		コンテキスト：callevel=1(タスクコンテキスト)
+;		スタック： タスクスタック
+;	スタックにはr14-r8,gbr,mach,machl,pr,r7-r0の順で積まれている
 ;
-;		�ʏ�̃f�B�X�p�b�`�ł͖������߁A�����ݕ��A���ɁA�ʏ�̃^�X�N���s���
-;		�ł��� �����݋���Ԃɖ߂��B
-;		RTE���߂ł́A�����ݎ��� SR �������A���Ȃ����߁Aint_ena_flag = 1 �ɐݒ肷��B
+;		通常のディスパッチでは無いため、割込み復帰時に、通常のタスク実行状態
+;		である 割込み許可状態に戻す。
+;		RTE命令では、割込み時の SR しか復帰しないため、int_ena_flag = 1 に設定する。
 ;
 	.align	2
 ret_int_r:
-	mov.l	#1, r8					; �v���G���v�V�������ꂽ�^�X�N�ւ̕��A
- 	mov.l	int_ena_flag_adr, r9	; CPU���b�N��Ԃ�����
+	mov.l	#1, r8					; プリエンプションされたタスクへの復帰
+ 	mov.l	int_ena_flag_adr, r9	; CPUロック状態を解除
  	mov.l	r8, @r9
-	mov.l	@r15+ , r14				; ���W�X�^�𕜋A
+	mov.l	@r15+ , r14				; レジスタを復帰
 	mov.l	@r15+ , r13
 	mov.l	@r15+ , r12
 	mov.l	@r15+ , r11
@@ -528,8 +528,8 @@ ret_int_r:
 	mov.l	@r15+ , r3
 	mov.l	@r15+ , r2
 	mov.l	@r15+ , r1
-	mov.l	@r15+ , r0		; �x���X���b�g 
-	rte						; ���荞�݌��֕��A 
+	mov.l	@r15+ , r0		; 遅延スロット 
+	rte						; 割り込み元へ復帰 
 	nop
 	.align	4
 int_ena_flag_adr:
@@ -538,23 +538,23 @@ int_ena_level_adr:
 	.DATA.L	_int_ena_level
 
 ;
-;	�����ݏo��������(�A�Z���u������L�q����)
+;	割込み出入口処理(アセンブリ言語記述部分)
 ;
-;	�ďo������:
-;	�EFLG���W�X�^��I�r�b�g=0, IPL�͎�t���������݂�IPL.
-;	��SR = 0xf0 �Aint_ena_flag = 0 �ɃZ�b�g���Ă���A�Ăяo�����ׂ��ł���B
-;     �܂��AISR2 �{�̂ɐ�����ڂ��ہAint_ena_flag = 1 �ɍăZ�b�g���ׂ��ł���B
-;	  �������A���� SR=0xf0 �ł��芄�荞�܂�邱�Ƃ͖������߁Aint_ena_flag �ݒ�͏ȗ�����B
+;	呼出し条件:
+;	・FLGレジスタのIビット=0, IPLは受付けた割込みのIPL.
+;	→SR = 0xf0 、int_ena_flag = 0 にセットしてから、呼び出されるべきである。
+;     また、ISR2 本体に制御を移す際、int_ena_flag = 1 に再セットすべきである。
+;	  しかし、既に SR=0xf0 であり割り込まれることは無いため、int_ena_flag 設定は省略する。
 ;
-;	�E�X�^�b�N�͑��d���荞�݂Ȃ犄���݃X�^�b�N, �����łȂ����
-;	  �^�X�N�X�^�b�N
-;	�Er0 �ɂ͊����݃n���h���̃A�h���X���i�[����Ă���.
-;	�Er1 �ɂ͑O��̎��s��������ID���i�[����Ă���D
-;	�Er2 �ɂ͊��荞�ݎ�t����SR���W�X�^�̒l���i�[����Ă���
+;	・スタックは多重割り込みなら割込みスタック, そうでなければ
+;	  タスクスタック
+;	・r0 には割込みハンドラのアドレスが格納されている.
+;	・r1 には前回の実行中割込みIDが格納されている．
+;	・r2 には割り込み受付時のSRレジスタの値が格納されている
 ;
-;	���W�X�^���X�^�b�N��ɂǂ̂悤�ɕۑ�����Ă��邩���ȉ��Ɏ���.
-;	���̐}�ł͏オ���, �������ʂ̃A�h���X��, �X�^�b�N�͉�����
-;	������Ɍ������Đςݏグ������̂Ƃ���.
+;	レジスタがスタック上にどのように保存されているかを以下に示す.
+;	この図では上が低位, 下が高位のアドレスで, スタックは下から
+;	上方向に向かって積み上げられるものとする.
 ;
 ;	-------------------------
 ;	|       R3(4byte)        |
@@ -565,12 +565,12 @@ int_ena_level_adr:
 ;	--------------------------
 ;	|       R0(4byte)        |
 ;	--------------------------
-;	|       PC(4byte)        | <- ���荞�݂��畜�A����PC(H/W�ɂĕۑ�)
+;	|       PC(4byte)        | <- 割り込みから復帰するPC(H/Wにて保存)
 ;	--------------------------
-;	|       SR(4byte)        | <- ���荞�ݔ�������SR���W�X�^(H/W�ɂĕۑ�)
+;	|       SR(4byte)        | <- 割り込み発生時のSRレジスタ(H/Wにて保存)
 ;	--------------------------
 ;
-; ���荞�݋��ʕ��Ŏc��̃��W�X�^��ޔ�������̃X�^�b�N���ȉ��Ɏ����D
+; 割り込み共通部で残りのレジスタを退避した後のスタックを以下に示す．
 ;	-------------------------
 ;	|      GBR(4byte)        |
 ;	-------------------------
@@ -596,13 +596,13 @@ int_ena_level_adr:
 ;	--------------------------
 ;	|       R0(4byte)        |
 ;	--------------------------
-;	|       PC(4byte)        | <- ���荞�݂��畜�A����PC(H/W�ɂĕۑ�)
+;	|       PC(4byte)        | <- 割り込みから復帰するPC(H/Wにて保存)
 ;	--------------------------
-;	|       SR(4byte)        | <- ���荞�ݔ�������SR���W�X�^(H/W�ɂĕۑ�)
+;	|       SR(4byte)        | <- 割り込み発生時のSRレジスタ(H/Wにて保存)
 ;	--------------------------
 ;
-;	�x���f�B�X�p�b�`�v������ret_int�ɂăX�^�b�N�ɐς܂�郌�W�X�^��
-;	�ȉ��Ɏ����D
+;	遅延ディスパッチ要求時にret_intにてスタックに積まれるレジスタを
+;	以下に示す．
 ;
 ;	-------------------------
 ;	|      R14(4byte)        |
@@ -643,36 +643,36 @@ int_ena_level_adr:
 ;	--------------------------
 ;	|       R0(4byte)        |
 ;	--------------------------
-;	|       PC(4byte)        | <- ���荞�݂��畜�A����PC(H/W�ɂĕۑ�)
+;	|       PC(4byte)        | <- 割り込みから復帰するPC(H/Wにて保存)
 ;	--------------------------
-;	|       SR(4byte)        | <- ���荞�ݔ�������SR���W�X�^(H/W�ɂĕۑ�)
+;	|       SR(4byte)        | <- 割り込み発生時のSRレジスタ(H/Wにて保存)
 ;	--------------------------
 ;
-;	�n���h�����烊�^�[���������, ���d�����݂łȂ�, 
-;	�f�B�X�p�b�`�v�������鎞(schedtsk != runtsk)�ɁC
-;	ret_int �֕��򂷂�D
+;	ハンドラからリターンした後は, 多重割込みでなく, 
+;	ディスパッチ要求がある時(schedtsk != runtsk)に，
+;	ret_int へ分岐する．
 ;
-;	ret_int�֕��򂵂āA�^�X�N���f�B�X�p�b�`����ꍇIPL�̒l�������I��0�ɂ���.
-;	�f�B�X�p�b�`���IPL��0�ɂ����i���Ȃ����߂����ōs��.
-;	�{�����ɂ��Ĉȉ��O������ɂ����Ȃ��Ɣ��f����.
-;	�E�ʏ�^�X�N���쒆��IPL=0�ł���A������/�f�B�X�p�b�`���IPL=0�ł���.
-;	�E���\�[�X�擾�ɂ�����IPL!=0�̎��Ɋ����݂����������ꍇ,
-;	�@���s�\��Ԃ̊e�^�X�N�̃v���Z�b�V���O���x���̓^�X�N���x���ł���.
-;	�@�����ݔ������Ɏ��s���Ă����^�X�N�̃v���Z�b�V���O���x����
-;	�@�����݃��x��(IPL!=0)�̂��߃f�B�X�p�b�`�͋N����Ȃ�.
-;	�E�������f�B�X�p�b�`���N���鎞��IPL=0�Ƃ��Ė��Ȃ�.
+;	ret_intへ分岐して、タスクをディスパッチする場合IPLの値を強制的に0にする.
+;	ディスパッチ後にIPLを0にする手段がないためここで行う.
+;	本処理について以下前提条件により問題なしと判断する.
+;	・通常タスク動作中はIPL=0であり、割込み/ディスパッチ後もIPL=0である.
+;	・リソース取得においてIPL!=0の時に割込みが発生した場合,
+;	　実行可能状態の各タスクのプロセッシングレベルはタスクレベルである.
+;	　割込み発生時に実行していたタスクのプロセッシングレベルは
+;	　割込みレベル(IPL!=0)のためディスパッチは起こらない.
+;	・これらよりディスパッチが起こる時はIPL=0として問題ない.
 ;
-;   SH2 �̎����ł́A�f�B�X�p�b�`�� unlock_cpu() �̏����ɂāAint_ena_level �̒l�� SR ��
-;	�Z�b�g���Ă���B
-;   �܂�Aret_int �ł́Aint_ena_level = 0 �ɃZ�b�g����΂悢�B
+;   SH2 の実装では、ディスパッチ後 unlock_cpu() の処理にて、int_ena_level の値を SR に
+;	セットしている。
+;   つまり、ret_int では、int_ena_level = 0 にセットすればよい。
 ;
-;	���d�����݂��ǂ�����callevel�̒l�Ŕ��肷��.
-;	callevel != 1 �Ȃ�Α��d�����݂ł���Ɣ��肷��.
+;	多重割込みかどうかはcallevelの値で判定する.
+;	callevel != 1 ならば多重割込みであると判定する.
 ;
 ;
 	.align	2
 _interrupt:
-; �c��̃X�^�b�N��ޔ� 
+; 残りのスタックを退避 
 	mov.l	r4 , @-r15
 	mov.l	r5 , @-r15
 	mov.l	r6 , @-r15
@@ -681,7 +681,7 @@ _interrupt:
 	sts.l	macl , @-r15
 	sts.l	mach , @-r15
 	stc.l	gbr , @-r15
-	mov		#TCL_TASK , r4		; ���d���荞�݂����`�F�b�N 
+	mov		#TCL_TASK , r4		; 多重割り込みかをチェック 
 	mov.l	callevel_adr , r3
 	mov.b	@r3 , r5
 	cmp/eq	r4 , r5
@@ -695,58 +695,58 @@ int_from_task:
 	extu.b	r4, r4
 	extu.b	r6, r6
 	cmp/gt	r4, r6				; test if runtsk < tnum_exttask
-	bf		L501				; ��{�^�X�N�Ȃ�W�����v
+	bf		L501				; 基本タスクならジャンプ
 	mov.l	common_stack_top_adr , r4
 	bra		L502
-	mov.l	@r4, r4				; �x���X���b�g
-L501:							; ��{�^�X�N
+	mov.l	@r4, r4				; 遅延スロット
+L501:							; 基本タスク
 	mov.l	r15, r4
 L502:
 	mov.l	r15 , @-r4
 	mov		r4 , r15
-	mov		#TCL_ISR2 , r6		; ���s���x����ύX 
+	mov		#TCL_ISR2 , r6		; 実行レベルを変更 
 	mov.b	r6 , @r3
  .AELSE	; ENABLE_COMMON_STACK
-	mov.l	STACK_TOP_adr , r4		; �X�^�b�N��؂�ւ� 
+	mov.l	STACK_TOP_adr , r4		; スタックを切り替え 
 	mov.l	r15 , @-r4
 	mov		r4 , r15
-	mov		#TCL_ISR2 , r6		; ���s���x����ύX 
+	mov		#TCL_ISR2 , r6		; 実行レベルを変更 
 	mov.b	r6 , @r3
  .AENDI	; ENABLE_COMMON_STACK
 int_from_int:
-	mov.w	r1 , @-r15			; �O�̊��荞��ID���X�^�b�N�ɕۑ� 
-	mov.w	r5 , @-r15			; �O�̎��s���x�����X�^�b�N�ɕۑ� 
-								; �����Ń��[�h�ŕۑ����Ă���̂́A
-								; SP��4�o�C�g���E�ɕۂ��߂ł��� 
-	ldc		r2 , sr				; ���荞�݋��� (ISR2 �̊����݃��x���܂Ŗ߂�)
-	jsr		@r0					; ���荞�݃��[�`���Ăяo�� 
+	mov.w	r1 , @-r15			; 前の割り込みIDをスタックに保存 
+	mov.w	r5 , @-r15			; 前の実行レベルをスタックに保存 
+								; ここでワードで保存しているのは、
+								; SPを4バイト境界に保つためである 
+	ldc		r2 , sr				; 割り込み許可 (ISR2 の割込みレベルまで戻す)
+	jsr		@r0					; 割り込みルーチン呼び出し 
 	nop
-	mov.l	MAX_IPM_adr , r0	; ���荞�݋֎~ 
+	mov.l	MAX_IPM_adr , r0	; 割り込み禁止 
 	ldc		r0 , sr
-	mov.w	@r15+ , r0			; �O�̎��s���x���𕜋A 
+	mov.w	@r15+ , r0			; 前の実行レベルを復帰 
 	mov.l	callevel_adr , r1
 	mov.b	r0 , @r1
-	mov.w	@r15+ , r2			; �O�̊��荞��ID�𕜋A 
+	mov.w	@r15+ , r2			; 前の割り込みIDを復帰 
 	mov.l	runisr_adr , r1
 	mov.b	r2 , @r1
-	mov		#TCL_TASK , r1		; ���d���荞�݂��ǂ����H 
+	mov		#TCL_TASK , r1		; 多重割り込みかどうか？ 
 	cmp/eq	r0 , r1
 	bf		int_return
 	
-; ���i�̊��荞�݂��畜�A���鏈�� 
-	mov.l	@r15 , r15			; �^�X�N�X�^�b�N�ɖ߂� 
+; 初段の割り込みから復帰する処理 
+	mov.l	@r15 , r15			; タスクスタックに戻す 
 	mov.l	callevel_adr , r2
 	mov.b	r1 , @r2
 	
-; ���荞�ݓ�����Ŋ��荞�݂������ĂȂ������m�F 
+; 割り込み入り口で割り込みが入ってないかを確認 
 	mov		r15 , r0
-	mov.l	@(52, r0) , r0		; ���荞�ݑO��SR���W�X�^�����o�� 
-	mov.l	IPM_MASK_adr , r1	; �}�X�N���āAIPM�����o�� 
+	mov.l	@(52, r0) , r0		; 割り込み前のSRレジスタを取り出し 
+	mov.l	IPM_MASK_adr , r1	; マスクして、IPMを取り出し 
 	and		r1 , r0
-	tst		r0 , r0				; 0���ǂ����`�F�b�N 
-	bf		int_return			; 0�łȂ��ꍇ�͑��d���荞�� 
+	tst		r0 , r0				; 0かどうかチェック 
+	bf		int_return			; 0でない場合は多重割り込み 
 	
-	mov.l	runtsk_adr , r1		; �f�B�X�p�b�`�v�������邩�H 
+	mov.l	runtsk_adr , r1		; ディスパッチ要求があるか？ 
 	mov.b	@r1 , r0
 	extu.b	r0 , r0
 	mov.l	schedtsk_adr , r1
@@ -755,7 +755,7 @@ int_from_int:
 	cmp/eq	r0 , r2
 	bf		ret_int
 int_return:
-	ldc.l	@r15+ , gbr		; ���W�X�^�𕜋A 
+	ldc.l	@r15+ , gbr		; レジスタを復帰 
 	lds.l	@r15+ , mach
 	lds.l	@r15+ , macl
 	lds.l	@r15+ , pr
@@ -766,12 +766,12 @@ int_return:
 	mov.l	@r15+ , r3
 	mov.l	@r15+ , r2
 	mov.l	@r15+ , r1
-	mov.l	@r15+ , r0		; �x���X���b�g 
-	rte						; ���荞�݌��ɕ��A 
+	mov.l	@r15+ , r0		; 遅延スロット 
+	rte						; 割り込み元に復帰 
 	nop
 
 
-; ���g�p�����݂̏��� 
+; 未使用割込みの処理 
 	.EXPORT _unused_interrupt
 _unused_interrupt:
 ;	bra	_unused_interrupt
@@ -795,9 +795,9 @@ callevel_adr:
 runisr_adr:
 	.DATA.L	_runisr
 MAX_IPM_adr:
-	.DATA.L  MAX_IPM << 4;	�����݋֎~���� SR ���W�X�^�l
+	.DATA.L  MAX_IPM << 4;	割込み禁止時の SR レジスタ値
 IPM_MASK_adr:
-	.DATA.L	H'000000F0	;	SR ���W�X�^�� �����݃}�X�N�r�b�g
+	.DATA.L	H'000000F0	;	SR レジスタの 割込みマスクビット
 INVALID_TASK_adr:
 	.DATA.L	INVALID_TASK
  .AIF \&ENABLE_COMMON_STACK EQ 1
@@ -807,15 +807,15 @@ common_stack_top_adr:
 	.DATA.L _common_stack_top
  .AENDI
 
- .AIF \&ENABLE_BCC_DEFINES EQ 1	;	BCC �ł́ASG ���o�͂��Ȃ��V���{�����`����
+ .AIF \&ENABLE_BCC_DEFINES EQ 1	;	BCC では、SG が出力しないシンボルを定義する
  	.SECTION    C,DATA,ALIGN=4 
 _tnum_exttask:
-	.DATA.B	0			; �g���^�X�N���͂O�Œ�Ƃ���
-_tcb_curevt: .EQU	0	; �A�N�Z�X����v���O�����͑��݂��Ȃ����߃A�h���X���O�ɂ���
+	.DATA.B	0			; 拡張タスク個数は０固定とする
+_tcb_curevt: .EQU	0	; アクセスするプログラムは存在しないためアドレスを０にする
 _tcb_waievt: .EQU	0
  .AENDI
 
-;/* �萔�̒�` */
+;/* 定数の定義 */
 TCL_ISR2:	.EQU	2
 TCL_TASK:	.EQU	1
 INVALID_TASK:	.EQU	H'ff

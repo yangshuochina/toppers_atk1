@@ -9,55 +9,55 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  ã‹L’˜ìŒ Ò‚ÍCˆÈ‰º‚Ì (1)`(4) ‚ÌğŒ‚©CFree Software Foundation 
- *  ‚É‚æ‚Á‚ÄŒö•\‚³‚ê‚Ä‚¢‚é GNU General Public License ‚Ì Version 2 ‚É‹L
- *  q‚³‚ê‚Ä‚¢‚éğŒ‚ğ–‚½‚·ê‡‚ÉŒÀ‚èC–{ƒ\ƒtƒgƒEƒFƒAi–{ƒ\ƒtƒgƒEƒFƒA
- *  ‚ğ‰ü•Ï‚µ‚½‚à‚Ì‚ğŠÜ‚ŞDˆÈ‰º“¯‚¶j‚ğg—pE•¡»E‰ü•ÏEÄ”z•ziˆÈ‰ºC
- *  —˜—p‚ÆŒÄ‚Ôj‚·‚é‚±‚Æ‚ğ–³‚Å‹–‘ø‚·‚éD
- *  (1) –{ƒ\ƒtƒgƒEƒFƒA‚ğƒ\[ƒXƒR[ƒh‚ÌŒ`‚Å—˜—p‚·‚éê‡‚É‚ÍCã‹L‚Ì’˜ì
- *      Œ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ªC‚»‚Ì‚Ü‚Ü‚ÌŒ`‚Åƒ\[
- *      ƒXƒR[ƒh’†‚ÉŠÜ‚Ü‚ê‚Ä‚¢‚é‚±‚ÆD
- *  (2) –{ƒ\ƒtƒgƒEƒFƒA‚ğCƒ‰ƒCƒuƒ‰ƒŠŒ`®‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ég
- *      —p‚Å‚«‚éŒ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCÄ”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—p
- *      Òƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜ìŒ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L
- *      ‚Ì–³•ÛØ‹K’è‚ğŒfÚ‚·‚é‚±‚ÆD
- *  (3) –{ƒ\ƒtƒgƒEƒFƒA‚ğC‹@Ší‚É‘g‚İ‚Ş‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ég
- *      —p‚Å‚«‚È‚¢Œ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCŸ‚Ì‚¢‚¸‚ê‚©‚ÌğŒ‚ğ–‚½‚·‚±
- *      ‚ÆD
- *    (a) Ä”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—pÒƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜
- *        ìŒ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ğŒfÚ‚·‚é‚±‚ÆD
- *    (b) Ä”z•z‚ÌŒ`‘Ô‚ğC•Ê‚É’è‚ß‚é•û–@‚É‚æ‚Á‚ÄCTOPPERSƒvƒƒWƒFƒNƒg‚É
- *        •ñ‚·‚é‚±‚ÆD
- *  (4) –{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚é‚¢‚©‚È‚é‘¹
- *      ŠQ‚©‚ç‚àCã‹L’˜ìŒ Ò‚¨‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ğ–ÆÓ‚·‚é‚±‚ÆD
+ *  ä¸Šè¨˜è‘—ä½œæ¨©è€…ã¯ï¼Œä»¥ä¸‹ã® (1)ï½(4) ã®æ¡ä»¶ã‹ï¼ŒFree Software Foundation 
+ *  ã«ã‚ˆã£ã¦å…¬è¡¨ã•ã‚Œã¦ã„ã‚‹ GNU General Public License ã® Version 2 ã«è¨˜
+ *  è¿°ã•ã‚Œã¦ã„ã‚‹æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã«é™ã‚Šï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ï¼ˆæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢
+ *  ã‚’æ”¹å¤‰ã—ãŸã‚‚ã®ã‚’å«ã‚€ï¼ä»¥ä¸‹åŒã˜ï¼‰ã‚’ä½¿ç”¨ãƒ»è¤‡è£½ãƒ»æ”¹å¤‰ãƒ»å†é…å¸ƒï¼ˆä»¥ä¸‹ï¼Œ
+ *  åˆ©ç”¨ã¨å‘¼ã¶ï¼‰ã™ã‚‹ã“ã¨ã‚’ç„¡å„Ÿã§è¨±è«¾ã™ã‚‹ï¼
+ *  (1) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®å½¢ã§åˆ©ç”¨ã™ã‚‹å ´åˆã«ã¯ï¼Œä¸Šè¨˜ã®è‘—ä½œ
+ *      æ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šãŒï¼Œãã®ã¾ã¾ã®å½¢ã§ã‚½ãƒ¼
+ *      ã‚¹ã‚³ãƒ¼ãƒ‰ä¸­ã«å«ã¾ã‚Œã¦ã„ã‚‹ã“ã¨ï¼
+ *  (2) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œãƒ©ã‚¤ãƒ–ãƒ©ãƒªå½¢å¼ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ãã‚‹å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œå†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨
+ *      è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜
+ *      ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
+ *  (3) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œæ©Ÿå™¨ã«çµ„ã¿è¾¼ã‚€ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ããªã„å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œæ¬¡ã®ã„ãšã‚Œã‹ã®æ¡ä»¶ã‚’æº€ãŸã™ã“
+ *      ã¨ï¼
+ *    (a) å†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—
+ *        ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
+ *    (b) å†é…å¸ƒã®å½¢æ…‹ã‚’ï¼Œåˆ¥ã«å®šã‚ã‚‹æ–¹æ³•ã«ã‚ˆã£ã¦ï¼ŒTOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«
+ *        å ±å‘Šã™ã‚‹ã“ã¨ï¼
+ *  (4) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ã‚‹ã„ã‹ãªã‚‹æ
+ *      å®³ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å…è²¬ã™ã‚‹ã“ã¨ï¼
  * 
- *  –{ƒ\ƒtƒgƒEƒFƒA‚ÍC–³•ÛØ‚Å’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚à‚Ì‚Å‚ ‚éDã‹L’˜ìŒ Ò‚¨
- *  ‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ÍC–{ƒ\ƒtƒgƒEƒFƒA‚ÉŠÖ‚µ‚ÄC‚»‚Ì“K—p‰Â”\«‚à
- *  ŠÜ‚ß‚ÄC‚¢‚©‚È‚é•ÛØ‚às‚í‚È‚¢D‚Ü‚½C–{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼
- *  Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚½‚¢‚©‚È‚é‘¹ŠQ‚ÉŠÖ‚µ‚Ä‚àC‚»‚ÌÓ”C‚ğ•‰‚í‚È‚¢D
+ *  æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ï¼Œç„¡ä¿è¨¼ã§æä¾›ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã§ã‚ã‚‹ï¼ä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠ
+ *  ã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«é–¢ã—ã¦ï¼Œãã®é©ç”¨å¯èƒ½æ€§ã‚‚
+ *  å«ã‚ã¦ï¼Œã„ã‹ãªã‚‹ä¿è¨¼ã‚‚è¡Œã‚ãªã„ï¼ã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´
+ *  æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ãŸã„ã‹ãªã‚‹æå®³ã«é–¢ã—ã¦ã‚‚ï¼Œãã®è²¬ä»»ã‚’è² ã‚ãªã„ï¼
  * 
  */
 
 /*
- *	TOPPERS Automotive Kernel •W€ƒCƒ“ƒNƒ‹[ƒhƒtƒ@ƒCƒ‹
+ *	TOPPERS Automotive Kernel æ¨™æº–ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ãƒ•ã‚¡ã‚¤ãƒ«
  *
- *  ƒAƒZƒ“ƒuƒŠŒ¾Œê‚Ìƒ\[ƒXƒtƒ@ƒCƒ‹‚âƒVƒXƒeƒ€ƒRƒ“ƒtƒBƒMƒ…ƒŒ[ƒVƒ‡ƒ“ƒtƒ@
- *  ƒCƒ‹‚©‚ç‚±‚Ìƒtƒ@ƒCƒ‹‚ğƒCƒ“ƒNƒ‹[ƒh‚·‚é‚ÍC_MACRO_ONLY ‚ğ’è‹`‚µ‚Ä
- *  ‚¨‚­‚±‚Æ‚ÅCƒ}ƒNƒ’è‹`ˆÈŠO‚Ì‹Lq‚ğœ‚­‚±‚Æ‚ª‚Å‚«‚éD
+ *  ã‚¢ã‚»ãƒ³ãƒ–ãƒªè¨€èªã®ã‚½ãƒ¼ã‚¹ãƒ•ã‚¡ã‚¤ãƒ«ã‚„ã‚·ã‚¹ãƒ†ãƒ ã‚³ãƒ³ãƒ•ã‚£ã‚®ãƒ¥ãƒ¬ãƒ¼ã‚·ãƒ§ãƒ³ãƒ•ã‚¡
+ *  ã‚¤ãƒ«ã‹ã‚‰ã“ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã™ã‚‹æ™‚ã¯ï¼Œ_MACRO_ONLY ã‚’å®šç¾©ã—ã¦
+ *  ãŠãã“ã¨ã§ï¼Œãƒã‚¯ãƒ­å®šç¾©ä»¥å¤–ã®è¨˜è¿°ã‚’é™¤ãã“ã¨ãŒã§ãã‚‹ï¼
  *
- *  ‚±‚Ì’†‚ÅƒCƒ“ƒNƒ‹[ƒh‚µ‚Ä‚¢‚éƒtƒ@ƒCƒ‹‚ğœ‚¢‚ÄC‘¼‚ÌƒCƒ“ƒNƒ‹[ƒhƒtƒ@
- *  ƒCƒ‹‚ÉˆË‘¶‚µ‚Ä‚¢‚È‚¢D
+ *  ã“ã®ä¸­ã§ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã—ã¦ã„ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã‚’é™¤ã„ã¦ï¼Œä»–ã®ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ãƒ•ã‚¡
+ *  ã‚¤ãƒ«ã«ä¾å­˜ã—ã¦ã„ãªã„ï¼
  */
 
 #ifndef _KERNEL_H_
 #define _KERNEL_H_
 
 /*
- *  ƒJ[ƒlƒ‹EƒAƒvƒŠƒP[ƒVƒ‡ƒ“ ‹¤’ÊƒCƒ“ƒNƒ‹[ƒhƒtƒ@ƒCƒ‹
+ *  ã‚«ãƒ¼ãƒãƒ«ãƒ»ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ å…±é€šã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ãƒ•ã‚¡ã‚¤ãƒ«
  */
 
 /*
- *  ƒVƒXƒeƒ€‚âƒvƒƒZƒbƒT‚ÉˆË‘¶‚·‚é’è‹`
+ *  ã‚·ã‚¹ãƒ†ãƒ ã‚„ãƒ—ãƒ­ã‚»ãƒƒã‚µã«ä¾å­˜ã™ã‚‹å®šç¾©
  */
 #include <osek.h>
  
@@ -67,25 +67,25 @@
 
 
 /*
- *  ƒf[ƒ^Œ^‚Ì’è‹`
+ *  ãƒ‡ãƒ¼ã‚¿å‹ã®å®šç¾©
  */
 #ifndef _MACRO_ONLY
 
-typedef UINT8			TaskType;			/* ƒ^ƒXƒNID */
-typedef UINT8			TaskStateType;		/* ƒ^ƒXƒNó‘Ô */
-typedef UINT8			ResourceType;		/* ƒŠƒ\[ƒXID */
-typedef UINT32			EventMaskType;		/* ƒCƒxƒ“ƒgƒ}ƒXƒN */
-typedef UINT32			TickType;			/* ƒJƒEƒ“ƒ^’liƒeƒBƒbƒNj*/
-typedef UINT8			AlarmType;			/* ƒAƒ‰[ƒ€ID */
-typedef UINT8			AppModeType;		/* ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒh */
-typedef UINT8			OSServiceIdType;	/* OS‚ÌƒT[ƒrƒXAPI‚ÌID */
-typedef UINT8			IsrType;			/* ISR IDiOSEKd—lŠOj*/
-typedef UINT8			CounterType;		/* ƒJƒEƒ“ƒ^IDiOSEKd—lŠOj*/
+typedef UINT8			TaskType;			/* ã‚¿ã‚¹ã‚¯ID */
+typedef UINT8			TaskStateType;		/* ã‚¿ã‚¹ã‚¯çŠ¶æ…‹ */
+typedef UINT8			ResourceType;		/* ãƒªã‚½ãƒ¼ã‚¹ID */
+typedef UINT32			EventMaskType;		/* ã‚¤ãƒ™ãƒ³ãƒˆãƒã‚¹ã‚¯ */
+typedef UINT32			TickType;			/* ã‚«ã‚¦ãƒ³ã‚¿å€¤ï¼ˆãƒ†ã‚£ãƒƒã‚¯ï¼‰*/
+typedef UINT8			AlarmType;			/* ã‚¢ãƒ©ãƒ¼ãƒ ID */
+typedef UINT8			AppModeType;		/* ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰ */
+typedef UINT8			OSServiceIdType;	/* OSã®ã‚µãƒ¼ãƒ“ã‚¹APIã®ID */
+typedef UINT8			IsrType;			/* ISR IDï¼ˆOSEKä»•æ§˜å¤–ï¼‰*/
+typedef UINT8			CounterType;		/* ã‚«ã‚¦ãƒ³ã‚¿IDï¼ˆOSEKä»•æ§˜å¤–ï¼‰*/
 
 typedef struct {
-	TickType maxallowedvalue;	/* ƒJƒEƒ“ƒ^w’è‚ÌÅ‘å’l */
-	TickType ticksperbase;		/* ’PˆÊ‚É’B‚·‚é‚Ü‚Å‚ÌƒeƒBƒbƒN” */
-	TickType mincycle;			/* ƒTƒCƒNƒ‹w’è‚ÌÅ¬’l */
+	TickType maxallowedvalue;	/* ã‚«ã‚¦ãƒ³ã‚¿æŒ‡å®šã®æœ€å¤§å€¤ */
+	TickType ticksperbase;		/* å˜ä½ã«é”ã™ã‚‹ã¾ã§ã®ãƒ†ã‚£ãƒƒã‚¯æ•° */
+	TickType mincycle;			/* ã‚µã‚¤ã‚¯ãƒ«æŒ‡å®šã®æœ€å°å€¤ */
 } AlarmBaseType;
 
 typedef TaskType		*TaskRefType;
@@ -95,17 +95,17 @@ typedef TickType		*TickRefType;
 typedef AlarmBaseType	*AlarmBaseRefType;
 
 /*
- *  ƒJ[ƒlƒ‹ƒIƒuƒWƒFƒNƒgéŒ¾—p‚Ìƒ}ƒNƒ
+ *  ã‚«ãƒ¼ãƒãƒ«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆå®£è¨€ç”¨ã®ãƒã‚¯ãƒ­
  */
 #define DeclareTask(TaskName)		extern const TaskType TaskName
 #define DeclareResource(ResName)	extern const ResourceType ResName
 #define DeclareEvent(EventName)		extern const EventMaskType EventName
 #define DeclareAlarm(AlarmName)		extern const AlarmType AlarmName
-/* ƒJƒEƒ“ƒ^‚ÍOSEKd—lŠO	*/
+/* ã‚«ã‚¦ãƒ³ã‚¿ã¯OSEKä»•æ§˜å¤–	*/
 #define DeclareCounter(CounterName)	extern const CounterType CounterName
 
 /*
- *  ƒƒCƒ“ƒ‹[ƒ`ƒ“’è‹`—p‚Ìƒ}ƒNƒ
+ *  ãƒ¡ã‚¤ãƒ³ãƒ«ãƒ¼ãƒãƒ³å®šç¾©ç”¨ã®ãƒã‚¯ãƒ­
  */
 #define TASKNAME(TaskName)	TaskMain##TaskName
 #define TASK(TaskName)		void TaskMain##TaskName(void)
@@ -117,11 +117,11 @@ typedef AlarmBaseType	*AlarmBaseRefType;
 							void AlarmMain##AlarmCallBackName(void)
 
 /*
- *  ƒVƒXƒeƒ€ƒT[ƒrƒXAPI‚ÌéŒ¾
+ *  ã‚·ã‚¹ãƒ†ãƒ ã‚µãƒ¼ãƒ“ã‚¹APIã®å®£è¨€
  */
 
 /*
- *  ƒ^ƒXƒNŠÇ—‹@”\
+ *  ã‚¿ã‚¹ã‚¯ç®¡ç†æ©Ÿèƒ½
  */
 extern StatusType ActivateTask(TaskType tskid);
 extern StatusType TerminateTask(void);
@@ -131,7 +131,7 @@ extern StatusType GetTaskID(TaskRefType p_tskid);
 extern StatusType GetTaskState(TaskType tskid, TaskStateRefType p_state);
 
 /*
- *  Š„‚İŠÇ—‹@”\
+ *  å‰²è¾¼ã¿ç®¡ç†æ©Ÿèƒ½
  */
 extern void EnableAllInterrupts(void);
 extern void DisableAllInterrupts(void);
@@ -141,13 +141,13 @@ extern void ResumeOSInterrupts(void);
 extern void SuspendOSInterrupts(void);
 
 /*
- *  ƒŠƒ\[ƒXŠÇ—‹@”\
+ *  ãƒªã‚½ãƒ¼ã‚¹ç®¡ç†æ©Ÿèƒ½
  */
 extern StatusType GetResource(ResourceType resid);
 extern StatusType ReleaseResource(ResourceType resid);
 
 /*
- *  ƒCƒxƒ“ƒg§Œä‹@”\
+ *  ã‚¤ãƒ™ãƒ³ãƒˆåˆ¶å¾¡æ©Ÿèƒ½
  */
 extern StatusType SetEvent(TaskType tskid, EventMaskType mask);
 extern StatusType ClearEvent(EventMaskType mask);
@@ -155,7 +155,7 @@ extern StatusType GetEvent(TaskType tskid, EventMaskRefType p_mask);
 extern StatusType WaitEvent(EventMaskType mask);
 
 /*
- *  ƒAƒ‰[ƒ€‹@”\
+ *  ã‚¢ãƒ©ãƒ¼ãƒ æ©Ÿèƒ½
  */
 extern StatusType GetAlarmBase(AlarmType almid, AlarmBaseRefType p_info);
 extern StatusType GetAlarm(AlarmType almid, TickRefType p_tick);
@@ -164,19 +164,19 @@ extern StatusType SetAbsAlarm(AlarmType almid, TickType start, TickType cycle);
 extern StatusType CancelAlarm(AlarmType almid);
 
 /*
- *  OSÀs§Œä‹@”\
+ *  OSå®Ÿè¡Œåˆ¶å¾¡æ©Ÿèƒ½
  */
 extern AppModeType GetActiveApplicationMode(void);
 extern void StartOS(AppModeType mode);
 extern void ShutdownOS(StatusType ercd);
 
 /*
- *  ƒJƒEƒ“ƒ^‘€ì‹@”\iOSEKd—lŠOj
+ *  ã‚«ã‚¦ãƒ³ã‚¿æ“ä½œæ©Ÿèƒ½ï¼ˆOSEKä»•æ§˜å¤–ï¼‰
  */
 extern StatusType SignalCounter(CounterType cntid);
 
 /*
- *  ƒR[ƒ‹ƒoƒbƒN
+ *  ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯
  */
 extern void ErrorHook(StatusType ercd);
 extern void PreTaskHook(void);
@@ -187,7 +187,7 @@ extern void ShutdownHook(StatusType ercd);
 #endif /* _MACRO_ONLY */
 
 /*
- *  OS‚ÌƒGƒ‰[ƒR[ƒh
+ *  OSã®ã‚¨ãƒ©ãƒ¼ã‚³ãƒ¼ãƒ‰
  */
 #define E_OS_ACCESS		((StatusType) 1)
 #define E_OS_CALLEVEL	((StatusType) 2)
@@ -199,22 +199,22 @@ extern void ShutdownHook(StatusType ercd);
 #define E_OS_VALUE		((StatusType) 8)
 
 /*
- *  ‚»‚Ì‘¼‚Ì’è”’l
+ *  ãã®ä»–ã®å®šæ•°å€¤
  */
-#define INVALID_TASK		((TaskType) UINT8_INVALID)	/* –³Œøƒ^ƒXƒN */
+#define INVALID_TASK		((TaskType) UINT8_INVALID)	/* ç„¡åŠ¹ã‚¿ã‚¹ã‚¯ */
 
-#define SUSPENDED			((StatusType) 0)	/* ‹x~ó‘Ô */
-#define RUNNING				((StatusType) 1)	/* Àsó‘Ô */
-#define READY				((StatusType) 2)	/* Às‰Â”\ó‘Ô */
-#define WAITING				((StatusType) 3)	/* ‘Ò‚¿ó‘Ô */
+#define SUSPENDED			((StatusType) 0)	/* ä¼‘æ­¢çŠ¶æ…‹ */
+#define RUNNING				((StatusType) 1)	/* å®Ÿè¡ŒçŠ¶æ…‹ */
+#define READY				((StatusType) 2)	/* å®Ÿè¡Œå¯èƒ½çŠ¶æ…‹ */
+#define WAITING				((StatusType) 3)	/* å¾…ã¡çŠ¶æ…‹ */
 
-#define RES_SCHEDULER		((ResourceType) 0)	/* ƒXƒPƒWƒ…[ƒ‰ƒŠƒ\[ƒX */
+#define RES_SCHEDULER		((ResourceType) 0)	/* ã‚¹ã‚±ã‚¸ãƒ¥ãƒ¼ãƒ©ãƒªã‚½ãƒ¼ã‚¹ */
 
 #define OSDEFAULTAPPMODE	((AppModeType) 0x01)
-									/* ƒfƒtƒHƒ‹ƒgƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒh */
+									/* ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰ */
 
 /*
- *  OS‚ÌƒT[ƒrƒXAPI‚ÌID
+ *  OSã®ã‚µãƒ¼ãƒ“ã‚¹APIã®ID
  */
 #define OSServiceId_ActivateTask				((OSServiceIdType) 0)
 #define OSServiceId_TerminateTask				((OSServiceIdType) 1)
@@ -245,7 +245,7 @@ extern void ShutdownHook(StatusType ercd);
 #define OSServiceId_SignalCounter				((OSServiceIdType) 26)
 
 /*
- *  ƒGƒ‰[ƒtƒbƒN‚É“n‚·î•ñ‚Ì‚½‚ß‚Ì’è‹`i’è‹`“à—e‚ÍOSEKd—lŠOj
+ *  ã‚¨ãƒ©ãƒ¼ãƒ•ãƒƒã‚¯ã«æ¸¡ã™æƒ…å ±ã®ãŸã‚ã®å®šç¾©ï¼ˆå®šç¾©å†…å®¹ã¯OSEKä»•æ§˜å¤–ï¼‰
  */
 #ifndef _MACRO_ONLY
 
@@ -272,7 +272,7 @@ extern _ErrorHook_Par	_errorhook_par1, _errorhook_par2, _errorhook_par3;
 #endif /* _MACRO_ONLY */
 
 /*
- *  ƒ}ƒNƒ‚Ì’è‹`
+ *  ãƒã‚¯ãƒ­ã®å®šç¾©
  */
 #define OSErrorGetServiceId()				(_errorhook_svcid)
 
@@ -303,11 +303,11 @@ extern _ErrorHook_Par	_errorhook_par1, _errorhook_par2, _errorhook_par3;
 #define OSError_SignalCounter_CounterID()	(_errorhook_par1.cntid)
 
 /*
- *  ƒo[ƒWƒ‡ƒ“î•ñiƒÊITRON4.0d—l‚É€‹’j
+ *  ãƒãƒ¼ã‚¸ãƒ§ãƒ³æƒ…å ±ï¼ˆÎ¼ITRON4.0ä»•æ§˜ã«æº–æ‹ ï¼‰
  */
-#define	TKERNEL_MAKER	0x0118u		/* ƒJ[ƒlƒ‹‚Ìƒ[ƒJ[ƒR[ƒh */
-#define	TKERNEL_PRID	0x0010u		/* ƒJ[ƒlƒ‹‚Ì¯•Ê”Ô† */
-#define	TKERNEL_SPVER	0x0221u		/* OSEKd—l‚Ìƒo[ƒWƒ‡ƒ“”Ô† */
-#define	TKERNEL_PRVER	0x1010u		/* ƒJ[ƒlƒ‹‚Ìƒo[ƒWƒ‡ƒ“”Ô† */
+#define	TKERNEL_MAKER	0x0118u		/* ã‚«ãƒ¼ãƒãƒ«ã®ãƒ¡ãƒ¼ã‚«ãƒ¼ã‚³ãƒ¼ãƒ‰ */
+#define	TKERNEL_PRID	0x0010u		/* ã‚«ãƒ¼ãƒãƒ«ã®è­˜åˆ¥ç•ªå· */
+#define	TKERNEL_SPVER	0x0221u		/* OSEKä»•æ§˜ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå· */
+#define	TKERNEL_PRVER	0x1010u		/* ã‚«ãƒ¼ãƒãƒ«ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ç•ªå· */
 
 #endif /* _KERNEL_H_ */
