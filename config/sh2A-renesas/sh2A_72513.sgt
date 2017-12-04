@@ -7,39 +7,39 @@
  *  Copyright (C) 2006-2008 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006-2008 by Hitachi Information & Control Solutions,Ltd., JAPAN
  * 
- *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
- *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
- *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
- *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
- *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
- *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
- *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
- *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
- *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
- *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
- *      �̖��ۏ؋K����f�ڂ��邱�ƁD
- *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
- *      �ƁD
- *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
- *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
- *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
- *        �񍐂��邱�ƁD
- *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
- *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+ *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
  * 
- *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
- *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
- *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
- *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
  * 
  */
 
-/* SH2A( SH72513�p)�@�e���v���[�g�t�@�C��*/
+/* SH2A( SH72513用)　テンプレートファイル*/
 
 
-/* SG���p���̒ʒm */
+/* SG利用情報の通知 */
 @@ISR_MIN_PRIORITY=1@@
 @@ISR_MAX_PRIORITY=15@@
 @@ISR_MIN_ENTRY=0@@
@@ -48,9 +48,9 @@
 
 
 /*
- * SH2_HEW �ł̓C�����C���A�Z���u�����g���Ȃ����߁A
- * �����ݓ���������֐��ƃt�b�N���[�`���� NULL �V���{����
- * �A�Z���u���t�@�C���ɏo�͂���
+ * SH2_HEW ではインラインアセンブラが使えないため、
+ * 割込み入り口処理関数とフックルーチンの NULL シンボルは
+ * アセンブラファイルに出力する
  */
 @@START_OUTPUT_DEPENDENT@@
 
@@ -58,27 +58,27 @@
 
 	.INCLUDE	"cpu_config.inc"
 	
-; �X�^�[�g�A�b�v�֐��̊O���Q�ƒ�`
+; スタートアップ関数の外部参照定義
 	.IMPORT		_PowerON_Reset_PC
 
-; ���g�p�����݂̊O���Q�ƒ�`
+; 未使用割込みの外部参照定義
 	UNUSED_INT_EXTERNAL
 
-; �����ݓ���������֐��̊O���Q�ƒ�`
+; 割込み入り口処理関数の外部参照定義
 	@@FOR_EACH EXTERNAL_SYMBOL_FOR_ISR@@
 
 
-; �����݃x�N�^�e�[�u�� 
+; 割込みベクタテーブル 
 
 	.SECTION    CVECTTBL,DATA,ALIGN=4
 _RESET_Vectors:
-	.DATA.L     _PowerON_Reset_PC	;	���Z�b�g�x�N�^
-	.DATA.L		STARTOF S+SIZEOF S	;	�X�^�b�N�����l
+	.DATA.L     _PowerON_Reset_PC	;	リセットベクタ
+	.DATA.L		STARTOF S+SIZEOF S	;	スタック初期値
     .DATA.L     H'00000000,H'00000000
 
     .SECTION    CINTTBL,DATA,ALIGN=4 
 _INT_Vectors:
-; �I�t�Z�b�g�l		 		 ���荞�ݖ���
+; オフセット値		 		 割り込み名称
 	@@INT_ENTRY4@@;,
 	@@INT_ENTRY5@@;,
 	@@INT_ENTRY6@@;,
@@ -90,8 +90,8 @@ _INT_Vectors:
 	@@INT_ENTRY12@@;,
 	@@INT_ENTRY13@@;,
 	@@INT_ENTRY14@@;,
-	@@INT_ENTRY15@@;,  /* �o���N�I�[�o�t���[	*/
-	@@INT_ENTRY16@@;,  /* �o���N�A���_�t���[	*/
+	@@INT_ENTRY15@@;,  /* バンクオーバフロー	*/
+	@@INT_ENTRY16@@;,  /* バンクアンダフロー	*/
 	@@INT_ENTRY17@@;,
 	@@INT_ENTRY18@@;,
 	@@INT_ENTRY19@@;,
@@ -570,10 +570,10 @@ _INT_Vectors:
 	.IMPORT _runisr
 	.IMPORT _interrupt
 	
-; �����ݓ���������֐�
+; 割込み入り口処理関数
 	@@FOR_EACH ENTRY_FOR_ISR@@
 
-; �t�b�N���[�`����NULL�V���{��
+; フックルーチンのNULLシンボル
 	@@NULL_ERRORHOOK_SYMBOL@@
 	@@NULL_STARTUPHOOK_SYMBOL@@
 	@@NULL_SHUTDOWNHOOK_SYMBOL@@

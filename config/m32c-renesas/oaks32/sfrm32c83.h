@@ -11,42 +11,42 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  ã‹L’˜ìŒ Ò‚ÍCˆÈ‰º‚Ì (1)`(4) ‚ÌğŒ‚©CFree Software Foundation 
- *  ‚É‚æ‚Á‚ÄŒö•\‚³‚ê‚Ä‚¢‚é GNU General Public License ‚Ì Version 2 ‚É‹L
- *  q‚³‚ê‚Ä‚¢‚éğŒ‚ğ–‚½‚·ê‡‚ÉŒÀ‚èC–{ƒ\ƒtƒgƒEƒFƒAi–{ƒ\ƒtƒgƒEƒFƒA
- *  ‚ğ‰ü•Ï‚µ‚½‚à‚Ì‚ğŠÜ‚ŞDˆÈ‰º“¯‚¶j‚ğg—pE•¡»E‰ü•ÏEÄ”z•ziˆÈ‰ºC
- *  —˜—p‚ÆŒÄ‚Ôj‚·‚é‚±‚Æ‚ğ–³‚Å‹–‘ø‚·‚éD
- *  (1) –{ƒ\ƒtƒgƒEƒFƒA‚ğƒ\[ƒXƒR[ƒh‚ÌŒ`‚Å—˜—p‚·‚éê‡‚É‚ÍCã‹L‚Ì’˜ì
- *      Œ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ªC‚»‚Ì‚Ü‚Ü‚ÌŒ`‚Åƒ\[
- *      ƒXƒR[ƒh’†‚ÉŠÜ‚Ü‚ê‚Ä‚¢‚é‚±‚ÆD
- *  (2) –{ƒ\ƒtƒgƒEƒFƒA‚ğCƒ‰ƒCƒuƒ‰ƒŠŒ`®‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ég
- *      —p‚Å‚«‚éŒ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCÄ”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—p
- *      Òƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜ìŒ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L
- *      ‚Ì–³•ÛØ‹K’è‚ğŒfÚ‚·‚é‚±‚ÆD
- *  (3) –{ƒ\ƒtƒgƒEƒFƒA‚ğC‹@Ší‚É‘g‚İ‚Ş‚È‚ÇC‘¼‚Ìƒ\ƒtƒgƒEƒFƒAŠJ”­‚Ég
- *      —p‚Å‚«‚È‚¢Œ`‚ÅÄ”z•z‚·‚éê‡‚É‚ÍCŸ‚Ì‚¢‚¸‚ê‚©‚ÌğŒ‚ğ–‚½‚·‚±
- *      ‚ÆD
- *    (a) Ä”z•z‚É”º‚¤ƒhƒLƒ…ƒƒ“ƒgi—˜—pÒƒ}ƒjƒ…ƒAƒ‹‚È‚Çj‚ÉCã‹L‚Ì’˜
- *        ìŒ •\¦C‚±‚Ì—˜—pğŒ‚¨‚æ‚Ñ‰º‹L‚Ì–³•ÛØ‹K’è‚ğŒfÚ‚·‚é‚±‚ÆD
- *    (b) Ä”z•z‚ÌŒ`‘Ô‚ğC•Ê‚É’è‚ß‚é•û–@‚É‚æ‚Á‚ÄCTOPPERSƒvƒƒWƒFƒNƒg‚É
- *        •ñ‚·‚é‚±‚ÆD
- *  (4) –{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚é‚¢‚©‚È‚é‘¹
- *      ŠQ‚©‚ç‚àCã‹L’˜ìŒ Ò‚¨‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ğ–ÆÓ‚·‚é‚±‚ÆD
+ *  ä¸Šè¨˜è‘—ä½œæ¨©è€…ã¯ï¼Œä»¥ä¸‹ã® (1)ã€œ(4) ã®æ¡ä»¶ã‹ï¼ŒFree Software Foundation 
+ *  ã«ã‚ˆã£ã¦å…¬è¡¨ã•ã‚Œã¦ã„ã‚‹ GNU General Public License ã® Version 2 ã«è¨˜
+ *  è¿°ã•ã‚Œã¦ã„ã‚‹æ¡ä»¶ã‚’æº€ãŸã™å ´åˆã«é™ã‚Šï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ï¼ˆæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢
+ *  ã‚’æ”¹å¤‰ã—ãŸã‚‚ã®ã‚’å«ã‚€ï¼ä»¥ä¸‹åŒã˜ï¼‰ã‚’ä½¿ç”¨ãƒ»è¤‡è£½ãƒ»æ”¹å¤‰ãƒ»å†é…å¸ƒï¼ˆä»¥ä¸‹ï¼Œ
+ *  åˆ©ç”¨ã¨å‘¼ã¶ï¼‰ã™ã‚‹ã“ã¨ã‚’ç„¡å„Ÿã§è¨±è«¾ã™ã‚‹ï¼
+ *  (1) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ã‚½ãƒ¼ã‚¹ã‚³ãƒ¼ãƒ‰ã®å½¢ã§åˆ©ç”¨ã™ã‚‹å ´åˆã«ã¯ï¼Œä¸Šè¨˜ã®è‘—ä½œ
+ *      æ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šãŒï¼Œãã®ã¾ã¾ã®å½¢ã§ã‚½ãƒ¼
+ *      ã‚¹ã‚³ãƒ¼ãƒ‰ä¸­ã«å«ã¾ã‚Œã¦ã„ã‚‹ã“ã¨ï¼
+ *  (2) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œãƒ©ã‚¤ãƒ–ãƒ©ãƒªå½¢å¼ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ãã‚‹å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œå†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨
+ *      è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜
+ *      ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
+ *  (3) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã‚’ï¼Œæ©Ÿå™¨ã«çµ„ã¿è¾¼ã‚€ãªã©ï¼Œä»–ã®ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢é–‹ç™ºã«ä½¿
+ *      ç”¨ã§ããªã„å½¢ã§å†é…å¸ƒã™ã‚‹å ´åˆã«ã¯ï¼Œæ¬¡ã®ã„ãšã‚Œã‹ã®æ¡ä»¶ã‚’æº€ãŸã™ã“
+ *      ã¨ï¼
+ *    (a) å†é…å¸ƒã«ä¼´ã†ãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆï¼ˆåˆ©ç”¨è€…ãƒãƒ‹ãƒ¥ã‚¢ãƒ«ãªã©ï¼‰ã«ï¼Œä¸Šè¨˜ã®è‘—
+ *        ä½œæ¨©è¡¨ç¤ºï¼Œã“ã®åˆ©ç”¨æ¡ä»¶ãŠã‚ˆã³ä¸‹è¨˜ã®ç„¡ä¿è¨¼è¦å®šã‚’æ²è¼‰ã™ã‚‹ã“ã¨ï¼
+ *    (b) å†é…å¸ƒã®å½¢æ…‹ã‚’ï¼Œåˆ¥ã«å®šã‚ã‚‹æ–¹æ³•ã«ã‚ˆã£ã¦ï¼ŒTOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã«
+ *        å ±å‘Šã™ã‚‹ã“ã¨ï¼
+ *  (4) æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ã‚‹ã„ã‹ãªã‚‹æ
+ *      å®³ã‹ã‚‰ã‚‚ï¼Œä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’å…è²¬ã™ã‚‹ã“ã¨ï¼
  * 
- *  –{ƒ\ƒtƒgƒEƒFƒA‚ÍC–³•ÛØ‚Å’ñ‹Ÿ‚³‚ê‚Ä‚¢‚é‚à‚Ì‚Å‚ ‚éDã‹L’˜ìŒ Ò‚¨
- *  ‚æ‚ÑTOPPERSƒvƒƒWƒFƒNƒg‚ÍC–{ƒ\ƒtƒgƒEƒFƒA‚ÉŠÖ‚µ‚ÄC‚»‚Ì“K—p‰Â”\«‚à
- *  ŠÜ‚ß‚ÄC‚¢‚©‚È‚é•ÛØ‚às‚í‚È‚¢D‚Ü‚½C–{ƒ\ƒtƒgƒEƒFƒA‚Ì—˜—p‚É‚æ‚è’¼
- *  Ú“I‚Ü‚½‚ÍŠÔÚ“I‚É¶‚¶‚½‚¢‚©‚È‚é‘¹ŠQ‚ÉŠÖ‚µ‚Ä‚àC‚»‚ÌÓ”C‚ğ•‰‚í‚È‚¢D
+ *  æœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã¯ï¼Œç„¡ä¿è¨¼ã§æä¾›ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã§ã‚ã‚‹ï¼ä¸Šè¨˜è‘—ä½œæ¨©è€…ãŠ
+ *  ã‚ˆã³TOPPERSãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã¯ï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã«é–¢ã—ã¦ï¼Œãã®é©ç”¨å¯èƒ½æ€§ã‚‚
+ *  å«ã‚ã¦ï¼Œã„ã‹ãªã‚‹ä¿è¨¼ã‚‚è¡Œã‚ãªã„ï¼ã¾ãŸï¼Œæœ¬ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ã®åˆ©ç”¨ã«ã‚ˆã‚Šç›´
+ *  æ¥çš„ã¾ãŸã¯é–“æ¥çš„ã«ç”Ÿã˜ãŸã„ã‹ãªã‚‹æå®³ã«é–¢ã—ã¦ã‚‚ï¼Œãã®è²¬ä»»ã‚’è² ã‚ãªã„ï¼
  * 
  */
 
 
 /*
- *  SFRƒwƒbƒ_ƒtƒ@ƒCƒ‹iM32C/83—pj
+ *  SFRãƒ˜ãƒƒãƒ€ãƒ•ã‚¡ã‚¤ãƒ«ï¼ˆM32C/83ç”¨ï¼‰
  */
 
-#if !defined( _SFR_M32C_83_H_ )			/* “ñd’è‹`–h~		*/
-#define		_SFR_M32C_83_H_				/* “ñd’è‹`–h~		*/
+#if !defined( _SFR_M32C_83_H_ )			/* äºŒé‡å®šç¾©é˜²æ­¢		*/
+#define		_SFR_M32C_83_H_				/* äºŒé‡å®šç¾©é˜²æ­¢		*/
 
 
 /*------------------------------------------------------
@@ -55,17 +55,17 @@
 #pragma ADDRESS     pm0_addr	0004H       /* Processor mode register 0 */
 typedef union {
 	struct{
-		UINT8	pm00:1;  /* ƒvƒƒZƒbƒTƒ‚[ƒh(pm00,pm01‚Åw’è)					*/
-		UINT8	pm01:1;  /* 00B:ƒVƒ“ƒOƒ‹ƒ`ƒbƒv,01B:ƒƒ‚ƒŠŠg’£,11B:ƒ} ƒCƒNƒƒvƒƒZƒbƒT		*/
-		UINT8	pm02:1;  /* R/Wƒ‚[ƒh‘I‘ğ 0:~RD/~WD/~BHE,1:~RD/~WRH/~WRL			*/
-		UINT8	pm03:1;  /* ƒ\ƒtƒgƒEƒFƒAƒŠƒZƒbƒg 0:’Êí,1:ƒŠƒZƒbƒg				*/
-		UINT8	pm04:1;  /* ƒ} ƒ‹ƒ`ƒvƒŒƒNƒXƒoƒX‹óŠÔ‘I‘ğ(pm04,pm05‚Åw’è)				*/
-		UINT8	pm05:1;  /* 00B:–¢g—p,01B:~CS2‚ÉŠ„“–‚Ä,10B:~CS1‚ÉŠ„“–‚Ä,11B:~CS‘S‹óŠÔ‚ÉŠ„“–‚Ä	*/
-		UINT8	reserve:1;  /* 0ŒÅ’è								*/
-		UINT8	pm07:1;  /* BCLKo—Í‹@”\‘I‘ğ 0:BCLKo—Í,1:o—Í‚µ‚È‚¢(CM00/CM01‚ğ00B‚Æ‚·‚é‚±‚Æ)	*/
+		UINT8	pm00:1;  /* ãƒ—ãƒ­ã‚»ãƒƒã‚µãƒ¢ãƒ¼ãƒ‰(pm00,pm01ã§æŒ‡å®š)					*/
+		UINT8	pm01:1;  /* 00B:ã‚·ãƒ³ã‚°ãƒ«ãƒãƒƒãƒ—,01B:ãƒ¡ãƒ¢ãƒªæ‹¡å¼µ,11B:ãƒ ã‚¤ã‚¯ãƒ­ãƒ—ãƒ­ã‚»ãƒƒã‚µ		*/
+		UINT8	pm02:1;  /* R/Wãƒ¢ãƒ¼ãƒ‰é¸æŠ 0:â€¾RD/â€¾WD/â€¾BHE,1:â€¾RD/â€¾WRH/â€¾WRL			*/
+		UINT8	pm03:1;  /* ã‚½ãƒ•ãƒˆã‚¦ã‚§ã‚¢ãƒªã‚»ãƒƒãƒˆ 0:é€šå¸¸æ™‚,1:ãƒªã‚»ãƒƒãƒˆ				*/
+		UINT8	pm04:1;  /* ãƒ ãƒ«ãƒãƒ—ãƒ¬ã‚¯ã‚¹ãƒã‚¹ç©ºé–“é¸æŠ(pm04,pm05ã§æŒ‡å®š)				*/
+		UINT8	pm05:1;  /* 00B:æœªä½¿ç”¨,01B:â€¾CS2ã«å‰²å½“ã¦,10B:â€¾CS1ã«å‰²å½“ã¦,11B:â€¾CSå…¨ç©ºé–“ã«å‰²å½“ã¦	*/
+		UINT8	reserve:1;  /* 0å›ºå®š								*/
+		UINT8	pm07:1;  /* BCLKå‡ºåŠ›æ©Ÿèƒ½é¸æŠ 0:BCLKå‡ºåŠ›,1:å‡ºåŠ›ã—ãªã„(CM00/CM01ã‚’00Bã¨ã™ã‚‹ã“ã¨)	*/
 	} bit;
 	UINT8 byte;
-} PM0_ADDR;	/* ƒŠƒZƒbƒg’l:1000 0000B(CNVss’[q‚ªL)/0000 0011(CNVss’[q‚ªH)				*/
+} PM0_ADDR;	/* ãƒªã‚»ãƒƒãƒˆå€¤:1000 0000B(CNVssç«¯å­ãŒL)/0000 0011(CNVssç«¯å­ãŒH)				*/
 PM0_ADDR	pm0_addr;
 
 #define		PM0     	pm0_addr.byte
@@ -1217,7 +1217,7 @@ IIO4IC_ADDR	iio4ic_addr;
 /*------------------------------------------------------
      int5ic
 ------------------------------------------------------*/
-#pragma ADDRESS     int5ic_addr 007aH       /* INT5~ interrupt control register */
+#pragma ADDRESS     int5ic_addr 007aH       /* INT5â€¾ interrupt control register */
 typedef union {
     struct{
         UINT8    ilvl0_int5ic:1;            /* Interrupt priority level select bit */
@@ -1263,7 +1263,7 @@ IIO6IC_ADDR	iio6ic_addr;
 /*------------------------------------------------------
      int3ic
 ------------------------------------------------------*/
-#pragma ADDRESS     int3ic_addr 007cH       /* INT3~ interrupt control register */
+#pragma ADDRESS     int3ic_addr 007cH       /* INT3â€¾ interrupt control register */
 typedef union {
     struct{
         UINT8    ilvl0_int3ic:1;            /* Interrupt priority level select bit */
@@ -1309,7 +1309,7 @@ IIO8IC_ADDR	iio8ic_addr;
 /*------------------------------------------------------
      int1ic
 ------------------------------------------------------*/
-#pragma ADDRESS     int1ic_addr 007eH       /* INT1~ interrupt control register */
+#pragma ADDRESS     int1ic_addr 007eH       /* INT1â€¾ interrupt control register */
 typedef union {
     struct{
         UINT8    ilvl0_int1ic:1;            /* Interrupt priority level select bit */
@@ -1838,7 +1838,7 @@ IIO5IC_ADDR	iio5ic_addr;
 /*------------------------------------------------------
      int4ic
 ------------------------------------------------------*/
-#pragma ADDRESS     int4ic_addr 009aH       /* INT4~ interrupt control register */
+#pragma ADDRESS     int4ic_addr 009aH       /* INT4â€¾ interrupt control register */
 typedef union {
     struct{
         UINT8    ilvl0_int4ic:1;            /* Interrupt priority level select bit */
@@ -1884,7 +1884,7 @@ IIO7IC_ADDR	iio7ic_addr;
 /*------------------------------------------------------
      int2ic
 ------------------------------------------------------*/
-#pragma ADDRESS     int2ic_addr 009cH       /* INT2~ interrupt control register */
+#pragma ADDRESS     int2ic_addr 009cH       /* INT2â€¾ interrupt control register */
 typedef union {
     struct{
         UINT8    ilvl0_int2ic:1;            /* Interrupt priority level select bit */
@@ -1951,7 +1951,7 @@ CAN0IC_ADDR	can0ic_addr;
 /*------------------------------------------------------
      int0ic
 ------------------------------------------------------*/
-#pragma ADDRESS     int0ic_addr 009eH       /* INT0~ interrupt control register */
+#pragma ADDRESS     int0ic_addr 009eH       /* INT0â€¾ interrupt control register */
 typedef union {
     struct{
         UINT8    ilvl0_int0ic:1;            /* Interrupt priority level select bit */
@@ -10480,9 +10480,9 @@ typedef union {
     struct{
         UINT8    clk0:1;         /* BRG count source select bit */
         UINT8    clk1:1;         /* BRG count source select bit */
-        UINT8    crs:1;          /* CTS~/RTS~ function select bit */
+        UINT8    crs:1;          /* CTSâ€¾/RTSâ€¾ function select bit */
         UINT8    txept:1;        /* Transmit register empty flag */
-        UINT8    crd:1;          /* CTS~/RTS~ disable bit */
+        UINT8    crd:1;          /* CTSâ€¾/RTSâ€¾ disable bit */
         UINT8    nch:1;          /* Data output select bit */
         UINT8    ckpol:1;        /* CLK polarity select bit */
         UINT8    uform:1;        /* Transfer format select bit */
@@ -10495,9 +10495,9 @@ U1C0_ADDR	u1c0_addr;
 
 #define		CLK0_U1C0   u1c0_addr.bit.clk0  /* BRG count source select bit */
 #define		CLK1_U1C0   u1c0_addr.bit.clk1  /* BRG count source select bit */
-#define		CRS_U1C0    u1c0_addr.bit.crs   /* CTS~/RTS~ function select bit */
+#define		CRS_U1C0    u1c0_addr.bit.crs   /* CTSâ€¾/RTSâ€¾ function select bit */
 #define		TXEPT_U1C0  u1c0_addr.bit.txept /* Transmit register empty flag */
-#define		CRD_U1C0    u1c0_addr.bit.crd   /* CTS~/RTS~ disable bit */
+#define		CRD_U1C0    u1c0_addr.bit.crd   /* CTSâ€¾/RTSâ€¾ disable bit */
 #define		NCH_U1C0    u1c0_addr.bit.nch   /* Data output select bit */
 #define		CKPOL_U1C0  u1c0_addr.bit.ckpol /* CLK polarity select bit */
 #define		UFORM_U1C0  u1c0_addr.bit.uform /* Transfer format select bit */
@@ -10787,9 +10787,9 @@ typedef union {
     struct{
         UINT8    clk0:1;         /* BRG count source select bit */
         UINT8    clk1:1;         /* BRG count source select bit */
-        UINT8    crs:1;          /* CTS~/RTS~ function select bit */
+        UINT8    crs:1;          /* CTSâ€¾/RTSâ€¾ function select bit */
         UINT8    txept:1;        /* Transmit register empty flag */
-        UINT8    crd:1;          /* CTS~/RTS~ disable bit */
+        UINT8    crd:1;          /* CTSâ€¾/RTSâ€¾ disable bit */
         UINT8    nch:1;          /* Data output select bit */
         UINT8    ckpol:1;        /* CLK polarity select bit */
         UINT8    uform:1;        /* Transfer format select bit */
@@ -10802,9 +10802,9 @@ U4C0_ADDR	u4c0_addr;
 
 #define		CLK0_U4C0   u4c0_addr.bit.clk0  /* BRG count source select bit */
 #define		CLK1_U4C0   u4c0_addr.bit.clk1  /* BRG count source select bit */
-#define		CRS_U4C0    u4c0_addr.bit.crs   /* CTS~/RTS~ function select bit */
+#define		CRS_U4C0    u4c0_addr.bit.crs   /* CTSâ€¾/RTSâ€¾ function select bit */
 #define		TXEPT_U4C0  u4c0_addr.bit.txept /* Transmit register empty flag */
-#define		CRD_U4C0    u4c0_addr.bit.crd   /* CTS~/RTS~ disable bit */
+#define		CRD_U4C0    u4c0_addr.bit.crd   /* CTSâ€¾/RTSâ€¾ disable bit */
 #define		NCH_U4C0    u4c0_addr.bit.nch   /* Data output select bit */
 #define		CKPOL_U4C0  u4c0_addr.bit.ckpol /* CLK polarity select bit */
 #define		UFORM_U4C0  u4c0_addr.bit.uform /* Transfer format select bit */
@@ -11429,9 +11429,9 @@ typedef union {
     struct{
         UINT8    clk0:1;         /* BRG count source select bit */
         UINT8    clk1:1;         /* BRG count source select bit */
-        UINT8    crs:1;          /* CTS~/RTS~ function select bit */
+        UINT8    crs:1;          /* CTSâ€¾/RTSâ€¾ function select bit */
         UINT8    txept:1;        /* Transmit register empty flag */
-        UINT8    crd:1;          /* CTS~/RTS~ disable bit */
+        UINT8    crd:1;          /* CTSâ€¾/RTSâ€¾ disable bit */
         UINT8    nch:1;          /* Data output select bit */
         UINT8    ckpol:1;        /* CLK polarity select bit */
         UINT8    uform:1;        /* Transfer format select bit */
@@ -11444,9 +11444,9 @@ U3C0_ADDR	u3c0_addr;
 
 #define		CLK0_U3C0   u3c0_addr.bit.clk0  /* BRG count source select bit */
 #define		CLK1_U3C0   u3c0_addr.bit.clk1  /* BRG count source select bit */
-#define		CRS_U3C0    u3c0_addr.bit.crs   /* CTS~/RTS~ function select bit */
+#define		CRS_U3C0    u3c0_addr.bit.crs   /* CTSâ€¾/RTSâ€¾ function select bit */
 #define		TXEPT_U3C0  u3c0_addr.bit.txept /* Transmit register empty flag */
-#define		CRD_U3C0    u3c0_addr.bit.crd   /* CTS~/RTS~ disable bit */
+#define		CRD_U3C0    u3c0_addr.bit.crd   /* CTSâ€¾/RTSâ€¾ disable bit */
 #define		NCH_U3C0    u3c0_addr.bit.nch   /* Data output select bit */
 #define		CKPOL_U3C0  u3c0_addr.bit.ckpol /* CLK polarity select bit */
 #define		UFORM_U3C0  u3c0_addr.bit.uform /* Transfer format select bit */
@@ -11721,9 +11721,9 @@ typedef union {
     struct{
         UINT8    clk0:1;         /* BRG count source select bit */
         UINT8    clk1:1;         /* BRG count source select bit */
-        UINT8    crs:1;          /* CTS~/RTS~ function select bit */
+        UINT8    crs:1;          /* CTSâ€¾/RTSâ€¾ function select bit */
         UINT8    txept:1;        /* Transmit register empty flag */
-        UINT8    crd:1;          /* CTS~/RTS~ disable bit */
+        UINT8    crd:1;          /* CTSâ€¾/RTSâ€¾ disable bit */
         UINT8    nch:1;          /* Data output select bit */
         UINT8    ckpol:1;        /* CLK polarity select bit */
         UINT8    uform:1;        /* Transfer format select bit */
@@ -11736,9 +11736,9 @@ U2C0_ADDR	u2c0_addr;
 
 #define		CLK0_U2C0   u2c0_addr.bit.clk0  /* BRG count source select bit */
 #define		CLK1_U2C0   u2c0_addr.bit.clk1  /* BRG count source select bit */
-#define		CRS_U2C0    u2c0_addr.bit.crs   /* CTS~/RTS~ function select bit */
+#define		CRS_U2C0    u2c0_addr.bit.crs   /* CTSâ€¾/RTSâ€¾ function select bit */
 #define		TXEPT_U2C0  u2c0_addr.bit.txept /* Transmit register empty flag */
-#define		CRD_U2C0    u2c0_addr.bit.crd   /* CTS~/RTS~ disable bit */
+#define		CRD_U2C0    u2c0_addr.bit.crd   /* CTSâ€¾/RTSâ€¾ disable bit */
 #define		CKPOL_U2C0  u2c0_addr.bit.ckpol /* CLK polarity select bit */
 #define		UFORM_U2C0  u2c0_addr.bit.uform /* Transfer format select bit */
 
@@ -12509,9 +12509,9 @@ typedef union {
     struct{
         UINT8    clk0:1;         /* BRG count source select bit */
         UINT8    clk1:1;         /* BRG count source select bit */
-        UINT8    crs:1;          /* CTS~/RTS~ function select bit */
+        UINT8    crs:1;          /* CTSâ€¾/RTSâ€¾ function select bit */
         UINT8    txept:1;        /* Transmit register empty flag */
-        UINT8    crd:1;          /* CTS~/RTS~ disable bit */
+        UINT8    crd:1;          /* CTSâ€¾/RTSâ€¾ disable bit */
         UINT8    nch:1;          /* Data output select bit */
         UINT8    ckpol:1;        /* CLK polarity select bit */
         UINT8    uform:1;        /* Transfer format select bit */
@@ -12524,9 +12524,9 @@ U0C0_ADDR	u0c0_addr;
 
 #define		CLK0_U0C0   u0c0_addr.bit.clk0  /* BRG count source select bit */
 #define		CLK1_U0C0   u0c0_addr.bit.clk1  /* BRG count source select bit */
-#define		CRS_U0C0    u0c0_addr.bit.crs   /* CTS~/RTS~ function select bit */
+#define		CRS_U0C0    u0c0_addr.bit.crs   /* CTSâ€¾/RTSâ€¾ function select bit */
 #define		TXEPT_U0C0  u0c0_addr.bit.txept /* Transmit register empty flag */
-#define		CRD_U0C0    u0c0_addr.bit.crd   /* CTS~/RTS~ disable bit */
+#define		CRD_U0C0    u0c0_addr.bit.crd   /* CTSâ€¾/RTSâ€¾ disable bit */
 #define		NCH_U0C0    u0c0_addr.bit.nch   /* Data output select bit */
 #define		CKPOL_U0C0  u0c0_addr.bit.ckpol /* CLK polarity select bit */
 #define		UFORM_U0C0  u0c0_addr.bit.uform /* Transfer format select bit */

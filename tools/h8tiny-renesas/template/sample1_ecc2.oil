@@ -1,19 +1,19 @@
 /*
- *  ƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€(1)‚ÌOILƒtƒ@ƒCƒ‹D
+ *  ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ (1)ã®OILãƒ•ã‚¡ã‚¤ãƒ«ï¼Ž
  */
 
 /*
- *  ’è‹`•”‚ÌƒCƒ“ƒNƒ‹[ƒh
+ *  å®šç¾©éƒ¨ã®ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰
  */
 #include "implementation.oil"
 
 /*
- *  ŽÀ‘••”
+ *  å®Ÿè£…éƒ¨
  */
 CPU current {
 
 	/*
-	 *  OS’è‹`
+	 *  OSå®šç¾©
 	 */
 	OS os {
 		STATUS = STANDARD;
@@ -28,16 +28,16 @@ CPU current {
 	};
 
 	/*
-	 *  ƒAƒvƒŠƒP[ƒVƒ‡ƒ“ƒ‚[ƒh’è‹`
+	 *  ã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ãƒ¢ãƒ¼ãƒ‰å®šç¾©
 	 */
-	APPMODE AppMode1 {};	/* •À—ñŽÀsƒ^ƒXƒNŽ©“®‹N“®‚È‚µ	*/
-	APPMODE AppMode2 {};	/* ƒ^ƒXƒN1Ž©“®‹N“®ƒ‚[ƒh		*/
-	APPMODE AppMode3 {};	/* ƒ^ƒXƒN3Ž©“®‹N“®ƒ‚[ƒh		*/
+	APPMODE AppMode1 {};	/* ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯è‡ªå‹•èµ·å‹•ãªã—	*/
+	APPMODE AppMode2 {};	/* ã‚¿ã‚¹ã‚¯1è‡ªå‹•èµ·å‹•ãƒ¢ãƒ¼ãƒ‰		*/
+	APPMODE AppMode3 {};	/* ã‚¿ã‚¹ã‚¯3è‡ªå‹•èµ·å‹•ãƒ¢ãƒ¼ãƒ‰		*/
 
 	/*
-	 *  ƒ^ƒXƒN’è‹`
+	 *  ã‚¿ã‚¹ã‚¯å®šç¾©
 	 */
-	/* ƒƒCƒ“ƒ^ƒXƒN	*/
+	/* ãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯	*/
 	TASK MainTask {
 		AUTOSTART = TRUE {
 			APPMODE = AppMode1;
@@ -51,7 +51,7 @@ CPU current {
 		EVENT = MainEvt;
 	};
 
-	/* Å‚—Dæ“xƒ^ƒXƒN	*/
+	/* æœ€é«˜å„ªå…ˆåº¦ã‚¿ã‚¹ã‚¯	*/
 	TASK HighPriorityTask {
 		AUTOSTART = FALSE;
 		PRIORITY = 15;
@@ -60,7 +60,7 @@ CPU current {
 		SCHEDULE = FULL;
 	};
 
-	/* ƒmƒ“ƒvƒŠƒGƒ“ƒvƒeƒBƒuƒ^ƒXƒN	*/
+	/* ãƒŽãƒ³ãƒ—ãƒªã‚¨ãƒ³ãƒ—ãƒ†ã‚£ãƒ–ã‚¿ã‚¹ã‚¯	*/
 	TASK NonPriTask {
 		AUTOSTART = FALSE;
 		PRIORITY = 1;
@@ -69,7 +69,7 @@ CPU current {
 		SCHEDULE = NON;
 	};
 
-	/* •À—ñŽÀsƒ^ƒXƒN1	*/
+	/* ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯1	*/
 	TASK Task1 {
 		AUTOSTART = TRUE {
 			APPMODE = AppMode2;
@@ -82,7 +82,7 @@ CPU current {
 		RESOURCE = IntLevelRes;
 	};
 
-	/* •À—ñŽÀsƒ^ƒXƒN2	*/
+	/* ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯2	*/
 	TASK Task2 {
 		AUTOSTART = FALSE;
 		PRIORITY = 7;
@@ -94,7 +94,7 @@ CPU current {
 		EVENT = T2Evt;
 	};
 
-	/* •À—ñŽÀsƒ^ƒXƒN3	*/
+	/* ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯3	*/
 	TASK Task3 {
 		AUTOSTART = TRUE {
 			APPMODE = AppMode3;
@@ -107,7 +107,7 @@ CPU current {
 		EVENT = T3Evt;
 	};
 
-	/* •À—ñŽÀsƒ^ƒXƒN4	*/
+	/* ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯4	*/
 	TASK Task4 {
 		AUTOSTART = FALSE;
 		PRIORITY = 6;
@@ -119,7 +119,7 @@ CPU current {
 		RESOURCE = IntLevelRes;
 	};
 
-	/* •À—ñŽÀsƒ^ƒXƒN5	*/
+	/* ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯5	*/
 	TASK Task5 {
 		AUTOSTART = FALSE;
 		PRIORITY = 9;
@@ -132,38 +132,38 @@ CPU current {
 	};
 
 	/*
-	 *  Š„ž‚ÝƒT[ƒrƒXƒ‹[ƒ`ƒ“’è‹`
+	 *  å‰²è¾¼ã¿ã‚µãƒ¼ãƒ“ã‚¹ãƒ«ãƒ¼ãƒãƒ³å®šç¾©
 	 */
 
-	/* ƒVƒŠƒAƒ‹IOŽóMŠ„ž‚Ý(SCI3)			*/
+	/* ã‚·ãƒªã‚¢ãƒ«IOå—ä¿¡å‰²è¾¼ã¿(SCI3)			*/
 	ISR RxHwSerialInt {
 		CATEGORY = 1;
 		ENTRY = 23;
 		PRIORITY = 2;
 	};
 
-	/* ƒVƒXƒeƒ€ƒ^ƒCƒ}Š„ž‚Ý	*/
+	/* ã‚·ã‚¹ãƒ†ãƒ ã‚¿ã‚¤ãƒžå‰²è¾¼ã¿	*/
 	ISR SysTimerInt {
 		CATEGORY = 2;
 		ENTRY = 27;
 		PRIORITY = 1;
 	};
 
-	/* ƒTƒ“ƒvƒ‹ƒJƒEƒ“ƒ^ƒ\[ƒXŠ„ž‚Ý	*/
+	/* ã‚µãƒ³ãƒ—ãƒ«ã‚«ã‚¦ãƒ³ã‚¿ã‚½ãƒ¼ã‚¹å‰²è¾¼ã¿	*/
 	ISR CounterInt {
 		CATEGORY = 2;
 		ENTRY = 22;
 		PRIORITY = 1;
 	};
 
-	/* HWƒJƒEƒ“ƒ^Š„ž‚Ý1	*/
+	/* HWã‚«ã‚¦ãƒ³ã‚¿å‰²è¾¼ã¿1	*/
 	ISR HwCnt1Int {
 		CATEGORY = 1;
 		ENTRY = 26;
 		PRIORITY = 2;
 	};
 
-	/* HWƒJƒEƒ“ƒ^Š„ž‚Ý2	*/
+	/* HWã‚«ã‚¦ãƒ³ã‚¿å‰²è¾¼ã¿2	*/
 	ISR HwCnt2Int {
 		CATEGORY = 2;
 		ENTRY = 29;
@@ -172,19 +172,19 @@ CPU current {
 	};
 
 	/*
-	 *  ƒŠƒ\[ƒX’è‹`
+	 *  ãƒªã‚½ãƒ¼ã‚¹å®šç¾©
 	 */
-	/* ƒ^ƒXƒNEƒ^ƒXƒNŠÔƒŠƒ\[ƒX	*/
+	/* ã‚¿ã‚¹ã‚¯ãƒ»ã‚¿ã‚¹ã‚¯é–“ãƒªã‚½ãƒ¼ã‚¹	*/
 	RESOURCE TskLevelRes {
 		RESOURCEPROPERTY = STANDARD;
 	};
 
-	/* ƒ^ƒXƒNEŠ„ž‚ÝŠÔƒŠƒ\[ƒX	*/
+	/* ã‚¿ã‚¹ã‚¯ãƒ»å‰²è¾¼ã¿é–“ãƒªã‚½ãƒ¼ã‚¹	*/
 	RESOURCE IntLevelRes {
 		RESOURCEPROPERTY = STANDARD;
 	};
 
-	/* ƒOƒ‹[ƒvƒ^ƒXƒN—p“à•”ƒŠƒ\[ƒX	*/
+	/* ã‚°ãƒ«ãƒ¼ãƒ—ã‚¿ã‚¹ã‚¯ç”¨å†…éƒ¨ãƒªã‚½ãƒ¼ã‚¹	*/
 
 	RESOURCE GroupRes {
 		RESOURCEPROPERTY = INTERNAL;
@@ -192,34 +192,34 @@ CPU current {
 
 
 	/*
-	 *  ƒCƒxƒ“ƒg’è‹`
+	 *  ã‚¤ãƒ™ãƒ³ãƒˆå®šç¾©
 	 */
-	/* ƒƒCƒ“ƒ^ƒXƒNŽüŠúƒCƒxƒ“ƒg	*/
+	/* ãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯å‘¨æœŸã‚¤ãƒ™ãƒ³ãƒˆ	*/
 	EVENT MainEvt {
 		MASK = AUTO;
 	};
 
-	/* •À—ñŽÀsƒ^ƒXƒN2—pƒCƒxƒ“ƒg	*/
+	/* ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯2ç”¨ã‚¤ãƒ™ãƒ³ãƒˆ	*/
 	EVENT T2Evt {
 		MASK = AUTO;
 	};
 
-	/* •À—ñŽÀsƒ^ƒXƒN3—pƒCƒxƒ“ƒg	*/
+	/* ä¸¦åˆ—å®Ÿè¡Œã‚¿ã‚¹ã‚¯3ç”¨ã‚¤ãƒ™ãƒ³ãƒˆ	*/
 	EVENT T3Evt {
 		MASK = AUTO;
 	};
 
 	/*
-	 *  ƒJƒEƒ“ƒ^’è‹`
+	 *  ã‚«ã‚¦ãƒ³ã‚¿å®šç¾©
 	 */
-	/* ƒVƒXƒeƒ€ƒ^ƒCƒ}ƒJƒEƒ“ƒ^	*/
+	/* ã‚·ã‚¹ãƒ†ãƒ ã‚¿ã‚¤ãƒžã‚«ã‚¦ãƒ³ã‚¿	*/
 	COUNTER SysTimerCnt { 
 		MINCYCLE = 1;
 		MAXALLOWEDVALUE = 999; 
 		TICKSPERBASE = 1; 
 	};
 
-	/* ƒTƒ“ƒvƒ‹ƒJƒEƒ“ƒ^	*/
+	/* ã‚µãƒ³ãƒ—ãƒ«ã‚«ã‚¦ãƒ³ã‚¿	*/
 	COUNTER SampleCnt { 
 		MINCYCLE = 10;
 		MAXALLOWEDVALUE = 99; 
@@ -227,9 +227,9 @@ CPU current {
 	};
 
 	/*
-	 *  ƒAƒ‰[ƒ€’è‹`
+	 *  ã‚¢ãƒ©ãƒ¼ãƒ å®šç¾©
 	 */
-	/* ƒƒCƒ“ƒ^ƒXƒNŽüŠúƒAƒ‰[ƒ€	*/
+	/* ãƒ¡ã‚¤ãƒ³ã‚¿ã‚¹ã‚¯å‘¨æœŸã‚¢ãƒ©ãƒ¼ãƒ 	*/
 	ALARM MainCycArm { 
 		COUNTER = SysTimerCnt;
 		ACTION  = SETEVENT {
@@ -245,7 +245,7 @@ CPU current {
 		};
 	};
 
-	/* ƒ^ƒXƒN‹N“®—pƒAƒ‰[ƒ€	*/
+	/* ã‚¿ã‚¹ã‚¯èµ·å‹•ç”¨ã‚¢ãƒ©ãƒ¼ãƒ 	*/
 	ALARM ActTskArm { 
 		COUNTER = SysTimerCnt;
 		ACTION  = ACTIVATETASK {
@@ -254,7 +254,7 @@ CPU current {
 		AUTOSTART = FALSE;
 	};
 
-	/* ƒCƒxƒ“ƒgÝ’è—pƒAƒ‰[ƒ€	*/
+	/* ã‚¤ãƒ™ãƒ³ãƒˆè¨­å®šç”¨ã‚¢ãƒ©ãƒ¼ãƒ 	*/
 	ALARM SetEvtArm { 
 		COUNTER = SysTimerCnt;
 		ACTION  = SETEVENT {
@@ -264,7 +264,7 @@ CPU current {
 		AUTOSTART = FALSE;
 	};
 
-	/* ƒR[ƒ‹ƒoƒbƒNŽÀs—pƒAƒ‰[ƒ€	*/
+	/* ã‚³ãƒ¼ãƒ«ãƒãƒƒã‚¯å®Ÿè¡Œç”¨ã‚¢ãƒ©ãƒ¼ãƒ 	*/
 	ALARM CallBackArm { 
 		COUNTER = SysTimerCnt;
 		ACTION  = ALARMCALLBACK {
@@ -273,7 +273,7 @@ CPU current {
 		AUTOSTART = FALSE;
 	};
 
-	/* ƒTƒ“ƒvƒ‹ƒJƒEƒ“ƒ^“®ìŠm”F—pƒAƒ‰[ƒ€	*/
+	/* ã‚µãƒ³ãƒ—ãƒ«ã‚«ã‚¦ãƒ³ã‚¿å‹•ä½œç¢ºèªç”¨ã‚¢ãƒ©ãƒ¼ãƒ 	*/
 	ALARM SampleArm { 
 		COUNTER = SampleCnt;
 		ACTION  = ALARMCALLBACK {

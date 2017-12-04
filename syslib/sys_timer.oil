@@ -1,6 +1,6 @@
 #include <hw_sys_timer.oil>
 
-	/* システムタイマカウンタ	*/
+	/* 繧ｷ繧ｹ繝�繝繧ｿ繧､繝槭き繧ｦ繝ｳ繧ｿ	*/
 	COUNTER SysTimerCnt { 
 		MINCYCLE = 1;
 		MAXALLOWEDVALUE = 999; 

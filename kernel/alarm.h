@@ -9,89 +9,89 @@
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  * 
- *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
- *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
- *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
- *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
- *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
- *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
- *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
- *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
- *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
- *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
- *      �̖��ۏ؋K����f�ڂ��邱�ƁD
- *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
- *      �ƁD
- *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
- *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
- *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
- *        �񍐂��邱�ƁD
- *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
- *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+ *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
  * 
- *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
- *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
- *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
- *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
  * 
  */
 
 /*
- *	�A���[���@�\
+ *	アラーム機能
  */
 
 #ifndef _ALARM_H_
 #define _ALARM_H_
 
 /*
- *  �A���[��ID�̓���Ȓl�̒�`
+ *  アラームIDの特殊な値の定義
  */
-#define ALMID_NULL		((AlarmType) UINT8_INVALID)	/* ����ID */
+#define ALMID_NULL		((AlarmType) UINT8_INVALID)	/* 無効ID */
 
 /*
- *  �J�E���^���E�A���[������ێ�����ϐ��̐錾
+ *  カウンタ数・アラーム数を保持する変数の宣言
  */
-extern const UINT8		tnum_counter;		/* �J�E���^�̐� */
-extern const UINT8		tnum_alarm;			/* �A���[���̐� */
+extern const UINT8		tnum_counter;		/* カウンタの数 */
+extern const UINT8		tnum_alarm;			/* アラームの数 */
 
 /*
- *  �J�E���^�������u���b�N
+ *  カウンタ初期化ブロック
  */
-extern const TickType	cntinib_maxval[];	/* �J�E���^�̍ő�l */
-extern const TickType	cntinib_maxval2[];	/* �J�E���^�̍ő�l��2�{+1 */
-extern const TickType	cntinib_tickbase[];	/* 1��Ői�ރe�B�b�N�� */
-extern const TickType	cntinib_mincyc[];	/* �����̍ŏ��l */
+extern const TickType	cntinib_maxval[];	/* カウンタの最大値 */
+extern const TickType	cntinib_maxval2[];	/* カウンタの最大値の2倍+1 */
+extern const TickType	cntinib_tickbase[];	/* 1回で進むティック数 */
+extern const TickType	cntinib_mincyc[];	/* 周期の最小値 */
 
 /*
- *  �J�E���^�Ǘ��u���b�N
+ *  カウンタ管理ブロック
  */
-extern TickType			cntcb_curval[];		/* �J�E���^�̌��݃e�B�b�N */
-extern AlarmType		cntcb_almque[];		/* �A���[���̃L���[ */
+extern TickType			cntcb_curval[];		/* カウンタの現在ティック */
+extern AlarmType		cntcb_almque[];		/* アラームのキュー */
 
 /*
- *  �A���[���������u���b�N
+ *  アラーム初期化ブロック
  */
-extern const CounterType alminib_cntid[];	/* �t������Ă���J�E���^ */
-extern const FP			 alminib_cback[];	/* �A���[���R�[���o�b�N */
-extern const AppModeType alminib_autosta[];	/* �N�����郂�[�h */
-extern const TickType	 alminib_almval[];	/* expire ����e�B�b�N�l */
-extern const TickType	 alminib_cycle[];	/* �A���[���̎��� */
+extern const CounterType alminib_cntid[];	/* 付加されているカウンタ */
+extern const FP			 alminib_cback[];	/* アラームコールバック */
+extern const AppModeType alminib_autosta[];	/* 起動するモード */
+extern const TickType	 alminib_almval[];	/* expire するティック値 */
+extern const TickType	 alminib_cycle[];	/* アラームの周期 */
 
 /*
- *  �A���[���Ǘ��u���b�N
+ *  アラーム管理ブロック
  *
- *  �A���[�����A���[���L���[�ɑ}������Ă��Ȃ��ꍇ�Calmcb_next�ɂ�
- *  ���̃A���[����ID�������Ă���inext���������w���Ă���j�D
+ *  アラームがアラームキューに挿入されていない場合，almcb_nextには
+ *  そのアラームのIDが入っている（nextが自分を指している）．
  */
-extern AlarmType		almcb_next[];		/* �A���[���L���[ */
-extern AlarmType		almcb_prev[];		/* �A���[���L���[ */
-extern TickType			almcb_almval[];		/* expire ����e�B�b�N�l */
-extern TickType			almcb_cycle[];		/* �A���[���̎��� */
+extern AlarmType		almcb_next[];		/* アラームキュー */
+extern AlarmType		almcb_prev[];		/* アラームキュー */
+extern TickType			almcb_almval[];		/* expire するティック値 */
+extern TickType			almcb_cycle[];		/* アラームの周期 */
 
 /*
- *  �A���[���@�\�̏�����
+ *  アラーム機能の初期化
  */
 extern void	alarm_initialize(void);
 

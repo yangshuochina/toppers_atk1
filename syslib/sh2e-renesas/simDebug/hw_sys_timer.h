@@ -9,37 +9,37 @@
  *  Copyright (C) 2006 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006 by Hitachi Information & Control Solutions,Ltd., JAPAN
  * 
- *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
- *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
- *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
- *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
- *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
- *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
- *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
- *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
- *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
- *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
- *      �̖��ۏ؋K����f�ڂ��邱�ƁD
- *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
- *      �ƁD
- *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
- *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
- *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
- *        �񍐂��邱�ƁD
- *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
- *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+ *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
  * 
- *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
- *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
- *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
- *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
  * 
  */
 
 /*
- *	�T���v�������^�[�Q�b�g�ˑ��V�X�e���^�C�}���W���[���iSH2 HEW EVA�{�[�h�p�j
+ *	サンプル向けターゲット依存システムタイマモジュール（SH2 HEW EVAボード用）
  */
 
 #if !defined( _HW_SYS_TIMER_H_ )
@@ -51,41 +51,41 @@
 
 
 /*
- *  �V�X�e���^�C�}�̊����݃��x����`
+ *  システムタイマの割込みレベル定義
  */
 #define CFG_INTLVL_SYSCLK	(UINT16)( 0x0004 )
 
 /*
- *  �V�X�e���^�C�}�̃R���y�A�l�i1ms�j
+ *  システムタイマのコンペア値（1ms）
  */
-#define	CFG_SYSCLK		(UINT16)( 2500 )	/* ������ P��/8 = 2.5MHz */ 
+#define	CFG_SYSCLK		(UINT16)( 2500 )	/* 分周比 Pφ/8 = 2.5MHz */ 
 
 #if !defined( _MACRO_ONLY )
 /*
- *  �V�X�e���^�C�}�̋N�������֐��v���g�^�C�v�錾
+ *  システムタイマの起動処理関数プロトタイプ宣言
  */
 extern void InitHwSysTimer( void );
 
 /*
- *  �V�X�e���^�C�}�̒�~�����֐��v���g�^�C�v�錾
+ *  システムタイマの停止処理関数プロトタイプ宣言
  */
 extern void TermHwSysTimer( void );
 
 /*
- *  �V�X�e���^�C�}�̊����ݗv���N���A�����֐��v���g�^�C�v�錾
+ *  システムタイマの割込み要求クリア処理関数プロトタイプ宣言
  */
 Inline void	ClearHwSysTimerInt( void );
 
 /*
- *  �V�X�e���^�C�}�̊����ݗv���N���A����
+ *  システムタイマの割込み要求クリア処理
  *
- *  �����ݔ������Ɏ����I�ɃN���A����邪�C�����݈ȊO����
- *  ���s����邱�Ƃ��z�肵�C���L��������������D
+ *  割込み発生時に自動的にクリアされるが，割込み以外から
+ *  実行されることも想定し，下記処理を実装する．
  */
 Inline void
 ClearHwSysTimerInt( void )
 {
-	P_CMT.CMCSR0.BIT.CMF = 0;		/* �����ݗv���N���A */
+	P_CMT.CMCSR0.BIT.CMF = 0;		/* 割込み要求クリア */
 }	/* ClearHwSysTimerInt	*/
 
 #endif /* _MACRO_ONLY */

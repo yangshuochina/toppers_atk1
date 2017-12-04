@@ -6,63 +6,63 @@
  *  Copyright (C) 2006 by Embedded and Real-Time Systems Laboratory
  *              Graduate School of Information Science, Nagoya Univ., JAPAN    
  * 
- *  ��L���쌠�҂́C�ȉ��� (1)�`(4) �̏������CFree Software Foundation 
- *  �ɂ���Č��\����Ă��� GNU General Public License �� Version 2 �ɋL
- *  �q����Ă�������𖞂����ꍇ�Ɍ���C�{�\�t�g�E�F�A�i�{�\�t�g�E�F�A
- *  �����ς������̂��܂ށD�ȉ������j���g�p�E�����E���ρE�Ĕz�z�i�ȉ��C
- *  ���p�ƌĂԁj���邱�Ƃ𖳏��ŋ�������D
- *  (1) �{�\�t�g�E�F�A���\�[�X�R�[�h�̌`�ŗ��p����ꍇ�ɂ́C��L�̒���
- *      ���\���C���̗��p��������щ��L�̖��ۏ؋K�肪�C���̂܂܂̌`�Ń\�[
- *      �X�R�[�h���Ɋ܂܂�Ă��邱�ƁD
- *  (2) �{�\�t�g�E�F�A���C���C�u�����`���ȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł���`�ōĔz�z����ꍇ�ɂ́C�Ĕz�z�ɔ����h�L�������g�i���p
- *      �҃}�j���A���Ȃǁj�ɁC��L�̒��쌠�\���C���̗��p��������щ��L
- *      �̖��ۏ؋K����f�ڂ��邱�ƁD
- *  (3) �{�\�t�g�E�F�A���C�@��ɑg�ݍ��ނȂǁC���̃\�t�g�E�F�A�J���Ɏg
- *      �p�ł��Ȃ��`�ōĔz�z����ꍇ�ɂ́C���̂����ꂩ�̏����𖞂�����
- *      �ƁD
- *    (a) �Ĕz�z�ɔ����h�L�������g�i���p�҃}�j���A���Ȃǁj�ɁC��L�̒�
- *        �쌠�\���C���̗��p��������щ��L�̖��ۏ؋K����f�ڂ��邱�ƁD
- *    (b) �Ĕz�z�̌`�Ԃ��C�ʂɒ�߂���@�ɂ���āCTOPPERS�v���W�F�N�g��
- *        �񍐂��邱�ƁD
- *  (4) �{�\�t�g�E�F�A�̗��p�ɂ�蒼�ړI�܂��͊ԐړI�ɐ����邢���Ȃ鑹
- *      �Q������C��L���쌠�҂����TOPPERS�v���W�F�N�g��Ɛӂ��邱�ƁD
+ *  上記著作権者は，以下の (1)〜(4) の条件か，Free Software Foundation 
+ *  によって公表されている GNU General Public License の Version 2 に記
+ *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
+ *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
+ *  利用と呼ぶ）することを無償で許諾する．
+ *  (1) 本ソフトウェアをソースコードの形で利用する場合には，上記の著作
+ *      権表示，この利用条件および下記の無保証規定が，そのままの形でソー
+ *      スコード中に含まれていること．
+ *  (2) 本ソフトウェアを，ライブラリ形式など，他のソフトウェア開発に使
+ *      用できる形で再配布する場合には，再配布に伴うドキュメント（利用
+ *      者マニュアルなど）に，上記の著作権表示，この利用条件および下記
+ *      の無保証規定を掲載すること．
+ *  (3) 本ソフトウェアを，機器に組み込むなど，他のソフトウェア開発に使
+ *      用できない形で再配布する場合には，次のいずれかの条件を満たすこ
+ *      と．
+ *    (a) 再配布に伴うドキュメント（利用者マニュアルなど）に，上記の著
+ *        作権表示，この利用条件および下記の無保証規定を掲載すること．
+ *    (b) 再配布の形態を，別に定める方法によって，TOPPERSプロジェクトに
+ *        報告すること．
+ *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
+ *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
  * 
- *  �{�\�t�g�E�F�A�́C���ۏ؂Œ񋟂���Ă�����̂ł���D��L���쌠�҂�
- *  ���TOPPERS�v���W�F�N�g�́C�{�\�t�g�E�F�A�Ɋւ��āC���̓K�p�\����
- *  �܂߂āC�����Ȃ�ۏ؂��s��Ȃ��D�܂��C�{�\�t�g�E�F�A�̗��p�ɂ�蒼
- *  �ړI�܂��͊ԐړI�ɐ����������Ȃ鑹�Q�Ɋւ��Ă��C���̐ӔC�𕉂�Ȃ��D
+ *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
+ *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
+ *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
+ *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
  * 
  */
 
 /*
- *  �^�[�Q�b�g�V�X�e���ˑ��V���A�����W���[���iH8/Tiny�p�j
- *    SCI3���g�p 
+ *  ターゲットシステム依存シリアルモジュール（H8/Tiny用）
+ *    SCI3を使用 
  */
 
 #include	"hw_serial.h"
 
 
 /*
- *  �|�[�g�̃N���[�Y
+ *  ポートのクローズ
  */
 static
 cls_port(void)
 {
 	long count;
 	
-	/* TDRE �� 1 �ɂȂ�܂ő҂� */
+	/* TDRE が 1 になるまで待つ */
 	while( 0 == (SCI3_SSR & (UINT8)SSR_TDRE) );
 
 	/*
-     * 11�r�b�g���M���҂�
-	 *  �� 1.2 msec�҂� 
-	 *   9600bps = �� 0.1 msec
+     * 11ビット送信分待つ
+	 *  約 1.2 msec待つ 
+	 *   9600bps = 約 0.1 msec
 	 *   0.1 * 11 + 1 = 1.2 msec
-	 * 1���while���[�v�ɗv���鎞��
-	 *   1���߂̎��s�X�e�[�g�̍ŏ���2�X�e�[�g
-	 *   20Mhz����̏ꍇ�C1�X�e�[�g50nsec
-	 *   while���߂�4�X�e�b�v
+	 * 1回のwhileループに要する時間
+	 *   1命令の実行ステートの最小は2ステート
+	 *   20Mhz動作の場合，1ステート50nsec
+	 *   while命令は4ステップ
 	 *    4 * 2 * 50nsec = 400nsec
 	 * 1.2msec / 400nsec = 3000   
 	 */
@@ -71,13 +71,13 @@ cls_port(void)
 		count--;
 	}
 
-	/* ����M��~ */
-	SCI3_SCR &= (UINT8)(~(SCR_TIE|SCR_RIE|SCR_TE|SCR_RE));
+	/* 送受信停止 */
+	SCI3_SCR &= (UINT8)(‾(SCR_TIE|SCR_RIE|SCR_TE|SCR_RE));
 }
 
 /*
- *  �V���A��IO���W���[������������
- *    �|�[�g�����������Ď�M�����݂�L���ɂ���D
+ *  シリアルIOモジュール初期化処理
+ *    ポートを初期化して受信割込みを有効にする．
  */
 void
 InitHwSerial(void)
@@ -86,22 +86,22 @@ InitHwSerial(void)
 	
 	cls_port();
 
-	/* ���[�h�ݒ� */
+	/* モード設定 */
 	SCI3_SMR = (UINT8)0;
 	
-	/* �{�[���[�g�ݒ�(38900bps) */
+	/* ボーレート設定(38900bps) */
 	SCI3_BRR = (UINT8)15;
 
-	/* �����݂̋֎~�ƃN���b�N�\�[�X�̑I�� */
+	/* 割込みの禁止とクロックソースの選択 */
 	SCI3_SCR = (UINT8)0;
 
-	/* �{�[���[�g�̐ݒ��A1bit�҂K�v������ 
-	 *  �� 0.1 msec�҂� 
-	 *   9600bps = �� 0.1 msec (�Œ�{�[���[�g)
-	 * 1���while���[�v�ɗv���鎞��
-	 *   1���߂̎��s�X�e�[�g�̍ŏ���2�X�e�[�g
-	 *   20Mhz����̏ꍇ�C1�X�e�[�g50nsec
-	 *   while���߂�4�X�e�b�v
+	/* ボーレートの設定後、1bit待つ必要がある 
+	 *  約 0.1 msec待つ 
+	 *   9600bps = 約 0.1 msec (最低ボーレート)
+	 * 1回のwhileループに要する時間
+	 *   1命令の実行ステートの最小は2ステート
+	 *   20Mhz動作の場合，1ステート50nsec
+	 *   while命令は4ステップ
 	 *    4 * 2 * 50nsec = 400nsec
 	 * 0.1msec / 400nsec = 250
 	 */
@@ -110,18 +110,18 @@ InitHwSerial(void)
 		count--;
 	}
 
-	/* �G���[�t���O���N���A */
-	SCI3_SSR &= (UINT8)(~(SSR_ORER|SSR_FER|SSR_PER));
+	/* エラーフラグをクリア */
+	SCI3_SSR &= (UINT8)(‾(SSR_ORER|SSR_FER|SSR_PER));
 
-	/* ����M����, ��M�����݋��� */
+	/* 送受信許可, 受信割込み許可 */
 	SCI3_SCR |= (UINT8)(SCR_TE|SCR_RE|SCR_RIE);
 	
-	/* �|�[�g��L���� */
+	/* ポートを有効に */
 	IO_PMR1 |= (UINT8)IO_PMR1_TXD;
 }
 
 /*
- *  �V���A��IO���W���[����~����
+ *  シリアルIOモジュール停止処理
  *
  */
 void
@@ -132,22 +132,22 @@ TermHwSerial(void)
 
   
 /*
- *  �V���A��IO���W���[����M�����݃T�[�r�X���[�`��
+ *  シリアルIOモジュール受信割込みサービスルーチン
  */
 void RxHwSerialInt(void)
 {
 	UINT8 data;
 	
 	if((SCI3_SSR & (UINT8)(SSR_ORER|SSR_FER|SSR_PER)) != 0){
-		/* �G���[���� */
-		/* �G���[�t���O���N���A */
-		SCI3_SSR &= (UINT8)(~(SSR_ORER|SSR_FER|SSR_PER));
+		/* エラー処理 */
+		/* エラーフラグをクリア */
+		SCI3_SSR &= (UINT8)(‾(SSR_ORER|SSR_FER|SSR_PER));
 	}
 	else {
-		/* �f�[�^��M */
+		/* データ受信 */
 		data = (UINT8)SCI3_RDR;
-		/* ��M�t���O�N���A */
-		SCI3_SSR &= (UINT8)(~(SSR_RDRF));
-		RxSerialInt(data);	/* ��M�R�[���o�b�N���s */
+		/* 受信フラグクリア */
+		SCI3_SSR &= (UINT8)(‾(SSR_RDRF));
+		RxSerialInt(data);	/* 受信コールバック実行 */
 	}
 }

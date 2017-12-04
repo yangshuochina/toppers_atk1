@@ -2,7 +2,7 @@
  *  kernel_cfg.c
  *  Fri Nov 14 08:54:54 2008
  *  SG Version 2.10
- *  sg.exe -template=..\..\..\..\config\sh2A-renesas\sh2A_72513.sgt -I ..\..\..\..\sg\impl_oil -odep=kernel_support.src -os=ECC2 D:\toppers_automotive_kernel\tools\sh2A-renesas\sample\SG\sample1.oil
+ *  sg.exe -template=..¥..¥..¥..¥config¥sh2A-renesas¥sh2A_72513.sgt -I ..¥..¥..¥..¥sg¥impl_oil -odep=kernel_support.src -os=ECC2 D:¥toppers_automotive_kernel¥tools¥sh2A-renesas¥sample¥SG¥sample1.oil
  */
 #include "osek_kernel.h"
 #include "kernel_id.h"

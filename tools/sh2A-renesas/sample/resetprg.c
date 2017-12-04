@@ -20,8 +20,8 @@
 
 #define SR_Init    0x000000F0
 #define INT_OFFSET 0x10
-#define FPSCR_Init 0x00040001 	/* cpu=sh2afpu|sh4|sh4a w’è‚Ì‚İ*/
-								/* fpu=double w’è‚Ì‰Šú’l‚Í0x00080001 */
+#define FPSCR_Init 0x00040001 	/* cpu=sh2afpu|sh4|sh4a æŒ‡å®šæ™‚ã®ã¿*/
+								/* fpu=double æŒ‡å®šæ™‚ã®åˆæœŸå€¤ã¯0x00080001 */
 								
 extern _UINT INT_Vectors;
 
@@ -70,7 +70,7 @@ void main(void);
 
 #define DF_RAM_COPY_ADDR (0xFFF80000)
 #define DF_ROM_COPY_ADDR (0)
-#define DF_ROM_COPY_SIZE (0x10000)	/* ƒRƒs[ƒTƒCƒY(ƒoƒCƒg) */
+#define DF_ROM_COPY_SIZE (0x10000)	/* ã‚³ãƒ”ãƒ¼ã‚µã‚¤ã‚º(ãƒã‚¤ãƒˆ) */
 
 void PowerON_Reset_PC(void)
 { 
@@ -80,14 +80,14 @@ void PowerON_Reset_PC(void)
 	
 	Init_Stack();
 	set_vbr(0);
-	set_fpscr(FPSCR_Init); /* cpu=sh2afpu|sh4|sh4a w’è‚Ì‚İİ’è‚µ‚Ä‚­‚¾‚³‚¢*/
+	set_fpscr(FPSCR_Init); /* cpu=sh2afpu|sh4|sh4a æŒ‡å®šæ™‚ã®ã¿è¨­å®šã—ã¦ãã ã•ã„*/
 	
- 	REG_INIT_BSC();						/* ƒoƒXƒXƒe[ƒgƒRƒ“ƒgƒ[ƒ‰‰Šú‰» RAMƒ`ƒFƒbƒN‘O‚ÉÀ{*/
+ 	REG_INIT_BSC();						/* ãƒã‚¹ã‚¹ãƒ†ãƒ¼ãƒˆã‚³ãƒ³ãƒˆãƒ­ãƒ¼ãƒ©åˆæœŸåŒ– RAMãƒã‚§ãƒƒã‚¯å‰ã«å®Ÿæ–½*/
  	RAMCK();							/* RAM check & clear */
 
 	RAMCOPY(DF_RAM_COPY_ADDR, DF_ROM_COPY_ADDR, DF_ROM_COPY_SIZE);
 
-	set_vbr((void *)DF_RAM_COPY_ADDR); //ƒxƒNƒ^ƒe[ƒuƒ‹‚ğ RAM ‚É‚·‚é
+	set_vbr((void *)DF_RAM_COPY_ADDR); //ãƒ™ã‚¯ã‚¿ãƒ†ãƒ¼ãƒ–ãƒ«ã‚’ RAM ã«ã™ã‚‹
 
 	_INITSCT();
 

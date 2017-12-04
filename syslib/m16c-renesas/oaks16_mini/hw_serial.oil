@@ -1,4 +1,4 @@
-	/* ƒVƒŠƒAƒ‹IOŽóMŠ„ž‚Ý(UART1)	*/
+	/* ã‚·ãƒªã‚¢ãƒ«IOå—ä¿¡å‰²è¾¼ã¿(UART1)	*/
 	ISR RxHwSerialInt {
 		CATEGORY = 1;
 		ENTRY = 20;
