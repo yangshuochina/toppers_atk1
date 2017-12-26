@@ -2,7 +2,7 @@
  *  TOPPERS Automotive Kernel
  *      Toyohashi Open Platform for Embedded Real-Time Systems
  *      Automotive Kernel
- * 
+ *
  *  Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
  *                              Toyohashi Univ. of Technology, JAPAN
  *  Copyright (C) 2004 by Embedded and Real-Time Systems Laboratory
@@ -10,8 +10,8 @@
  *  Copyright (C) 2006 by Witz Corporation, JAPAN
  *  Copyright (C) 2006 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006 by Hitachi Information & Control Solutions,Ltd., JAPAN
- * 
- *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
  *  によって公表されている GNU General Public License の Version 2 に記
  *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
  *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
@@ -32,12 +32,12 @@
  *        報告すること．
  *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
  *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
- * 
+ *
  *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
  *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
  *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
  *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
- * 
+ *
  */
 
 /*
@@ -48,7 +48,6 @@
  *  ファイルに先立って処理されるため，他のインクルードファイルに依存し
  *  てはならない．
  */
-
 
 #ifndef _TOOL_DEFS_H_
 #define _TOOL_DEFS_H_
@@ -64,9 +63,9 @@
 /*#define _bool_		_Bool*/	/* ブール型 */ /* SH2 HEW では非サポート */
 
 /*
- *  コンパイラの拡張機能のためのマクロ定義
+ *  Macro definition for compiler extensions
  */
-#define	Inline		static		 /* SH2 HEW では非サポート.コンパイラオプションで inline展開する */
+#define	Inline		static		 /* Not supported in SH2 HEW, expand inline with compiler option */
 
 /*#define	asm		__asm__*/ 			/* SH2 HEW では非サポート */
 /*#define	Asm		__asm__ volatile*/ 	/* SH2 HEW では非サポート */

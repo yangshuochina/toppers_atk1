@@ -2,7 +2,7 @@
  *  TOPPERS Automotive Kernel
  *      Toyohashi Open Platform for Embedded Real-Time Systems
  *      Automotive Kernel
- * 
+ *
  *  Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
  *                              Toyohashi Univ. of Technology, JAPAN
  *  Copyright (C) 2004 by Embedded and Real-Time Systems Laboratory
@@ -10,8 +10,8 @@
  *  Copyright (C) 2006 by Witz Corporation, JAPAN
  *  Copyright (C) 2006-2008 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006-2008 by Hitachi Information & Control Solutions,Ltd., JAPAN
- * 
- *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
  *  によって公表されている GNU General Public License の Version 2 に記
  *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
  *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
@@ -32,18 +32,17 @@
  *        報告すること．
  *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
  *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
- * 
+ *
  *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
  *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
  *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
  *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
- * 
+ *
  */
 
 /*
  *  プロセッサ依存モジュール（SH2用）
  */
-
 
 #ifndef	_CPU_CONFIG_H_
 #define	_CPU_CONFIG_H_
@@ -53,7 +52,6 @@
 #ifndef _MACRO_ONLY
 #include "cpu_insn.h"
 #endif /* _MACRO_ONLY */
-
 
 #ifndef _MACRO_ONLY
 /* インライン関数プロトタイプ宣言	*/
@@ -72,44 +70,42 @@ extern UINT32 int_ena_level;
  */
 
 /*
- *  割込み優先度レベル設定
+ *  Interrupt priority level setting
  */
 static void set_ipl(UINT8 ipl)
 {
-	/*
-	 *  CPUロック中かどうか判定し、ロック中でなければ
-	 *  SRレジスタに直接設定する．ロック中であれば
-	 *  int_ena_levelにIPLを保存する．
-	 */
-	if(int_ena_flag != 0){
-		set_sr(ipl << 4);
-	}
-	else{
-		int_ena_level = ipl << 4;
-	}
+    /*
+     *  CPUロック中かどうか判定し、ロック中でなければ
+     *  SRレジスタに直接設定する．ロック中であれば
+     *  int_ena_levelにIPLを保存する．
+     */
+    if (int_ena_flag != 0) {
+        set_sr(ipl << 4);
+    }
+    else {
+        int_ena_level = ipl << 4;
+    }
 }
 
-
 /*
- *  割込み優先度レベル取得
+ *  Acquire interrupt priority level
  */
 static UINT8 current_ipl(void)
 {
-	/*
-	 *  CPUロック中かどうか判定し、ロック中でなければ
-	 *  SRレジスタから直接読み出す．ロック中であれば
-	 *  int_ena_levelからIPLを読み出す．
-	 */
-	if(int_ena_flag != 0)
-	{
-		return (UINT8)((current_sr() & 0x000000f0u ) >> 4);
-	}
-	else
-	{
-		return int_ena_level >> 4;
-	}
+    /*
+     *  CPUロック中かどうか判定し、ロック中でなければ
+     *  SRレジスタから直接読み出す．ロック中であれば
+     *  int_ena_levelからIPLを読み出す．
+     */
+    if (int_ena_flag != 0)
+    {
+        return (UINT8)((current_sr() & 0x000000f0u) >> 4);
+    }
+    else
+    {
+        return int_ena_level >> 4;
+    }
 }
-
 
 /*
  *  プロセッサ依存の初期化(cpu_config.c)
@@ -128,7 +124,7 @@ VP tcxb_sp[tnum]
 extern FP tcxb_pc[];
 extern VP tcxb_sp[];
 
-/* ディスパッチ周りのアセンブラ関数プロトタイプ宣言	*/
+/* Assembler function prototype declaration around dispatching	*/
 extern void  dispatch(void);
 extern void  exit_and_dispatch(void);
 extern void  start_dispatch(void);
@@ -145,4 +141,3 @@ extern const UINT16 primap_bitmask[16];
 #endif	/* SH2 or SH2E */
 
 #endif	/* _CPU_CONFIG_H_	*/
-

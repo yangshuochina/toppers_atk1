@@ -45,7 +45,7 @@
 _SYS_DEFS_INC_:	.DEFINE	""
 
 
-; * スタック先頭番地
+; * Stack start address
     .SECTION    S,STACK,ALIGN=4
 
 STACK_TOP:	.DEFINE  "STARTOF S + SIZEOF S"

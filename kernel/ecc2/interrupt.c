@@ -2,14 +2,14 @@
  *  TOPPERS Automotive Kernel
  *      Toyohashi Open Platform for Embedded Real-Time Systems
  *      Automotive Kernel
- * 
+ *
  *  Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
  *                              Toyohashi Univ. of Technology, JAPAN
  *  Copyright (C) 2004 by Embedded and Real-Time Systems Laboratory
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2007 by Witz Corporation, JAPAN
- * 
- *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
  *  によって公表されている GNU General Public License の Version 2 に記
  *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
  *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
@@ -30,226 +30,227 @@
  *        報告すること．
  *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
  *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
- * 
+ *
  *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
  *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
  *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
  *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
- * 
+ *
  */
 
 /*
- *	割込み管理機能(ECC2)
+ *	Interrupt management function (ECC 2)
  */
 
 #include "osek_kernel.h"
 #include "interrupt.h"
 
 /*
- *  実行中のISR（カテゴリ2）
+ *  Running ISR (category 2)
  */
 IsrType		runisr;
 
 /*
- *  割込み管理機能内部で使用する変数の定義
+ *  Interrupt management function Definition of internal variables
  */
 
 /*
- *  SuspendAllInterrupts のネスト回数
+ *  Number of nesting of SuspendAllInterrupts
  *
- *  この変数は，disable_int() した状態でのみ変更してよい．
+ *  This variable may be changed only with disable_int().
  */
 UINT8		sus_all_cnt;
 
 /*
- *  SuspendOSInterrupts のネスト回数
+ *  Number of nesting of SuspendOSInterrupts
  *
- *  この変数は，set_ipl(ipl_maxisr2) した状態でのみ変更してよい．
- *  set_ipl(ipl_maxisr2) しても，カテゴリ1 の ISR は入ってくるが，元の
- *  値に戻してからリターンすれば問題はない．
+ *  This variable may be changed only when set_ipl (ipl_maxisr2) is set.
+ *  Even if you set_ipl (ipl_maxisr 2), the category 1 ISR comes in,
+ *  but if you return it after returning to the original value,
+ *  there is no problem.
  */
 static UINT8	sus_os_cnt;
 
 /*
- *  SuspendOSInterrupts する前の割込み優先レベル
+ *  Interrupt priority level before SuspendOSInterrupts
  *
- *  この変数は，set_ipl(ipl_maxisr2) した状態でのみ変更してよい．また，
- *  この変数を使用している間は，sus_os_cnt を非ゼロにしておく．
- *  set_ipl(ipl_maxisr2) してもカテゴリ1 の ISR は入ってくるが，
- *  sus_os_cnt を非ゼロにしておくことで，カテゴリ1 の ISR でこの変数が
- *  変更されることはない．
+ *  This variable may be changed only when set_ipl (ipl_maxisr2) is set.
+ *  Also, keep sus_os_cnt non-zero while using this variable.
+ *  Even if you set_ipl (ipl_maxisr2), the ISR of category 1 comes in,
+ *  but by setting sus_os_cnt to non-zero, this variable will not be changed
+ *  in category 1 ISR.
  */
 static IPL	saved_ipl;
 
 /*
- *  SuspendAllInterrupts/SuspendOSInterrupts する前の実行コンテキスト
+ *  Execution context before SuspendAllInterrupts / SuspendOSInterrupts
  *
- *  この変数は，disable_int または set_ipl(ipl_maxisr2) した状態でのみ
- *  変更してよい．また，この変数を使用している間は，sus_all_cnt か 
- *  sus_os_cnt を非ゼロにしておく．set_ipl(ipl_maxisr2) してもカテゴリ1
- *  の ISR は入ってくるが，sus_os_cnt を非ゼロにしておくことで，カテゴ
- *  リ1 の ISR でこの変数が変更されることはない．
+ *  This variable may be changed only with disable_int or set_ipl (ipl_maxisr2).
+ *  Also, keep sus_all_cnt or sus_os_cnt non-zero while using this variable.
+ *  Even with set_ipl (ipl_maxisr2), the ISR of category 1 will come in,
+ *  but if sus_os_cnt is non-zero, this variable will not be changed
+ *  in Category 1 ISR.
  */
 static UINT8	saved_callevel;
 
 /*
- *  割込み管理機能の初期化
+ *  Initialization of interrupt management function
  */
 void
 interrupt_initialize(void)
 {
-	IsrType		isrid;
+    IsrType		isrid;
 
-	runisr = ISRID_NULL;
-	isrid = ISRID_NULL;
-	sus_all_cnt = 0u;
-	sus_os_cnt = 0u;
+    runisr = ISRID_NULL;
+    isrid = ISRID_NULL;
+    sus_all_cnt = 0u;
+    sus_os_cnt = 0u;
 
-	for (isrid = 0; isrid < tnum_isr2; isrid++) {
-		isrcb_lastres[isrid] = 0u;
-	}
+    for (isrid = 0; isrid < tnum_isr2; isrid++) {
+        isrcb_lastres[isrid] = 0u;
+    }
 }
 
 /*
- *  すべての割込みの禁止（高速簡易版）
+ *  Disable all interrupts (high-speed simplified version)
  */
 void
 DisableAllInterrupts(void)
 {
-	LOG_DISINT_ENTER();
-	disable_int();
-	LOG_DISINT_LEAVE();
+    LOG_DISINT_ENTER();
+    disable_int();
+    LOG_DISINT_LEAVE();
 }
 
 /*
- *  すべての割込みの許可（高速簡易版）
+ *  Enable all interrupts (high-speed simplified version)
  */
 void
 EnableAllInterrupts(void)
 {
-	LOG_ENAINT_ENTER();
-	enable_int();
-	LOG_ENAINT_LEAVE();
+    LOG_ENAINT_ENTER();
+    enable_int();
+    LOG_ENAINT_LEAVE();
 }
 
 /*
- *  すべての割込みの禁止
+ *  Disable all interrupts
  */
 void
 SuspendAllInterrupts(void)
 {
-	LOG_SUSALL_ENTER();
-	if (sus_all_cnt == UINT8_INVALID) {
-		/*
-		 *  SuspendAllInterrupts を繰り返し呼んだ場合の対策
-		 *  （何もせずに抜ける）
-		 */
-	}
-	else if (sus_all_cnt == 0) {
-		disable_int();
-		sus_all_cnt++;
-		if (sus_os_cnt == 0) {
-			saved_callevel = callevel;
-			callevel = TCL_NULL;
-		}
-	}
-	else {
-		sus_all_cnt++;
-	}
-	LOG_SUSALL_LEAVE();
+    LOG_SUSALL_ENTER();
+    if (sus_all_cnt == UINT8_INVALID) {
+        /*
+         *  SuspendAllInterrupts を繰り返し呼んだ場合の対策
+         *  （何もせずに抜ける）
+         */
+    }
+    else if (sus_all_cnt == 0) {
+        disable_int();
+        sus_all_cnt++;
+        if (sus_os_cnt == 0) {
+            saved_callevel = callevel;
+            callevel = TCL_NULL;
+        }
+    }
+    else {
+        sus_all_cnt++;
+    }
+    LOG_SUSALL_LEAVE();
 }
 
 /*
- *  すべての割込みの許可
+ *  Allow all interrupts
  */
 void
 ResumeAllInterrupts(void)
 {
-	LOG_RSMALL_ENTER();
-	if (sus_all_cnt == 0) {
-		/*
-		 *  SuspendAllInterrupts を呼ばずに，ResumeAllInterrupts
-		 *  を呼んだ場合の対策（何もせずに抜ける）
-		 */
-	}
-	else if (sus_all_cnt == 1) {
-		if (sus_os_cnt == 0) {
-			callevel = saved_callevel;
-		}
-		sus_all_cnt--;
-		enable_int();
-	}
-	else {
-		sus_all_cnt--;
-	}
-	LOG_RSMALL_LEAVE();
+    LOG_RSMALL_ENTER();
+    if (sus_all_cnt == 0) {
+        /*
+         *  SuspendAllInterrupts を呼ばずに，ResumeAllInterrupts
+         *  を呼んだ場合の対策（何もせずに抜ける）
+         */
+    }
+    else if (sus_all_cnt == 1) {
+        if (sus_os_cnt == 0) {
+            callevel = saved_callevel;
+        }
+        sus_all_cnt--;
+        enable_int();
+    }
+    else {
+        sus_all_cnt--;
+    }
+    LOG_RSMALL_LEAVE();
 }
 
 /*
- *  カテゴリ2の割込みの禁止
+ *  Category 2 interrupt prohibition
  */
 void
 SuspendOSInterrupts(void)
 {
-	IPL	ipl;
+    IPL	ipl;
 
-	LOG_SUSOSI_ENTER();
-	if (sus_os_cnt == UINT8_INVALID) {
-		/*
-		 *  SuspendOSInterrupts を繰り返し呼んだ場合の対策
-		 *  （何もせずに抜ける）
-		 */
-	}
-	else if (sus_os_cnt == 0) {
-		ipl = current_ipl();
+    LOG_SUSOSI_ENTER();
+    if (sus_os_cnt == UINT8_INVALID) {
+        /*
+         *  SuspendOSInterrupts を繰り返し呼んだ場合の対策
+         *  （何もせずに抜ける）
+         */
+    }
+    else if (sus_os_cnt == 0) {
+        ipl = current_ipl();
 
-		/*
-		 *  すでに ISR2 が禁止されている時は何もしない．
-		 */
-		if (ipl < ipl_maxisr2) {
-			set_ipl(ipl_maxisr2);
-		}
-		sus_os_cnt++;
-		saved_ipl = ipl;
-		if (sus_all_cnt == 0) {
-			saved_callevel = callevel;
-			callevel = TCL_NULL;
-		}
-	}
-	else {
-		sus_os_cnt++;
-	}
-	LOG_SUSOSI_LEAVE();
+        /*
+         *  すでに ISR2 が禁止されている時は何もしない．
+         */
+        if (ipl < ipl_maxisr2) {
+            set_ipl(ipl_maxisr2);
+        }
+        sus_os_cnt++;
+        saved_ipl = ipl;
+        if (sus_all_cnt == 0) {
+            saved_callevel = callevel;
+            callevel = TCL_NULL;
+        }
+    }
+    else {
+        sus_os_cnt++;
+    }
+    LOG_SUSOSI_LEAVE();
 }
 
 /*
- *  カテゴリ2の割込みの許可
+ *  Allow Category 2 interrupt
  */
 void
 ResumeOSInterrupts(void)
 {
-	LOG_RSMOSI_ENTER();
-	if (sus_os_cnt == 0) {
-		/*
-		 *  SuspendOSInterrupts を呼ばずに，ResumeOSInterrupts
-		 *  を呼んだ場合の対策（何もせずに抜ける）
-		 */
-	}
-	else if (sus_os_cnt == 1) {
-		if (sus_all_cnt == 0) {
-			callevel = saved_callevel;
-		}
-		sus_os_cnt--;
+    LOG_RSMOSI_ENTER();
+    if (sus_os_cnt == 0) {
+        /*
+         *  SuspendOSInterrupts を呼ばずに，ResumeOSInterrupts
+         *  を呼んだ場合の対策（何もせずに抜ける）
+         */
+    }
+    else if (sus_os_cnt == 1) {
+        if (sus_all_cnt == 0) {
+            callevel = saved_callevel;
+        }
+        sus_os_cnt--;
 
-		/*
-		 *  もともと ISR2 が禁止されていた時は何もしない．
-		 */
-		if (saved_ipl < ipl_maxisr2) {
-			set_ipl(saved_ipl);
-		}
-	}
-	else {
-		sus_os_cnt--;
-	}
-	LOG_RSMOSI_LEAVE();
+        /*
+         *  もともと ISR2 が禁止されていた時は何もしない．
+         */
+        if (saved_ipl < ipl_maxisr2) {
+            set_ipl(saved_ipl);
+        }
+    }
+    else {
+        sus_os_cnt--;
+    }
+    LOG_RSMOSI_LEAVE();
 }

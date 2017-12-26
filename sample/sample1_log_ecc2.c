@@ -2,14 +2,14 @@
  *  TOPPERS Automotive Kernel
  *      Toyohashi Open Platform for Embedded Real-Time Systems
  *      Automotive Kernel
- * 
+ *
  *  Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
  *                              Toyohashi Univ. of Technology, JAPAN
  *  Copyright (C) 2004 by Embedded and Real-Time Systems Laboratory
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
- * 
- *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
  *  によって公表されている GNU General Public License の Version 2 に記
  *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
  *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
@@ -30,12 +30,12 @@
  *        報告すること．
  *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
  *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
- * 
+ *
  *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
  *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
  *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
  *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
- * 
+ *
  */
 #include "kernel.h"
 #include "sys_timer.h"
@@ -45,543 +45,539 @@
 #include "sample1_com_ecc2.h"
 
 /*
- *  内部定数データテーブル
+ *  Internal constant data table
  */
-/* 無効イベントマスク値	*/
-static const EventMaskType	invalid_mask = (EventMaskType)( 0 );
+/* Invalid event mask value	*/
+static const EventMaskType	invalid_mask = (EventMaskType)(0);
 
-/* イベントマスクテーブル	*/
-static const EventMaskType * const	event_mask_tbl[] = {
-	&invalid_mask,
-	&T2Evt,
-	&T3Evt,
-	&invalid_mask,
-	&invalid_mask
+/* Event mask table	*/
+static const EventMaskType * const	event_mask_tbl[] ={
+    &invalid_mask,
+    &T2Evt,
+    &T3Evt,
+    &invalid_mask,
+    &invalid_mask
 };
 
-/* タスクIDテーブル	*/
-static const TaskType * const	task_id_tbl[] = {
-	&Task1,
-	&Task2,
-	&Task3,
-	&Task4,
-	&Task5
+/* Task ID table	*/
+static const TaskType * const	task_id_tbl[] ={
+    &Task1,
+    &Task2,
+    &Task3,
+    &Task4,
+    &Task5
 };
 
-/* アラームIDテーブル	*/
-static const AlarmType * const	alarm_id_tbl[] = {
-	&ActTskArm,
-	&SetEvtArm,
-	&CallBackArm
+/* Alarm ID table	*/
+static const AlarmType * const	alarm_id_tbl[] ={
+    &ActTskArm,
+    &SetEvtArm,
+    &CallBackArm
 };
 
-/* ティック値テーブル	*/
-static const TickType	tick_tbl[] = {
-	(TickType)500,
-	(TickType)900
+/* Tick value table	*/
+static const TickType	tick_tbl[] ={
+    (TickType)500,
+    (TickType)900
 };
 
-/* サイクル値テーブル	*/
-static const TickType	cycle_tbl[] = {
-	(TickType)0,
-	(TickType)500
+/* Cycle value table	*/
+static const TickType	cycle_tbl[] ={
+    (TickType)0,
+    (TickType)500
 };
 
-/* イベントマスク名文字列テーブル	*/
-static const UINT8	*event_name_tbl[] = {
-	"Invalid",
-	"T2Evt",
-	"T3Evt",
-	"Invalid",
-	"Invalid"
+/* Event mask name String table	*/
+static const UINT8	*event_name_tbl[] ={
+    "Invalid",
+    "T2Evt",
+    "T3Evt",
+    "Invalid",
+    "Invalid"
 };
 
-/* タスク名文字列テーブル	*/
-const UINT8	*task_name_tbl[] = {
-	"Task1",
-	"Task2",
-	"Task3",
-	"Task4",
-	"Task5"
+/* Task name string table	*/
+const UINT8	*task_name_tbl[] ={
+    "Task1",
+    "Task2",
+    "Task3",
+    "Task4",
+    "Task5"
 };
 
-/* タスク状態文字列テーブル	*/
-static const UINT8	*task_state_tbl[] = {
-	"SUSPENDED",
-	"RUNNING",
-	"READY",
-	"WAITING",
+/* Task state character string table */
+static const UINT8	*task_state_tbl[] ={
+    "SUSPENDED",
+    "RUNNING",
+    "READY",
+    "WAITING",
 };
 
-/* アラーム名文字列テーブル	*/
-static const UINT8	*alarm_name_tbl[] = {
-	"ActTskArm",
-	"SetEvtArm",
-	"CallBackArm"
+/* Alarm name string table */
+static const UINT8	*alarm_name_tbl[] ={
+    "ActTskArm",
+    "SetEvtArm",
+    "CallBackArm"
 };
 
-
-/* エラー文字列テーブル	*/
-const UINT8	*ercd_tbl[] = {
-	"E_OK",
-	"E_OS_ACCESS",
-	"E_OS_CALLEVEL",
-	"E_OS_ID",
-	"E_OS_LIMIT",
-	"E_OS_NOFUNC",
-	"E_OS_RESOURCE",
-	"E_OS_STATE",
-	"E_OS_VALUE"
+/* Error String Table */
+const UINT8	*ercd_tbl[] ={
+    "E_OK",
+    "E_OS_ACCESS",
+    "E_OS_CALLEVEL",
+    "E_OS_ID",
+    "E_OS_LIMIT",
+    "E_OS_NOFUNC",
+    "E_OS_RESOURCE",
+    "E_OS_STATE",
+    "E_OS_VALUE"
 };
-
 
 /*
- *  ActivateTask 実行・ログ出力処理
+ *  ActivateTask execution · log output processing
  */
 void
-PutActTsk( UINT8 task_no )
+PutActTsk(UINT8 task_no)
 {
-	PutSysLog( (const UINT8 *)"Call ActivateTask(" );
-	PutSysLog( task_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)")\r\n" );
+    PutSysLog((const UINT8 *)"Call ActivateTask(");
+    PutSysLog(task_name_tbl[task_no]);
+    PutSysLog((const UINT8 *)")\r\n");
 
-	error_log( ActivateTask( *(task_id_tbl[task_no]) ) );
-
+    error_log(ActivateTask(*(task_id_tbl[task_no])));
 }	/* PutActTsk	*/
 
 /*
- *  ActivateTask 実行(NonPriTask)・ログ出力処理
+ *  ActivateTask execution (NonPriTask) · Log output processing
  */
 void
-PutActNonPriTsk( void )
+PutActNonPriTsk(void)
 {
-	PutSysLog( (const UINT8 *)
-				"Call ActivateTask(NonPriTask)\r\n" );
+    PutSysLog((const UINT8 *)
+        "Call ActivateTask(NonPriTask)\r\n");
 
-	error_log( ActivateTask( NonPriTask ) );
+    error_log(ActivateTask(NonPriTask));
 }	/* PutActNonPriTsk	*/
 
 /*
- *  TerminateTask 実行・ログ出力処理
+ *  TerminateTask execution · log output processing
  */
 void
-PutTermTsk( UINT8 task_no )
+PutTermTsk(UINT8 task_no)
 {
-	StatusType	ercd;		/* エラーコード			*/
+    StatusType	ercd;		/* Error code			*/
 
-	PutSysLog( task_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)" TERMINATE\r\n" );
+    PutSysLog(task_name_tbl[task_no]);
+    PutSysLog((const UINT8 *)" TERMINATE\r\n");
 
-	ercd = TerminateTask();
-	ShutdownOS( ercd );
+    ercd = TerminateTask();
+    ShutdownOS(ercd);
 }
 
 /*
- *  ChainTask 実行・ログ出力処理
+ *  ChainTask execution · log output processing
  */
 void
-PutChainTsk( UINT8 from_task_no, UINT8 to_task_no )
+PutChainTsk(UINT8 from_task_no, UINT8 to_task_no)
 {
-	StatusType	ercd;			/* エラーコード			*/
+    StatusType	ercd;			/* Error code			*/
 
-	PutSysLog( (const UINT8 *)"Call ChainTask(" );
-	PutSysLog( task_name_tbl[to_task_no] );
-	PutSysLog( (const UINT8 *)")\r\n" );
-	PutSysLog( task_name_tbl[from_task_no] );
-	PutSysLog( (const UINT8 *)" TERMINATE\r\n" );
+    PutSysLog((const UINT8 *)"Call ChainTask(");
+    PutSysLog(task_name_tbl[to_task_no]);
+    PutSysLog((const UINT8 *)")\r\n");
+    PutSysLog(task_name_tbl[from_task_no]);
+    PutSysLog((const UINT8 *)" TERMINATE\r\n");
 
-	ercd = ChainTask( *(task_id_tbl[to_task_no]) );
-	if( ercd == E_OS_LIMIT ){
-		PutSysLog( (const UINT8 *)"Call TerminateTask()\r\n" );
-		PutSysLog( (const UINT8 *)
-					"Because of ChainTask E_OS_LIMIT return\r\n" );
-		ercd = TerminateTask();
-	}
-	ShutdownOS( ercd );
+    ercd = ChainTask(*(task_id_tbl[to_task_no]));
+    if (ercd == E_OS_LIMIT) {
+        PutSysLog((const UINT8 *)"Call TerminateTask()\r\n");
+        PutSysLog((const UINT8 *)
+            "Because of ChainTask E_OS_LIMIT return\r\n");
+        ercd = TerminateTask();
+    }
+    ShutdownOS(ercd);
 }	/* PutChainTsk	*/
 
 /*
- *  Schedule 実行・ログ出力処理
+ *  Schedule execution / log output processing
  */
 void
-PutSchedule( void )
+PutSchedule(void)
 {
-	PutSysLog( (const UINT8 *)
-				"Call ActivateTask(HighPriorityTask)\r\n" );
+    PutSysLog((const UINT8 *)
+        "Call ActivateTask(HighPriorityTask)\r\n");
 
-	error_log( ActivateTask( HighPriorityTask ) );
-	PutSysLog( (const UINT8 *)"Call Schedule()\r\n" );
+    error_log(ActivateTask(HighPriorityTask));
+    PutSysLog((const UINT8 *)"Call Schedule()\r\n");
 
-	error_log( Schedule() );
-	PutSysLog( (const UINT8 *)"Retrun Schedule()\r\n" );
+    error_log(Schedule());
+    PutSysLog((const UINT8 *)"Retrun Schedule()\r\n");
 }	/* PutSchedule	*/
 
 /*
- *  GetTaskID 実行・ログ出力処理
+ *  GetTaskID execution · log output processing
  */
 void
-PutTaskID( void )
+PutTaskID(void)
 {
-	TaskType	task_id;		/* タスクID取得バッファ		*/
-	UINT8		str_buf[16];	/* ログ文字列生成バッファ	*/
+    TaskType	task_id;		/* Task ID acquisition buffer */
+    UINT8		str_buf[16];	/* Log string generation buffer	*/
 
-	error_log( GetTaskID( &task_id ) );
+    error_log(GetTaskID(&task_id));
 
-	PutSysLog( (const UINT8 *)"TaskID:" );
-	ConvByte2DecStr( str_buf, task_id );
-	PutSysLog(  (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"\r\n" );
+    PutSysLog((const UINT8 *)"TaskID:");
+    ConvByte2DecStr(str_buf, task_id);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)"\r\n");
 }	/* PutTaskID	*/
 
 /*
- *  GetTaskState 実行・ログ出力処理
+ *  GetTaskState execution · log output processing
  */
 void
-PutTaskState( UINT8 task_no )
+PutTaskState(UINT8 task_no)
 {
-	TaskStateType	state;		/* タスクID取得バッファ		*/
+    TaskStateType	state;		/* Task ID acquisition buffer*/
 
-	error_log( GetTaskState( *(task_id_tbl[task_no]), &state ) );
+    error_log(GetTaskState(*(task_id_tbl[task_no]), &state));
 
-	PutSysLog( task_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)" State:" );
-	PutSysLog(  task_state_tbl[state]  );
-	PutSysLog( (const UINT8 *)"\r\n" );
+    PutSysLog(task_name_tbl[task_no]);
+    PutSysLog((const UINT8 *)" State:");
+    PutSysLog(task_state_tbl[state]);
+    PutSysLog((const UINT8 *)"\r\n");
 }	/* PutTaskState	*/
 
 /*
- *  DisableAllInterrupts/EnableAllInterrupts 実行・ログ出力処理
+ *  DisableAllInterrupts/EnableAllInterrupts execution · log output processing
  */
 void
-PutDisAllInt( void )
+PutDisAllInt(void)
 {
-	PutSysLog( (const UINT8 *)"Call DisableAllInterrupts\r\n" );
+    PutSysLog((const UINT8 *)"Call DisableAllInterrupts\r\n");
 
-	DisableAllInterrupts();
+    DisableAllInterrupts();
 
-	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call EnableAllInterrupts\r\n" );
+    PutHwCnt3();
+    PutIntSysLog((const UINT8 *)"Call EnableAllInterrupts\r\n");
 
-	EnableAllInterrupts();
+    EnableAllInterrupts();
 }	/* PutDisAllInt	*/
 
 /*
- *  SuspendAllInterrupts/ResumeAllInterrupts 実行・ログ出力処理
+ *  SuspendAllInterrupts/ResumeAllInterrupts execution · log output processing
  */
 void
-PutSusAllInt( void )
+PutSusAllInt(void)
 {
-	PutSysLog( (const UINT8 *)"Call SuspendAllInterrupts\r\n" );
+    PutSysLog((const UINT8 *)"Call SuspendAllInterrupts\r\n");
 
-	SuspendAllInterrupts();
+    SuspendAllInterrupts();
 
-	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call SuspendAllInterrupts\r\n" );
+    PutHwCnt3();
+    PutIntSysLog((const UINT8 *)"Call SuspendAllInterrupts\r\n");
 
-	SuspendAllInterrupts();
+    SuspendAllInterrupts();
 
-	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterrupts\r\n" );
+    PutHwCnt3();
+    PutIntSysLog((const UINT8 *)"Call ResumeAllInterrupts\r\n");
 
-	ResumeAllInterrupts();
+    ResumeAllInterrupts();
 
-	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterrupts\r\n" );
+    PutHwCnt3();
+    PutIntSysLog((const UINT8 *)"Call ResumeAllInterrupts\r\n");
 
-	ResumeAllInterrupts();
+    ResumeAllInterrupts();
 }	/* PutSusAllInt	*/
 
 /*
- *  SuspendOSInterrupts/ResumeOSInterrupts 実行・ログ出力処理
+ *  SuspendOSInterrupts/ResumeOSInterrupts execution · log output processing
  */
 void
-PutSusOSInt( void )
+PutSusOSInt(void)
 {
-	PutSysLog( (const UINT8 *)"Call SuspendOSInterrupts\r\n" );
+    PutSysLog((const UINT8 *)"Call SuspendOSInterrupts\r\n");
 
-	SuspendOSInterrupts();
+    SuspendOSInterrupts();
 
-	PutHwCnt3();
-	PutSysLog( (const UINT8 *)"Call SuspendOSInterrupts\r\n" );
+    PutHwCnt3();
+    PutSysLog((const UINT8 *)"Call SuspendOSInterrupts\r\n");
 
-	SuspendOSInterrupts();
+    SuspendOSInterrupts();
 
-	PutHwCnt3();
-	PutSysLog( (const UINT8 *)"Call SuspendAllInterrupts\r\n" );
+    PutHwCnt3();
+    PutSysLog((const UINT8 *)"Call SuspendAllInterrupts\r\n");
 
-	SuspendAllInterrupts();
+    SuspendAllInterrupts();
 
-	PutHwCnt3();
-	PutIntSysLog( (const UINT8 *)"Call ResumeAllInterrupts\r\n" );
+    PutHwCnt3();
+    PutIntSysLog((const UINT8 *)"Call ResumeAllInterrupts\r\n");
 
-	ResumeAllInterrupts();
+    ResumeAllInterrupts();
 
-	PutHwCnt3();
-	PutSysLog( (const UINT8 *)"Call ResumeOSInterrupts\r\n" );
+    PutHwCnt3();
+    PutSysLog((const UINT8 *)"Call ResumeOSInterrupts\r\n");
 
-	ResumeOSInterrupts();
+    ResumeOSInterrupts();
 
-	PutHwCnt3();
-	PutSysLog( (const UINT8 *)"Call ResumeOSInterrupts\r\n" );
+    PutHwCnt3();
+    PutSysLog((const UINT8 *)"Call ResumeOSInterrupts\r\n");
 
-	ResumeOSInterrupts();
+    ResumeOSInterrupts();
 }	/* PutSusOSInt	*/
 
 /*
  *  割込み動作テスト用HWカウンタ値のログ出力処理
  */
 void
-PutHwCnt3( void )
+PutHwCnt3(void)
 {
-	UINT8	isr1_cnt;		/* ISR1 カウント値取得バッファ	*/
-	UINT8	isr2_cnt;		/* ISR2 カウント値取得バッファ	*/
-	UINT8	cnt;			/* 出力回数カウンタ				*/
-	UINT8	str_buf[16];	/* ログ文字列生成バッファ		*/
+    UINT8	isr1_cnt;		/* ISR1 カウント値取得バッファ	*/
+    UINT8	isr2_cnt;		/* ISR2 カウント値取得バッファ	*/
+    UINT8	cnt;			/* 出力回数カウンタ				*/
+    UINT8	str_buf[16];	/* Log string generation buffer 	*/
 
-	for( cnt = 0; cnt < 3; cnt++ ){
-		GetHwCnt( &isr1_cnt, &isr2_cnt );
-		PutIntSysLog( (const UINT8 *)"ISR1 Cnt:" );
-		ConvByte2DecStr( str_buf, isr1_cnt );
-		PutIntSysLog( (const UINT8 *)str_buf );
-		PutIntSysLog( (const UINT8 *)", ISR2 Cnt:" );
-		ConvByte2DecStr( str_buf, isr2_cnt );
-		PutIntSysLog( (const UINT8 *)str_buf );
-		PutIntSysLog( (const UINT8 *)"\r\n" );
-	}
+    for (cnt = 0; cnt < 3; cnt++) {
+        GetHwCnt(&isr1_cnt, &isr2_cnt);
+        PutIntSysLog((const UINT8 *)"ISR1 Cnt:");
+        ConvByte2DecStr(str_buf, isr1_cnt);
+        PutIntSysLog((const UINT8 *)str_buf);
+        PutIntSysLog((const UINT8 *)", ISR2 Cnt:");
+        ConvByte2DecStr(str_buf, isr2_cnt);
+        PutIntSysLog((const UINT8 *)str_buf);
+        PutIntSysLog((const UINT8 *)"\r\n");
+    }
 }	/* PutHwCnt3	*/
 
 /*
  *  GetResource/ReleaseResource 実行(スケジューラ)・ログ出力処理
  */
 void
-PutGetSchedRes( void )
+PutGetSchedRes(void)
 {
-	PutSysLog( (const UINT8 *)
-				"Call GetResource(RES_SCHEDULER)\r\n" );
-	error_log( GetResource( RES_SCHEDULER ) );
-	error_log( ActivateTask( HighPriorityTask ) );
-	PutSysLog( (const UINT8 *)
-				"Call ReleaseResource(RES_SCHEDULER)\r\n" );
-	error_log( ReleaseResource( RES_SCHEDULER ) );
+    PutSysLog((const UINT8 *)
+        "Call GetResource(RES_SCHEDULER)\r\n");
+    error_log(GetResource(RES_SCHEDULER));
+    error_log(ActivateTask(HighPriorityTask));
+    PutSysLog((const UINT8 *)
+        "Call ReleaseResource(RES_SCHEDULER)\r\n");
+    error_log(ReleaseResource(RES_SCHEDULER));
 }	/* PutGetSchedRes	*/
 
 /*
  *  GetResource/ReleaseResource 実行(割込みレベル)・ログ出力処理
  */
 void
-PutGetIntRes( void )
+PutGetIntRes(void)
 {
-	PutSysLog( (const UINT8 *)
-				"Call GetResource(IntLevelRes)\r\n" );
-	error_log( GetResource( IntLevelRes ) );
+    PutSysLog((const UINT8 *)
+        "Call GetResource(IntLevelRes)\r\n");
+    error_log(GetResource(IntLevelRes));
 
-	PutHwCnt3();
-	PutSysLog( (const UINT8 *)
-				"Call ReleaseResource(IntLevelRes)\r\n" );
+    PutHwCnt3();
+    PutSysLog((const UINT8 *)
+        "Call ReleaseResource(IntLevelRes)\r\n");
 
-	error_log( ReleaseResource( IntLevelRes ) );
+    error_log(ReleaseResource(IntLevelRes));
 }	/* PutGetIntRes	*/
 
 /*
  *  GetResource 実行(タスクレベル)・ログ出力処理
  */
 void
-PutGetTskRes( void )
+PutGetTskRes(void)
 {
-	PutSysLog( (const UINT8 *)
-				"Call GetResource(TskLevelRes)\r\n" );
+    PutSysLog((const UINT8 *)
+        "Call GetResource(TskLevelRes)\r\n");
 
-	error_log( GetResource( TskLevelRes ) );
+    error_log(GetResource(TskLevelRes));
 }	/* PutGetTskRes	*/
 
 /*
  *  ReleaseResource 実行(タスクレベル)・ログ出力処理
  */
 void
-PutRelTskRes( void )
+PutRelTskRes(void)
 {
-	PutSysLog( (const UINT8 *)
-				"Call ReleaseResource(TskLevelRes)\r\n" );
+    PutSysLog((const UINT8 *)
+        "Call ReleaseResource(TskLevelRes)\r\n");
 
-	error_log( ReleaseResource( TskLevelRes ) );
+    error_log(ReleaseResource(TskLevelRes));
 }
 
 /*
- *  SetEvent 実行・ログ出力処理
+ *  SetEvent execution · log output processing
  */
 void
-PutSetEvt( UINT8 task_no )
+PutSetEvt(UINT8 task_no)
 {
-	PutSysLog( (const UINT8 *)"Call SetEvent(" );
-	PutSysLog( task_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)", " );
-	PutSysLog( event_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)")\r\n" );
+    PutSysLog((const UINT8 *)"Call SetEvent(");
+    PutSysLog(task_name_tbl[task_no]);
+    PutSysLog((const UINT8 *)", ");
+    PutSysLog(event_name_tbl[task_no]);
+    PutSysLog((const UINT8 *)")\r\n");
 
-	error_log( SetEvent( *(task_id_tbl[task_no]), *(event_mask_tbl[task_no]) ) );
+    error_log(SetEvent(*(task_id_tbl[task_no]), *(event_mask_tbl[task_no])));
 }	/* PutSetEvt	*/
 
 /*
- *  ClearEvent 実行・ログ出力処理
+ *  ClearEvent execution · log output processing
  */
 void
-PutClrEvt( UINT8 task_no )
+PutClrEvt(UINT8 task_no)
 {
-	PutSysLog( (const UINT8 *)"Call ClearEvent(" );
-	PutSysLog( event_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)")\r\n" );
+    PutSysLog((const UINT8 *)"Call ClearEvent(");
+    PutSysLog(event_name_tbl[task_no]);
+    PutSysLog((const UINT8 *)")\r\n");
 
-	error_log( ClearEvent( *( event_mask_tbl[task_no] ) ) );
+    error_log(ClearEvent(*(event_mask_tbl[task_no])));
 }	/* PutClrEvt	*/
 
 /*
- *  GetEvent 実行・ログ出力処理
+ *  GetEvent execution · log output processing
  */
- void
-PutGetEvt( UINT8 task_no )
+void
+PutGetEvt(UINT8 task_no)
 {
-	EventMaskType	mask;			/* イベントマスク取得バッファ	*/
-	UINT8			str_buf[16];	/* ログ文字列生成バッファ		*/
+    EventMaskType	mask;			/* イベントマスク取得バッファ	*/
+    UINT8			str_buf[16];	/* Log string generation buffer 	*/
 
-	error_log( GetEvent( *(task_id_tbl[task_no]), &mask ) );
+    error_log(GetEvent(*(task_id_tbl[task_no]), &mask));
 
-	PutSysLog( task_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)" Event Mask:0x" );
-	ConvLong2HexStr( str_buf, mask );
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"\r\n" );
+    PutSysLog(task_name_tbl[task_no]);
+    PutSysLog((const UINT8 *)" Event Mask:0x");
+    ConvLong2HexStr(str_buf, mask);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)"\r\n");
 }	/* PutGetEvt	*/
 
 /*
- *  WaitEvent 実行・ログ出力処理
+ *  WaitEvent execution · log output processing
  */
 void
-PutWaitEvt( UINT8 task_no )
+PutWaitEvt(UINT8 task_no)
 {
-	PutSysLog( (const UINT8 *)"Call WaitEvent(" );
-	PutSysLog( event_name_tbl[task_no] );
-	PutSysLog( (const UINT8 *)")\r\n" );
+    PutSysLog((const UINT8 *)"Call WaitEvent(");
+    PutSysLog(event_name_tbl[task_no]);
+    PutSysLog((const UINT8 *)")\r\n");
 
-	error_log( WaitEvent( *( event_mask_tbl[task_no] ) ) );
+    error_log(WaitEvent(*(event_mask_tbl[task_no])));
 }	/* PutWaitEvt	*/
 
 /*
- *  GetAlarmBase 実行・ログ出力処理
+ *  GetAlarmBase execution · log output processing
  */
 void
-PutArmBase( void )
+PutArmBase(void)
 {
-	AlarmBaseType	info;			/* アラームベース情報取得バッファ	*/
-	UINT8			str_buf[16];	/* ログ文字列生成バッファ			*/
+    AlarmBaseType	info;			/* アラームベース情報取得バッファ	*/
+    UINT8			str_buf[16];	/* Log string generation buffer 		*/
 
-	error_log( GetAlarmBase( MainCycArm, &info) );
+    error_log(GetAlarmBase(MainCycArm, &info));
 
-	PutSysLog( (const UINT8 *)
-				"MainCycArm Base:\r\n\tMAXALLOWEDVALUE=" );
-	ConvLong2DecStr( str_buf, info.maxallowedvalue );
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"\r\n\tTICKSPERBASE=" );
-	ConvLong2DecStr( str_buf, info.ticksperbase );
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"\r\n\tMINCYCLE=" );
-	ConvLong2DecStr( str_buf, info.mincycle );
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"\r\n" );
+    PutSysLog((const UINT8 *)
+        "MainCycArm Base:\r\n\tMAXALLOWEDVALUE=");
+    ConvLong2DecStr(str_buf, info.maxallowedvalue);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)"\r\n\tTICKSPERBASE=");
+    ConvLong2DecStr(str_buf, info.ticksperbase);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)"\r\n\tMINCYCLE=");
+    ConvLong2DecStr(str_buf, info.mincycle);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)"\r\n");
 }	/* PutArmBase	*/
 
 /*
- *  PutArmTick 実行・ログ出力処理
+ *  PutArmTick execution · log output processing
  */
 void
-PutArmTick( void )
+PutArmTick(void)
 {
-	TickType	tick;			/* 残りティック取得バッファ	*/
-	UINT8		str_buf[16];	/* ログ文字列生成バッファ	*/
+    TickType	tick;			/* Remaining tick acquisition buffer	*/
+    UINT8		str_buf[16];	/* Log string generation buffer */
 
-	error_log( GetAlarm( MainCycArm, &tick ) );
+    error_log(GetAlarm(MainCycArm, &tick));
 
-	PutSysLog( (const UINT8 *)"MainCycArm Tick:" );
-	ConvLong2DecStr( str_buf, tick );
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)"\r\n" );
+    PutSysLog((const UINT8 *)"MainCycArm Tick:");
+    ConvLong2DecStr(str_buf, tick);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)"\r\n");
 }	/* PutArmTick	*/
 
 /*
- *  SetRelAlarm 実行・ログ出力処理
+ *  SetRelAlarm execution · log output processing
  */
 void
-PutSetRel( UINT8 alarm_no, UINT8 tick_no, UINT8 cycle_no )
+PutSetRel(UINT8 alarm_no, UINT8 tick_no, UINT8 cycle_no)
 {
-	UINT8		str_buf[16];	/* ログ文字列生成バッファ	*/
+    UINT8		str_buf[16];	/* Log string generation buffer */
 
-	PutSysLog( (const UINT8 *)"Call SetRelAlarm(" );
-	PutSysLog( alarm_name_tbl[alarm_no] );
-	PutSysLog( (const UINT8 *)", ");
-	ConvLong2DecStr(str_buf, tick_tbl[tick_no]);
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)", ");
-	ConvLong2DecStr(str_buf, cycle_tbl[cycle_no]);
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)")\r\n");
+    PutSysLog((const UINT8 *)"Call SetRelAlarm(");
+    PutSysLog(alarm_name_tbl[alarm_no]);
+    PutSysLog((const UINT8 *)", ");
+    ConvLong2DecStr(str_buf, tick_tbl[tick_no]);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)", ");
+    ConvLong2DecStr(str_buf, cycle_tbl[cycle_no]);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)")\r\n");
 
-	error_log( SetRelAlarm( *(alarm_id_tbl[alarm_no]),
-							tick_tbl[tick_no], cycle_tbl[cycle_no] ) );
+    error_log(SetRelAlarm(*(alarm_id_tbl[alarm_no]),
+        tick_tbl[tick_no], cycle_tbl[cycle_no]));
 }	/* PutSetRel	*/
 
 /*
- *  SetAbsAlarm 実行・ログ出力処理
+ *  SetAbsAlarm execution · log output processing
  */
 void
-PutSetAbs( UINT8 alarm_no, UINT8 tick_no, UINT8 cycle_no )
+PutSetAbs(UINT8 alarm_no, UINT8 tick_no, UINT8 cycle_no)
 {
-	UINT8		str_buf[16];	/* ログ文字列生成バッファ	*/
+    UINT8		str_buf[16];	/* Log string generation buffer */
 
-	PutSysLog( (const UINT8 *)"Call SetAbsAlarm(" );
-	PutSysLog( alarm_name_tbl[alarm_no] );
-	PutSysLog( (const UINT8 *)", ");
-	ConvLong2DecStr(str_buf, tick_tbl[tick_no]);
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)", ");
-	ConvLong2DecStr(str_buf, cycle_tbl[cycle_no]);
-	PutSysLog( (const UINT8 *)str_buf );
-	PutSysLog( (const UINT8 *)")\r\n");
+    PutSysLog((const UINT8 *)"Call SetAbsAlarm(");
+    PutSysLog(alarm_name_tbl[alarm_no]);
+    PutSysLog((const UINT8 *)", ");
+    ConvLong2DecStr(str_buf, tick_tbl[tick_no]);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)", ");
+    ConvLong2DecStr(str_buf, cycle_tbl[cycle_no]);
+    PutSysLog((const UINT8 *)str_buf);
+    PutSysLog((const UINT8 *)")\r\n");
 
-	error_log( SetAbsAlarm( *(alarm_id_tbl[alarm_no]),
-							tick_tbl[tick_no], cycle_tbl[cycle_no] ) );
+    error_log(SetAbsAlarm(*(alarm_id_tbl[alarm_no]),
+        tick_tbl[tick_no], cycle_tbl[cycle_no]));
 }	/* PutSetAbs	*/
 
 /*
- *  CancelAlarm 実行・ログ出力処理
+ *  CancelAlarm execution · log output processing
  */
 void
-PutCanArm( void )
+PutCanArm(void)
 {
-	PutSysLog( (const UINT8 *)
-				"Call CancelAlarm(CallBackArm)\r\n" );
+    PutSysLog((const UINT8 *)
+        "Call CancelAlarm(CallBackArm)\r\n");
 
-	error_log( CancelAlarm( CallBackArm ) );
+    error_log(CancelAlarm(CallBackArm));
 }	/* PutCanArm	*/
 
 /*
- *  GetActiveApplicationMode 実行・ログ出力処理
+ *  GetActiveApplicationMode execution · log output processing
  */
 void
-PutAppMode( void )
+PutAppMode(void)
 {
-	PutSysLog( (const UINT8 *)"ActiveApplicationMode:" );
-	switch( GetActiveApplicationMode() ){
-	case AppMode1:
-		PutSysLog( (const UINT8 *)"AppMode1\r\n" );
-		break;
-	case AppMode2:
-		PutSysLog( (const UINT8 *)"AppMode2\r\n" );
-		break;
-	case AppMode3:
-		PutSysLog( (const UINT8 *)"AppMode3\r\n" );
-		break;
-	default:
-		PutSysLog( (const UINT8 *)"Non\r\n" );
-		break;
-	}
+    PutSysLog((const UINT8 *)"ActiveApplicationMode:");
+    switch (GetActiveApplicationMode()) {
+    case AppMode1:
+        PutSysLog((const UINT8 *)"AppMode1\r\n");
+        break;
+    case AppMode2:
+        PutSysLog((const UINT8 *)"AppMode2\r\n");
+        break;
+    case AppMode3:
+        PutSysLog((const UINT8 *)"AppMode3\r\n");
+        break;
+    default:
+        PutSysLog((const UINT8 *)"Non\r\n");
+        break;
+    }
 }	/* PutAppMode	*/
-

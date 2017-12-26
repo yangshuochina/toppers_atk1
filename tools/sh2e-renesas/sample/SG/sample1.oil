@@ -1,19 +1,19 @@
 /*
- *  サンプルプログラム(1)のOILファイル．
+ *  OIL file of sample program (1).
  */
 
 /*
- *  定義部のインクルード
+ *  Including the definition part
  */
 #include "implementation.oil"
 
 /*
- *  実装部
+ *  Implementation Part
  */
 CPU current {
 
 	/*
-	 *  OS定義
+	 *  OS definition
 	 */
 	OS os {
 		STATUS = STANDARD;
@@ -28,16 +28,16 @@ CPU current {
 	};
 
 	/*
-	 *  アプリケーションモード定義
+	 *  Application mode definition
 	 */
-	APPMODE AppMode1 {};	/* 並列実行タスク自動起動なし	*/
-	APPMODE AppMode2 {};	/* タスク1自動起動モード		*/
-	APPMODE AppMode3 {};	/* タスク3自動起動モード		*/
+	APPMODE AppMode1 {};	/* Parallel execution task not started automatically */
+	APPMODE AppMode2 {};	/* Task1 Auto start mode							 */
+	APPMODE AppMode3 {};	/* Task3 Auto start mode							 */
 
 	/*
-	 *  タスク定義
+	 *  Task definition
 	 */
-	/* メインタスク	*/
+	/* Main task	*/
 	TASK MainTask {
 		AUTOSTART = TRUE {
 			APPMODE = AppMode1;
@@ -51,7 +51,7 @@ CPU current {
 		EVENT = MainEvt;
 	};
 
-	/* 最高優先度タスク	*/
+	/* Highest priority task	*/
 	TASK HighPriorityTask {
 		AUTOSTART = FALSE;
 		PRIORITY = 15;
@@ -60,7 +60,7 @@ CPU current {
 		SCHEDULE = FULL;
 	};
 
-	/* ノンプリエンプティブタスク	*/
+	/* Non preemptive task	*/
 	TASK NonPriTask {
 		AUTOSTART = FALSE;
 		PRIORITY = 1;
@@ -69,7 +69,7 @@ CPU current {
 		SCHEDULE = NON;
 	};
 
-	/* 並列実行タスク1	*/
+	/* Parallel execution Task1	*/
 	TASK Task1 {
 		AUTOSTART = TRUE {
 			APPMODE = AppMode2;
@@ -82,7 +82,7 @@ CPU current {
 		RESOURCE = IntLevelRes;
 	};
 
-	/* 並列実行タスク2	*/
+	/* Parallel execution Task2	*/
 	TASK Task2 {
 		AUTOSTART = FALSE;
 		PRIORITY = 7;
@@ -94,7 +94,7 @@ CPU current {
 		EVENT = T2Evt;
 	};
 
-	/* 並列実行タスク3	*/
+	/* Parallel execution Task3	*/
 	TASK Task3 {
 		AUTOSTART = TRUE {
 			APPMODE = AppMode3;
@@ -107,7 +107,7 @@ CPU current {
 		EVENT = T3Evt;
 	};
 
-	/* 並列実行タスク4	*/
+	/* Parallel execution Task4	*/
 	TASK Task4 {
 		AUTOSTART = FALSE;
 		PRIORITY = 6;
@@ -119,7 +119,7 @@ CPU current {
 		RESOURCE = IntLevelRes;
 	};
 
-	/* 並列実行タスク5	*/
+	/* Parallel execution Task5	*/
 	TASK Task5 {
 		AUTOSTART = FALSE;
 		PRIORITY = 9;
@@ -132,44 +132,44 @@ CPU current {
 	};
 
 	/*
-	 *  割込みサービスルーチン定義
+	 *  Interrupt service routine definition
 	 */
-	/* シリアルIOエラー割込み(SCI1)	*/
+	/* Serial IO error interrupt(SCI1)	*/
 	ISR ErrHwSerialInt {
 		CATEGORY = 1;
 		ENTRY = 204;	/* SCI1 ERI1 */
 		PRIORITY = 6;
 	};
 
-	/* シリアルIO受信割込み(SCI1)	*/
+	/* Serial IO receive interrupt(SCI1)	*/
 	ISR RxHwSerialInt {
 		CATEGORY = 1;
 		ENTRY = 205;	/* SCI1 RXI1 */
 		PRIORITY = 6;
 	};
 
-	/* HWカウンタ割込み1	*/
+	/* HW counter 1 interrupt	*/
 	ISR HwCnt1Int {
 		CATEGORY = 1;
 		ENTRY = 152;	/* ATU81 OSI8A */
 		PRIORITY = 5;
 	};
 
-	/* システムタイマ割込み	*/
+	/* System timer interrupt */
 	ISR SysTimerInt {
 		CATEGORY = 2;
 		ENTRY = 188;	/* CMT0 */
 		PRIORITY = 4;
 	};
 
-	/* サンプルカウンタソース割込み	*/
+	/* Sample counter source interrupt */
 	ISR CounterInt {
 		CATEGORY = 2;
 		ENTRY = 192;	/* CMT1 */
 		PRIORITY = 3;
 	};
 
-	/* HWカウンタ割込み2	*/
+	/* HW counter 2 interrupt */
 	ISR HwCnt2Int {
 		CATEGORY = 2;
 		ENTRY = 156;	/* ATU82 OSI8E */
@@ -178,52 +178,52 @@ CPU current {
 	};
 
 	/*
-	 *  リソース定義
+	 *  Resource definition
 	 */
-	/* タスク・タスク間リソース	*/
+	/* Task and task resource	*/
 	RESOURCE TskLevelRes {
 		RESOURCEPROPERTY = STANDARD;
 	};
 
-	/* タスク・割込み間リソース	*/
+	/* Task and interrupt resources	*/
 	RESOURCE IntLevelRes {
 		RESOURCEPROPERTY = STANDARD;
 	};
 
-	/* グループタスク用内部リソース	*/
+	/* Internal resources for group tasks	*/
 	RESOURCE GroupRes {
 		RESOURCEPROPERTY = INTERNAL;
 	};
 
 	/*
-	 *  イベント定義
+	 *  Event definition
 	 */
-	/* メインタスク周期イベント	*/
+	/* Main task cycle event	*/
 	EVENT MainEvt {
 		MASK = AUTO;
 	};
 
-	/* 並列実行タスク2用イベント	*/
+	/* Event for parallel execution Task2	*/
 	EVENT T2Evt {
 		MASK = AUTO;
 	};
 
-	/* 並列実行タスク3用イベント	*/
+	/* Event for parallel execution Task3	*/
 	EVENT T3Evt {
 		MASK = AUTO;
 	};
 
 	/*
-	 *  カウンタ定義
+	 *  Counter definition
 	 */
-	/* システムタイマカウンタ	*/
+	/* System timer counter */
 	COUNTER SysTimerCnt { 
 		MINCYCLE = 1;
 		MAXALLOWEDVALUE = 999; 
 		TICKSPERBASE = 1; 
 	};
 
-	/* サンプルカウンタ	*/
+	/* Sample counter */
 	COUNTER SampleCnt { 
 		MINCYCLE = 10;
 		MAXALLOWEDVALUE = 99; 
@@ -231,9 +231,9 @@ CPU current {
 	};
 
 	/*
-	 *  アラーム定義
+	 *  Alarm definition
 	 */
-	/* メインタスク周期アラーム	*/
+	/* Main task cycle alarm */
 	ALARM MainCycArm { 
 		COUNTER = SysTimerCnt;
 		ACTION  = SETEVENT {
@@ -249,7 +249,7 @@ CPU current {
 		};
 	};
 
-	/* タスク起動用アラーム	*/
+	/* Task activation alarm */
 	ALARM ActTskArm { 
 		COUNTER = SysTimerCnt;
 		ACTION  = ACTIVATETASK {
@@ -258,7 +258,7 @@ CPU current {
 		AUTOSTART = FALSE;
 	};
 
-	/* イベント設定用アラーム	*/
+	/* Event setting alarm */
 	ALARM SetEvtArm { 
 		COUNTER = SysTimerCnt;
 		ACTION  = SETEVENT {
@@ -268,7 +268,7 @@ CPU current {
 		AUTOSTART = FALSE;
 	};
 
-	/* コールバック実行用アラーム	*/
+	/* Callback execution alarm */
 	ALARM CallBackArm { 
 		COUNTER = SysTimerCnt;
 		ACTION  = ALARMCALLBACK {
@@ -277,7 +277,7 @@ CPU current {
 		AUTOSTART = FALSE;
 	};
 
-	/* サンプルカウンタ動作確認用アラーム	*/
+	/* Sample counter operation confirmation alarm */
 	ALARM SampleArm { 
 		COUNTER = SampleCnt;
 		ACTION  = ALARMCALLBACK {

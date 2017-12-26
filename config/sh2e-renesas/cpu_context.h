@@ -2,7 +2,7 @@
  *  TOPPERS Automotive Kernel
  *      Toyohashi Open Platform for Embedded Real-Time Systems
  *      Automotive Kernel
- * 
+ *
  *  Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
  *                              Toyohashi Univ. of Technology, JAPAN
  *  Copyright (C) 2004 by Embedded and Real-Time Systems Laboratory
@@ -10,8 +10,8 @@
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
  *  Copyright (C) 2006 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006 by Hitachi Information & Control Solutions,Ltd., JAPAN
- * 
- *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
  *  によって公表されている GNU General Public License の Version 2 に記
  *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
  *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
@@ -32,50 +32,49 @@
  *        報告すること．
  *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
  *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
- * 
+ *
  *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
  *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
  *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
  *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
- * 
+ *
  */
 
 /*
- *	タスクコンテキスト操作ルーチン（SH2用）
+ * Task context operation routine (for SH 2)
  *
- *  このファイルを cpu_config.h と分離しているのは，このファイルは TCB
- *  が定義された後に読む必要があるのに対して，cpu_config.h には TCB を
- *  定義する前に読む必要がある定義を含んでいるためである．
+ * This file is separated from cpu_config.h because this file needs to be read after
+ * the TCB is defined, whereas cpu_config.h contains definitions that need to be read
+ * before defining the TCB It is because it is.
  */
-
 
 #ifndef _CPU_CONTEXT_H_
 #define _CPU_CONTEXT_H_
 
 /*
- *  タスクを起動できる状態に設定する関数の(cpu_support.src)プロトタイプ宣言
+ *  Prototype declaration (cpu_support.src) of the function
+ *  to set the task to be ready to start
  */
 #pragma inline(activate_context)
 static void activate_context(TaskType TaskID);
 /*
- *  タスクの起動関数(cpu_support.S)プロトタイプ宣言
+ *  Task activation function (cpu_support.S) Prototype declaration
  */
 extern void activate_r(void);
 
 /*
- *  タスクの起動準備(TCBの初期化)
+ * Preparation for starting task (TCB initialization)
  *
- *  タスクが休止状態から実行できる状態に移行する時に呼ばれる．
+ * Called when the task transitions from hibernate state to executable state.
  */
 static void
 activate_context(TaskType TaskID)
 {
-	/* ディスパッチ後実行開始位置設定	*/
-	tcxb_pc[TaskID] = (FP)activate_r;	/*  cpu_support.src  */
+    /* Set execution start position after dispatching	*/
+    tcxb_pc[TaskID] = (FP)activate_r;	/*  cpu_support.src  */
 
-	/* スタックポインタ初期値設定	*/
-	tcxb_sp[TaskID] = (VP)( (UINT32)tinib_stk[TaskID] + (UINT32)tinib_stksz[TaskID]);
+    /* Stack pointer initial value setting	*/
+    tcxb_sp[TaskID] = (VP)((UINT32)tinib_stk[TaskID] + (UINT32)tinib_stksz[TaskID]);
 }
-
 
 #endif /* _CPU_CONTEXT_H_ */

@@ -45,16 +45,16 @@
 _CPU_CONFIG_INC_:	.DEFINE	""
 
 
-MAX_IPM:	.EQU	15				; 割禁時に SR に設定する割込みマスクレベル
-ENABLE_COMMON_STACK:	.ASSIGNA 1	; 基本タスクでスタックを共有する
-									; 0: 共有しない
-									; 1: 基本タスクでスタックを共有する
-ENABLE_BCC_DEFINES:		.ASSIGNA 0	; BCC 設定時にダミー変数を定義する。
-									; 0: ECC 設定
-									; 1: BCC 設定
+MAX_IPM:	.EQU	15				; Interrupt mask level to be set to SR when disabled
+ENABLE_COMMON_STACK:	.ASSIGNA 1	; Sharing the stack with basic task
+									; 0: Do not share
+									; 1: Sharing the stack with basic task
+ENABLE_BCC_DEFINES:		.ASSIGNA 0	; Define dummy variables when setting BCC.
+									; 0: ECC setting
+									; 1: BCC setting
 									
 ;
-;  外部参照宣言生成マクロ
+;  External reference declaration generation macro
 ;
  .AIFDEF OMIT_ISR1_ENTRY
  	.MACRO	ISR1_EXTERNAL	isr
@@ -67,7 +67,7 @@ ENABLE_BCC_DEFINES:		.ASSIGNA 0	; BCC 設定時にダミー変数を定義する
  .AENDI
 	
 ;
-; ベクタテーブル登録シンボル生成マクロ
+; Vector table registration symbol generation macro
 ;
  .AIFDEF OMIT_ISR1_ENTRY
  	.MACRO	ISR1_SYMBOL	isr
@@ -80,35 +80,35 @@ ENABLE_BCC_DEFINES:		.ASSIGNA 0	; BCC 設定時にダミー変数を定義する
  .AENDI
 
 ;
-;	外部参照宣言生成マクロ
+;	External reference declaration generation macro
 ;
  	.MACRO	ISR2_EXTERNAL	isr
 	.GLOBAL	_\isr'_entry
  	.ENDM
 
 ;
-; ベクタテーブル登録シンボル生成マクロ
+; Vector table registration symbol generation macro
 ;
 	.MACRO	ISR2_SYMBOL	isr
 	.DATA.L	_\isr'_entry
  	.ENDM
 
 ;
-;  未使用割込み生成マクロ
+;  Unused interrupt generation macros
 ;
 
-; ベクタテーブルからの外部参照宣言生成マクロ
+; Generate external reference declaration macro from vector table
 	.MACRO	UNUSED_INT_EXTERNAL
 	.IMPORT _unused_interrupt
  	.ENDM
 
 
-; ベクタテーブル登録シンボル生成マクロ
+; Vector table registration symbol generation macro
 	.MACRO	UNUSED_INT_SYMBOL
 	.DATA.L	_unused_interrupt
 	.ENDM
 	
-; /* ISR1 入口処理の生成マクロ	*/
+; /* Generation macro for ISR1 entrance processing	*/
  .AIFDEF OMIT_ISR1_ENTRY
  	.MACRO	ISR1_ENTRY	isr
  	.ENDM
@@ -153,7 +153,7 @@ _\isr'_adr:
 	.ENDM
  .AENDI		; OMIT_ISR1_ENTRY
 
-; /* ISR2 入口処理の生成マクロ	*/
+; /* Generation macro for ISR2 entrance processing	*/
 
 	.MACRO	ISR2_ENTRY	isr, isrid
     .SECTION    P,CODE,ALIGN=4 
@@ -188,7 +188,7 @@ _MAX_IPM_\isr'_adr:
 	.DATA.L	MAX_IPM << 4
 	.ENDM
 
-;  フックルーチンNULLシンボル生成マクロ
+;  Hook routine NULL symbol generation macro
 
 	.MACRO	NULL_ERRORHOOK
 	.EXPORT	_ErrorHook

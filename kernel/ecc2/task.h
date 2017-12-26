@@ -2,14 +2,14 @@
  *  TOPPERS Automotive Kernel
  *      Toyohashi Open Platform for Embedded Real-Time Systems
  *      Automotive Kernel
- * 
+ *
  *  Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
  *                              Toyohashi Univ. of Technology, JAPAN
  *  Copyright (C) 2004 by Embedded and Real-Time Systems Laboratory
  *              Graduate School of Information Science, Nagoya Univ., JAPAN
  *  Copyright (C) 2004-2006 by Witz Corporation, JAPAN
- * 
- *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
  *  によって公表されている GNU General Public License の Version 2 に記
  *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
  *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
@@ -30,81 +30,81 @@
  *        報告すること．
  *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
  *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
- * 
+ *
  *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
  *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
  *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
  *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
- * 
+ *
  */
 
 /*
- *	タスク管理モジュール(ECC2)
+ *	Task management module (ECC 2)
  */
 
 #ifndef _TASK_H_
 #define _TASK_H_
 
 /*
- *  タスクIDの特殊な値の定義
+ *  Definition of special value of task ID
  */
-#define TSKID_NULL		((TaskType) UINT8_INVALID)	/* 無効ID */
+#define TSKID_NULL		((TaskType) UINT8_INVALID)	/* Invalid ID */
 
 /*
- *  タスク状態（tcb_stat）値の定義
+ *  Definition of task state (tcb_stat) value
  */
-#define TS_RUNNABLE		READY				/* 実行状態，実行可能状態 */
-#define TS_DORMANT		SUSPENDED			/* 休止状態 */
-#define TS_WAITING		WAITING				/* 待ち状態 */
+#define TS_RUNNABLE		READY				/* Execution state, executable state */
+#define TS_DORMANT		SUSPENDED			/* Suspended state */
+#define TS_WAITING		WAITING				/* waiting state */
 
 /*
- *  タスク数を保持する変数の宣言（kernel_cfg.c）
+ *  Declaration of variables holding the number of tasks（kernel_cfg.c）
  */
-extern const UINT8	tnum_task;		/* タスクの数 */
-extern const UINT8	tnum_exttask;		/* 拡張タスクの数 */
+extern const UINT8	tnum_task;		    /* Number of tasks */
+extern const UINT8	tnum_exttask;		/* Number of extended tasks */
 
 /*
- *  タスク初期化ブロック（kernel_cfg.c）
+ *  Task initialization block（kernel_cfg.c）
  */
-extern const Priority	tinib_inipri[];		/* 初期優先度 */
-extern const Priority	tinib_exepri[];		/* 実行開始時の優先度 */
-extern const UINT8		tinib_maxact[];		/* 多重起動要求の最大数 */
-extern const AppModeType tinib_autoact[];	/* 起動するモード */
-extern const FP			tinib_task[];		/* タスクの起動番地 */
-extern const VP			tinib_stk[];		/* スタック領域の先頭番地 */
-extern const UINT16		tinib_stksz[];		/* スタック領域のサイズ */
+extern const Priority	tinib_inipri[];		/* Initial priority */
+extern const Priority	tinib_exepri[];		/* Priority at start of execution */
+extern const UINT8		tinib_maxact[];		/* Maximum number of multiple activation requests */
+extern const AppModeType tinib_autoact[];	/* Starting mode */
+extern const FP			tinib_task[];		/* Task activation number */
+extern const VP			tinib_stk[];		/* Start address of stack area */
+extern const UINT16		tinib_stksz[];		/* Size of stack area */
 
 /*
- *  タスク管理ブロック（kernel_cfg.c）
+ * Task management block（kernel_cfg.c）
  *
- *  この他に，タスクコンテキストを保存するための配列が，ターゲット依存
- *  に定義される．
+ * In addition to this, an array for storing a task context is defined
+ * as a target dependency.
  */
-extern TaskType			tcb_next[];			/* タスクキュー */
-extern UINT8			tcb_tstat[];		/* タスク状態 */
-extern Priority			tcb_curpri[];		/* 現在の優先度 */
-extern UINT8			tcb_actcnt[];		/* 多重起動要求数 */
-extern EventMaskType	tcb_curevt[];		/* イベントの現在値 */
-extern EventMaskType	tcb_waievt[];		/* 待っているイベント */
-extern ResourceType		tcb_lastres[];		/* 最後に獲得したリソース */
+extern TaskType			tcb_next[];			/* Task queue */
+extern UINT8			tcb_tstat[];		/* Task state */
+extern Priority			tcb_curpri[];		/* Current priority */
+extern UINT8			tcb_actcnt[];		/* Multiple activation request number */
+extern EventMaskType	tcb_curevt[];		/* Current event */
+extern EventMaskType	tcb_waievt[];		/* Waiting event */
+extern ResourceType		tcb_lastres[];		/* Lastly acquired resources */
 
 /*
- *  実行状態のタスク
+ * Execution task
  *
- *  実行状態のタスクがない場合には，TSKID_NULL にする．
+ * If there is no task in the execution state, set it to TSKID_NULL.
  */
 extern TaskType			runtsk;
 
 /*
- *  最高優先順位タスク
+ *  Highest priority task
  *
- *  タスク実行中は，runtsk と一致する．実行できる状態（実行状態または
- *  実行可能状態）のタスクがない場合には，TSKID_NULL にする．
+ * During task execution, it matches runtsk. If there is no task in the executable state
+ * (execution state or executable state), set TSKID_NULL.
  */
 extern TaskType			schedtsk;
 
 /*
- *  レディキュー中の最高優先度
+ *  Highest priority in ready queue
  *
  *  レディキューには実行可能状態のタスクのみを含むので，実行可能状態の
  *  タスクの中出の最高優先度を保持する．レディキューが空の時（実行可能
@@ -113,20 +113,20 @@ extern TaskType			schedtsk;
 extern Priority			nextpri;
 
 /*
- *  タスク管理モジュールの初期化
+ *  Initialization of task management module
  */
 extern void	task_initialize(void);
 
 /*
- *  タスクの起動
+ *  Activate task
  *
- *  対象タスク（tskid で指定したタスク）を起動する（休止状態から実行で
- *  きる状態に遷移させる．タスクの起動時に必要な初期化を行う．
+ * Activate the target task (task specified by tskid) (Transition from suspend state
+ * to executable state Initialize necessary task at startup.
  */
 extern BOOL	make_active(TaskType tskid);
 
 /*
- *  実行できる状態への移行
+ *  Transition to executable state
  *
  *  対象タスク（tskid で指定したタスク）を実行できる状態に遷移させる．
  *  対象タスクの優先度が，最高優先度タスク（schedtsk）の優先度よりも高

@@ -50,3 +50,5 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/tools/sh2e-renesas/sample/*.nav
+/tools/sh2e-renesas/simDebug/*.nav

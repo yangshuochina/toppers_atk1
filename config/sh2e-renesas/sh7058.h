@@ -5,8 +5,8 @@
  *
  *  Copyright (C) 2006 by Hitachi,Ltd., Automotive Systems, JAPAN
  *  Copyright (C) 2006 by Hitachi Information & Control Solutions,Ltd., JAPAN
- * 
- *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation 
+ *
+ *  上記著作権者は，以下の (1)～(4) の条件か，Free Software Foundation
  *  によって公表されている GNU General Public License の Version 2 に記
  *  述されている条件を満たす場合に限り，本ソフトウェア（本ソフトウェア
  *  を改変したものを含む．以下同じ）を使用・複製・改変・再配布（以下，
@@ -27,16 +27,16 @@
  *        報告すること．
  *  (4) 本ソフトウェアの利用により直接的または間接的に生じるいかなる損
  *      害からも，上記著作権者およびTOPPERSプロジェクトを免責すること．
- * 
+ *
  *  本ソフトウェアは，無保証で提供されているものである．上記著作権者お
  *  よびTOPPERSプロジェクトは，本ソフトウェアに関して，その適用可能性も
  *  含めて，いかなる保証も行わない．また，本ソフトウェアの利用により直
  *  接的または間接的に生じたいかなる損害に関しても，その責任を負わない．
- * 
+ *
  */
 
 /*
- *  SH2 7058用アドレス定義
+ * Address definition for SH2 7058
  */
 
 #ifndef _SH7058_H_
@@ -45,4 +45,3 @@
 #include "iodefine.h"
 
 #endif /* _SH7058_H_ */
-
